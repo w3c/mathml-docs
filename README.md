@@ -1,7 +1,11 @@
 
-# MyNote
+# Documents by the Math WG
 
-This is the repository for MyNote.
+This is a repository for Notes and other documents by the [Math WG](https://www.w3.org/Math/).
+
+The Math WG also uses:
+* the [‘mathml’ repository](https://github.com/w3c/mathml) for the MathML 4 specification
+* the [‘mathml-core’ repository](https://github.com/w3c/mathml-core) for the MathML core specification
 
 ## Remove everything from this line when you're done
 
