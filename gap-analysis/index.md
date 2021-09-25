@@ -1,8 +1,8 @@
 ---
-title: "Semantic Annotation Mini-Language"
+title: "MathML Accessibility Gap Analysis"
 layout: wgnote
 ---
-# MathML Accessibility Gap Analysis
+
 
 ## Introduction
 
