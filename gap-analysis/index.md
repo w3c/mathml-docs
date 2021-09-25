@@ -120,6 +120,7 @@ Mathematical expressions can often be long enough that a user needs to explore/n
 A downside to this approach is that it is very repetitive: every parent element must include the text used in the child. An appealing alternative is to use multiple aria-labelledby ids instead of aria-label, where the value of aria-labelledby points to the various children. These in turn can point to their children. The problem with this approach is that text can not be mixed in with the ‘id’s used in aria-labelledby so that a square root does not have a child to point to for the “square root of” part of the expression “square root of x plus y”. A few (unpleasant) hacks are possible by introducing elements that don’t display and adding aria-label to them, but this seems like a poor solution. The unit circle example below illustrates the use of aria-labelledby:
 
 
+```
 <math aria-labelledby="ex2">
   <mrow id="ex2" aria-labelledby="point varname at-coordinates">
     <mrow id="point" aria-label="point"></mrow>
@@ -135,6 +136,7 @@ A downside to this approach is that it is very repetitive: every parent element 
     </mrow>
   </mrow>
 </math>
+```
 
 
 A number of issues surrounding the use of aria-labelledby are explored in this prototype. Additionally, the prototype explores the use of aria-describedby to add additional information such as a variable being a natural number, something you would not want to hear in a full reading of an expression.
@@ -145,6 +147,8 @@ In many ways parts of the issues or suggestions laid out in this document could 
 
 
 Here is one way a CSS-like  solution might look:
+
+```
 <mrow class=”point”>
   <mo>(</mo>
   <mi class=”arg1”>a</mi>
@@ -152,23 +156,27 @@ Here is one way a CSS-like  solution might look:
   <mi class=”arg2">b</mi>
   <mo>)</mo>
 </mrow>
+```
 
 
+```
 .point {
    Speech: “the point ” .point.arg1 “ comma ” .point.arg2;
    Nemeth: …;
 };
+```
 
 
 
 ## Parallel MathML Markup
 
-The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used standalone, or combined using the MathML <semantics> element.  
+The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used standalone, or combined using the MathML `<semantics>` element.
 
 
-The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as Parallel MathML Markup.  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
+The `<semantics>` element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as Parallel MathML Markup.  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
 
 
+```
 <semantics>
   <mrow id="x">
     <mo id="x.1">(</mo>
@@ -185,12 +193,13 @@ The <semantics> element may be used to attach content markup as an annotation to
     </apply>
   </annotation-xml>
 </semantics>
+```
 
 
-The <csymbol>point<csymbol/> element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML.  It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (definitionURL), and attributes that link into OpenMath content dictionaries (cdbase and cd).
+The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML.  It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (definitionURL), and attributes that link into OpenMath content dictionaries (cdbase and cd).
 
 
-The <semantics> element has been part of the MathML standard since 2003, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
+The `<semantics>` element has been part of the MathML standard since 2003, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
 
 
 ## Challenges of parallel markup:
@@ -199,7 +208,7 @@ The <semantics> element has been part of the MathML standard since 2003, so no n
       * Parallel markup includes both a presentation and a content encoding for each expression, so it roughly doubles the size of the markup compared to either presentation or content markup.
 
 
-      * Most tools do not have the capability or information needed to generate content markup, leading to redundancy between the two representations. For example, a superscript without clear meaning can become an artificial <csymbol> in Content MathML with the presentational name “superscript” in systems that are forced to make some choice.
+      * Most tools do not have the capability or information needed to generate content markup, leading to redundancy between the two representations. For example, a superscript without clear meaning can become an artificial `<csymbol>` in Content MathML with the presentational name “superscript” in systems that are forced to make some choice.
 
 
       * Since the two forms are not isomorphic, there will be presentation nodes with no corresponding content node, and vice-versa. However, because the semantic information needed to resolve a notation is encoded in a separate branch of the document tree, it poses the challenge to locate and extract the semantics when processing the presentation. 
@@ -238,6 +247,7 @@ One proposal is to introduce a MathML-specific intent attribute, whose value enc
 Such an attribute could be used by an authoring tool, for example, to encode the point  as the expression point(a,b) as follows:
 
 
+```
 <mrow intent="point[r][s]($1,$2)">
   <mo>(</mo>
   <mi arg="1">a</mi>
@@ -245,7 +255,7 @@ Such an attribute could be used by an authoring tool, for example, to encode the
   <mi arg="2">b</mi>
   <mo>)</mo>
 </mrow>
-
+```
 
 If  had another meaning, such as an open interval, or an ordered pair, or greatest common divisor, a value other than “point” would be used in the value of “intent”.
 
@@ -311,17 +321,18 @@ This document was a group effort by many members of the Math WG. The WG would pa
 
 
 I know Stephen was planning on working with the intro, so please feel free to adapt & incorporate what you think fits (or even propose to cut it all out :> )(
-[b]Does <point> exist? Why not do the 
+[b]Does `<point>` exist? Why not do the 
 
 
+```
 <csymbol cd="interval1">interval_oo</csymbol>
-
+```
 
 instead? I think it's closer to what has been used. And if point doesn't exist, it's a great example why Content MathML is a high-friction solution - one has to keep inventing CDs, and making decisions that are disconnected from AT.
 
 
 https://openmath.org/cd/interval1.html#interval_oo
-[c]I think <point/> does not exist. How about <csymbol cd="wikidata">Q44946</csymbol>? ;-)
+[c]I think `<point/>` does not exist. How about `<csymbol cd="wikidata">Q44946</csymbol>`? ;-)
 [d]Nice point Moritz! 
 
 
@@ -341,16 +352,16 @@ https://openmath.org/cd/plangeo1.html#point
 [g]_Marked as resolved_
 [h]_Re-opened_
 [i]I'm afraid you'd have to change it to something valid to resolve - maybe one of the two csymbol examples we mentioned?
-[j]I think you've missed my point. I agree we should discuss the two csymbol examples, but as part of a discussion for how to handle symbols not present in content MathML, so I changed the text to add a forward reference to the Intent Vocabularies section where we could do so, and retained <point/> to preserve the integrity of the illustration of parallel markup.
+[j]I think you've missed my point. I agree we should discuss the two csymbol examples, but as part of a discussion for how to handle symbols not present in content MathML, so I changed the text to add a forward reference to the Intent Vocabularies section where we could do so, and retained `<point/>` to preserve the integrity of the illustration of parallel markup.
 
 
 
 
 Could you please move this comment/discussion to that section to be resolved there?
-[k]Using an invalid element in a public document -- without proposing to introduce it -- just causes pointless confusion. Or are you suggesting we extend Pragmatic Content MathML with a <point> element?
+[k]Using an invalid element in a public document -- without proposing to introduce it -- just causes pointless confusion. Or are you suggesting we extend Pragmatic Content MathML with a `<point>` element?
 
 
-How about we change to an example that is representable in Pragmatic Content MathML 3 then? My other suggestion was to switch to an interval example, where a simple <interval> element also exists in MathML 3.
+How about we change to an example that is representable in Pragmatic Content MathML 3 then? My other suggestion was to switch to an interval example, where a simple `<interval>` element also exists in MathML 3.
 
 
 Or just use a csymbol here.
@@ -365,10 +376,12 @@ And to achieve an approach which is natural (aka "low friction") in real world u
 [n]You should really consider allowing 
 
 
+```
 <csymbol cd="wiki-en">cartesian-coordinate</csymbol>
 
 
 <csymbol cd="wiki-bg">декартова-координата</csymbol>
+```
 
 
 etc. as aliases/alternatives to Q73454785
