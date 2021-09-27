@@ -3,10 +3,19 @@ title: "MathML Accessibility Gap Analysis"
 layout: wgnote
 ---
 
+<nav id="toc" markdown="1">
+
+# Table of Contents
+{:.no_toc}
+
+* toc
+{:toc}
+
+</nav>
 
 ## Introduction
 
-?The accessibility of mathematical content presents some unique challenges in terms of choosing the most natural reading, as well as of the ambiguity of common notations. Often a mathematical formula is simply "read off" as if directly from the display. For example $a_b$ might be read as "a sub b", or $(x,y)$ read as "open parenthesis x comma y close parenthesis". In other cases, the preferred reading may depend on (an approximate) "meaning" of the formula, such as $(x,y)$ being read as "the point x,y". Yet, that same expression may in fact represent "the open interval from x to y", (or a list or line segment, or ...) rather than a point, thus calling for disambiguation[a]
+The accessibility of mathematical content presents some unique challenges in terms of choosing the most natural reading, as well as of the ambiguity of common notations. Often a mathematical formula is simply "read off" as if directly from the display. For example $a_b$ might be read as "a sub b", or $(x,y)$ read as "open parenthesis x comma y close parenthesis". In other cases, the preferred reading may depend on (an approximate) "meaning" of the formula, such as $(x,y)$ being read as "the point x,y". Yet, that same expression may in fact represent "the open interval from x to y", (or a list or line segment, or ...) rather than a point, thus calling for disambiguation[a]
 
 
 There would appear to be a range of approaches to properly voicing mathematical formula with two extrema: At one end, one would simply encode exactly what is to be said. At the other, one provides the complete "semantics" of the formula, either by annotating the displayed form, or using parallel markup (to be discussed below), and leave it to the user agent to formulate the speech. The difficulties and limitations of these approaches, will be discussed below, as well as consideration of possible middle ground,
