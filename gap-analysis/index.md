@@ -3,6 +3,8 @@ title: "MathML Accessibility Gap Analysis"
 layout: wgnote
 ---
 
+{:toc}
+
 <nav id="toc" markdown="1">
 
 # Table of Contents
