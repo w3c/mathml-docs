@@ -43,27 +43,12 @@
 </div>
 
     <div class="container-lg px-3 my-5 markdown-body">
-      
-
-{% capture string_with_newlines %}
-<nav id="toc" markdown="1">
-
-# Table of Contents
-{:.no_toc}
-
-* toc
-{:toc}
-
-</nav>
-{% endcapture %}
-
-{{ string_with_newlines | markdownify }}
 
       {{ content }}
 
       {% if site.github.private != true and site.github.license %}
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        under construction <a href="{{ site.github.repository_url }}/tree/gh-pages/{{ page.path }}">Git Source</a>.
+        under construction <a href="{{ site.github.repository_url }}/tree/main/{{ page.path }}">Git Source</a>.
       </div>
       {% endif %}
     </div>
