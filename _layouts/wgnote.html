@@ -45,19 +45,7 @@
     <div class="container-lg px-3 my-5 markdown-body">
       
 
-      {{
-'
-<nav id="toc" markdown="1">
-
-# Table of Contents
-{:.no_toc}
-
-* toc
-{:toc}
-
-</nav>
-' | markdownify
-}}
+      {{ '<nav id="toc" markdown="1">\n # Table of Contents\n{:.no_toc} * toc\n {:toc}\n </nav>' | markdownify }}
 
       {{ content }}
 
