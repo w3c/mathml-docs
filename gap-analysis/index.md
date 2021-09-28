@@ -75,7 +75,7 @@ In general, math braille is presentational in that the braille describes the mat
 
 * The combinatorial symbol $\binom{m}{3}$  is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so we can promote them as “best practices”. The combinatorial for `\binom{n}{k}` is ⠷⠝⠩⠅⠾ and the matrix is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
-* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\{x \mid x \in ℝ\}$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\|3$ (x divides 3).
+* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\lbrace x \mid x \in ℝ\rbrace$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\|3$ (x divides 3).
 
 ## Example of Math \[[MathCounts](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf)]
 
