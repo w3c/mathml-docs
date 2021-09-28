@@ -37,15 +37,15 @@ The goal is to allow authors/authoring tools the ability to capture, in MathML, 
 
 The Working Group is committed to backwards compatibility.  Any solution to these problems should not invalidate old documents, but should allow progressive enhancement of existing content.  Moreover, authors should be able to enhance the math contained in their documents as little or as much as they choose.
 
-## Current State
-### The problem of ambiguity
+### Current State
+#### The problem of ambiguity
 
 Common mathematical expressions such as $ax^2+bx+c=0$ are mostly unambiguous. However there are some notations that are ambiguous which makes interpretation difficult. For example, $M^T$ could be “M” raised to the power “T” or it could be the transpose of a matrix “M”, it could be a set of mappings from the set “T” to the set “M” or the component “T” of a contravariant vector  “M”.  Another example is $(a,b)$: this could represent a point, or the open interval from ‘a’ to ‘b’, or the gcd of ‘a’ and ‘b’. There are several other potential interpretations. It is also the case that different notations can be used to represent the same concept. For example $]a,b[$ is also sometimes used to represent the open interval from ‘a’ to ‘b’ (but not the gcd, etc). These ambiguities present difficulties for accessibility, search, and computation as discussed below.
 
 
 To keep this document short, only the first of these will be shown below, but links to how all the examples might be handled for each approach are provided in the sections below..
 
-## Math Accessibility details on the Web
+### Math Accessibility details on the Web
 
 AT usually gets information about a web page through accessibility APIs provided by an OS. The information used is built by the browser from the browser’s DOM and is represented in a parallel structure called the Accessibility Tree. In general, the accessibility tree is a simplified version of the DOM in that only information needed by AT is exposed. For example, a span with no semantic information will not be part of the accessibility tree. A more detailed description can be found in [MathML Accessibility API Mappings 1.0](https://w3c.github.io/mathml-aam/#dfn-accessibility-api) [early stage working draft, 2021].
 
@@ -54,7 +54,8 @@ The platform APIs in general have not provided much support for mathematical not
 Windows -- because of the lack of MathML mappings on Windows, AT on Windows currently gets MathML from the DOM for accessibility.
 Linux -- it appears that browsers put MathML tags and attrs that do not have supported roles [into the accessibility tree via object attributes](https://w3c.github.io/core-aam/#mapping_nodirect) and AT (Orca) gets the info from there
 macOS/iOS -- it appears that Safari adds the MathML-equivalent tags; need to find out what happens to the attrs ?
-Android -- ???
+
+#### Android -- ???
 
 
 MathML and SVG live in somewhat parallel worlds in their relationship to HTML. [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/) (working draft, May 2018) gives details on SVG accessibility. In general, the document recommends adding ARIA to enhance the accessibility of SVG. Specifically, it states that shape elements (circle, etc) among many others do not go into the accessibility tree unless given semantics via ARIA (e.g, by aria-label). Also, more germane to MathML, elements that do not render visually should never be in the accessibility tree. For MathML, these invisible elements include the non-presentational part of semantics, maction, etc. Unlike math, there is no specialized braille language for graphics, nor is there an expected way SVG objects should be spoken in the absence of ARIA enhancements.
@@ -63,7 +64,7 @@ MathML and SVG live in somewhat parallel worlds in their relationship to HTML. [
 Ideally, platform APIs should allow those tags and attributes of MathML that have semantic value to be exposed in a straightforward manner. Most MathML tags have semantic value; some attributes do also. Examples of attributes that have semantic value are token elements’ “mathvariant” attribute and mfrac’s “linethickness” and “bevelled” attributes (binomial coefficient if equal to 0 and Nemeth code difference, respectively).
 
 
-## Accessibility of Mathematical Content
+### Accessibility of Mathematical Content
 
 For years, the accessibility of math in print, and later on the web and in other formats has been a large pain point. Typically, inaccessible images were used. Even when alternative text was provided, the text could not be converted to braille or navigated in a useful manner; only word-by-word navigation was possible.
 
@@ -77,7 +78,7 @@ In general, math braille is presentational in that the braille describes the mat
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
 * Vertical Bar ( \| ) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\lbrace x \mid x \in ℝ\rbrace$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\|3$ (x divides 3).
 
-## Example of Math \[[MathCounts](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf)]
+### Example of Math \[[MathCounts](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf)]
 
 
 ![MathCounts](mathcounts.png)
@@ -113,7 +114,7 @@ Notes on “baseline” narration:
 ## Leveraging Existing Technology
 The Web platform has support for a number of ideas related to some of our goals. We evaluate if they can be applied to MathML today, or could be extended in principle.
 
-## ARIA
+### ARIA
 ARIA was designed to allow adding additional information to a tag when a tag does not convey the intended semantics/speech. Hence, it seems a natural approach to use for MathML to disambiguate a notation. However, there are a number of issues unique to math that make the use of ARIA problematic without changes to the ARIA spec.
 
 
@@ -150,7 +151,7 @@ A downside to this approach is that it is very repetitive: every parent element 
 
 A number of issues surrounding the use of aria-labelledby are explored in this [prototype](https://hackmd.io/@dginev/SkBHsZTiO). Additionally, the prototype explores the use of aria-describedby to add additional information such as a variable being a natural number, something you would not want to hear in a full reading of an expression.
 
-## CSS
+### CSS
 In many ways parts of the issues or suggestions laid out in this document could have alternatives that lean into aspects of CSS' architecture.  CSS Selectors, for example, provide the platform standard for "selecting" and associating elements in the DOM tree with styling, some of which (generated content, for example) can be used to do some sorts of interesting annotation.  This would be even more pragmatic potentially through efforts in Houdini which might allow us to experiment with "CSS-like languages" which borrow all of the core concepts from CSS, but do not need to operate in the live profile and can potentially enable more ways to think about possible solutions. It is hard to say much more specifically on all of the possibilities until we begin to narrow some options and answer more questions, but one thing that could be somewhat difficult here would be the lack of support for powerful enough selectors.
 
 
@@ -174,7 +175,7 @@ Here is one way a CSS-like  solution might look:
 ```
 
 
-## Parallel MathML Markup
+### Parallel MathML Markup
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
 
 
@@ -207,7 +208,7 @@ The `<csymbol>point<csymbol/>` element in the above example shows one style of m
 The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
 
 
-### Challenges of parallel markup:
+#### Challenges of parallel markup:
 
 
 * Parallel markup includes both a presentation and a content encoding for each expression, so it roughly doubles the size of the markup compared to either presentation or content markup.
