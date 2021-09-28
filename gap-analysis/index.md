@@ -75,7 +75,7 @@ In general, math braille is presentational in that the braille describes the mat
 
 * The combinatorial symbol $\binom{m}{3}$  is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so we can promote them as “best practices”. The combinatorial for `\binom{n}{k}` is ⠷⠝⠩⠅⠾ and the matrix is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
-* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\{x \mid x \in ℝ\}$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\=\|3$ (x divides 3).
+* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\{x \mid x \in ℝ\}$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\|3$ (x divides 3).
 
 ## Example of Math \[MathCounts]
 
@@ -95,7 +95,7 @@ A better rendition which takes into account the author’s intent is:
 There are several ambiguities in the paragraph above. Three of them are:
 
 * $(0,5)$ -- Point, could be an open interval, gcd, cycle, or an ordered tuple, vector etc.
-* $\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
+* $\overline{AB}+\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
 * $B′_x$ -- scripted variable
 
     * subscript: x-coordinate, subscripted-variable, index in a matrix, argument x of the function B′
