@@ -73,13 +73,12 @@ The use of MathML has dramatically reduced these problems, but ambiguities in ma
 
 In general, math braille is presentational in that the braille describes the math that is seen, so problems with Presentation MathML are much fewer for braille generation. The WG has identified three examples where braille is not presentational in Nemeth code (a common braille math code in the US and some other countries):
 
-* The combinatorial symbol   is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so we can promote them as “best practices”. The combinatorial for \binom{n}{k} is ⠷⠝⠩⠅⠾ and the matrix is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾
+* The combinatorial symbol   is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so we can promote them as “best practices”. The combinatorial for `\binom{n}{k}` is ⠷⠝⠩⠅⠾ and the matrix is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
-* Vertical Bar (|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: {x | x ∈ℝ} and P(A|B). Examples where it is not a sign of comparison: |x| and x|3 (x divides 3).
+* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: {x | x ∈ℝ} and P(A|B). Examples where it is not a sign of comparison: \|x\| and x\|3 (x divides 3).
 
 ## Example of Math \[MathCounts]
 
-image?
 
 ![MathCounts](mathcounts.png)
  
@@ -308,7 +307,7 @@ Schema.org is an ongoing effort developing vocabularies for aiding “Rich Resul
 To aid in Search Engines' ability to find pages containing MathML, these pages with MathML should be included in the webpage’s Header Schema.org accessibility metadata.  Currently there is one property which would be appropriate for this which is ‘accessibilityFeature’.  Here is a current list of the values for accessibilityFeature of which “MathML” and “describedMath” would be appropriate to use.  There are plans to move this work from a W3C wiki page into something more formal, where new values are voted upon by the community but since accessibility metadata is broader than digital publishing it hasn’t yet been decided which group will take on this work.  When this group either gets created or this work falls into another W3C group any new values the MathML group would like them to consider adding can be done at a future meeting.
 
 ### Editing/Selecting Mathematical (Sub)Expressions
-Applications to edit mathematics need to have a notion of a insertion cursor and a selection. This information may sometimes be useful to preserve during copy/paste, so some additional attributes may want to be added. See MathML and OMML User Selection Attributes | Math in Office (microsoft.com). Note that the insertion cursor or selection may want to be displayed on a refreshable braille display (typically by using dots 7 and 8).
+Applications to edit mathematics need to have a notion of a insertion cursor and a selection. This information may sometimes be useful to preserve during copy/paste, so some additional attributes may want to be added. See MathML and OMML User Selection Attributes \| Math in Office (microsoft.com). Note that the insertion cursor or selection may want to be displayed on a refreshable braille display (typically by using dots 7 and 8).
 
 ### Conversion, Computation and Transfer
 Mathematical formulæ are often the subject of more than just reading and writing.
