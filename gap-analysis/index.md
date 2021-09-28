@@ -77,9 +77,11 @@ In general, math braille is presentational in that the braille describes the mat
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
 * Vertical Bar (|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: {x | x ∈ℝ} and P(A|B). Examples where it is not a sign of comparison: |x| and x|3 (x divides 3).
 
-## Example of Math [MathCounts]
+## Example of Math \[MathCounts]
 
+image?
 
+![MathCounts](mathcounts.png)
  
 An example of non-semantic, presentational speech for this paragraph is:
 
