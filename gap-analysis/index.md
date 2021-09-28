@@ -47,17 +47,17 @@ To keep this document short, only the first of these will be shown below, but li
 
 ## Math Accessibility details on the Web
 
-AT usually gets information about a web page through accessibility APIs provided by an OS. The information used is built by the browser from the browser’s DOM and is represented in a parallel structure called the Accessibility Tree. In general, the accessibility tree is a simplified version of the DOM in that only information needed by AT is exposed. For example, a span with no semantic information will not be part of the accessibility tree. A more detailed description can be found in MathML Accessibility API Mappings 1.0 [early stage working draft, 2021].
+AT usually gets information about a web page through accessibility APIs provided by an OS. The information used is built by the browser from the browser’s DOM and is represented in a parallel structure called the Accessibility Tree. In general, the accessibility tree is a simplified version of the DOM in that only information needed by AT is exposed. For example, a span with no semantic information will not be part of the accessibility tree. A more detailed description can be found in [MathML Accessibility API Mappings 1.0](https://w3c.github.io/mathml-aam/#dfn-accessibility-api) [early stage working draft, 2021].
 
 
-The platform APIs in general have not provided much support for mathematical notation beyond a generic “math” role. However,  ATK (used by Orca) added a few roles to support math in 2015; that support is not sufficient to represent a number of mathematical notations (e.g., “munder” and “msubsup”). Apple has tentatively(?) added MathML equivalent roles to AX API (based on what is listed in the MathML API Mappings), but those (sub)roles are not documented anywhere on Apple’s website. The current state appears to be:
+The platform APIs in general have not provided much support for mathematical notation beyond a generic “math” role. However,  ATK (used by Orca) added a few roles to support math in 2015; that support is not sufficient to represent a number of mathematical notations (e.g., “munder” and “msubsup”). Apple has tentatively(?) added MathML equivalent roles to AX API (based on what is listed in the [MathML API Mappings](https://w3c.github.io/mathml-aam/#mapping-mathml-to-accessibility-apis)), but those (sub)roles are not documented anywhere on Apple’s website. The current state appears to be:
 Windows -- because of the lack of MathML mappings on Windows, AT on Windows currently gets MathML from the DOM for accessibility.
-Linux -- it appears that browsers put MathML tags and attrs that do not have supported roles into the accessibility tree via object attributes and AT (Orca) gets the info from there
+Linux -- it appears that browsers put MathML tags and attrs that do not have supported roles [into the accessibility tree via object attributes](https://w3c.github.io/core-aam/#mapping_nodirect) and AT (Orca) gets the info from there
 macOS/iOS -- it appears that Safari adds the MathML-equivalent tags; need to find out what happens to the attrs ?
 Android -- ???
 
 
-MathML and SVG live in somewhat parallel worlds in their relationship to HTML. SVG Accessibility API Mappings (working draft, May 2018) gives details on SVG accessibility. In general, the document recommends adding ARIA to enhance the accessibility of SVG. Specifically, it states that shape elements (circle, etc) among many others do not go into the accessibility tree unless given semantics via ARIA (e.g, by aria-label). Also, more germane to MathML, elements that do not render visually should never be in the accessibility tree. For MathML, these invisible elements include the non-presentational part of semantics, maction, etc. Unlike math, there is no specialized braille language for graphics, nor is there an expected way SVG objects should be spoken in the absence of ARIA enhancements.
+MathML and SVG live in somewhat parallel worlds in their relationship to HTML. [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/) (working draft, May 2018) gives details on SVG accessibility. In general, the document recommends adding ARIA to enhance the accessibility of SVG. Specifically, it states that shape elements (circle, etc) among many others do not go into the accessibility tree unless given semantics via ARIA (e.g, by aria-label). Also, more germane to MathML, elements that do not render visually should never be in the accessibility tree. For MathML, these invisible elements include the non-presentational part of semantics, maction, etc. Unlike math, there is no specialized braille language for graphics, nor is there an expected way SVG objects should be spoken in the absence of ARIA enhancements.
 
 
 Ideally, platform APIs should allow those tags and attributes of MathML that have semantic value to be exposed in a straightforward manner. Most MathML tags have semantic value; some attributes do also. Examples of attributes that have semantic value are token elements’ “mathvariant” attribute and mfrac’s “linethickness” and “bevelled” attributes (binomial coefficient if equal to 0 and Nemeth code difference, respectively).
@@ -77,7 +77,7 @@ In general, math braille is presentational in that the braille describes the mat
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
 * Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\{x \mid x \in ℝ\}$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\|3$ (x divides 3).
 
-## Example of Math \[MathCounts]
+## Example of Math \[[MathCounts](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf)]
 
 
 ![MathCounts](mathcounts.png)
@@ -95,8 +95,8 @@ A better rendition which takes into account the author’s intent is:
 There are several ambiguities in the paragraph above. Three of them are:
 
 * $(0,5)$ -- Point, could be an open interval, gcd, cycle, or an ordered tuple, vector etc.
-* $\overline{AB}+\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
-* $B′_x$ -- scripted variable
+* $\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
+* $B'_x$ -- scripted variable
 
     * subscript: x-coordinate, subscripted-variable, index in a matrix, argument x of the function B′
     * superscript: Prime, could be arcminutes, feet, derivative
@@ -121,7 +121,7 @@ The simplest approach to using ARIA would be to add aria-label to a math tag. Th
 
 * The value of the label is a plain text string. Speech cues (such as pauses) can not be added nor can forced pronunciation. In particular, in English, mathematics always uses the long ‘a’ sound, but speech engines have no way to know they are speaking math and so often use the short ‘a’ sound which often makes the math unintelligible. Similarly, mathematical expressions have a different prosody than normal speech, so what is spoken is often harder to understand than it should be.
 * Mathematics has its own braille code. The braille used for math differs significantly from the text used for speech. ARIA 1.3 draft adds the attribute ‘braille-labelledby’ so there is the possibility of providing braille, but that is a large ask for the document author to generate braille for math. Furthermore, there are multiple braille codes for some languages (in English, UEB and Nemeth); it is not possible for the author to know which braille code to generate.
-* With the exception of ‘maction’, MathML elements are static elements. According to this blog, aria-label on static elements has poor support in many screen readers.
+* With the exception of ‘maction’, MathML elements are static elements. According to [this blog](https://www.davidmacd.com/blog/does-aria-label-override-static-text.html), aria-label on static elements has poor support in many screen readers.
 
 
 Mathematical expressions can often be long enough that a user needs to explore/navigate them. This means the simple approach of using aria-label only on a math tag is too simple -- it needs to be placed on all the parts of the expression where the normal reading would be incorrect (at a minimum, from the deepest point in the tree where there is ambiguity to the root). This is a viable approach and SRE in MathJaX does something similar (it doesn’t use aria-label because screen readers don’t support aria-label on MathML elements; it uses JS to read its private attribute).
@@ -148,7 +148,7 @@ A downside to this approach is that it is very repetitive: every parent element 
 </math>
 ```
 
-A number of issues surrounding the use of aria-labelledby are explored in this prototype. Additionally, the prototype explores the use of aria-describedby to add additional information such as a variable being a natural number, something you would not want to hear in a full reading of an expression.
+A number of issues surrounding the use of aria-labelledby are explored in this [prototype](https://hackmd.io/@dginev/SkBHsZTiO). Additionally, the prototype explores the use of aria-describedby to add additional information such as a variable being a natural number, something you would not want to hear in a full reading of an expression.
 
 ## CSS
 In many ways parts of the issues or suggestions laid out in this document could have alternatives that lean into aspects of CSS' architecture.  CSS Selectors, for example, provide the platform standard for "selecting" and associating elements in the DOM tree with styling, some of which (generated content, for example) can be used to do some sorts of interesting annotation.  This would be even more pragmatic potentially through efforts in Houdini which might allow us to experiment with "CSS-like languages" which borrow all of the core concepts from CSS, but do not need to operate in the live profile and can potentially enable more ways to think about possible solutions. It is hard to say much more specifically on all of the possibilities until we begin to narrow some options and answer more questions, but one thing that could be somewhat difficult here would be the lack of support for powerful enough selectors.
@@ -178,7 +178,7 @@ Here is one way a CSS-like  solution might look:
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
 
 
-The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as Parallel MathML Markup.  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
+The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as [Parallel MathML Markup](https://www.w3.org/TR/MathML2/chapter5.html#mixing.parallel).  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
 
 
 ```xml
@@ -219,7 +219,7 @@ The `<semantics>` element has been part of the MathML standard since 2003, so no
 * Since the two forms are not isomorphic, there will be presentation nodes with no corresponding content node, and vice-versa. However, because the semantic information needed to resolve a notation is encoded in a separate branch of the document tree, it poses the challenge to locate and extract the semantics when processing the presentation.
 
 
-MathML 1 and MathML 2 defined about 140 tags that describe the functional content. This list does not begin to cover the vast amount of mathematical content, so MathML 3 added a means to use a URI to point to external sources to define the meaning of a tag. Although MathML favors using OpenMath standard’s formal dictionaries, any source can be used. Most official (according to the MathML3 spec) content dictionaries are rather formal which can be helpful for search, computation and even theorem proving, but not helpful for accessibility support in that they lack wording to use for speaking the content. However, because any URI can be used, it is possible to link to content dictionaries that have ways to associate speech with meaning. Wikidata is an example of such a dictionary (http://ceur-ws.org/Vol-2307/paper51.pdf). For example, the Wikidata definition of “point” is here.
+MathML 1 and MathML 2 defined about 140 tags that describe the functional content. This list does not begin to cover the vast amount of mathematical content, so MathML 3 added a means to use a URI to point to external sources to define the meaning of a tag. Although MathML favors using OpenMath standard’s formal dictionaries, any source can be used. Most official (according to the MathML3 spec) content dictionaries are rather formal which can be helpful for search, computation and even theorem proving, but not helpful for accessibility support in that they lack wording to use for speaking the content. However, because any URI can be used, it is possible to link to content dictionaries that have ways to associate speech with meaning. Wikidata is an example of such a dictionary <http://ceur-ws.org/Vol-2307/paper51.pdf>. For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946).
 
 
 Cons:
@@ -295,9 +295,9 @@ As discussed above, in some situations a very literal vocalization of the displa
 #### Structured data via schema.org RDFa annotations
 Schema.org is an ongoing effort developing vocabularies for aiding “Rich Results” in information retrieval, endorsed by most major search engines. We did a basic evaluation, with the goal of exposing our rich “intent” information to search engines.
 
-* There are no targeted vocabulary entries for the kind of information we want to enrich in presentation MathML. Loosely related entries were “disambiguatingDescription” and “name”. A prototype of how they could be added to MathML 3 via RDFa can be seen here
+* There are no targeted vocabulary entries for the kind of information we want to enrich in presentation MathML. Loosely related entries were “disambiguatingDescription” and “name”. A prototype of how they could be added to MathML 3 via RDFa can be seen [here](https://github.com/dginev/tiny-mathml-a11y-demo/blob/master/schema_experiment_2.html)
 * There are vocabulary items explicitly referring to mathematics, which are specific to applications - “mathSolver”, “solveMathAction”, “mathExpression”, and can not be repurposed as augmentations over MathML.
-    * These developments are recent, and there is some possibility we could request new vocabulary entries for MathML-specific search needs.
+    * These developments are [recent](https://github.com/schemaorg/schemaorg/issues/2740), and there is some possibility we could request new vocabulary entries for MathML-specific search needs.
 * There was no viable outcome in using the existing schema.org vocabulary. Pages with well-indexed structured data did not benefit - querying for the new information we introduced in the annotations returned no results. It is likely that while this data can be accessed by web crawlers, it may not be added to search engines before creating an explicit “Rich result” application.
     * This leads us to believe this avenue will only be viable in close collaboration with browser vendors, even if existing vocabulary entries can be repurposed for our needs.
 * The theoretical upside of adopting a structured data annotation approach is to avoid introducing additional complexity inside MathML itself, and delegate all search-related markup to existing technologies. However, it is currently unclear if there is any path to reusing these approaches over math expressions, especially when considering adoption in major search engines.
@@ -306,10 +306,10 @@ Schema.org is an ongoing effort developing vocabularies for aiding “Rich Resul
 #### Discoverability
 
 
-To aid in Search Engines' ability to find pages containing MathML, these pages with MathML should be included in the webpage’s Header Schema.org accessibility metadata.  Currently there is one property which would be appropriate for this which is ‘accessibilityFeature’.  Here is a current list of the values for accessibilityFeature of which “MathML” and “describedMath” would be appropriate to use.  There are plans to move this work from a W3C wiki page into something more formal, where new values are voted upon by the community but since accessibility metadata is broader than digital publishing it hasn’t yet been decided which group will take on this work.  When this group either gets created or this work falls into another W3C group any new values the MathML group would like them to consider adding can be done at a future meeting.
+To aid in Search Engines' ability to find pages containing MathML, these pages with MathML should be included in the webpage’s Header Schema.org accessibility metadata.  Currently there is one property which would be appropriate for this which is ‘accessibilityFeature’.  Here is a current [list of the values for accessibilityFeature](https://www.w3.org/wiki/WebSchemas/Accessibility) of which “MathML” and “describedMath” would be appropriate to use.  There are plans to move this work from a W3C wiki page into something more formal, where new values are voted upon by the community but since accessibility metadata is broader than digital publishing it hasn’t yet been decided which group will take on this work.  When this group either gets created or this work falls into another W3C group any new values the MathML group would like them to consider adding can be done at a future meeting.
 
 ### Editing/Selecting Mathematical (Sub)Expressions
-Applications to edit mathematics need to have a notion of a insertion cursor and a selection. This information may sometimes be useful to preserve during copy/paste, so some additional attributes may want to be added. See MathML and OMML User Selection Attributes \| Math in Office (microsoft.com). Note that the insertion cursor or selection may want to be displayed on a refreshable braille display (typically by using dots 7 and 8).
+Applications to edit mathematics need to have a notion of a insertion cursor and a selection. This information may sometimes be useful to preserve during copy/paste, so some additional attributes may want to be added. See [MathML and OMML User Selection Attributes \| Math in Office (microsoft.com)](https://devblogs.microsoft.com/math-in-office/mathml-and-omml-user-selection-attributes/). Note that the insertion cursor or selection may want to be displayed on a refreshable braille display (typically by using dots 7 and 8).
 
 ### Conversion, Computation and Transfer
 Mathematical formulæ are often the subject of more than just reading and writing.
