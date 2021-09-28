@@ -17,7 +17,7 @@ layout: wgnote
 
 ## Introduction
 
-The accessibility of mathematical content presents some unique challenges in terms of choosing the most natural reading, as well as of the ambiguity of common notations. Often a mathematical formula is simply "read off" as if directly from the display. For example  might be read as "a sub b", or  read as "open parenthesis x comma y close parenthesis". In other cases, the preferred reading may depend on (an approximate) "meaning" of the formula, such as  being read as "the point x,y". Yet, that same expression may in fact represent "the open interval from x to y", (or a list or line segment, or ...) rather than a point, thus calling for disambiguation
+The accessibility of mathematical content presents some unique challenges in terms of choosing the most natural reading, as well as of the ambiguity of common notations. Often a mathematical formula is simply "read off" as if directly from the display. For example $a_b$  might be read as "a sub b", or $(x,y)$ read as "open parenthesis x comma y close parenthesis". In other cases, the preferred reading may depend on (an approximate) "meaning" of the formula, such as $(x,y)$  being read as "the point x,y". Yet, that same expression may in fact represent "the open interval from x to y", (or a list or line segment, or ...) rather than a point, thus calling for disambiguation
 
 
 There would appear to be a range of approaches to properly voicing mathematical formulas: At one extreme, one would simply encode exactly what is to be said; a more aria-like approach. At the extreme, one provides the complete "semantics" of the formula, either by annotating the displayed form, or using MathML’s parallel markup, leaving it to the user agent to formulate the speech. The details of these approaches, along with their difficulties and limitations of these approaches, will be discussed below. We seek a practical solution, possibly a middle ground,
@@ -40,7 +40,7 @@ The Working Group is committed to backwards compatibility.  Any solution to thes
 ## Current State
 ### The problem of ambiguity
 
-Common mathematical expressions such as  are mostly unambiguous. However there are some notations that are ambiguous which makes interpretation difficult. For example, could be “M” raised to the power “T” or it could be the transpose of a matrix “M”, it could be a set of mappings from the set “T” to the set “M” or the component “T” of a contravariant vector  “M”.  Another example is : this could represent a point, or the open interval from ‘a’ to ‘b’, or the gcd of ‘a’ and ‘b’. There are several other potential interpretations. It is also the case that different notations can be used to represent the same concept. For example ]a,b[ is also sometimes used to represent the open interval from ‘a’ to ‘b’ (but not the gcd, etc). These ambiguities present difficulties for accessibility, search, and computation as discussed below.
+Common mathematical expressions such as $ax^2+bx+c=0$ are mostly unambiguous. However there are some notations that are ambiguous which makes interpretation difficult. For example, $M^T$ could be “M” raised to the power “T” or it could be the transpose of a matrix “M”, it could be a set of mappings from the set “T” to the set “M” or the component “T” of a contravariant vector  “M”.  Another example is $(a,b)$: this could represent a point, or the open interval from ‘a’ to ‘b’, or the gcd of ‘a’ and ‘b’. There are several other potential interpretations. It is also the case that different notations can be used to represent the same concept. For example $]a,b[$ is also sometimes used to represent the open interval from ‘a’ to ‘b’ (but not the gcd, etc). These ambiguities present difficulties for accessibility, search, and computation as discussed below.
 
 
 To keep this document short, only the first of these will be shown below, but links to how all the examples might be handled for each approach are provided in the sections below..
@@ -68,14 +68,14 @@ Ideally, platform APIs should allow those tags and attributes of MathML that hav
 For years, the accessibility of math in print, and later on the web and in other formats has been a large pain point. Typically, inaccessible images were used. Even when alternative text was provided, the text could not be converted to braille or navigated in a useful manner; only word-by-word navigation was possible.
 
 
-The use of MathML has dramatically reduced these problems, but ambiguities in math notation mean that semantic speech can’t be reliably generated. For example, could be the coordinate of a point or it could be the open interval from x to y. Braille encodes them the same and of course speech could have the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities.. Nonetheless, it is widely assumed because people/teachers in practice say this and listeners are used to it. The claim is easiest to showcase in examples where the presentation is much more verbose than speaking out the mathematical objects and operations, as would be continued fractions, large identity matrices, or stacked embellished operators such as partial derivatives. All of these examples are easily identifiable to sighted users, but those relying on speech would need to wade through a long speech stream if the presentational details are fully described.
+The use of MathML has dramatically reduced these problems, but ambiguities in math notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille encodes them the same and of course speech could have the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities.. Nonetheless, it is widely assumed because people/teachers in practice say this and listeners are used to it. The claim is easiest to showcase in examples where the presentation is much more verbose than speaking out the mathematical objects and operations, as would be continued fractions, large identity matrices, or stacked embellished operators such as partial derivatives. All of these examples are easily identifiable to sighted users, but those relying on speech would need to wade through a long speech stream if the presentational details are fully described.
 
 
 In general, math braille is presentational in that the braille describes the math that is seen, so problems with Presentation MathML are much fewer for braille generation. The WG has identified three examples where braille is not presentational in Nemeth code (a common braille math code in the US and some other countries):
 
-* The combinatorial symbol   is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so we can promote them as “best practices”. The combinatorial for `\binom{n}{k}` is ⠷⠝⠩⠅⠾ and the matrix is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾
+* The combinatorial symbol $\binom{m}{3}$  is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so we can promote them as “best practices”. The combinatorial for `\binom{n}{k}` is ⠷⠝⠩⠅⠾ and the matrix is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾
 * “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
-* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: {x | x ∈ℝ} and P(A|B). Examples where it is not a sign of comparison: \|x\| and x\|3 (x divides 3).
+* Vertical Bar (\|) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\{x \mid x \in ℝ\}$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x\=\|3$ (x divides 3).
 
 ## Example of Math \[MathCounts]
 
@@ -94,11 +94,13 @@ A better rendition which takes into account the author’s intent is:
 
 There are several ambiguities in the paragraph above. Three of them are:
 
-* (0,5) -- Point, could be an open interval, gcd, cycle, or an ordered tuple, vector etc.
-*    -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
-*  B′x -- scripted variable
-* subscript: x-coordinate, subscripted-variable, index in a matrix, argument x of the function B′
-* superscript: Prime, could be arcminutes, feet, derivative
+* $(0,5)$ -- Point, could be an open interval, gcd, cycle, or an ordered tuple, vector etc.
+* $\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
+* $B′_x$ -- scripted variable
+
+    * subscript: x-coordinate, subscripted-variable, index in a matrix, argument x of the function B′
+    * superscript: Prime, could be arcminutes, feet, derivative
+
 These will be used to illustrate different ways of potentially resolving the ambiguity in that notation.
 
 
@@ -274,10 +276,10 @@ An advantage of this proposal is that it can be implemented using current techno
 Considerable investigation is underway to collect default names for math operators, and to explore common presentation markup patterns to apply attribute values to express the intent.  Elementary intent examples can often be encoded using only the default intent rules, and many intermediate examples can be handled by encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts.
 
 ### Subject Area
-Providing a subject area attribute such as subject=”geometry” is an adjunct to ‘intent’ and provides a simpler means of remediating a document in some cases. For example, a publisher might add a subject area to all the math tags in a Geometry book so that the default intent of   is intent="point($1,$2)". The three examples used in this document would all be captured by subject=”geometry” on the math tag: point, line segment, and scripted value (with ‘x’ or ‘y’) are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., H2O); and “-” and “=” represent single and double bonds.
+Providing a subject area attribute such as subject=”geometry” is an adjunct to ‘intent’ and provides a simpler means of remediating a document in some cases. For example, a publisher might add a subject area to all the math tags in a Geometry book so that the default intent of   is intent="point($1,$2)". The three examples used in this document would all be captured by subject=”geometry” on the math tag: point, line segment, and scripted value (with ‘x’ or ‘y’) are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
 
 
-The Math WG has not discussed using subject areas much yet. It is likely that, at least initially, the number of known subject areas would be limited to perhaps as few as 5 - 15 subject areas covering basic math and science areas. The number of changes to defaults is very dependent on the subject area. As with “intent”, subject area can be implemented without changes to other web standards other than needing to be part of the accessibility tree. At least one AT tool (MathPlayer) makes use of user-specified subject areas to override defaults on what is spoken. Classifying mathematics and other sciences is difficult. It is unknown if a broad brush categorization approach to K-14 topics as currently envisioned is feasible; it remains to be investigated.
+The Math WG has not discussed using subject areas much yet. It is likely that, at least initially, the number of known subject areas would be limited to perhaps as few as 5–15 subject areas covering basic math and science areas. The number of changes to defaults is very dependent on the subject area. As with “intent”, subject area can be implemented without changes to other web standards other than needing to be part of the accessibility tree. At least one AT tool (MathPlayer) makes use of user-specified subject areas to override defaults on what is spoken. Classifying mathematics and other sciences is difficult. It is unknown if a broad brush categorization approach to K-14 topics as currently envisioned is feasible; it remains to be investigated.
 
 ### Other target applications of MathML
 
@@ -295,9 +297,9 @@ Schema.org is an ongoing effort developing vocabularies for aiding “Rich Resul
 
 * There are no targeted vocabulary entries for the kind of information we want to enrich in presentation MathML. Loosely related entries were “disambiguatingDescription” and “name”. A prototype of how they could be added to MathML 3 via RDFa can be seen here
 * There are vocabulary items explicitly referring to mathematics, which are specific to applications - “mathSolver”, “solveMathAction”, “mathExpression”, and can not be repurposed as augmentations over MathML.
-* These developments are recent, and there is some possibility we could request new vocabulary entries for MathML-specific search needs.
+    * These developments are recent, and there is some possibility we could request new vocabulary entries for MathML-specific search needs.
 * There was no viable outcome in using the existing schema.org vocabulary. Pages with well-indexed structured data did not benefit - querying for the new information we introduced in the annotations returned no results. It is likely that while this data can be accessed by web crawlers, it may not be added to search engines before creating an explicit “Rich result” application.
-* This leads us to believe this avenue will only be viable in close collaboration with browser vendors, even if existing vocabulary entries can be repurposed for our needs.
+    * This leads us to believe this avenue will only be viable in close collaboration with browser vendors, even if existing vocabulary entries can be repurposed for our needs.
 * The theoretical upside of adopting a structured data annotation approach is to avoid introducing additional complexity inside MathML itself, and delegate all search-related markup to existing technologies. However, it is currently unclear if there is any path to reusing these approaches over math expressions, especially when considering adoption in major search engines.
 
 
