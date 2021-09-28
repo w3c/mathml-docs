@@ -155,18 +155,18 @@ In many ways parts of the issues or suggestions laid out in this document could 
 Here is one way a CSS-like  solution might look:
 
 ```xml
-<mrow class=”point”>
+<mrow class="point">
   <mo>(</mo>
-  <mi class=”arg1”>a</mi>
+  <mi class="arg1">a</mi>
   <mo>,</mo>
-  <mi class=”arg2">b</mi>
+  <mi class="arg2">b</mi>
   <mo>)</mo>
 </mrow>
 ```
 
 ```css
 .point {
-   Speech: “the point ” .point.arg1 “ comma ” .point.arg2;
+   Speech: "the point " .point.arg1 " comma " .point.arg2;
    Nemeth: …;
 };
 ```
