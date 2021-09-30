@@ -58,50 +58,56 @@ For years, the accessibility of math in print, and later on the web and in other
 The use of MathML has dramatically reduced these problems, but ambiguities in math notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
 * $x^2$ -- "x squared" versus "x superscript 2 end superscript"
 * $\hat{x}$ -- "x hat" versus "x modified above with circumflex"
-* $\bigl(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\bigr)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
+* $\big(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\big)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
 
 While all AT speaks $x^2$ semantically, the capabilities of AT for semantic speech varies considerable.
 
 #### Large Example
 To fully appreciate the difference between presentational and semantic speech, below is a question from a [MathCounts middle school math competition](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf).
 
-<details markdown=1>
-<summary><span markdown=1>MathCounts problem -- image with two possible descriptions and details</span><summary>
+<details>
+<summary>
+MathCounts problem -- image with two possible descriptions and details
 </summary>
+<img src="mathcounts.png" alt="text of problem followed by a triangle and it rotated version of itself">
 
-![text of problem followed by a triangle and it rotated version of itself](mathcounts.png)
-
-<details markdown=1>
-<summary>An example of non-semantic, presentational speech for this paragraph is:</summary>
-
-> “Given the congruent right triangles A B C and A superscript prime B superscript prime C superscript prime [pause] A equals open paren 0 comma 5 close paren [pause] B equals open paren 12 comma 0 close paren [pause] C equals open paren 0 comma 0 close paren [pause] A superscript prime equals open paren 3 comma 4 close paren [pause] C superscript prime equals open paren 0 comma 0 close paren [pause] and X is the intersection of modifying-above A superscript prime B superscript prime with bar and the x axis [sentence pause] What is the area enclosed by triangle X B superscript prime C superscript prime divided by the area of A superscript prime B superscript prime C superscript prime ? [sentence pause] The area enclosed by A superscript prime B superscript prime C superscript prime is the same as that of A B C, which is 12 times 5 divided by 2 equals 30 units sup 2 [sentence pause] The slope of C superscript prime A superscript prime is 4 divided by 3 [pause] so the slope of perpendicular C superscript prime B superscript prime is the negative reciprocal [pause] or minus 3 divided by 4 [sentence pause] The length of modifying-above C superscript prime B superscript prime with bar is the same as the length of C B [pause] namely 12 units [sentence pause] Therefore [pause] the coordinates of B superscript prime are B superscript prime sub x equals 0 plus start-fraction 4 over square-root of 3 sup 2 plus 4 sup 2 end-square-root end-fraction times 12 equals plus 9.6 and B superscript prime sub y equals 0 minus start-fraction 3 over square-root of 3 sup 2 plus 4 sup 2 end square-root end-fraction times 12 equals minus 7.2 [pause] so B superscript prime equals open paren 9.6 comma minus 7.2 close paren [sentence pause] Based on the y-component values [pause] X is start-fraction 4 over 4 plus 7.2 end-fraction equals start-fraction 4 over 11.2 end-fraction equals start-fraction 5 over 14 end-fraction of the way from A superscript prime B superscript prime [pause] so X sub x equals 3 plus start-fraction 5 over 14 end-fraction open paren 9.6 minus 3 close paren equals start-fraction 75 over 14 end-fraction [sentence-pause] Therefore [pause] the base of X B superscript prime C superscript prime is the length of modifying-above C superscript prime X with bar [pause] which is start-fraction 75 over 14 end-fraction while the height is 7.2 equals start-fraction 36 over 5 end-fraction [pause] making the enclosed area equal to one-half the product of these two values [pause] start-fraction 1 over 2 end-fraction times start-fraction 75 over 14 end-fraction times start-fraction thirty 6 over 5 end-fraction equals start-fraction 270 over 14 end-fraction equals 135 over 7 end-fraction [pause] which needs to divided by 30 [pause] the area enclosed by A superscript prime B superscript prime C superscript prime [pause] start-fraction 135 over 30 times 7 end-fraction equals start-fraction 9 over 14 end-fraction [sentence-pause]”
-
+<details>
+<summary>
+An example of non-semantic, presentational speech for this paragraph is:
+</summary>
+<blockquote>
+“Given the congruent right triangles A B C and A superscript prime B superscript prime C superscript prime [pause] A equals open paren 0 comma 5 close paren [pause] B equals open paren 12 comma 0 close paren [pause] C equals open paren 0 comma 0 close paren [pause] A superscript prime equals open paren 3 comma 4 close paren [pause] C superscript prime equals open paren 0 comma 0 close paren [pause] and X is the intersection of modifying-above A superscript prime B superscript prime with bar and the x axis [sentence pause] What is the area enclosed by triangle X B superscript prime C superscript prime divided by the area of A superscript prime B superscript prime C superscript prime ? [sentence pause] The area enclosed by A superscript prime B superscript prime C superscript prime is the same as that of A B C, which is 12 times 5 divided by 2 equals 30 units sup 2 [sentence pause] The slope of C superscript prime A superscript prime is 4 divided by 3 [pause] so the slope of perpendicular C superscript prime B superscript prime is the negative reciprocal [pause] or minus 3 divided by 4 [sentence pause] The length of modifying-above C superscript prime B superscript prime with bar is the same as the length of C B [pause] namely 12 units [sentence pause] Therefore [pause] the coordinates of B superscript prime are B superscript prime sub x equals 0 plus start-fraction 4 over square-root of 3 sup 2 plus 4 sup 2 end-square-root end-fraction times 12 equals plus 9.6 and B superscript prime sub y equals 0 minus start-fraction 3 over square-root of 3 sup 2 plus 4 sup 2 end square-root end-fraction times 12 equals minus 7.2 [pause] so B superscript prime equals open paren 9.6 comma minus 7.2 close paren [sentence pause] Based on the y-component values [pause] X is start-fraction 4 over 4 plus 7.2 end-fraction equals start-fraction 4 over 11.2 end-fraction equals start-fraction 5 over 14 end-fraction of the way from A superscript prime B superscript prime [pause] so X sub x equals 3 plus start-fraction 5 over 14 end-fraction open paren 9.6 minus 3 close paren equals start-fraction 75 over 14 end-fraction [sentence-pause] Therefore [pause] the base of X B superscript prime C superscript prime is the length of modifying-above C superscript prime X with bar [pause] which is start-fraction 75 over 14 end-fraction while the height is 7.2 equals start-fraction 36 over 5 end-fraction [pause] making the enclosed area equal to one-half the product of these two values [pause] start-fraction 1 over 2 end-fraction times start-fraction 75 over 14 end-fraction times start-fraction thirty 6 over 5 end-fraction equals start-fraction 270 over 14 end-fraction equals 135 over 7 end-fraction [pause] which needs to divided by 30 [pause] the area enclosed by A superscript prime B superscript prime C superscript prime [pause] start-fraction 135 over 30 times 7 end-fraction equals start-fraction 9 over 14 end-fraction [sentence-pause]”
+</blockquote>
 </details>
-
-<details markdown=1>
-<summary>A better rendition which takes into account the author’s intent is:</summary>
-
-> “Given congruent right triangles A B C and A prime B prime, C prime, A equals the point 0 comma 5 [pause] B equals the point 12 comma 0 [pause] C equals the point 0 comma 0, A prime equals the point 3 comma 4 [pause] C prime equals the point 0 comma 0, and X is the intersection of the line segment A prime B prime and the x-axis. What is the area enclosed by triangle X B prime C prime divided by the area of A prime B prime C prime? The area enclosed by A prime B prime C prime is the same as that of A B C, which is 12 times 5 halves equals 30 units squared. The slope of C prime A prime is 4 thirds, so the slope of perpendicular C prime B prime is the negative reciprocal, or negative 3 fourths. The length of the line segment C prime B prime is the same as the length of C B, namely 12 units. Therefore, the coordinates of B prime are B prime sub x equals 0 plus start-fraction 4 over square-root of 3 squared plus 4 squared end-square-root end-fraction times 12 equals plus 9.6 and B prime sub y equals 0 minus 3 start-fraction 3 over square-root of 3 squared plus 4 squared end square-root end-fraction times 12 equals to minus 7.2 [pause] so B prime equals the point 9.6 comma negative 7.2. Based on the y-component values, X is start-fraction 4 over 4 plus 7.2 end-fraction equals to start-fraction 4 over 11.2 end-fraction equals to start-fraction 5 over 14 end-fraction of the way from A prime to B prime, so X sub x equals 3 plus 5 over 14 times open paren 9.6 minus 3 close paren equals 75 over 14 [sentence-pause] Therefore, the base of X B prime C prime is the length of the line segment C prime X [pause] which is 75 over 14 while the height is 7.2 equals 36 over 5 [pause] making the enclosed area equal to one-half the product of these two values: 1 half times 75 over 14 times 36 over 5 equals 270 over 14 equals 135 over 7 which needs to divided by 30, the area enclosed by A prime B prime C prime [pause] start-fraction 135 over 30 times 7 end-fraction equals start-fraction 9 over 14 end-fraction [sentence-pause]”
-
+<details>
+<summary>
+A better rendition which takes into account the author’s intent is:
+</summary>
+<blockquote>
+“Given congruent right triangles A B C and A prime B prime, C prime, A equals the point 0 comma 5 [pause] B equals the point 12 comma 0 [pause] C equals the point 0 comma 0, A prime equals the point 3 comma 4 [pause] C prime equals the point 0 comma 0, and X is the intersection of the line segment A prime B prime and the x-axis. What is the area enclosed by triangle X B prime C prime divided by the area of A prime B prime C prime? The area enclosed by A prime B prime C prime is the same as that of A B C, which is 12 times 5 halves equals 30 units squared. The slope of C prime A prime is 4 thirds, so the slope of perpendicular C prime B prime is the negative reciprocal, or negative 3 fourths. The length of the line segment C prime B prime is the same as the length of C B, namely 12 units. Therefore, the coordinates of B prime are B prime sub x equals 0 plus start-fraction 4 over square-root of 3 squared plus 4 squared end-square-root end-fraction times 12 equals plus 9.6 and B prime sub y equals 0 minus 3 start-fraction 3 over square-root of 3 squared plus 4 squared end square-root end-fraction times 12 equals to minus 7.2 [pause] so B prime equals the point 9.6 comma negative 7.2. Based on the y-component values, X is start-fraction 4 over 4 plus 7.2 end-fraction equals to start-fraction 4 over 11.2 end-fraction equals to start-fraction 5 over 14 end-fraction of the way from A prime to B prime, so X sub x equals 3 plus 5 over 14 times open paren 9.6 minus 3 close paren equals 75 over 14 [sentence-pause] Therefore, the base of X B prime C prime is the length of the line segment C prime X [pause] which is 75 over 14 while the height is 7.2 equals 36 over 5 [pause] making the enclosed area equal to one-half the product of these two values: 1 half times 75 over 14 times 36 over 5 equals 270 over 14 equals 135 over 7 which needs to divided by 30, the area enclosed by A prime B prime C prime [pause] start-fraction 135 over 30 times 7 end-fraction equals start-fraction 9 over 14 end-fraction [sentence-pause]”
+</blockquote>
 </details>
-
 There are several ambiguities in the paragraph above. Three of them are:
-
-*  $(0,5)$ -- Point, could be an open interval, gcd, cycle, or an ordered tuple, vector etc.
-*  $\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”
-*  $B'_x$ -- scripted variable
-
-    *  subscript: x-coordinate, subscripted-variable, index in a matrix, argument x of the function $B'$
-    *  superscript: Prime, could be arcminutes, feet, derivative
-
+<ul>
+<li> $(0,5)$ -- Point, could be an open interval, gcd, cycle, or an ordered tuple, vector etc.</li>
+<li> $\overline{A'B'}$   -- Line segment, could be mean (average), complex conjugate, or just simply “overbar”</li>
+<li> $B'_x$ -- scripted variable
+  <ul>
+    <li> subscript: x-coordinate, subscripted-variable, index in a matrix, argument x of the function $B'$</li>
+    <li> superscript: Prime, could be arcminutes, feet, derivative</li>
+  </ul>
+</li>
+</ul>
 These will be used to illustrate different ways of potentially resolving the ambiguity in that notation.
 
-<details markdown=1>
-<summary>Notes on “baseline” narration:</summary>
-
-*  capital letters are commonly spoken in a raised pitch by screen readers, although some people use a setting that has them distinguished as "cap a", etc.
-*  even a purely presentational reading makes, or could make, some easy assumptions for the most common cases, i.e. those from arithmetic. The “slash” is better pronounced “divided by”, an ASCII dash is assumed as “minus”, and the mfrac element is pronounced as if it were a mathematical fraction, even though the MathML element may be used by other vertical notations in math (such as the derivation rules, partial derivatives, the Kroenecker or Legendre symbols, or even a binomial coefficient with the line made invisible). Similarly, an ASCII dot between digits is usually pronounced as a decimal point by AT tools.
-*  this narration text is focused on producing speech, and has different trade-offs when producing Braille. Generally, the common set of single characters is a lot less frustrating in Braille as there is a single cell corresponding to each character, which is brief and easy to traverse. In speech constructs such as “open paren” or “long left right arrow” can be a mouthful, especially in expressions with many uses of them.
+<details>
+<summary>
+Notes on “baseline” narration:
+</summary>
+<ul>
+<li> capital letters are commonly spoken in a raised pitch by screen readers, although some people use a setting that has them distinguished as "cap a", etc.</li>
+<li> even a purely presentational reading makes, or could make, some easy assumptions for the most common cases, i.e. those from arithmetic. The “slash” is better pronounced “divided by”, an ASCII dash is assumed as “minus”, and the mfrac element is pronounced as if it were a mathematical fraction, even though the MathML element may be used by other vertical notations in math (such as the derivation rules, partial derivatives, the Kroenecker or Legendre symbols, or even a binomial coefficient with the line made invisible). Similarly, an ASCII dot between digits is usually pronounced as a decimal point by AT tools.</li>
+<li> this narration text is focused on producing speech, and has different trade-offs when producing Braille. Generally, the common set of single characters is a lot less frustrating in Braille as there is a single cell corresponding to each character, which is brief and easy to traverse. In speech constructs such as “open paren” or “long left right arrow” can be a mouthful, especially in expressions with many uses of them.</li>
 </ul>
 </details>
 
@@ -113,14 +119,15 @@ Common mathematical expressions such as $ax^2+bx+c=0$ are mostly unambiguous. Ho
 
 In general, math braille is presentational in that the braille describes the math that is seen, so problems with Presentation MathML are much fewer for braille generation.
 The MathML WG has identified three examples where braille is not presentational in Nemeth code (a common braille math code in the US and some other countries) inside of a mathematical expression.
-
-<details markdown=1>
-<summary>Examples of semantic differences in Nemeth Code</summary>
-
-* The combinatorial symbol $\binom{n}{k}$ is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so a “best practices” doc can help distinguish these. The braille for that binomial coefficient is ⠷⠝⠩⠅⠾ and the braille for the similar 2x1 column vector is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾.
-* “:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.
-* Vertical Bar ( \| ) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\lbrace x \mid x \in ℝ\rbrace$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x|3$ (x divides 3).
-
+<details>
+<summary>
+Examples of semantic differences in Nemeth Code
+</summary>
+<ul>
+<li>The combinatorial symbol $\binom{n}{k}$ is easily confused with a 2x1 column vector. Note that Nemeth braille can express these two cases unambiguously, so a “best practices” doc can help distinguish these. The braille for that binomial coefficient is ⠷⠝⠩⠅⠾ and the braille for the similar 2x1 column vector is ⠠⠷⠝⠠⠾⠠⠷⠅⠠⠾.</li>
+<li>“:” either is a ratio (which has spaces on either side in Nemeth) or something else (mapping, field extension, …) which is prefixed with a punctuation indicator and has no spacing. Note there is a ratio code point in Unicode (U+2236), but its use is not common in MathML.</li>
+<li>Vertical Bar ( | ) has many meanings. When used as a sign of comparison as defined by Nemeth code, it has spaces around, otherwise it doesn’t. Examples of a sign of comparison: $\lbrace x \mid x \in ℝ\rbrace$ and $P(A\vert B)$. Examples where it is not a sign of comparison: $\vert x\vert$ and $x|3$ (x divides 3).</li>
+</ul>
 </details>
 
 
