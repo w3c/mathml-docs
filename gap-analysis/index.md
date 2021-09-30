@@ -5,7 +5,7 @@ layout: wgnote
 
 <nav id="toc" markdown="1">
 
-# Table of Contents
+## Table of Contents
 {:.no_toc}
 
 * toc
@@ -15,7 +15,7 @@ layout: wgnote
 
 
 
-# Introduction
+## Introduction
 
 MathML is used by VoiceOver, Orca, JAWS, and NVDA to provide accessible math on the web. A large majority of math on the web is now accessible thanks to MathJaX and the tricks it uses to render the math visibly in all browsers but to hide the "span soup" and expose MathML to AT. The MathML WG is working on defining [MathML Core](https://www.w3.org/TR/mathml-core/) to solve the issues with displaying MathML on the web. This document focuses on ways to improve the *accessibility* of MathML in cases where the presentation of the mathematical expression is ambiguous; notational ambiguity is discussed below. 
 
@@ -32,11 +32,11 @@ The Working Group is committed to backwards compatibility.  Any solution to thes
 
 In the following sections, the document discusses the current state of Web math APIs, how AT renders math, and the problems that ambiguous math presents to AT/users. It explores some ideas based on ARIA and CSS, and parallel MathML markup. It also presents a potential MathML extension to solve the ambiguity issues. Although not the focus of this document, there are areas such as search and computation that potentially can be enhanced by a solution that enhances accessibility and this is discussed at the end of the document.
 
-# Current State
+## Current State
 
 Mathematical expressions involve text and graphical symbols. Many of the techniques used to make text accessible can be applied to math, but many don't work well due to multiple ways to read the same mathematical expression and also because the words used to speak the math are distinct from braille codes for mathematics that are based on the notations, not the words.
 
-## Math Accessibility details on the Web
+### Math Accessibility details on the Web
 
 AT usually gets information about a web page through accessibility APIs provided by an OS. The information used is built by the browser from the browser’s DOM and is represented in a parallel structure called the Accessibility Tree. In general, the accessibility tree is a simplified version of the DOM in that only information needed by AT is exposed. For example, a span with no semantic information will not be part of the accessibility tree. A more detailed description can be found in [MathML Accessibility API Mappings 1.0](https://w3c.github.io/mathml-aam/#dfn-accessibility-api) [early stage working draft, 2021].
 
@@ -52,7 +52,7 @@ MathML and SVG live in somewhat parallel worlds in their relationship to HTML. [
 Ideally, platform APIs should allow those tags and attributes of MathML that have semantic value to be exposed in a straightforward manner. Most MathML tags have semantic value; some attributes do also. Examples of attributes that have semantic value are token elements’ “mathvariant” attribute and mfrac’s “linethickness” and “bevelled” attributes (binomial coefficient if equal to 0 and Nemeth code difference, respectively).
 
 
-## Accessibility of Mathematical Content
+### Accessibility of Mathematical Content
 For years, the accessibility of math in print, and later on the web and in other formats has been a large pain point. Typically, inaccessible images were used. Even when alternative text was provided, the text could not be converted to braille or navigated in a useful manner; only word-by-word navigation was possible.
 
 The use of MathML has dramatically reduced these problems, but ambiguities in math notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
@@ -62,7 +62,7 @@ The use of MathML has dramatically reduced these problems, but ambiguities in ma
 
 While all AT speaks $x^2$ semantically, the capabilities of AT for semantic speech varies considerable.
 
-### Large Example
+#### Large Example
 To fully appreciate the difference between presentational and semantic speech, below is a question from a [MathCounts middle school math competition](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf).
 
 <details>
@@ -113,7 +113,7 @@ Notes on “baseline” narration:
 
 </details>
 
-## The problem of ambiguity
+### The problem of ambiguity
 
 Common mathematical expressions such as $ax^2+bx+c=0$ are mostly unambiguous. However there are some notations that are ambiguous which makes interpretation difficult. As mentioned above $(a,b)$ could represent a point, or the open interval from ‘a’ to ‘b’, or the gcd of ‘a’ and ‘b’. There are several other potential interpretations. It is also the case that different notations can be used to represent the same concept. For example $]a,b[$ is also sometimes used to represent the open interval from ‘a’ to ‘b’ (but not the gcd, etc). These ambiguities present difficulties for AT that wishes to provide semantic speech.
 
@@ -132,10 +132,10 @@ Examples of semantic differences in Nemeth Code
 
 
 
-# Leveraging Existing Technology
+## Leveraging Existing Technology
 The Web platform has support for a number of ideas related to some of our goals. We evaluate if they can be applied to MathML today, or could be extended in principle.
 
-## ARIA
+### ARIA
 ARIA was designed to allow adding additional information to a tag when a tag does not convey the intended semantics/speech. Hence, it seems a natural approach to use for MathML to disambiguate a notation. However, there are a number of issues unique to math that make the use of ARIA problematic without changes to the ARIA spec.
 
 
@@ -172,7 +172,7 @@ A downside to this approach is that it is very repetitive: every parent element 
 
 A number of issues surrounding the use of aria-labelledby are explored in this [prototype](https://hackmd.io/@dginev/SkBHsZTiO). Additionally, the prototype explores the use of aria-describedby to add additional information such as a variable being a natural number, something you would not want to hear in a full reading of an expression.
 
-## CSS
+### CSS
 In many ways parts of the issues or suggestions laid out in this document could have alternatives that lean into aspects of CSS' architecture.  CSS Selectors, for example, provide the platform standard for "selecting" and associating elements in the DOM tree with styling, some of which (generated content, for example) can be used to do some sorts of interesting annotation.  This would be even more pragmatic potentially through efforts in Houdini which might allow us to experiment with "CSS-like languages" which borrow all of the core concepts from CSS, but do not need to operate in the live profile and can potentially enable more ways to think about possible solutions. It is hard to say much more specifically on all of the possibilities until we begin to narrow some options and answer more questions, but one thing that could be somewhat difficult here would be the lack of support for powerful enough selectors.
 
 
@@ -196,7 +196,7 @@ Here is one way a CSS-like  solution might look:
 ```
 
 
-## Parallel MathML Markup
+### Parallel MathML Markup
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
 
 
@@ -229,7 +229,7 @@ The `<csymbol>point<csymbol/>` element in the above example shows one style of m
 The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
 
 
-### Challenges of parallel markup:
+#### Challenges of parallel markup:
 
 
 * Parallel markup includes both a presentation and a content encoding for each expression, so it roughly doubles the size of the markup compared to either presentation or content markup.
@@ -264,10 +264,10 @@ Pros:
 * Very flexible from no annotation to partial annotation to full operator tree annotations
 
 
-# Creating MathML-specific Solutions
+## Creating MathML-specific Solutions
 Each of the solutions above have problems when applied to math. This has led the group to explore a new MathML-specific solution. The largest drawback to any MathML-specific solution is that it would expand any “MathML exists in its own world” criticism and wouldn’t leverage work done on the web to support existing web technologies, now or in the future. The generic advantage is that the solution would (mostly) not be held hostage hoping for changes to other specifications.
 
-## Intent
+### Intent
 We have decided on using the term intent to refer to “the mathematical meaning conveyed by an author”, as applicable to presentation MathML. It is meant to offer a lightweight solution for partial annotation of an expression so that it can be spoken appropriately by AT. The intent syntax borrows some of the insights gained by Content MathML to encode the structure of mathematical operations (an “operator tree”), allowing for incremental narration and navigation that follows the argument structure of a formula.
 
 One proposal is to introduce a MathML-specific intent attribute, whose value encodes a functional expression composed using a mini language of literals (e.g. binomial-coefficient, factorial, sine, open-interval,...) as well as references into the appropriate descendent subtrees, when they act as conceptual arguments in a mathematical notation. .
@@ -297,24 +297,24 @@ An advantage of this proposal is that it can be implemented using current techno
 
 Considerable investigation is underway to collect default names for math operators, and to explore common presentation markup patterns to apply attribute values to express the intent.  Elementary intent examples can often be encoded using only the default intent rules, and many intermediate examples can be handled by encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts.
 
-## Subject Area
+### Subject Area
 Providing a subject area attribute such as subject=”geometry” is an adjunct to ‘intent’ and provides a simpler means of remediating a document in some cases. For example, a publisher might add a subject area to all the math tags in a Geometry book so that the default intent of   is intent="point($1,$2)". The three examples used in this document would all be captured by subject=”geometry” on the math tag: point, line segment, and scripted value (with ‘x’ or ‘y’) are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
 
 
 The Math WG has not discussed using subject areas much yet. It is likely that, at least initially, the number of known subject areas would be limited to perhaps as few as 5–15 subject areas covering basic math and science areas. The number of changes to defaults is very dependent on the subject area. As with “intent”, subject area can be implemented without changes to other web standards other than needing to be part of the accessibility tree. At least one AT tool (MathPlayer) makes use of user-specified subject areas to override defaults on what is spoken. Classifying mathematics and other sciences is difficult. It is unknown if a broad brush categorization approach to K-14 topics as currently envisioned is feasible; it remains to be investigated.
 
-# Other target applications of MathML
+## Other target applications of MathML
 
 MathML is widely used by assistive technology (AT) to generate speech, braille, and allow navigation of math. It is also accepted and generated by a significant number of computation systems. A number of specialized programs have been developed to search for mathematical expressions that take advantage of MathML, but none of the major search engines make use of MathML.
 
-## Search
+### Search
 As discussed above, in some situations a very literal vocalization of the displayed formula can be concise and understandable, while in others, or for other users, a more semantically oriented reading is more useful. In the same way, how users will search for mathematical information may be closely tied to the usual way of writing it, or more tied to its semantics, and thus affected by ambiguities. The task of indexing and search of mathematical formulas must therefore deal with some of the same issues as accessibility.
 
 * Examples of what someone might search for
 * Pain points -- when is ambiguity a problem?
 * Ecosystem pain points -- what is missing for major search engine vendors to provide a high-quality search for math syntax queries? Is there a good query language? Is there a need not being met from students/educators/researchers? Example or two.
 
-## Structured data via schema.org RDFa annotations
+### Structured data via schema.org RDFa annotations
 Schema.org is an ongoing effort developing vocabularies for aiding “Rich Results” in information retrieval, endorsed by most major search engines. We did a basic evaluation, with the goal of exposing our rich “intent” information to search engines.
 
 * There are no targeted vocabulary entries for the kind of information we want to enrich in presentation MathML. Loosely related entries were “disambiguatingDescription” and “name”. A prototype of how they could be added to MathML 3 via RDFa can be seen [here](https://github.com/dginev/tiny-mathml-a11y-demo/blob/master/schema_experiment_2.html)
@@ -325,15 +325,15 @@ Schema.org is an ongoing effort developing vocabularies for aiding “Rich Resul
 * The theoretical upside of adopting a structured data annotation approach is to avoid introducing additional complexity inside MathML itself, and delegate all search-related markup to existing technologies. However, it is currently unclear if there is any path to reusing these approaches over math expressions, especially when considering adoption in major search engines.
 
 
-## Discoverability
+### Discoverability
 
 
 To aid in Search Engines' ability to find pages containing MathML, these pages with MathML should be included in the webpage’s Header Schema.org accessibility metadata.  Currently there is one property which would be appropriate for this which is ‘accessibilityFeature’.  Here is a current [list of the values for accessibilityFeature](https://www.w3.org/wiki/WebSchemas/Accessibility) of which “MathML” and “describedMath” would be appropriate to use.  There are plans to move this work from a W3C wiki page into something more formal, where new values are voted upon by the community but since accessibility metadata is broader than digital publishing it hasn’t yet been decided which group will take on this work.  When this group either gets created or this work falls into another W3C group any new values the MathML group would like them to consider adding can be done at a future meeting.
 
-## Editing/Selecting Mathematical (Sub)Expressions
+### Editing/Selecting Mathematical (Sub)Expressions
 Applications to edit mathematics need to have a notion of a insertion cursor and a selection. This information may sometimes be useful to preserve during copy/paste, so some additional attributes may want to be added. See [MathML and OMML User Selection Attributes \| Math in Office (microsoft.com)](https://devblogs.microsoft.com/math-in-office/mathml-and-omml-user-selection-attributes/). Note that the insertion cursor or selection may want to be displayed on a refreshable braille display (typically by using dots 7 and 8).
 
-## Conversion, Computation and Transfer
+### Conversion, Computation and Transfer
 Mathematical formulæ are often the subject of more than just reading and writing.
 Formulæ are, in written form, the lever used to request a computation: the resolution of an equation or evaluating an expression made of numbers can easily be made by computing engines which sometimes understand presentation-MathML (but are limited by ambiguities and context): An enrichment such as intents can lower these ambiguities.
 Closely connected to computability, the use of formulæ input in a test to assess mathematical competencies can benefit from lowered ambiguities.
@@ -342,7 +342,7 @@ Closely connected to computability, the use of formulæ input in a test to asses
 Finally, formulæ displayed in a web-page are subject to being transferred to other places where further work can be done applying mechanisms such as copy-and-paste or drag-and-drop. Since MathML can be the content of the transfer (e.g. using the MathML clipboard flavours), receiving applications can benefit of a standardised way of lowering ambiguities.
 
 
-# Authors/Acknowledgements
+## Authors/Acknowledgements
 
 
 This document was a group effort by many members of the Math WG. The WG would particularly like to acknowledge the primary authors of several sections:
