@@ -67,6 +67,7 @@ To fully appreciate the difference between presentational and semantic speech, b
 
 <details markdown=1>
 <summary><span markdown=1>MathCounts problem -- image with two possible descriptions and details</span><summary>
+</summary>
 
 ![text of problem followed by a triangle and it rotated version of itself](mathcounts.png)
 
