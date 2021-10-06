@@ -308,20 +308,24 @@ The line segment from the point A' to the point B' could be encoded as:
 </mover>
 ```
 
-Other meanings for the overbar notation would use other operators in the intent attribute.
+where the name “segment” is used here to mean line segment, and the name “prime” is used to denote a primed variable symbol.
+
+Other meanings for the overbar notation would replace “segment” with another operator in the intent attribute.
 
 
 The x-coordinate of the point B' could be encoded as:
 
 ```xml
-<msub intent="index($pt)">
-  <msup arg="pt" intent="prime($1)">
+<msub intent="index($p,$v)">
+  <msup arg="p" intent="prime($1)">
     <mi arg="1">B</mi>
     <mo>&#x2032;</mo>
   </msup>
-  <mi>x<mi>
+  <mi arg="v">x<mi>
 </msub>
 ```
+
+where the name “index” is used here to select a component from a tuple, in this case, the x-coordinate from a point.
 
 
 Various proposals have been discussed for the syntax to be supported by the intent attribute, with varying trade-offs in markup convenience.  Including default intent values for existing MathML presentation forms, default names for math operators, and default rules for applying operators to arguments can help reduce the amount of markup needed to specify the intent of an expression. While the full encoding of the content markup for an expression is often complex, and often not included with the presentation, the inclusion of the intent markup for an expression is potentially much simpler, and easier to consume, as part of the presentation markup.
