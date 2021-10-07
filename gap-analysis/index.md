@@ -162,7 +162,7 @@ A downside to this approach is that it is very repetitive: every parent element 
         <mo stretchy="false">(</mo>
         <mn id="x">0</mn>
         <mo id="coordinates" aria-label="at coordinates">,</mo>
-        <mn id="y">0</mn>
+        <mn id="y">5</mn>
         <mo stretchy="false">)</mo>
       </mrow>
     </mrow>
@@ -181,9 +181,9 @@ Here is one way a CSS-like  solution might look:
 ```xml
 <mrow class="point">
   <mo>(</mo>
-  <mi class="arg1">a</mi>
+  <mi class="arg1">0</mi>
   <mo>,</mo>
-  <mi class="arg2">b</mi>
+  <mi class="arg2">5</mi>
   <mo>)</mo>
 </mrow>
 ```
@@ -207,16 +207,16 @@ The <semantics> element may be used to attach content markup as an annotation to
 <semantics>
   <mrow id="x">
     <mo id="x.1">(</mo>
-    <mi id="x.2">a</mi>
+    <mi id="x.2">0</mi>
     <mo id="x.3">,</mo>
-    <mi id="x.4">b</mi>
+    <mi id="x.4">5</mi>
     <mo id="x.5">)</mo>
   </mrow>
   <annotation-xml encoding="MathML-Content">
     <apply xref="x">
       <csymbol>point<csymbol/>
-      <ci xref="x.2">a</ci>
-      <ci xref="x.3">b</ci>
+      <ci xref="x.2">0</ci>
+      <ci xref="x.3">5</ci>
     </apply>
   </annotation-xml>
 </semantics>
@@ -279,9 +279,9 @@ Such an attribute could be used by an authoring tool, for example, to encode the
 ```xml
 <mrow intent="point($1,$2)">
   <mo>(</mo>
-  <mi arg="1">a</mi>
+  <mi arg="1">0</mi>
   <mo>,</mo>
-  <mi arg="2">b</mi>
+  <mi arg="2">5</mi>
   <mo>)</mo>
 </mrow>
 ```
