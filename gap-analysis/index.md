@@ -268,13 +268,13 @@ Pros:
 Each of the solutions above have problems when applied to math. This has led the group to explore a new MathML-specific solution. The largest drawback to any MathML-specific solution is that it would expand any “MathML exists in its own world” criticism and wouldn’t leverage work done on the web to support existing web technologies, now or in the future. The generic advantage is that the solution would (mostly) not be held hostage hoping for changes to other specifications.
 
 ### Intent
-We have decided on using the term intent to refer to “the mathematical meaning conveyed by an author”, as applicable to presentation MathML. It is meant to offer a lightweight solution for partial annotation of an expression so that it can be spoken appropriately by AT. The intent syntax borrows some of the insights gained by Content MathML to encode the structure of mathematical operations (an “operator tree”), allowing for incremental narration and navigation that follows the argument structure of a formula.
-
-One proposal is to introduce a MathML-specific intent attribute, whose value encodes a functional expression composed using a mini language of literals (e.g. binomial-coefficient, factorial, sine, open-interval,...) as well as references into the appropriate descendent subtrees, when they act as conceptual arguments in a mathematical notation. .
+We have decided to use the term *intent* to refer to the mathematical meaning conveyed by an author using presentation MathML. It is meant to offer a lightweight solution for partial annotation of an expression so it can be spoken appropriately by AT. The intent syntax borrows concepts from Content MathML to encode the structure of mathematical operations (an “operator tree”), allowing for incremental narration and navigation that follows the argument structure of a formula.
 
 
-Such an attribute could be used by an authoring tool, for example, to encode the point  as the expression point(a,b) as follows:
+One proposal is to introduce a MathML-specific intent attribute, whose value encodes a functional expression composed using a vocabulary of function symbols (e.g. binomial-coefficient, factorial, sine, open-interval, ...) applied to references to descendent subtrees that act as conceptual arguments in a mathematical expression.
 
+
+Such an attribute could be used by an authoring tool, for example, to encode the point (0,5) as the expression point(0,5) as follows:
 
 ```xml
 <mrow intent="point($1,$2)">
@@ -286,16 +286,56 @@ Such an attribute could be used by an authoring tool, for example, to encode the
 </mrow>
 ```
 
-If  had another meaning, such as an open interval, or an ordered pair, or greatest common divisor, a value other than “point” would be used in the value of “intent”.
+If (0,5) had another meaning, such as an open interval, or an ordered pair, or greatest common divisor, a value other than “point” would be used in the intent attribute.
 
 
-Various proposals have been discussed for the syntax to be supported by the intent attribute, most of which functionally equivalent, but with varying trade-offs in markup ergonomics. Global or local identifiers for referencing subexpressions, as well as the verbosity/repetitiveness of annotations are two such aspects. including “Default intent values” for existing MathML presentation forms, including default names for math operators, default rules for applying operators to arguments. These defaults help reduce the amount of markup needed to specify the intent of an expression. While the full encoding of the content markup for an expression is often complex, and often not included with the presentation, the inclusion of the intent markup for an expression is potentially much simpler, and easier to consume as part of the presentation markup.
+The line segment from the point A' to the point B' could be encoded as:
+
+```xml
+<mover intent="segment($x,$y)">
+  <mrow>
+    <msup arg="x" intent="prime($1)">
+      <mi arg="1">A</mi>
+      <mo>&#x2032;</mo>
+    </msup>
+    <mo>&#x2063;</mo>
+    <msup arg="y" intent="prime($1)">
+      <mi arg="1">B</mi>
+      <mo>&#x2032;</mo>
+    </msup>
+  </mrow>
+  <mo>¯</mo>
+</mover>
+```
+
+where the name “segment” is used here to mean line segment, and the name “prime” is used to denote a primed variable symbol.
+
+Other meanings for the overbar notation would replace “segment” with another operator in the intent attribute.
 
 
-An advantage of this proposal is that it can be implemented using current technology without changes to other web standards other than specifying the attribute should be part of the accessibility tree built by browsers. While the functional syntax [‘name(arg1, ...)’]  represents a MathML-specific encoding, it is relatively easy to generate and to consume. .
+The x-coordinate of the point B' could be encoded as:
+
+```xml
+<msub intent="index($p,$v)">
+  <msup arg="p" intent="prime($1)">
+    <mi arg="1">B</mi>
+    <mo>&#x2032;</mo>
+  </msup>
+  <mi arg="v">x<mi>
+</msub>
+```
+
+where the name “index” is used here to select a component from a tuple, in this case, the x-coordinate from a point.
+
+
+Various proposals have been discussed for the syntax to be supported by the intent attribute, with varying trade-offs in markup convenience.  Including default intent values for existing MathML presentation forms, default names for math operators, and default rules for applying operators to arguments can help reduce the amount of markup needed to specify the intent of an expression. While the full encoding of the content markup for an expression is often complex, and often not included with the presentation, the inclusion of the intent markup for an expression is potentially much simpler, and easier to consume, as part of the presentation markup.
+
+
+An advantage of this proposal is that it can be implemented using current technology without changes to other web standards, other than to specify that the attribute should be part of the accessibility tree built by browsers. While the functional syntax [‘name(arg1, ...)’]  represents a MathML-specific encoding, it is relatively easy to generate and to consume.
 
 
 Considerable investigation is underway to collect default names for math operators, and to explore common presentation markup patterns to apply attribute values to express the intent.  Elementary intent examples can often be encoded using only the default intent rules, and many intermediate examples can be handled by encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts.
+
 
 ### Subject Area
 Providing a subject area attribute such as subject=”geometry” is an adjunct to ‘intent’ and provides a simpler means of remediating a document in some cases. For example, a publisher might add a subject area to all the math tags in a Geometry book so that the default intent of $(0,5)$ is `intent="point($1,$2)"`. The three examples used in this document would all be captured by subject=”geometry” on the math tag: point, line segment, and scripted value (with ‘x’ or ‘y’) are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
