@@ -162,7 +162,7 @@ A downside to this approach is that it is very repetitive: every parent element 
         <mo stretchy="false">(</mo>
         <mn id="x">0</mn>
         <mo id="coordinates" aria-label="at coordinates">,</mo>
-        <mn id="y">0</mn>
+        <mn id="y">5</mn>
         <mo stretchy="false">)</mo>
       </mrow>
     </mrow>
@@ -181,9 +181,9 @@ Here is one way a CSS-like  solution might look:
 ```xml
 <mrow class="point">
   <mo>(</mo>
-  <mi class="arg1">a</mi>
+  <mi class="arg1">0</mi>
   <mo>,</mo>
-  <mi class="arg2">b</mi>
+  <mi class="arg2">5</mi>
   <mo>)</mo>
 </mrow>
 ```
@@ -207,16 +207,16 @@ The <semantics> element may be used to attach content markup as an annotation to
 <semantics>
   <mrow id="x">
     <mo id="x.1">(</mo>
-    <mi id="x.2">a</mi>
+    <mi id="x.2">0</mi>
     <mo id="x.3">,</mo>
-    <mi id="x.4">b</mi>
+    <mi id="x.4">5</mi>
     <mo id="x.5">)</mo>
   </mrow>
   <annotation-xml encoding="MathML-Content">
     <apply xref="x">
       <csymbol>point<csymbol/>
-      <ci xref="x.2">a</ci>
-      <ci xref="x.3">b</ci>
+      <ci xref="x.2">0</ci>
+      <ci xref="x.3">5</ci>
     </apply>
   </annotation-xml>
 </semantics>
@@ -279,9 +279,9 @@ Such an attribute could be used by an authoring tool, for example, to encode the
 ```xml
 <mrow intent="point($1,$2)">
   <mo>(</mo>
-  <mi arg="1">a</mi>
+  <mi arg="1">0</mi>
   <mo>,</mo>
-  <mi arg="2">b</mi>
+  <mi arg="2">5</mi>
   <mo>)</mo>
 </mrow>
 ```
@@ -298,7 +298,7 @@ An advantage of this proposal is that it can be implemented using current techno
 Considerable investigation is underway to collect default names for math operators, and to explore common presentation markup patterns to apply attribute values to express the intent.  Elementary intent examples can often be encoded using only the default intent rules, and many intermediate examples can be handled by encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts.
 
 ### Subject Area
-Providing a subject area attribute such as subject=”geometry” is an adjunct to ‘intent’ and provides a simpler means of remediating a document in some cases. For example, a publisher might add a subject area to all the math tags in a Geometry book so that the default intent of   is intent="point($1,$2)". The three examples used in this document would all be captured by subject=”geometry” on the math tag: point, line segment, and scripted value (with ‘x’ or ‘y’) are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
+Providing a subject area attribute such as subject=”geometry” is an adjunct to ‘intent’ and provides a simpler means of remediating a document in some cases. For example, a publisher might add a subject area to all the math tags in a Geometry book so that the default intent of $(0,5)$ is `intent="point($1,$2)"`. The three examples used in this document would all be captured by subject=”geometry” on the math tag: point, line segment, and scripted value (with ‘x’ or ‘y’) are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
 
 
 The Math WG has not discussed using subject areas much yet. It is likely that, at least initially, the number of known subject areas would be limited to perhaps as few as 5–15 subject areas covering basic math and science areas. The number of changes to defaults is very dependent on the subject area. As with “intent”, subject area can be implemented without changes to other web standards other than needing to be part of the accessibility tree. At least one AT tool (MathPlayer) makes use of user-specified subject areas to override defaults on what is spoken. Classifying mathematics and other sciences is difficult. It is unknown if a broad brush categorization approach to K-14 topics as currently envisioned is feasible; it remains to be investigated.
