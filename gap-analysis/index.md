@@ -329,7 +329,7 @@ where the name “index” is used here to select a component from a tuple, in t
 
 
 Various proposals have been discussed for the syntax to be supported by the intent attribute, with varying trade-offs in markup convenience. One proposal is to include default intent values for existing MathML presentation forms and default names for math operators to reduce the amount of markup needed to specify the intent of an expression. For example
-\[ \sqrt{ \frac{180}{5} } = 6 \] would not require the explicit use of `intent` but would be equivalent to a version that included `intent="square-root"` on `msqrt`, etc. While the full encoding of the content markup for an expression is often complex, and often not included with the presentation, the inclusion of the intent markup for an expression is potentially much simpler to generate and easier to consume, as part of the presentation markup.
+\\[ \sqrt{ \frac{180}{5} } = 6 \\] would not require the explicit use of `intent` but would be equivalent to a version that included `intent="square-root"` on `msqrt`, etc. While the full encoding of the content markup for an expression is often complex, and often not included with the presentation, the inclusion of the intent markup for an expression is potentially much simpler to generate and easier to consume, as part of the presentation markup.
 
 
 An advantage of this proposal is that it can be implemented using current technology without changes to other web standards, other than to specify that the attribute should be part of the accessibility tree built by browsers. While the functional syntax [‘name(arg1, ...)’]  represents a MathML-specific encoding, it is relatively easy to generate and to consume.
