@@ -174,9 +174,9 @@ A downside to this approach is that it is very repetitive: every parent element 
 A number of issues surrounding the use of aria-labelledby are explored in this [prototype](https://hackmd.io/@dginev/SkBHsZTiO). Additionally, the prototype explores the use of aria-describedby to add additional information such as a variable being a natural number, something you would not want to hear in a full reading of an expression.
 
 ### CSS
-Many of the ideas listed in this document deal with ways to expressing relationships in the tree and providing annotations in order to provide rules about the intended semantics of markup. While this problem is distinct from visual styling, it is difficult to not see relationships with the architecture CSS, or things defined by it.  CSS Selectors, for example, provide the platform standard for "selecting" and associating elements in the DOM tree, even outside of stylesheets.  It is not difficult to imagine exploring a very "CSS-like" language which could meet general needs by providing sheets of rules and properties re-using the architecture of CSS to supply supporting annotation expressions.
+Many of the ideas listed in this document deal with ways to expressing relationships in the tree and providing annotations in order to provide rules about the intended semantics of markup. While this problem is distinct from visual styling, it is difficult to not see relationships with the architecture CSS, or things defined by it.  CSS Selectors, for example, are the platform standard for "selecting" and associating elements in the DOM tree, even outside of stylesheets.  It is not difficult to imagine exploring a "CSS-like" language which could meet general needs by providing sheets of rules and properties re-using the architecture of CSS to supply supporting annotation expressions.
 
-Today it is possible (assuming we determine a way to pass to AT that is acceptable, like using aria-label) using CSS Custom Properties and a very little JavaScript for us to begin to explore these ideas defining properties like '--speech' and '--nemeth' whose values are expressive and evaluated during lifecycle events that we define.  An example of this today might look like:
+Today it is possible (assuming we determine a way to pass to AT that is acceptable, like using aria-label) using CSS Custom Properties and a very little JavaScript for us to begin to explore these ideas defining properties like '--speech' whose values are expressive and evaluated during lifecycle events that we define.  An example of this today might look like:
 
 ```xml
 <mrow data-intent="point">
@@ -191,13 +191,12 @@ Today it is possible (assuming we determine a way to pass to AT that is acceptab
 ```css
 [data-intent="point"] {
    --speech: "the point " text(.arg1) " comma " text(.arg2);
-   /* --nemeth: ... etc */;
 };
-
-This aproach can be used to define both "UA" style rulesheets which require no author provided rules at all for many cases, but allows them for extension. The trouble with such a solution, were we to standardize it might be that it does not itself belong in CSS, but merely wants to reuse its architecture.  The Houdini Task Force, is particular interesting here: Its aims include making it possible to reuse the architecture of CSS to develop CSS-like languages.  Efforts there already underway, for example, are the exposing the CSS Parser and Typed OM.  It would be especially helpful to coordinate with and be sure our use cases and examples are considered, and gaps and concerns with the approach identified.
-
-Pratically speaking, such an approach might ultimately include very few new MathML specific asks of the platform.
 ```
+
+This approach can be used to define both "UA" style rulesheets which require no author provided rules at all for many cases, but allows them for extension. The trouble with such a solution, were we to standardize it, is that it does not itself belong in CSS, but merely wants to reuse its architecture.  The Houdini Task Force's work is particularly interesting here: its aims include making it possible to reuse the architecture of CSS to develop CSS-like languages.  Efforts there already underway, for example, are the exposing the CSS Parser and Typed OM.  It would be especially helpful to coordinate with and be sure our use cases and examples are considered, and gaps and concerns with the approach identified.
+
+Practically speaking, such an approach might ultimately include very few new MathML specific asks of the platform.
 
 
 ### Parallel MathML Markup
