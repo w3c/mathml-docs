@@ -254,7 +254,7 @@ It also illustrates that the value of an argument might itself require computati
 </details>
 
 <details markdown="1">
-<summary markdown="1">X-coordinate example $B'_x$</summary>
+<summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
 This is similar to the line segment example in terms of complexity. Note that the second argument is spoken first.
 ```xml
 <msub data-intent="point-coordinate">
