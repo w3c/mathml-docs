@@ -17,7 +17,7 @@ layout: wgnote
 
 ## Introduction
 
-MathML is used by VoiceOver, Orca, JAWS, and NVDA to provide accessible math on the web. A large majority of math on the web is now accessible thanks to MathJaX and the tricks it uses to render the math visibly in all browsers but to hide the "span soup" and expose MathML to AT. The MathML WG is working on defining [MathML Core](https://www.w3.org/TR/mathml-core/) to solve the issues with displaying MathML on the web. This document focuses on ways to improve the *accessibility* of MathML in cases where the presentation of the mathematical expression is ambiguous; notational ambiguity is discussed below. 
+MathML is used by VoiceOver, Orca, JAWS, and NVDA to provide accessible math on the web. A large majority of math on the web is now accessible thanks to MathJaX and the tricks it uses to render the math visibly in all browsers but to hide the "span soup" it uses for display yet still expose MathML to AT. The MathML WG is working on defining [MathML Core](https://www.w3.org/TR/mathml-core/) to solve the issues with displaying MathML on the web. This document focuses on ways to improve the *accessibility* of MathML in cases where the presentation of the mathematical expression is ambiguous; notational ambiguity is discussed below. 
 
 Since its beginnings in 1998, MathML has had two parts: Presentation MathML which describes the arrangement of math symbols, and Content MathML describes the composition of math operators.  These two subsets of MathML carry complementary information and can be used separately, or combined using Parallel Markup (described below).  Neither of these forms carries adequate information to provide unambiguous accessible output.  While some semantic information is explicit or can be inferred, other aspects of the semantics must be provided by an author to resolve ambiguities in conventional math notation to make the MathML encoding more fully accessible.  This document examines two central questions:
 
@@ -26,11 +26,11 @@ Since its beginnings in 1998, MathML has had two parts: Presentation MathML whic
 
 This document makes no conclusions. It lists some of the strengths and weaknesses of the approaches presented. The reader is invited to comment on those approaches and/or provide alternatives as the WG wants to come to a solution that works within the web platform to address the problems noted below.
 
-The goal is to allow authors/authoring tools the ability to capture, in MathML, enough information so an expression can be correctly rendered by screen reader applications. It is likely that additional information that aids accessibility can also be used to improve search of mathematical expressions, but the focus of this document is on enhancing accessibility.
+The goal is to allow authors/authoring tools the ability to capture, in MathML, enough information so that an expression can be correctly rendered by screen reader applications. It is likely that additional information that aids accessibility can also be used to improve search of mathematical expressions, but the focus of this document is on enhancing accessibility.
 
 The Working Group is committed to backwards compatibility.  Any solution to these problems should not invalidate old documents, but should allow progressive enhancement of existing content.  Moreover, authors should be able to enhance the math contained in their documents as little or as much as they choose.
 
-In the following sections, the document discusses the current state of Web math APIs, how AT renders math, and the problems that ambiguous math presents to AT/users. It explores some ideas based on ARIA and CSS, and parallel MathML markup. It also presents a potential MathML extension to solve the ambiguity issues. Although not the focus of this document, there are areas such as search and computation that potentially can be enhanced by a solution that enhances accessibility and this is discussed at the end of the document.
+In the following sections, this document discusses the current state of Web math APIs, how AT renders math, and the problems that ambiguous math presents to AT/users. It explores some ideas based on ARIA and CSS, and parallel MathML markup. It also presents a potential MathML extension to solve the ambiguity issues. Although not the focus of this document, there are areas such as search and computation that potentially can be enhanced by a solution that enhances accessibility and this is discussed at the end of the document.
 
 ## Current State
 
@@ -47,20 +47,24 @@ The platform APIs in general have not provided much support for mathematical not
 * macOS/iOS -- it appears that Safari adds the MathML-equivalent tags; need to find out what happens to the attrs
 * Android -- ???
 
-MathML and SVG live in somewhat parallel worlds in their relationship to HTML. [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/) (working draft, May 2018) gives details on SVG accessibility. In general, the document recommends adding ARIA to enhance the accessibility of SVG. Specifically, it states that shape elements (circle, etc) among many others do not go into the accessibility tree unless given semantics via ARIA (e.g, by aria-label). Also, more germane to MathML, elements that do not render visually should never be in the accessibility tree. For MathML, these invisible elements include the non-presentational part of semantics, maction, etc. Unlike math, there is no specialized braille language for graphics, nor is there an expected way SVG objects should be spoken in the absence of ARIA enhancements.
+MathML and SVG live in somewhat parallel worlds in their relationship to HTML. [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/) (working draft, May 2018) gives details on SVG accessibility. In general, the document recommends adding ARIA to enhance the accessibility of SVG. Specifically, it states that shape elements (circle, etc) among many others do not go into the accessibility tree unless given semantics via ARIA (e.g, by aria-label). Also, more germane to MathML, elements that do not render visually should never be in the accessibility tree. For MathML, these invisible elements include the non-presentational part of `semantics`, `maction`, etc. Unlike math, there is no specialized braille language for graphics, nor is there an expected way SVG objects should be spoken in the absence of ARIA enhancements.
 
 Ideally, platform APIs should allow those tags and attributes of MathML that have semantic value to be exposed in a straightforward manner. Most MathML tags have semantic value; some attributes do also. Examples of attributes that have semantic value are token elements’ “mathvariant” attribute and mfrac’s “linethickness” and “bevelled” attributes (binomial coefficient if equal to 0 and Nemeth code difference, respectively).
 
 
 ### Accessibility of Mathematical Content
-For years, the accessibility of math in print, and later on the web and in other formats has been a large pain point. Typically, inaccessible images were used. Even when alternative text was provided, the text could not be converted to braille or navigated in a useful manner; only word-by-word navigation was possible.
+For years, the accessibility of mathematics in print, and later on the web and in other formats has been a large pain point to both those who produce accessible content and to those who consume it. Typically, inaccessible images were used. Even when alternative text was provided, the text could not be converted to braille or navigated in a useful manner; only word-by-word navigation was possible.
 
-The use of MathML has dramatically reduced these problems, but ambiguities in math notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
+The use of MathML has dramatically reduced these problems. In addition to speech, using MathML allows the specialized braille formats used for mathematics to be generated. Unlike text, these formats are *not* based on the words used to speak the expressions, but on (mostly) the notations used to represent them. Critically, MathML allows readers to explore the mathematical structure of an expression when it is too complicated to be understood when read from start to end.
+
+Ambiguities in mathematical notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is better because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
 * $x^2$ -- "x squared" versus "x superscript 2 end superscript"
 * $\hat{x}$ -- "x hat" versus "x modified above with circumflex"
 * $\big(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\big)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
 
-While all AT speaks $x^2$ semantically, the capabilities of AT for semantic speech varies considerable.
+While all AT speaks $x^2$ semantically, some do not speak $\hat{x}$ semantically, and none currently recognize an identity matrix.
+
+Some notations such as fractions sometimes require bracketing words or tones to indicate the start and end of some notations for someone who can't see the notation. For example, $\sqrt{x+1}$ is unambiguously spoken as "the square root of x plus 1 end root". Without these bracketing words, "the square root of x plus 1" could also be interpreted as $\sqrt{x}+1$. However, for someone who is dyslexic and uses AT, the extra words are a distraction and shouldn't be used. This difference between the needs of users means that any solution that is adopted should allow flexibility based on the reader -- simple text strings generated by authors may be in appropriate for some readers. 
 
 #### Large Example
 To fully appreciate the difference between presentational and semantic speech, below is a question from a [MathCounts middle school math competition](https://www.mathcounts.org/sites/default/files/2020%20Chapter%20Competition%20Solutions.pdf).
@@ -140,17 +144,33 @@ The Web platform has support for a number of ideas related to some of our goals.
 ARIA was designed to allow adding additional information to a tag when a tag does not convey the intended semantics/speech. Hence, it seems a natural approach to use for MathML to disambiguate a notation. However, there are a number of issues unique to math that make the use of ARIA problematic without changes to the ARIA spec.
 
 
-The simplest approach to using ARIA would be to add aria-label to a math tag. There are several problems with this approach:
+The simplest approach to using ARIA would be to add aria-label to a math tag. For example, the point example above could be written as
+```xml
+<math aria-label="the point 0 comma 5">
+  <mrow >
+    <mo>(</mo>
+    <mi class="arg1">0</mi>
+    <mo>,</mo>
+    <mi class="arg2">5</mi>
+    <mo>)</mo>
+  </mrow>
+</math>
+```
 
-* The value of the label is a plain text string. Speech cues (such as pauses) can not be added nor can forced pronunciation. In particular, in English, mathematics always uses the long ‘a’ sound, but speech engines have no way to know they are speaking math and so often use the short ‘a’ sound which often makes the math unintelligible. Similarly, mathematical expressions have a different prosody than normal speech, so what is spoken is often harder to understand than it should be.
-* Mathematics has its own braille code. The braille used for math differs significantly from the text used for speech. ARIA 1.3 draft adds the attribute ‘braille-labelledby’ so there is the possibility of providing braille, but that is a large ask for the document author to generate braille for math. Furthermore, there are multiple braille codes for some languages (in English, UEB and Nemeth); it is not possible for the author to know which braille code to generate.
-* With the exception of ‘maction’, MathML elements are static elements. According to [this blog](https://www.davidmacd.com/blog/does-aria-label-override-static-text.html), aria-label on static elements has poor support in many screen readers.
+There are several problems with this approach:
 
+* The value of the label is a plain text string. Speech cues (such as pauses) can not be added nor can forced pronunciation. In particular, in English, mathematics always uses the long ‘a’ sound, but speech engines have no way to know they are speaking math and so often use the short ‘a’ sound. Compare:
+<br/>
+<audio controls src="a-example-NVDA.mp3">long a</audio> to <audio controls src="a-example-JAWS.mp3">short a</audio>
+<br/>
+This often makes the math unintelligible. Similarly, mathematical expressions have a different prosody than normal speech, so what is spoken is often harder to understand than it should be.
+* Mathematics has its own braille code. The braille used for math differs significantly from the text used for speech.
+The ARIA 1.3 draft adds the attribute ‘braille-labelledby’ so there is the possibility of providing braille, but it is a large ask for the document author to generate braille for math. Furthermore, there are multiple braille codes for some languages (in English, UEB and Nemeth); it is not possible for the author to know which braille code to generate.
+* As mentioned above, for someone who cannot see an expression words such as "start fraction" and "end fraction" are needed to disambiguate the start and end of a fraction; but for those who can see an expression, speaking those words adds complexity. Hence, text used in aria-label should be based on the needs of the user. A potential solution is to embed some syntax to indicate what wording is needed for someone who can see the expression and what wording is needed for someone who can't. Embedding SSML in `aria-label` was rejected and it seems likely embedding special syntax for math will be acceptable. Ultimately, it should be the AT that decides what should be spoken; enough information needs to be passed to AT so it can present to a user what is best. 
+* With the exception of `maction`, MathML elements are static elements. According to [this blog](https://www.davidmacd.com/blog/does-aria-label-override-static-text.html), aria-label on static elements has poor support in many screen readers.
+* Mathematical expressions can often be long enough that a user needs to explore/navigate them. This means the simple approach of using aria-label only on a math tag is too simple -- it needs to be placed on all the parts of the expression where the normal reading would be incorrect (at a minimum, from the deepest point in the tree where there is ambiguity to the root). This is a viable approach and SRE in MathJaX does something similar (it doesn’t use aria-label because screen readers don’t support aria-label on MathML elements; it uses JavaScript to read its private attribute).
 
-Mathematical expressions can often be long enough that a user needs to explore/navigate them. This means the simple approach of using aria-label only on a math tag is too simple -- it needs to be placed on all the parts of the expression where the normal reading would be incorrect (at a minimum, from the deepest point in the tree where there is ambiguity to the root). This is a viable approach and SRE in MathJaX does something similar (it doesn’t use aria-label because screen readers don’t support aria-label on MathML elements; it uses JS to read its private attribute).
-
-
-A downside to this approach is that it is very repetitive: every parent element must include the text used in the child. An appealing alternative is to use multiple aria-labelledby ids instead of aria-label, where the value of aria-labelledby points to the various children. These in turn can point to their children. The problem with this approach is that text can not be mixed in with the ‘id’s used in aria-labelledby so that a square root does not have a child to point to for the “square root of” part of the expression “square root of x plus y”. A few (unpleasant) hacks are possible by introducing elements that don’t display and adding aria-label to them, but this seems like a poor solution. The unit circle example below illustrates the use of aria-labelledby:
+As noted above, a downside to using aria-label is that it is very repetitive: every parent element must include the text used in the child. An appealing alternative is to use multiple aria-labelledby ids instead of aria-label, where the value of aria-labelledby points to the various children. These in turn can point to their children. The problem with this approach is that text can not be mixed in with the ‘id’s used in aria-labelledby so that a square root does not have a child to point to for the “square root of” part of the expression “square root of x plus y”. A few (unpleasant) hacks are possible by introducing elements that don’t display and adding aria-label to them, but this seems like a poor solution. The unit circle example below illustrates the use of aria-labelledby:
 
 
 ```xml
@@ -193,8 +213,60 @@ Today it is possible (assuming we determine a way to pass to AT that is acceptab
    --speech: "the point " text(.arg1) " comma " text(.arg2);
 };
 ```
+Mathematical structures are commonly nested inside one another. If the `class` values are not uniquely named for each `data-intent`, they will likely end up interfering with a selector.
 
-This approach can be used to define both "UA" style rulesheets which require no author provided rules at all for many cases, but allows them for extension. The trouble with such a solution, were we to standardize it, is that it does not itself belong in CSS, but merely wants to reuse its architecture.  The Houdini Task Force's work is particularly interesting here: its aims include making it possible to reuse the architecture of CSS to develop CSS-like languages.  Efforts there already underway, for example, are the exposing the CSS Parser and Typed OM.  It would be especially helpful to coordinate with and be sure our use cases and examples are considered, and gaps and concerns with the approach identified.
+There are many ways to represent equivalent MathML expressions. The CSS selector method requires that the authoring software generate MathML with `data-intent` values and `class` values that match a CSS stylesheet. Hence, it is likely that unique CSS stylesheets will be required based on the MathML authoring software. 
+
+<details markdown=1>
+<summary><span markdown=1>Line segment from the point A' to the point B' example </span></summary>
+This example shows the need to use multiple classes to deal with nested structure
+```xml
+<mover data-intent="line-segment">
+  <mrow>
+    <msup class="start" data-intent="modified-identifier">
+      <mi class="base">A</mi>
+      <mo class="modifier">&#x2032;</mo>
+    </msup>
+    <mo>&#x2063;</mo>
+    <msup class="end" data-intent="modified-identifier">
+      <mi class="base">B</mi>
+      <mo class="modifier">&#x2032;</mo>
+    </msup>
+  </mrow>
+  <mo>¯</mo>
+</mover>
+```
+
+```css
+[data-intent="line-segment"] {
+   --speech: "the line segment " text(.start) "  " text(.end);
+};
+```
+
+</details>
+
+<details markdown=1>
+<summary>X-coordinate of the point B' example</summary>
+This is similar to the line segment example in terms of complexity. Note that the second argument is spoken first.
+```xml
+<msub data-intent="point-coordinate">
+  <msup class="arg1" intent="modified-identifier">
+    <mi class="base">B</mi>
+    <mo class="modifier">&#x2032;</mo>
+  </msup>
+  <mi class="arg2">x<mi>
+</msub>
+```
+
+```css
+[data-intent="point-coordinate"] {
+   --speech: "the " text(.arg2) " of " text(.arg1);
+};
+```
+
+</details>
+
+This approach can be used to define both "UA" style rulesheets which require no author provided rules at all for many cases, but allows them for extension. The trouble with such a solution is that it does not itself belong in CSS, but merely wants to reuse its architecture.  The Houdini Task Force's work is particularly interesting here: its aims include making it possible to reuse the architecture of CSS to develop CSS-like languages. Some progress has already occurred: the CSS Parser and Typed Object Model are part of Chrome and Edge.  It would be especially helpful to coordinate with and be sure our use cases and examples are considered, and gaps and concerns with the approach identified.
 
 Practically speaking, such an approach might ultimately include very few new MathML specific asks of the platform.
 
