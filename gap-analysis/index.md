@@ -398,7 +398,7 @@ This example shows the need to use nested `intent`s.
 This is similar to the line segment example in terms of complexity. Note that the second argument is meant to be spoken first.
 
 ```xml
-<msub intent="coordinate-of($p,$v)">
+<msub intent="coordinate($p,$v)">
   <msup arg="p" intent="primed($1)">
     <mi arg="1">B</mi>
     <mo>&#x2032;</mo>
