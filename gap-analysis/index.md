@@ -417,15 +417,15 @@ Here is some potential markup using `intent` for the remaining two examples.
 
 This example shows the need to use nested `intent`s.
 ```xml
-<mover intent="line-segment($x,$y)">
+<mover intent="line-segment($1,$2)">
   <mrow>
-    <msup arg="x" intent="primed($1)">
-      <mi arg="1">A</mi>
+    <msup arg="1" intent="A-prime">
+      <mi>A</mi>
       <mo>&#x2032;</mo>
     </msup>
     <mo>&#x2063;</mo>
-    <msup arg="y" intent="primed($1)">
-      <mi arg="1">B</mi>
+    <msup arg="2" intent="B-prime">
+      <mi>B</mi>
       <mo>&#x2032;</mo>
     </msup>
   </mrow>
@@ -437,15 +437,15 @@ This example shows the need to use nested `intent`s.
 
 <details markdown="1">
 <summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
-This is similar to the line segment example in terms of complexity. Note that the second argument is meant to be spoken first.
+This is similar to the line segment example in terms of complexity. Note that the second argument is meant to be spoken first, where one could imagine a "speech rule" of the form `the $2-coordinate of $1`, associated with the `coordinate` value.
 
 ```xml
-<msub intent="coordinate($p,$v)">
-  <msup arg="p" intent="primed($1)">
-    <mi arg="1">B</mi>
+<msub intent="coordinate($1,$2)">
+  <msup arg="1" intent="B-prime">
+    <mi>B</mi>
     <mo>&#x2032;</mo>
   </msup>
-  <mi arg="v">x<mi>
+  <mi arg="2">x<mi>
 </msub>
 ```
 </details>
@@ -455,9 +455,9 @@ Various proposals have been discussed for the syntax to be supported by the inte
 
 An advantage of this proposal is that it can be implemented using current technology without changes to other web standards, other than to specify that the attribute should be part of the accessibility tree built by browsers. While the functional syntax [‘name(arg1, ...)’]  represents a MathML-specific encoding, it is relatively easy to generate and to consume.
 
-The `intent` attribute is meant to be passed to AT. This allows AT to decide what is appropriate based on the needs/preferences of the reader. It also avoids the problem of having to know whether to embed in `aria-label` speech geared to someone who can't see the screen (and hence needs begin/end cues) and someone who can see the screen and needs audio reinforcement to help them decode what they see. It also leaves it to AT to add prosody cues and forcing a long 'a' sound, something that can't currently can't be done with `aria-label`.
+The `intent` attribute is meant to be passed to AT. This allows AT to decide what is appropriate, based on the needs/preferences of the reader. It avoids the problem of having to know whether to embed in `aria-label` speech geared to someone who can't see the screen (and hence needs begin/end cues) or geared to someone who can see the screen and needs audio reinforcement to help them decode what they see.
 
-Considerable investigation is underway to collect default names for math operators, and to explore common presentation markup patterns to apply attribute values to express the intent.  Elementary intent examples can often be encoded using only the default intent rules, and many intermediate examples can be handled by encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts.
+Considerable investigation is underway to collect names of math concepts and operators, when they are associated with dedicated notational conventions. The group is also exploring common presentation markup patterns which could be prescribed a "default interpretation", so that AT could assume an `intent` value over their classic, unannotated, MathML 3 tree.  Elementary math examples can often be made accessible using only such default rules, and many intermediate examples can be handled by only encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts and indexed into via the associated `arg` attribute.
 
 
 ### Subject Area
