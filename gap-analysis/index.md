@@ -395,7 +395,7 @@ This example shows the need to use nested `intent`s.
 
 <details markdown="1">
 <summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
-This is similar to the line segment example in terms of complexity. Note that the second argument is spoken first.
+This is similar to the line segment example in terms of complexity. Note that the second argument is meant to be spoken first.
 
 ```xml
 <msub intent="coordinate-of($p,$v)">
