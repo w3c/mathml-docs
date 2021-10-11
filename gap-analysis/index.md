@@ -369,7 +369,7 @@ Such an attribute could be used by an authoring tool, for example, to encode the
 
 If (0,5) had another meaning, such as an open interval, or an ordered pair, or greatest common divisor, a value other than “point” would be used in the intent attribute.
 
-Here is some potential markup using `aria-label` for the remaining two examples.
+Here is some potential markup using `intent` for the remaining two examples.
 <details markdown="1">
 <summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
 
