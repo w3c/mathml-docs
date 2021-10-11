@@ -19,18 +19,18 @@ layout: wgnote
 
 MathML is used by VoiceOver, Orca, JAWS, and NVDA to provide accessible math on the web. A large majority of math on the web is now accessible thanks to MathJaX and the tricks it uses to render the math visibly in all browsers but to hide the "span soup" it uses for display yet still expose MathML to AT. The MathML WG is working on defining [MathML Core](https://www.w3.org/TR/mathml-core/) to solve the issues with displaying MathML on the web. This document focuses on ways to improve the *accessibility* of MathML in cases where the presentation of the mathematical expression is ambiguous; notational ambiguity is discussed below. 
 
-Since its beginnings in 1998, MathML has had two parts: Presentation MathML which describes the arrangement of math symbols, and Content MathML describes the composition of math operators.  These two subsets of MathML carry complementary information and can be used separately, or combined using Parallel Markup (described below).  Neither of these forms carries adequate information to provide unambiguous accessible output.  While some semantic information is explicit or can be inferred, other aspects of the semantics must be provided by an author to resolve ambiguities in conventional math notation to make the MathML encoding more fully accessible.  This document examines two central questions:
+Since its beginnings in 1998, MathML has had two parts: Presentation MathML which describes the arrangement of math symbols, and Content MathML describes the composition of math operators.  These two subsets of MathML carry complementary information and can be used separately, or combined using Parallel Markup (described below).  Neither of these forms carries adequate information to provide unambiguous accessible output. While some mathematical concepts are explicit or can be inferred, the general problem of understanding mathematical notation is too hard for present-day systems. For the hard cases, annotations need to be provided by an author. This document examines two central questions:
 
-* What additional semantic information is needed beyond current MathML and how should it be encoded?
+* What additional information is needed beyond current MathML and how should it be encoded?
 * How should that information be communicated to an end user to provide greater access to math content, especially for vocalization of math by Assistive Technology (AT) such as screen readers?
 
 This document makes no conclusions. It lists some of the strengths and weaknesses of the approaches presented. The reader is invited to comment on those approaches and/or provide alternatives as the WG wants to come to a solution that works within the web platform to address the problems noted below.
 
-The goal is to allow authors/authoring tools the ability to capture, in MathML, enough information so that an expression can be correctly rendered by screen reader applications. It is likely that additional information that aids accessibility can also be used to improve search of mathematical expressions, but the focus of this document is on enhancing accessibility.
+The goal is to allow authors/authoring tools the ability to capture, in MathML, enough information so that an expression can be correctly rendered by screen reader applications. It is likely that further applications may be enabled with the same annotations, but the focus of this document is on enhancing accessibility.
 
-The Working Group is committed to backwards compatibility.  Any solution to these problems should not invalidate old documents, but should allow progressive enhancement of existing content.  Moreover, authors should be able to enhance the math contained in their documents as little or as much as they choose.
+The Working Group is committed to backwards compatibility.  Any solution to these problems should not invalidate old documents, but should allow progressive enhancement of existing content.  Moreover, to allow flexible and progressive adoption, authors should be able to enhance the math contained in their documents as little or as much as they choose.
 
-In the following sections, this document discusses the current state of Web math APIs, how AT renders math, and the problems that ambiguous math presents to AT/users. It explores some ideas based on ARIA and CSS, and parallel MathML markup. It also presents a potential MathML extension to solve the ambiguity issues. Although not the focus of this document, there are areas such as search and computation that potentially can be enhanced by a solution that enhances accessibility and this is discussed at the end of the document.
+In the following sections, this document discusses the current state of Web math APIs, how AT renders math, and the problems that ambiguous math presents to AT/users. It explores some ideas based on ARIA and CSS, and parallel MathML markup. It also presents a new potential extension for presentation MathML.
 
 ## Current State
 
@@ -57,7 +57,7 @@ For years, the accessibility of mathematics in print, and later on the web and i
 
 The use of MathML has dramatically reduced these problems. In addition to speech, using MathML allows the specialized braille formats used for mathematics to be generated. Unlike text, these formats are *not* based on the words used to speak the expressions, but on (mostly) the notations used to represent them. Critically, MathML allows readers to explore the mathematical structure of an expression when it is too complicated to be understood when read from start to end.
 
-Ambiguities in mathematical notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is better because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
+A remaining problem with the accessibility of MathML occurs because mathematical notations can be ambiguous. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is better because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
 * $x^2$ -- "x squared" versus "x superscript 2 end superscript"
 * $\hat{x}$ -- "x hat" versus "x modified above with circumflex"
 * $\big(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\big)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
@@ -160,15 +160,56 @@ The simplest approach to using ARIA would be to add aria-label to a math tag. Fo
 There are several problems with this approach:
 
 * The value of the label is a plain text string. Speech cues (such as pauses) can not be added nor can forced pronunciation. In particular, in English, mathematics always uses the long ‘a’ sound, but speech engines have no way to know they are speaking math and so often use the short ‘a’ sound. Compare:
-<br/>
-<audio controls src="a-example-NVDA.mp3">long a</audio> to <audio controls src="a-example-JAWS.mp3">short a</audio>
-<br/>
+<table>
+<tr> <th> Long A </th> <th> Short A </th> </tr>
+<tr> 
+  <td><audio controls src="a-example-NVDA.mp3">long a</audio></td>
+  <td><audio controls src="a-example-JAWS.mp3">long a</audio></td>
+</tr>
+</table>
 This often makes the math unintelligible. Similarly, mathematical expressions have a different prosody than normal speech, so what is spoken is often harder to understand than it should be.
 * Mathematics has its own braille code. The braille used for math differs significantly from the text used for speech.
 The ARIA 1.3 draft adds the attribute ‘braille-labelledby’ so there is the possibility of providing braille, but it is a large ask for the document author to generate braille for math. Furthermore, there are multiple braille codes for some languages (in English, UEB and Nemeth); it is not possible for the author to know which braille code to generate.
-* As mentioned above, for someone who cannot see an expression words such as "start fraction" and "end fraction" are needed to disambiguate the start and end of a fraction; but for those who can see an expression, speaking those words adds complexity. Hence, text used in aria-label should be based on the needs of the user. A potential solution is to embed some syntax to indicate what wording is needed for someone who can see the expression and what wording is needed for someone who can't. Embedding SSML in `aria-label` was rejected and it seems likely embedding special syntax for math will be acceptable. Ultimately, it should be the AT that decides what should be spoken; enough information needs to be passed to AT so it can present to a user what is best. 
+* As mentioned above, for someone who cannot see an expression words such as "start fraction" and "end fraction" are needed to disambiguate the start and end of a fraction; but for those who can see an expression, speaking those words adds complexity. Hence, the text used in aria-label should be based on the needs of the user. A potential solution is to embed some syntax to indicate what wording is needed for someone who can see the expression and what wording is needed for someone who can't. Embedding SSML in `aria-label` was rejected and it seems likely embedding special syntax for math will be acceptable. Ultimately, it should be the AT that decides what should be spoken; enough information needs to be passed to AT so it can present to a user what is best. 
 * With the exception of `maction`, MathML elements are static elements. According to [this blog](https://www.davidmacd.com/blog/does-aria-label-override-static-text.html), aria-label on static elements has poor support in many screen readers.
 * Mathematical expressions can often be long enough that a user needs to explore/navigate them. This means the simple approach of using aria-label only on a math tag is too simple -- it needs to be placed on all the parts of the expression where the normal reading would be incorrect (at a minimum, from the deepest point in the tree where there is ambiguity to the root). This is a viable approach and SRE in MathJaX does something similar (it doesn’t use aria-label because screen readers don’t support aria-label on MathML elements; it uses JavaScript to read its private attribute).
+
+Here is some potential markup using `aria-label` for the remaining two examples.
+<details markdown="1">
+<summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
+This example shows the need to use nested `aria-label`s.
+```xml
+<mover aria-label="the line segment A prime B prime>
+  <mrow>
+    <msup aria-label="A prime">
+      <mi>A</mi>
+      <mo aria-label="prime">&#x2032;</mo>
+    </msup>
+    <mo>&#x2063;</mo>
+    <msup aria-label="B prime">
+      <mi>B</mi>
+      <mo aria-label="prime">&#x2032;</mo>
+    </msup>
+  </mrow>
+  <mo>¯</mo>
+</mover>
+```
+</details>
+
+<details markdown="1">
+<summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
+This is similar to the line segment example in terms of complexity. Note that the second argument is spoken first.
+```xml
+<msub aria-label="the x coordinate of the point B prime">
+  <msup aria-label="the point B prime">
+    <mi>B</mi>
+    <mo aria-label="prime">&#x2032;</mo>
+  </msup>
+  <mi>x<mi>
+</msub>
+```
+</details>
+<br/>
 
 As noted above, a downside to using aria-label is that it is very repetitive: every parent element must include the text used in the child. An appealing alternative is to use multiple aria-labelledby ids instead of aria-label, where the value of aria-labelledby points to the various children. These in turn can point to their children. The problem with this approach is that text can not be mixed in with the ‘id’s used in aria-labelledby so that a square root does not have a child to point to for the “square root of” part of the expression “square root of x plus y”. A few (unpleasant) hacks are possible by introducing elements that don’t display and adding aria-label to them, but this seems like a poor solution. The unit circle example below illustrates the use of aria-labelledby:
 
@@ -422,10 +463,10 @@ Considerable investigation is underway to collect default names for math operato
 Providing a subject area attribute such as `subject="geometry"` is an adjunct to `intent` and default idea.
 Each defined subject would include a list of notations and their default `intent` value.
 This could provide a simpler means of remediating a document in some cases.
-For example, a publisher might add a subject area to all the math tags in a geometry book so that the default intent of $(0,5)$ is `intent="point($1,$2)"`. The three examples used in this document would all be captured by `subject="geometry"` on a math tag: `point`, ` segment`, etc, are likely what would be the default ‘intent’ in this case. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
+For example, a publisher might add a subject area to all the math tags in a geometry book so that the default intent of $(0,5)$ is `intent="point($1,$2)"`. The three examples used in this document could all be captured by adding `subject="geometry"` to the  `math` tag. The use of subject to indicate “chemical-formula” is particularly useful for chemistry, where superscripts on elements represent ions not powers; subscripts on chemical elements aren’t pronounced (e.g., $\mathrm{H}_2\mathrm{O}$); and “-” and “=” represent single and double bonds.
 
 
-The Math WG has not had detailed discussions about using subject areas yet. If the idea works out, it is likely that at least initially, the number of known subject areas would be limited to perhaps as few as 5–15 subject areas covering basic math and science areas. The number of changes to defaults each subject area would is very dependent on the subject area. As with `intent`, `subject` area` can be implemented without changes to other web standards other than needing to be part of the accessibility tree. At least one AT tool (MathPlayer) makes use of user-specified subject areas to override defaults on what is spoken, so there is a little experience with this concept. Classifying mathematics and other sciences is difficult. It is unknown if a broad brush categorization approach to K-14 topics as currently envisioned is feasible; it remains to be investigated.
+The Math WG has not had detailed discussions about using subject areas yet. If the idea works out, it is likely that at least initially, the number of known subject areas would be limited to perhaps as few as 5–15 subject areas covering basic math and science areas. The number of changes each subject area would make to the generic defaults is very dependent on the subject area. Potentially more than one subject area could be given with conflicts resolved by order. As with `intent`, `subject` area can be implemented without changes to other web standards other than needing to be part of the accessibility tree. At least one AT tool (MathPlayer) makes use of user-specified subject areas to override defaults on what is spoken, so there is a little experience with this concept. Classifying mathematics and other sciences is difficult. It is unknown if a broad brush categorization approach to K-14 topics as currently envisioned is feasible; this remains to be investigated if using `intent` is pursued further.
 
 ## Other target applications of MathML
 
@@ -473,4 +514,4 @@ This document was a group effort by many members of the Math WG. The WG would pa
 
 * Sam Dooley: Parallel Markup and Intent
 * Deyan Ginev: ARIA and schema.org
-* Neil Soiffer: Goals, Current State, and Subject Area
+* Neil Soiffer: Introduction, Current State, ARIA, and Subject Area
