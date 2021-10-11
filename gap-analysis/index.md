@@ -57,7 +57,7 @@ For years, the accessibility of mathematics in print, and later on the web and i
 
 The use of MathML has dramatically reduced these problems. In addition to speech, using MathML allows the specialized braille formats used for mathematics to be generated. Unlike text, these formats are *not* based on the words used to speak the expressions, but on (mostly) the notations used to represent them. Critically, MathML allows readers to explore the mathematical structure of an expression when it is too complicated to be understood when read from start to end.
 
-Ambiguities in mathematical notation mean that semantic speech can’t be reliably generated. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is better because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
+A remaining problem with the accessibility of MathML occurs because mathematical notations can be ambiguous. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is better because people/teachers use semantic readings and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
 * $x^2$ -- "x squared" versus "x superscript 2 end superscript"
 * $\hat{x}$ -- "x hat" versus "x modified above with circumflex"
 * $\big(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\big)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
@@ -160,15 +160,56 @@ The simplest approach to using ARIA would be to add aria-label to a math tag. Fo
 There are several problems with this approach:
 
 * The value of the label is a plain text string. Speech cues (such as pauses) can not be added nor can forced pronunciation. In particular, in English, mathematics always uses the long ‘a’ sound, but speech engines have no way to know they are speaking math and so often use the short ‘a’ sound. Compare:
-<br/>
-<audio controls src="a-example-NVDA.mp3">long a</audio> to <audio controls src="a-example-JAWS.mp3">short a</audio>
-<br/>
+<table>
+<tr> <th> Long A </th> <th> Short A </th> </tr>
+<tr> 
+  <td><audio controls src="a-example-NVDA.mp3">long a</audio></td>
+  <td><audio controls src="a-example-JAWS.mp3">long a</audio></td>
+</tr>
+</table>
 This often makes the math unintelligible. Similarly, mathematical expressions have a different prosody than normal speech, so what is spoken is often harder to understand than it should be.
 * Mathematics has its own braille code. The braille used for math differs significantly from the text used for speech.
 The ARIA 1.3 draft adds the attribute ‘braille-labelledby’ so there is the possibility of providing braille, but it is a large ask for the document author to generate braille for math. Furthermore, there are multiple braille codes for some languages (in English, UEB and Nemeth); it is not possible for the author to know which braille code to generate.
-* As mentioned above, for someone who cannot see an expression words such as "start fraction" and "end fraction" are needed to disambiguate the start and end of a fraction; but for those who can see an expression, speaking those words adds complexity. Hence, text used in aria-label should be based on the needs of the user. A potential solution is to embed some syntax to indicate what wording is needed for someone who can see the expression and what wording is needed for someone who can't. Embedding SSML in `aria-label` was rejected and it seems likely embedding special syntax for math will be acceptable. Ultimately, it should be the AT that decides what should be spoken; enough information needs to be passed to AT so it can present to a user what is best. 
+* As mentioned above, for someone who cannot see an expression words such as "start fraction" and "end fraction" are needed to disambiguate the start and end of a fraction; but for those who can see an expression, speaking those words adds complexity. Hence, the text used in aria-label should be based on the needs of the user. A potential solution is to embed some syntax to indicate what wording is needed for someone who can see the expression and what wording is needed for someone who can't. Embedding SSML in `aria-label` was rejected and it seems likely embedding special syntax for math will be acceptable. Ultimately, it should be the AT that decides what should be spoken; enough information needs to be passed to AT so it can present to a user what is best. 
 * With the exception of `maction`, MathML elements are static elements. According to [this blog](https://www.davidmacd.com/blog/does-aria-label-override-static-text.html), aria-label on static elements has poor support in many screen readers.
 * Mathematical expressions can often be long enough that a user needs to explore/navigate them. This means the simple approach of using aria-label only on a math tag is too simple -- it needs to be placed on all the parts of the expression where the normal reading would be incorrect (at a minimum, from the deepest point in the tree where there is ambiguity to the root). This is a viable approach and SRE in MathJaX does something similar (it doesn’t use aria-label because screen readers don’t support aria-label on MathML elements; it uses JavaScript to read its private attribute).
+
+Here is some potential markup using `aria-label` for the remaining two examples.
+<details markdown="1">
+<summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
+This example shows the need to use nested `aria-label`s.
+```xml
+<mover aria-label="the line segment A prime B prime>
+  <mrow>
+    <msup aria-label="A prime">
+      <mi>A</mi>
+      <mo aria-label="prime">&#x2032;</mo>
+    </msup>
+    <mo>&#x2063;</mo>
+    <msup aria-label="B prime">
+      <mi>B</mi>
+      <mo aria-label="prime">&#x2032;</mo>
+    </msup>
+  </mrow>
+  <mo>¯</mo>
+</mover>
+```
+</details>
+
+<details markdown="1">
+<summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
+This is similar to the line segment example in terms of complexity. Note that the second argument is spoken first.
+```xml
+<msub aria-label="the x coordinate of the point B prime">
+  <msup aria-label="the point B prime">
+    <mi>B</mi>
+    <mo aria-label="prime">&#x2032;</mo>
+  </msup>
+  <mi>x<mi>
+</msub>
+```
+</details>
+<br/>
 
 As noted above, a downside to using aria-label is that it is very repetitive: every parent element must include the text used in the child. An appealing alternative is to use multiple aria-labelledby ids instead of aria-label, where the value of aria-labelledby points to the various children. These in turn can point to their children. The problem with this approach is that text can not be mixed in with the ‘id’s used in aria-labelledby so that a square root does not have a child to point to for the “square root of” part of the expression “square root of x plus y”. A few (unpleasant) hacks are possible by introducing elements that don’t display and adding aria-label to them, but this seems like a poor solution. The unit circle example below illustrates the use of aria-labelledby:
 
