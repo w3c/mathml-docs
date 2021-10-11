@@ -26,7 +26,7 @@ Since its beginnings in 1998, MathML has had two parts: Presentation MathML whic
 
 This document makes no conclusions. It lists some of the strengths and weaknesses of the approaches presented. The reader is invited to comment on those approaches and/or provide alternatives as the WG wants to come to a solution that works within the web platform to address the problems noted below.
 
-The goal is to allow authors/authoring tools the ability to capture, in MathML, enough information so that an expression can be correctly rendered by screen reader applications. It is likely that further applications may be enabled with the same annotations, but the focus of this document is on enhancing accessibility.
+The goal is to allow authors/authoring tools the ability to capture, in MathML, enough information so that an expression can be correctly rendered by screen reader applications. It is likely that further applications such as search, computation, and conversion to other formats may benefit from the same annotations, but the focus of this document is on enhancing accessibility.
 
 The Working Group is committed to backwards compatibility.  Any solution to these problems should not invalidate old documents, but should allow progressive enhancement of existing content.  Moreover, to allow flexible and progressive adoption, authors should be able to enhance the math contained in their documents as little or as much as they choose.
 
