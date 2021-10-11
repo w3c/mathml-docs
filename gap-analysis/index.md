@@ -63,7 +63,7 @@ A remaining problem with the accessibility of MathML occurs because mathematical
 
 While all AT speaks $x^2$ semantically, some do not speak $\hat{x}$ semantically, and none currently recognize an identity matrix.
 
-Higher mathematics adds an additional tier of complexty. In it, even $x^2$ can be ambiguous, and may warrant a different reading than ordinary. One such case is $L^2$ read simply "L2" in the domain of Lebesgue spaces. In such texts, the author can often find themselves to be one of a only a handful of practitioners who have full grasp of their technical terminology, making manual annotation a frequent need for good AT.
+Higher mathematics adds an additional tier of complexty. In it, even $x^2$ can be ambiguous, and may warrant a different reading than ordinary. One such case is $L^2$ read simply "L2" in the domain of Lebesgue spaces. In such texts, the author can often find themselves to be one of a only a handful of practitioners who have full grasp of their technical terminology, making frequent manual annotations important for accessibility of the content.
 
 Some notations, such as fractions and square roots, may require bracketing words or tones to indicate the start and end of an expression, for readers who can't see the presentation. For example, $\sqrt{x+1}$ is unambiguously spoken as "the square root of x plus 1 end root". Without these bracketing words, "the square root of x plus 1" could also be interpreted as $\sqrt{x}+1$. However, for someone who is dyslexic and uses AT, the extra words are a distraction and shouldn't be used. This difference between the needs of users means that a real solution should allow flexibility based on the reader -- literal text strings annotated by authors may be inappropriate for some readers.
 
