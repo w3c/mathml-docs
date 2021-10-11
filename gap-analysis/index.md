@@ -411,18 +411,20 @@ Such an attribute could be used by an authoring tool, for example, to encode the
 
 If (0,5) had another meaning, such as an open interval, or an ordered pair, or greatest common divisor, a value other than “point” would be used in the intent attribute.
 
+Here is some potential markup using `aria-label` for the remaining two examples.
+<details markdown="1">
+<summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
 
-The line segment from the point A' to the point B' could be encoded as:
-
+This example shows the need to use nested `intent`s.
 ```xml
-<mover intent="segment($x,$y)">
+<mover intent="line-segment($x,$y)">
   <mrow>
-    <msup arg="x" intent="prime($1)">
+    <msup arg="x" intent="primed($1)">
       <mi arg="1">A</mi>
       <mo>&#x2032;</mo>
     </msup>
     <mo>&#x2063;</mo>
-    <msup arg="y" intent="prime($1)">
+    <msup arg="y" intent="primed($1)">
       <mi arg="1">B</mi>
       <mo>&#x2032;</mo>
     </msup>
@@ -430,31 +432,30 @@ The line segment from the point A' to the point B' could be encoded as:
   <mo>¯</mo>
 </mover>
 ```
-
-where the name “segment” is used here to mean line segment, and the name “prime” is used to denote a primed variable symbol.
-
-Other meanings for the overbar notation would replace “segment” with another operator in the intent attribute.
+</details>
 
 
-The x-coordinate of the point B' could be encoded as:
+<details markdown="1">
+<summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
+This is similar to the line segment example in terms of complexity. Note that the second argument is spoken first.
 
 ```xml
-<msub intent="index($p,$v)">
-  <msup arg="p" intent="prime($1)">
+<msub intent="coordinate-of($p,$v)">
+  <msup arg="p" intent="primed($1)">
     <mi arg="1">B</mi>
     <mo>&#x2032;</mo>
   </msup>
   <mi arg="v">x<mi>
 </msub>
 ```
-
-where the name “index” is used here to select a component from a tuple, in this case, the x-coordinate from a point.
-
-
+</details>
+<br/>
 Various proposals have been discussed for the syntax to be supported by the intent attribute, with varying trade-offs in markup convenience. One proposal is to include default intent values for existing MathML presentation forms and default names for math operators to reduce the amount of markup needed to specify the intent of an expression. For example $\frac{n!}{(n-1)!)} = n$ would not require the explicit use of `intent` but would be equivalent to a version that included `intent="factorial($1)"` on the `mrow`s in the fraction, etc. While the full encoding of the content markup for an expression is often complex, and often not included with the presentation, the inclusion of the intent markup for an expression is potentially much simpler to generate and easier to consume, as part of the presentation markup.
 
 
 An advantage of this proposal is that it can be implemented using current technology without changes to other web standards, other than to specify that the attribute should be part of the accessibility tree built by browsers. While the functional syntax [‘name(arg1, ...)’]  represents a MathML-specific encoding, it is relatively easy to generate and to consume.
+
+The `intent` attribute is meant to be passed to AT. This allows AT to decide what is appropriate based on the needs/preferences of the reader. It also avoids the problem of having to know whether to embed in `aria-label` speech geared to someone who can't see the screen (and hence needs being/end cues) and someone who can see the screen and needs audio reinforcement to help them decode what they see. It also leaves it to AT to add prosody cues and forcing a long 'a' sound, something that can't currently can't be done with `aria-label`.
 
 
 Considerable investigation is underway to collect default names for math operators, and to explore common presentation markup patterns to apply attribute values to express the intent.  Elementary intent examples can often be encoded using only the default intent rules, and many intermediate examples can be handled by encoding ambiguous operators and their arguments.  Even more complex examples such as integral forms where the differential appears as part of the expression for the integrand can be properly separated into their constituent parts.
