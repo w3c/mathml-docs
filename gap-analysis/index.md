@@ -509,9 +509,4 @@ Finally, formulæ displayed in a web-page are subject to being transferred to ot
 
 ## Authors/Acknowledgements
 
-
-This document was a group effort by many members of the Math WG. The WG would particularly like to acknowledge the primary authors of several sections:
-
-* Sam Dooley: Parallel Markup and Intent
-* Deyan Ginev: ARIA and schema.org
-* Neil Soiffer: Goals, Current State, and Subject Area
+This document was a group effort by many members of the Math WG as part of an ongoing internal conversation.
