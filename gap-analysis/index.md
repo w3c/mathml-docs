@@ -323,7 +323,7 @@ Practically speaking, if `aria-label` is used as the output of the `speech` prop
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
 
 
-The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as [Parallel MathML Markup](https://www.w3.org/TR/MathML2/chapter5.html#mixing.parallel).  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
+The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as [Parallel MathML Markup](https://www.w3.org/TR/MathML3/chapter5.html).  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
 
 
 ```xml
@@ -346,11 +346,73 @@ The <semantics> element may be used to attach content markup as an annotation to
 ```
 
 
-The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (definitionURL), and attributes that link into OpenMath content dictionaries (cdbase and cd).
+The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (cdbase and cd).
 
 
 The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
 
+<details markdown="1">
+<summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
+$A'$ acts like another variable. In content MathML, variables are denoted by `ci` and can contain presentation MathML as illustrated in the example below.
+As with the first example, the `<csymbol>line-segment<csymbol/>` element below is not part of the standard content MathML and would likely include a `definitionURL` attribute to point to something to ground the meaning.
+```xml
+<semantics>
+  <mrow id="e">
+    <mover id="e.1">
+      <mrow id="e.1.1">
+        <msup id="e.1.1.1'>
+          <mi id="e.1.1.1.1">A</mi>
+          <mo id="e.1.1.1.2">&#x2032;</mo>
+        </msup>
+        <mo id="e.1.1.2">&#x2063;</mo>
+        <msup id="e.1.1.3">
+          <mi id="e.1.1.3.1">B</mi>
+          <mo  id="e.1.1.3.2">&#x2032;</mo>
+        </msup>
+      </mrow>
+      <mo id="e.1.2">¯</mo>
+    </mover>
+  </mrow>
+  <annotation-xml encoding="MathML-Content">
+    <apply xref="e">
+      <csymbol>line-segment<csymbol/>
+      <ci xref="e.1.1.1">
+        <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
+      </ci>
+      <ci xref="e.1.1.3">
+        <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
+      </ci>
+    </apply>
+  </annotation-xml>
+</semantics>
+```
+</details>
+
+<details markdown="1">
+<summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
+This is similar to the second example: $B'$ is treated as a `ci` and `<csymbol>point-coordinate<csymbol/>` is not part of the standard content MathML.
+```xml
+<semantics>
+  <msub id="f">
+    <msup id="f.1">
+      <mi id="f.1.1">B</mi>
+      <mo id="f.1.2">&#x2032;</mo>
+    </msup>
+    <mi id="f.2">x<mi>
+  </msub>
+  <annotation-xml encoding="MathML-Content">
+    <apply xref="f">
+      <csymbol>point-coordinate<csymbol/>
+      <ci xref="f.1">
+        <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
+      </ci>
+      <ci xref="f.2">x</ci>
+    </apply>
+  </annotation-xml>
+</semantics>
+```
+</details>
+<br/>
 
 #### Challenges of parallel markup:
 
