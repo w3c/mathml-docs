@@ -318,6 +318,14 @@ This approach can be used to define both "UA" style rulesheets which require no 
 
 Practically speaking, if `aria-label` is used as the output of the `speech` property, such an approach might include very few new MathML specific asks of the platform. Mainly some changes to `aria-label` such as allowing some control over speech and adding an exception to the requirement that AT braille the text in `aria-label`). There is still the problem of knowing the needs of a user so that appropriate speech is generated. User-stylesheets are a potential solution, but they come with their own set of problems.
 
+### Structured data via schema.org RDFa annotations
+Schema.org is an ongoing effort developing vocabularies for aiding “Rich Results” in information retrieval, endorsed by most major search engines. We did a basic evaluation, with the goal of exposing our rich “intent” information to search engines.
+* There are no targeted vocabulary entries for the kind of information we want to enrich in presentation MathML. Loosely related entries were “disambiguatingDescription” and “name”. A prototype of how they could be added to MathML 3 via RDFa can be seen [here](https://github.com/dginev/tiny-mathml-a11y-demo/blob/master/schema_experiment_2.html)
+* There are vocabulary items explicitly referring to mathematics, which are specific to applications - “mathSolver”, “solveMathAction”, “mathExpression”, and can not be repurposed as augmentations over MathML.
+    * These developments are [recent](https://github.com/schemaorg/schemaorg/issues/2740), and there is some possibility we could request new vocabulary entries for MathML-specific search needs.
+* There was no viable outcome in using the existing schema.org vocabulary. Pages with well-indexed structured data did not benefit - querying for the new information we introduced in the annotations returned no results. It is likely that while this data can be accessed by web crawlers, it may not be added to search engines before creating an explicit “Rich result” application.
+    * This leads us to believe this avenue will only be viable in close collaboration with browser vendors, even if existing vocabulary entries can be repurposed for our needs.
+* The theoretical upside of adopting a structured data annotation approach is to avoid introducing additional complexity inside MathML itself, and delegate all search-related markup to existing technologies. However, it is currently unclear if there is any path to reusing these approaches over math expressions, especially when considering adoption in major search engines.
 
 ### Parallel MathML Markup
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
@@ -345,11 +353,9 @@ The <semantics> element may be used to attach content markup as an annotation to
 </semantics>
 ```
 
-
-The `<csymbol>point</csymbol>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (cdbase and cd).
-
-
-The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
+The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (`cdbase` and `cd`).
+The OpenMath dictionaries do not currently associate speech with the meanings they define and so are not a good candidate to point to.
+A better approach would be to link to Wikidata as described in [this paper](http://ceur-ws.org/Vol-2307/paper51.pdf). For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946); with the exception of `point-coordinate` (third example) all the other notations used in the examples including a $A'$ are already part of Wikidata.
 
 <details markdown="1">
 <summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
@@ -413,39 +419,7 @@ This is similar to the second example in that $B'$ is treated as a `ci`.
 </details>
 <br/>
 
-#### Challenges of parallel markup:
-
-
-* Parallel markup includes both a presentation and a content encoding for each expression, so it roughly doubles the size of the markup compared to either presentation or content markup.
-
-
-* Due to the ambiguous nature of presentation, most tools do not have the capability or information needed to generate content markup, leading to redundancy between the two representations. For example, a superscript without clear meaning can become an artificial `<csymbol>` in Content MathML with the presentational name “superscript” in systems that are forced to make some choice.
-
-
-* Since the two forms are not isomorphic, there will be presentation nodes with no corresponding content node, and vice-versa. However, because the semantic information needed to resolve a notation is encoded in a separate branch of the document tree, it poses the challenge to locate and extract the semantics when processing the presentation.
-
-
-MathML 1 and MathML 2 defined about 140 tags that describe the functional content. This list does not begin to cover the vast amount of mathematical content, so MathML 3 added a means to use a URI to point to external sources to define the meaning of a tag. Although MathML favors using OpenMath standard’s formal dictionaries, any source can be used. Most official (according to the MathML3 spec) content dictionaries are rather formal which can be helpful for search, computation and even theorem proving, but not helpful for accessibility support in that they lack wording to use for speaking the content. However, because any URI can be used, it is possible to link to content dictionaries that have ways to associate speech with meaning. Wikidata is an example of such a dictionary <http://ceur-ws.org/Vol-2307/paper51.pdf>. For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946).
-
-
-Cons:
-
-* Requirement of complex software
-* Dependency to CDs
-* CDs are hard to create, hard to discover, and hard to reuse in the way their author intended them. There is also little if any tool support around the CD concept.
-* Requires deep understanding of XML references
-* Hardly readable without visual tools
-* Only csymbol elements can link to CD entries
-* No context in terms of default CDs / subject area is possible
-
-Pros:
-
-* Already standard
-* Rich CDs exists
-* Easy to introduce new symbols in CDs, especially in wikidata cd
-* Multi-language support
-* Default intent possible
-* Very flexible from no annotation to partial annotation to full operator tree annotations
+The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  Despite being present since MathML's inception, content markup is only rarely used in web pages, electronic documents, or math authoring tools; parallel markup is used even less frequently.
 
 
 ## Creating MathML-specific Solutions
