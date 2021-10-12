@@ -353,7 +353,7 @@ The <semantics> element may be used to attach content markup as an annotation to
 </semantics>
 ```
 
-Content MathML has a few methods to associate meaning with a `csymbol`. One method is to use one of the ~140 predefined symbols. This is referred to as Pragmatic Content MathML. Neither `point` nor the other `csymbol`s used in the examples are part of Pragmatic Content MathML.
+Content MathML has a few methods to associate meaning with a `csymbol`. One method is to use one of the ~140 predefined symbols. Neither `point` nor the other `csymbol`s used in the examples are one of the predefined symbols.
 However, external dictionaries provide extensibility. For example, the `definitionURL` attribute could refer to the Wikidata definition of point (link); alternatively the `cd` attribute could refer to an OpenMath Conent Dictionary.
 For simplicity, those are omitted in the examples in this section. One possible source of definitions that might be able to be used to associate speech with a definition is Wikidata (see [this paper](http://ceur-ws.org/Vol-2307/paper51.pdf) for more information). For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946).
 
