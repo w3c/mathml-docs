@@ -360,7 +360,7 @@ As with the first example, the `<csymbol>line-segment<csymbol/>` element below i
   <mrow id="e">
     <mover id="e.1">
       <mrow id="e.1.1">
-        <msup id="e.1.1.1'>
+        <msup id="e.1.1.1">
           <mi id="e.1.1.1.1">A</mi>
           <mo id="e.1.1.1.2">&#x2032;</mo>
         </msup>
