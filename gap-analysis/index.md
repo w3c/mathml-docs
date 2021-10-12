@@ -354,7 +354,6 @@ The `<semantics>` element has been part of the MathML standard since 1998, so no
 <details markdown="1">
 <summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
 $A'$ acts like another variable. In content MathML, variables are denoted by `ci` and can contain presentation MathML as illustrated in the example below.
-As with the first example, the `<csymbol>line-segment</csymbol>` element below is not part of the standard content MathML and would likely include a `definitionURL` attribute to point to something to ground the meaning.
 ```xml
 <semantics>
   <mrow id="e">
@@ -390,7 +389,7 @@ As with the first example, the `<csymbol>line-segment</csymbol>` element below i
 
 <details markdown="1">
 <summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
-This is similar to the second example: $B'$ is treated as a `ci` and `<csymbol>point-coordinate</csymbol>` is not part of the standard content MathML.
+This is similar to the second example in that $B'$ is treated as a `ci`.
 ```xml
 <semantics>
   <msub id="f">
