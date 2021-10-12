@@ -353,47 +353,11 @@ The <semantics> element may be used to attach content markup as an annotation to
 </semantics>
 ```
 
+The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (`cdbase` and `cd`).
+The OpenMath dictionaries do not currently associate speech with the meanings they define and so are not a good candidate to point to.
+A better approach would be to link to Wikidata as described in [this paper](http://ceur-ws.org/Vol-2307/paper51.pdf). For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946); with the exception of `point-coordinate` (third example) all the other notations used in the examples including a $A'$ are already part of Wikidata.
 
-The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (definitionURL), and attributes that link into OpenMath content dictionaries (cdbase and cd).
-
-
-The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
-
-
-#### Challenges of parallel markup:
-
-
-* Parallel markup includes both a presentation and a content encoding for each expression, so it roughly doubles the size of the markup compared to either presentation or content markup.
-
-
-* Due to the ambiguous nature of presentation, most tools do not have the capability or information needed to generate content markup, leading to redundancy between the two representations. For example, a superscript without clear meaning can become an artificial `<csymbol>` in Content MathML with the presentational name “superscript” in systems that are forced to make some choice.
-
-
-* Since the two forms are not isomorphic, there will be presentation nodes with no corresponding content node, and vice-versa. However, because the semantic information needed to resolve a notation is encoded in a separate branch of the document tree, it poses the challenge to locate and extract the semantics when processing the presentation.
-
-
-MathML 1 and MathML 2 defined about 140 tags that describe the functional content. This list does not begin to cover the vast amount of mathematical content, so MathML 3 added a means to use a URI to point to external sources to define the meaning of a tag. Although MathML favors using OpenMath standard’s formal dictionaries, any source can be used. Most official (according to the MathML3 spec) content dictionaries are rather formal which can be helpful for search, computation and even theorem proving, but not helpful for accessibility support in that they lack wording to use for speaking the content. However, because any URI can be used, it is possible to link to content dictionaries that have ways to associate speech with meaning. Wikidata is an example of such a dictionary <http://ceur-ws.org/Vol-2307/paper51.pdf>. For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946).
-
-
-Cons:
-
-* Requirement of complex software
-* Dependency to CDs
-* CDs are hard to create, hard to discover, and hard to reuse in the way their author intended them. There is also little if any tool support around the CD concept.
-* Requires deep understanding of XML references
-* Hardly readable without visual tools
-* Only csymbol elements can link to CD entries
-* No context in terms of default CDs / subject area is possible
-
-Pros:
-
-* Already standard
-* Rich CDs exists
-* Easy to introduce new symbols in CDs, especially in wikidata cd
-* Multi-language support
-* Default intent possible
-* Very flexible from no annotation to partial annotation to full operator tree annotations
-
+The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  Despite being present since MathML's inception, content markup is only rarely used in web pages, electronic documents, or math authoring tools; parallel markup is used even less frequently.
 
 ## Creating MathML-specific Solutions
 Each of the solutions above have problems when applied to math. This has led the group to explore a new MathML-specific solution. The largest drawback to any MathML-specific solution is that it would expand any “MathML exists in its own world” criticism and wouldn’t leverage work done on the web to support existing web technologies, now or in the future. The generic advantage is that the solution would (mostly) not be held hostage hoping for changes to other specifications.
