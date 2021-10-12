@@ -507,7 +507,7 @@ This is similar to the line segment example in terms of complexity. Note that th
     <mi arg="1">B</mi>
     <mo>&#x2032;</mo>
   </msup>
-  <mi arg="v">x<mi>
+  <mi arg="v">x</mi>
 </msub>
 ```
 </details>
