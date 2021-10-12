@@ -337,7 +337,7 @@ The <semantics> element may be used to attach content markup as an annotation to
   </mrow>
   <annotation-xml encoding="MathML-Content">
     <apply xref="x">
-      <csymbol>point<csymbol/>
+      <csymbol>point</csymbol>
       <ci xref="x.2">0</ci>
       <ci xref="x.3">5</ci>
     </apply>
@@ -346,7 +346,7 @@ The <semantics> element may be used to attach content markup as an annotation to
 ```
 
 
-The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (cdbase and cd).
+The `<csymbol>point</csymbol>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (cdbase and cd).
 
 
 The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  However, since content markup is only rarely used in web pages, electronic documents, or math authoring tools, parallel markup has not been widely adopted.
@@ -354,7 +354,7 @@ The `<semantics>` element has been part of the MathML standard since 1998, so no
 <details markdown="1">
 <summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
 $A'$ acts like another variable. In content MathML, variables are denoted by `ci` and can contain presentation MathML as illustrated in the example below.
-As with the first example, the `<csymbol>line-segment<csymbol/>` element below is not part of the standard content MathML and would likely include a `definitionURL` attribute to point to something to ground the meaning.
+As with the first example, the `<csymbol>line-segment</csymbol>` element below is not part of the standard content MathML and would likely include a `definitionURL` attribute to point to something to ground the meaning.
 ```xml
 <semantics>
   <mrow id="e">
@@ -375,7 +375,7 @@ As with the first example, the `<csymbol>line-segment<csymbol/>` element below i
   </mrow>
   <annotation-xml encoding="MathML-Content">
     <apply xref="e">
-      <csymbol>line-segment<csymbol/>
+      <csymbol>line-segment</csymbol>
       <ci xref="e.1.1.1">
         <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
       </ci>
@@ -390,7 +390,7 @@ As with the first example, the `<csymbol>line-segment<csymbol/>` element below i
 
 <details markdown="1">
 <summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
-This is similar to the second example: $B'$ is treated as a `ci` and `<csymbol>point-coordinate<csymbol/>` is not part of the standard content MathML.
+This is similar to the second example: $B'$ is treated as a `ci` and `<csymbol>point-coordinate</csymbol>` is not part of the standard content MathML.
 ```xml
 <semantics>
   <msub id="f">
@@ -402,7 +402,7 @@ This is similar to the second example: $B'$ is treated as a `ci` and `<csymbol>p
   </msub>
   <annotation-xml encoding="MathML-Content">
     <apply xref="f">
-      <csymbol>point-coordinate<csymbol/>
+      <csymbol>point-coordinate</csymbol>
       <ci xref="f.1">
         <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
       </ci>
