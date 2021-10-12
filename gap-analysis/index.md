@@ -437,7 +437,7 @@ This example shows the need to use nested `intent`s.
 
 <details markdown="1">
 <summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
-This is similar to the line segment example in terms of complexity. Note that the second argument is meant to be spoken first, where one could imagine a "speech rule" of the form `the $2-coordinate of $1`, associated with the `coordinate` value.
+This is similar to the line segment example in terms of complexity. Note that the second argument is meant to be spoken first, where one could imagine a "speech rule" of the form `the $2-coordinate of $1`, associated with the `coordinate` value and that intent values without parameters are typically spoken verbatim.
 
 ```xml
 <msub intent="coordinate($1,$2)">
