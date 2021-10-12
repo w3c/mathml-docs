@@ -353,9 +353,9 @@ The <semantics> element may be used to attach content markup as an annotation to
 </semantics>
 ```
 
-The `<csymbol>point<csymbol/>` element in the above example shows one style of markup that can be used to refer to operators that are not part of standard content MathML. It is used here to illustrate the style of parallel markup elements that could be used to represent the point example introduced above.  Other strategies to handle references to symbols outside of MathML include URI-style attributes (`definitionURL`), and attributes that link into OpenMath content dictionaries (`cdbase` and `cd`).
-The OpenMath dictionaries do not currently associate speech with the meanings they define and so are not a good candidate to point to.
-A better approach would be to link to Wikidata as described in [this paper](http://ceur-ws.org/Vol-2307/paper51.pdf). For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946); with the exception of `point-coordinate` (third example) all the other notations used in the examples including a $A'$ are already part of Wikidata.
+Content MathML has a few methods to associate meaning with a `csymbol`. One method is to use one of the ~140 predefined symbols. This is referred to as Pragmatic Content MathML. Neither `point` nor the other `csymbol`s used in the examples are part of Pragmatic Content MathML.
+However, external dictionaries provide extensibility. For example, the `definitionURL` attribute could refer to the Wikidata definition of point (link); alternatively the `cd` attribute could refer to an OpenMath Conent Dictionary.
+For simplicity, those are omitted in the examples in this section. One possible source of definitions that might be able to be used to associate speech with a definition is Wikidata (see [this paper](http://ceur-ws.org/Vol-2307/paper51.pdf) for more information). For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946).
 
 <details markdown="1">
 <summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
