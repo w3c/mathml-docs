@@ -331,7 +331,7 @@ Schema.org is an ongoing effort developing vocabularies for aiding “Rich Resul
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
 
 
-The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as [Parallel MathML Markup](https://www.w3.org/TR/MathML2/chapter5.html#mixing.parallel).  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
+The <semantics> element may be used to attach content markup as an annotation to the presentation of a math expression. This style of markup is known as [Parallel MathML Markup](https://www.w3.org/TR/MathML3/chapter5.html).  The id and xref attributes in MathML allow parallel markup to encode cross references from one form to the other.  In this way, how a mathematical notation is presented can be connected to how each logical component of it is to be computed, and both sets of information can be clearly connected at each level of the expression tree.
 
 
 ```xml
@@ -345,7 +345,7 @@ The <semantics> element may be used to attach content markup as an annotation to
   </mrow>
   <annotation-xml encoding="MathML-Content">
     <apply xref="x">
-      <csymbol>point<csymbol/>
+      <csymbol>point</csymbol>
       <ci xref="x.2">0</ci>
       <ci xref="x.3">5</ci>
     </apply>
@@ -357,7 +357,70 @@ The `<csymbol>point<csymbol/>` element in the above example shows one style of m
 The OpenMath dictionaries do not currently associate speech with the meanings they define and so are not a good candidate to point to.
 A better approach would be to link to Wikidata as described in [this paper](http://ceur-ws.org/Vol-2307/paper51.pdf). For example, [the Wikidata definition of “point” is here](https://www.wikidata.org/wiki/Q44946); with the exception of `point-coordinate` (third example) all the other notations used in the examples including a $A'$ are already part of Wikidata.
 
+<details markdown="1">
+<summary><span markdown="1">Line segment example $\overline{A'B'}$ </span></summary>
+$A'$ acts like another variable. In content MathML, variables are denoted by `ci` and can contain presentation MathML as illustrated in the example below.
+```xml
+<semantics>
+  <mrow id="e">
+    <mover id="e.1">
+      <mrow id="e.1.1">
+        <msup id="e.1.1.1">
+          <mi id="e.1.1.1.1">A</mi>
+          <mo id="e.1.1.1.2">&#x2032;</mo>
+        </msup>
+        <mo id="e.1.1.2">&#x2063;</mo>
+        <msup id="e.1.1.3">
+          <mi id="e.1.1.3.1">B</mi>
+          <mo  id="e.1.1.3.2">&#x2032;</mo>
+        </msup>
+      </mrow>
+      <mo id="e.1.2">¯</mo>
+    </mover>
+  </mrow>
+  <annotation-xml encoding="MathML-Content">
+    <apply xref="e">
+      <csymbol>line-segment</csymbol>
+      <ci xref="e.1.1.1">
+        <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
+      </ci>
+      <ci xref="e.1.1.3">
+        <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
+      </ci>
+    </apply>
+  </annotation-xml>
+</semantics>
+```
+</details>
+
+<details markdown="1">
+<summary><span markdown="1">X-coordinate example $B'_x$ </span></summary>
+This is similar to the second example in that $B'$ is treated as a `ci`.
+```xml
+<semantics>
+  <msub id="f">
+    <msup id="f.1">
+      <mi id="f.1.1">B</mi>
+      <mo id="f.1.2">&#x2032;</mo>
+    </msup>
+    <mi id="f.2">x<mi>
+  </msub>
+  <annotation-xml encoding="MathML-Content">
+    <apply xref="f">
+      <csymbol>point-coordinate</csymbol>
+      <ci xref="f.1">
+        <msup> <mi>B</mi> <mo>&#x2032;</mo> </msup>
+      </ci>
+      <ci xref="f.2">x</ci>
+    </apply>
+  </annotation-xml>
+</semantics>
+```
+</details>
+<br/>
+
 The `<semantics>` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  Despite being present since MathML's inception, content markup is only rarely used in web pages, electronic documents, or math authoring tools; parallel markup is used even less frequently.
+
 
 ## Creating MathML-specific Solutions
 Each of the solutions above have problems when applied to math. This has led the group to explore a new MathML-specific solution. The largest drawback to any MathML-specific solution is that it would expand any “MathML exists in its own world” criticism and wouldn’t leverage work done on the web to support existing web technologies, now or in the future. The generic advantage is that the solution would (mostly) not be held hostage hoping for changes to other specifications.
@@ -417,7 +480,7 @@ This is similar to the line segment example in terms of complexity. Note that th
     <mi arg="1">B</mi>
     <mo>&#x2032;</mo>
   </msup>
-  <mi arg="v">x<mi>
+  <mi arg="v">x</mi>
 </msub>
 ```
 </details>
