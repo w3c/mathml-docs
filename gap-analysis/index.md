@@ -321,7 +321,8 @@ Practically speaking, if `aria-label` is used as the output of the `speech` prop
 ### Structured data via schema.org RDFa annotations
 Schema.org is an ongoing effort developing vocabularies for aiding “Rich Results” in information retrieval, endorsed by most major search engines. It can be deposited via each of Microdata, RDFa, or JSON-LD, which allow parallel annotation on top of MathML expressions.  Hence, in theory, using schema.org could be a carrier for our `intent` annotations.  We did a basic evaluation, with the first goal of exposing the deposited information for search.
 
-We embedded RDFa in an HTML page which was successfully collected by web crawlers. However, we couldn't find schema.org vocabulary entries which could carry our "intent" information to the result pages of major search vendors.  For example, we tried to use “disambiguatingDescription” and “name” on both MathML token elements as well as HTML `span` elements.  There may be a better approach, and we welcome feedback, but our initial experiment was not successful.
+We embedded RDFa in an HTML page which was successfully collected by web crawlers. However, we couldn't find schema.org vocabulary entries which could carry our "intent" information to the result pages of major search vendors.  For example, we tried to use “disambiguatingDescription” and “name” on both MathML token elements as well as HTML `span` elements.  There may be a better approach but our initial experiment was not successful.
+We invite those with more experience with RDFa to contribute suggestions on how it can be used to pass information to AT.
 
 ### Parallel MathML Markup
 The MathML standard includes elements to describe the visual presentation of an expression, and elements to describe the functional content of an expression.  These two subsets of MathML can be used independently, or combined using the MathML `<semantics>` element.
