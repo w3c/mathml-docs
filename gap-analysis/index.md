@@ -165,7 +165,7 @@ There are several problems with this approach:
 <tr> <th> Long A </th> <th> Short A </th> </tr>
 <tr> 
   <td><audio controls src="a-example-NVDA.mp3">long a</audio></td>
-  <td><audio controls src="a-example-JAWS.mp3">long a</audio></td>
+  <td><audio controls src="a-example-plain.mp3">long a</audio></td>
 </tr>
 </table>
 This often makes the math unintelligible. Similarly, mathematical expressions have a different prosody than normal speech, so what is spoken is often harder to understand than it should be.
