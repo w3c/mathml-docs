@@ -57,15 +57,17 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     <li>Linux: Orca</li>
    </ul>
    <p>Speech, Braille, Navigation</p>
-   <p>Example: <audio controls><source src="mixed-fraction-NVDA.mp3" type="audio/mpeg"></audio></p>
+   <p>Example: <audio controls><source src="mixed-fraction-NVDA.mp3" type="audio/mpeg"></audio>
+    <span class="next emerge">&nbsp;&nbsp;$2 \frac{1}{3} \cdot 9 \frac{5}{8} > 22$</span>
+  </p>
   </section>
 
   <section class="slide" id="lists" aria-label="slide">
    <h2>Ambiguity of Notation</h2>
    <h3>Many ways to speak an expression</h3>
    <ul>
-    <li>$(0,5)$ "open paren 0 comma 5 close paren" vs "point 0 comma 5" vs "open interval from 0 to 5" vs "gcd" vs …</li>
-    <li>$x'$ – “x prime" vs “first derivative of x”</li>
+    <li><em>$(0,5)$</em> "open paren 0 comma 5 close paren" vs "point 0 comma 5" vs "open interval from 0 to 5" vs "gcd" vs …</li>
+    <li>$x'$ – “x prime" vs “first derivative of x” vs "x feet" vs "x minutes"</li>
     <li>$x^2$ – “x squared” vs “x superscript 2 end superscript”</li>
     <li>$\hat{x}$ – “x hat” vs “x modified above with circumflex”</li>
      </ul>
@@ -134,9 +136,11 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   &lt;mi class="arg2"&gt;5&lt;/mi&gt;
   &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
+
 [data-intent="point"] {
  --speech: "the point " text(.arg1) "comma" text(.arg2);
 };  </pre>
+<p>User-stylesheets for user-specific text</p>
   </section>
 
   <section class="slide" id="lists" aria-label="slide">
@@ -153,8 +157,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 &lt;semantics&gt;
   &lt;mrow id="x"&gt;
     &lt;mo id="x.1"&gt;(&lt;/mo&gt;
-    &lt;mi id="x.2"&gt;0&lt;/mi&gt;
-    <span style="font-size: 70%;">&lt;mo id="x.3"&gt;,&lt;/mo&gt;&lt;mi id="x.4"&gt;5&lt;/mi&gt;&lt;mo id="x.5"&gt;)&lt;/mo&gt;</span>
+    &lt;mi id="x.2"&gt;0&lt;/mi&gt;   &lt;mo id="x.3"&gt;,&lt;/mo&gt;
+    &lt;mi id="x.4"&gt;5&lt;/mi&gt;
+    &lt;mo id="x.5"&gt;)&lt;/mo&gt;
   &lt;/mrow&gt;
   &lt;annotation-xml encoding="MathML-Content"&gt;
     &lt;apply xref="x"&gt;   &lt;csymbol&gt;point&lt;/csymbol&gt;
@@ -191,15 +196,18 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
       &lt;mo&gt;)&lt;/mo&gt;
     &lt;/mrow&gt; </pre>
     <ul>
-      <li>open-ended</li>
-      <li>Defaulting/AT generates speech</li>
+      <li>Open-ended</li>
+      <li>Defaults</li>
+      <li>AT generates speech</li>
     </ul>
   </section>
 
   <section class="slide" id="lists" aria-label="slide">
     <h2>New: @subject</h2>
     <pre>
-  &lt;math subject="geometry"&gt; ... &lt;math&gt; </pre>
+  &lt;math subject="geometry"&gt;
+    ...
+  &lt;math&gt; </pre>
   
      <ul>
        <li>Change defaults</li>
