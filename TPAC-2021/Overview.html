@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width" name="viewport" />
+  <title>From MathML to AT</title>
+  <link rel="stylesheet" href="TPAC-2021-slides.css" />
+  <!-- To use the Shower framework, include the following two scripts: -->
+  <script src="shower.js"></script>
+  <script src="iframe-fixup.js"></script>
+  <!-- To use the b6+ framework, remove the two scripts above and use this: -->
+  <!--
+  <script src="b6plus.js"></script>
+  -->
+  <script>
+    MathJax = {
+      loader: {load: ['[tex]/mhchem']},
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [ ['$$', '$$'], ['\\[', '\\]']],
+        packages: {'[+]': ['mhchem']}
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+
+  <script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+ </head>
+ <body class="shower fade-in">
+
+  <!--=============================================================
+			    Example slides
+  ==============================================================-->
+
+  <div class="progress">
+   <!-- Remove this element if you don't want a progress bar -->
+  </div>
+
+  <section class="slide cover clear" id="start" aria-label="slide">
+   <h1>om MathML to AT</h1>
+   <address>MathML WG/Neil Soiffer</address>
+   <br/><br/>
+   <p> Gap Analysis: <a href="https://w3c.github.io/mathml-docs/gap-analysis/">https://w3c.github.io/mathml-docs/gap-analysis</a></p>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Current State of MathML Accessibility</h2>
+   <h3>Support</h3>
+   <ul>
+    <li>Windows: NVDA(+MathPlayer) and JAWS</li>
+    <li>Apple: macOS and iOS (Safari+VoiceOver)</li>
+    <li>Linux: Orca</li>
+   </ul>
+   <p>Speech, Braille, Navigation</p>
+   <p>Example: <audio controls style="width: 50%;"><source src="mixed-fraction-NVDA.mp3" type="audio/mpeg"></audio></p>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Ambiguity of Notation</h2>
+   <h3>Many ways to speak an expression</h3>
+   <ul>
+    <li>$(0,5)$ "open paren 0 comma 5 close paren" vs "point 0 comma 5" versus "open interval from 0 to 5"</li>
+    <li>$x^2$ – “x squared” versus “x superscript 2 end superscript”</li>
+    <li>$\hat{x}$ – “x hat” versus “x modified above with circumflex”</li>
+     </ul>
+    <h3>Authors know what they mean</h3>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Accessibility Tree</h2>
+   <h3>Current State (<a href="https://w3c.github.io/mathml-aam/#dfn-accessibility-api">MathML Accessibility API Mappings 1.0</a>)</h3>
+   <ul>
+    <li>Windows – no mappings</li>
+    <li>macOS/iOS – recently add MathML-equivalent roles (attributes?)</li>
+    <li>Linux – some math roles</li>
+    <li>Android – ???</li>
+   </ul>
+   <h3>What should be in the accessibility tree???</h3>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Adding Author Intent</h2>
+   <ul>
+    <li>ARIA</li>
+    <li>CSS</li>
+    <li>Structured Data</li>
+    <li>Parallel Markup</li>
+    <li>Intent/Subject Area</li>
+   </ul>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+    <h2>ARIA</h2>
+    <pre>
+  &lt;math aria-label="the point 0 comma 5"&gt;
+    &lt;mrow &gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi class="arg1"&gt;0&lt;/mi&gt;
+      &lt;mo&gt;,&lt;/mo&gt;
+      &lt;mi class="arg2"&gt;5&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt;
+  &lt;/math&gt;    </pre>
+  <p>Navigation: nested tagging</p>
+    </section>
+ 
+ 
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>ARIA: if only...</h2>
+   <ul>
+    <li>Plain text:
+      <p> Long A: <audio controls src="a-example-NVDA.mp3">long a</audio></p>
+      <p> Short A: <audio controls src="a-example-plain.mp3">long a</audio></p>
+    </li>
+      <li>Separate braille code (Nemeth/UEB)</li>
+      <li><em>User</em>-specific text $\frac{1}{x+1}$</li>
+      <li>Long text strings</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>CSS</h2>
+   <pre>
+&lt;mrow data-intent="point"&gt;
+  &lt;mo&gt;(&lt;/mo&gt;
+  &lt;mi class="arg1"&gt;0&lt;/mi&gt;
+  &lt;mo&gt;,&lt;/mo&gt;
+  &lt;mi class="arg2"&gt;5&lt;/mi&gt;
+  &lt;mo&gt;)&lt;/mo&gt;
+&lt;/mrow&gt;
+[data-intent="point"] {
+ --speech: "the point " text(.arg1) "comma" text(.arg2);
+};  </pre>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Structured data via schema.org RDFa annotations</h2>
+   <ul>
+    <li>Experiment that failed</li>
+    <li>Ideas???</li>
+   </ul>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Parallel Markup</h2>
+   <pre>
+&lt;semantics&gt;
+  &lt;mrow id="x"&gt;
+    &lt;mo id="x.1"&gt;(&lt;/mo&gt;
+    &lt;mi id="x.2"&gt;0&lt;/mi&gt;
+    <span style="font-size: 70%;">&lt;mo id="x.3"&gt;,&lt;/mo&gt;&lt;mi id="x.4"&gt;5&lt;/mi&gt;&lt;mo id="x.5"&gt;)&lt;/mo&gt;</span>
+  &lt;/mrow&gt;
+  &lt;annotation-xml encoding="MathML-Content"&gt;
+    &lt;apply xref="x"&gt;   &lt;csymbol&gt;point&lt;/csymbol&gt;
+      &lt;ci xref="x.2"&gt;0&lt;/ci&gt;
+      &lt;ci xref="x.4"&gt;5&lt;/ci&gt;
+    &lt;/apply&gt;</pre>
+   </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>Parallel Markup (2)</h2>
+   <h3>Cons</h3>
+   <pre>
+    &lt;/annotation-xml&gt;
+    &lt;/semantics&gt;</pre>
+    <ul>
+      <li>Complexity</li>
+      <li>Even less well used than Content MathML</li>
+    </ul>
+   <h3>Pros</h3>
+   <ul>
+    <li>Part of MathML</li>
+    <li>csymbol & Wikidata: accessibility + computability</li>
+   </ul>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+   <h2>New: @intent</h2>
+   <pre>
+    &lt;mrow intent="point($1,$2)"&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi arg="1"&gt;0&lt;/mi&gt;
+      &lt;mo&gt;,&lt;/mo&gt;
+      &lt;mi arg="2"&gt;5&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt; </pre>
+    <ul>
+      <li>open-ended</li>
+      <li>Defaulting/AT generates speech</li>
+    </ul>
+  </section>
+
+  <section class="slide" id="lists" aria-label="slide">
+    <h2>New: @subject</h2>
+    <pre>
+  &lt;math subject="geometry"&gt; ... &lt;math&gt; </pre>
+  
+     <ul>
+       <li>Change defaults</li>
+       <li>Easy remediation:  $ \ce{ -CH =CH -C H2 } $</li>
+       <li>Classification is hard</li>
+     </ul>
+   </section>
+
+  <section class="slide final clear" id="end" aria-label="slide">
+   <h2>Summary</h2>
+   <h3>Looked At:</h3>
+   <ul>
+     <li>Existing: ARIA, CSS, RDFa, Parallel Markup</li>
+     <li>Additions: @intent, @subject, and defaults</li>
+   </ul>
+   <h3>What did we miss???</h3>
+   <h3>What did we get wrong???</h3>
+  </section>
+
+ </body>
+</html>
