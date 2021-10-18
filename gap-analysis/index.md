@@ -343,8 +343,8 @@ The <semantics> element may be used to attach content markup as an annotation to
   <annotation-xml encoding="MathML-Content">
     <apply xref="x">
       <csymbol>point</csymbol>
-      <ci xref="x.2">0</ci>
-      <ci xref="x.3">5</ci>
+      <cn xref="x.2">0</cn>
+      <cn xref="x.4">5</cn>
     </apply>
   </annotation-xml>
 </semantics>
