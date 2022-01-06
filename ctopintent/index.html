@@ -1,0 +1,3067 @@
+<!DOCTYPE HTML>
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <title>Examples from MathML4</title>
+      <script src="ctop.js"></script>
+      <script src="ctop-runner.js"></script>
+      
+      <style>
+     body {max-width:80em; margin: auto;}	 
+     div.section {border: solid thin black; padding:.5em;margin-top:.5em;}
+     pre.examplecontent{border:solid thin blue;padding:.5em;background-color:#EEE;margin-bottom:0pt;margin-top:1em;}
+     pre.mml{border:solid thin green;padding:.5em;background-color:#F5F5F5;margin-top:0pt}
+     math{border:solid thin green;padding:.5em;background-color:#F5F5F5;margin-top:0pt}
+    </style>
+      </head>
+   
+   <body>
+      
+      <h1>Examples from MathML4</h1>
+      
+      <div class="section">
+         <h2 id="contm">Content Markup</h2>
+         <div class="section">
+            <h3 id="contm_intro">Introduction</h3>
+            <div class="section">
+               <h4>The Intent of Content Markup</h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_rendering">The Structure and Scope of Content MathML Expressions</h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_strict">Strict Content MathML</h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_cds">Content Dictionaries</h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_concepts">Content MathML Concepts</h4>
+            </div>
+         </div>
+         <div class="section">
+            <h3 id="contm_core">Content MathML Elements Encoding Expression Structure</h3>
+            <div class="section">
+               <h4 id="contm_cn">Numbers <code>&lt;cn&gt;</code></h4>
+               <div class="section">
+                  <h5 id="contm_rendering_numbers">Rendering <code>&lt;cn&gt;</code><span>,<code>&lt;sep/&gt;</code></span>-Represented Numbers </h5>
+               </div>
+               <div class="section">
+                  <h5 id="contm_cn_strict">Strict uses of <code>&lt;cn&gt;</code></h5>
+                  <pre class="examplecontent">
+                        
+&lt;cn type="hexdouble"&gt;7F800000&lt;/cn&gt;
+                     </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_cn_extended">Non-Strict uses of <code>&lt;cn&gt;</code></h5>
+                  <pre class="examplecontent">
+                        &lt;cn base="16"&gt;7FE0&lt;/cn&gt;
+                     </pre>
+                  <pre class="examplecontent">
+                        &lt;cn base="1000"&gt;10F&lt;/cn&gt;
+                     </pre>
+                  <pre class="examplecontent">
+                        &lt;cn type="rational"&gt;22&lt;sep/&gt;7&lt;/cn&gt;
+                     </pre>
+                  <pre class="examplecontent">
+                        
+&lt;cn type="complex-cartesian"&gt; 12.3 &lt;sep/&gt; 5 &lt;/cn&gt;
+
+                     </pre>
+                  <pre class="examplecontent">
+                        
+&lt;cn type="complex-polar"&gt; 2 &lt;sep/&gt; 3.1415 &lt;/cn&gt;
+                     </pre>
+                  <div class="section">
+                     <h6 id="contm-strict-cn-sep">Rewrite: cn sep</h6>
+                     <pre class="examplecontent">
+                  
+&lt;cn type="rational" base="b"&gt;n&lt;sep/&gt;d&lt;/cn&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="nums1"&gt;rational&lt;/csymbol&gt;
+  &lt;cn type="integer" base="b"&gt;n&lt;/cn&gt;
+  &lt;cn type="integer" base="b"&gt;d&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_cn-base">Rewrite: cn based_integer</h6>
+                     <pre class="examplecontent">
+                  
+&lt;cn type="integer" base="16"&gt;FF60&lt;/cn&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="nums1"&gt;based_integer&lt;/csymbol&gt;
+  &lt;cn type="integer"&gt;16&lt;/cn&gt;
+  &lt;cs&gt;FF60&lt;/cs&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_cn_strict_const">Rewrite: cn constant</h6>
+                     <pre class="examplecontent">
+                     &lt;cn type="constant"&gt;c&lt;/cn&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     &lt;csymbol cd="nums1"&gt;c2&lt;/csymbol&gt;
+                  </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_cn_pres">Rewrite: cn presentation mathml</h6>
+                     <pre class="examplecontent">
+                     
+&lt;cn type="rational"&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;sep/&gt;&lt;mi&gt;Q&lt;/mi&gt;&lt;/cn&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="nums1"&gt;rational&lt;/csymbol&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;p&lt;/ci&gt;
+  &lt;annotation-xml encoding="MathML-Presentation"&gt;
+   &lt;mi&gt;P&lt;/mi&gt;
+  &lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+ &lt;semantics&gt;
+  &lt;ci&gt;q&lt;/ci&gt;
+  &lt;annotation-xml encoding="MathML-Presentation"&gt;
+   &lt;mi&gt;Q&lt;/mi&gt;
+  &lt;/annotation-xml&gt;
+ &lt;/semantics&gt;
+&lt;/apply&gt;
+                  </pre>
+                  </div>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_ci">Content Identifiers <code>&lt;ci&gt;</code></h4>
+               <pre class="examplecontent">
+               &lt;ci&gt;x&lt;/ci&gt;
+            </pre>
+               <div class="section">
+                  <h5 id="contm_ci_strict">Strict uses of <code>&lt;ci&gt;</code></h5>
+                  <pre class="examplecontent">
+                  &lt;ci type="integer"&gt;n&lt;/ci&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;semantics&gt;
+  &lt;ci&gt;n&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" name="type" encoding="MathML-Content"&gt;
+    &lt;csymbol cd="mathmltypes"&gt;integer_type&lt;/csymbol&gt;
+  &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_ci_extended">Non-Strict uses of <code>&lt;ci&gt;</code></h5>
+                  <div class="section">
+                     <h6 id="contm_ci_strict_ex">Rewrite: ci type annotation</h6>
+                     <pre class="examplecontent">
+                     &lt;ci type="T"&gt;n&lt;/ci&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;semantics&gt;
+  &lt;ci&gt;n&lt;/ci&gt;
+  &lt;annotation-xml cd="mathmltypes" name="type" encoding="MathML-Content"&gt;
+    &lt;ci&gt;T&lt;/ci&gt;
+  &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+                  </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_ci_pres">Rewrite: ci presentation mathml</h6>
+                     <pre class="examplecontent">
+                     &lt;ci&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;/ci&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;semantics&gt;
+  &lt;ci&gt;p&lt;/ci&gt;
+  &lt;annotation-xml encoding="MathML-Presentation"&gt;
+    &lt;mi&gt;P&lt;/mi&gt;
+  &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+                  </pre>
+                  </div>
+                  <pre class="examplecontent">
+                  
+&lt;ci&gt;
+  &lt;msup&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;
+&lt;/ci&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;semantics&gt;
+  &lt;ci&gt;C2&lt;/ci&gt;
+  &lt;annotation-xml encoding="MathML-Presentation"&gt;
+    &lt;msup&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;
+  &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rendering_ci">Rendering Content Identifiers</h5>
+                  <pre class="examplecontent">
+                  &lt;ci type="vector"&gt;V&lt;/ci&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_csymbol">Content Symbols <code>&lt;csymbol&gt;</code></h4>
+               <div class="section">
+                  <h5 id="contm_csymbol_strict">Strict uses of  <code>&lt;csymbol&gt;</code></h5>
+               </div>
+               <div class="section">
+                  <h5 id="contm_csymbol_extended">Non-Strict uses of <code>&lt;csymbol&gt;</code></h5>
+                  <div class="section">
+                     <h6 id="contm_csymbol_strict_ex">Rewrite: csymbol type annotation</h6>
+                     <pre class="examplecontent">
+                     &lt;csymbol type="T"&gt;symbolname&lt;/csymbol&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;semantics&gt;
+  &lt;csymbol&gt;symbolname&lt;/csymbol&gt;
+  &lt;annotation-xml cd="mathmltypes" name="type" encoding="MathML-Content"&gt;
+    &lt;ci&gt;T&lt;/ci&gt;
+  &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+                  </pre>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rendering_csymbol">Rendering Symbols</h5>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_cs">String Literals <code>&lt;cs&gt;</code></h4>
+               <pre class="examplecontent">
+               
+&lt;set&gt;
+  &lt;cs&gt;A&lt;/cs&gt;&lt;cs&gt;B&lt;/cs&gt;&lt;cs&gt;  &lt;/cs&gt;
+&lt;/set&gt;
+            </pre>
+            </div>
+            <div class="section">
+               <h4 id="contm_apply">Function Application <code>&lt;apply&gt;</code></h4>
+               <div class="section">
+                  <h5 id="contm_applications_strict">Strict Content MathML</h5>
+                  <pre class="examplecontent">
+                  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+  &lt;ci&gt;y&lt;/ci&gt;
+  &lt;ci&gt;z&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;b&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;ci&gt;F&lt;/ci&gt;
+    &lt;ci&gt;G&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;F&lt;/ci&gt;&lt;ci&gt;G&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+    &lt;ci&gt;F&lt;/ci&gt;
+    &lt;ci&gt;G&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rendering_applications">Rendering Applications</h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+  &lt;ci&gt;a1&lt;/ci&gt;
+  &lt;ci&gt;a2&lt;/ci&gt;
+  &lt;ci&gt;...&lt;/ci&gt;
+  &lt;ci&gt;an&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ci&gt;op&lt;/ci&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;d&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_binding">Bindings and Bound Variables <code>&lt;bind&gt;</code>
+                  and <code>&lt;bvar&gt;</code></h4>
+               <div class="section">
+                  <h5 id="contm_bind">Bindings</h5>
+               </div>
+               <div class="section">
+                  <h5 id="contm_bvar">Bound Variables</h5>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci id="var-x"&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;lt&lt;/csymbol&gt;
+    &lt;ci xref="var-x"&gt;x&lt;/ci&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+                  <pre class="examplecontent">
+               
+&lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+            </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_alpharenmaing">Renaming Bound Variables</h5>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rendering_binders">Rendering Binding Constructions</h5>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;ci&gt;b&lt;/ci&gt;
+  &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;...&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xn&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;s&lt;/ci&gt;
+&lt;/bind&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_sharing">Structure Sharing <code>&lt;share&gt;</code></h4>
+               <div class="section">
+                  <h5 id="contm_share">The <code>share</code> element</h5>
+                  <pre class="examplecontent">
+                              
+&lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                           </pre>
+                  <pre class="examplecontent">
+                              
+&lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+  &lt;apply id="t1"&gt;&lt;ci&gt;f&lt;/ci&gt;
+    &lt;apply id="t11"&gt;&lt;ci&gt;f&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;share src="#t11"/&gt;
+
+
+
+  &lt;/apply&gt;
+  &lt;share src="#t1"/&gt;
+
+
+
+
+
+
+
+
+
+&lt;/apply&gt;
+                           </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_acyclicity">An Acyclicity Constraint</h5>
+               </div>
+               <div class="section">
+                  <h5 id="contm_share_binding">Structure Sharing and Binding</h5>
+                  <pre class="examplecontent">
+                  
+&lt;bind id="outer"&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;
+    &lt;bind id="inner"&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;share id="copy" src="#orig"/&gt;
+    &lt;/bind&gt;
+    &lt;apply id="orig"&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rendering_share">Rendering Expressions with Structure Sharing</h5>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_semantics">Attribution via <code>semantics</code></h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_cerror">Error Markup <code>&lt;cerror&gt;</code></h4>
+               <pre class="examplecontent">
+               
+&lt;cerror&gt;
+  &lt;csymbol cd="aritherror"&gt;DivisionByZero&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+&lt;/cerror&gt;
+            </pre>
+               <pre class="examplecontent">
+               
+&lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+  &lt;cerror&gt;
+    &lt;csymbol cd="aritherror"&gt;DivisionByZero&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/cerror&gt;
+  &lt;cn&gt;0&lt;/cn&gt;
+&lt;/apply&gt;
+            </pre>
+               <pre class="examplecontent">
+               
+&lt;cerror&gt;
+  &lt;csymbol cd="aritherror"&gt;DivisionByZero&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="arith1"&gt;divide&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+&lt;/cerror&gt;
+            </pre>
+               <pre class="examplecontent">
+               
+&lt;cerror&gt;
+  &lt;csymbol cd="error"&gt;Illegal bound variable&lt;/csymbol&gt;
+  &lt;cs&gt; &amp;lt;bvar&amp;gt;&amp;lt;plus/&amp;gt;&amp;lt;/bvar&amp;gt; &lt;/cs&gt;
+&lt;/cerror&gt;
+            </pre>
+            </div>
+            <div class="section">
+               <h4 id="contm_cbytes">Encoded Bytes <code>&lt;cbytes&gt;</code></h4>
+            </div>
+         </div>
+         <div class="section">
+            <h3 id="contm_structure_extended">Content MathML for Specific Structures</h3>
+            <div class="section">
+               <h4 id="contm_container">Container Markup</h4>
+               <div class="section">
+                  <h5 id="contm_container_constructor">Container Markup for Constructor Symbols</h5>
+                  <pre class="examplecontent">
+                     &lt;set&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/set&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;set&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt; 
+  &lt;domainofapplication&gt;&lt;integers/&gt;&lt;/domainofapplication&gt;
+  &lt;apply&gt;&lt;times/&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/set&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="set1"&gt;map&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+      &lt;cn&gt;2&lt;/cn&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/bind&gt;
+  &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+&lt;/apply&gt;
+                  </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_lambda_container">Container Markup for Binding Constructors</h5>
+                  <pre class="examplecontent">
+                  &lt;lambda&gt;&lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/lambda&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+ &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;&lt;ci&gt;x&lt;/ci&gt;
+&lt;/bind&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_bind_apply">Bindings with <code>&lt;apply&gt;</code></h4>
+               <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;forall/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;geq/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;csymbol cd="logic1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="relation1"&gt;geq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+               <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sum/&gt;
+  &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;cn&gt;100&lt;/cn&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;cn&gt;100&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+      &lt;ci&gt;i&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/bind&gt;
+&lt;/apply&gt;
+               </pre>
+            </div>
+            <div class="section">
+               <h4 id="contm_qualifiers">Qualifiers</h4>
+               <div class="section">
+                  <h5 id="contm_domainofapplication_qualifier">Uses of 
+                     <code>&lt;domainofapplication&gt;</code>,
+                     <code>&lt;interval&gt;</code>,
+                     <code>&lt;condition&gt;</code>,
+                     <code>&lt;lowlimit&gt;</code> and
+                     <code>&lt;uplimit&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;domainofapplication&gt;
+    &lt;ci type="set"&gt;C&lt;/ci&gt;
+  &lt;/domainofapplication&gt;
+  &lt;ci type="function"&gt;f&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;interval&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/interval&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;and/&gt;
+      &lt;apply&gt;&lt;leq/&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;leq/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;
+    &lt;set&gt;
+      &lt;bvar&gt;&lt;ci&gt;t&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;bvar&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;condition&gt;
+        &lt;apply&gt;&lt;and/&gt;
+          &lt;apply&gt;&lt;leq/&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;t&lt;/ci&gt;&lt;/apply&gt;
+          &lt;apply&gt;&lt;leq/&gt;&lt;ci&gt;t&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+          &lt;apply&gt;&lt;leq/&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/apply&gt;
+          &lt;apply&gt;&lt;leq/&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+        &lt;/apply&gt;
+      &lt;/condition&gt;
+      &lt;list&gt;&lt;ci&gt;t&lt;/ci&gt;&lt;ci&gt;u&lt;/ci&gt;&lt;/list&gt;
+    &lt;/set&gt;
+  &lt;/domainofapplication&gt;
+  &lt;apply&gt;&lt;times/&gt;
+    &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_limits-strict">Rewrite: interval qualifier</h6>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ci&gt;H&lt;/ci&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/uplimit&gt;
+  &lt;ci&gt;C&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ci&gt;H&lt;/ci&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;interval&lt;/csymbol&gt;
+      &lt;ci&gt;a&lt;/ci&gt;
+      &lt;ci&gt;b&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/domainofapplication&gt;
+  &lt;ci&gt;C&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_condition-strict">Rewrite: condition</h6>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_strict-doa">Rewrite: restriction</h6>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ci&gt;F&lt;/ci&gt;
+  &lt;domainofapplication&gt;
+    &lt;ci&gt;C&lt;/ci&gt;
+  &lt;/domainofapplication&gt;
+  &lt;ci&gt;a1&lt;/ci&gt;
+  &lt;ci&gt;an&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="fns1"&gt;restriction&lt;/csymbol&gt;
+    &lt;ci&gt;F&lt;/ci&gt;
+    &lt;ci&gt;C&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;a1&lt;/ci&gt;
+  &lt;ci&gt;an&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_dombind-strict">Rewrite: apply bvar domainofapplication</h6>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_degree">Uses of <code>&lt;degree&gt;</code></h5>
+                  <pre class="examplecontent">
+               
+&lt;apply&gt;&lt;diff/&gt;
+  &lt;bvar&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;degree&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/degree&gt;
+  &lt;/bvar&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+            </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_otherqualifiers">Uses of <code>&lt;momentabout&gt;</code> and <code>&lt;logbase&gt;</code></h5>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_opclasses">Operator Classes</h4>
+               <div class="section">
+                  <h6 id="contm_strict-opel">Rewrite: element</h6>
+                  <pre class="examplecontent">
+               &lt;plus/&gt;
+            </pre>
+                  <pre class="examplecontent">
+                  &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_nary">N-ary Operators (classes nary-arith, nary-functional, nary-logical,
+                     nary-linalg, nary-set, nary-constructor)</h5>
+                  <div class="section">
+                     <h6 id="contm_nary_schema">Schema Patterns</h6>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_nary_rewrite">Rewriting to Strict Content MathML</h6>
+                     <div class="section">
+                        <h6 id="contm_p2s.lifted">Rewrite: n-ary domainofapplication</h6>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;union/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                     </pre>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+  &lt;csymbol cd="set1"&gt;union&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;map&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;ci&gt;expression-in-x&lt;/ci&gt;
+    &lt;/bind&gt;
+    &lt;ci&gt;D&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                     </pre>
+                     </div>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_nary_setlist">N-ary Constructors for set and list (class nary-setlist-constructor)</h5>
+                  <div class="section">
+                     <h6 id="contm_narysetlist_schema">Schema Patterns</h6>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_narysetlist_rewrite">Rewriting to Strict Content MathML</h6>
+                     <div class="section">
+                        <h6 id="contm_rewrite_setliste">Rewrite: n-ary setlist domainofapplication</h6>
+                        <pre class="examplecontent">
+                        
+&lt;set&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/set&gt;
+                     </pre>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;csymbol cd="set1"&gt;map&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;expression-in-x&lt;/ci&gt;
+  &lt;/bind&gt;
+  &lt;ci&gt;D&lt;/ci&gt;
+&lt;/apply&gt;
+                     </pre>
+                     </div>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_nary_reln">N-ary Relations (classes nary-reln, nary-set-reln)</h5>
+                  <div class="section">
+                     <h6 id="contm_nary_reln_schema">Schema Patterns</h6>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_nary_reln_rewrite">Rewriting to Strict Content MathML</h6>
+                     <div class="section">
+                        <h6 id="contm_rewrite_reln">Rewrite: n-ary relations</h6>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;lt/&gt;
+  &lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;d&lt;/ci&gt;
+&lt;/apply&gt;
+                     </pre>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;csymbol cd="fns2"&gt;predicate_on_list&lt;/csymbol&gt;
+ &lt;csymbol cd="reln1"&gt;lt&lt;/csymbol&gt;
+ &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+  &lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;ci&gt;d&lt;/ci&gt;
+ &lt;/apply&gt;
+&lt;/apply&gt;
+
+                     </pre>
+                     </div>
+                     <div class="section">
+                        <h6 id="contm_rewrite_reln_bvar">Rewrite: n-ary relations bvar</h6>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;lt/&gt;
+ &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+ &lt;domainofapplication&gt;&lt;ci&gt;R&lt;/ci&gt;&lt;/domainofapplication&gt;
+ &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                     </pre>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;csymbol cd="fns2"&gt;predicate_on_list&lt;/csymbol&gt;
+ &lt;csymbol cd="reln1"&gt;lt&lt;/csymbol&gt;
+ &lt;apply&gt;&lt;csymbol cd="list1"&gt;map&lt;/csymbol&gt;
+   &lt;ci&gt;R&lt;/ci&gt;
+   &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+     &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+     &lt;ci&gt;expression-in-x&lt;/ci&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                     </pre>
+                     </div>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_nary_unary">N-ary/Unary Operators (classes nary-minmax, nary-stats)</h5>
+                  <div class="section">
+                     <h6 id="contm_nary_unary_schema">Schema Patterns</h6>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_nary_unary_rewrite">Rewriting to Strict Content MathML</h6>
+                     <div class="section">
+                        <h6 id="contm_p2s.max">Rewrite: n-ary unary set</h6>
+                        <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;max/&gt;&lt;ci&gt;a1&lt;/ci&gt;&lt;ci&gt;a2&lt;/ci&gt;&lt;ci&gt;an&lt;/ci&gt;&lt;/apply&gt;
+                  </pre>
+                        <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="minmax1"&gt;max&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;set&lt;/csymbol&gt;
+    &lt;ci&gt;a1&lt;/ci&gt;&lt;ci&gt;a2&lt;/ci&gt;&lt;ci&gt;an&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                  </pre>
+                     </div>
+                     <div class="section">
+                        <h6 id="contm_unary_nary_doma">Rewrite: n-ary unary domainofapplication</h6>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;max/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                     </pre>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;csymbol cd="minmax1"&gt;max&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;map&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;ci&gt;expression-in-x&lt;/ci&gt;
+    &lt;/bind&gt;
+    &lt;ci&gt;D&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                     </pre>
+                     </div>
+                     <div class="section">
+                        <h6 id="contm_nary_unary_single">Rewrite: n-ary unary single</h6>
+                        <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;max/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+                  </pre>
+                        <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="minmax1"&gt;max&lt;/csymbol&gt; &lt;ci&gt;a&lt;/ci&gt; &lt;/apply&gt;
+                  </pre>
+                     </div>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_binary">Binary Operators (classes binary-arith, binary-logical, binary-reln, binary-linalg,
+                     binary-set)</h5>
+                  <div class="section">
+                     <h6 id="contm_binary_schema">Schema Patterns</h6>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_unary">Unary Operators (classes unary-arith, unary-linalg, unary-functional, unary-set, unary-elementary,
+                     unary-veccalc)</h5>
+                  <div class="section">
+                     <h6 id="contm_unary_schema">Schema Patterns</h6>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_constant">Constants (classes constant-arith, constant-set)</h5>
+                  <div class="section">
+                     <h6 id="contm_constant_schema">Schema Patterns</h6>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_quantifier">Quantifiers (class quantifier)</h5>
+                  <div class="section">
+                     <h6 id="contm_quantifier_schema">Schema Patterns</h6>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_quantifier_rewrite">Rewriting to Strict Content MathML</h6>
+                     <div class="section">
+                        <h6 id="contm_rewrite_quantifier">Rewrite: quantifier</h6>
+                        <pre class="examplecontent">
+                        
+&lt;apply&gt;&lt;exists/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                     </pre>
+                        <pre class="examplecontent">
+                        
+&lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/apply&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+
+                     </pre>
+                     </div>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_otherclass">Other Operators (classes lambda, interval, int, diff partialdiff, sum, product, limit)</h5>
+                  <div class="section">
+                     <h6 id="contm_otherclass_schema">Schema Patterns</h6>
+                  </div>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Non-strict Attributes</h4>
+               <div class="section">
+                  <h6 id="contm_strict-attributes">Rewrite: attributes</h6>
+                  <pre class="examplecontent">
+                  
+&lt;ci class="foo" xmlns:other="http://example.com" other:att="bla"&gt;x&lt;/ci&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;semantics&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+  &lt;annotation cd="mathmlattr"
+     name="class" encoding="text/plain"&gt;foo&lt;/annotation&gt;
+  &lt;annotation-xml cd="mathmlattr" name="foreign" encoding="MathML-Content"&gt;
+    &lt;apply&gt;&lt;csymbol cd="mathmlattr"&gt;foreign_attribute&lt;/csymbol&gt;
+      &lt;cs&gt;http://example.com&lt;/cs&gt;
+      &lt;cs&gt;other&lt;/cs&gt;
+      &lt;cs&gt;att&lt;/cs&gt;
+      &lt;cs&gt;bla&lt;/cs&gt;
+    &lt;/apply&gt;
+  &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+               </pre>
+               </div>
+            </div>
+         </div>
+         <div class="section">
+            <h3 id="contm_opel">Content MathML for Specific Operators and Constants</h3>
+            <div class="section">
+               <h4 id="contm_basicfun">Functions and Inverses</h4>
+               <div class="section">
+                  <h5 id="contm_interval">Interval <code>&lt;interval&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;interval closure="open"&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/interval&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;interval closure="closed"&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/interval&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;interval closure="open-closed"&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/interval&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;interval closure="closed-open"&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/interval&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_inverse">Inverse <code>&lt;inverse&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;inverse/&gt;
+  &lt;ci&gt; f &lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;
+  &lt;apply&gt;&lt;inverse/&gt;&lt;ci type="matrix"&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;ci&gt;a&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_lambda">Lambda <code>&lt;lambda&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;lambda&gt;
+  &lt;bvar&gt;&lt;ci&gt; x &lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;integers/&gt;&lt;/domainofapplication&gt;
+  &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt; x &lt;/ci&gt;&lt;/apply&gt;
+&lt;/lambda&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;lambda&gt;
+  &lt;domainofapplication&gt;&lt;integers/&gt;&lt;/domainofapplication&gt; 
+  &lt;sin/&gt;
+&lt;/lambda&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;lambda&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;sin/&gt;
+    &lt;apply&gt;&lt;plus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/lambda&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_rewrite_lambda">Rewrite: lambda</h6>
+                     <pre class="examplecontent">
+                  
+&lt;lambda&gt;
+  &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;/bvar&gt;&lt;bvar&gt;&lt;ci&gt;xn&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x1-xn&lt;/ci&gt;
+&lt;/lambda&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;/bvar&gt;&lt;bvar&gt;&lt;ci&gt;xn&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x1-xn&lt;/ci&gt;
+&lt;/bind&gt;
+               </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_rewrite_lambda_domofa">Rewrite: lambda domainofapplication</h6>
+                     <pre class="examplecontent">
+                  
+&lt;lambda&gt;
+  &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;/bvar&gt;&lt;bvar&gt;&lt;ci&gt;xn&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x1-xn&lt;/ci&gt;
+&lt;/lambda&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="fns1"&gt;restriction&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;/bvar&gt;&lt;bvar&gt;&lt;ci&gt;xn&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;expression-in-x1-xn&lt;/ci&gt;
+  &lt;/bind&gt;
+  &lt;ci&gt;D&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_compose">Function composition <code>&lt;compose/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;compose/&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;ci&gt;h&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;
+    &lt;apply&gt;&lt;compose/&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;apply&gt;&lt;ci&gt;g&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_ident">Identity function <code>&lt;ident/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;compose/&gt;
+    &lt;ci type="function"&gt;f&lt;/ci&gt;
+    &lt;apply&gt;&lt;inverse/&gt;
+      &lt;ci type="function"&gt;f&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;ident/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_domain">Domain <code>&lt;domain/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;domain/&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;reals/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_codomain">codomain <code>&lt;codomain/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;codomain/&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+  &lt;rationals/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_image">Image <code>&lt;image/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;image/&gt;&lt;sin/&gt;&lt;/apply&gt;
+  &lt;interval&gt;&lt;cn&gt;-1&lt;/cn&gt;&lt;cn&gt; 1&lt;/cn&gt;&lt;/interval&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_piecewise">Piecewise declaration <code>&lt;piecewise&gt;</code>, <code>&lt;piece&gt;</code>, <code>&lt;otherwise&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;piecewise&gt;
+  &lt;piece&gt;
+    &lt;apply&gt;&lt;minus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;lt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/piece&gt;
+  &lt;piece&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;apply&gt;&lt;eq/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/piece&gt;
+  &lt;piece&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;gt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/piece&gt;
+&lt;/piecewise&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;piecewise&gt;
+  &lt;piece&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;apply&gt;&lt;lt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/piece&gt;
+  &lt;piece&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+    &lt;apply&gt;&lt;gt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/piece&gt;
+  &lt;otherwise&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/otherwise&gt;
+&lt;/piecewise&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="piece1"&gt;piecewise&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="piece1"&gt;piece&lt;/csymbol&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;lt&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;  
+  &lt;/apply&gt;   
+  &lt;apply&gt;&lt;csymbol cd="piece1"&gt;piece&lt;/csymbol&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;  
+  &lt;/apply&gt;   
+  &lt;apply&gt;&lt;csymbol cd="piece1"&gt;otherwise&lt;/csymbol&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;   
+&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Arithmetic, Algebra and Logic</h4>
+               <div class="section">
+                  <h5 id="contm_quotient">Quotient <code>&lt;quotient/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;quotient/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_factorial">Factorial <code>&lt;factorial/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;factorial/&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_divide">Division <code>&lt;divide/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;divide/&gt;
+  &lt;ci&gt;a&lt;/ci&gt;
+  &lt;ci&gt;b&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_max">Maximum <code>&lt;max/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;max/&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;max/&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;in/&gt;
+      &lt;ci&gt;y&lt;/ci&gt;
+      &lt;interval&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/interval&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_min">Minimum <code>&lt;min/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;min/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;min/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;notin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci type="set"&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_minus">Subtraction <code>&lt;minus/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;minus/&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;minus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_plus">Addition <code>&lt;plus/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;plus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_power">Exponentiation <code>&lt;power/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rem">Remainder <code>&lt;rem/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;rem/&gt;&lt;ci&gt; a &lt;/ci&gt;&lt;ci&gt; b &lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_times">Multiplication <code>&lt;times/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;times/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_root">Root <code>&lt;root/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;root/&gt;
+  &lt;degree&gt;&lt;ci type="integer"&gt;n&lt;/ci&gt;&lt;/degree&gt;
+  &lt;ci&gt;a&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  &lt;apply&gt;&lt;root/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;root&lt;/csymbol&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+  &lt;cn type="integer"&gt;2&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;root/&gt;
+  &lt;degree&gt;&lt;ci type="integer"&gt;n&lt;/ci&gt;&lt;/degree&gt;
+  &lt;ci&gt;a&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;root&lt;/csymbol&gt;
+  &lt;ci&gt;a&lt;/ci&gt;
+  &lt;cn type="integer"&gt;n&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_gcd">Greatest common divisor <code>&lt;gcd/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;gcd/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_and">And <code>&lt;and/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;and/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;and/&gt;
+  &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;gt/&gt;&lt;apply&gt;&lt;selector/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="fns2"&gt;apply_to_list&lt;/csymbol&gt;
+  &lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="list1"&gt;map&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;gt&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="linalg1"&gt;vector_selector&lt;/csymbol&gt;
+          &lt;ci&gt;i&lt;/ci&gt;
+          &lt;ci&gt;a&lt;/ci&gt;
+        &lt;/apply&gt;
+        &lt;cn&gt;0&lt;/cn&gt;
+      &lt;/apply&gt;
+    &lt;/bind&gt;
+    &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+      &lt;cn type="integer"&gt;0&lt;/cn&gt;
+      &lt;ci&gt;n&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_or">Or <code>&lt;or/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;or/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_xor">Exclusive Or <code>&lt;xor/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;xor/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_not">Not <code>&lt;not/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;not/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_implies">Implies <code>&lt;implies/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;implies/&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_forall">Universal quantifier <code>&lt;forall/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;forall/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;eq/&gt;
+    &lt;apply&gt;&lt;minus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+                  <pre class="examplecontent">
+                     
+&lt;bind&gt;&lt;forall/&gt;
+  &lt;bvar&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;and/&gt;
+      &lt;apply&gt;&lt;in/&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;rationals/&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;in/&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;rationals/&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;lt/&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;lt/&gt;
+    &lt;ci&gt;p&lt;/ci&gt;
+    &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;bind&gt;&lt;csymbol cd="quant1"&gt;forall&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;implies&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+        &lt;ci&gt;p&lt;/ci&gt;
+        &lt;csymbol cd="setname1"&gt;Q&lt;/csymbol&gt;
+        &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+        &lt;ci&gt;q&lt;/ci&gt;
+        &lt;csymbol cd="setname1"&gt;Q&lt;/csymbol&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;csymbol cd="relation1"&gt;lt&lt;/csymbol&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;ci&gt;q&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;lt&lt;/csymbol&gt;
+      &lt;ci&gt;p&lt;/ci&gt;
+      &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;
+        &lt;ci&gt;q&lt;/ci&gt;
+        &lt;cn&gt;2&lt;/cn&gt;
+      &lt;/apply&gt;
+    &lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+                  </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_exists">Existential quantifier <code>&lt;exists/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;exists/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;eq/&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;exists/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;
+    &lt;integers/&gt;
+  &lt;/domainofapplication&gt;
+   &lt;apply&gt;&lt;eq/&gt;
+    &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;csymbol cd="quant1"&gt;exists&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="set1"&gt;in&lt;/csymbol&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+      &lt;csymbol cd="setname1"&gt;Z&lt;/csymbol&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="relation1"&gt;eq&lt;/csymbol&gt;
+      &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+      &lt;cn&gt;0&lt;/cn&gt;
+    &lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_abs">Absolute Value <code>&lt;abs/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;abs/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_conjugate">Complex conjugate <code>&lt;conjugate/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;conjugate/&gt;
+  &lt;apply&gt;&lt;plus/&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;times/&gt;&lt;cn&gt;&amp;#x2148;&lt;/cn&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_arg">Argument <code>&lt;arg/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;arg/&gt;
+  &lt;apply&gt;&lt;plus/&gt;
+    &lt;ci&gt; x &lt;/ci&gt;
+    &lt;apply&gt;&lt;times/&gt;&lt;imaginaryi/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_real">Real part <code>&lt;real/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;real/&gt;
+  &lt;apply&gt;&lt;plus/&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;times/&gt;&lt;imaginaryi/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_imaginary">Imaginary part <code>&lt;imaginary/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;imaginary/&gt;
+  &lt;apply&gt;&lt;plus/&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;apply&gt;&lt;times/&gt;&lt;imaginaryi/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_lcm">Lowest common multiple <code>&lt;lcm/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;lcm/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_floor">Floor <code>&lt;floor/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;floor/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_ceiling">Ceiling <code>&lt;ceiling/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ceiling/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Relations</h4>
+               <div class="section">
+                  <h5 id="contm_eq">Equals <code>&lt;eq/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;cn type="rational"&gt;2&lt;sep/&gt;4&lt;/cn&gt;
+  &lt;cn type="rational"&gt;1&lt;sep/&gt;2&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_neq">Not Equals <code>&lt;neq/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;neq/&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_gt">Greater than <code>&lt;gt/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;gt/&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_lt">Less Than <code>&lt;lt/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;lt/&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_geq">Greater Than or Equal <code>&lt;geq/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;geq/&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="fns2"&gt;predicate_on_list&lt;/csymbol&gt;
+ &lt;csymbol cd="reln1"&gt;geq&lt;/csymbol&gt;
+ &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+  &lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;
+ &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_leq">Less Than or Equal <code>&lt;leq/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;leq/&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_equivalent">Equivalent <code>&lt;equivalent/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;equivalent/&gt;
+  &lt;ci&gt;a&lt;/ci&gt;
+  &lt;apply&gt;&lt;not/&gt;&lt;apply&gt;&lt;not/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_approx">Approximately <code>&lt;approx/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;approx/&gt;
+  &lt;pi/&gt;
+  &lt;cn type="rational"&gt;22&lt;sep/&gt;7&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_factorof">Factor Of <code>&lt;factorof/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;factorof/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Calculus and Vector Calculus</h4>
+               <div class="section">
+                  <h5 id="contm_int">Integral <code>&lt;int/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;int/&gt;&lt;sin/&gt;&lt;/apply&gt;
+  &lt;cos/&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;interval&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/interval&gt;
+  &lt;cos/&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_p2s.int">Rewrite: int</h6>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;int&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;expression-in-x&lt;/ci&gt;
+    &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                  </div>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;cos/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;int&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;cos/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;int/&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;f&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="calculus1"&gt;defint&lt;/csymbol&gt;&lt;ci&gt;C&lt;/ci&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+                  </pre>
+                  <div class="section">
+                     <h6 id="contm_p2s.defint">Rewrite: defint</h6>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci&gt;D&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="calculus1"&gt;defint&lt;/csymbol&gt;
+  &lt;ci&gt;D&lt;/ci&gt;  
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+  &lt;/bind&gt;
+&lt;/apply&gt;
+                  </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_p2s.int.LUlimit">Rewrite: defint limits</h6>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/uplimit&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="calculus1"&gt;defint&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;oriented_interval&lt;/csymbol&gt;
+    &lt;ci&gt;a&lt;/ci&gt; &lt;ci&gt;b&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+  &lt;/bind&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+                  <pre class="examplecontent">
+                  
+&lt;bind&gt;&lt;int/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;and/&gt;
+      &lt;apply&gt;&lt;leq/&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;leq/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;leq/&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;leq/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;times/&gt;
+    &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/bind&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="calculus1"&gt;defint&lt;/csymbol&gt;
+ &lt;apply&gt;&lt;csymbol cd="set1"&gt;suchthat&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="set1"&gt;cartesianproduct&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+   &lt;csymbol cd="setname1"&gt;R&lt;/csymbol&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="logic1"&gt;and&lt;/csymbol&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;leq&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;leq&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;leq&lt;/csymbol&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;leq&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns11"&gt;lambda&lt;/csymbol&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+   &lt;/apply&gt;
+  &lt;/bind&gt;
+ &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_diff">Differentiation <code>&lt;diff/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  &lt;apply&gt;&lt;diff/&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;diff/&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;cos/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;diff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;degree&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_p2s.diff">Rewrite: diff</h6>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;diff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;diff&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;E&lt;/ci&gt;
+    &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;diff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;diff&lt;/csymbol&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                  </div>
+                  <div class="section">
+                     <h6 id="contm_p2s.nthdiff">Rewrite: nthdiff</h6>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;diff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;nthdiff&lt;/csymbol&gt;
+    &lt;ci&gt;n&lt;/ci&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;expression-in-x&lt;/ci&gt;
+    &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;diff/&gt;
+  &lt;bvar&gt;&lt;degree&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/degree&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;nthdiff&lt;/csymbol&gt;
+    &lt;cn&gt;2&lt;/cn&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_partialdiff">Partial Differentiation <code>&lt;partialdiff/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;partialdiff/&gt;
+  &lt;list&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/list&gt;
+  &lt;ci type="function"&gt;f&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;partialdiff/&gt;
+  &lt;list&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/list&gt;
+  &lt;lambda&gt;
+   &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+   &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/lambda&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;partialdiff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;ci type="function"&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;partialdiff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;degree&gt;&lt;ci&gt;k&lt;/ci&gt;&lt;/degree&gt;
+  &lt;apply&gt;&lt;ci type="function"&gt;f&lt;/ci&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_p2s.partialdiff">Rewrite: partialdiffdegree</h6>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;partialdiff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;n1&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;xk&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;nk&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;degree&gt;&lt;ci&gt;total-n1-nk&lt;/ci&gt;&lt;/degree&gt;
+  &lt;ci&gt;expression-in-x1-xk&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;partialdiffdegree&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+      &lt;ci&gt;n1&lt;/ci&gt; &lt;ci&gt;nk&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;ci&gt;total-n1-nk&lt;/ci&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x1&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;bvar&gt;&lt;ci&gt;xk&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;expression-in-x1-xk&lt;/ci&gt;
+   &lt;/bind&gt;
+  &lt;/apply&gt;
+  &lt;ci&gt;x1&lt;/ci&gt;
+  &lt;ci&gt;xk&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                     <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+  &lt;ci&gt;n1&lt;/ci&gt; &lt;ci&gt;nk&lt;/ci&gt;
+&lt;/apply&gt;
+                  </pre>
+                  </div>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;&lt;partialdiff/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;n&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;degree&gt;&lt;ci&gt;m&lt;/ci&gt;&lt;/degree&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;sin/&gt;
+    &lt;apply&gt;&lt;times/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                  </pre>
+                  <pre class="examplecontent">
+                     
+&lt;apply&gt;
+  &lt;apply&gt;&lt;csymbol cd="calculus1"&gt;partialdiffdegree&lt;/csymbol&gt;
+    &lt;apply&gt;&lt;csymbol cd="list1"&gt;list&lt;/csymbol&gt;
+      &lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+      &lt;ci&gt;n&lt;/ci&gt;&lt;ci&gt;m&lt;/ci&gt;
+    &lt;/apply&gt;
+    &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+      &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+      &lt;apply&gt;&lt;csymbol cd="transc1"&gt;sin&lt;/csymbol&gt;
+        &lt;apply&gt;&lt;csymbol cd="arith1"&gt;times&lt;/csymbol&gt;
+          &lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;
+        &lt;/apply&gt;
+      &lt;/apply&gt;
+    &lt;/bind&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+                  </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_divergence">Divergence <code>&lt;divergence/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;divergence/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;divergence/&gt;
+  &lt;ci type="vector"&gt;E&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;divergence/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;vector&gt;
+    &lt;apply&gt;&lt;plus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;plus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;plus/&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/vector&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_grad">Gradient <code>&lt;grad/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;grad/&gt;&lt;ci type="function"&gt;f&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;grad/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;times/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_curl">Curl <code>&lt;curl/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;curl/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_laplacian">Laplacian <code>&lt;laplacian/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;laplacian/&gt;&lt;ci type="vector"&gt;E&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;laplacian/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci&gt;z&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_sets">Theory of Sets</h4>
+               <div class="section">
+                  <h5 id="contm_set">Set <code>&lt;set&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;set&gt;
+  &lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;
+&lt;/set&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;set&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;lt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/set&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;set&gt;
+  &lt;bvar&gt;&lt;ci type="set"&gt;S&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;in/&gt;&lt;ci&gt;S&lt;/ci&gt;&lt;ci type="list"&gt;T&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;ci&gt;S&lt;/ci&gt;
+&lt;/set&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;set&gt;
+  &lt;bvar&gt;&lt;ci&gt; x &lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;and/&gt;
+      &lt;apply&gt;&lt;lt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+      &lt;apply&gt;&lt;in/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;naturalnumbers/&gt;&lt;/apply&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/set&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_list">List <code>&lt;list&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;list&gt;
+  &lt;ci&gt;a&lt;/ci&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;ci&gt;c&lt;/ci&gt;
+&lt;/list&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;list order="numeric"&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;lt/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;5&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+&lt;/list&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_union">Union <code>&lt;union/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;union/&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;union/&gt;
+  &lt;bvar&gt;&lt;ci type="set"&gt;S&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;
+    &lt;ci type="list"&gt;L&lt;/ci&gt;
+  &lt;/domainofapplication&gt;
+  &lt;ci type="set"&gt; S&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_intersect">Intersect <code>&lt;intersect/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;intersect/&gt;
+  &lt;ci type="set"&gt; A &lt;/ci&gt;
+  &lt;ci type="set"&gt; B &lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;intersect/&gt;
+  &lt;bvar&gt;&lt;ci type="set"&gt;S&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;domainofapplication&gt;&lt;ci type="list"&gt;L&lt;/ci&gt;&lt;/domainofapplication&gt;
+  &lt;ci type="set"&gt; S &lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_in">Set inclusion <code>&lt;in/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci type="set"&gt;A&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_notin">Set exclusion <code>&lt;notin/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;notin/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;ci type="set"&gt;A&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_subset">Subset <code>&lt;subset/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;subset/&gt;
+  &lt;ci type="set"&gt;A&lt;/ci&gt;
+  &lt;ci type="set"&gt;B&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_prsubset">Proper Subset <code>&lt;prsubset/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;prsubset/&gt;
+  &lt;ci type="set"&gt;A&lt;/ci&gt;
+  &lt;ci type="set"&gt;B&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_notsubset">Not Subset <code>&lt;notsubset/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;notsubset/&gt;
+  &lt;ci type="set"&gt;A&lt;/ci&gt;
+  &lt;ci type="set"&gt;B&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_notprsubset">Not Proper Subset <code>&lt;notprsubset/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;notprsubset/&gt;
+  &lt;ci type="set"&gt;A&lt;/ci&gt;
+  &lt;ci type="set"&gt;B&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_setdiff">Set Difference <code>&lt;setdiff/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;setdiff/&gt;
+  &lt;ci type="set"&gt;A&lt;/ci&gt;
+  &lt;ci type="set"&gt;B&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_card">Cardinality <code>&lt;card/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;card/&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;/apply&gt;
+  &lt;cn&gt;5&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_cartesianproduct">Cartesian product <code>&lt;cartesianproduct/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;cartesianproduct/&gt;&lt;ci&gt;A&lt;/ci&gt;&lt;ci&gt;B&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Sequences and Series</h4>
+               <div class="section">
+                  <h5 id="contm_sum">Sum <code>&lt;sum/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sum/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sum/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;in/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci type="set"&gt;B&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;ci type="function"&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sum/&gt;
+  &lt;domainofapplication&gt;
+    &lt;ci type="set"&gt;B&lt;/ci&gt;
+  &lt;/domainofapplication&gt;
+  &lt;ci type="function"&gt;f&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sum/&gt;
+  &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;cn&gt;100&lt;/cn&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;sum&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;cn&gt;100&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_product">Product <code>&lt;product/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;product/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;ci&gt;b&lt;/ci&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;ci type="function"&gt;f&lt;/ci&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;product/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;in/&gt;
+      &lt;ci&gt;x&lt;/ci&gt;
+      &lt;ci type="set"&gt;B&lt;/ci&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;ci&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;product/&gt;
+  &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;uplimit&gt;&lt;cn&gt;100&lt;/cn&gt;&lt;/uplimit&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="arith1"&gt;product&lt;/csymbol&gt;
+  &lt;apply&gt;&lt;csymbol cd="interval1"&gt;integer_interval&lt;/csymbol&gt;
+    &lt;cn&gt;0&lt;/cn&gt;
+    &lt;cn&gt;100&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;apply&gt;&lt;csymbol cd="arith1"&gt;power&lt;/csymbol&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/bind&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_limit">Limits <code>&lt;limit/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;limit/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;lowlimit&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/lowlimit&gt;
+  &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;limit/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;tendsto/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;limit/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;tendsto type="above"/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_strict-limit">Rewrite: limits condition</h6>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;limit/&gt;
+  &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;tendsto/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;ci&gt;expression-in-x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="limit1"&gt;limit&lt;/csymbol&gt;
+  &lt;cn&gt;0&lt;/cn&gt;
+  &lt;csymbol cd="limit1"&gt;null&lt;/csymbol&gt;
+  &lt;bind&gt;&lt;csymbol cd="fns1"&gt;lambda&lt;/csymbol&gt;
+    &lt;bvar&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/bvar&gt;
+    &lt;ci&gt;expression-in-x&lt;/ci&gt;
+  &lt;/bind&gt;
+&lt;/apply&gt;
+               </pre>
+                  </div>
+               </div>
+               <div class="section">
+                  <h5 id="contm_tendsto">Tends To <code>&lt;tendsto/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;tendsto type="above"/&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+   &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;tendsto/&gt;
+  &lt;vector&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/vector&gt;
+   &lt;vector&gt;
+     &lt;apply&gt;&lt;ci type="function"&gt;f&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+     &lt;apply&gt;&lt;ci type="function"&gt;g&lt;/ci&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+   &lt;/vector&gt;
+&lt;/apply&gt;
+               </pre>
+                  <div class="section">
+                     <h6 id="contm_strict_tendsto">Rewrite: tendsto</h6>
+                     <pre class="examplecontent">
+                  
+&lt;tendsto/&gt;
+
+               </pre>
+                     <pre class="examplecontent">
+                  
+&lt;semantics&gt;
+ &lt;ci&gt;tendsto&lt;/ci&gt;
+ &lt;annotation-xml encoding="MathML-Content"&gt;
+  &lt;tendsto/&gt;
+ &lt;/annotation-xml&gt;
+&lt;/semantics&gt;
+               </pre>
+                  </div>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_elemclass">Elementary classical functions</h4>
+               <div class="section">
+                  <h5 id="contm_trig">Common trigonometric functions
+                     <span>
+                        <code>&lt;sin/&gt;</code>,
+                        <code>&lt;cos/&gt;</code>,
+                        <code>&lt;tan/&gt;</code>,
+                        <code>&lt;sec/&gt;</code>,
+                        <code>&lt;csc/&gt;</code>,
+                        <code>&lt;cot/&gt;</code>
+                        </span>
+                     </h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sin/&gt;
+  &lt;apply&gt;&lt;plus/&gt;
+    &lt;apply&gt;&lt;cos/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+    &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_invtrig">Common inverses of trigonometric functions
+                     <code>&lt;arcsin/&gt;</code>,
+                     <code>&lt;arccos/&gt;</code>,
+                     <code>&lt;arctan/&gt;</code>,
+                     <code>&lt;arcsec/&gt;</code>,
+                     <code>&lt;arccsc/&gt;</code>,
+                     <code>&lt;arccot/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;arcsin/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;mrow&gt;
+ &lt;mi&gt;arcsin&lt;/mi&gt;
+ &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;
+ &lt;mi&gt;x&lt;/mi&gt;
+&lt;/mrow&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;mrow&gt;
+ &lt;msup&gt;&lt;mi&gt;sin&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;
+ &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;
+ &lt;mi&gt;x&lt;/mi&gt;
+&lt;/mrow&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_hyperbolic">Common hyperbolic functions
+                     <code>&lt;sinh/&gt;</code>,
+                     <code>&lt;cosh/&gt;</code>,
+                     <code>&lt;tanh/&gt;</code>,
+                     <code>&lt;sech/&gt;</code>,
+                     <code>&lt;csch/&gt;</code>,
+                     <code>&lt;coth/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sinh/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_invhyperbolic">Common inverses of hyperbolic functions
+                     <code>&lt;arcsinh/&gt;</code>,
+                     <code>&lt;arccosh/&gt;</code>,
+                     <code>&lt;arctanh/&gt;</code>,
+                     <code>&lt;arcsech/&gt;</code>,
+                     <code>&lt;arccsch/&gt;</code>,
+                     <code>&lt;arccoth/&gt;</code> </h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;arcsinh/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;mrow&gt;
+ &lt;mi&gt;arcsinh&lt;/mi&gt;
+ &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;
+ &lt;mi&gt;x&lt;/mi&gt;
+&lt;/mrow&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;mrow&gt;
+ &lt;msup&gt;&lt;mi&gt;sinh&lt;/mi&gt;&lt;mrow&gt;&lt;mo&gt;-&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;
+ &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;
+ &lt;mi&gt;x&lt;/mi&gt;
+&lt;/mrow&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_exp">Exponential <code>&lt;exp/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;exp/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_ln">Natural Logarithm <code>&lt;ln/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;ln/&gt;&lt;ci&gt;a&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_log">Logarithm <code>&lt;log/&gt;</code>
+                     <span>, <code>&lt;logbase&gt;</code></span>
+                     </h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;log/&gt;
+  &lt;logbase&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/logbase&gt;
+  &lt;ci&gt;x&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;log/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  &lt;apply&gt;&lt;plus/&gt;
+  &lt;apply&gt;
+    &lt;log/&gt;
+    &lt;logbase&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/logbase&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;
+    &lt;log/&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+
+
+               </pre>
+                  <pre class="examplecontent">
+                  &lt;apply&gt;
+  &lt;csymbol cd="arith1"&gt;plus&lt;/csymbol&gt;
+  &lt;apply&gt;
+    &lt;csymbol cd="transc1"&gt;log&lt;/csymbol&gt;
+    &lt;cn&gt;2&lt;/cn&gt;
+    &lt;ci&gt;x&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;
+    &lt;csymbol cd="transc1"&gt;log&lt;/csymbol&gt;
+    &lt;cn&gt;10&lt;/cn&gt;
+    &lt;ci&gt;y&lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Statistics</h4>
+               <div class="section">
+                  <h5 id="contm_mean">Mean <code>&lt;mean/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;mean/&gt;
+  &lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;7&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;mean/&gt;&lt;ci&gt;X&lt;/ci&gt;&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_sdev">Standard Deviation <code>&lt;sdev/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sdev/&gt;
+  &lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;sdev/&gt;
+  &lt;ci type="discrete_random_variable"&gt;X&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_variance">Variance <code>&lt;variance/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;variance/&gt;
+  &lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;variance/&gt;
+  &lt;ci type="discrete_random_variable"&gt; X&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_median">Median <code>&lt;median/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;median/&gt;
+  &lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_mode">Mode <code>&lt;mode/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;mode/&gt;
+  &lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_moment">Moment <code>&lt;moment/&gt;</code>, <code>&lt;momentabout&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;moment/&gt;
+  &lt;degree&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/degree&gt;
+  &lt;momentabout&gt;&lt;mean/&gt;&lt;/momentabout&gt;
+  &lt;cn&gt;6&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;cn&gt;5&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;moment/&gt;
+  &lt;degree&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/degree&gt;
+  &lt;momentabout&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/momentabout&gt;
+  &lt;ci&gt;X&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;moment/&gt;
+  &lt;degree&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;/degree&gt;
+  &lt;momentabout&gt;&lt;ci&gt;p&lt;/ci&gt;&lt;/momentabout&gt;
+  &lt;ci&gt;X&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;csymbol cd="s_dist1"&gt;moment&lt;/csymbol&gt;
+  &lt;cn&gt;3&lt;/cn&gt;
+  &lt;ci&gt;p&lt;/ci&gt;
+  &lt;ci&gt;X&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4>Linear Algebra</h4>
+               <div class="section">
+                  <h5 id="contm_vector">Vector <code>&lt;vector&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;vector&gt;
+  &lt;apply&gt;&lt;plus/&gt;&lt;ci&gt;x&lt;/ci&gt;&lt;ci&gt;y&lt;/ci&gt;&lt;/apply&gt;
+  &lt;cn&gt;3&lt;/cn&gt;
+  &lt;cn&gt;7&lt;/cn&gt;
+&lt;/vector&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_matrix">Matrix <code>&lt;matrix&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;matrix&gt;
+  &lt;bvar&gt;&lt;ci type="integer"&gt;i&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;bvar&gt;&lt;ci type="integer"&gt;j&lt;/ci&gt;&lt;/bvar&gt;
+  &lt;condition&gt;
+    &lt;apply&gt;&lt;and/&gt;
+      &lt;apply&gt;&lt;in/&gt;
+        &lt;ci&gt;i&lt;/ci&gt;
+        &lt;interval&gt;&lt;ci&gt;1&lt;/ci&gt;&lt;ci&gt;5&lt;/ci&gt;&lt;/interval&gt;
+      &lt;/apply&gt;
+      &lt;apply&gt;&lt;in/&gt;
+        &lt;ci&gt;j&lt;/ci&gt;
+        &lt;interval&gt;&lt;ci&gt;5&lt;/ci&gt;&lt;ci&gt;9&lt;/ci&gt;&lt;/interval&gt;
+      &lt;/apply&gt;
+    &lt;/apply&gt;
+  &lt;/condition&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;ci&gt;i&lt;/ci&gt;&lt;ci&gt;j&lt;/ci&gt;&lt;/apply&gt;
+&lt;/matrix&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_matrixrow">Matrix row <code>&lt;matrixrow&gt;</code></h5>
+               </div>
+               <div class="section">
+                  <h5 id="contm_determinant">Determinant <code>&lt;determinant/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;determinant/&gt;
+  &lt;ci type="matrix"&gt;A&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_transpose">Transpose <code>&lt;transpose/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;transpose/&gt;
+  &lt;ci type="matrix"&gt;A&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_selector">Selector <code>&lt;selector/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;selector/&gt;&lt;ci type="vector"&gt;V&lt;/ci&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;/apply&gt;
+               </pre>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;selector/&gt;
+    &lt;matrix&gt;
+      &lt;matrixrow&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/matrixrow&gt;
+      &lt;matrixrow&gt;&lt;cn&gt;3&lt;/cn&gt;&lt;cn&gt;4&lt;/cn&gt;&lt;/matrixrow&gt;
+    &lt;/matrix&gt;
+    &lt;cn&gt;1&lt;/cn&gt;
+  &lt;/apply&gt;
+  &lt;matrix&gt;
+    &lt;matrixrow&gt;&lt;cn&gt;1&lt;/cn&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/matrixrow&gt;
+  &lt;/matrix&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_vectorproduct">Vector product <code>&lt;vectorproduct/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;vectorproduct/&gt;
+    &lt;ci type="vector"&gt; A &lt;/ci&gt;
+    &lt;ci type="vector"&gt; B &lt;/ci&gt;
+ &lt;/apply&gt;
+  &lt;apply&gt;&lt;times/&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;ci&gt;b&lt;/ci&gt;
+    &lt;apply&gt;&lt;sin/&gt;&lt;ci&gt;&amp;#x3b8;&lt;/ci&gt;&lt;/apply&gt;
+    &lt;ci type="vector"&gt; N &lt;/ci&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_scalarproduct">Scalar product <code>&lt;scalarproduct/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;scalarproduct/&gt;
+    &lt;ci type="vector"&gt;A&lt;/ci&gt;
+    &lt;ci type="vector"&gt;B&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;apply&gt;&lt;times/&gt;
+    &lt;ci&gt;a&lt;/ci&gt;
+    &lt;ci&gt;b&lt;/ci&gt;
+    &lt;apply&gt;&lt;cos/&gt;&lt;ci&gt;&amp;#x3b8;&lt;/ci&gt;&lt;/apply&gt;
+  &lt;/apply&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_outerproduct">Outer product <code>&lt;outerproduct/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;outerproduct/&gt;
+  &lt;ci type="vector"&gt;A&lt;/ci&gt;
+  &lt;ci type="vector"&gt;B&lt;/ci&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+            </div>
+            <div class="section">
+               <h4 id="contm_constantsandsymbols">Constant and Symbol Elements</h4>
+               <div class="section">
+                  <h5 id="contm_integers">integers <code>&lt;integers/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;
+  &lt;cn type="integer"&gt; 42 &lt;/cn&gt;
+  &lt;integers/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_reals">reals <code>&lt;reals/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;
+  &lt;cn type="real"&gt; 44.997&lt;/cn&gt;
+  &lt;reals/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_rationals">Rational Numbers <code>&lt;rationals/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;
+  &lt;cn type="rational"&gt; 22 &lt;sep/&gt;7&lt;/cn&gt;
+  &lt;rationals/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_naturalnumbers">Natural Numbers <code>&lt;naturalnumbers/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;
+  &lt;cn type="integer"&gt;1729&lt;/cn&gt;
+  &lt;naturalnumbers/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_complexes">complexes <code>&lt;complexes/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;
+  &lt;cn type="complex-cartesian"&gt;17&lt;sep/&gt;29&lt;/cn&gt;
+  &lt;complexes/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_primes">primes <code>&lt;primes/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;in/&gt;
+  &lt;cn type="integer"&gt;17&lt;/cn&gt;
+  &lt;primes/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_exponentiale">Exponential e <code>&lt;exponentiale/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;ln/&gt;&lt;exponentiale/&gt;&lt;/apply&gt;
+  &lt;cn&gt;1&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_imaginaryi">Imaginary i <code>&lt;imaginaryi/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;power/&gt;&lt;imaginaryi/&gt;&lt;cn&gt;2&lt;/cn&gt;&lt;/apply&gt;
+  &lt;cn&gt;-1&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_notanumber">Not A Number <code>&lt;notanumber/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;divide/&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;cn&gt;0&lt;/cn&gt;&lt;/apply&gt;
+  &lt;notanumber/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_true">True <code>&lt;true/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;or/&gt;
+    &lt;true/&gt;
+     &lt;ci type="boolean"&gt;P&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;true/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_false">False <code>&lt;false/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;eq/&gt;
+  &lt;apply&gt;&lt;and/&gt;
+    &lt;false/&gt;
+    &lt;ci type="boolean"&gt;P&lt;/ci&gt;
+  &lt;/apply&gt;
+  &lt;false/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_emptyset">Empty Set <code>&lt;emptyset/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;neq/&gt;
+  &lt;integers/&gt;
+  &lt;emptyset/&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_pi">pi <code>&lt;pi/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;approx/&gt;
+  &lt;pi/&gt;
+  &lt;cn type="rational"&gt;22&lt;sep/&gt;7&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_eulergamma">Euler gamma <code>&lt;eulergamma/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  
+&lt;apply&gt;&lt;approx/&gt;
+  &lt;eulergamma/&gt;
+  &lt;cn&gt;0.5772156649&lt;/cn&gt;
+&lt;/apply&gt;
+               </pre>
+               </div>
+               <div class="section">
+                  <h5 id="contm_infinity">infinity <code>&lt;infinity/&gt;</code></h5>
+                  <pre class="examplecontent">
+                  &lt;infinity/&gt;
+               </pre>
+               </div>
+            </div>
+         </div>
+         <div class="section">
+            <h3 id="contm_deprecated">Deprecated Content Elements</h3>
+            <div class="section">
+               <h4 id="contm_declare">Declare <code>&lt;declare&gt;</code></h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_reln">Relation <code>&lt;reln&gt;</code></h4>
+            </div>
+            <div class="section">
+               <h4 id="contm_fn">Relation <code>&lt;fn&gt;</code></h4>
+            </div>
+         </div>
+         <div class="section">
+            <h3 id="contm_p2s">The Strict Content MathML Transformation</h3>
+         </div>
+      </div>
+   </body>
+</html>

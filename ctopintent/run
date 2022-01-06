@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# cp ../../../davidcarlisle/ctop/ctop.js .
+
+
+saxon9  ../../mathml/src/contm-new.html ctopintent.xsl > index.html
