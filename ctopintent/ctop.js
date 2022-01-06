@@ -598,7 +598,6 @@ ctopT["domainofapplication"] = function(nn,n,p)  {
 
 
 ctopT["mrow"] = function(nn,n,p)  {
-    alert(n.outerHTML);
     var c=ctopChildren(n);
     for(var i=0;i<c.length;i++){
 	ctopAT(n,c[i],0);
