@@ -8,6 +8,8 @@ discussions. Some may be submitted later as W3C WG Notes.
 
 ---
 
+[Notes on MathML](notes-on-mathml)
+
 [MathML Accessibility Gap Analysis](gap-analysis)
 
 [MathML Accessibility TPAC 2021 Slides](TPAC-2021/index.html)
