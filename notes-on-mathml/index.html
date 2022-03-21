@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
+<meta charset="UTF-8"/>
 <title>Notes on MathML</title>
 <script class="remove">
 var respecConfig = {
@@ -70,6 +71,11 @@ var respecConfig = {
       src='https://www.w3.org/Tools/respec/respec-w3c'
       class='remove'>
   </script>
+<script class="remove">
+  function apdixify(r,s,u) {
+      return "\n<section class='appendix'>\n\n" + s + "\n\n</section>\n";
+  }
+</script>
 </head>
 <body>
 
@@ -86,10 +92,10 @@ Custom paragraph.
 </section>
 
 
-<div data-include="notes1.md" data-include-replace="true" data-include-format="markdown"></div>
+<div data-include="notes-intro.md" data-include-replace="true" data-include-format="markdown"></div>
 
 
-<div data-include="notesa.md" data-include-replace="true" data-include-format="markdown"></div>
+<div data-include="notes-parsing.md" data-oninclude="apdixify" data-include-replace="true" data-include-format="markdown"></div>
 
 
 </body>
