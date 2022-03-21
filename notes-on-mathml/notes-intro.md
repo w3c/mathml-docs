@@ -6,7 +6,7 @@ A distinguishing feature of mathematics is the use of a complex and
 highly evolved system of two-dimensional symbolic notation. As
 J. R. Pierce writes in his book on communication theory, mathematics
 and its notation should not be viewed as one and the same thing
-[Pierce1961]. Mathematical ideas can exist independently of the
+[[Pierce1961]]. Mathematical ideas can exist independently of the
 notation that represents them. However, the relation between meaning
 and notation is subtle, and part of the power of mathematics to
 describe and analyze derives from its ability to represent and
@@ -21,7 +21,7 @@ Mathematical notation evolves constantly as people continue to
 innovate in ways of approaching and expressing ideas. Even the common
 notation of arithmetic has gone through an amazing variety of styles,
 including many defunct ones advocated by leading mathematical figures
-of their day [Cajori1928]. Modern mathematical notation is the product
+of their day [[Cajori1928]]. Modern mathematical notation is the product
 of centuries of refinement, and the notational conventions for
 high-quality typesetting are quite complicated and subtle. For
 example, variables and letters which stand for numbers are usually
@@ -49,8 +49,8 @@ media, where one must contend with the difficulties of on-screen
 reading. Appropriate standards coupled with computers enable a
 broadening of access to mathematics beyond the world of print. The
 markup methods for mathematics in use just before the Web rose to
-prominence importantly included TeX [Knuth1986] and approaches based
-on SGML ([AAP-math], [Poppelier1992] and [ISO-12083]).
+prominence importantly included TeX [[Knuth1986]] and approaches based
+on SGML ([[AAP-math]], [[Poppelier1992]] and [[ISO-12083]]).
 
 It is remarkable how widespread the current conventions of
 mathematical notation have become. The general two-dimensional layout,
@@ -97,7 +97,7 @@ MathML should ideally:
 
     *    input for computer algebra systems
 
-    *    other mathematics typesetting languages, such as TEX
+    *    other mathematics typesetting languages, such as TeX
 
     *    plain text displays, e.g. VT100 emulators
 
