@@ -4,6 +4,18 @@
 <meta charset="UTF-8"/>
 <title>Notes on MathML</title>
 <script class="remove">
+  function apdixify(r,s,u) {
+      return "\n<section class='appendix'>\n\n" + s + "\n\n</section>\n";
+  }
+  function mmllinks(c){
+      var a = document.getElementsByTagName('a');
+      for (var i = 0; i< a.length;i++){
+	  a[i].href=a[i].href.replace(/^.*full#/,'https://w3c.github.io/mathml/#');
+	  a[i].href=a[i].href.replace(/^.*core#/,'https://w3c.github.io/mathml-core/#');
+      }
+  }
+</script>
+<script class="remove">
 var respecConfig = {
     format: "markdown",
     specStatus:     "DNOTE",
@@ -33,7 +45,9 @@ var respecConfig = {
             }]
         }
     ],
-   github:        "https://github.com/w3c/mathml-docs",
+    github:        "https://github.com/w3c/mathml-docs",
+    xref: ["MathML4", "MathML-Core"],
+    postProcess: [mmllinks],
    localBiblio: {     
   "MathML1":           {"aliasOf": "MathML-19980407"},
   "MathML-Core":       {"aliasOf": "mathml-core"},
@@ -80,11 +94,6 @@ var respecConfig = {
       src='https://www.w3.org/Tools/respec/respec-w3c'
       class='remove'>
   </script>
-<script class="remove">
-  function apdixify(r,s,u) {
-      return "\n<section class='appendix'>\n\n" + s + "\n\n</section>\n";
-  }
-</script>
 </head>
 <body>
 
