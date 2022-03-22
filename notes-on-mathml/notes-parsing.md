@@ -20,7 +20,7 @@ shema only allows lower case names, so `onclick="somefunction"`. If
 using the HTML parser this is not an issue as all MathML element attribute
 names  (exceprt `definitionURL` are normalised to lowercase, however if
 using an XML parser, an attribute name such as `OnClick` will be
-treated as invalid by a schema validator (bu acceptd by the MathML
+treated as invalid by a schema validator (but accepted by the MathML
 Core implementation). A validation pipeline can either normalise the
 attribue names to lowercase before validating, or if a particular
 application wants to standardise on a specific style such as `onClick`
