@@ -57,15 +57,15 @@ Compared with the MathMl 3 schema, the schema has been restructured to
 accomodate MathML Core, also th individual components have been
 constructed to allow them to be separately used. So MathML documens
 may be validated against any one of `mathml4-core`,
-`mathml4-presentation`, `mathml4-strict-content`, `mathml4-content` or
-`mathml4`.  
+`mathml4-presentation`, `mathml4-strict-content`, `mathml4-content`,
+`mathml4` or `mathml4-legacy`.
 
 In almost all cases a document validating against
 `mathml4-core` will also be valid for `mathml4-presentation` and
 `mathml4` with the possible exception of the use of MathML in
 `annotation-xml`. MathML Core and MathML Presentation Schema allow any
-well formed XML in annotation-xml, but the full MathML schema (like
-the schema supplied for MathML3)  allows arbitrary well formed XML
+well formed XML in `<annotation-xml>`, but the full MathML schema (like
+the schema supplied for MathML 3)  allows arbitrary well formed XML
 form _other_ namespaces but will validate  any MathML annotations.
 
 
