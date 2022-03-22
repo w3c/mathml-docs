@@ -10,9 +10,9 @@
   function mmllinks(c){
       var a = document.getElementsByTagName('a');
       for (var i = 0; i< a.length;i++){
-	  a[i].href=a[i].href.replace(/^.*full\b/,'https://w3c.github.io/mathml');
-	  a[i].href=a[i].href.replace(/^.*core\b/,'https://w3c.github.io/mathml-core');
-	  a[i].href=a[i].href.replace(/^.*entities\b/,'https://w3c.github.io/xml-entities');
+	  a[i].href=a[i].href.replace(/^.*\/full\b/,'https://w3c.github.io/mathml');
+	  a[i].href=a[i].href.replace(/^.*\/core\b/,'https://w3c.github.io/mathml-core');
+	  a[i].href=a[i].href.replace(/^.*\/entities\b/,'https://w3c.github.io/xml-entities');
       }
   }
 </script>
