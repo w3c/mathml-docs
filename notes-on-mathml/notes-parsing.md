@@ -89,7 +89,7 @@ the reduced expressivity of XSD, or to simplify the translation.
 
 
 The DTD version is also mechanically generated from the Relax NG, many
-of he constraints need to b simplified for DTD. The resulting DTD is
-post processed as for MathML3 DTD, to add some limied support for XML
+of the constraints need to be simplified for DTD. The resulting DTD is
+post-processed, as for MathML3 DTD, to add some limited support for XML
 Namespaces, and to include the HTML/MathML entity declarations,
 
