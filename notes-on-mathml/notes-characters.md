@@ -44,11 +44,11 @@ There are essentially three different ways of encoding character data in an XML 
 
  * Using characters directly: For example, the '→' (character U+2192
    [RIGHTWARDS ARROW]) may have been inserted. Note if using this form
-   it is adviasable to use UTF-8 encoding that allows the full Unicode range.
+   it is advisable to use UTF-8 encoding that allows the full Unicode range.
    
 
  * Using numeric XML character references: For example, '→' may be
-   represented as &#8594; (decimal) or &#x2192; (hex). Note that the
+   represented as `&amp;amp;#8594;` (decimal) or `&amp;amp;#x2192;` (hex). Note that the
    numbers in the character references always refer to the Unicode
    encoding (and not to the character encoding used in the XML
    file). By using character references it is always possible to
@@ -58,8 +58,8 @@ There are essentially three different ways of encoding character data in an XML 
    references the [HTML/MathML entity
    collection](entities/2007/htmlmathml-f.ent) which defines internal
    entities that expand to character data. Thus for example the entity
-   reference `&rightarrow;` may be used rather than the character
-   reference `&#x2192;`. An XML fragment that uses an entity reference
+   reference `&amp;amp;rightarrow;` may be used rather than the character
+   reference `&amp;amp;#x2192;`. An XML fragment that uses an entity reference
    which is not defined in a DTD is not well-formed; therefore it will
    be rejected by an XML parser. For this reason every fragment using
    entity references must use a DOCTYPE declaration which specifies

@@ -53,7 +53,7 @@ allowing as many specific `data-...` names as required by the application.
 
 ### Structure of the Relax NG schema.
 
-Compared with the MathMl 3 schema, the schema has been restructured to
+Compared with the MathML 3 schema, the schema has been restructured to
 accomodate MathML Core, also th individual components have been
 constructed to allow them to be separately used. So MathML documens
 may be validated against any one of `mathml4-core`,
