@@ -151,33 +151,20 @@ MathML offers two flavors of markup of this formula. The first is the style whic
   <mo>=</mo>
   <mfrac>
     <mrow>
-      <mrow>
-        <mo>-</mo>
-        <mi>b</mi>
-      </mrow>
-      <mo>&PlusMinus;</mo>
+      <mrow><mo>-</mo><mi>b</mi></mrow>
+      <mo>&amp;amp;PlusMinus;</mo>
       <msqrt>
+        <msup><mi>b</mi><mn>2</mn></msup>
+        <mo>-</mo>
         <mrow>
-          <msup>
-            <mi>b</mi>
-            <mn>2</mn>
-          </msup>
-          <mo>-</mo>
-          <mrow>
-            <mn>4</mn>
-            <mo>&InvisibleTimes;</mo>
-            <mi>a</mi>
-            <mo>&InvisibleTimes;</mo>
-            <mi>c</mi>
-          </mrow>
+          <mn>4</mn>
+          <mo>&amp;amp;InvisibleTimes;</mo>
+          <mi>a</mi><mo>&amp;amp;InvisibleTimes;</mo>
+          <mi>c</mi>
         </mrow>
       </msqrt>
     </mrow>
-    <mrow>
-      <mn>2</mn>
-      <mo>&InvisibleTimes;</mo>
-      <mi>a</mi>
-    </mrow>
+    <mrow><mn>2</mn><mo>&amp;amp;InvisibleTimes;</mo><mi>a</mi></mrow>
   </mfrac>
 </mrow>
 ```
@@ -197,28 +184,20 @@ given in this style of markup is as follows.
 
 
 ```
-<apply>
-  <eq/>
+<apply><eq/>
   <ci>x</ci>
-  <apply>
-    <divide/>
-    <apply>
-      <plus/>
-      <apply>
-        <minus/>
+  <apply><divide/>
+    <apply><plus/>
+      <apply><minus/>
         <ci>b</ci>
       </apply>
-      <apply>
-        <root/>
-        <apply>
-          <minus/>
-          <apply>
-            <power/>
+      <apply><root/>
+        <apply><minus/>
+          <apply><power/>
             <ci>b</ci>
             <cn>2</cn>
           </apply>
-          <apply>
-            <times/>
+          <apply><times/>
             <cn>4</cn>
             <ci>a</ci>
             <ci>c</ci>
@@ -226,8 +205,7 @@ given in this style of markup is as follows.
         </apply>
       </apply>
     </apply>
-    <apply>
-      <times/>
+    <apply><times/>
       <cn>2</cn>
       <ci>a</ci>
     </apply>
