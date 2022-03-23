@@ -76,5 +76,5 @@ MathML using HTML syntax should use
  * `text/html`
  
 However unless specifically targetting HTML browsers, MathML fragments
-should use XML syntax for maximum interoprability.
+should use XML syntax for maximum interoperability.
 
