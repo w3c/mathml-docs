@@ -3,7 +3,7 @@
 
 ### XML and HTML Validity
 
-XML validaors may use the supplied schema directly. HTML validators
+XML validators may use the supplied schema directly. HTML validators
 require custom code but often (as is the case with the W3C validator)
 they use an XML-based validation as some part of that process. So the
 supplied schema may still apply even to HTML-syntax MathML.
@@ -16,15 +16,15 @@ schema (unlike the MathML 3 version) does allow case insensive values in
 most cases (so you can use `stretchy="TRUE"` or `mathvariant="Bold"`)
 however it does not allow the attribute names to vary by case. That is
 MathML Core allows `OnClick="somefunction()"` however the supplied
-schema only allows lower case names, so `onclick="somefunction"`. If
+schema only allows lower case names, so `onclick="somefunction()"`. If
 using the HTML parser this is not an issue as all MathML element attribute
-names  (except `definitionURL` are normalised to lowercase, however if
+names  (except `definitionURL`) are normalised to lowercase. However if
 using an XML parser, an attribute name such as `OnClick` will be
 treated as invalid by a schema validator (but accepted by the MathML
 Core implementation). A validation pipeline can either normalise the
-attribue names to lowercase before validating, or if a particular
+attribute names to lowercase before validating, or if a particular
 application wants to standardise on a specific style such as `onClick`
-or `OnClick` it can use a modified version of the supplied schema that
+or `OnClick`, it can use a modified version of the supplied schema that
 accepts that form.
 
 #### Extension attributes.
