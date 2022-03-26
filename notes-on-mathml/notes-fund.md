@@ -1,6 +1,6 @@
 ## Notes on MathML fundamentals
 
-## Length Valued Attributes in MathML.
+### Length Valued Attributes in MathML.
 
 In [[MathML-Core]] all MathML atributes are defined to have the CSS <a
 id="type_unit"
@@ -43,7 +43,7 @@ MathML full extends the syntax in several ways:
   <span class="ednote">need to decide what to say here</span>
 
 
-## Web links in MathML.
+### Web links in MathML.
 
 There is often a requirement to have hyperlinks in MathML, just as in
 HTML documents. [[MathML2]] proposed using the [[xlink]] system to add
