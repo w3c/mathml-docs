@@ -5,14 +5,14 @@
 In [[MathML-Core]] all MathML atributes are defined to have the CSS <a
 id="type_unit"
 data-cite="CSS-VALUES-3#typedef-length-percentage"><code>&lt;length-percentage&gt;</code></a>
-syntax. Although in MathML Core level 1 with restrictions on he
+syntax. Although in MathML Core level 1 with restrictions on the
 interpretation of `%`.
 
 MathML full extends the syntax in several ways:
 
 * **Unitless values**. A value such as `mathsize="2"` should be interpreted
   as `200%`. This form is for compatability with early versions of
-  MathML and was already deprecated in MathML 3. I should be avoided
+  MathML and was already deprecated in MathML 3. It should be avoided
   in new documents.
 
 * **Named spaces**. MathML has 7 named length values ranging from
@@ -31,7 +31,7 @@ MathML full extends the syntax in several ways:
   `depth`, `width` In the usual case where `width` is used when
   setting the new width, this is equivalent to using a percentage
   value. Possible uses such as forcing a square by setting the height to
-  `width` are not easily supported using the CSS length synax but can
+  `width` are not easily supported using the CSS length syntax but can
   usually be avoided.
   
 * **Length Increments** In MathML 3, `<mpadded>` attributes had a
