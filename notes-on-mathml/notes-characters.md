@@ -56,7 +56,7 @@ There are essentially three different ways of encoding character data in an XML 
 
  * Using entity references: The [MathML4 DTD](full#parsing_usingdtd)
    references the [HTML/MathML entity
-   collection](entities/2007/htmlmathml-f.ent) which defines internal
+   collection](https://raw.githubusercontent.com/w3c/xml-entities/gh-pages/docs/2007/htmlmathml-f.ent) which defines internal
    entities that expand to character data. Thus for example the entity
    reference `&amp;amp;rightarrow;` may be used rather than the character
    reference `&amp;amp;#x2192;`. An XML fragment that uses an entity reference
