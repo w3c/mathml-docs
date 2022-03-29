@@ -10,11 +10,11 @@ supplied schema may still apply even to HTML-syntax MathML.
 
 #### ASCII Case Insensitivity
 
-MathML Core follows most web platform elements and allows ASCII case
+MathML Core follows other web platform languages, and allows ASCII case
 insensitive matching for most attribute names and values. The MathML 4
 schema (unlike the MathML 3 version) does allow case insensive values in
 most cases (so you can use `stretchy="TRUE"` or `mathvariant="Bold"`)
-however it does not allow the attribute names to vary by case. That is
+however it does not allow the attribute names to vary by case. That is,
 MathML Core allows `OnClick="somefunction()"` however the supplied
 schema only allows lower case names, so `onclick="somefunction()"`. If
 using the HTML parser this is not an issue as all MathML element attribute
