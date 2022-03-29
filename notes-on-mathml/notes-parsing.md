@@ -54,8 +54,8 @@ allowing as many specific `data-...` names as required by the application.
 ### Structure of the Relax NG schema.
 
 Compared with the MathML 3 schema, the schema has been restructured to
-accomodate MathML Core, also th individual components have been
-constructed to allow them to be separately used. So MathML documens
+accomodate MathML Core, also the individual components have been
+constructed to allow them to be separately used. So MathML documents
 may be validated against any one of `mathml4-core`,
 `mathml4-presentation`, `mathml4-strict-content`, `mathml4-content`,
 `mathml4` or `mathml4-legacy`.
@@ -69,6 +69,13 @@ the schema supplied for MathML 3)  allows arbitrary well formed XML
 form _other_ namespaces but will validate  any MathML annotations.
 
 
+Note that in MathML Core unknown
+attributes are not an error, they just have no defined behaviour.
+The `mathml4-core` schema uses this flexibility to allow some attributes
+that are not specified in [[MathML-Core]] level 1, but may be specified
+elsewhere and usefully used with web-browsers implementing MathML Core.
+These include `intent` attributes (from [[MathML4]]) and `aria-*`
+attributes (from [[wai-aria]]).
 
 ### Other formats
 
