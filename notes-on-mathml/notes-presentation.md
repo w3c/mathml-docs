@@ -98,7 +98,7 @@ different spacing algorithms.  Consequently, different MathML
 renderers may position symbols in different locations relative to each
 other.  Say that renderer B, for example, provides improved spacing
 for a particular expression over renderer A.  Authors are strongly
-warned that <span>&#x201c;tweaking&#x201d;</span> the layout for
+warned that &#x201c;tweaking&#x201d; the layout for
 renderer A may produce very poor results in renderer B, very likely
 worse than without any explicit adjustment at all.
 
@@ -125,8 +125,8 @@ MathML renderers might be still more productive, in the long run.
   
 ### Warning: spacing should not be used to convey meaning
 
-MathML elements that permit <span>&#x201c;negative
-spacing&#x201d;</span>, namely `mspace`,
+MathML elements that permit &#x201c;negative
+spacing&#x201d;, namely `mspace`,
 `mpadded`, and `mo`, could in theory be used to simulate new
 notations or &#x201c;overstruck&#x201d; characters by the
 visual overlap of the renderings of more than one MathML
@@ -139,9 +139,9 @@ for the following reasons:
 
 
 *    it will give different results in different MathML renderers
-     (so the warning about <span>&#x201c;tweaking&#x201d;</span> applies)<span>, especially
+     (so the warning about &#x201c;tweaking&#x201d; applies), especially
      if attempts are made to render glyphs outside the bounding box of
-     the MathML expression</span>;
+     the MathML expression;
      
 *    it is likely to appear much worse than a more standard construct
      supported by good renderers;
