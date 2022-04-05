@@ -176,5 +176,33 @@ attributes on `mi` (such as `mathvariant`) used to distinguish one variable
 from another.
   
 
- 
- 
+### Recommendations on the use of invisible operators
+The reasons for using specific `mo` elements for invisible operators include:
+* such operators should often have specific effects on visual
+     rendering (particularly spacing and linebreaking rules) that are not
+     the same as either the lack of any operator, or spacing represented by
+     `mspace` or `mtext`
+     elements;
+* these operators should often have specific audio renderings
+     different than that of the lack of any operator;</p>
+* automatic semantic interpretation of MathML presentation elements
+     is made easier by the explicit specification of such operators.
+
+For example, an audio renderer might render <i class="var">f</i>(<i class="var">x</i>)
+   (represented as in the above examples) by speaking &#x201c;f of x&#x201d;, but use
+   the word &#x201c;times&#x201d; in its rendering of <i class="var">x</i><i class="var">y</i>.
+   Although its rendering must still be different depending on the structure
+   of neighboring elements (sometimes leaving out &#x201c;of&#x201d; or
+   &#x201c;times&#x201d; entirely), its task is made much easier by the use of
+   a different `mo` element for each invisible
+   operator.
+
+### Names for other special operators
+MathML also includes `DifferentialD` (U+2146) for use
+in an `mo` element representing the differential
+operator symbol usually denoted by &#x201c;d&#x201d;.  The reasons for
+explicitly using this special character are similar to those for using
+the special characters for invisible operators described in the
+preceding section.
+
+Note that there are other special characters that convey more meaning than their ASCII look-alike character such as `ExponentialE` (U+2147).
