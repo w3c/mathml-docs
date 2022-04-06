@@ -18,16 +18,16 @@ MathML full extends the syntax in several ways:
 * **Named spaces**. MathML has 7 named length values ranging from
   `veryverythinmathspace` to `veryverythickmathspace` and their
   negative space equivalents. Originally these were implemenation
-  defind bu [[MathML4]] specifies them as multiples of 1/18
+  defind but [[MathML4]] specifies them as multiples of 1/18
   em. (Multiples 1/18 &hellip; 7/18 and &minus;1/18 &hellip;
   &minus;7/18.)
 
-  so `lspace="thickmathspace` `rspace="2thickmathspace` are equivalent
+  so `lspace="thickmathspace` `rspace="thickmathspace` are equivalent
   to 
-  `lspace="0.278em` `rspace=".556em` and this form is preferred, for
+  `lspace="0.278em` `rspace=".278em` and this form is preferred, for
   compatibility with MathML Core.
   
-* **psuedo-units** `<mpadded>` allows additional units `height`,
+* **pseudo-units** `<mpadded>` allows additional units `height`,
   `depth`, `width` In the usual case where `width` is used when
   setting the new width, this is equivalent to using a percentage
   value. Possible uses such as forcing a square by setting the height to
