@@ -2,7 +2,7 @@
 
 ### Length Valued Attributes in MathML.
 
-In [[MathML-Core]] all MathML atributes are defined to have the CSS <a
+In [[MathML-Core]] all MathML length attributes are defined to have the CSS <a
 id="type_unit"
 data-cite="CSS-VALUES-3#typedef-length-percentage"><code>&lt;length-percentage&gt;</code></a>
 syntax. Although in MathML Core level 1 with restrictions on the
@@ -37,9 +37,9 @@ MathML full extends the syntax in several ways:
 * **Length Increments** In MathML 3, `<mpadded>` attributes had a
   special inerpretation for leading `+` or `-` signs in lengths, a
   length of `+3em` was not interpreted as `3em` but as an _increase_ in
-  `3em` over the default value. This inerpretation is problematic in any
+  `3em` over the default value. This interpretation is problematic in any
   context (including CSS) where lengths may be calculated, as it
-  assumes conrol over the exact form used to write out the value.
+  assumes control over the exact form used to write out the value.
   <span class="ednote">need to decide what to say here</span>
 
 
@@ -56,7 +56,7 @@ wasn't possible to include any linking in level 1 of MathML Core.
 
 As for most features of MathML not directly supported in MathML Core,
 [Polyfills](https://mathml-refresh.github.io/mathml-polyfills/) will
-be provided, to allow auhors to use the MathML `href` attribute,
+be provided, to allow authors to use the MathML `href` attribute,
 howevr some authors may prefer to generate MathML Core documens not
 requiring polyfills, in which case they need to use HTML or JavaScript
 to implement linking.
