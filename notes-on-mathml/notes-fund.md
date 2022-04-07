@@ -73,7 +73,7 @@ In MathML Core this can be encoded with a nested HTML element:
 
 `<mi><a href="https://example.com/sin">sin</a></mi>`
 
-Or, if using an XML parser, also making the HML namespace explicit:
+Or, if using an XML parser, also making the HTML namespace explicit:
 
 ```
 <mi><a xmlns="http://www.w3.org/1999/xhtml" 

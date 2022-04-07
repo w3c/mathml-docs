@@ -137,7 +137,7 @@ Fundamentals common to both strains of markup are covered in [[MathML4]] Chapter
 
 The quadratic formula provides a simple but instructive illustration of MathML markup.
 
-
+#### SVG
 
 <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='176.312704pt' height='44.548603pt' viewBox='-72.000004 -71.601531 88.156352 22.274301'>
 <defs>
@@ -172,6 +172,36 @@ The quadratic formula provides a simple but instructive illustration of MathML m
 <use x='-17.97774' y='-49.32723' xlink:href='#g1-97'/>
 </g>
 </svg>
+
+#### MathML Core
+
+<math mathsize="200%">
+<mrow>
+ <mi>x</mi>
+ <mo>=</mo>
+ <mfrac>
+  <mrow>
+   <mrow><mo>-</mo><mi>b</mi></mrow>
+   <mo>&PlusMinus;</mo>
+   <msqrt>
+    <msup><mi>b</mi><mn>2</mn></msup>
+    <mo>-</mo>
+    <mrow>
+     <mn>4</mn><mo>&InvisibleTimes;</mo><mi>a</mi><mo>&InvisibleTimes;</mo><mi>c</mi>
+    </mrow>
+   </msqrt>
+  </mrow>
+  <mrow><mn>2</mn><mo>&InvisibleTimes;</mo><mi>a</mi></mrow>
+ </mfrac>
+</mrow>
+</math>
+
+#### ASCIIMath
+
+
+
+£x=(-b +- sqrt(b^2-4ac))/(2a)£
+
 
 MathML offers two flavors of markup of this formula. The first is the style which emphasizes the actual presentation of a formula, the two-dimensional layout in which the symbols are arranged. An example of this type is given just below. The second flavor emphasizes the mathematical content and an example of it follows the first one.
 
