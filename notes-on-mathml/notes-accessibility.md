@@ -7,7 +7,7 @@
 
 Math accessibility has significant differences from text accessibility because math notation is a shorthand for its meaning. The words spoken for it differ from the braille that would be used for it. Furthermore, the words that are spoken need to differ based on the reader’s disabilities and familiarity of the content. Hence, enough information from MathML should be given to the assistive technology (AT) of a user so that it can generate a meaningful presentation of the math to the user.
 
-Although this document uses the word "math", the notations described here are used in science, engineering, and in other fields. These include notations used in Chemistry that make use of standard mathematical notations (e.g., $\mathrm{Al}^{+3}\mathrm{O}^{-2} \rightarrow \mathrm{Al}_2 \mathrm{O}_3$).
+Although this document uses the word "math", the notations described here are used in science, engineering, and in other fields. These include notations used in Chemistry that make use of standard mathematical notations (e.g., £"Al"^(+3) "O"^(-2) rightarrow "Al"_2 "O"_3£).
 "Math" accessibility applies to not just documents about mathematical topics, but is relevant to almost all technical documents.
 
 
@@ -203,8 +203,7 @@ Conversion tools from TeX to MathML should be able to produce semantic markup in
 * TeX's basic macros are already semantically translated properly as
  noted with "sin" above. We expect additional support for other macros
  such as `\binom{n}{m}` (displays as
- (<sup
- style="position:relative;left:.5em;top:-.2em;">n</sup><sub>m</sub>)
+ (£((n),(m))£)
  to be added to translators because doing so is relatively easy.
 * More general support for the proposed MathML semantics requires the addition of two additional macros/commands. We expect the MathML Refresh CG to propose details for those macros. Addition of them to translators will happen if the user community pushes for them. We expect supporting whatever gets proposed to be relatively simple.
 * Some authoring systems such as [PreTeXt](https://pretextbook.org/) use many more macros to disambiguate the meaning and improve layout. We expect translators from PreTeXt will produce semantic markup because semantics is a key reason to use PreTeXt.
@@ -259,11 +258,11 @@ Even when the semantics are clear, there are often many special cases that need 
 #### Know Your Audience
 Knowing the audience for the speech is important. If someone is blind, typical speech does not distinguish where 2D structures start and end. E.g., the fraction
 
-<sup>1</sup>/<sub><i>x</i>+<i>y</i></sub>
+£1/(x+y)£
 
 is typically spoken as "one over x plus y". That could also be interpreted as
 
-<sup>1</sup>/<sub><i>x</i></sub> + <i>y</i>
+£1/(x)+y£
 
 Pausing can help a little after the <i>x</i> can help, but at least one study has shown students prefer strong lexical cues such as saying start/end words. For someone who is blind, "fraction one over x plus y end fraction" is unambiguous. However, for a student with dyslexia who can see but is aided by audio, those extra words are confusing and add complexity. Hence, the words used for the speech needed to be chosen based on the audience.
 
@@ -380,7 +379,7 @@ When trying to guess heuristics, these multiple forms make it much harder to che
 
 Outside of specified MathML equivalents, some notations can be written
 in different ways that look similar. For example, binomial coefficient
-(<sup style="position:relative;left:.5em;top:-.2em;">n</sup><sub>k</sub>) can be written in these two ways:
+(£((n),(k))£) can be written in these two ways:
 
 
 <table>
