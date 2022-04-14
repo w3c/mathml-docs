@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>MathML Media-type Declarations</title>
+
+<script class="remove">
+var respecConfig = {
+    specStatus:     "ED",
+    shortName:     "mathml-media-types",
+    edDraftURI:    "https://w3c.github.io/mathml-docs/mathml-media-types/",
+    canonicalURI:  "edDraft",
+    latestVersion: "https://w3c.github.io/mathml-docs/mathml-media-types/",
+    group:          "math",
+     editors:        [{
+                       name:    "Paul Libbrecht",
+                       url: "https://github.com/polx",
+                     }],
+    maxTocLevel:   2,
+    otherLinks:    [
+	{
+      key: "MathML 4 editors' draft",
+      data: [{
+              value: "https://w3c.github.io/mathml/",
+              href: "https://w3c.github.io/mathml/",
+      }]
+	},
+	{
+      key: "MathML Core Level 1 editors' draft",
+      data: [{
+              value: "https://w3c.github.io/mathml-core/",
+              href: "https://w3c.github.io/mathml-core/",
+            }]
+        }
+    ],
+    github:        "https://github.com/w3c/mathml-docs",
+    xref: ["MathML4", "MathML-Core"],
+   localBiblio: {
+  "MathML1":           {"aliasOf": "MathML-19980407"},
+  "MathML-Core":       {"aliasOf": "mathml-core"},
+  "Entities":          {"aliasOf": "xml-entity-names"},
+  "rdf":               {"aliasOf": "rdf-concepts"},
+  "XHTML":             {"aliasOf": "XHTML10"},
+  "Modularization":    {"aliasOf": "XHTML-MODULARIZATION11"},
+  "Namespaces":        {"aliasOf": "xml-names"},
+  "XMLSchemas":        {"aliasOf": "xmlschema-1"},
+  "XMLSchemaDatatypes":{"aliasOf": "xmlschema-2"},
+  "XHTML-MathML-SVG":  {"aliasOf": "XHTMLplusMathMLplusSVG"},
+  "SVG1.1":            {"aliasOf": "SVG11"},
+
+  "MathML4"  : {"title":    "Mathematical Markup Language (MathML) Version 4.0",
+               "publisher":"W3C",
+               "Editors":  ["D. P. Carlisle"],
+               "date":     "2022",
+               "href":     "https://w3c.github.io/mathml/"
+              },
+
+  "OpenMath": {"title":    "The OpenMath Standard",
+               "publisher":"The OpenMath Society",
+               "authors":  ["S. Buswell", "O. Caprotti", "D. P. Carlisle",
+                            "M. C. Dewar", "M. Gaëtano", "M. Kohlhase",
+                            "J. H. Davenport", "P. D. F. Ion", "T. Wiesing"],
+               "date":     "July 2019",
+               "href":     "https://openmath.org/standard/om20-2019-07-01/omstd20.html"
+              },
+
+       "Cajori1928":     {"title": "A History of Mathematical Notations, vol. I & II",
+			  "publisher": "Open Court Publishing Co., La Salle Illinois, 1928 & 1929 republished Dover Publications Inc., New York, 1993",
+			  "pages": "xxviii+820 pp",
+			  "isbn": "0-486-67766-4",
+			  "authors": ["Cajori, Florian"]
+			 },
+  "MathMLforCSS":   {"title": "MathMLforCSS"},
+  "Chaundy1954":    {"title": "Chaundy1954"},
+  "IEEE754":        {"title": "IEEE754"},
+  "OMDoc1.2":       {"title": "OMDoc1.2"},
+  "Abramowitz1977": {"title": "Abramowitz1977"},
+  "Pierce1961":     {"title": "An Introduction to Information Theory. Symbols, Signals and Noise.. Revised edition of Symbols, Signals and Noise: the Nature and Process of Communication (1961)",
+		      "publisher": "Dover Publications Inc., New York, 1980, xii+305 pp",
+		     "isbn": "0-486-24061-4",
+		      "authors": ["Pierce, John R."]
+		    },
+  "Knuth1986":      {"title": "The TeXbook",
+		     "publisher": "American Mathematical Society, Providence, RI and Addison-Wesley Publ. Co., Reading, MA",
+		     "date": "1986",
+		     "pages": "ix+483 pp.",
+		     "isbn": "0-201-13448-9",
+		     "authors": ["Knuth, Donald E."]
+		    },
+  "AAP-math": {"title": "ANSI/NISO Z39.59-1998; AAP Math DTD, Standard for Electronic Manuscript Preparation and MarkUp",
+		    "publisher": "Association of American Publishers, Inc., Washington, DC) Bethesda, MD",
+		    "date": "1988"},
+  "Poppelier1992": {"title": "Standard DTD's and Scientific Publishing, EPSIG News 5 (1992) #3",
+                     "authors": ["Poppelier, N.A.F.M.", "E. van Herwijnen", "C.A. Rowley"],
+		     "date": "September 1992",
+		     "pages": "10-19"
+		    },
+   "ISO-12083":      {"title": "ISO 12083:1994; ISO 12083 DTD Information and Documentation - Electronic Manuscript Preparation and Markup",
+		     "publisher": "International Standards Organization, Geneva, Switzerland",
+		     "date": "1994"}
+   }
+}
+</script>
+  <script
+      src='https://www.w3.org/Tools/respec/respec-w3c'
+      class='remove'>
+  </script>
+  <style>
+   #references :target{background:white;animation:none;}
+  </style>
+</head>
+<body>
+
+
+<section id="abstract">
+
+
+  <p>This normative text registers three media types for MathML,
+    <code>application/mathml+xml</code>, <code>application/mathml-presentation+xml</code> and
+    <code>application/mathml-content+xml</code>, in conformance with [[RFC4288]]
+    and <a href="http://www.w3.org/2002/06/registering-mediatype.html">W3CRegMedia</a>.
+    The media-types have been approved by IESG for registration with IANA as
+    <a href="http://www.ietf.org/mail-archive/web/ietf-announce/current/msg07890.html">announced by IETF</a>
+    and are visible on the
+    <a href="http://www.iana.org/assignments/media-types/application/">list of application media-types</a>.
+  </p>
+
+</section>
+
+<section id="sotd">
+
+</section>
+
+  <section>
+    <h3 id="media-type-choosing">Selection of Media Types for MathML Instances</h3>
+
+    <p>MathML contains two distinct vocabularies. Presentation markup is
+      for encoding visual presentation, and consists of the elements defined
+      in <a href="https://www.w3.org/TR/MathML/chapter3.html">Chapter 3 of the MathML specification</a>.
+      Content markup is for encoding mathematical meaning, and consists of the elements defined in
+      <a href="https://www.w3.org/TR/MathML/chapter4.html">Chapter 4 of the MathML specification</a>.
+      In addition, both the presentation and content
+      vocabularies contain the <code class="element">math</code>, <code class="element">semantics</code>,
+      <code class="element">annotation</code> and <code class="element">annotation-xml</code> elements. The MathML
+      media types should be used as follows:</p>
+
+    <dl>
+
+      <dt><code>application/mathml-presentation+xml</code></dt>
+      <dd>
+        <p>MathML instances that consist solely of presentation markup.</p>
+      </dd>
+
+      <dt><code>application/mathml-content+xml</code></dt>
+      <dd>
+        <p>MathML instances that consist solely of content
+          markup.</p>
+      </dd>
+
+      <dt><code>application/mathml+xml</code></dt>
+      <dd>
+        <p>Any valid MathML instance.  Must be used for MathML instances that are a
+          mix of presentation and content markup, or where the composition of an
+          instance is not known or cannot be guaranteed.</p>
+      </dd>
+    </dl>
+
+    <p>Some MathML applications may import and export only one of these
+      two vocabularies, while others may produce and consume each in a
+      different way, and still others may process both without any
+      distinction between the two.  Internally, many MathML processors favor
+      one vocabulary, and support the other vocabulary via conversion if at
+      all.  For example, computational software typically favors content
+      markup while typesetting software generally favors presentation
+      markup. By using separate media types for MathML instances consisting
+      solely of presentation or solely of content markup, such processors can
+      conduct negotiation for MathML representations in the preferred
+      vocabulary. For example, consider two web services offering mathematical
+      computation services such as a spreadsheet and a computer algebra system.
+      Internally both prefer content markup, but by
+      default, both generate presentation markup for output.  In the
+      absence of media type negotiation, a likely scenario for an exchange
+      between two systems involves two conversions, content to
+      presentation and back again.  With negotiation, the conversions are
+      eliminated.  Similarly, a client with a MathML instance in one of the
+      vocabularies might seek a web service that preferred that
+      vocabulary.</p>
+
+    <p>MathML is commonly used in compound document settings, e.g. within
+      HTML, where content is drawn from a variety of sources, and processed
+      with multiple tools.  In these cases, the composition of MathML
+      expressions generally is not known or at least cannot be guaranteed
+      by a user agent.  Consequently, the <code>application/mathml+xml</code> type
+      should be used, as it may be applied to any valid MathML expression.
+      Since most applications involve data from untrusted sources,
+      <code>application/mathml+xml</code> will commonly be appropriate to use as a
+      default type, and all MathML processors are encouraged to accept it as
+      a fallback to the more specific formats.</p>
+
+    <p>The media types described here may be applied to instances of
+      all versions of MathML up to and including MathML 3.  MathML instances
+      do not contain version numbers, so processors and producers must follow the
+      normative backward compatibility behavior described in this
+      specification.</p>
+
+  </section>
+
+  <section>
+    <h3 id="media-types-mathml">Media type for Generic MathML</h3>
+
+    <p>This registration  has been submitted to community review and has been
+      approved by IESG for registration with IANA.</p>
+
+    <dl>
+      <dt>Type name</dt>
+      <dd>
+        <p><code>application</code></p>
+      </dd>
+
+      <dt>Subtype name</dt>
+      <dd>
+        <p><code>mathml+xml</code></p>
+      </dd>
+
+      <dt>Required parameters</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Optional parameters</dt>
+      <dd>
+        <p>Same as <code>charset</code> parameter of
+          <code>application/xml</code> as specified in [[RFC3023]]</p>
+      </dd>
+
+      <dt>Encoding considerations</dt>
+      <dd>
+        <p>The encoding considerations of <code>application/xml</code> as specified in
+          [[RFC3023]] apply.</p>
+
+      </dd>
+
+      <dt>Security considerations</dt>
+      <dd>
+
+        <p>As with other XML types and as noted in [[RFC3023]] section 10,
+          repeated expansion of maliciously constructed XML entities can be used
+          to consume large amounts of memory, which may cause XML processors in
+          constrained environments to fail.</p>
+
+        <p>Several MathML elements may cause arbitrary URIs to be referenced. In
+          this case, the security issues of [[RFC3986]], section 7, should be
+          considered.</p>
+
+        <p>In common with HTML, MathML documents may reference external media
+          such as images, style sheets, and scripting languages. Scripting
+          languages are executable content. In this case, the security
+          considerations in the Media Type registrations for those formats shall
+          apply. Similarly, MathML annotation elements may contain content intended for
+          execution or processing. In the case where the processor recognizes
+          and processes the additional content, or where further processing of
+          that content is dispatched to other processors, additional security
+          issues potentially arise. Since the normative semantics of this
+          specification do not require processing of annotation elements, such
+          issues fall outside the domain of this registration document.</p>
+
+        <p>MathML may be used to describe mathematical expressions intended
+          for evaluation in computing systems.  Because of the nature of
+          mathematics, a seemingly innocuous expression may lead to a
+          computation which does not terminate or is impractically large.  This
+          introduces the risk that computational processors in constrained
+          environments may fail.</p>
+
+        <p>In addition, because of the extensibility features for MathML and of
+          XML in general, it is possible that <code>application/mathml+xml</code> may describe
+          content that has security implications beyond those described
+          here. However, if the processor follows only the normative semantics
+          of this specification, this content will be outside the MathML namespace
+          and shall be ignored.</p>
+      </dd>
+
+      <dt>Interoperability considerations</dt>
+      <dd>
+        <p>The MathML specification describes processing semantics that dictate
+          behavior that must be followed when dealing with, among other things,
+          unrecognized elements and attributes, both in the MathML namespace and
+          in other namespaces.</p>
+
+        <p>Because MathML is extensible, conformant <code>application/mathml+xml</code> processors
+          must expect that content received is well-formed XML, but it cannot be
+          guaranteed that the content is valid to a particular DTD or Schema or
+          that the processor will recognize all of the elements and attributes
+          in the document.</p>
+
+        <p>MathML instances do not contain version numbers, so processors and producers must
+          follow the normative backward compatibility behavior described in this
+          specification.</p>
+
+        <p>In computational contexts, the result of evaluating a MathML
+          expression is system-specific, and is not guaranteed to be
+          interoperable between systems.</p>
+      </dd>
+
+      <dt>Published specification</dt>
+      <dd>
+        <p>This media type registration is extracted from Appendix B
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
+            (MathML) Version 3.</a> specification.</p>
+      </dd>
+
+      <dt>Applications that use this media type</dt>
+      <dd>
+        <p>Web browsers, rendering engines, formula editors, typesetting software,
+          search robots, computing systems.</p>
+      </dd>
+
+      <dt>Additional information</dt>
+      <dd>
+        <p>Magic number(s): see [[RFC3023]]</p>
+      </dd>
+
+      <dt>File extension(s):</dt>
+      <dd>
+        <p><code>.mml</code></p>
+      </dd>
+
+      <dt>Windows Clipboard Name:</dt>
+      <dd>
+        <p><code>MathML</code></p>
+      </dd>
+
+      <dt>Macintosh file type code(s)</dt>
+      <dd>
+        <p>MML </p>
+      </dd>
+
+      <dt>Macintosh Universal Type Identifier code</dt>
+      <dd>
+        <p> <code>public.mathml</code> conforming to <code>public.xml</code></p>
+      </dd>
+
+      <dt>Person &amp; email address to contact for further information</dt>
+      <dd>
+        <p>Paul Libbrecht (member-math@w3.org). See the <a href="http://www.w3.org/Math">W3C Math Working Group</a> home
+          page for more information.</p>
+      </dd>
+
+      <dt>Intended usage</dt>
+      <dd>
+        <p>COMMON</p>
+      </dd>
+
+      <dt>Restrictions on usage</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Author and Change controller</dt>
+      <dd>
+        <p>The MathML specification is the product of the World Wide Web
+          Consortium's Math Working Group. The W3C has change control over
+          this media type registration.</p>
+      </dd>
+    </dl>
+  </section>
+
+  <section>
+    <h3 id="media-types-mathml-p">Media type for Presentation MathML</h3>
+
+    <p>This registration  has been submitted to community review and has been
+      approved by IESG for registration with IANA.</p>
+
+    <dl>
+
+      <dt>Type name</dt>
+      <dd>
+        <p><code>application</code></p>
+      </dd>
+
+      <dt>Subtype name</dt>
+      <dd>
+        <p><code>mathml-presentation+xml</code></p>
+      </dd>
+
+      <dt>Required parameters</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Optional parameters</dt>
+      <dd>
+        <p>Same as <code>charset</code> parameter of
+          application/xml as specified in [[RFC3023]]</p>
+      </dd>
+
+      <dt>Encoding considerations</dt>
+      <dd>
+        <p>The considerations of application/xml as specified in
+          [[RFC3023]] apply.</p>
+
+      </dd>
+
+      <dt>Security considerations</dt>
+      <dd>
+
+        <p>As with other XML types and as noted in [[RFC3023]] section 10,
+          repeated expansion of maliciously constructed XML entities can be used
+          to consume large amounts of memory, which may cause XML processors in
+          constrained environments to fail.</p>
+
+        <p>Several MathML elements may cause arbitrary URIs to be referenced. In
+          this case, the security issues of [[RFC3986]], section 7, should be
+          considered.</p>
+
+        <p>In common with HTML, MathML documents may reference external media
+          such as images, style sheets, and scripting languages. Scripting
+          languages are executable content. In this case, the security
+          considerations in the Media Type registrations for those formats shall
+          apply. Similarly, MathML annotation elements may contain content intended for
+          execution or processing. In the case where the processor recognizes
+          and processes the additional content, or where further processing of
+          that content is dispatched to other processors, additional security
+          issues potentially arise. Since the normative semantics of this
+          specification do not require processing of annotation elements, such
+          issues fall outside the domain of this registration document.</p>
+
+        <p>MathML may be used to describe mathematical expressions intended
+          for evaluation in computing systems.  Because of the nature of
+          mathematics, a seemingly innocuous expression may lead to a
+          computation which does not terminate or is impractically large.  This
+          introduces the risk that computational processors in constrained
+          environments may fail.</p>
+
+        <p>In addition, because of the extensibility features for MathML and of
+          XML in general, it is possible that <code>application/mathml-presentation+xml</code> may describe
+          content that has security implications beyond those described
+          here. However, if the processor follows only the normative semantics
+          of the MathML specification, this content will be outside the MathML namespace
+          and shall be ignored.</p>
+      </dd>
+
+      <dt>Interoperability considerations</dt>
+      <dd>
+
+        <p>The MathML specification describes processing semantics that dictate
+          behavior that must be followed when dealing with, among other things,
+          unrecognized elements and attributes, both in the MathML namespace and
+          in other namespaces.</p>
+
+        <p>Because MathML is extensible, conformant <code>application/mathml-presentation+xml</code> processors
+
+          must expect that content received is well-formed XML, but it cannot be
+          guaranteed that the content is valid to a particular DTD or Schema or
+          that the processor will recognize all of the elements and attributes
+          in the document.</p>
+
+        <p>MathML instances do not contain version numbers, so processors and producers must
+          follow the normative backward compatibility behavior described in this
+          specification.</p>
+
+        <p>In computational contexts, the result of evaluating a MathML
+          expression is system-specific, and is not guaranteed to be
+          interoperable between systems.</p>
+
+        <p>This specification does not record a file extension for the media type
+          <code>application/mathml-presentation+xml</code> because we expect tools processing files
+          with MathML inside to have sufficient information with the generic media-type
+          (<code>application/mathml+xml</code>) while other content negotiation forms will take advantage
+          of specific media-types.</p>
+      </dd>
+
+      <dt>Published specification</dt>
+      <dd>
+        <p>This media type registration is extracted from Appendix B
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
+            (MathML) Version 3.</a> specification.</p>
+      </dd>
+
+      <dt>Applications that use this media type</dt>
+      <dd>
+        <p>Web browsers, rendering engines, formula editors, typesetting software, search robots,
+          computing systems.</p>
+      </dd>
+
+      <dt>Additional information</dt>
+      <dd>
+        <p>Magic number(s): see [[RFC3023]]</p>
+      </dd>
+
+      <dt>File extension(s):</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Windows Clipboard Name:</dt>
+      <dd>
+        <p><code>MathML Presentation</code></p>
+      </dd>
+
+      <dt>Macintosh file type code(s)</dt>
+      <dd>
+        <p>MMLp</p>
+      </dd>
+
+      <dt>Macintosh Universal Type Identifier code</dt>
+      <dd>
+        <p> <code>public.mathml.presentation</code> conforming to
+          <code>public.mathml</code> (described above) conforming to <code>public.xml</code></p>
+      </dd>
+
+      <dt>Person &amp; email address to contact for further information</dt>
+      <dd>
+        <p>Paul Libbrecht (member-math@w3.org). See the <a href="http://www.w3.org/Math">W3C Math Working Group</a> home
+          page for more information.</p>
+      </dd>
+
+      <dt>Intended usage</dt>
+      <dd>
+        <p>COMMON</p>
+      </dd>
+
+      <dt>Restrictions on usage</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Author and Change controller</dt>
+      <dd>
+        <p>The MathML specification is the product of the World Wide Web
+          Consortium's Math Working Group. The W3C has change control over
+          this specification.</p>
+      </dd>
+    </dl>
+
+  </section>
+
+  <section>
+    <h3 id="media-types-mathml-c">Media type for Content MathML</h3>
+
+    <p>This registration  has been submitted to community review and has been
+      approved by IESG for registration with IANA.</p>
+
+    <dl>
+
+      <dt>Type name</dt>
+      <dd>
+        <p><code>application</code></p>
+      </dd>
+
+      <dt>Subtype name</dt>
+      <dd>
+        <p><code>mathml-content+xml</code></p>
+      </dd>
+
+      <dt>Required parameters</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Optional parameters</dt>
+      <dd>
+        <p>Same as <code>charset</code> parameter of
+          <code>application/xml</code> as specified in [[RFC3023]]</p>
+      </dd>
+
+      <dt>Encoding considerations</dt>
+      <dd>
+        <p>The encoding considerations of <code>application/xml</code> as specified in
+          [[RFC3023]] apply.</p>
+
+      </dd>
+
+      <dt>Security considerations</dt>
+      <dd>
+
+        <p>As with other XML types and as noted in [[RFC3023]] section 10,
+          repeated expansion of maliciously constructed XML entities can be used
+          to consume large amounts of memory, which may cause XML processors in
+          constrained environments to fail.</p>
+
+        <p>Several MathML elements may cause arbitrary URIs to be referenced. In
+          this case, the security issues of [[RFC3986]], section 7, should be
+          considered.</p>
+
+        <p>In common with HTML, MathML documents may reference external media
+          such as images, style sheets, and scripting languages. Scripting
+          languages are executable content. In this case, the security
+          considerations in the Media Type registrations for those formats shall
+          apply. Similarly, MathML annotation elements may contain content intended for
+          execution or processing. In the case where the processor recognizes
+          and processes the additional content, or where further processing of
+          that content is dispatched to other processors, additional security
+          issues potentially arise. Since the normative semantics of this
+          specification do not require processing of annotation elements, such
+          issues fall outside the domain of this registration document.</p>
+
+        <p>MathML may be used to describe mathematical expressions intended
+          for evaluation in computing systems.  Because of the nature of
+          mathematics, a seemingly innocuous expression may lead to a
+          computation which does not terminate or is impractically large.  This
+          introduces the risk that computational processors in constrained
+          environments may fail.</p>
+
+        <p>In addition, because of the extensibility features for MathML and of
+          XML in general, it is possible that <code>application/mathml-content+xml</code> may describe
+          content that has security implications beyond those described
+          here. However, if the processor follows only the normative semantics
+          of this specification, this content will be outside the MathML namespace
+          and shall be ignored.</p>
+      </dd>
+
+      <dt>Interoperability considerations</dt>
+      <dd>
+        <p>The MathML specification describes processing semantics that dictate
+          behavior that must be followed when dealing with, among other things,
+          unrecognized elements and attributes, both in the MathML namespace and
+          in other namespaces.</p>
+
+        <p>Because MathML is extensible, conformant <code>application/mathml-content+xml</code> processors
+          must expect that content received is well-formed XML, but it cannot be
+          guaranteed that the content is valid to a particular DTD or Schema or
+          that the processor will recognize all of the elements and attributes
+          in the document.</p>
+
+        <p>MathML instances do not contain version numbers, so processors and producers must
+          follow the normative backward compatibility behavior described in this
+          specification.</p>
+
+        <p>In computational contexts, the result of evaluating a MathML
+          expression is system-specific, and is not guaranteed to be
+          interoperable between systems.</p>
+
+        <p>This specification does not record a file extension for the media type
+          <code>application/mathml-content+xml</code>> because we expect tools processing files
+          with MathML inside to have sufficient information with the generic media-type
+          (<code>application/mathml+xml</code>) while other content negotiation forms will take advantage
+          of specific media-types.</p>
+
+      </dd>
+
+      <dt>Published specification</dt>
+      <dd>
+        <p>This media type registration is extracted from Appendix B
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
+            (MathML) Version 3.</a> specification.</p>
+      </dd>
+
+      <dt>Applications that use this media type</dt>
+      <dd>
+        <p>Formula editors, search robots, computing systems.</p>
+      </dd>
+
+      <dt>Additional information</dt>
+      <dd>
+        <p>Magic number(s): see [[RFC3023]]</p>
+      </dd>
+
+      <dt>File extension(s):</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Windows Clipboard Name:</dt>
+      <dd>
+        <p><code>MathML Content</code></p>
+      </dd>
+
+      <dt>Macintosh file type code(s)</dt>
+      <dd>
+        <p>MMLc</p>
+      </dd>
+
+      <dt>Macintosh Universal Type Identifier code</dt>
+      <dd>
+        <p> <code>public.mathml.content</code> conforming to
+          <code>public.mathml</code> (described above) conforming to <code>public.xml</code>
+        </p>
+      </dd>
+
+      <dt>Person &amp; email address to contact for further information</dt>
+      <dd>
+        <p>Paul Libbrecht (member-math@w3.org). See the <a href="http://www.w3.org/Math">W3C Math Working Group</a> home
+          page for more information.</p>
+      </dd>
+
+      <dt>Intended usage</dt>
+      <dd>
+        <p>COMMON</p>
+      </dd>
+
+      <dt>Restrictions on usage</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Author and Change controller</dt>
+      <dd>
+        <p>The MathML specification is the product of the World Wide Web
+          Consortium's Math Working Group. The W3C has change control over
+          this specification.</p>
+      </dd>
+    </dl>
+  </section>
+
+</body>
+</html>
