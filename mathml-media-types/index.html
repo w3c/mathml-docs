@@ -116,8 +116,8 @@ var respecConfig = {
 
 
   <p>This normative text registers three media types for MathML,
-    "application/mathml+xml", "application/mathml-presentation+xml" and
-    "application/mathml-content+xml", in conformance with [[RFC4288]]
+    <code>application/mathml+xml</code>, <code>application/mathml-presentation+xml</code> and
+    <code>application/mathml-content+xml</code>, in conformance with [[RFC4288]]
     and <a href="http://www.w3.org/2002/06/registering-mediatype.html">W3CRegMedia</a>.
     The media-types have been approved by IESG for registration with IANA as
     <a href="http://www.ietf.org/mail-archive/web/ietf-announce/current/msg07890.html">announced by IETF</a>
@@ -128,7 +128,7 @@ var respecConfig = {
 </section>
 
 <section id="sotd">
-  respc needs this
+
 </section>
 
   <section>
@@ -146,18 +146,18 @@ var respecConfig = {
 
     <dl>
 
-      <dt>"application/mathml-presentation+xml"</dt>
+      <dt><code>application/mathml-presentation+xml</code></dt>
       <dd>
         <p>MathML instances that consist solely of presentation markup.</p>
       </dd>
 
-      <dt>"application/mathml-content+xml"</dt>
+      <dt><code>application/mathml-content+xml</code></dt>
       <dd>
         <p>MathML instances that consist solely of content
           markup.</p>
       </dd>
 
-      <dt>"application/mathml+xml"</dt>
+      <dt><code>application/mathml+xml</code></dt>
       <dd>
         <p>Any valid MathML instance.  Must be used for MathML instances that are a
           mix of presentation and content markup, or where the composition of an
@@ -190,10 +190,10 @@ var respecConfig = {
       HTML, where content is drawn from a variety of sources, and processed
       with multiple tools.  In these cases, the composition of MathML
       expressions generally is not known or at least cannot be guaranteed
-      by a user agent.  Consequently, the "application/mathml+xml" type
+      by a user agent.  Consequently, the <code>application/mathml+xml</code> type
       should be used, as it may be applied to any valid MathML expression.
       Since most applications involve data from untrusted sources,
-      "application/mathml+xml" will commonly be appropriate to use as a
+      <code>application/mathml+xml</code> will commonly be appropriate to use as a
       default type, and all MathML processors are encouraged to accept it as
       a fallback to the more specific formats.</p>
 
@@ -230,12 +230,12 @@ var respecConfig = {
       <dt>Optional parameters</dt>
       <dd>
         <p>Same as <code>charset</code> parameter of
-          application/xml as specified in [[RFC3023]]</p>
+          <code>application/xml</code> as specified in [[RFC3023]]</p>
       </dd>
 
       <dt>Encoding considerations</dt>
       <dd>
-        <p>The encoding considerations of application/xml as specified in
+        <p>The encoding considerations of <code>application/xml</code> as specified in
           [[RFC3023]] apply.</p>
 
       </dd>
@@ -272,7 +272,7 @@ var respecConfig = {
           environments may fail.</p>
 
         <p>In addition, because of the extensibility features for MathML and of
-          XML in general, it is possible that "application/mathml+xml" may describe
+          XML in general, it is possible that <code>application/mathml+xml</code> may describe
           content that has security implications beyond those described
           here. However, if the processor follows only the normative semantics
           of this specification, this content will be outside the MathML namespace
@@ -281,12 +281,12 @@ var respecConfig = {
 
       <dt>Interoperability considerations</dt>
       <dd>
-        <p>This specification describes processing semantics that dictate
+        <p>The MathML specification describes processing semantics that dictate
           behavior that must be followed when dealing with, among other things,
           unrecognized elements and attributes, both in the MathML namespace and
           in other namespaces.</p>
 
-        <p>Because MathML is extensible, conformant "application/mathml+xml" processors
+        <p>Because MathML is extensible, conformant <code>application/mathml+xml</code> processors
           must expect that content received is well-formed XML, but it cannot be
           guaranteed that the content is valid to a particular DTD or Schema or
           that the processor will recognize all of the elements and attributes
@@ -359,7 +359,7 @@ var respecConfig = {
       <dd>
         <p>The MathML specification is the product of the World Wide Web
           Consortium's Math Working Group. The W3C has change control over
-          this specification.</p>
+          this media type registration.</p>
       </dd>
     </dl>
   </section>
@@ -432,22 +432,22 @@ var respecConfig = {
           environments may fail.</p>
 
         <p>In addition, because of the extensibility features for MathML and of
-          XML in general, it is possible that "application/mathml-presentation+xml" may describe
+          XML in general, it is possible that <code>application/mathml-presentation+xml</code> may describe
           content that has security implications beyond those described
           here. However, if the processor follows only the normative semantics
-          of this specification, this content will be outside the MathML namespace
+          of the MathML specification, this content will be outside the MathML namespace
           and shall be ignored.</p>
       </dd>
 
       <dt>Interoperability considerations</dt>
       <dd>
 
-        <p>This specification describes processing semantics that dictate
+        <p>The MathML specification describes processing semantics that dictate
           behavior that must be followed when dealing with, among other things,
           unrecognized elements and attributes, both in the MathML namespace and
           in other namespaces.</p>
 
-        <p>Because MathML is extensible, conformant "application/mathml-presentation+xml" processors
+        <p>Because MathML is extensible, conformant <code>application/mathml-presentation+xml</code> processors
 
           must expect that content received is well-formed XML, but it cannot be
           guaranteed that the content is valid to a particular DTD or Schema or
@@ -463,9 +463,9 @@ var respecConfig = {
           interoperable between systems.</p>
 
         <p>This specification does not record a file extension for the media type
-          "application/mathml-presentation+xml" because we expect tools processing files
+          <code>application/mathml-presentation+xml</code> because we expect tools processing files
           with MathML inside to have sufficient information with the generic media-type
-          (application/mathml+xml) while other content negotiation forms will take advantage
+          (<code>application/mathml+xml</code>) while other content negotiation forms will take advantage
           of specific media-types.</p>
       </dd>
 
@@ -560,12 +560,12 @@ var respecConfig = {
       <dt>Optional parameters</dt>
       <dd>
         <p>Same as <code>charset</code> parameter of
-          application/xml as specified in [[RFC3023]]</p>
+          <code>application/xml</code> as specified in [[RFC3023]]</p>
       </dd>
 
       <dt>Encoding considerations</dt>
       <dd>
-        <p>The encoding considerations of application/xml as specified in
+        <p>The encoding considerations of <code>application/xml</code> as specified in
           [[RFC3023]] apply.</p>
 
       </dd>
@@ -602,7 +602,7 @@ var respecConfig = {
           environments may fail.</p>
 
         <p>In addition, because of the extensibility features for MathML and of
-          XML in general, it is possible that "application/mathml-content+xml" may describe
+          XML in general, it is possible that <code>application/mathml-content+xml</code> may describe
           content that has security implications beyond those described
           here. However, if the processor follows only the normative semantics
           of this specification, this content will be outside the MathML namespace
@@ -611,13 +611,12 @@ var respecConfig = {
 
       <dt>Interoperability considerations</dt>
       <dd>
-        <p>This specification describes processing semantics that dictate
+        <p>The MathML specification describes processing semantics that dictate
           behavior that must be followed when dealing with, among other things,
           unrecognized elements and attributes, both in the MathML namespace and
           in other namespaces.</p>
 
-        <p>Because MathML is extensible, conformant "application/mathml-content+xml" processors
-
+        <p>Because MathML is extensible, conformant <code>application/mathml-content+xml</code> processors
           must expect that content received is well-formed XML, but it cannot be
           guaranteed that the content is valid to a particular DTD or Schema or
           that the processor will recognize all of the elements and attributes
@@ -632,9 +631,9 @@ var respecConfig = {
           interoperable between systems.</p>
 
         <p>This specification does not record a file extension for the media type
-          "application/mathml-content+xml" because we expect tools processing files
+          <code>application/mathml-content+xml</code>> because we expect tools processing files
           with MathML inside to have sufficient information with the generic media-type
-          (application/mathml+xml) while other content negotiation forms will take advantage
+          (<code>application/mathml+xml</code>) while other content negotiation forms will take advantage
           of specific media-types.</p>
 
       </dd>
@@ -642,7 +641,7 @@ var respecConfig = {
       <dt>Published specification</dt>
       <dd>
         <p>This media type registration is extracted from Appendix B
-          of the <a href="./Overview.html">Mathematical Markup Language
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
             (MathML) Version 3.</a> specification.</p>
       </dd>
 
@@ -702,9 +701,6 @@ var respecConfig = {
       </dd>
     </dl>
   </section>
-
-</section>
-
 
 </body>
 </html>
