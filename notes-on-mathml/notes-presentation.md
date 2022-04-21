@@ -184,13 +184,13 @@ The reasons for using specific `mo` elements for invisible operators include:
      `mspace` or `mtext`
      elements;
 * these operators should often have specific audio renderings
-     different than that of the lack of any operator;</p>
+     different than that of the lack of any operator;
 * automatic semantic interpretation of MathML presentation elements
      is made easier by the explicit specification of such operators.
 
-For example, an audio renderer might render <i class="var">f</i>(<i class="var">x</i>)
+For example, an audio renderer might render <i class="var">f</i>(_x_)
    (represented as in the above examples) by speaking &#x201c;f of x&#x201d;, but use
-   the word &#x201c;times&#x201d; in its rendering of <i class="var">x</i><i class="var">y</i>.
+   the word &#x201c;times&#x201d; in its rendering of _x_<i class="var">y</i>.
    Although its rendering must still be different depending on the structure
    of neighboring elements (sometimes leaving out &#x201c;of&#x201d; or
    &#x201c;times&#x201d; entirely), its task is made much easier by the use of
@@ -206,3 +206,113 @@ the special characters for invisible operators described in the
 preceding section.
 
 Note that there are other special characters that convey more meaning than their ASCII look-alike character such as `ExponentialE` (U+2147).
+
+
+
+
+### Rationale for definition of embellished operators
+
+ The following notes are included as a rationale for certain aspects
+of the above definitions, but should not be important for most users
+of MathML.
+
+An `mfrac` is included as an
+<span>&#x201c;embellisher&#x201d;</span> because of the common notation for a
+differential operator:
+
+```
+     <mfrac>
+     <mo> &amp;DifferentialD; </mo>
+     <mrow>
+          <mo> &amp;DifferentialD; </mo>
+          <mi> x </mi>
+     </mrow>
+     </mfrac>
+```
+
+Since the definition of embellished operator affects the use of the
+attributes related to stretching, it is important that it includes
+embellished fences as well as ordinary operators; thus it applies to
+any `mo` element.
+
+Note that an `mrow` containing a single argument
+is an embellished operator if and only if its argument is an embellished
+operator. This is because an `mrow` with a single
+argument must be equivalent in all respects to that argument alone (as
+discussed in https://w3c.github.io/mathml/#presm_mrow).
+This means that an `mo` element that is the sole argument of an `mrow`
+will determine its default `form` attribute based on that
+`mrow`'s position in a surrounding, perhaps inferred,
+`mrow` (if there is one), rather than based on its own
+position in the `mrow` in which it is the sole argument.
+
+Note that the above definition defines every
+`mo` element to be <span>&#x201c;embellished&#x201d;</span> &#x2014; that is,
+<span>&#x201c;embellished operator&#x201d;</span> can be considered (and implemented in
+renderers) as a special class of MathML expressions, of which
+`mo` is a specific case.
+
+
+### Mixing text and mathematics
+In some cases, text embedded in mathematics could be more appropriately
+represented using `mo` or `mi` elements.
+For example, the expression 'there exists
+<img src="image/f3004.gif" alt="\delta&gt;0" align="middle"></img>
+such that <i class="var">f</i>(_x_) &lt;1' is equivalent to
+<img src="image/f3005.gif" alt="\exists \delta&gt;0 \backepsilon f(x)&lt;1" align="middle"></img>
+and could be represented as:
+
+```
+   <mrow>
+     <mo> there exists </mo>
+     <mrow>
+       <mrow>
+         <mi> &delta; </mi>
+         <mo> &gt; </mo>
+         <mn> 0 </mn>
+       </mrow>
+       <mo> such that </mo>
+       <mrow>
+         <mrow>
+           <mi> f </mi>
+           <mo> &ApplyFunction; </mo>
+           <mrow>
+             <mo> ( </mo>
+             <mi> x </mi>
+             <mo> ) </mo>
+           </mrow>
+         </mrow>
+         <mo> &lt; </mo>
+         <mn> 1 </mn>
+       </mrow>
+     </mrow>
+   </mrow>
+```
+
+An example involving an `mi` element is:
+_x_+_x_<sup>2</sup>+&#xb7;&#xb7;&#xb7;+_x_<sup><i class="var">n</i></sup>.
+In this example, ellipsis should be represented using an `mi` element, since it takes the place of a term in the
+sum; (see https://w3c.github.io/mathm/presm_mi).
+
+On the other hand, expository text within MathML is best
+represented with an `mtext` element. An example
+of this is:
+
+&nbsp;&nbsp;&nbsp;&nbsp;Theorem 1: if _x_ &gt; 1, then _x_<sup>2</sup> &gt; _x_.  
+
+However, when MathML is
+embedded in HTML, or another document markup language, the example is
+probably best rendered with only the two inequalities represented as
+MathML at all, letting the text be part of the surrounding HTML.
+
+Another factor to consider in deciding how to mark up text is the
+effect on rendering. Text enclosed in an `mo`
+element is unlikely to be found in a renderer's operator dictionary,
+so it will be rendered with the format and spacing appropriate for an
+<span>&#x201c;unrecognized operator&#x201d;</span>, which may or may not be better than the
+format and spacing for <span>&#x201c;text&#x201d;</span> obtained by using an
+`mtext` element. An ellipsis entity in an
+`mi` element is apt to be spaced more appropriately
+for taking the place of a term within a series than if it appeared in
+an `mtext` element.
+</section>
