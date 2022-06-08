@@ -36,68 +36,31 @@ var respecConfig = {
     github:        "https://github.com/w3c/mathml-docs",
     xref: ["MathML4", "MathML-Core"],
    localBiblio: {
-  "MathML1":           {"aliasOf": "MathML-19980407"},
-  "MathML-Core":       {"aliasOf": "mathml-core"},
-  "Entities":          {"aliasOf": "xml-entity-names"},
-  "rdf":               {"aliasOf": "rdf-concepts"},
-  "XHTML":             {"aliasOf": "XHTML10"},
-  "Modularization":    {"aliasOf": "XHTML-MODULARIZATION11"},
-  "Namespaces":        {"aliasOf": "xml-names"},
-  "XMLSchemas":        {"aliasOf": "xmlschema-1"},
-  "XMLSchemaDatatypes":{"aliasOf": "xmlschema-2"},
-  "XHTML-MathML-SVG":  {"aliasOf": "XHTMLplusMathMLplusSVG"},
-  "SVG1.1":            {"aliasOf": "SVG11"},
-
-  "MathML4"  : {"title":    "Mathematical Markup Language (MathML) Version 4.0",
+    "MathML4"  : {"title":    "Mathematical Markup Language (MathML) Version 4.0",
                "publisher":"W3C",
                "Editors":  ["D. P. Carlisle"],
                "date":     "2022",
                "href":     "https://w3c.github.io/mathml/"
               },
 
-  "OpenMath": {"title":    "The OpenMath Standard",
-               "publisher":"The OpenMath Society",
-               "authors":  ["S. Buswell", "O. Caprotti", "D. P. Carlisle",
-                            "M. C. Dewar", "M. Gaëtano", "M. Kohlhase",
-                            "J. H. Davenport", "P. D. F. Ion", "T. Wiesing"],
-               "date":     "July 2019",
-               "href":     "https://openmath.org/standard/om20-2019-07-01/omstd20.html"
-              },
-
-       "Cajori1928":     {"title": "A History of Mathematical Notations, vol. I & II",
-			  "publisher": "Open Court Publishing Co., La Salle Illinois, 1928 & 1929 republished Dover Publications Inc., New York, 1993",
-			  "pages": "xxviii+820 pp",
-			  "isbn": "0-486-67766-4",
-			  "authors": ["Cajori, Florian"]
-			 },
-  "MathMLforCSS":   {"title": "MathMLforCSS"},
-  "Chaundy1954":    {"title": "Chaundy1954"},
-  "IEEE754":        {"title": "IEEE754"},
-  "OMDoc1.2":       {"title": "OMDoc1.2"},
-  "Abramowitz1977": {"title": "Abramowitz1977"},
-  "Pierce1961":     {"title": "An Introduction to Information Theory. Symbols, Signals and Noise.. Revised edition of Symbols, Signals and Noise: the Nature and Process of Communication (1961)",
-		      "publisher": "Dover Publications Inc., New York, 1980, xii+305 pp",
-		     "isbn": "0-486-24061-4",
-		      "authors": ["Pierce, John R."]
-		    },
-  "Knuth1986":      {"title": "The TeXbook",
-		     "publisher": "American Mathematical Society, Providence, RI and Addison-Wesley Publ. Co., Reading, MA",
-		     "date": "1986",
-		     "pages": "ix+483 pp.",
-		     "isbn": "0-201-13448-9",
-		     "authors": ["Knuth, Donald E."]
-		    },
-  "AAP-math": {"title": "ANSI/NISO Z39.59-1998; AAP Math DTD, Standard for Electronic Manuscript Preparation and MarkUp",
-		    "publisher": "Association of American Publishers, Inc., Washington, DC) Bethesda, MD",
-		    "date": "1988"},
-  "Poppelier1992": {"title": "Standard DTD's and Scientific Publishing, EPSIG News 5 (1992) #3",
-                     "authors": ["Poppelier, N.A.F.M.", "E. van Herwijnen", "C.A. Rowley"],
-		     "date": "September 1992",
-		     "pages": "10-19"
-		    },
-   "ISO-12083":      {"title": "ISO 12083:1994; ISO 12083 DTD Information and Documentation - Electronic Manuscript Preparation and Markup",
-		     "publisher": "International Standards Organization, Geneva, Switzerland",
-		     "date": "1994"}
+     "W3CRegMedia": {
+        "title": "Register an Internet Media Type for a W3C Spec",
+        "publisher": "World Wide Web Consortium",
+        "date": "January 2020",
+        "href": "https://www.w3.org/2020/01/registering-mediatypes.html"},
+     "MediaTypesList": {
+        "title": "Media Types",
+        "publisher": "IANA (Internet Assigned Numbers Authority",
+        "date": "Last checked on June 8th 2022",
+        "href": "http://www.iana.org/assignments/media-types/application/"
+     },
+     "RFC3023": {
+        "title": "XML Media Types",
+        "editors": "M. Murata; S. St. Laurent; D. Kohn",
+        "date": "January 2001. Proposed Standard; updated by <a href='https://www.rfc-editor.org/rfc/rfc7303'>RFC 7303</a>",
+       "publisher": "IETF",
+       "href": "https://www.rfc-editor.org/rfc/rfc3023"
+     }
    }
 }
 </script>
@@ -118,11 +81,11 @@ var respecConfig = {
   <p>This normative text registers three media types for MathML,
     <code>application/mathml+xml</code>, <code>application/mathml-presentation+xml</code> and
     <code>application/mathml-content+xml</code>, in conformance with [[RFC4288]]
-    and <a href="http://www.w3.org/2002/06/registering-mediatype.html">W3CRegMedia</a>.
+    and [[W3CRegMedia]].
     The media-types have been approved by IESG for registration with IANA as
     <a href="http://www.ietf.org/mail-archive/web/ietf-announce/current/msg07890.html">announced by IETF</a>
     and are visible on the
-    <a href="http://www.iana.org/assignments/media-types/application/">list of application media-types</a>.
+    list of application media-types [[MediaTypesList]].
   </p>
 
 </section>
@@ -229,20 +192,20 @@ var respecConfig = {
       <dt>Optional parameters</dt>
       <dd>
         <p>Same as <code>charset</code> parameter of
-          <code>application/xml</code> as specified in [[RFC3023]]</p>
+          <code>application/xml</code> as specified in [[RFC7303]]</p>
       </dd>
 
       <dt>Encoding considerations</dt>
       <dd>
         <p>The encoding considerations of <code>application/xml</code> as specified in
-          [[RFC3023]] apply.</p>
+          [[RFC7303]] apply.</p>
 
       </dd>
 
       <dt>Security considerations</dt>
       <dd>
 
-        <p>As with other XML types and as noted in [[RFC3023]] section 10,
+        <p>As with other XML types and as noted in [[RFC7303]] section 10,
           repeated expansion of maliciously constructed XML entities can be used
           to consume large amounts of memory, which may cause XML processors in
           constrained environments to fail.</p>
@@ -315,7 +278,7 @@ var respecConfig = {
 
       <dt>Additional information</dt>
       <dd>
-        <p>Magic number(s): see [[RFC3023]]</p>
+        <p>Magic number(s): see [[RFC7303]]</p>
       </dd>
 
       <dt>File extension(s):</dt>
@@ -389,20 +352,20 @@ var respecConfig = {
       <dt>Optional parameters</dt>
       <dd>
         <p>Same as <code>charset</code> parameter of
-          application/xml as specified in [[RFC3023]]</p>
+          application/xml as specified in [[RFC7303]]</p>
       </dd>
 
       <dt>Encoding considerations</dt>
       <dd>
         <p>The considerations of application/xml as specified in
-          [[RFC3023]] apply.</p>
+          [[RFC7303]] apply.</p>
 
       </dd>
 
       <dt>Security considerations</dt>
       <dd>
 
-        <p>As with other XML types and as noted in [[RFC3023]] section 10,
+        <p>As with other XML types and as noted in [[RFC7303]] section 10,
           repeated expansion of maliciously constructed XML entities can be used
           to consume large amounts of memory, which may cause XML processors in
           constrained environments to fail.</p>
@@ -483,7 +446,7 @@ var respecConfig = {
 
       <dt>Additional information</dt>
       <dd>
-        <p>Magic number(s): see [[RFC3023]]</p>
+        <p>Magic number(s): see [[RFC7303]]</p>
       </dd>
 
       <dt>File extension(s):</dt>
@@ -559,20 +522,20 @@ var respecConfig = {
       <dt>Optional parameters</dt>
       <dd>
         <p>Same as <code>charset</code> parameter of
-          <code>application/xml</code> as specified in [[RFC3023]]</p>
+          <code>application/xml</code> as specified in [[RFC7303]]</p>
       </dd>
 
       <dt>Encoding considerations</dt>
       <dd>
         <p>The encoding considerations of <code>application/xml</code> as specified in
-          [[RFC3023]] apply.</p>
+          [[RFC7303]] apply.</p>
 
       </dd>
 
       <dt>Security considerations</dt>
       <dd>
 
-        <p>As with other XML types and as noted in [[RFC3023]] section 10,
+        <p>As with other XML types and as noted in [[RFC7303]] section 10,
           repeated expansion of maliciously constructed XML entities can be used
           to consume large amounts of memory, which may cause XML processors in
           constrained environments to fail.</p>
@@ -651,7 +614,7 @@ var respecConfig = {
 
       <dt>Additional information</dt>
       <dd>
-        <p>Magic number(s): see [[RFC3023]]</p>
+        <p>Magic number(s): see [[RFC7303]]</p>
       </dd>
 
       <dt>File extension(s):</dt>
