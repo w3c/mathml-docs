@@ -1,0 +1,1105 @@
+<!DOCTYPE html><html dir="ltr" lang="en"><head>
+<meta charset="UTF-8">
+<meta name="generator" content="ReSpec 32.1.10">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+
+
+<title>MathML Media-type Declarations</title>
+
+
+  
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+code{color:#c63501}
+th code{color:inherit}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+  
+<style>
+
+   #references :target{background:white;animation:none;}
+  
+</style>
+
+<meta name="description" content="This normative text registers three media types for MathML,
+    application/mathml+xml, application/mathml-presentation+xml and
+    application/mathml-content+xml, in conformance with [RFC4288]
+    and [W3CRegMedia].
+    The media-types have been approved by IESG for registration with IANA as
+    announced by IETF
+    and are visible on the
+    list of application media-types [MediaTypesList].">
+<link rel="canonical" href="https://w3c.github.io/mathml-docs/mathml-media-types/">
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "NOTE",
+  "shortName": "mathml-media-types",
+  "edDraftURI": "https://w3c.github.io/mathml-docs/mathml-media-types/",
+  "canonicalURI": "TR",
+  "latestVersion": "https://w3c.github.io/mathml-docs/mathml-media-types/",
+  "group": "math",
+  "editors": [
+    {
+      "name": "Paul Libbrecht",
+      "url": "https://github.com/polx"
+    }
+  ],
+  "maxTocLevel": 2,
+  "otherLinks": [
+    {
+      "key": "MathML 4 editors' draft",
+      "data": [
+        {
+          "value": "https://w3c.github.io/mathml/",
+          "href": "https://w3c.github.io/mathml/"
+        }
+      ]
+    },
+    {
+      "key": "MathML Core Level 1 editors' draft",
+      "data": [
+        {
+          "value": "https://w3c.github.io/mathml-core/",
+          "href": "https://w3c.github.io/mathml-core/"
+        }
+      ]
+    }
+  ],
+  "github": "https://github.com/w3c/mathml-docs",
+  "xref": [
+    "MathML4",
+    "MathML-Core"
+  ],
+  "localBiblio": {
+    "MathML4": {
+      "title": "Mathematical Markup Language (MathML) Version 4.0",
+      "publisher": "W3C",
+      "Editors": [
+        "D. P. Carlisle"
+      ],
+      "date": "2022",
+      "href": "https://w3c.github.io/mathml/"
+    },
+    "W3CRegMedia": {
+      "title": "Register an Internet Media Type for a W3C Spec",
+      "publisher": "World Wide Web Consortium",
+      "date": "January 2020",
+      "href": "https://www.w3.org/2020/01/registering-mediatypes.html",
+      "id": "w3cregmedia"
+    },
+    "MediaTypesList": {
+      "title": "Media Types",
+      "publisher": "IANA (Internet Assigned Numbers Authority",
+      "date": "Last checked on June 8th 2022",
+      "href": "http://www.iana.org/assignments/media-types/application/",
+      "id": "mediatypeslist"
+    },
+    "RFC3023": {
+      "title": "XML Media Types",
+      "editors": "M. Murata; S. St. Laurent; D. Kohn",
+      "date": "January 2001. Proposed Standard; updated by <a href='https://www.rfc-editor.org/rfc/rfc7303'>RFC 7303</a>",
+      "publisher": "IETF",
+      "href": "https://www.rfc-editor.org/rfc/rfc3023"
+    }
+  },
+  "publishISODate": "2022-06-30T00:00:00.000Z",
+  "generatedSubtitle": "W3C Group Note 30 June 2022"
+}</script>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-NOTE"></head>
+<body class="h-entry informative" data-cite="MathML4 MathML-Core"><div class="head">
+    <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72" height="48">
+  </a></p>
+    <h1 id="title" class="title">MathML Media-type Declarations</h1> 
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#NOTE">W3C Group Note</a> <time class="dt-published" datetime="2022-06-30">30 June 2022</time></p>
+    <details open="">
+      <summary>More details about this document</summary>
+      <dl>
+        <dt>This version:</dt><dd>
+                <a class="u-url" href="https://www.w3.org/TR/2022/NOTE-mathml-media-types-20220630/">https://www.w3.org/TR/2022/NOTE-mathml-media-types-20220630/</a>
+              </dd>
+        <dt>Latest published version:</dt><dd>
+                <a href="https://w3c.github.io/mathml-docs/mathml-media-types/">https://w3c.github.io/mathml-docs/mathml-media-types/</a>
+              </dd>
+        <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/mathml-docs/mathml-media-types/">https://w3c.github.io/mathml-docs/mathml-media-types/</a></dd>
+        <dt>History:</dt><dd>
+                    <a href="https://www.w3.org/standards/history/mathml-media-types">https://www.w3.org/standards/history/mathml-media-types</a>
+                  </dd><dd>
+                    <a href="https://github.com/w3c/mathml-docs/commits/">Commit history</a>
+                  </dd>
+        
+        
+        
+        
+        
+        <dt>Editor:</dt><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://github.com/polx">Paul Libbrecht</a>
+  </dd>
+        
+        
+        <dt>Feedback:</dt><dd>
+        <a href="https://github.com/w3c/mathml-docs/">GitHub w3c/mathml-docs</a>
+        (<a href="https://github.com/w3c/mathml-docs/pulls/">pull requests</a>,
+        <a href="https://github.com/w3c/mathml-docs/issues/new/choose">new issue</a>,
+        <a href="https://github.com/w3c/mathml-docs/issues/">open issues</a>)
+      </dd>
+        
+        <dt>MathML 4 editors' draft</dt><dd>
+    <a href="https://w3c.github.io/mathml/">https://w3c.github.io/mathml/</a>
+  </dd><dt>MathML Core Level 1 editors' draft</dt><dd>
+    <a href="https://w3c.github.io/mathml-core/">https://w3c.github.io/mathml-core/</a>
+  </dd>
+      </dl>
+    </details>
+    
+    
+    <p class="copyright">
+    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+    ©
+    2022
+    
+    <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+    <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>,
+    <a href="https://ev.buaa.edu.cn/">Beihang</a>). W3C
+    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+    <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
+  </p>
+    <hr title="Separator for header">
+  </div>
+
+
+<section id="abstract" class="introductory"><h2>Abstract</h2>
+
+
+  <p>This normative text registers three media types for MathML,
+    <code>application/mathml+xml</code>, <code>application/mathml-presentation+xml</code> and
+    <code>application/mathml-content+xml</code>, in conformance with [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc4288" title="Media Type Specifications and Registration Procedures">RFC4288</a></cite>]
+    and [<cite><a class="bibref" data-link-type="biblio" href="#bib-w3cregmedia" title="Register an Internet Media Type for a W3C Spec">W3CRegMedia</a></cite>].
+    The media-types have been approved by IESG for registration with IANA as
+    <a href="http://www.ietf.org/mail-archive/web/ietf-announce/current/msg07890.html">announced by IETF</a>
+    and are visible on the
+    list of application media-types [<cite><a class="bibref" data-link-type="biblio" href="#bib-mediatypeslist" title="Media Types">MediaTypesList</a></cite>].
+  </p>
+
+</section>
+
+<section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
+      document at the time of its publication. A list of current <abbr title="World Wide Web Consortium">W3C</abbr>
+      publications and the latest revision of this technical report can be found
+      in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
+      https://www.w3.org/TR/.</em></p>
+
+<p>
+    This document was published by the <a href="https://www.w3.org/groups/wg/math">Math Working Group</a> as
+    a Group Note using the
+        <a href="https://www.w3.org/2021/Process-20211102/#recs-and-notes">Note track</a>. 
+  </p><p>Group Notes are not endorsed by
+        <abbr title="World Wide Web Consortium">W3C</abbr> nor its Members. </p><p>
+    This is a draft document and may be updated, replaced or obsoleted by other
+    documents at any time. It is inappropriate to cite this document as other
+    than work in progress.
+    
+  </p><p data-deliverer="35549">
+    
+        The
+        <a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
+          Policy</a>
+        does not carry any licensing requirements or commitments on this
+        document.
+      
+    
+  </p><p>
+                  This document is governed by the
+                  <a id="w3c_process_revision" href="https://www.w3.org/2021/Process-20211102/">2 November 2021 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#media-type-choosing"><bdi class="secno">1. </bdi>Selection of Media Types for MathML Instances</a></li><li class="tocline"><a class="tocxref" href="#media-types-mathml"><bdi class="secno">2. </bdi>Media type for Generic MathML</a></li><li class="tocline"><a class="tocxref" href="#media-types-mathml-p"><bdi class="secno">3. </bdi>Media type for Presentation MathML</a></li><li class="tocline"><a class="tocxref" href="#media-types-mathml-c"><bdi class="secno">4. </bdi>Media type for Content MathML</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
+
+  <section id="selection-of-media-types-for-mathml-instances"><div class="header-wrapper"><h2 id="media-type-choosing"><bdi class="secno">1. </bdi>Selection of Media Types for MathML Instances</h2><a class="self-link" href="#media-type-choosing" aria-label="Permalink for Section 1."></a></div>
+    
+
+    <p>MathML contains two distinct vocabularies. Presentation markup is
+      for encoding visual presentation, and consists of the elements defined
+      in <a href="https://www.w3.org/TR/MathML/chapter3.html">Chapter 3 of the MathML specification</a>.
+      Content markup is for encoding mathematical meaning, and consists of the elements defined in
+      <a href="https://www.w3.org/TR/MathML/chapter4.html">Chapter 4 of the MathML specification</a>.
+      In addition, both the presentation and content
+      vocabularies contain the <code class="element">math</code>, <code class="element">semantics</code>,
+      <code class="element">annotation</code> and <code class="element">annotation-xml</code> elements. The MathML
+      media types should be used as follows:</p>
+
+    <dl>
+
+      <dt><code>application/mathml-presentation+xml</code></dt>
+      <dd>
+        <p>MathML instances that consist solely of presentation markup.</p>
+      </dd>
+
+      <dt><code>application/mathml-content+xml</code></dt>
+      <dd>
+        <p>MathML instances that consist solely of content
+          markup.</p>
+      </dd>
+
+      <dt><code>application/mathml+xml</code></dt>
+      <dd>
+        <p>Any valid MathML instance.  Must be used for MathML instances that are a
+          mix of presentation and content markup, or where the composition of an
+          instance is not known or cannot be guaranteed.</p>
+      </dd>
+    </dl>
+
+    <p>Some MathML applications may import and export only one of these
+      two vocabularies, while others may produce and consume each in a
+      different way, and still others may process both without any
+      distinction between the two.  Internally, many MathML processors favor
+      one vocabulary, and support the other vocabulary via conversion if at
+      all.  For example, computational software typically favors content
+      markup while typesetting software generally favors presentation
+      markup. By using separate media types for MathML instances consisting
+      solely of presentation or solely of content markup, such processors can
+      conduct negotiation for MathML representations in the preferred
+      vocabulary. For example, consider two web services offering mathematical
+      computation services such as a spreadsheet and a computer algebra system.
+      Internally both prefer content markup, but by
+      default, both generate presentation markup for output.  In the
+      absence of media type negotiation, a likely scenario for an exchange
+      between two systems involves two conversions, content to
+      presentation and back again.  With negotiation, the conversions are
+      eliminated.  Similarly, a client with a MathML instance in one of the
+      vocabularies might seek a web service that preferred that
+      vocabulary.</p>
+
+    <p>MathML is commonly used in compound document settings, e.g. within
+      HTML, where content is drawn from a variety of sources, and processed
+      with multiple tools.  In these cases, the composition of MathML
+      expressions generally is not known or at least cannot be guaranteed
+      by a user agent.  Consequently, the <code>application/mathml+xml</code> type
+      should be used, as it may be applied to any valid MathML expression.
+      Since most applications involve data from untrusted sources,
+      <code>application/mathml+xml</code> will commonly be appropriate to use as a
+      default type, and all MathML processors are encouraged to accept it as
+      a fallback to the more specific formats.</p>
+
+    <p>The media types described here may be applied to instances of
+      all versions of MathML.  MathML instances
+      do not contain version numbers, so processors and producers must follow the
+      normative backward compatibility behavior.</p>
+
+  </section>
+
+  <section id="media-type-for-generic-mathml"><div class="header-wrapper"><h2 id="media-types-mathml"><bdi class="secno">2. </bdi>Media type for Generic MathML</h2><a class="self-link" href="#media-types-mathml" aria-label="Permalink for Section 2."></a></div>
+    
+
+    <p>This registration  has been submitted to community review and has been
+      approved by IESG for registration with IANA.</p>
+
+    <dl>
+      <dt>Type name</dt>
+      <dd>
+        <p><code>application</code></p>
+      </dd>
+
+      <dt>Subtype name</dt>
+      <dd>
+        <p><code>mathml+xml</code></p>
+      </dd>
+
+      <dt>Required parameters</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Optional parameters</dt>
+      <dd>
+        <p>Same as <code>charset</code> parameter of
+          <code>application/xml</code> as specified in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>]</p>
+      </dd>
+
+      <dt>Encoding considerations</dt>
+      <dd>
+        <p>The encoding considerations of <code>application/xml</code> as specified in
+          [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>] apply.</p>
+
+      </dd>
+
+      <dt>Security considerations</dt>
+      <dd>
+
+        <p>As with other XML types and as noted in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>] section 10,
+          repeated expansion of maliciously constructed XML entities can be used
+          to consume large amounts of memory, which may cause XML processors in
+          constrained environments to fail.</p>
+
+        <p>Several MathML elements may cause arbitrary URIs to be referenced. In
+          this case, the security issues of [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc3986" title="Uniform Resource Identifier (URI): Generic Syntax">RFC3986</a></cite>], section 7, should be
+          considered.</p>
+
+        <p>In common with HTML, MathML documents may reference external media
+          such as images, style sheets, and scripting languages. Scripting
+          languages are executable content. In this case, the security
+          considerations in the Media Type registrations for those formats shall
+          apply. Similarly, MathML annotation elements may contain content intended for
+          execution or processing. In the case where the processor recognizes
+          and processes the additional content, or where further processing of
+          that content is dispatched to other processors, additional security
+          issues potentially arise. Since the normative semantics of the MathML
+          specifications do not require processing of annotation elements, such
+          issues fall outside the domain of this registration document.</p>
+
+        <p>MathML may be used to describe mathematical expressions intended
+          for evaluation in computing systems.  Because of the nature of
+          mathematics, a seemingly innocuous expression may lead to a
+          computation which does not terminate or is impractically large.  This
+          introduces the risk that computational processors in constrained
+          environments may fail.</p>
+
+        <p>In addition, because of the extensibility features for MathML and of
+          XML in general, it is possible that <code>application/mathml+xml</code> may describe
+          content that has security implications beyond those described
+          here. However, if the processor follows only the normative semantics
+          of the MathML specifications, this content will be outside the MathML namespace
+          and shall be ignored.</p>
+      </dd>
+
+      <dt>Interoperability considerations</dt>
+      <dd>
+        <p>The MathML specification describes processing semantics that dictate
+          behavior that must be followed when dealing with, among other things,
+          unrecognized elements and attributes, both in the MathML namespace and
+          in other namespaces.</p>
+
+        <p>Because MathML is extensible, conformant <code>application/mathml+xml</code> processors
+          must expect that content received is well-formed XML, but it cannot be
+          guaranteed that the content is valid to a particular DTD or Schema or
+          that the processor will recognize all of the elements and attributes
+          in the document.</p>
+
+        <p>MathML instances do not contain version numbers, so processors and producers must
+          follow the normative backward compatibility behavior described in the MathML
+          specifications.</p>
+
+        <p>In computational contexts, the result of evaluating a MathML
+          expression is system-specific, and is not guaranteed to be
+          interoperable between systems.</p>
+      </dd>
+
+      <dt>Published specification</dt>
+      <dd>
+        <p>This media type registration is extracted from Appendix B
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
+            (MathML) Version 3.</a> specification but constitutes a specification in itself.</p>
+      </dd>
+
+      <dt>Applications that use this media type</dt>
+      <dd>
+        <p>Web browsers, rendering engines, formula editors, typesetting software,
+          search robots, computing systems.</p>
+      </dd>
+
+      <dt>Additional information</dt>
+      <dd>
+        <p>Magic number(s): see [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>]</p>
+      </dd>
+
+      <dt>File extension(s):</dt>
+      <dd>
+        <p><code>.mml</code></p>
+      </dd>
+
+      <dt>Windows Clipboard Name:</dt>
+      <dd>
+        <p><code>MathML</code></p>
+      </dd>
+
+      <dt>Macintosh file type code(s)</dt>
+      <dd>
+        <p>MML </p>
+      </dd>
+
+      <dt>Macintosh Universal Type Identifier code</dt>
+      <dd>
+        <p> <code>public.mathml</code> conforming to <code>public.xml</code></p>
+      </dd>
+
+      <dt>Person &amp; email address to contact for further information</dt>
+      <dd>
+        <p>Paul Libbrecht (member-math@w3.org). See the <a href="http://www.w3.org/Math"><abbr title="World Wide Web Consortium">W3C</abbr> Math Working Group</a> home
+          page for more information.</p>
+      </dd>
+
+      <dt>Intended usage</dt>
+      <dd>
+        <p>COMMON</p>
+      </dd>
+
+      <dt>Restrictions on usage</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Author and Change controller</dt>
+      <dd>
+        <p>The MathML specification and this media-type registration are the products of the World Wide Web
+          Consortium's Math Working Group. The <abbr title="World Wide Web Consortium">W3C</abbr> has change control over
+          this media type registration.</p>
+      </dd>
+    </dl>
+  </section>
+
+  <section id="media-type-for-presentation-mathml"><div class="header-wrapper"><h2 id="media-types-mathml-p"><bdi class="secno">3. </bdi>Media type for Presentation MathML</h2><a class="self-link" href="#media-types-mathml-p" aria-label="Permalink for Section 3."></a></div>
+    
+
+    <p>This registration  has been submitted to community review and has been
+      approved by IESG for registration with IANA.</p>
+
+    <dl>
+
+      <dt>Type name</dt>
+      <dd>
+        <p><code>application</code></p>
+      </dd>
+
+      <dt>Subtype name</dt>
+      <dd>
+        <p><code>mathml-presentation+xml</code></p>
+      </dd>
+
+      <dt>Required parameters</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Optional parameters</dt>
+      <dd>
+        <p>Same as <code>charset</code> parameter of
+          application/xml as specified in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>]</p>
+      </dd>
+
+      <dt>Encoding considerations</dt>
+      <dd>
+        <p>The considerations of application/xml as specified in
+          [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>] apply.</p>
+
+      </dd>
+
+      <dt>Security considerations</dt>
+      <dd>
+
+        <p>As with other XML types and as noted in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>] section 10,
+          repeated expansion of maliciously constructed XML entities can be used
+          to consume large amounts of memory, which may cause XML processors in
+          constrained environments to fail.</p>
+
+        <p>Several MathML elements may cause arbitrary URIs to be referenced. In
+          this case, the security issues of [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc3986" title="Uniform Resource Identifier (URI): Generic Syntax">RFC3986</a></cite>], section 7, should be
+          considered.</p>
+
+        <p>In common with HTML, MathML documents may reference external media
+          such as images, style sheets, and scripting languages. Scripting
+          languages are executable content. In this case, the security
+          considerations in the Media Type registrations for those formats shall
+          apply. Similarly, MathML annotation elements may contain content intended for
+          execution or processing. In the case where the processor recognizes
+          and processes the additional content, or where further processing of
+          that content is dispatched to other processors, additional security
+          issues potentially arise. Since the normative semantics of the
+          MathML specification do not require processing of annotation elements, such
+          issues fall outside the domain of this registration document.</p>
+
+        <p>MathML may be used to describe mathematical expressions intended
+          for evaluation in computing systems.  Because of the nature of
+          mathematics, a seemingly innocuous expression may lead to a
+          computation which does not terminate or is impractically large.  This
+          introduces the risk that computational processors in constrained
+          environments may fail.</p>
+
+        <p>In addition, because of the extensibility features for MathML and of
+          XML in general, it is possible that <code>application/mathml-presentation+xml</code> may describe
+          content that has security implications beyond those described
+          here. However, if the processor follows only the normative semantics
+          of the MathML specification, this content will be outside the MathML namespace
+          and shall be ignored.</p>
+      </dd>
+
+      <dt>Interoperability considerations</dt>
+      <dd>
+
+        <p>The MathML specifications describe processing semantics that dictate
+          behavior that must be followed when dealing with, among other things,
+          unrecognized elements and attributes, both in the MathML namespace and
+          in other namespaces.</p>
+
+        <p>Because MathML is extensible, conformant <code>application/mathml-presentation+xml</code> processors
+
+          must expect that content received is well-formed XML, but it cannot be
+          guaranteed that the content is valid to a particular DTD or Schema or
+          that the processor will recognize all of the elements and attributes
+          in the document.</p>
+
+        <p>MathML instances do not contain version numbers, so processors and producers must
+          follow the normative backward compatibility behavior described in the
+          MathML specifications.</p>
+
+        <p>In computational contexts, the result of evaluating a MathML
+          expression is system-specific, and is not guaranteed to be
+          interoperable between systems.</p>
+
+        <p>This normative text does not record a file extension for the media type
+          <code>application/mathml-presentation+xml</code> because we expect tools processing files
+          with MathML inside to have sufficient information with the generic media-type
+          (<code>application/mathml+xml</code>) while other content negotiation forms will take advantage
+          of specific media-types.</p>
+      </dd>
+
+      <dt>Published specification</dt>
+      <dd>
+        <p>This media type registration is extracted from Appendix B
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
+            (MathML) Version 3.</a> specification but is a free-standing specification.</p>
+      </dd>
+
+      <dt>Applications that use this media type</dt>
+      <dd>
+        <p>Web browsers, rendering engines, formula editors, typesetting software, search robots,
+          computing systems.</p>
+      </dd>
+
+      <dt>Additional information</dt>
+      <dd>
+        <p>Magic number(s): see [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>]</p>
+      </dd>
+
+      <dt>File extension(s):</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Windows Clipboard Name:</dt>
+      <dd>
+        <p><code>MathML Presentation</code></p>
+      </dd>
+
+      <dt>Macintosh file type code(s)</dt>
+      <dd>
+        <p>MMLp</p>
+      </dd>
+
+      <dt>Macintosh Universal Type Identifier code</dt>
+      <dd>
+        <p> <code>public.mathml.presentation</code> conforming to
+          <code>public.mathml</code> (described above) conforming to <code>public.xml</code></p>
+      </dd>
+
+      <dt>Person &amp; email address to contact for further information</dt>
+      <dd>
+        <p>Paul Libbrecht (member-math@w3.org). See the <a href="http://www.w3.org/Math"><abbr title="World Wide Web Consortium">W3C</abbr> Math Working Group</a> home
+          page for more information.</p>
+      </dd>
+
+      <dt>Intended usage</dt>
+      <dd>
+        <p>COMMON</p>
+      </dd>
+
+      <dt>Restrictions on usage</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Author and Change controller</dt>
+      <dd>
+        <p>The MathML specification and this normative text are the products of the World Wide Web
+          Consortium's Math Working Group. The <abbr title="World Wide Web Consortium">W3C</abbr> has change control over
+          this normative text.</p>
+      </dd>
+    </dl>
+
+  </section>
+
+  <section id="media-type-for-content-mathml"><div class="header-wrapper"><h2 id="media-types-mathml-c"><bdi class="secno">4. </bdi>Media type for Content MathML</h2><a class="self-link" href="#media-types-mathml-c" aria-label="Permalink for Section 4."></a></div>
+    
+
+    <p>This registration  has been submitted to community review and has been
+      approved by IESG for registration with IANA.</p>
+
+    <dl>
+
+      <dt>Type name</dt>
+      <dd>
+        <p><code>application</code></p>
+      </dd>
+
+      <dt>Subtype name</dt>
+      <dd>
+        <p><code>mathml-content+xml</code></p>
+      </dd>
+
+      <dt>Required parameters</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Optional parameters</dt>
+      <dd>
+        <p>Same as <code>charset</code> parameter of
+          <code>application/xml</code> as specified in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>]</p>
+      </dd>
+
+      <dt>Encoding considerations</dt>
+      <dd>
+        <p>The encoding considerations of <code>application/xml</code> as specified in
+          [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>] apply.</p>
+
+      </dd>
+
+      <dt>Security considerations</dt>
+      <dd>
+
+        <p>As with other XML types and as noted in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>] section 10,
+          repeated expansion of maliciously constructed XML entities can be used
+          to consume large amounts of memory, which may cause XML processors in
+          constrained environments to fail.</p>
+
+        <p>Several MathML elements may cause arbitrary URIs to be referenced. In
+          this case, the security issues of [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc3986" title="Uniform Resource Identifier (URI): Generic Syntax">RFC3986</a></cite>], section 7, should be
+          considered.</p>
+
+        <p>In common with HTML, MathML documents may reference external media
+          such as images, style sheets, and scripting languages. Scripting
+          languages are executable content. In this case, the security
+          considerations in the Media Type registrations for those formats shall
+          apply. Similarly, MathML annotation elements may contain content intended for
+          execution or processing. In the case where the processor recognizes
+          and processes the additional content, or where further processing of
+          that content is dispatched to other processors, additional security
+          issues potentially arise. Since the normative semantics of the MathML
+          specifications do not require processing of annotation elements, such
+          issues fall outside the domain of this registration document.</p>
+
+        <p>MathML may be used to describe mathematical expressions intended
+          for evaluation in computing systems.  Because of the nature of
+          mathematics, a seemingly innocuous expression may lead to a
+          computation which does not terminate or is impractically large.  This
+          introduces the risk that computational processors in constrained
+          environments may fail.</p>
+
+        <p>In addition, because of the extensibility features for MathML and of
+          XML in general, it is possible that <code>application/mathml-content+xml</code> may describe
+          content that has security implications beyond those described
+          here. However, if the processor follows only the normative semantics
+          of the MathML specifications, this content will be outside the MathML namespace
+          and shall be ignored.</p>
+      </dd>
+
+      <dt>Interoperability considerations</dt>
+      <dd>
+        <p>The MathML specification describes processing semantics that dictate
+          behavior that must be followed when dealing with, among other things,
+          unrecognized elements and attributes, both in the MathML namespace and
+          in other namespaces.</p>
+
+        <p>Because MathML is extensible, conformant <code>application/mathml-content+xml</code> processors
+          must expect that content received is well-formed XML, but it cannot be
+          guaranteed that the content is valid to a particular DTD or Schema or
+          that the processor will recognize all of the elements and attributes
+          in the document.</p>
+
+        <p>MathML instances do not contain version numbers, so processors and producers must
+          follow the normative backward compatibility behavior described in the MathML
+          specifications.</p>
+
+        <p>In computational contexts, the result of evaluating a MathML
+          expression is system-specific, and is not guaranteed to be
+          interoperable between systems.</p>
+
+        <p>This normative text does not record a file extension for the media type
+          <code>application/mathml-content+xml</code> because we expect tools processing files
+          with MathML inside to have sufficient information with the generic media-type
+          (<code>application/mathml+xml</code>) while other content negotiation forms will take advantage
+          of specific media-types.</p>
+
+      </dd>
+
+      <dt>Published specification</dt>
+      <dd>
+        <p>This media type registration is extracted from Appendix B
+          of the <a href="https://www.w3.org/TR/MathML3/">Mathematical Markup Language
+            (MathML) Version 3.</a> specification but is a free-standing specification.</p>
+      </dd>
+
+      <dt>Applications that use this media type</dt>
+      <dd>
+        <p>Formula editors, search robots, computing systems.</p>
+      </dd>
+
+      <dt>Additional information</dt>
+      <dd>
+        <p>Magic number(s): see [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7303" title="XML Media Types">RFC7303</a></cite>]</p>
+      </dd>
+
+      <dt>File extension(s):</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Windows Clipboard Name:</dt>
+      <dd>
+        <p><code>MathML Content</code></p>
+      </dd>
+
+      <dt>Macintosh file type code(s)</dt>
+      <dd>
+        <p>MMLc</p>
+      </dd>
+
+      <dt>Macintosh Universal Type Identifier code</dt>
+      <dd>
+        <p> <code>public.mathml.content</code> conforming to
+          <code>public.mathml</code> (described above) conforming to <code>public.xml</code>
+        </p>
+      </dd>
+
+      <dt>Person &amp; email address to contact for further information</dt>
+      <dd>
+        <p>Paul Libbrecht (member-math@w3.org). See the <a href="http://www.w3.org/Math"><abbr title="World Wide Web Consortium">W3C</abbr> Math Working Group</a> home
+          page for more information.</p>
+      </dd>
+
+      <dt>Intended usage</dt>
+      <dd>
+        <p>COMMON</p>
+      </dd>
+
+      <dt>Restrictions on usage</dt>
+      <dd>
+        <p>None</p>
+      </dd>
+
+      <dt>Author and Change controller</dt>
+      <dd>
+        <p>The MathML specification and this normative text are the product of the World Wide Web
+          Consortium's Math Working Group. The <abbr title="World Wide Web Consortium">W3C</abbr> has change control over
+          this normative text.</p>
+      </dd>
+    </dl>
+  </section>
+
+
+
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-references"><bdi class="secno">A. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="informative-references"><div class="header-wrapper"><h3 id="a-1-informative-references"><bdi class="secno">A.1 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix A.1"></a></div>
+    
+    <dl class="bibliography"><dt id="bib-mediatypeslist">[MediaTypesList]</dt><dd>
+      <a href="http://www.iana.org/assignments/media-types/application/"><cite>Media Types</cite></a>.  IANA (Internet Assigned Numbers Authority. Last checked on June 8th 2022. URL: <a href="http://www.iana.org/assignments/media-types/application/">http://www.iana.org/assignments/media-types/application/</a>
+    </dd><dt id="bib-rfc3986">[RFC3986]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc3986"><cite>Uniform Resource Identifier (URI): Generic Syntax</cite></a>. T. Berners-Lee; R. Fielding; L. Masinter.  IETF. January 2005. Internet Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc3986">https://www.rfc-editor.org/rfc/rfc3986</a>
+    </dd><dt id="bib-rfc4288">[RFC4288]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc4288"><cite>Media Type Specifications and Registration Procedures</cite></a>. N. Freed; J. Klensin.  IETF. December 2005. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc4288">https://www.rfc-editor.org/rfc/rfc4288</a>
+    </dd><dt id="bib-rfc7303">[RFC7303]</dt><dd>
+      <a href="https://www.rfc-editor.org/rfc/rfc7303"><cite>XML Media Types</cite></a>. H. Thompson; C. Lilley.  IETF. July 2014. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7303">https://www.rfc-editor.org/rfc/rfc7303</a>
+    </dd><dt id="bib-w3cregmedia">[W3CRegMedia]</dt><dd>
+      <a href="https://www.w3.org/2020/01/registering-mediatypes.html"><cite>Register an Internet Media Type for a W3C Spec</cite></a>.  World Wide Web Consortium. January 2020. URL: <a href="https://www.w3.org/2020/01/registering-mediatypes.html">https://www.w3.org/2020/01/registering-mediatypes.html</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
