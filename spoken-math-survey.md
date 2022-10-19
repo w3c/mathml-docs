@@ -8,7 +8,8 @@ What? This document is a sketch of the proposed survey.
 Version history:
 - PL 2022-09: Discussion at TPAC i18n group
 - PL 2022-10: First sketch
-- - -
+
+
 
 ## Impulses
 We wish to collect as much as possible the diversity of speak-aloud formulæ so that the intent proposed standard feels complete by checking its feasibility on at least two largely different languages.
