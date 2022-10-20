@@ -17,10 +17,13 @@ The suggestion was made by the i18n workgroup of the W3C to ensure that we have 
 
 At a minimum we should collect a significant amount of formulæ in two largely different languages (such as one european and one Asian or Arabic) which would enable us to make sure that the intents encoding proposal can cover them for the examples chosen.
 
+Output: We aim at obtaining spoken formulæ and their source in a MathML tree using intents that complies to the current spec. This will prove us that the current spec about intents is flexible enough to cover the languages we have been able to analyse.
+
 Technical ideas: Use a classic survey tool. For each chosen formula, request the text of the speak-aloud, optionally a sound recording and a LaTeX translation.
 
 Don't forget:
 - locale-name that our user is representing (language, region, mathematical domain of specialty)
+- questions that give enough content so that the formulæ are unambiguously read, e.g. using a sentence around it
 - permission to reproduce the input text and/or translated formula
 - voice
 - contact information for further questions (this will not be shared)
@@ -34,6 +37,8 @@ Parallel tasks:
 	- optimize a way to suggest the use of the onboard voice recognition
 - Select formulas to be surveyed; aim at a broad coverage (see below)
 - Ask for help across the world for the processing of survey responses (so far obtained from Arabic-speaking fellows)
+
+Then complete deployment, craft an invitation and get it reviewed. Then process answers by people that master the local language (who will localize the MathML expression if need be and encode the intent attributes at best of their understanding of the spec).
 
 ## Formulas selected
 
