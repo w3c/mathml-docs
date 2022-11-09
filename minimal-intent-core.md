@@ -150,4 +150,4 @@ However, adding subscripts and superscripts of various types (e.g., $\mathbb {Z}
 Intervals get spoken with "from ... to ..." words as opposed "open interval of ... comma ...". Hence, it seems that AT should know about the intent names `open-interval`, `closed-interval`, `open-closed-interval`, and `closed-open-interval`.
 
 ## Others?
-I need to take another pass through the MathPlayer and MathCAT rule sets to see if there are more cases where there is speech for an intent that doesn't match that which would be generated from the _name_@_hint_ `intent` syntax.
+I need to take another pass through the MathPlayer, MathCAT, and SRE rule sets to see if there are more cases where there is speech for an intent that doesn't match that which would be generated from the _name_@_hint_ `intent` syntax.
