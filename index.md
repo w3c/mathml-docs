@@ -18,6 +18,8 @@ discussions. Some may be submitted later as W3C WG Notes or W3C Recommendations.
 
 [Content To Core + intent experiments](ctopintent)
 
+[Intent: Suggestions for a Minimal Intent List](minimal-intent-core)
+
 ---
 
 
