@@ -1,6 +1,6 @@
 ---
 title: "Thoughts on what MathML Core Intent Should Look Like"
-layout: cgreport
+layout: wgnote
 ---
 
 *Author*: Neil Soiffer
