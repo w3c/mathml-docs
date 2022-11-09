@@ -40,7 +40,7 @@ The items that need to be in core are concepts with the following properties:
 
 An example of the first case is `mfrac`, where $3/4$, $\frac1x$, $3\frac{\mathrm{m}}{\mathrm{s}}$, and $\frac{1+x}{1-x}$ are all likely to be spoken differently. It is a large burden on authoring software/authors to author these differently. 
 
-An example of the second case is `msqrt`, where someone who is blind might need to hear "end square root" but someone with dyslexia does not need to this extra verbiage. The second case thus includes any non-linear notation. This requirement might be able to be reduced or eliminated by extending the `intent` syntax (see below).
+An example of the second case is `msqrt`, where someone who is blind might need to hear "end square root" but someone with dyslexia does not need to this extra verbiage. The second case thus includes any non-linear notation. This requirement might be able to be reduced or eliminated by extending the `intent` syntax ([see below](#extending-intent-syntax)).
 
 An example of the third case is "interval" (open, closed, etc). If `intent="open-interval($start, $end)"`, then the speech would be something like "open interval of 3 and 5". This is understandable, but not how it is typically spoken: "open interval from 3 to 5" or "the interval from 3 to 5, not including 3 and not including 5". This more common speech can be accommodated with some additional literals:
 ```
@@ -75,12 +75,12 @@ The default meanings and special cases for all the MathML elements are:
 * `menclose` should indicate the notation attributes along with the contents. Special case speech might be appropriate when menclose looks like a similar notation that has special cases (e.g, `notation="top"` looks the same as `mover` with a "_" (or equivalent) second child).
 * `msup` should assume that the notation is a power with the following special cases
   * the power is '2' or '3'
-  * the power is '-1' and this is a trig function (see below)
+  * the power is '-1' and this is a trig function ([see below](#trig-and-log))
   * the power is one of the pseudo-script characters, in which case the superscript is _not_ spoken (e.g, $x^\prime$ is spoken "x prime")
-  * the base is one of the named sets (see below)
+  * the base is one of the named sets ([see below](#namedsets-ℂ-ℕ-ℚ-ℝ-and-ℤ))
 * `msub` indicates a subscript. Special cases:
   * the base is "log"
-  * the base is one of the named sets (see below)
+  * the base is one of the named sets ([see below](#namedsets-ℂ-ℕ-ℚ-ℝ-and-ℤ))
   * others??? 
 * `msubsup` indicates a subscripted variable raised a power with the same special cases as `msup` and `msubsup`
 * `mover` indicates that the second argument is over the first. Special cases:
@@ -90,7 +90,7 @@ The default meanings and special cases for all the MathML elements are:
   * the base is a large operator
   * the base is "lim" or "limit" (FIX: does this need to be language agnostic?)
 * `munderover` indicates there is content above and below the base. Special case:
-  * the base is a large operator (speak using "from" and "to" -- see below)
+  * the base is a large operator (speak using "from" and "to" -- [see below](#large-operators))
 * `mmultiscripts` indicates the scripts. Special cases???
 * `mtable`/`mtr`/`mlabeledtr`/`mtd` say something appropriate for tables. Special cases:
   * row and column tables might have specialized speech
@@ -144,7 +144,7 @@ Matrices might have special speech if they are row/column matrices, or if the ma
 ## NamedSets: ℂ, ℕ, ℚ, ℝ, and ℤ  
 These are spoken in a special way, although maybe that is just the default way to speak those Unicode characters.
 
-However, adding subscripts and superscripts of various types (e.g., $\mathbb {Z}^2$ and $\mathbb {Z}_2$) have special speech.
+However, adding subscripts and superscripts of various types (e.g., $\mathbb {Z}^2$,  $\mathbb {Z}^+$, and $\mathbb {Z}_2$) have special speech.
 
 ## Intervals
 Intervals get spoken with "from ... to ..." words as opposed "open interval of ... comma ...". Hence, it seems that AT should know about the intent names `open-interval`, `closed-interval`, `open-closed-interval`, and `closed-open-interval`.
