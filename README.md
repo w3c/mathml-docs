@@ -1,7 +1,7 @@
 
 # Documents by the Math WG
 
-This is a repository for Notes and other documents by the [Math WG](https://www.w3.org/Math/).
+This is a repository for Notes and other documents by the [Math WG](https://www.w3.org/Math/). These notes can be viewed on [github.io](https://w3c.github.io/mathml-docs/).
 
 The Math WG also uses:
 * the [‘mathml’ repository](https://github.com/w3c/mathml) for the MathML 4 specification
