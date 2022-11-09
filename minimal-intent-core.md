@@ -38,7 +38,7 @@ The items that need to be in core are concepts with the following properties:
 2. the speech differs depending on the needs of the listener
 3. the speech isn't covered by using an `intent` concept@hint and is otherwise a notation that should be in core.
 
-An example of the first case is `mfrac`, where $3/4$, $\frac1x$, $3\frac{\rm{m}}{\rm{s}}$, and $\frac{1+x}{1-x}$ are all likely to be spoken differently. It is a large burden on authoring software/authors to author these differently. 
+An example of the first case is `mfrac`, where $3/4$, $\frac1x$, $3\frac{\mathrm{m}}{\mathrm{s}}$, and $\frac{1+x}{1-x}$ are all likely to be spoken differently. It is a large burden on authoring software/authors to author these differently. 
 
 An example of the second case is `msqrt`, where someone who is blind might need to hear "end square root" but someone with dyslexia does not need to this extra verbiage. The second case thus includes any non-linear notation. This requirement might be able to be reduced or eliminated by extending the `intent` syntax (see below).
 
@@ -49,7 +49,7 @@ intent="open-interval@silent(_open-interval-from, $start, _to, $end)"
 I don't have a strong argument why this explicit use of words as arguments should be avoided, but it seems wrong. If this is considered "good form", then the third case can be dropped.
 
 ## Extending `intent` Syntax
-The absolute-value example above actually might be an example that needs to be in core because listeners might require an "end absolute value" to signal the end of absolute value. I suggest modifying the "@" syntax to also accept "end" (or "function-end")as a signal to AT that saying "end-_intent-name_" is an option if appropriate for the listener.
+The absolute-value example above actually might be an example that needs to be in core because listeners might require an "end absolute value" to signal the end of absolute value. I suggest modifying the "@" syntax to also accept "end" (or "function-end") as a signal to AT that saying "end- _intent-name_" is an option if appropriate for the listener.
 
 "@end" could be used with most of the 2D notation tags such as `msqrt` so that the core list shrinks. This would likely eliminate or at least minimize what is required by '2' above.
 
@@ -96,16 +96,16 @@ The default meanings and special cases for all the MathML elements are:
   * row and column tables might have specialized speech
   * small tables with simple entries might have specialized speech
 * elementary math elements (`mstack`/`mlongdiv`/`msgroup`/`msrow`/`mscarries`/`mscarry`) say something appropriate
-* maction speaks the selected child with maybe some indication of the action
-* semantics speaks the presentation child
+* `maction` speaks the selected child with maybe some indication of the action
+* `semantics` speaks the presentation child
 
 ## Self-voicing Characters
-In general, AT should know how to speak all Unicode code points. That's not really practical, but certainly any STEM-aware AT should know how to speakt important characters used in math. For example, AT should know how to speak "=" ("equals" or "is equal to" in English), "→" ("right arrow"), "|" ( "vertical bar"). Many characters might be spoken differently in some contexts (e.,g "→" might be "yields" in a chemical equation), but intent should be used whenever an author is concerned about how a symbol is spoken.
+In general, AT should know how to speak all Unicode code points. That's not really practical, but certainly any STEM-aware AT should know how to speak important characters used in math. For example, AT should know how to speak "=" ("equals" or "is equal to" in English), "→" ("right arrow"), "|" ( "vertical bar"). Many characters might be spoken differently in some contexts (e.,g "→" might be "yields" in a chemical equation), but intent should be used whenever an author is concerned about how a symbol is spoken.
 
 It would be helpful for the group to provide a list, potentially two -- most important followed by less important. A list of speech (in English and/or other languages) could be given somewhere for those characters so translators feel confident about when they need to provide an `intent` value for a character.
 
 ## Units
-This would be a (long, separate) list of SI units, (common) English units, and likely other units (e.g., astronomical and geological units) that AT should know about. AT should figure out whether to singular or plural speech for the units. For example, $3 \rm{cm}$ is "3 centimeters", but $1 \rm{cm}$ is "1 centimeter" (singular).
+This would be a (long, separate) list of SI units, (common) English units, and likely other units (e.g., astronomical and geological units) that AT should know about. AT should figure out whether to singular or plural speech for the units. For example, $3 \mathrm{cm}$ is "3 centimeters", but $1 \mathrm{cm}$ is "1 centimeter" (singular).
 
 Unlike the other examples, these need to marked with 'intent'. A single intent (`unit`?) could be used, in which case AT would decide whether to say "centimeter" or "centimeters". Or an intent can be given to specify what to say. However, AT would need to know how to covert to singular/plural if the generator isn't responsible for this. My guess is that a `\unit{}` macro is easier to implement and use than having a macro for every possible unit (it would visually use a roman font along with generating an intent).
 
