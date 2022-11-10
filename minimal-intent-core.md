@@ -58,7 +58,7 @@ The absolute-value example above actually might be an example that needs to be i
 Defaults mean that authoring software needs to use `intent` when the default value doesn't match what the author expects. If we get the defaults right, that means only ambiguous notations need intent.
 
 ## Tags in Core
-AT should have a specified default interpretation for every MathML Element. That doesn't mean that the exact words are specified, only that they choose words that convey the default meaning. For example, `mfrac` division by default, and words like "start fraction x over y end fraction" or just "x over y" should be used. The exact wording depends on the audience.
+AT should have a specified default interpretation for every MathML Element. That doesn't mean that the exact words are specified, only that they choose words that convey the default meaning. For example, `mfrac` means division by default, and words like "start fraction x over y end fraction" or just "x over y" should be used. The exact wording depends on the audience.
 
 The default meanings and special cases for all the MathML elements are:
 * leaf tags speak their contents. Exceptions are:
