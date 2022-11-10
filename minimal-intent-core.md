@@ -128,7 +128,7 @@ For example, "csc" would be "co-secant" in English; "sinh" would be "hyperbolic 
 Note: AT should know that a trig function raised to a "-1" power should have special speech such as $sin^{-1} x$ might be spoken as "inverse sin of x". Actually, this might apply to all function names. Knowing what is a function name requires software to use U+2061 (invisible function application).
 
 ## Large Operators
-As indicated in the list of known tags, `munder`, `mover`, and `munderover` should have special speech when the base is a large operator (listed in operator dictionary). In English, these would typically spoken as  "... from ... to ... of ...".
+As indicated in the list of known tags, `munder`, `mover`, `munderover`, `msub`, `msup`, and `msubsup` should have special speech when the base is a large operator (listed in operator dictionary or specified on an `mo` base). In English, these would typically spoken as  "... from ... to ... of ...".
 
 ## Functions
 Sometimes you speak the parens, sometimes not. One criteria might be that a simple single argument tends not to get spoken. The decision is likely based on the listener (learning vs expert). Hence, this is something that should be left to AT.
