@@ -81,8 +81,10 @@ The default meanings and special cases for all the MathML elements are:
 * `msub` indicates a subscript. Special cases:
   * the base is "log"
   * the base is one of the named sets ([see below](#namedsets-ℂ-ℕ-ℚ-ℝ-and-ℤ))
+  * the base is a large operator
   * others??? 
-* `msubsup` indicates a subscripted variable raised a power with the same special cases as `msup` and `msubsup`
+* `msubsup` indicates a subscripted variable raised a power with the same special cases as `msup` and `msubsup`. This includes (read the same as for munderover) 
+  * the base is a large operator
 * `mover` indicates that the second argument is over the first. Special cases:
   * bar, hat, caret, ... (FIX: need to flush the list out)
   * the base is a large operator
