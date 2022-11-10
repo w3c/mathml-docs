@@ -53,6 +53,11 @@ The absolute-value example above actually might be an example that needs to be i
 
 "@end" could be used with most of the 2D notation tags such as `msqrt` so that the core list shrinks. This would likely eliminate or at least minimize what is required by '2' above.
 
+## Intent Values not in Core
+If an `intent` name is not in core, then it either is listed in the "open" list or not. The goal of the open list is to standardize and suggest names to use for various concepts, but it does not require their use.
+
+This proposal removes a number of names that were proposed for core such as `absolute-value` and `set` because they don't require AT to do anything special with them. These names hence should be part of the open list. _Maybe_ this indicates the open list needs partitioning so these lower-level math names are easier to find or there needs to be a column in the table that allows one to sort/filter on them.
+
 
 # Defaults
 Defaults mean that authoring software needs to use `intent` when the default value doesn't match what the author expects. If we get the defaults right, that means only ambiguous notations need intent.
@@ -127,6 +132,8 @@ For example, "csc" would be "co-secant" in English; "sinh" would be "hyperbolic 
 
 Note: AT should know that a trig function raised to a "-1" power should have special speech such as $sin^{-1} x$ might be spoken as "inverse sin of x". Actually, this might apply to all function names. Knowing what is a function name requires software to use U+2061 (invisible function application).
 
+This list might be increased because things like "gcd" and "lcm" should be spelled out;  AT needs to know that. That argues either they become part of core or they require an intent name and that name is `g-c-d` and `l-c-m`. The latter is ugly, but does fit with how things should be named (they should be understandable given the names used). 
+
 ## Large Operators
 As indicated in the list of known tags, `munder`, `mover`, `munderover`, `msub`, `msup`, and `msubsup` should have special speech when the base is a large operator (listed in operator dictionary or specified on an `mo` base). In English, these would typically spoken as  "... from ... to ... of ...".
 
@@ -153,3 +160,17 @@ Intervals get spoken with "from ... to ..." words as opposed "open interval of .
 
 ## Others?
 I need to take another pass through the MathPlayer, MathCAT, and SRE rule sets to see if there are more cases where there is speech for an intent that doesn't match that which would be generated from the _name_@_hint_ `intent` syntax. This pass was based on the needs of the ClearSpeak speech style, something that MathPlayer, MathCAT, and SRE implement.
+
+
+# Internationalization
+A **major** question to resolve is: who/what is responsible for internationalization?
+
+In this proposal, I feel that for anything in core, AT is responsible for internationalization. For anything outside of core, it is the author's responsibility to use the appropriate language for intents.
+
+This approach may be controversial. The reason I take this approach is because when someone writes math, it is in the context of a document (textbook, homework, paper, ...). The reader is reading the math in the context/language of the document, so the author should be responsible for any speech that is not a default.
+
+Where I can see there might be controversy is for "common" notations not in core such as `absolute-value` and `set`. For example, if there is a \abs{x} macro, does the macro need to produce an `intent` value with `absolute-value` when the math is in an English language document and `valeur-absolue` in a French language document? Or should the AT be responsible for knowing that it needs to translate `absolute-value` into `valeur-absolue` if the user indicated their primary language is French?
+
+If the feeling is that AT is responsible for the translation, then how does AT know when to translate something? In higher level math, some concepts are always expressed in the language in which they were initially created. Does there need to be a list separate from the open list of intent names to translate? Does there need to be a column in the open list that says "translate this name"? Does the open list need to provide translations for lots of languages?
+
+Lots of questions to answer...
