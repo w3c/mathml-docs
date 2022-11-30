@@ -1,5 +1,5 @@
 ---
-title: "Thoughts on what MathML Core Intent Should Look Like"
+title: "Thoughts on MathML Core Intent and Defaults"
 layout: wgnote
 ---
 
@@ -62,59 +62,102 @@ This proposal removes a number of names that were proposed for core such as `abs
 # Defaults
 Defaults mean that authoring software needs to use `intent` when the default value doesn't match what the author expects. If we get the defaults right, that means only ambiguous notations need intent.
 
-## Tags in Core
-AT should have a specified default interpretation for every MathML Element. That doesn't mean that the exact words are specified, only that they choose words that convey the default meaning. For example, `mfrac` means division by default, and words like "start fraction x over y end fraction" or just "x over y" should be used. The exact wording depends on the audience.
+Based on discussions in the group, it seems that defaults fall into two categories: defaults that match common cases in K-14 math and defaults that presume less for higher-level math.
 
+There also needs to be a way to indicate that AT can apply heuristics because there is a lot of legacy math out there and not all MathML generators will be "intent-aware".
+
+Taking these into account, we should have a `intent-default` attribute on the `math` element with the following value (both the name of the attribute and the names of the values likely need to be improved)
+* `legacy` (default) -- AT is free to apply any heuristics they want 
+* `structure` -- speak the structure (see details below)
+* `common` -- speak the common interpretation in lower level math (see details below)
+
+Note: in all cases, if `intent` is given, it should be used (if appropriate). Even for `legacy`, it is possible remediation may have added an `intent` value.
+
+Note: Deyan feels this should be a document-level property, likely in a `meta` element.
+
+## Tags in Core
+AT should have a specified default interpretation for every MathML Element. That doesn't mean that the exact words are specified, only that AT chooses words that convey the default meaning. For example: `msup` is spoken as "super" or "superscript" if `intent-default = "structure"` and is spoken as a power ("x squared", "x raised to the n minus 1 power", etc) if `intent-default = "common"`. The exact words may depend upon both the audience and the arguments.
+
+### "structure"`
 The default meanings and special cases for all the MathML elements are:
 * leaf tags speak their contents. Exceptions are:
   * `ms` likely indicates it is a string or speaks its open/close deliminators in addition to its contents.
   * `mglyph` speaks the alt text
   * `mspace`, `malginmark`, `maligngroup`, and `none` are either silent or generate pauses
   * `msline`, indicates that it is a line
-* `mrow` is silent
-* `mfrac` indicates it is divsion, but might have a number of special case rules depending on the arguments
-* `msqrt` indicates it is a square root
-* `mroot` indicates it is a root with an index. There should be special cases for at least '2' and '3' as the index
-* `merror` indicates there is an error and speaks the contents
-* `mfenced` should speak the same as the equivalent `mrow` notation
-* `menclose` should indicate the notation attributes along with the contents. Special case speech might be appropriate when menclose looks like a similar notation that has special cases (e.g, `notation="top"` looks the same as `mover` with a "_" (or equivalent) second child).
-* `msup` should assume that the notation is a power with the following special cases
+* `mrow` -- speaks the children
+* `mfrac` -- $arg1 "over" $arg2 (might need bracketing words -- start over/end over?)
+* `msqrt` -- "radical symbol" $contents???
+* `mroot` -- "radical symbol" with $index and $contents???
+* `merror` -- indicates there is an error and speaks the contents
+* `mfenced` -- should speak the same as the equivalent `mrow` notation
+* `menclose` -- should indicate the notation attributes along with the contents.
+* `msup` -- should speak that it is a superscripts, although maybe there should be exceptions for the pseudo-script characters, in which case the superscript is _not_ spoken (e.g, $x^\prime$ is spoken "x prime")
+* `msub` -- indicates a subscript
+* `msubsup` -- indicates a subscripted variable raised a power with the same special cases as `msup`
+* `mover` -- indicates that the second argument is over the first, although the words need to clearly distinguish this from `mfrac` which is proposed to use the word "over". Special cases:
+  * bar, hat, caret, ... (FIX: need to flush the list out)
+* `munder` -- indicates that the second argument is under the first
+* `munderover` -- indicates there is content above and below the base
+* `mmultiscripts` --  indicates the scripts and their position in some way. E.g., "start-scripted ... pre-subscript ... pre-superscript ... base ... post-subscript ... post-superscript ...  end-scripted"
+* `mtable`/`mtr`/`mlabeledtr`/`mtd` -- say something appropriate for tables (no recognition of determinants, matrices, vectors, etc)
+* elementary math elements (`mstack`/`mlongdiv`/`msgroup`/`msrow`/`mscarries`/`mscarry`) -- say something about the layout, but not that it is addition, long division, repeated decimals, etc.
+* `maction` -- speaks the selected child with maybe some indication of the action
+* `semantics` -- speaks the presentation child
+
+### "common"`
+The default meanings and special cases for all the MathML elements are:
+* leaf tags speak their contents. Exceptions are:
+  * `ms` likely indicates it is a string or speaks its open/close deliminators in addition to its contents.
+  * `mglyph` speaks the alt text
+  * `mspace`, `malginmark`, `maligngroup`, and `none` are either silent or generate pauses
+  * `msline`, indicates that it is a line
+* `mrow` -- speaks the children
+* `mfrac` -- indicates it is division, but might have a number of special case rules depending on the arguments
+* `msqrt` -- indicates it is a square root
+* `mroot` -- indicates it is a root with an index. There should be special cases for at least '2' and '3' as the index
+* `merror` -- indicates there is an error and speaks the contents
+* `mfenced` -- should speak the same as the equivalent `mrow` notation
+* `menclose` -- should indicate the notation attributes along with the contents. Special case speech might be appropriate when menclose looks like a similar notation that has special cases (e.g, `notation="top"` looks the same as `mover` with a "_" (or equivalent) second child).
+* `msup` -- should assume that the notation is a power with the following special cases
   * the power is '2' or '3'
   * the power is '-1' and this is a trig function ([see below](#trig-and-log))
   * the power is one of the pseudo-script characters, in which case the superscript is _not_ spoken (e.g, $x^\prime$ is spoken "x prime")
   * the base is one of the named sets ([see below](#namedsets-ℂ-ℕ-ℚ-ℝ-and-ℤ))
-* `msub` indicates a subscript. Special cases:
+* `msub` -- indicates a subscript. Special cases:
   * the base is "log"
   * the base is one of the named sets ([see below](#namedsets-ℂ-ℕ-ℚ-ℝ-and-ℤ))
   * the base is a large operator
   * others??? 
-* `msubsup` indicates a subscripted variable raised a power with the same special cases as `msup` and `msubsup`. This includes (read the same as for munderover) 
+* `msubsup` -- indicates a subscripted variable raised a power with the same special cases as `msup` and `msubsup`. This includes (read the same as for munderover) 
   * the base is a large operator
-* `mover` indicates that the second argument is over the first. Special cases:
+* `mover` -- indicates that the second argument is over the first. Special cases:
   * bar, hat, caret, ... (FIX: need to flush the list out)
   * the base is a large operator
-* `munder` indicates that the second argument is under the first. Special cases:
+* `munder` -- indicates that the second argument is under the first. Special cases:
   * the base is a large operator
   * the base is "lim" or "limit" (FIX: does this need to be language agnostic?)
-* `munderover` indicates there is content above and below the base. Special case:
+* `munderover` -- indicates there is content above and below the base. Special case:
   * the base is a large operator (speak using "from" and "to" -- [see below](#large-operators))
-* `mmultiscripts` indicates the scripts. Special cases???
-* `mtable`/`mtr`/`mlabeledtr`/`mtd` say something appropriate for tables. Special cases:
+* `mmultiscripts` --  indicates the scripts. Special cases???
+* `mtable`/`mtr`/`mlabeledtr`/`mtd` -- say something appropriate for tables. Special cases:
   * row and column tables might have specialized speech
   * small tables with simple entries might have specialized speech
-* elementary math elements (`mstack`/`mlongdiv`/`msgroup`/`msrow`/`mscarries`/`mscarry`) say something appropriate
-* `maction` speaks the selected child with maybe some indication of the action
-* `semantics` speaks the presentation child
+* elementary math elements (`mstack`/`mlongdiv`/`msgroup`/`msrow`/`mscarries`/`mscarry`) -- say something appropriate
+* `maction` -- speaks the selected child with maybe some indication of the action
+* `semantics` -- speaks the presentation child
 
 ## Self-voicing Characters
 In general, AT should know how to speak all Unicode code points. That's not really practical, but certainly any STEM-aware AT should know how to speak important characters used in math. For example, AT should know how to speak "=" ("equals" or "is equal to" in English), "→" ("right arrow"), "|" ( "vertical bar"). Many characters might be spoken differently in some contexts (e.,g "→" might be "yields" in a chemical equation), but intent should be used whenever an author is concerned about how a symbol is spoken.
 
-It would be helpful for the group to provide a list, potentially two -- most important followed by less important. A list of speech (in English and/or other languages) could be given somewhere for those characters so translators feel confident about when they need to provide an `intent` value for a character.
+It would be helpful for the group to provide a list, potentially two -- most common Unicode symbols followed by less important. A list of speech (in English and/or other languages) could be given somewhere for those characters so translators feel confident about when they need to provide an `intent` value for a character.
 
 ## Units
 This would be a (long, separate) list of SI units, (common) English units, and likely other units (e.g., astronomical and geological units) that AT should know about. AT should figure out whether to singular or plural speech for the units. For example, $3 \mathrm{cm}$ is "3 centimeters", but $1 \mathrm{cm}$ is "1 centimeter" (singular).
 
-Unlike the other examples, these need to marked with 'intent'. A single intent (`unit`?) could be used, in which case AT would decide whether to say "centimeter" or "centimeters". Or an intent can be given to specify what to say. However, AT would need to know how to covert to singular/plural if the generator isn't responsible for this. My guess is that a `\unit{}` macro is easier to implement and use than having a macro for every possible unit (it would visually use a roman font along with generating an intent).
+Unlike the other leaf elements, these need to marked with 'intent'. A single intent (`unit`?) could be used, in which case AT would decide whether to say "centimeter" or "centimeters". Or an intent can be given to specify what to say. However, AT would need to know how to covert to singular/plural if the generator isn't responsible for this. My guess is that a `\unit{}` macro is easier to implement and use than having a macro for every possible unit (it would visually use a roman font along with generating an intent).
+
+Although this is listed as using `intent`, this is probably a good example of where Deyan's proposed `intent-isa` attribute is more appropriate. If `intent` is used, then `unit` is a special case for `intent` because it doesn't speak itself. 
 
 ## Currency
 Although currency symbols are self-voicing a few of them such as "$" and "€" are usually spoken at the end of number. Hence, AT needs to be aware of them and adjust the speech accordingly.
