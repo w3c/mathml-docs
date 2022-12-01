@@ -44,7 +44,7 @@ An example of the second case is `msqrt`, where someone who is blind might need 
 
 An example of the third case is "interval" (open, closed, etc). If `intent="open-interval($start, $end)"`, then the speech would be something like "open interval of 3 and 5". This is understandable, but not how it is typically spoken: "open interval from 3 to 5" or "the interval from 3 to 5, not including 3 and not including 5". This more common speech can be accommodated with some additional literals:
 ```
-intent="open-interval@silent(_open-interval-from, $start, _to, $end)"
+intent="_(open-interval, _from, $start, _to, $end)"
 ```
 I don't have a strong argument why this explicit use of words as arguments should be avoided, but it seems wrong. If this is considered "good form", then the third case can be dropped.
 
@@ -87,7 +87,7 @@ The default meanings and special cases for all the MathML elements are:
   * `msline`, indicates that it is a line
 * `mrow` -- speaks the children
 * `mfrac` -- _arg1_ "over" _arg2_ (might need bracketing words -- start over/end over?)
-* `msqrt` -- "radical symbol" $contents$???
+* `msqrt` -- "radical symbol" _contents_???
 * `mroot` -- "radical symbol" with _index_ and _contents_???
 * `merror` -- indicates there is an error and speaks the contents
 * `mfenced` -- should speak the same as the equivalent `mrow` notation
