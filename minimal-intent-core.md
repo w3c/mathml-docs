@@ -86,9 +86,9 @@ The default meanings and special cases for all the MathML elements are:
   * `mspace`, `malginmark`, `maligngroup`, and `none` are either silent or generate pauses
   * `msline`, indicates that it is a line
 * `mrow` -- speaks the children
-* `mfrac` -- $arg1 "over" $arg2 (might need bracketing words -- start over/end over?)
-* `msqrt` -- "radical symbol" $contents???
-* `mroot` -- "radical symbol" with $index and $contents???
+* `mfrac` -- _arg1_ "over" _arg2_ (might need bracketing words -- start over/end over?)
+* `msqrt` -- "radical symbol" $contents$???
+* `mroot` -- "radical symbol" with _index_ and _contents_???
 * `merror` -- indicates there is an error and speaks the contents
 * `mfenced` -- should speak the same as the equivalent `mrow` notation
 * `menclose` -- should indicate the notation attributes along with the contents.
