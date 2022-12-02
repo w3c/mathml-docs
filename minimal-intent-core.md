@@ -97,9 +97,9 @@ The default meanings and special cases for all the MathML elements are:
 * `msubsup` -- indicates a subscripted variable raised a power with the same special cases as `msup`
 * `mover` -- indicates that the second argument is over the first, although the words need to clearly distinguish this from `mfrac` which is proposed to use the word "over". Maybe "_base_ with _over_ above"?
 Special cases:
-  * bar, hat, caret, ... (FIX: need to flush the list out)
+  * mbar, hat, caret, tilde, dot (1-4 of them). Maybe acute and grave. Probably not overbrace and overparen because those likely need grouping words.
 * `munder` -- indicates that the second argument is under the first ("_base_ with _under_ below"?)
-* `munderover` -- indicates there is content above and below the base ("base with _under_ below and _over_ above"?)
+* `munderover` -- indicates there is content above and below the base ("base with _under_ below and _over_ above"?). Uses the special cases of `mover`.
 * `mmultiscripts` --  indicates the scripts and their position in some way. E.g., "start-scripted ... pre-subscript ... pre-superscript ... base ... post-subscript ... post-superscript ...  end-scripted"
 * `mtable`/`mtr`/`mlabeledtr`/`mtd` -- say something appropriate for tables (no recognition of determinants, matrices, vectors, etc)
 * elementary math elements (`mstack`/`mlongdiv`/`msgroup`/`msrow`/`mscarries`/`mscarry`) -- say something about the layout, but not that it is addition, long division, repeated decimals, etc.
@@ -132,13 +132,15 @@ The default meanings and special cases for all the MathML elements are:
   * others??? 
 * `msubsup` -- indicates a subscripted variable raised a power with the same special cases as `msup` and `msubsup`. This includes (read the same as for munderover) 
   * the base is a large operator
-* `mover` -- indicates that the second argument is over the first. Special cases:
-  * bar, hat, caret, ... (FIX: need to flush the list out)
+* `mover` -- indicates that the second argument is over the first.
+Special cases:
+  * bar, hat, caret, tilde, dot (1-4 of them). Maybe acute and grave. Probably not overbrace and overparen because those likely need grouping words.
   * the base is a large operator
 * `munder` -- indicates that the second argument is under the first. Special cases:
   * the base is a large operator
   * the base is "lim" or "limit" (FIX: does this need to be language agnostic?)
 * `munderover` -- indicates there is content above and below the base. Special case:
+  * those listed for mover
   * the base is a large operator (speak using "from" and "to" -- [see below](#large-operators))
 * `mmultiscripts` --  indicates the scripts. Special cases???
 * `mtable`/`mtr`/`mlabeledtr`/`mtd` -- say something appropriate for tables. Special cases:
