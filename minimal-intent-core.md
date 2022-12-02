@@ -95,10 +95,11 @@ The default meanings and special cases for all the MathML elements are:
 * `msup` -- should speak that it is a superscripts, although maybe there should be exceptions for the pseudo-script characters, in which case the superscript is _not_ spoken (e.g, $x^\prime$ is spoken "x prime")
 * `msub` -- indicates a subscript
 * `msubsup` -- indicates a subscripted variable raised a power with the same special cases as `msup`
-* `mover` -- indicates that the second argument is over the first, although the words need to clearly distinguish this from `mfrac` which is proposed to use the word "over". Special cases:
+* `mover` -- indicates that the second argument is over the first, although the words need to clearly distinguish this from `mfrac` which is proposed to use the word "over". Maybe "_base_ with _over_ above"?
+Special cases:
   * bar, hat, caret, ... (FIX: need to flush the list out)
-* `munder` -- indicates that the second argument is under the first
-* `munderover` -- indicates there is content above and below the base
+* `munder` -- indicates that the second argument is under the first ("_base_ with _under_ below"?)
+* `munderover` -- indicates there is content above and below the base ("base with _under_ below and _over_ above"?)
 * `mmultiscripts` --  indicates the scripts and their position in some way. E.g., "start-scripted ... pre-subscript ... pre-superscript ... base ... post-subscript ... post-superscript ...  end-scripted"
 * `mtable`/`mtr`/`mlabeledtr`/`mtd` -- say something appropriate for tables (no recognition of determinants, matrices, vectors, etc)
 * elementary math elements (`mstack`/`mlongdiv`/`msgroup`/`msrow`/`mscarries`/`mscarry`) -- say something about the layout, but not that it is addition, long division, repeated decimals, etc.
