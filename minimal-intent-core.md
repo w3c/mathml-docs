@@ -176,9 +176,9 @@ For example, "csc" would be "co-secant" in English; "sinh" would be "hyperbolic 
 
 "log" and "ln" maybe should be lumped in here. They are a little different in that $\log_n x$ (subscripted log) is particular to "log".
 
-Note: AT should know that a trig function raised to a "-1" power should have special speech such as $sin^{-1} x$ might be spoken as "inverse sin of x". Actually, this might apply to all function names. Knowing what is a function name requires software to use U+2061 (invisible function application).
+Note: AT should know that a trig function raised to a "-1" power should have special speech such as $sin^{-1} x$ might be spoken as "inverse sine of x", "arc sine of x", or "sine inverse of x". Actually, this might apply to all function names. Knowing what is a function name requires software to use U+2061 (invisible function application).
 
-This list might be increased because things like "gcd" and "lcm" should be spelled out;  AT needs to know that. That argues either they become part of core or they require an intent name and that name is `g-c-d` and `l-c-m`. The latter is ugly, but does fit with how things should be named (they should be understandable given the names used). 
+This list of known functions might need to be increased because things like "gcd" and "lcm" should be spelled out;  AT needs to know that. That argues either they become part of core or they require an intent name and that name is `g-c-d` and `l-c-m`. The latter is ugly, but does fit with how things should be named (they should be understandable given the names used). 
 
 ## Large Operators
 As indicated in the list of known tags, `munder`, `mover`, `munderover`, `msub`, `msup`, and `msubsup` should have special speech when the base is a large operator (listed in operator dictionary or specified on an `mo` base). In English, these would typically spoken as  "... from ... to ... of ...".
