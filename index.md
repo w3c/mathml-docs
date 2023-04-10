@@ -12,6 +12,8 @@ discussions. Some may be submitted later as W3C WG Notes or W3C Recommendations.
 
 [MathML Media Types](mathml-media-types)
 
+[MathML Intent Explainer](intent-explainer)
+
 [MathML Accessibility Gap Analysis](gap-analysis)
 
 [MathML Accessibility TPAC 2021 Slides](TPAC-2021/index.html)
