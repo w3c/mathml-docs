@@ -29,7 +29,10 @@ Note: this is an updated, shortened version of the [Math Working Group's Accessi
 
 ## Semantic Reading Considerations
 
-Most AT can do a good job reading high school and lower college level math. However, problems occur because mathematical notations can be ambiguous. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead, they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is important because people/teachers use such readings often and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory. Some examples are:
+Most AT can do a good job reading high school and lower college level math. However, problems occur because mathematical notations can be ambiguous. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead, they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is important because people/teachers use such readings often and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory.
+
+### Examples
+Some examples of semantic vs. syntactic readings are:
 * $x^2$ -- "x squared" versus "x superscript 2 end superscript"
 * $\hat{x}$ -- "x hat" versus "x modified above with circumflex"
 * $\big(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\big)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
@@ -84,10 +87,10 @@ The MathML standard includes presentation and content elements. These can be com
 The `semantics` element has been part of the MathML standard since 1998, so no new technology is needed to support this solution.  Despite being present since MathML's inception, content markup is only rarely used in web pages, electronic documents, or math authoring tools; parallel markup is used even less frequently.
 
 
-## A MathML-specific Solution
+### A MathML-specific Solution
 Each of the solutions above have problems when applied to math. This has led the Math WG to explore a new MathML-specific solution. The largest drawback to any MathML-specific solution is that it would expand any “MathML exists in its own world” criticism and wouldn’t leverage work done on the web to support existing web technologies, now or in the future. The generic advantage is that the solution would (mostly) not be held hostage hoping for changes to other specifications.
 
-### Intent
+#### Intent
 To allow authors to express how they would like their notations read, the Math WG group proposes adding an `intent` attribute to all MathML elements. This is an optional argument that allows authors to annotate the generated MathML. The full details can be found in the [MathML Working Draft](https://w3c.github.io/mathml/#mixing_intent). `intent` is meant to offer a lightweight solution for partial annotation of an expression so it can be spoken appropriately by AT. The intent syntax borrows concepts from Content MathML to encode the structure of mathematical operations (a “syntax tree”), allowing for incremental narration and navigation that follows the argument structure of a formula. The basic format of intent is like a function call. For example, here is how intent could be used to disambiguate $(0,5)$:
 ```xml
 <mrow intent="point($x,$y)">
@@ -119,7 +122,7 @@ Function and property names can have `-` and `_` in them. Those should be replac
 Properties differ from function names in that they influence speech but are not meant to be spoken.
 In addition to the "arity" properties listed above, the group has discussed a number of other properties such as "unit" (so "m" can be spoken as "meter") and "chemical-element". We have also discussed `mtable` properties such as "system-of-equations", "cases", and "matrix" that govern the way a table is spoken ("Three equations, equation 1 ..." even if there are multiple columns used for alignment). "identity-matrix" is another possibility which would make it easy for AT to speak the example in the introduction well. As with function names, the Math Working Group intends to develop a list of core properties all AT should know about and an open registry that AT or other software might make use of.
 
-### Intent Generation
+#### Intent Generation
 A goal for "intent" is that it can be avoided for most examples and only included when needed for disambiguation.
 A number of members of the Math Working Group are authors of TeX-to-MathML software and feel that there is a relatively straight forward path for TeX authors to associate speech/intent values with macros. For example, `\abs{x}` could generate the display $\vert x \vert$ and the MathML
 ```xml
@@ -133,7 +136,7 @@ AT could then speak this as "absolute value of x". If $x$ were complicated and b
 
 `intent` can also be used to direct speech for ambiguous characters. For example, $\times$ might be spoken as "times" or "cross product". In TeX, it is produced by the macro `\times` which could generate `<mo intent="times">×</mo>`, but it is pretty easy to create another macro `\xprod` which could generate `<mo intent="cross-product">×</mo>`.
 
-### Other Uses
+#### Other Uses of Intent
 Although "intent" is primarily meant to help AT generate speech, it could be helpful for search and computation. Members of the working group have discussed the possibility of Content MathML to Presentation MathML with `intent` and vice-versa. The later only works is there is a clear mapping between intent names and `csymbol` and probably works best for the non-strict parts of Content MathML.
 
 Properties can be useful to provide additional information about a variable such as `<mi intent=":rational">x</rational>` to indicate that "x" is a rational number. For sighted users, potentially a MathML renderer or browser extension might display the properties as a popup.
