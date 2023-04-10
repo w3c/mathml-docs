@@ -29,15 +29,17 @@ Note: this is an updated, shortened version of the [Math Working Group's Accessi
 
 ## Semantic Reading Considerations
 
-Most AT can do a good job reading high school and lower college level math. However, problems occur because mathematical notations can be ambiguous. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead, they would say something like "the point x comma y" or "the open interval from x to y". There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech is important because people/teachers use such readings often and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory.
+Most Assistive Technology (AT) can do a good job reading high school and lower college level math. However, problems occur because mathematical notations can be ambiguous. For example, $(x,y)$ could be the coordinate of a point or it could be the open interval from x to y. Braille math codes such as Nemeth and UEB encode them the same. Speech could do so also with the literal reading "open paren x comma y close paren". However, this is not how someone would typically read it. Instead, people would say something like "the point x comma y" or "the open interval from x to y".
+
+There is a supposition that semantic readings are "better", but this has not been confirmed by research for people that are blind; studies do show that semantic reading styles are better for individuals with dyslexia and other non-visual print disabilities. Nonetheless, it is widely assumed that semantic speech, or at least speech that includes many special cases, is important because people/teachers use such readings often and listeners are used to hearing them. In many cases, the semantic reading is shorter and therefore uses less working memory.
 
 ### Examples
-Some examples of semantic vs. syntactic readings are:
+Some examples of semantic/special cased readings vs. syntactic readings are:
 * $x^2$ -- "x squared" versus "x superscript 2 end superscript"
 * $\hat{x}$ -- "x hat" versus "x modified above with circumflex"
 * $\big(\begin{smallmatrix} 1 & 0\\\\ 0 & 1\end{smallmatrix}\big)$ -- "the 2 by 2 identity matrix" vs "open paren start 2 by 2 table;  row 1, column 1, 1, column 2, 0, row 2, column 1 0, column 2 1, end table, close paren"
 
-While all AT speaks $x^2$ semantically, some do not speak $\hat{x}$ semantically, and none currently recognize an identity matrix. Recognizing special matrix forms such as identity matrices requires significant work on the part of AT. While a sighted person can instantly recognize an identity matrix, someone using a screen reader would have to linearly listen to all of the entries which is an extra burden for the AT user.
+While all AT speaks $x^2$ semantically, some do not speak $\hat{x}$ semantically, and none currently recognize an identity matrix. In general, recognizing the many special cases for scripts ($x^3$, $\bar{x}$, ...) requires significant work. That is even more true for recognizing special matrix forms such as identity matrices. While a sighted person can instantly recognize an identity matrix, someone using a screen reader would have to linearly listen to all of the entries which is an extra burden for the AT user.
 
 Higher mathematics adds an additional tier of complexity. In it, even $x^2$ can be ambiguous, and may warrant a different reading than ordinary. One such case is $L^2$ read simply "L2" in the domain of Lebesgue spaces. In such texts, the author can often find themselves to be one of a only a handful of practitioners who have full grasp of their technical terminology, making frequent manual annotations important for accessibility of the content.
 
@@ -101,7 +103,7 @@ To allow authors to express how they would like their notations read, the Math W
   <mo>)</mo>
 </mrow>
 ```
-Here, "point" gives a hint how this should be read. It has two arguments given by "$x" and "$y" (found by looking at the children with an `arg` attribute). This could then be read "point 1 comma 2" or if the arguments were complicated, with bracketing words.
+Here, "point" gives a hint how this should be read. It has two arguments given by "$x" and "$y" (found by looking at the children with an `arg` attribute). This could then be read "the point 1 comma 2" or if the arguments were complicated, with bracketing words.
 
 The Working Group plans to develop a list of "core" intent names that all AT should understand along with a registry for "open" names where there is no expectation that AT will understand them. Other software however, might be able to make use of these "crowd sourced" names.
 
@@ -136,7 +138,6 @@ AT could then speak this as "absolute value of x". If $x$ were complicated and b
 
 `intent` can also be used to direct speech for ambiguous characters. For example, $\times$ might be spoken as "times" or "cross product". In TeX, it is produced by the macro `\times` which could generate `<mo intent="times">×</mo>`, but it is pretty easy to create another macro `\xprod` which could generate `<mo intent="cross-product">×</mo>`.
 
-#### Other Uses of Intent
-Although "intent" is primarily meant to help AT generate speech, it could be helpful for search and computation. Members of the working group have discussed the possibility of Content MathML to Presentation MathML with `intent` and vice-versa. The later only works is there is a clear mapping between intent names and `csymbol` and probably works best for the non-strict parts of Content MathML.
+#### Internationalization
+Although the "core" names for functions will be in English, it is expected that AT will maintain translations for the other languages it supports so that `intent="absolute-value($x)"` becomes "valeur absolute de x" in French, etc. Potentially arbitrary names could be translated dynamically via a translation service, but practically, that is probably not an option at the moment (too much delay). However, the "open" list could be downloaded and (automatically) translated before each AT software release and that would cover most cases. Additionally, any MathML in a page is in the context of some language. This means that open names chosen by the author potentially are in the language of the document. However, this is speculative until we learn more about how users will use the tools.
 
-Properties can be useful to provide additional information about a variable such as `<mi intent=":rational">x</rational>` to indicate that "x" is a rational number. For sighted users, potentially a MathML renderer or browser extension might display the properties as a popup.
