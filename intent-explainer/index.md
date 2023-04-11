@@ -103,7 +103,7 @@ To allow authors to express how they would like their notations read, the Math W
   <mo>)</mo>
 </mrow>
 ```
-Here, "point" gives a hint how this should be read. It has two arguments given by '$x' and '$y' (found by looking at the children with an `arg` attribute). This could then be read "the point 1 comma 2" or if the arguments were complicated, with bracketing words.
+Here, "point" gives a hint how this should be read. It has two arguments given by `$x` and `$y` (found by looking at the children with an `arg` attribute). This could then be read "the point 1 comma 2" or if the arguments were complicated, with bracketing words.
 
 The Working Group plans to develop a list of "core" intent names that all AT should understand along with a registry for "open" names where there is no expectation that AT will understand them. Other software however, might be able to make use of these "crowd sourced" names.
 
