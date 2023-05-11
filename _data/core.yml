@@ -1,0 +1,117 @@
+
+- concept: power
+  arity: 2
+  property: infix
+  default: true
+  conditions:
+    - condition: "$2=2"
+      en: "$1 squared"
+      fr: "$1 carré"
+    - condition: "$2=3"
+      en: "$1 cubed"
+      fr: "$1 cube"
+    - condition: ""
+      en: "$1 to the $2<i>th</i> power"
+      fr: "$1 à la $2"
+
+- concept: root
+  arity: 2
+  property: function
+  default: true
+  comment: even number of conditions to test zebra stripes
+  conditions:
+    - condition: "$2=2"
+      en: "square root of $1"
+    - condition: "$2=3"
+      en: "cube root of $1"
+    - condition: "$2=4"
+      en: "fourth root of $1"
+    - condition: ""
+      en: "$2<i>th</i> root of $1"
+
+
+- concept: equals
+  arity: 2
+  property: infix
+  default: true
+  en: "$1 equals $2 <br> $1 is equal to $2"
+  fr: "$1 est égal à $2"
+
+- concept: equals
+  arity: 2
+  property: function
+  en: "equals $1 $2"
+  fr: "égal $1 $2"
+
+- concept: factorial
+  arity: 1
+  property: postfix
+  default: true
+  en: "$1 factorial"
+  fr: "$1 factorial"
+
+- concept: transpose
+  arity: 1
+  property: postfix
+  default: true
+  en: "$1 transpose"
+  fr: "$1 transposée"
+
+- concept: transpose
+  arity: 1
+  property: function
+  comment: "This row could be deleted, as it follows from the default behaviour"
+  en: "transpose of $1"
+  fr: "transposée de $1"
+
+- concept: sin
+  arity: 1
+  property: prefix
+  default: true
+  en: "sine $1"
+  fr: "sin $1"
+
+
+- concept: sin
+  arity: 1
+  property: function
+  comment: "This row could be deleted, as it follows from the default behaviour"
+  en: "sine of $1"
+  fr: "sin de $1"
+
+
+- concept: sinh
+  arity: 1
+  property: prefix
+  default: true
+  comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+  en: "shine $1 <br> sinch $1"
+  fr: "shine $1 <br> sinch $1"
+
+
+- concept: cosh
+  arity: 1
+  property: prefix
+  default: true
+  comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+  en: "cosh $1 <br> kosh $1"
+  fr: "cosh $1 <br> kosh $1"
+
+
+- concept: log
+  arity: 2
+  property: function
+  default: true
+  comment: "arity 1 log(x)  needs no rule here"
+  en: "log base $2 of $1"
+  fr: "log base $2 of $1"
+
+
+- concept: ln
+  arity: 1
+  property: prefix
+  default: true
+  en: "natural log of $1 <br> log of $1  <br>  log base e of $1"
+  fr: "natural log of $1 <br> log of $1  <br>  log base e of $1"
+
+
