@@ -126,11 +126,11 @@ Localised texts can be added to the YAML file:
 <td class="{{language.language-code}}">
 {%- if c[language.language-code] -%}
 {%- for l in c[language.language-code] -%}
-{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
+A{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
 {%- for l in c[en] -%}
-{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
+B{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %} 
 {% endif %}
 </td>
