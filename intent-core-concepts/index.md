@@ -123,11 +123,17 @@ Localised texts can be added to the YAML file:
 <td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
 <td>{{c.condition}}</td>
 {%- for language in site.data.languages -%}
+<td class="{{language.language-code}}">
 {%- if c[language.language-code] -%}
-<td class="{{language.language-code}}">{{c[language.language-code]}}</td>
+{%- for l in c[language.language-code] -%}
+{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
 {%- else -%}
-<td class="{{language.language-code}}">{{c.en}} ({{language.language-code}})</td>
+{%- for l in c[en] -%}
+{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %} 
 {% endif %}
+</td>
 {%- endfor -%}
 <td>{{c.comment}}</td>
 </tr>

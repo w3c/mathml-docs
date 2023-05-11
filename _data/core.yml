@@ -34,7 +34,9 @@
   arity: 2
   property: infix
   default: true
-  en: "$1 equals $2 <br> $1 is equal to $2"
+  en:
+   - "$1 equals $2"
+   - "$1 is equal to $2"
   fr: "$1 est égal à $2"
 
 - concept: equals
