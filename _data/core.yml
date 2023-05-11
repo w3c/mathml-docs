@@ -87,8 +87,12 @@
   property: prefix
   default: true
   comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-  en: "shine $1 <br> sinch $1"
-  fr: "shine $1 <br> sinch $1"
+  en:
+    - "shine $1"
+    - "sinch $1"
+  fr:
+    - "shine $1"
+    - "sinch $1"
 
 
 - concept: cosh
@@ -96,8 +100,12 @@
   property: prefix
   default: true
   comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-  en: "cosh $1 <br> kosh $1"
-  fr: "cosh $1 <br> kosh $1"
+  en:
+    - "cosh $1"
+    - "kosh $1"
+  fr:
+   - "cosh $1"
+   - "kosh $1"
 
 
 - concept: log
@@ -113,7 +121,13 @@
   arity: 1
   property: prefix
   default: true
-  en: "natural log of $1 <br> log of $1  <br>  log base e of $1"
-  fr: "natural log of $1 <br> log of $1  <br>  log base e of $1"
+  en:
+    - "natural log of $1"
+    - "log of $1"
+    - "log base e of $1"
+  fr:
+    -"natural log of $1"
+    - "log of $1 "
+    - "log base e of $1"
 
 
