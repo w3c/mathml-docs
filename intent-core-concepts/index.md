@@ -49,12 +49,12 @@ controlled by the context, or by system option settings such as "Verbosity".
 Additional language contributions are welcome.
 
 Languages can be listed by extending the YAML file:
-[languages.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/languages.yml)
+[languages.yml](https://github.com/w3c/mathml-docs/blob/main/_data/languages.yml)
 
 Any concept that does not have a speech template in the specifed language will show the English text.
 
 Localised texts can be added to the YAML file:
-[core.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/core.yml)
+[core.yml](https://github.com/w3c/mathml-docs/blob/main/_data/core.yml)
 
 ----
 
@@ -129,7 +129,7 @@ Localised texts can be added to the YAML file:
 A{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
-{%- for l in c[en] -%}
+{%- for l in c.en -%}
 B{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %} 
 {% endif %}
