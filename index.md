@@ -11,6 +11,15 @@ title: MathML Documents
 
 ---
 
+## Working Group Notes
+
+
+[Notes on MathML](notes-on-mathml)
+
+[MathML Media Types](mathml-media-types)
+
+---
+
 ## Other Documents
 
 Documents with _no official standing_ not necessarily
@@ -19,9 +28,6 @@ discussions. Some may be submitted later as W3C WG Notes or W3C Recommendations.
 
 ---
 
-[Notes on MathML](notes-on-mathml)
-
-[MathML Media Types](mathml-media-types)
 
 [MathML Intent Explainer](intent-explainer)
 
