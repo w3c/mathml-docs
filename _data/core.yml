@@ -66,7 +66,7 @@
   en: "transpose of $1"
   fr: "transposée de $1"
 
-- concept: sin
+- concept: sine
   arity: 1
   property: prefix
   default: true
@@ -74,7 +74,7 @@
   fr: "sin $1"
 
 
-- concept: sin
+- concept: sine
   arity: 1
   property: function
   comment: "This row could be deleted, as it follows from the default behaviour"
@@ -82,7 +82,7 @@
   fr: "sin de $1"
 
 
-- concept: sinh
+- concept: hyperbolic-sine
   arity: 1
   property: prefix
   default: true
@@ -95,7 +95,7 @@
     - "sinch $1"
 
 
-- concept: cosh
+- concept: hyperbolic-cosine
   arity: 1
   property: prefix
   default: true
@@ -108,7 +108,7 @@
    - "kosh $1"
 
 
-- concept: log
+- concept: logarithm
   arity: 2
   property: function
   default: true
@@ -117,7 +117,7 @@
   fr: "log base $2 of $1"
 
 
-- concept: ln
+- concept: natural-logarithm
   arity: 1
   property: prefix
   default: true
