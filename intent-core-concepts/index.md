@@ -107,11 +107,17 @@ Localised texts can be added to the YAML file:
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
 <td>{{cond.condition}}</td>
 {%- for language in site.data.languages -%}
+<td class="{{language.language-code}}">
 {%- if cond[language.language-code] -%}
-<td class="{{language.language-code}}">{{cond[language.language-code]}}</td>
+{%- for l in cond[language.language-code] -%}
+{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
 {%- else -%}
-<td class="{{language.language-code}}">{{cond.en}} ({{language.language-code}})</td>
+{%- for l in cond.en -%}
+{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %} 
 {% endif %}
+</td>
 {%- endfor -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.comment}}</td>{%- endif -%}
 </tr>
@@ -126,11 +132,11 @@ Localised texts can be added to the YAML file:
 <td class="{{language.language-code}}">
 {%- if c[language.language-code] -%}
 {%- for l in c[language.language-code] -%}
-A{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
+{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
 {%- for l in c.en -%}
-B{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
+{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %} 
 {% endif %}
 </td>
