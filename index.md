@@ -2,6 +2,17 @@
 title: MathML Documents
 ---
 
+## Intent Lists
+
+* [Intent Core Concepts](intent-core-concepts/)
+* [Intent Open Concepts](intent-open-concepts/)
+* [Intent Core Properties](intent-core-properties/)
+* [Intent Open Properties](intent-open-properties/)
+
+---
+
+## Other Documents
+
 Documents with _no official standing_ not necessarily
 intended for final publication, but as an aid to Math Working Group
 discussions. Some may be submitted later as W3C WG Notes or W3C Recommendations.
