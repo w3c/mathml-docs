@@ -1,29 +1,29 @@
 
 
 
-- property:function
+- property: "function"
   type: fixity
   applicablity: intent function head
   effect: "f:function(x,y) typically reads as f of x comma y"
 
-- property:prefix
+- property: prefix
   type: fixity
   applicablity: intent function head
   effect: "f:prefix(x,y) reads as f x y"
 
-- property:postfix
+- property: postfix
   type: fixity
   applicablity: intent function head
   effect: "f:posfix(x) reads as x f"
 
 
-- property:infix
+- property: infix
   type: fixity
   applicablity: intent function head
   effect: "f:infix(x,y) reads as x f y"
 
 
-- property:silent
+- property: silent
   type: fixity
   applicablity: intent function head
   effect: "f:silent(x,y) reads as x y"
