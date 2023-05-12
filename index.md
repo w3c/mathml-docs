@@ -1,6 +1,9 @@
 ---
 title: MathML Documents
+layout: default
 ---
+
+# MathML Document Repository
 
 ## Intent Lists
 
