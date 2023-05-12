@@ -1,0 +1,58 @@
+
+
+
+- property:function
+  type: fixity
+  applicablity: intent function head
+  effect: "f:function(x,y) typically reads as f of x comma "y
+
+- property:prefix
+  type: fixity
+  applicablity: intent function head
+  effect: "f:prefix(x,y) reads as f x y"
+
+- property:postfix
+  type: fixity
+  applicablity: intent function head
+  effect: "f:posfix(x) reads as x f"
+
+
+- property:infix
+  type: fixity
+  applicablity: intent function head
+  effect: "f:infix(x,y) reads as x f y"
+
+
+- property:silent
+  type: fixity
+  applicablity: intent function head
+  effect: "f:silent(x,y) reads as x y"
+
+
+- property: matrix
+  type: table
+  applicability: mtable
+  effect: the table should be read in style suitable for matricies
+
+
+- property: system-of-equations
+  type: table
+  applicability: mtable
+  effect: the table should be read in style suitable for displayed equations (and inequations)
+
+
+- property: lines
+  type: table
+  applicability: mtable
+  effect: the table should be read without implying any mathematcal context other than a multi-line display
+
+
+- property: continued-row
+  type: table
+  applicability: mtr
+  effect: indicates that the row continues an equation wrapped from the row above
+
+
+
+
+  
