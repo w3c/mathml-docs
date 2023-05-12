@@ -62,7 +62,11 @@ span.cb {margin-right: 2em; white-space:nowrap}
 <code>{{e.intent}}</code>
 {%- for language in site.data.languages -%}
 {%- if e[language.language-code] -%}
-<span class="{{language.language-code}}"><br>{{language.language-code}}: {{e[language.language-code]}}</span>
+<span class="{{language.language-code}}"><br>
+<b>{{language.language-code}}:</b>
+{% for sp in e[language.language-code] %}
+{{sp};
+{% endfor %}
 {% endif %}
 {% endfor %}
 </dd>
