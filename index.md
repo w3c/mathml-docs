@@ -1,5 +1,5 @@
 ---
-title: MathML Documents
+title: MathML Document Repository
 layout: default
 ---
 
