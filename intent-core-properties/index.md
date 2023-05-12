@@ -69,8 +69,27 @@ span.cb {margin-right: 2em; white-space:nowrap}
 {% endfor %}
 {% endif %}
 {% endfor %}
+
 </dd>
+
 {% endfor %}
 
 {% endfor %}
+
+
+
+
+<script>
+var LangCss = document.getElementById('langcss');
+var langcb=document.getElementById('langchoice').getElementsByTagName('input');
+function updatelang (e) {
+  LangCss.textContent='';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (!(opt.checked)) {
+      LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+    }
+  }
+}
+</script>
 
