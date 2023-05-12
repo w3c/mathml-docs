@@ -56,7 +56,15 @@ span.cb {margin-right: 2em; white-space:nowrap}
 {% endif %}
 
 <dt>{{p.property}}</dt>
-<dd>{{p.effect}}</dd>
-
+{% if p.effect %}<dd>{{p.effect}}</dd>{% endif %}
+{% for e in p.examples %}
+<dd>
+<code>{{e.intent}}</code>
+{%- for language in site.data.languages -%}
+{%- if e[language.language-code] -%}
+<span class="{{language.language-code}}"><br>{{language.language-code}}: {{e[language.language-code]}}</span>
+{% endif %}
+{% endfor %}
+</dd>
 {% endfor %}
 
