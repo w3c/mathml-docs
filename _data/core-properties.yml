@@ -4,7 +4,7 @@
 - property:function
   type: fixity
   applicablity: intent function head
-  effect: "f:function(x,y) typically reads as f of x comma "y
+  effect: "f:function(x,y) typically reads as f of x comma y"
 
 - property:prefix
   type: fixity
