@@ -56,8 +56,10 @@ span.cb {margin-right: 2em; white-space:nowrap}
 {% endif %}
 
 <dt>{{p.property}}</dt>
+
 {% if p.effect %}<dd>{{p.effect}}</dd>{% endif %}
 {% for e in p.examples %}
+
 <dd>
 <code>{{e.intent}}</code>
 {%- for language in site.data.languages -%}

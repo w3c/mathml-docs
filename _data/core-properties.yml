@@ -34,7 +34,7 @@
 - property: silent
   type: fixity
   applicablity: intent function head
-  effect  examples:
+  examples:
     - intent: "f:silent(x,y)"
       en: "x y"
 
