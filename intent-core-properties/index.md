@@ -41,7 +41,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 </details>
 
 {%- assign t = "" -%}
-{%- for p in site.data.core -%}
+{%- for p in site.data.core-properties -%}
 {% if t != p.type %}
 {% unless t == "" %}
 </dl>
@@ -56,7 +56,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 {% endif %}
 
 <dt>{{p.property}}</dt>
-<dd>{{p.effect}}</dd}
+<dd>{{p.effect}}</dd>
 
 {% endfor %}
 
