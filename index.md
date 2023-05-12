@@ -8,6 +8,7 @@ title: MathML Documents
 * [Intent Open Concepts](intent-open-concepts/)
 * [Intent Core Properties](intent-core-properties/)
 * [Intent Open Properties](intent-open-properties/)
+* [Intent Examples](intent-examples/)
 
 ---
 
