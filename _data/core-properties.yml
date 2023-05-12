@@ -35,7 +35,7 @@
   type: fixity
   applicablity: intent function head
   effect  examples:
-    - intent: : "f:silent(x,y)"
+    - intent: "f:silent(x,y)"
       en: "x y"
 
 
