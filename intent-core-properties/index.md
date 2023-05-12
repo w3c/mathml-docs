@@ -65,7 +65,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 <span class="{{language.language-code}}"><br>
 <b>{{language.language-code}}:</b>
 {% for sp in e[language.language-code] %}
-{{sp}];
+{{sp}};
 {% endfor %}
 {% endif %}
 {% endfor %}
