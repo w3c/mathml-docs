@@ -1,0 +1,4 @@
+exclude:
+  - intent-examples/examples.html
+  - intent-examples/run
+ 

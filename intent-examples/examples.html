@@ -1,0 +1,3442 @@
+<!DOCTYPE HTML>
+<HTML>
+ <head>
+  <title>Intent Examples</title>
+  <meta charset='UTF-8'/>
+  <style>
+   pre:target{background-color:yellow}
+   th[colspan] {font-size:120%;font-weight:bold;
+   background-color:white;
+   padding-top:.5em}
+   thead {font-size:120%;}
+   tbody th {width:2em;}
+   math{font-size:120%;margin:.2em;}
+   tr>td  {border:solid thin black;}
+   div.mathcat{
+   background-color:white;padding:.2em;
+   margin:-.2em .1em 1em .1em;
+   }
+   a.self {text-decoration:none;color:DarkBlue}
+   a.self::visited  {text-decoration:none;color:DarkBlue}
+   span.error {border-left: solid thick red;padding-left:.1em}
+  </style>
+ </head>
+ <body>
+  <h1>Intent Examples 5</h1>
+
+  <p><a href='./'>Index of Examples</a></p>
+
+  <table>
+   <colgroup>
+    <col style='background-color:#FFE;min-width:12em'/>
+    <!--Xcol style='background-color:#EEE;font-family: monospace;'/X-->
+    <col style='background-color:#EFE;font-family: monospace;'/>
+    <col style='background-color:#AAA;font-family: monospace;'/>
+    <col style='background-color:beige'/>
+   </colgroup>
+   <thead>
+    <!--Xth>MathML</thX8-->
+    <th>MathML-no-intent</th>
+    <th>MathML+intent</th>
+    <th>TeX</th>
+    <th>Comments</th>
+   </thead>
+   <tr>
+    <th colspan='6'>Numbers</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo>+</mo>
+      <mn>1,234</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn intent='1.234:decimal-comma'>1,234</mn>
+      <mo>+</mo>
+      <mn intent='1.234:decimal-comma'>1,234</mn>
+     </math>
+     <math display='block'>
+      <mn intent=':decimal-comma'>1,234</mn>
+      <mo>+</mo>
+      <mn intent=':decimal-comma'>1,234</mn>
+     </math>
+    </td>
+    <td>1,234+1{,}234</td>
+    <td>decimal comma</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234,000</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mn intent='1234:thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent='1234:thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent='1234000:thousands-comma'>1,234,000</mn>
+     </math>
+     <math display='block' mathbackground='yellow'>
+      <mn intent=':thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent=':thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent=':thousands-comma'>1,234,000</mn>
+     </math>
+    </td>
+    <td>1,234; 1,234; 1,234,000</td>
+    <td>grouping comma</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>−3</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn intent='-3'>−3</mn>
+     </math>
+    </td>
+    <td>-3</td>
+    <td>mn -3</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>−</mo>
+       <mn>3</mn>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='-3'>
+       <mo>−</mo>
+       <mn>3</mn>
+      </mrow>
+     </math>
+    </td>
+    <td>-3</td>
+    <td>mrow mo -3</td>
+   </tr>
+
+   <tr>
+    <th colspan='6'>Super and Sub Scripts</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>x^2</td>
+    <td>squared</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mn>3</mn>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mn>3</mn>
+      </msup>
+     </math>
+    </td>
+    <td>x^3</td>
+    <td>cubed</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi mathvariant='normal'>H</mi>
+       <mn>2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup intent='index($H,$n)'>
+       <mi arg='H' mathvariant='normal'>H</mi>
+       <mn arg='n'>2</mn>
+      </msup>
+     </math>
+     <math display='block'>
+      <msup intent='index:silent($H,$n)'>
+       <mi arg='H' mathvariant='normal'>H</mi>
+       <mn arg='n'>2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>\mathrm{H}^2</td>
+    <td>2nd Cohomology</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>&#x211D;</mi>
+       <mn>2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup intent='vector-space-power($R,$n)'>
+       <mi arg='R'>&#x211D;</mi>
+       <mn arg='n'>2</mn>
+      </msup>
+     </math>
+     <math display='block'>
+      <msup intent='vector-space-power:silent(_R,$n)'>
+       <mi arg='R'>&#x211D;</mi>
+       <mn arg='n'>2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>\mathbb{R}^2</td>
+    <td>R 2</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mi>n</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mi>n</mi>
+      </msup>
+     </math>
+    </td>
+    <td>x^n</td>
+    <td>x to nth</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mo>&#x2020;<!-- U+2020--></mo>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup intent='x-dagger'>
+       <mi>x</mi>
+       <mo>&#x2020;<!-- U+2020--></mo>
+      </msup>
+     </math>
+    </td>
+    <td>x^\dagger</td>
+    <td>dagger</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mi>x</mi>
+       <mi mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup intent='$op($arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+     <math display='block' mathbackground='yellow'>
+      <msup intent='$op:function($arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+     <math display='block' mathbackground='yellow'>
+      <msup intent='transpose:function($arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+     <math display='block'>
+      <msup intent='_($op, _of, $arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+     <math display='block'>
+       <msup intent='_:silent($op, _of, $arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+     <math display='block' mathbackground='yellow'>
+      <msup intent='_transpose($arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
+    </td>
+    <td>x^{\mathrm{T}}</td>
+    <td>x transpose</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mmultiscripts>
+       <mi>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi mathvariant='normal'>T</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts intent='$op($arg)'>
+       <mi arg='arg'>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block' mathbackground='yellow'>
+      <mmultiscripts intent='$op:function($arg)'>
+       <mi arg='arg'>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block'>
+      <mmultiscripts intent='_($op, _of, $arg)'>
+       <mi arg='arg'>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block'>
+      <mmultiscripts intent='_:silent($op, _of, $arg)'>
+       <mi arg='arg'>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>{}^{\mathrm{T}}x</td>
+    <td>x transpose pre-sup</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mi>x</mi>
+       <mrow>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
+       <mi mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='transpose(index:silent($x,$sub))'>
+       <mi arg='x'>x</mi>
+       <mrow arg='sub' intent=':index'>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
+       <mi mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup>
+       <mi>x</mi>
+       <mrow arg='sub' intent=':index'>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
+       <mi intent='transpose:postfix' mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup intent='transpose(sub:infix($base, $sub))'>
+       <mi arg='base'>x</mi>
+       <mrow arg='sub' intent=':index'>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
+       <mi>T</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>x_{ij}^{\mathrm{T}}</td>
+    <td>x sub  transpose</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mn>4</mn>
+       <mi>th</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup>
+       <mn>4</mn>
+       <mi intent='ordinal-mark'>th</mi>
+      </msup>
+     </math>
+     <math display='block'>
+      <msup intent='ordinal-mark:silent($n,$th)'>
+       <mn arg='n'>4</mn>
+       <mi arg='th'>th</mi>
+      </msup>
+     </math>
+     <math display='block'>
+      <msup intent='_4th'>
+       <mn>4</mn>
+       <mi>th</mi>
+      </msup>
+     </math>
+    </td>
+    <td>4{\mathrm{th}</td>
+    <td>ordinal 4th</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup>
+         <mi>X</mi>
+         <mi>n</mi>
+        </msup>
+        <mo>∈</mo>
+	<mrow>
+         <mi>R</mi>
+         <mo>⟦</mo>
+         <mi>X</mi>
+         <mo>⟧</mo>
+	</mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup>
+         <mi>X</mi>
+         <mi>n</mi>
+        </msup>
+        <mo>∈</mo>
+	<mrow intent='power-series($r,$x)'>
+         <mi arg='r'>R</mi>
+         <mo>⟦</mo>
+         <mi arg='x'>X</mi>
+         <mo>⟧</mo>
+	</mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow intent='_(0)'>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup intent='_power:silent($x,_to_the,$n)'>
+         <mi arg='x'>X</mi>
+         <mi arg='n'>n</mi>
+        </msup>
+        <mo>∈</mo>
+	<mrow intent='power-series:silent(
+		      $r,_power_series,_over,$x)'>
+         <mi arg='r'>R</mi>
+         <mo>⟦</mo>
+         <mi arg='x'>X</mi>
+         <mo>⟧</mo>
+	</mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>A=\sum_0^\infty a_n X^n \in R\lBrack X \rBrack</td>
+    <td>formal power series</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mi>sin</mi>
+	<mn>2</mn>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mi>𝜃</mi>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+       <msup>
+	<mi>cos</mi>
+	<mn>2</mn>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mi>𝜃</mi>
+      </mrow>
+      <mo>=</mo>
+      <mn>1</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mi>sin</mi>
+	<mn>2</mn>
+       </msup>
+       <mo intent='apply:silent'>&#x2061;</mo>
+       <mi intent='theta'>𝜃</mi>
+      </mrow>
+      <mo>+</mo>
+      <mrow>
+       <msup>
+	<mi>cos</mi>
+	<mn>2</mn>
+       </msup>
+       <mo intent='apply:silent'>&#x2061;</mo>
+       <mi intent='theta'>𝜃</mi>
+      </mrow>
+      <mo>=</mo>
+      <mn>1</mn>
+     </math>
+    </td>
+    <td>\sin^2\theta + \cos^2\theta=1</td>
+    <td>sin squared plus cos squared</td>
+   </tr>
+   
+   <tr>
+    <th colspan='6'>Combinations and Permutations</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+	<mi>n</mi>
+	<mi>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='binomial($n,$k)'>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+	<mi arg='n'>n</mi>
+	<mi arg='k'>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='binomial:infix($n,$k)'>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+	<mi arg='n'>n</mi>
+	<mi arg='k'>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\binom{n}{k}</td>
+    <td>binom n k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mmultiscripts>
+       <mi>C</mi>
+       <mi>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts intent='binomial($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block'>
+      <mmultiscripts intent='binomial:infix($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>{}^n C_k</td>
+    <td> binom sup n C sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mi>C</mi>
+       <mi>k</mi>
+       <mi>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='binomial($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup intent='binomial:infix($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>C^n_k</td>
+    <td> binom C sup n sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi>n</mi>
+       <mo>,</mo>
+       <mi>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='binomial($n,$k)'>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='binomial:infix($n,$k)'>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>C(n,k)</td>
+    <td> binom C n k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mmultiscripts>
+       <mi>P</mi>
+       <mi>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts
+	  intent='permutation($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block'>
+      <mmultiscripts
+	  intent='permutation:prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block'>
+      <mmultiscripts
+	  intent='_permutation:prefix(_of,$k,_from,$n)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>{}^n P_k</td>
+    <td> permutations sup n P sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mi>P</mi>
+       <mi>k</mi>
+       <mi>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup
+	  intent='P($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup
+	  intent='permutation-symbol($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup
+	  intent='permutation:prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup
+	  intent='_permutation:prefix(_of,$k,_from,$n)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>P^n_k</td>
+    <td> permutations P sup n sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi>n</mi>
+       <mo>,</mo>
+       <mi>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow
+	  intent='permutation-symbol($n,$k)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow
+	  intent='permutation:prefix($n,$k)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow
+	  intent='_permutation:prefix(_of,$k,_from, $n)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>P(n,k)</td>
+    <td> permutations P n k</td>
+   </tr>
+
+    
+   <tr>
+    <th colspan='6'>Infix</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo>&#x2282;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo intent='subset'>&#x2282;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='_is_a_subset_of:infix($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo>&#x2282;</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>x \subset y</td>
+    <td>subset</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo intent='parallel'>‖</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo intent='parallel'>‖</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo intent='_is_parallel_to'>‖</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='_($x,_is,$op,_to,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='op' intent='parallel'>‖</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='_:silent($x,_is,$op,_to,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='op' intent='parallel'>‖</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>x \parallel y</td>
+    <td> parallel </td>
+   </tr>
+
+  
+   <tr>
+    <th colspan='6'>Functions</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi>n</mi>
+	<mo>,</mo>
+	<mi>m</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow  intent='$A($n,$m)'>
+       <mi arg='A' intent='Ackerman'>A</mi>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi arg='n'>n</mi>
+	<mo>,</mo>
+	<mi arg='m'>m</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mi intent='Ackerman'>A</mi>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi>n</mi>
+	<mo>,</mo>
+	<mi>m</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mi intent='A:Ackerman'>A</mi>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi>n</mi>
+	<mo>,</mo>
+	<mi>m</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>A(m,n)</td>
+    <td>Ackerman or A</td>
+   </tr>
+      
+
+   <tr>
+    <th colspan='6'>Higher Order Functions</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mrow>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='$op3($x)'>
+       <msup arg='op3' intent='$op2($composed)'>
+	<mrow arg='composed' intent='$op1:infix($g,$h)'>
+	 <mo>(</mo>
+	 <mi arg='g'>g</mi>
+	 <mo arg='op1' intent='function-composition'>∘</mo>
+	 <mi arg='h'>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo arg='op2' intent='first-derivative'>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>low (g∘h)′(x)</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>g</mi>
+       <mo>∘</mo>
+       <mi>h</mi>
+       <mo>)</mo>
+       <mo>′</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='first-derivative(function-composition:infix(g,h))(x)'>
+       <mo>(</mo>
+       <mi>g</mi>
+       <mo>∘</mo>
+       <mi>h</mi>
+       <mo>)</mo>
+       <mo>′</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>high (g∘h)′(x)</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mrow>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='apply($op3,$x)'>
+       <msup arg='op3' intent='apply($op2,$composed)'>
+	<mrow arg='composed' intent='apply:infix($op1,$g,$h)'><!-- ?-->
+	 <mo>(</mo>
+	 <mi arg='g'>g</mi>
+	 <mo arg='op1' intent='function-composition'>∘</mo>
+	 <mi arg='h'>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo arg='op2' intent='first-derivative'>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>apply (g∘h)′(x)</td>
+   </tr>
+
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mrow>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup intent='first-derivative($composed)'>
+	<mrow arg='composed'>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo intent='composed-with'>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>&#x2061;</mo> <!-- apply function -->
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>leaf (g∘h)′(x)</td>
+   </tr>
+
+
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mi>f</mi>
+	<mo>*</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi>p</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='convex-conjugate(f)(p)'>
+       <msup>
+	<mi>f</mi>
+	<mo>*</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi>p</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$fs($p)'>
+       <msup arg='fs' intent='convex-conjugate($f)'>
+	<mi arg='f'>f</mi>
+	<mo>*</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi arg='p'>p</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <msup intent=':decorated-function'>
+	<mi>f</mi>
+	<mo intent='convex-conjugate'>*</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mrow>
+	<mo>(</mo>
+	<mi>p</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>f^*(p)</td>
+    <td>hof convex conjugate</td>
+   </tr>
+    
+   <tr> 
+    <th colspan='6'>Hints</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo intent='my-function'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mo intent='my-function:function'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mo intent='my-function:silent'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>&#x1F407;  X</td>
+    <td>intent on prefix mo</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='my-function($X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='my-function:function($X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='my-function:prefix($X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='my-function:postfix($X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='my-function:silent(
+		    _rabbit_function_applied_to,$X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>&#x1F407;  X</td>
+    <td>intent on mrow of prefix mo</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo>⨯</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$prod($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$prod:infix($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$prod:function($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$prod:silent(
+		    _vector_product, _of, $x, _with, $y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>x \vectimes y</td>
+    <td>vectimes hints</td>
+   </tr>
+
+   
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo>&#x229e;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='foo:infix($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo>&#x229e;</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo intent='foo'>&#x229e;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>     
+    </td>
+    <td>x \boxplus y</td>
+    <td>x  foo/boxplus y</td>
+   </tr>
+
+   <tr>
+    <th colspan='6'>Delimiters</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>|</mo>
+       <mi>x</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='absolute-value($x)'>
+       <mo>|</mo>
+       <mi arg='x'>x</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\lvert x\rvert</td>
+    <td>vert x abs</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msub>
+       <mrow>
+	<mo>|</mo>
+	<mi>x</mi>
+	<mo>|</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msub intent='l2-norm($x)'>
+       <mrow>
+	<mo>|</mo>
+	<mi arg='x'>x</mi>
+	<mo>|</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+     </math>
+    </td>
+    <td>\lvert x\rvert_2</td>
+    <td>l2 norm x</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>|</mo>
+       <mi>M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='determinant($M)'>
+       <mo>|</mo>
+       <mi arg='M'>M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\lvert M\rvert</td>
+    <td>vert M determinant</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>|</mo>
+       <mtable>
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='determinant($M)'>
+       <mo>|</mo>
+       <mtable arg='M' intent=':matrix'>
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$M'>
+       <mo>|</mo>
+       <mtable arg='M' intent=':determinant'>
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
+    <td>vert abcd determinant</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>‖</mo>
+       <mi>x</mi>
+       <mo>‖</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='magnitude($x)'>
+       <mo>‖</mo>
+       <mi arg='x'>x</mi>
+       <mo>‖</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\lVert x\rVert</td>
+    <td>Vert x magnitude</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>]</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>[</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='open-interval($x,$y)'>
+       <mo>]</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>[</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\mathopen] x,y\mathclose[\rVert</td>
+    <td>open-open inverted bracket</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='open-interval($x,$y)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(x,y)</td>
+    <td>open-open</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='open-closed-interval($x,$y)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(x,y]</td>
+    <td>open-closed</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='closed-open-interval($x,$y)'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>[x,y)</td>
+    <td>closed-open</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='closed-interval($x,$y)'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='closed-interval:prefix($x,$y)'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>[x,y]</td>
+    <td>closed-closed</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>&#x2009;</mo>
+       <mi>y</mi>
+       <mo>&#x2009;</mo>
+       <mi>c</mi>
+       <mo>&#x2009;</mo>
+       <mi>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='vector($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='cycle($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='vector:prefix($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='cycle:prefix($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(a\,b\,c\,d)</td>
+    <td>cycle thin space</td>
+   </tr>
+
+   <tr>
+    <th colspan='6'>Tables</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mtable>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='$m'>
+       <mo>[</mo>
+       <mtable arg='m' intent=':matrix'>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+    <td>bmatrix</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='$m'>
+       <mo>(</mo>
+       <mtable arg='m' intent=':matrix'>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
+    <td>pmatrix</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>{</mo>
+       <mtable>
+        <mtr>
+         <mtd>
+	  <mi>x</mi>
+	  <mo>+</mo>
+	  <mi>y</mi>
+	 </mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>2</mn></mtd>
+        </mtr>
+        <mtr>
+         <mtd>
+	  <mi>x</mi>
+	  <mo>&#x2212;</mo>
+	  <mi>y</mi>
+	 </mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>0</mn></mtd>
+        </mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='$m'>
+       <mo>{</mo>
+       <mtable arg='m' intent=':equations'>
+        <mtr>
+         <mtd>
+	  <mi>x</mi>
+	  <mo>+</mo>
+	  <mi>y</mi>
+	 </mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>2</mn></mtd>
+        </mtr>
+        <mtr>
+         <mtd>
+	  <mi>x</mi>
+	  <mo>&#x2212;</mo>
+	  <mi>y</mi>
+	 </mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>0</mn></mtd>
+        </mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
+    <td>braced system of equations</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mtable>
+       <mtr>
+	<mtd columnalign='right'>
+	 <mn>2</mn>
+	 <mo>&#x2062;<!--InvisibleTimes--></mo>
+	 <mi>x</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>=</mo>
+	</mtd>
+	<mtd columnalign='left'>
+	 <mn>1</mn>
+	</mtd>
+       </mtr>
+       <mtr>
+	<mtd columnalign='right'>
+	 <mi>y</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>></mo>
+	</mtd>
+	<mtd columnalign='left'>
+	 <mi>x</mi>
+	 <mo>&#x2212;</mo>
+	 <mn>3</mn>
+	</mtd>
+       </mtr>
+      </mtable>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mtable intent=':equations'>
+       <mtr>
+	<mtd columnalign='right'>
+	 <mn>2</mn>
+	 <mo>&#x2062;<!--InvisibleTimes--></mo>
+	 <mi>x</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>=</mo>
+	</mtd>
+	<mtd columnalign='left'>
+	 <mn>1</mn>
+	</mtd>
+       </mtr>
+       <mtr>
+	<mtd columnalign='right'>
+	 <mi>y</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>></mo>
+	</mtd>
+	<mtd columnalign='left'>
+	 <mi>x</mi>
+	 <mo>&#x2212;</mo>
+	 <mn>3</mn>
+	</mtd>
+       </mtr>
+      </mtable>
+     </math>
+    </td>
+    <td>\begin{align}...</td>
+    <td>align 1</td>
+   </tr>
+
+ 
+   <tr>
+    <td>
+     <math display='block'>
+      <mtable>
+       <mtr>
+	<mtd columnalign='right'>
+	 <mi>a</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>=</mo>
+	</mtd>
+	<mtd columnalign='left'>
+	 <mi>b</mi>
+	 <mo>+</mo>
+	 <mi>c</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>d</mi>
+	</mtd>
+       </mtr>
+       <mtr>
+	<mtd columnalign='right'></mtd>
+	<mtd columnalign='center'></mtd>
+	<mtd columnalign='left'>
+	 <mo form='infix'>+</mo>
+	 <mi>e</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>f</mi>
+	</mtd>
+       </mtr>
+      </mtable>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mtable intent='equation:prefix($e1,$e1x)'>
+       <mtr arg='e1'>
+	<mtd columnalign='right'>
+	 <mi>a</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>=</mo>
+	</mtd>
+	<mtd intent='_($lhs)' columnalign='left'>
+	 <mrow arg='lhs'>
+	 <mi>b</mi>
+	 <mo>+</mo>
+	 <mi>c</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>d</mi>
+	</mrow>
+	</mtd>
+       </mtr>
+       <mtr arg='e1x'>
+	<mtd intent='_' columnalign='right'></mtd>
+	<mtd intent='_' columnalign='center'></mtd>
+	<mtd arg='rhs' columnalign='left'>
+	 <mo form='infix'>+</mo>
+	 <mi>e</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>f</mi>
+	</mtd>
+       </mtr>
+      </mtable>
+     </math>
+     <math display='block'>
+      <mtable intent=':equations'>
+       <mtr>
+	<mtd columnalign='right'>
+	 <mi>a</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>=</mo>
+	</mtd>
+	<mtd columnalign='left'>
+	 <mi>b</mi>
+	 <mo>+</mo>
+	 <mi>c</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>d</mi>
+	</mtd>
+       </mtr>
+       <mtr intent=':continued-equation'>
+	<mtd columnalign='right'></mtd>
+	<mtd columnalign='center'></mtd>
+	<mtd columnalign='left'>
+	 <mo form='infix'>+</mo>
+	 <mi>e</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>f</mi>
+	</mtd>
+       </mtr>
+      </mtable>
+     </math>
+    </td>
+    <td>\begin{aligned}... wrapped</td>
+    <td> alignment with wrapped line</td>
+   </tr>
+
+   
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mtable>
+	<mtr>
+	 <mtd>
+	  <msup>
+	   <mrow>
+	    <mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo>
+	   </mrow>
+	   <mn>2</mn>
+	  </msup>
+	 </mtd>
+	 <mtd>
+	  <mo>=</mo>
+	 </mtd>
+	 <mtd>
+	  <msup><mi>a</mi><mn>2</mn></msup>
+	  <mo>+</mo>
+	  <mrow>
+	   <mn>2</mn>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>a</mi>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>b</mi>
+	  </mrow>
+	  <mo>+</mo>
+	  <msup><mi>b</mi><mn>2</mn></msup>
+	 </mtd>
+	</mtr>
+	<mtr>
+	 <mtd></mtd>
+	 <mtd>
+          <mo>&#x2a7d;</mo>
+	 </mtd>
+	 <mtd>
+	  <mrow>
+	   <mn>2</mn>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>a</mi>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>b</mi>
+	  </mrow>
+	  <mo>+</mo>
+	  <msup><mi>b</mi><mn>2</mn></msup>
+	 </mtd>
+	</mtr>
+	<mtr>
+	 <mtd></mtd>
+	 <mtd>
+	  <mo>=</mo>
+	 </mtd>
+	 <mtd>
+          <mi>b</mi>
+	  <mo>&#x2062;<!--InvisibleTimes--></mo>
+	  <mrow>
+	   <mo>(</mo>
+	   <mn>2</mn>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>a</mi>
+	   <mo>+</mo>
+	   <mi>b</mi>
+	   <mo>)</mo>
+	  </mrow>
+	 </mtd>
+	</mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='derivation($m)'>
+       <mtable arg='m' intent=':lines'>
+	<mtr>
+	 <mtd>
+	  <msup>
+	   <mrow>
+	    <mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo>
+	   </mrow>
+	   <mn>2</mn>
+	  </msup>
+	 </mtd>
+	 <mtd>
+	  <mo>=</mo>
+	 </mtd>
+	 <mtd>
+	  <msup><mi>a</mi><mn>2</mn></msup>
+	  <mo>+</mo>
+	  <mrow>
+	   <mn>2</mn>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>a</mi>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>b</mi>
+	  </mrow>
+	  <mo>+</mo>
+	  <msup><mi>b</mi><mn>2</mn></msup>
+	 </mtd>
+	</mtr>
+	<mtr>
+	 <mtd></mtd>
+	 <mtd>
+          <mo>&#x2a7d;</mo>
+	 </mtd>
+	 <mtd>
+	  <mrow>
+	   <mn>2</mn>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>a</mi>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>b</mi>
+	  </mrow>
+	  <mo>+</mo>
+	  <msup><mi>b</mi><mn>2</mn></msup>
+	 </mtd>
+	</mtr>
+	<mtr>
+	 <mtd></mtd>
+	 <mtd>
+	  <mo>=</mo>
+	 </mtd>
+	 <mtd>
+          <mi>b</mi>
+	  <mo>&#x2062;<!--InvisibleTimes--></mo>
+	  <mrow>
+	   <mo>(</mo>
+	   <mn>2</mn>
+	   <mo>&#x2062;<!--InvisibleTimes--></mo>
+	   <mi>a</mi>
+	   <mo>+</mo>
+	   <mi>b</mi>
+	   <mo>)</mo>
+	  </mrow>
+	 </mtd>
+	</mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>\begin{align}...</td>
+    <td>aligned derivation</td>
+   </tr>
+
+   
+   <tr>
+    <th colspan='6'>Calculus</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mover>
+       <mo>x</mo>
+       <mo>&#x02D9;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mover intent='derivative($x,1)'>
+       <mo arg='x'>x</mo>
+       <mo>&#x02D9;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent='derivative:function($x)'>
+       <mo arg='x'>x</mo>
+       <mo intent='derivative'>&#x02D9;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent='dot:postfix($x)'>
+       <mo arg='x'>x</mo>
+       <mo intent='derivative'>&#x02D9;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>\dot{x}</td>
+    <td>dot x</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mover>
+       <mo>x</mo>
+       <mo>&#x00A8;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mover intent='derivative($x,2)'>
+       <mo arg='x'>x</mo>
+       <mo>&#x00A8;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent='second-derivative:function($x)'>
+       <mo arg='x'>x</mo>
+       <mo intent='second-derivative'>&#x00A8;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent='dot-dot:postfix($x)'>
+       <mo arg='x'>x</mo>
+       <mo intent='second-derivative'>&#x00A8;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>\ddot{x}</td>
+    <td>ddot x</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mrow><mi>d</mi><mi>x</mi></mrow>
+       <mrow><mi>d</mi><mi>t</mi></mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='derivative($x,1,$t)'>
+       <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
+       <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent='derivative:prefix(
+		     _of,$x,_with_respect_to,$t)'>
+       <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
+       <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent='derivative:silent(
+		     _d,$x,_by,_d,$t)'>
+       <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
+       <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>\frac{dx}{dt}</td>
+    <td>dx by dt</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mfrac>
+	<mrow><mi>d</mi></mrow>
+	<mrow><mi>d</mi><mi>t</mi></mrow>
+       </mfrac>
+       <mrow>
+	<mi>f</mi>
+	<mo>&#x2061;</mo>
+	<mo>(</mo>
+	<mi>t</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='derivative($ft,1,$t)'>
+       <mfrac>
+	<mrow><mi>d</mi></mrow>
+	<mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+       </mfrac>
+       <mrow arg='ft'>
+	<mi>f</mi>
+	<mo>&#x2061;</mo>
+	<mo>(</mo>
+	<mi>t</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='derivative:prefix(
+		    _of,$ft,_with_respect_to,$t)'>
+       <mfrac>
+	<mrow><mi>d</mi></mrow>
+	<mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+       </mfrac>
+       <mrow arg='ft'>
+	<mi>f</mi>
+	<mo>&#x2061;</mo>
+	<mo>(</mo>
+	<mi>t</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>   
+    </td>
+    <td>\frac{d}{dt}f(t)</td>
+    <td>d by dt f of t</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='derivative($x,2,$t)'>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi arg='x'>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi arg='t'>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent='second-derivative:prefix(
+		     _of,$x,_with_respect_to,$t)'>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi arg='x'>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi arg='t'>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent='derivative:silent(
+		     _d,_2,$x,_by,_d,$t,_squared)'>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi arg='x'>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi arg='t'>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>\frac{d^2x}{dt^2}</td>
+    <td>dx2 by dt2</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='partial-second-derivative(
+		     $f,$x,$y)'>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='x'>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='y'>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent='partial-second-derivative:prefix(
+		     _of,$f,_with_respect_to,$x,_and,$y)'>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='x'>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='y'>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>\frac{\partial^2 f}{\partial x \partial y}</td>
+    <td>partial df by dx dy</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mo>&#x222B;</mo>
+      <mrow>
+       <mi>f</mi>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mo>&#x222B;</mo>
+      <mrow>
+       <mi>f</mi>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>\int f(x) dx</td>
+    <td>int f(x) dx</td>    
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+       </msubsup>
+       <msup><mi>x</mi><mn>2</mn></msup>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msubsup>
+	<mo>∫</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+       </msubsup>
+       <msup><mi>x</mi><mn>2</mn></msup>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>\int_0^1 x^2 dx</td>   
+    <td>defint 0 to 1 x squared</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mrow>
+       <mo>[</mo>
+       <mn>2</mn>
+       <mo>&#x2062;</mo>
+       <mi>x</mi>
+       <msubsup>
+	<mo>]</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+       </msubsup>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mn>2</mn>
+       <mo>&#x2062;</mo>
+       <mi>x</mi>
+       <msubsup>
+	<mo>]</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+       </msubsup>
+      </mrow>
+     </math>
+    </td>
+    <td>[2x]_0^1</td>
+    <td>evaluate 2x at 1 and 0 bracket</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <msubsup>
+       <mrow>
+	<mo>[</mo>
+	<mn>2</mn>
+	<mo>&#x2062;</mo>
+	<mi>x</mi>
+	<mo>]</mo>
+       </mrow>
+       <mn>0</mn>
+       <mn>1</mn>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mrow>
+	<mo>[</mo>
+	<mn>2</mn>
+	<mo>&#x2062;</mo>
+	<mi>x</mi>
+	<mo>]</mo>
+       </mrow>
+       <mn>0</mn>
+       <mn>1</mn>
+      </msubsup>
+     </math>
+    </td>
+    <td>[2x]_0^1</td>
+    <td>evaluate 2x at 1 and 0 bracket expression in base </td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mrow>
+       <mn>2</mn>
+       <mo>&#x2062;</mo>
+       <mi>x</mi>
+       <msubsup>
+	<mo>|</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+       </msubsup>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mn>2</mn>
+       <mo>&#x2062;</mo>
+       <mi>x</mi>
+       <msubsup>
+	<mo>|</mo>
+	<mn>0</mn>
+	<mn>1</mn>
+       </msubsup>
+      </mrow>
+     </math>
+    </td>
+    <td>2x|_0^1</td>
+    <td>evaluate 2x at 1 and 0 vertical bar</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <msubsup>
+       <mrow>
+	<mn>2</mn>
+	<mo>&#x2062;</mo>
+	<mi>x</mi>
+	<mo>|</mo>
+       </mrow>
+       <mn>0</mn>
+       <mn>1</mn>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mrow>
+	<mn>2</mn>
+	<mo>&#x2062;</mo>
+	<mi>x</mi>
+	<mo>|</mo>
+       </mrow>
+       <mn>0</mn>
+       <mn>1</mn>
+      </msubsup>
+     </math>
+    </td>
+    <td>2x|_0^1</td>
+    <td>evaluate 2x at 1 and 0 vertical bar expression in base</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>\oint \frac{1}{z} dz</td>
+    <td>oint 1 over z dz</td>   
+   </tr>
+
+
+
+ 
+   <tr>
+    <th colspan='6'>Names</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mrow>
+	<mover>
+	 <mi>v</mi>
+	 <mo>&#x02d9;</mo>
+	</mover>
+	<mo>**</mo>
+	<mn>2</mn>
+       </mrow>
+       <mo>+</mo>
+       <mrow>
+	<mover>
+	 <mi>w</mi>
+	 <mo>&#x02d9;</mo>
+	</mover>
+	<mo>**</mo>
+	<mn>2</mn>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mrow intent='power($v̇, $n)'>
+	<mover arg='v̇' intent='first-deriv(v)'>
+	 <mi>v</mi>
+	 <mo>&#x02d9;</mo>
+	</mover>
+	<mo>**</mo>
+	<mn arg='n'>2</mn>
+       </mrow>
+       <mo>+</mo>
+       <mrow intent='power($ẇ, $n)'>
+	<mover arg='ẇ' intent='first-deriv(w)'>
+	 <mi>w</mi>
+	 <mo>&#x02d9;</mo>
+	</mover>
+	<mo>**</mo>
+	<mn arg='n'>2</mn>
+       </mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>\dot{v}**2+\dot{w}**2</td>
+    <td> NFC v dot and w dot</td>
+   </tr>
+ 
+   <tr>
+    <th colspan='6'>Templates</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mi>x</mi>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mi intent='the_variable_x'>x</mi>
+     </math>
+    </td>
+    <td>x</td>
+    <td>x with string</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>a</mi>
+       <mo>+</mo>
+       <mi>b</mi>
+       <mo>!</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='$p(_($a, $f($b)))'>
+       <mi arg='a'>a</mi>
+       <mo arg='p' intent='plus'>+</mo>
+       <mi arg='b'>b</mi>
+       <mo arg='f' intent='factorial'>!</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>a+b!</td>
+    <td>a plus b factorial unary plus intent</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>a</mi>
+       <mo>+</mo>
+       <mi>b</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='foo:int:silent(bar:positive-int-int, $a:foo-bar-foo-bar, $b:number)'>
+       <mi arg='a'>a</mi>
+       <mo arg='p' intent='plus'>+</mo>
+       <mi arg='b' intent='b:negative-int-int'>b</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>a+b</td>
+    <td>Properties on argref</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>R</mi>
+       <mo>&#x27e8;</mo>
+       <mi>X</mi>
+       <mo>&#x27e9;</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='_(free, $r, _algebra_on, $x)'>
+       <mi arg='r'>R</mi>
+       <mo>&#x27e8;</mo>
+       <mi arg='x'>X</mi>
+       <mo>&#x27e9;</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='_:silent(free, $r, _algebra_on, $x)'>
+       <mi arg='r'>R</mi>
+       <mo>&#x27e8;</mo>
+       <mi arg='x'>X</mi>
+       <mo>&#x27e9;</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='free-algebra:silent(_free, $r, _algebra_on, $x)'>
+       <mi arg='r'>R</mi>
+       <mo>&#x27e8;</mo>
+       <mi arg='x'>X</mi>
+       <mo>&#x27e9;</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>R\langle X\rangle</td>
+    <td>free r-algebra on x</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo>+</mo>
+       <mn>2</mn>
+       <mo>|</mo>
+       <mi>y</mi>
+       <mo>-</mo>
+       <mi>z</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='plus:infix($x,times:infix(2,absolute-value(minus:infix($y,$z))))'>
+       <mi arg='x'>x</mi>
+       <mo>+</mo>
+       <mn>2</mn>
+       <mo>|</mo>
+       <mi arg='y'>y</mi>
+       <mo>-</mo>
+       <mi arg='z'>z</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='plus($x,times(2,absolute-value(infix($y,$z))))'>
+       <mi arg='x'>x</mi>
+       <mo>+</mo>
+       <mn>2</mn>
+       <mo>|</mo>
+       <mi arg='y'>y</mi>
+       <mo>-</mo>
+       <mi arg='z'>z</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo>+</mo>
+       <mn>2</mn>
+       <mo intent='absolute-value'>|</mo>
+       <mi>y</mi>
+       <mo>-</mo>
+       <mi>z</mi>
+       <mo intent='end-absolute-value'>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>x+2\lvert y-z\rvert</td>
+    <td>x plus 2 times the absolute-value of y minus z</td>
+   </tr>
+   
+   
+   
+   <tr>
+    <th colspan='6'>XML Features</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>log</mi>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='log(x)'/>
+     </math>
+     <math display='block'>
+      <mrow intent='log($x)'>
+       <mi arg='x'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='log&#x28;&#x24;x)'>
+       <mi>log</mi>
+       <mi arg='x'>Y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>\log x</td>
+    <td>NCR x28 and x24</td>
+   </tr>
+   
+   <tr>
+    <th colspan='6'>HTML</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mtext>a <b>bold</b> word</mtext>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mtext>a <b>bold</b> word</mtext>
+     </math>
+    </td>
+    <td>x+\text{a \textbf{bold} word</td>
+    <td>nested html b</td>
+   </tr>
+
+
+
+   <tr>
+    <th colspan='6'>Unexpected arity</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='divides'>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td> - </td>
+    <td>0-ary divides</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='divides(z)'>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td> - </td>
+    <td>1-ary divides</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='divides(w,x,y)'>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td> - </td>
+    <td>3-ary divides</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mover>
+       <mi>X</mi>
+       <mo>→</mo>
+      </mover>
+     </math>
+    </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mover intent='ray($X)'>
+       <mi arg='X'>X</mi>
+       <mo>→</mo>
+      </mover>
+     </math>
+    </td>
+    <td> - </td>
+    <td>1-ary ray</td>
+   </tr>
+
+   
+   <tr>
+    <th colspan='6'>Content MathML</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <apply>
+       <sin/>
+       <ci>x</ci>
+      </apply>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <apply intent='sin(x)'>
+       <sin/>
+       <ci>x</ci>
+      </apply>
+     </math>
+    </td>
+    <td>\sin x</td>
+    <td>content mathml sin x</td>
+   </tr>
+
+   
+   <tr>
+    <th colspan='6'>Intent Grammar Errors</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac><mi intent='hmm)('>x</mi>
+      <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
+    <td> - </td>
+    <td>bad intent paren</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mrow intent='sum($a,$b)'>
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td> - </td>
+    <td>bad intent argref</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='sum($1.234,$:x:)'>
+       <mn arg='1.234'>1.234</mn>
+       <mo>+</mo>
+       <mi arg=':x:'>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td> - </td>
+    <td>bad intent arg names</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mi>x</mi>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mi intent='one two'>x</mi>
+     </math>
+    </td>
+    <td> - </td>
+    <td>multiple identifiers</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>12</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn intent='1.2e1'>12</mn>
+     </math>
+    </td>
+    <td> - </td>
+    <td>bad number</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mover>
+       <mi>X</mi>
+       <mo>&#x203e;</mo>
+      </mover>
+      <mo>+</mo>
+      <mover>
+       <mi>Y</mi>
+       <mo>&#x203e;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mover intent='mean($x('>
+       <mi arg='x'>X</mi>
+       <mo>&#x203e;</mo>
+      </mover>
+      <mo>+</mo>
+      <mover intent='mean($x)'>
+       <mi arg='x'>Y</mi>
+       <mo>&#x203e;</mo>
+      </mover>
+     </math>
+    </td>
+   <td> - </td>
+    <td>bad intent subexpression</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mi>x</mi>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mi intent='just say this'>x</mi>
+     </math>
+    </td>
+    <td>x</td>
+    <td>Free text just say this</td>
+   </tr>
+
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='just say this about $x'>
+       <mi arg='x'>x</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>x</td>
+    <td>Free text with argref</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    </td>
+     <td>
+     <math display='block'>
+      <mrow>
+       <mo intent='&#x1F407;'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+     </td>
+     <td>🐇 X</td>
+     <td>intent 🐇</td>
+   </tr>
+   
+  </table>
+
+
+
+ </body>
+</HTML>
