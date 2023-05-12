@@ -38,7 +38,7 @@
 - property: system-of-equations
   type: table
   applicability: mtable
-  effect: the table should be read in style suitable for displayed equations (and inequations)
+  effect: "the table should be read in style suitable for displayed equations (and inequations)"
 
 
 - property: lines
