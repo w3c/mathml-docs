@@ -18,6 +18,8 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 # Core Intent Property List
 
+The data displayed below is derived from the YAML file
+[core-properties.yml](https://github.com/w3c/mathml-docs/blob/main/_data/core-properties.yml)
 
 
 <details>
