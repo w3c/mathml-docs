@@ -43,7 +43,9 @@
   type: table
   applicability: mtable
   effect: the table should be read in style suitable for matricies
-
+  examples;
+    - intent :matrix
+      en: "the 2 by 2 matrix; column 1; a; column 2; b; column 1; c; column 2; d"
 
 - property: system-of-equations
   type: table
