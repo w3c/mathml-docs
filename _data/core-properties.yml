@@ -45,7 +45,7 @@
   effect: the table should be read in style suitable for matricies
   examples:
     - intent: ":matrix"
-      mathml:|
+      mathml: |
       <mrow intent='$m'>
        <mo>[</mo>
        <mtable arg='m' intent=':matrix'>
