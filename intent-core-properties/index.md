@@ -61,7 +61,7 @@ The data displayed below is derived from the YAML file
 
 {%- if p.effect -%}<dd>{{p.effect}}</dd>{%- endif -%}
 {%- for e in p.examples %}
-<dd>
+<dd kramdown=1>
 <code>{{e.intent}}</code>
 {%- if e.mathml -%}<pre>{{e.mathml | xml_escape}}</pre>{%- endif -%}
 {%if e.mathml %}
@@ -70,6 +70,7 @@ The data displayed below is derived from the YAML file
 ```
 {{e.mathml }}
 ```
+
 {% endif %}
 {%- for language in site.data.languages -%}
 {%- if e[language.language-code] %}
