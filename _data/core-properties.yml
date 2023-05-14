@@ -2,7 +2,7 @@
 
 - property: function
   type: fixity
-  applicablity: intent function head
+  applicability: intent function head
   examples:
     - intent: "f:function(x,y)"
       en: [f of x comma y, f of x and y]
@@ -10,14 +10,14 @@
 
 - property: prefix
   type: fixity
-  applicablity: intent function head
+  applicability: intent function head
   examples:
     - intent: "f:prefix(x,y)"
       en: "f x y"
 
 - property: postfix
   type: fixity
-  applicablity: intent function head
+  applicability: intent function head
   examples:
     - intent: "f:posfix(x)"
       en: "x f"
@@ -25,7 +25,7 @@
 
 - property: infix
   type: fixity
-  applicablity: intent function head
+  applicability: intent function head
   examples:
     - intent: "f:infix(x,y)"
       en: "x f y"
@@ -33,7 +33,7 @@
 
 - property: silent
   type: fixity
-  applicablity: intent function head
+  applicability: intent function head
   examples:
     - intent: "f:silent(x,y)"
       en: "x y"
