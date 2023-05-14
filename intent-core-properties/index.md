@@ -60,9 +60,10 @@ The data displayed below is derived from the YAML file
 <dt>{{p.property}}</dt>
 
 {%- if p.effect -%}<dd>{{p.effect}}</dd>{%- endif -%}
+{%- if p.applicablity %}<dd>{{p.applicablity}}</dd>{%- endif -%}
 {%- for e in p.examples %}
-<dd kramdown=1>
-<code>{{e.intent}}</code>
+<dd>
+<div>intent: <code>{{e.intent}}</code></div>
 {%if e.mathml %}
 {% highlight xml %}
 {{e.mathml }}
