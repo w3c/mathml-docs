@@ -60,7 +60,7 @@ The data displayed below is derived from the YAML file
 <dt>{{p.property}}</dt>
 
 {%- if p.effect -%}<dd>{{p.effect}}</dd>{%- endif -%}
-{%- if p.applicablity %}<dd>{{p.applicablity}}</dd>{%- endif -%}
+{%- if p.applicability %}<dd>{{p.applicability}}</dd>{%- endif -%}
 {%- for e in p.examples %}
 <dd>
 <div>intent: <code>{{e.intent}}</code></div>
