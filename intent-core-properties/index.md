@@ -66,12 +66,12 @@ The data displayed below is derived from the YAML file
 {%- if e.mathml -%}<pre>{{e.mathml | xml_escape}}</pre>{%- endif -%}
 {%- for language in site.data.languages -%}
 {%- if e[language.language-code] %}
-<span class="{{language.language-code}}"><br>
+<div class="{{language.language-code}}">
 <b>{{language.language-code}}:</b>
 {%- for sp in e[language.language-code] %}
 {{sp}};
 {%- endfor -%}
-</span>
+</div>
 {%- endif -%}
 {% endfor %}
 
