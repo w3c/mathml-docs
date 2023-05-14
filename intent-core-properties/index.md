@@ -67,9 +67,15 @@ The data displayed below is derived from the YAML file
 {%if e.mathml %}
 <p>xxx</p>
 
-```
+{% highlight xml %}
 {{e.mathml }}
-```
+{% endhighlight %}
+
+<p>yyy</p>
+
+{% highlight xml %}
+{{e.mathml  | xml_escape}}
+{% endhighlight %}
 
 {% endif %}
 {%- for language in site.data.languages -%}
