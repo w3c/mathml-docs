@@ -63,7 +63,7 @@ The data displayed below is derived from the YAML file
 {%- for e in p.examples %}
 <dd>
 <code>{{e.intent}}</code>
-{%- if e.mathml -%}<pre>{{p.mathml}}</pre>{%- endif -%}
+{%- if e.mathml -%}<pre>{{p.mathml | xml_escape}}</pre>{%- endif -%}
 {%- for language in site.data.languages -%}
 {%- if e[language.language-code] %}
 <span class="{{language.language-code}}"><br>
