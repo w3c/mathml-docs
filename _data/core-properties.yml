@@ -42,7 +42,7 @@
 - property: matrix
   type: table
   applicability: mtable
-  effect: the table should be read in style suitable for matricies
+  effect: the table should be read in a style suitable for matricies
   examples:
     - intent: ":matrix"
       mathml: |
@@ -60,13 +60,13 @@
 - property: system-of-equations
   type: table
   applicability: mtable
-  effect: "the table should be read in style suitable for displayed equations (and inequations)"
+  effect: "the table should be read in a style suitable for displayed equations (and inequations)"
 
 
 - property: lines
   type: table
   applicability: mtable
-  effect: the table should be read without implying any mathematcal context other than a multi-line display
+  effect: the table should be read without implying any mathematical context other than a multi-line display
 
 
 - property: continued-row
