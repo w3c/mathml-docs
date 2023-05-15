@@ -82,9 +82,9 @@
   applicability: mi
   intent: ":unit"
   examples:
-    - mathml: "<mrow><mn>1.5</mn><mi intent=":unit">km</mi></mrow>"
+    - mathml: "<mrow><mn>1.5</mn><mi intent=':unit'>km</mi></mrow>"
       en: 1.5 kilometres
-    - mathml: "<mrow><mn>2</mn><mi mathvariant='normal' intent=":unit">Ω</mi></mrow>"
+    - mathml: "<mrow><mn>2</mn><mi mathvariant='normal' intent=':unit'>Ω</mi></mrow>"
       en: 2 ohms
 
 - property: currency
@@ -92,10 +92,10 @@
   applicability: mi
   intent: ":currency"
   examples:
-    - mathml: "<mrow><mi mathvariant='normal' intent=":currency">$</mi><mn>1.50</mn></mrow>"
+    - mathml: "<mrow><mi mathvariant='normal' intent=':currency'>$</mi><mn>1.50</mn></mrow>"
       en: 1.50 dollars
-    - mathml: "<mrow><mn>1.50</mn><mi intent=":currency">USD</mi></mrow>"
+    - mathml: "<mrow><mn>1.50</mn><mi intent=':currency'>USD</mi></mrow>"
       en: 1.50 U S dollars
-    - mathml: "<mrow><mi mathvariant='normal' intent=":currency">£</mi><mn>1.50</mn></mrow>"
+    - mathml: "<mrow><mi mathvariant='normal' intent=':currency'>£</mi><mn>1.50</mn></mrow>"
       en: 1.50 pounds
       
