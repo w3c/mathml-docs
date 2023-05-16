@@ -64,7 +64,7 @@ The data displayed below is derived from the YAML file
 {%- if p.applicability %}<div>applicability: {{p.applicability}}</div>{%- endif -%}
 {%- if p.intent -%}<div><code>{{p.intent}}</code></div>{%- endif -%}
 {%- for e in p.examples %}
-{%- if e.intent -%}<div><code>{e.intent}}</code></div>{%- endif -%}
+{%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}
 {%if e.mathml %}
 {% highlight xml %}
 {{e.mathml }}
