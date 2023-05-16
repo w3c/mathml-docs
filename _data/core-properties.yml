@@ -99,3 +99,59 @@
     - mathml: "<mrow><mi mathvariant='normal' intent=':currency'>£</mi><mn>1.50</mn></mrow>"
       en: 1.50 pounds
       
+
+- property: chemical-element
+  type: chemistry
+  intent: "chemical-element"
+  examples:
+    - mathml: |
+        <mrow intent='chem-formula'>
+          <mmultiscripts>
+            <mi mathvariant='normal' intent=':chemical-element'>H</mi>
+            <mn>2</mn>
+            <mrow/>
+          </mmultiscripts>
+          <mi mathvariant='normal' intent=':chemical-element'>O</mi>
+        </mrow>
+     - en: h 2 o
+
+
+- property: chemical-equation
+  type: chemistry
+  effect: read the term as a chemical equation
+  examples:
+   - mathml: |
+      <mrow intent=':chemical-equation'>
+       <mrow intent=':chemical-equation'>
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mrow intent=':chemical-equation'>
+         <mmultiscripts intent=':chemical-formula'>
+          <mi mathvariant='normal' intent=':chemical-element'>H</mi>
+          <mn>2</mn>
+          <none></none>
+         </mmultiscripts>
+         <mo>&#x2063;</mo>
+         <mi mathvariant='normal' intent=':chemical-element'>O</mi>
+        </mrow>
+       </mrow>
+       <mo>⟶</mo>
+       <mrow intent=':chemical-equation'>
+        <mrow intent=':chemical-equation'>
+         <mn>2</mn>
+         <mo>&#x2062;</mo>
+         <mmultiscripts intent=':chemical-formula'>
+          <mi mathvariant='normal' intent=':chemical-element'>H</mi>
+          <mn>2</mn>
+          <none></none>
+         </mmultiscripts>
+        </mrow>
+        <mo>+</mo>
+        <mmultiscripts intent=':chemical-formula'>
+         <mi mathvariant='normal' intent=':chemical-element'>O</mi>
+         <mn>2</mn>
+         <none></none>
+        </mmultiscripts>
+       </mrow>
+      </mrow>
+    en: "\ce{2 H2O → 2 H2 + O2}"
