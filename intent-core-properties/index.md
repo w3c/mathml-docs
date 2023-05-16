@@ -79,17 +79,16 @@ The data displayed below is derived from the YAML file
 <b>{{language.language-code}}:</b>
 {{sp}}
 </div>
-</div>
-{%- endfor -%}
+{%- endfor -%}{% comment %} sp speech{% endcomment %}
 {%- endif -%}
-{% endfor %}
+{% endfor %}{% comment %} language in languages{% endcomment %}
 
 
-
-{% endfor %}
+</div>
+{% endfor %}{% comment %} e in examples{% endcomment %}
 </dd>
 
-{% endfor %}
+{% endfor %}{% comment %} p in core.properties{% endcomment %}
 
 
 
