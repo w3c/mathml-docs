@@ -455,62 +455,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[with:
-      variables: [name: ClearSpeak_Fractions=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_Fractions=&apos;Auto&apos;, &apos;EndFrac&apos;, $ClearSpeak_Fractions)"],[name: ClearSpeak_AbsoluteValue=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_AbsoluteValue=&apos;Auto&apos;, &apos;AbsEnd&apos;, $ClearSpeak_AbsoluteValue)"],[name: ClearSpeak_Roots=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_Roots=&apos;Auto&apos;, &apos;RootEnd&apos;, $ClearSpeak_Roots)"],
-      replace: [test: [  if: &apos;x: "$MathRate = 100"&apos; then:[x: "*"] else:[rate: 987654321.5[x: "*"]]]
-]]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;skip-super id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>†&lt;/mo>
-  &lt;/skip-super>
- &lt;/math>
-The patterns are in \\?\Rules\Languages\en\SharedRules\default.yaml.
-
-caused by: replacing inside &apos;with&apos;
-caused by: attempting replacement pattern: "default" for "skip-super".
-Replacement
-
-  - x: "*[1]"
-  - test: [  if: &apos;x: "name(.)=&apos;say-super&apos;"&apos; then  _test:test: [  if: &apos;x: "$Verbosity=&apos;Terse&apos;"&apos; then:[t: "super"] else:[t: "superscript"]]
-]
-
-  - x: "*[2]"
-  - pause: 150
-
-...due to matching the following MathML with the pattern
-x: "count(*)=2"
- &lt;skip-super id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>†&lt;/mo>
- &lt;/skip-super>
-The patterns are in \\?\Rules\Languages\en\SharedRules\general.yaml.
-
-caused by: attempting replacement pattern: "default" for "mo".
-Replacement
-
-  - bookmark: x: "@id"
-
-  - x: "text()"
-
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>†&lt;/mo>
-The patterns are in \\?\Rules\Languages\en\SharedRules\default.yaml.
-
-caused by: in file "Rules\\Languages\\en\\unicode-full.yaml"
-caused by: In file Some("Rules\\Languages\\en\\unicode-full.yaml")
-caused by: In definition of char: &apos;,&apos; (0x44)
-caused by: Could not compile XPath for pattern:
-$SpeechStyle != &apos;ClearSpeak&apos; or $ClearSpeak_Ellipses = &apos;Auto&apos; or  ( following-sibling::*[1][text()!= &apos;…&apos;] and preceding-sibling::*[1][text()!=&apos;…&apos;]  ) or  ../*[1][text()=&apos;…&apos;]"
-missing &apos;"&apos;
-caused by: ExtraUnparsedTokens
-'>x †,</span></div>
+    <div class="mathcat">x †,</div>
 </td>
 <td>
 <pre id='id-0-cd0b093dca507a5fa7fa4336a366b865'><a class='self' href='#id-0-cd0b093dca507a5fa7fa4336a366b865'>&#xa7;</a>
@@ -930,7 +875,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of,   r ⟦   x ⟧</div>
+    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of;   r, left white square bracket,   x right white square bracket</div>
 </td>
 <td>
 <pre id='id-0-589d0d22d546a00254597ae3631907f2'><a class='self' href='#id-0-589d0d22d546a00254597ae3631907f2'>&#xa7;</a>
@@ -1059,7 +1004,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">sine squared of 𝜃, plus cosine squared of 𝜃; is equal to 1</div>
+    <div class="mathcat">sine squared of theta, plus cosine squared of theta; is equal to 1</div>
 </td>
 <td>
 <pre id='id-0-6c259889c22899732a27c5147b38a798'><a class='self' href='#id-0-6c259889c22899732a27c5147b38a798'>&#xa7;</a>
@@ -2381,7 +2326,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x ⨯ y</div>
+    <div class="mathcat">x cross product y</div>
 </td>
 <td>
 <pre id='id-0-aeed99c376bcd198b1ccc66a7a060d58'><a class='self' href='#id-0-aeed99c376bcd198b1ccc66a7a060d58'>&#xa7;</a>
@@ -2475,7 +2420,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x ⊞ y</div>
+    <div class="mathcat">x squared plus y</div>
 </td>
 <td>
 <pre id='id-0-736d135c9ee634336bdcda1d7b0c264b'><a class='self' href='#id-0-736d135c9ee634336bdcda1d7b0c264b'>&#xa7;</a>
@@ -3791,7 +3736,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">3 equations, <br/>equation 1; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; <br/>equation 2; empty, ⩽, 2 eigh b, plus b squared; <br/>equation 3; empty, is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
+    <div class="mathcat">3 equations, <br/>equation 1; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; <br/>equation 2; empty, less than or slanted equal to, 2 eigh b, plus b squared; <br/>equation 3; empty, is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
 </td>
 <td>
 <pre id='id-0-0b585d8ae1a3372e8af93d2cdcf2de29'><a class='self' href='#id-0-0b585d8ae1a3372e8af93d2cdcf2de29'>&#xa7;</a>
@@ -3865,7 +3810,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">derivation of, 3 lines, <br/>line 1; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; <br/>line 2; empty, ⩽, 2 eigh b, plus b squared; <br/>line 3; empty, is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
+    <div class="mathcat">derivation of, 3 lines, <br/>line 1; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; <br/>line 2; empty, less than or slanted equal to, 2 eigh b, plus b squared; <br/>line 3; empty, is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
 </td>
 
     <td>\begin{align}...</td>
@@ -3898,7 +3843,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x with ˙ above</div>
+    <div class="mathcat">x with dot above</div>
 </td>
 <td>
 <pre id='id-0-8989f3861dc3d56e51684a6900bd3c76'><a class='self' href='#id-0-8989f3861dc3d56e51684a6900bd3c76'>&#xa7;</a>
@@ -3957,7 +3902,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x with ¨ above</div>
+    <div class="mathcat">x with double dot above</div>
 </td>
 <td>
 <pre id='id-0-a6c7f31ea2e1583b2454f09705a7f3c9'><a class='self' href='#id-0-a6c7f31ea2e1583b2454f09705a7f3c9'>&#xa7;</a>
@@ -4847,7 +4792,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">v ˙, ** 2, plus w ˙, ** 2</div>
+    <div class="mathcat">v dot, ** 2, plus w dot, ** 2</div>
 </td>
 <td>
 <pre id='id-0-11d4ff268a13a3f5c1bdf2d9db98adf2'><a class='self' href='#id-0-11d4ff268a13a3f5c1bdf2d9db98adf2'>&#xa7;</a>
@@ -5030,7 +4975,7 @@ caused by: ExtraUnparsedTokens
 &lt;/math>
 </pre>
 
-    <div class="mathcat">r ⟨   x ⟩</div>
+    <div class="mathcat">r, left angle bracket   x right angle bracket</div>
 </td>
 <td>
 <pre id='id-0-ed8f97bda25c8db8aafc3aa1653fa4e1'><a class='self' href='#id-0-ed8f97bda25c8db8aafc3aa1653fa4e1'>&#xa7;</a>
