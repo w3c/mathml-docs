@@ -113,7 +113,7 @@
           </mmultiscripts>
           <mi mathvariant='normal' intent=':chemical-element'>O</mi>
         </mrow>
-     - en: h 2 o
+      en: h 2 o
 
 
 - property: chemical-equation
@@ -154,4 +154,4 @@
         </mmultiscripts>
        </mrow>
       </mrow>
-    en: "\ce{2 H2O → 2 H2 + O2}"
+     en: "\ce{2 H2O → 2 H2 + O2}"
