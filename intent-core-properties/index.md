@@ -7,6 +7,7 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+figure.highlight {margin-left:0em}
 </style>
 
 <style id="langcss">
