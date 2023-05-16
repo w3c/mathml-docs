@@ -58,11 +58,10 @@ The data displayed below is derived from the YAML file
 {% endif %}
 
 <dt>{{p.property}}</dt>
-
-{%- if p.effect -%}<dd>{{p.effect}}</dd>{%- endif -%}
-{%- if p.applicability %}<dd>applicability: {{p.applicability}}</dd>{%- endif -%}
-{%- for e in p.examples %}
 <dd>
+{%- if p.effect -%}<div>{{p.effect}}</div>{%- endif -%}
+{%- if p.applicability %}<div>applicability: {{p.applicability}}</div>{%- endif -%}
+{%- for e in p.examples %}
 <div>intent: <code>{{e.intent}}</code></div>
 {%if e.mathml %}
 {% highlight xml %}
