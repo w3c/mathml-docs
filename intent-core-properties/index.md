@@ -75,7 +75,7 @@ The data displayed below is derived from the YAML file
 {%- for sp in e[language.language-code] %}
 <div class="{{language.language-code}}">
 <b>{{language.language-code}}:</b>
-{{sp}};
+{{sp}}
 </div>
 {%- endfor -%}
 {%- endif -%}
