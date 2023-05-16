@@ -129,7 +129,7 @@
          <mmultiscripts intent=':chemical-formula'>
           <mi mathvariant='normal' intent=':chemical-element'>H</mi>
           <mn>2</mn>
-          <none></none>
+          <mrow/>
          </mmultiscripts>
          <mo>&#x2063;</mo>
          <mi mathvariant='normal' intent=':chemical-element'>O</mi>
@@ -143,14 +143,14 @@
          <mmultiscripts intent=':chemical-formula'>
           <mi mathvariant='normal' intent=':chemical-element'>H</mi>
           <mn>2</mn>
-          <none></none>
+          <mrow/>
          </mmultiscripts>
         </mrow>
         <mo>+</mo>
         <mmultiscripts intent=':chemical-formula'>
          <mi mathvariant='normal' intent=':chemical-element'>O</mi>
          <mn>2</mn>
-         <none></none>
+         <mrow/>
         </mmultiscripts>
        </mrow>
       </mrow>
