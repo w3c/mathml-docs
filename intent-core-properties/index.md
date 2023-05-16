@@ -8,6 +8,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 .markdown-body .highlight, figure.highlight {margin-left:0em; margin-bottom:0em}
+div.ex {border: sold thin #EEF}
 </style>
 
 <style id="langcss">
@@ -64,6 +65,7 @@ The data displayed below is derived from the YAML file
 {%- if p.applicability %}<div>applicability: {{p.applicability}}</div>{%- endif -%}
 {%- if p.intent -%}<div><code>{{p.intent}}</code></div>{%- endif -%}
 {%- for e in p.examples %}
+<div class="ex">
 {%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}
 {%if e.mathml %}
 {% highlight xml %}
@@ -76,6 +78,7 @@ The data displayed below is derived from the YAML file
 <div class="{{language.language-code}}">
 <b>{{language.language-code}}:</b>
 {{sp}}
+</div>
 </div>
 {%- endfor -%}
 {%- endif -%}
