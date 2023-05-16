@@ -78,7 +78,6 @@
 - property: number-set
   type: mathematical-category
   applicability: mi
-  intent: ":number-set"
   examples:
     - mathml: '<mi intent=":number-set">ℂ</mi>'
       en: [ complex numbers, c ]
@@ -86,7 +85,6 @@
 - property: unit
   type: units-and-currency
   applicability: mi
-  intent: ":unit"
   examples:
     - mathml: "<mrow><mn>1.5</mn><mi intent=':unit'>km</mi></mrow>"
       en: 1.5 kilometres
@@ -96,7 +94,6 @@
 - property: currency
   type: units-and-currency
   applicability: mi
-  intent: ":currency"
   examples:
     - mathml: "<mrow><mi mathvariant='normal' intent=':currency'>$</mi><mn>1.50</mn></mrow>"
       en: 1.50 dollars
@@ -108,7 +105,6 @@
 
 - property: chemical-element
   type: chemistry
-  intent: "chemical-element"
   examples:
     - mathml: |
         <mrow intent='chem-formula'>
@@ -124,7 +120,6 @@
 
 - property: chemical-equation
   type: chemistry
-  intent: chemical-equation
   effect: read the term as a chemical equation
   examples:
    - mathml: |
