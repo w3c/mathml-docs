@@ -107,8 +107,9 @@
          </munderover>
          <msup><mi>i</mi><m>2</m></msup>
         </mrow>
-      en: the sum from i equals 0 to n of i squared
-      en: the sum as i goes from 0 to n of i squared
+      en:
+        - the sum from i equals 0 to n of i squared
+        - the sum as i goes from 0 to n of i squared
     - mathml: |
         <mrow>
          <munder intent=":bigop">
