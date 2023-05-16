@@ -124,6 +124,7 @@
 
 - property: chemical-equation
   type: chemistry
+  intent: chemical-equation
   effect: read the term as a chemical equation
   examples:
    - mathml: |
