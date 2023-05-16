@@ -75,7 +75,13 @@
   effect: indicates that the row continues an equation wrapped from the row above
 
 
-
+- property: number-set
+  type: mathematical-category
+  applicability: mi
+  intent: ":number-set"
+  examples:
+    - mathml: '<mi intent=":number-set">ℂ</mi>'
+      en: [ complex numbers, c ]
 
 - property: unit
   type: units-and-currency
