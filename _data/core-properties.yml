@@ -89,44 +89,44 @@
     - intent: 'sum:big-op(0,n,$arg)'
       en: the sum from 0 to n of arg
     - mathml: |
- 	<mrow>
-	 <munderover intent=":bigop">
-	  <mo>∑</mo>
-	  <mn>0</mn>
-	  <mi>n</mi>
-	 </munderover>
-	 <msup><mi>i</mi><m>2</m></msup>
-	</mrow>
+        <mrow>
+         <munderover intent=":bigop">
+          <mo>∑</mo>
+          <mn>0</mn>
+          <mi>n</mi>
+         </munderover>
+         <msup><mi>i</mi><m>2</m></msup>
+        </mrow>
       en: the sum from 0 to n of i squared
     - mathml: |
-	<mrow>
-	 <munderover intent=":bigop">
-	  <mo>∑</mo>
-	  <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
-	  <mi>n</mi>
-	 </munderover>
-	 <msup><mi>i</mi><m>2</m></msup>
-	</mrow>
+        <mrow>
+         <munderover intent=":bigop">
+          <mo>∑</mo>
+          <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
+          <mi>n</mi>
+         </munderover>
+         <msup><mi>i</mi><m>2</m></msup>
+        </mrow>
       en: the sum from i equals 0 to n of i squared
       en: the sum as i goes from 0 to n of i squared
     - mathml: |
-	<mrow>
-	 <munder intent=":bigop">
-	  <mo>∑</mo>
-	  <mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow>
-	 </munder>
-	 <msup><mi>i</mi><m>2</m></msup>
-	</mrow>
+        <mrow>
+         <munder intent=":bigop">
+          <mo>∑</mo>
+          <mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow>
+         </munder>
+         <msup><mi>i</mi><m>2</m></msup>
+        </mrow>
       en: the sum over i in I of i squared
     - mathml: |
-	<mrow intent="sum:bigop($from,$to,$exp)">
-	 <munderover intent=":bigop">
-	  <mo>∑</mo>
-	  <mn arg="from">0</mn>
-	  <mi arg="to">n</mi>
-	 </munderover>
-	 <msup arg="exp"><mi>i</mi><m>2</m></msup>
-	</mrow>
+        <mrow intent="sum:bigop($from,$to,$exp)">
+         <munderover intent=":bigop">
+          <mo>∑</mo>
+          <mn arg="from">0</mn>
+          <mi arg="to">n</mi>
+         </munderover>
+         <msup arg="exp"><mi>i</mi><m>2</m></msup>
+        </mrow>
       en: the sum from 0 to n of i squared
 
 
@@ -207,3 +207,4 @@
        </mrow>
       </mrow>
      en: '\ce{2 H2O → 2 H2 + O2}'
+     
