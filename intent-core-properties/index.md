@@ -79,9 +79,10 @@ The data displayed below is derived from the YAML file
 {%- endif -%}
 {% endfor %}
 
-</dd>
+
 
 {% endfor %}
+</dd>
 
 {% endfor %}
 
