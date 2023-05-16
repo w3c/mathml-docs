@@ -90,7 +90,7 @@
       en: the sum from 0 to n of arg
     - mathml: |
         <mrow>
-         <munderover intent=":bigop">
+         <munderover intent=":largeop">
           <mo>∑</mo>
           <mn>0</mn>
           <mi>n</mi>
@@ -100,7 +100,7 @@
       en: the sum from 0 to n of i squared
     - mathml: |
         <mrow>
-         <munderover intent=":bigop">
+         <munderover intent=":largeop">
           <mo>∑</mo>
           <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
           <mi>n</mi>
@@ -112,7 +112,7 @@
         - the sum as i goes from 0 to n of i squared
     - mathml: |
         <mrow>
-         <munder intent=":bigop">
+         <munder intent=":largeop">
           <mo>∑</mo>
           <mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow>
          </munder>
@@ -120,8 +120,8 @@
         </mrow>
       en: the sum over i in I of i squared
     - mathml: |
-        <mrow intent="sum:bigop($from,$to,$exp)">
-         <munderover intent=":bigop">
+        <mrow intent="sum:largeop($from,$to,$exp)">
+         <munderover intent=":largeop">
           <mo>∑</mo>
           <mn arg="from">0</mn>
           <mi arg="to">n</mi>
