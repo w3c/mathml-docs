@@ -7,7 +7,7 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
-figure.highlight {margin-left:0em}
+figure.highlight {margin-left:0em; margin-bottom:0em}
 </style>
 
 <style id="langcss">
@@ -72,12 +72,12 @@ The data displayed below is derived from the YAML file
 {% endif %}
 {%- for language in site.data.languages -%}
 {%- if e[language.language-code] %}
+{%- for sp in e[language.language-code] %}
 <div class="{{language.language-code}}">
 <b>{{language.language-code}}:</b>
-{%- for sp in e[language.language-code] %}
 {{sp}};
-{%- endfor -%}
 </div>
+{%- endfor -%}
 {%- endif -%}
 {% endfor %}
 
