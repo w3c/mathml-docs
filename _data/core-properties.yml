@@ -118,7 +118,7 @@
          </munder>
          <msup><mi>i</mi><m>2</m></msup>
         </mrow>
-      en: the sum over i in I of i squared
+      en: the sum over i in cap i of i squared
     - mathml: |
         <mrow intent="sum:largeop($from,$to,$exp)">
          <munderover intent=":largeop">
