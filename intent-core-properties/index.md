@@ -76,7 +76,7 @@ The data displayed below is derived from the YAML file
 {%- if e[language.language-code] %}
 {%- for sp in e[language.language-code] %}
 <div class="{{language.language-code}}">
-<b>{{language.language-code}}:</b>
+<b>{{language.label-english}}:</b>
 {{sp}}
 </div>
 {%- endfor -%}{% comment %} sp speech{% endcomment %}
