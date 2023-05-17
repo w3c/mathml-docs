@@ -128,6 +128,8 @@
   examples:
     - intent: 'sum:largeop(0,n,$arg)'
       en: the sum from 0 to n of arg
+    - intent: 'sum:largeop($C,$arg)'
+      en: the sum over C of arg
     - mathml: |
         <mrow>
          <munderover intent=":largeop">
