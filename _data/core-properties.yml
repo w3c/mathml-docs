@@ -45,6 +45,8 @@
 - property: silent
   type: fixity
   applicability: intent function head
+  effect: >
+    the arguments are voiced with no connecting words. The function head is not read.
   examples:
     - intent: "f:silent(x,y)"
       en: "x y"
