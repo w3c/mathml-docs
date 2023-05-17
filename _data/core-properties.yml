@@ -82,11 +82,11 @@
     - mathml: '<mi intent=":number-set">ℂ</mi>'
       en: [ complex numbers, c ]
 
-- property: big-op
+- property: largeop
   type: mathematical-category
   applicability: intent function, msub, msubsup munder munderover
   examples:
-    - intent: 'sum:big-op(0,n,$arg)'
+    - intent: 'sum:largeop(0,n,$arg)'
       en: the sum from 0 to n of arg
     - mathml: |
         <mrow>
