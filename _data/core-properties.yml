@@ -3,6 +3,10 @@
 - property: function
   type: fixity
   applicability: intent function head
+  effect: >
+    the function head is voiced followed by a connector such as "of"
+    or "applied" to, followed by the aguments separated by connecting
+    words such as "comma" or "and"
   examples:
     - intent: "f:function(x,y)"
       en: [f of x comma y, f of x and y]
