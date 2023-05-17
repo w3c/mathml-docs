@@ -5,7 +5,7 @@
   applicability: intent function head
   effect: >
     the function head is voiced followed by a connector such as "of"
-    or "applied" to, followed by the aguments separated by connecting
+    or "applied" to, followed by the arguments separated by connecting
     words such as "comma" or "and"
   examples:
     - intent: "f:function(x,y)"
@@ -15,6 +15,8 @@
 - property: prefix
   type: fixity
   applicability: intent function head
+  effect: >
+    the function followed by the arguments are voiced, with no connecting words.
   examples:
     - intent: "f:prefix(x,y)"
       en: "f x y"
@@ -22,6 +24,8 @@
 - property: postfix
   type: fixity
   applicability: intent function head
+  effect: >
+    the arguments followed by the function are voiced, with no connecting words.
   examples:
     - intent: "f:posfix(x)"
       en: "x f"
@@ -30,6 +34,9 @@
 - property: infix
   type: fixity
   applicability: intent function head
+  effect: >
+    the aguments are voiced, separated by the function, which may be repeated if
+    there are more than two arguments.
   examples:
     - intent: "f:infix(x,y)"
       en: "x f y"
