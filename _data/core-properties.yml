@@ -74,6 +74,33 @@
   type: table
   applicability: mtable
   effect: "the table should be read in a style suitable for displayed equations (and inequations)"
+  examples:
+   - mathml: |
+      <mtable intent=':system-of-equations'>
+        <mtr>
+         <mtd columnalign='right'>
+          <mn>2</mn><mo>&#x2062;</mo><mi>x</mi>
+         </mtd>
+         <mtd columnalign='center'>
+          <mo>=</mo>
+         </mtd>
+         <mtd columnalign='left'>
+          <mn>1</mn>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd columnalign='right'>
+          <mi>y</mi>
+         </mtd>
+         <mtd columnalign='center'>
+          <mo>></mo>
+         </mtd>
+         <mtd columnalign='left'>
+          <mi>x</mi><mo>&#x2212;</mo><mn>3</mn>
+         </mtd>
+        </mtr>
+       </mtable>
+     en: 2 equations; equation 1; 2 x, is equal to, 1; equation 2; y, is greater than, x minus 3;
 
 
 - property: lines
