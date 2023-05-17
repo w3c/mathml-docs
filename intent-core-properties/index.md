@@ -61,9 +61,9 @@ The data displayed below is derived from the YAML file
 
 <dt>{{p.property}}</dt>
 <dd>
-{%- if p.effect -%}<div>{{p.effect}}</div>{%- endif -%}
-{%- if p.applicability %}<div>applicability: {{p.applicability}}</div>{%- endif -%}
-{%- if p.intent -%}<div><code>{{p.intent}}</code></div>{%- endif -%}
+{%- if p.effect -%}<div><i>Effect</i>: {{p.effect}}</div>{%- endif -%}
+{%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
+{%- if p.intent -%}<div><i>Intent</i>: <code>{{p.intent}}</code></div>{%- endif -%}
 {%- for e in p.examples %}
 <div class="ex">
 {%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}

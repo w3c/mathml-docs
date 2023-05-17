@@ -35,7 +35,7 @@
   type: fixity
   applicability: intent function head
   effect: >
-    the aguments are voiced, separated by the function, which may be repeated if
+    the arguments are voiced, separated by the function, which may be repeated if
     there are more than two arguments.
   examples:
     - intent: "f:infix(x,y)"
