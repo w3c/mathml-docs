@@ -1,0 +1,13 @@
+
+
+- property: example
+  type: example-type
+  applicability: mi
+  examples:
+    - mathml: "<mrow><mi mathvariant='normal' intent=':example'>$</mi><mn>1.50</mn></mrow>"
+      en: 1.50 dollars
+    - mathml: "<mrow><mn>1.50</mn><mi intent=':example'>USD</mi></mrow>"
+      en: 1.50 U S dollars
+    - mathml: "<mrow><mi mathvariant='normal' intent=':example'>£</mi><mn>1.50</mn></mrow>"
+      en: 1.50 pounds
+

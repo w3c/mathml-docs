@@ -163,7 +163,7 @@
       en: the sum over i in cap i of i squared
     - mathml: |
         <mrow intent="sum:largeop($from,$to,$exp)">
-         <munderover intent=":largeop">
+         <munderover>
           <mo>∑</mo>
           <mn arg="from">0</mn>
           <mi arg="to">n</mi>
