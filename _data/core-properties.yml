@@ -200,7 +200,7 @@
   type: chemistry
   examples:
     - mathml: |
-        <mrow intent='chem-formula'>
+        <mrow intent=':chemical-formula'>
           <mmultiscripts>
             <mi mathvariant='normal' intent=':chemical-element'>H</mi>
             <mn>2</mn>
