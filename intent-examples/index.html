@@ -30,13 +30,15 @@
    <colgroup>
     <col style='background-color:#FFE;min-width:12em'/>
     <col style='background-color:#EEE;font-family: monospace;'/>
+    <col style='background-color:#EEF;font-family: monospace;'/>
     <col style='background-color:#EFE;font-family: monospace;'/>
     <col style='background-color:#AAA;font-family: monospace;'/>
     <col style='background-color:beige'/>
    </colgroup>
    <thead>
-    <th>MathML</thX8-->
+    <th>MathML</th>
     <th>MathML-no-intent</th>
+    <th>MathML structure</th>
     <th>MathML+intent</th>
     <th>TeX</th>
     <th>Comments</th>
@@ -57,6 +59,17 @@
 <td>
 <pre id='id-1-f11e40ff695f12d3bd02277e939f8f8d'><a class='self' href='#id-1-f11e40ff695f12d3bd02277e939f8f8d'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1234 plus 1234</div>
+</td>
+<td>
+<pre id='id-1-bc48d8fd49b7ccbf29fc01b50b4525c9'><a class='self' href='#id-1-bc48d8fd49b7ccbf29fc01b50b4525c9'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mn>1,234&lt;/mn>
  &lt;mo>+&lt;/mo>
  &lt;mn>1,234&lt;/mn>
@@ -115,6 +128,19 @@
     <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
 </td>
 <td>
+<pre id='id-1-c8f942ee797029657ca254f8fe209ca6'><a class='self' href='#id-1-c8f942ee797029657ca254f8fe209ca6'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234,000&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
+</td>
+<td>
 <pre id='id-0-de9d70f6a4f2997ed7c3393a173a9c80'><a class='self' href='#id-0-de9d70f6a4f2997ed7c3393a173a9c80'>&#xa7;</a>
 &lt;math display='block' mathbackground='yellow'>
  &lt;mn <b>intent='1234:thousands-comma'</b>>1,234&lt;/mn>
@@ -160,6 +186,15 @@
     <div class="mathcat">negative 3</div>
 </td>
 <td>
+<pre id='id-1-6cc80318d419a20b45e9cace22731ca6'><a class='self' href='#id-1-6cc80318d419a20b45e9cace22731ca6'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mn>−3&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">minus 3</div>
+</td>
+<td>
 <pre id='id-0-b4cd647b24bb566ad1afdf1dc47ef97c'><a class='self' href='#id-0-b4cd647b24bb566ad1afdf1dc47ef97c'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mn <b>intent='-3'</b>>−3&lt;/mn>
@@ -194,6 +229,18 @@
 </pre>
 
     <div class="mathcat">negative 3</div>
+</td>
+<td>
+<pre id='id-1-4e8b9f796192d34a53627718e16170fc'><a class='self' href='#id-1-4e8b9f796192d34a53627718e16170fc'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>−&lt;/mo>
+  &lt;mn>3&lt;/mn>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">minus 3</div>
 </td>
 <td>
 <pre id='id-0-6884954c638246cbb17e3bfba7447dac'><a class='self' href='#id-0-6884954c638246cbb17e3bfba7447dac'>&#xa7;</a>
@@ -239,6 +286,18 @@
     <div class="mathcat">x squared</div>
 </td>
 <td>
+<pre id='id-1-55df68a1c048222354aba343f7db97e6'><a class='self' href='#id-1-55df68a1c048222354aba343f7db97e6'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x super 2</div>
+</td>
+<td>
 <pre id='id-0-02ad988c2e32a3256136933d3904ee13'><a class='self' href='#id-0-02ad988c2e32a3256136933d3904ee13'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msup>
@@ -276,6 +335,18 @@
 </pre>
 
     <div class="mathcat">x cubed</div>
+</td>
+<td>
+<pre id='id-1-d0793a14a221ec536c41c4ab285bcc3a'><a class='self' href='#id-1-d0793a14a221ec536c41c4ab285bcc3a'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>3&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x super 3</div>
 </td>
 <td>
 <pre id='id-0-fe0470f3254e18ddd8917d0291ee5027'><a class='self' href='#id-0-fe0470f3254e18ddd8917d0291ee5027'>&#xa7;</a>
@@ -316,6 +387,18 @@
 </pre>
 
     <div class="mathcat">h squared</div>
+</td>
+<td>
+<pre id='id-1-23147f5f23f26c6eae925b529f428005'><a class='self' href='#id-1-23147f5f23f26c6eae925b529f428005'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi mathvariant='normal'>H&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">h super 2</div>
 </td>
 <td>
 <pre id='id-0-1a591ccfab457d69e5f7268e899fc47b'><a class='self' href='#id-0-1a591ccfab457d69e5f7268e899fc47b'>&#xa7;</a>
@@ -368,6 +451,18 @@
     <div class="mathcat">R 2</div>
 </td>
 <td>
+<pre id='id-1-ea4b34b2914d22c5d2a3d8a18e0f8d40'><a class='self' href='#id-1-ea4b34b2914d22c5d2a3d8a18e0f8d40'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi>&amp;#x211D;&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">double-struck   r super 2</div>
+</td>
+<td>
 <pre id='id-0-60b618105705aa3cc700a4eacf1a8a52'><a class='self' href='#id-0-60b618105705aa3cc700a4eacf1a8a52'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msup <b>intent='vector-space-power($R,$n)'</b>>
@@ -418,6 +513,18 @@
     <div class="mathcat">x to the n-th</div>
 </td>
 <td>
+<pre id='id-1-2db2fde08beda2a5946d1c68df75f5ca'><a class='self' href='#id-1-2db2fde08beda2a5946d1c68df75f5ca'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x super n</div>
+</td>
+<td>
 <pre id='id-0-3a746dd38e59675c3f958d5d03bedaf8'><a class='self' href='#id-0-3a746dd38e59675c3f958d5d03bedaf8'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msup>
@@ -458,6 +565,18 @@
     <div class="mathcat">x †,</div>
 </td>
 <td>
+<pre id='id-1-239130eee13c6cc15bed8c426ff68861'><a class='self' href='#id-1-239130eee13c6cc15bed8c426ff68861'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x †</div>
+</td>
+<td>
 <pre id='id-0-cd0b093dca507a5fa7fa4336a366b865'><a class='self' href='#id-0-cd0b093dca507a5fa7fa4336a366b865'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msup <b>intent='x-dagger'</b>>
@@ -496,6 +615,18 @@
 </pre>
 
     <div class="mathcat">x transpose</div>
+</td>
+<td>
+<pre id='id-1-e340c7516da99da50d9a5e304a5d11ee'><a class='self' href='#id-1-e340c7516da99da50d9a5e304a5d11ee'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi mathvariant='normal'>T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x super   t</div>
 </td>
 <td>
 <pre id='id-0-2707a45b0912ee26d09fac948e60122c'><a class='self' href='#id-0-2707a45b0912ee26d09fac948e60122c'>&#xa7;</a>
@@ -604,6 +735,20 @@
     <div class="mathcat">x pre superscript   t,</div>
 </td>
 <td>
+<pre id='id-1-9cec90c4ed01b241fca50d98ebb37a9d'><a class='self' href='#id-1-9cec90c4ed01b241fca50d98ebb37a9d'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mmultiscripts>
+  &lt;mi>x&lt;/mi>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi mathvariant='normal'>T&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x pre superscript   t,</div>
+</td>
+<td>
 <pre id='id-0-c766ea12eb1e9a8c01c5a43a6456ac61'><a class='self' href='#id-0-c766ea12eb1e9a8c01c5a43a6456ac61'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mmultiscripts <b>intent='$op($arg)'</b>>
@@ -698,6 +843,22 @@
     <div class="mathcat">x sub i j to the   t-th</div>
 </td>
 <td>
+<pre id='id-1-b9df303b3f725580c5782c0af684e8d2'><a class='self' href='#id-1-b9df303b3f725580c5782c0af684e8d2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msubsup>
+  &lt;mi>x&lt;/mi>
+  &lt;mrow>
+   &lt;mi>i&lt;/mi>
+   &lt;mi>j&lt;/mi>
+  &lt;/mrow>
+  &lt;mi mathvariant='normal'>T&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x sub i j super   t</div>
+</td>
+<td>
 <pre id='id-0-1277e0e3b79ddf8b85a8794b17d73044'><a class='self' href='#id-0-1277e0e3b79ddf8b85a8794b17d73044'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup <b>intent='transpose(index:silent($x,$sub))'</b>>
@@ -768,6 +929,18 @@
 </pre>
 
     <div class="mathcat">4 to the th</div>
+</td>
+<td>
+<pre id='id-1-514ce546ff4959b0f325a882dc91ba81'><a class='self' href='#id-1-514ce546ff4959b0f325a882dc91ba81'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msup>
+  &lt;mn>4&lt;/mn>
+  &lt;mi>th&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">4 super th end super</div>
 </td>
 <td>
 <pre id='id-0-46c68ed58b1a0a09e5f46e3e0165db67'><a class='self' href='#id-0-46c68ed58b1a0a09e5f46e3e0165db67'>&#xa7;</a>
@@ -876,6 +1049,42 @@
 </pre>
 
     <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of;   r, left white square bracket,   x right white square bracket</div>
+</td>
+<td>
+<pre id='id-1-3e270348df570da15e54f821ccbb3594'><a class='self' href='#id-1-3e270348df570da15e54f821ccbb3594'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mi>A&lt;/mi>
+  &lt;mo>=&lt;/mo>
+  &lt;munderover>
+   &lt;mo>∑&lt;/mo>
+   &lt;mrow>
+    &lt;mi>n&lt;/mi>
+    &lt;mo>=&lt;/mo>
+    &lt;mn>0&lt;/mn>
+   &lt;/mrow>
+   &lt;mi>∞&lt;/mi>
+   &lt;/munderover>
+   &lt;msub>
+    &lt;mi>a&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msub>
+   &lt;msup>
+    &lt;mi>X&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msup>
+   &lt;mo>∈&lt;/mo>
+   &lt;mrow>
+    &lt;mi>R&lt;/mi>
+    &lt;mo>⟦&lt;/mo>
+    &lt;mi>X&lt;/mi>
+    &lt;mo>⟧&lt;/mo>
+   &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">eigh is equal to; sum with n is equal to 0 below and infinity above; eigh sub n   x super n; an element of;   r, left white square bracket,   x right white square bracket</div>
 </td>
 <td>
 <pre id='id-0-589d0d22d546a00254597ae3631907f2'><a class='self' href='#id-0-589d0d22d546a00254597ae3631907f2'>&#xa7;</a>
@@ -1007,6 +1216,33 @@
     <div class="mathcat">sine squared of theta, plus cosine squared of theta; is equal to 1</div>
 </td>
 <td>
+<pre id='id-1-7e9cf2c3d2a005b7503767196f5460d4'><a class='self' href='#id-1-7e9cf2c3d2a005b7503767196f5460d4'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mi>sin&lt;/mi>
+   &lt;mn>2&lt;/mn>
+  &lt;/msup>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mi>𝜃&lt;/mi>
+ &lt;/mrow>
+ &lt;mo>+&lt;/mo>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mi>cos&lt;/mi>
+   &lt;mn>2&lt;/mn>
+  &lt;/msup>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mi>𝜃&lt;/mi>
+ &lt;/mrow>
+ &lt;mo>=&lt;/mo>
+ &lt;mn>1&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">sine super 2 of theta, plus cosine super 2 of theta; is equal to 1</div>
+</td>
+<td>
 <pre id='id-0-6c259889c22899732a27c5147b38a798'><a class='self' href='#id-0-6c259889c22899732a27c5147b38a798'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -1074,6 +1310,22 @@
     <div class="mathcat">n choose k</div>
 </td>
 <td>
+<pre id='id-1-33b71ea21d690c70550824371acb571c'><a class='self' href='#id-1-33b71ea21d690c70550824371acb571c'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mfrac linethickness='0pt'>
+   &lt;mi>n&lt;/mi>
+   &lt;mi>k&lt;/mi>
+  &lt;/mfrac>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren mfrac of, n comma k, close paren</div>
+</td>
+<td>
 <pre id='id-0-29b2d901622640e8233b07bbbfa8bd29'><a class='self' href='#id-0-29b2d901622640e8233b07bbbfa8bd29'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='binomial($n,$k)'</b>>
@@ -1125,6 +1377,22 @@
 <td>
 <pre id='id-1-4c837d6571bc171b94305aff33ed4cae'><a class='self' href='#id-1-4c837d6571bc171b94305aff33ed4cae'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mmultiscripts>
+  &lt;mi>C&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">c pre superscript n, subscript k</div>
+</td>
+<td>
+<pre id='id-1-bc70c1bfee5083a34dc23bc29038b964'><a class='self' href='#id-1-bc70c1bfee5083a34dc23bc29038b964'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mmultiscripts>
   &lt;mi>C&lt;/mi>
   &lt;mi>k&lt;/mi>
@@ -1198,6 +1466,19 @@
     <div class="mathcat">c sub k to the n-th</div>
 </td>
 <td>
+<pre id='id-1-b376576c89cb3c9daf92febc9deacdb6'><a class='self' href='#id-1-b376576c89cb3c9daf92febc9deacdb6'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msubsup>
+  &lt;mi>C&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">c sub k super n</div>
+</td>
+<td>
 <pre id='id-0-77b48a7cbfcaee1c9050eb373cf80ded'><a class='self' href='#id-0-77b48a7cbfcaee1c9050eb373cf80ded'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup <b>intent='binomial($n,$k)'</b>>
@@ -1243,6 +1524,22 @@
 <td>
 <pre id='id-1-20ef93107d4b8354267f2a33adcfa51e'><a class='self' href='#id-1-20ef93107d4b8354267f2a33adcfa51e'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>C&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">c of, open paren n comma k, close paren</div>
+</td>
+<td>
+<pre id='id-1-b75cd3a5f66e2e23673ac4b803edbeff'><a class='self' href='#id-1-b75cd3a5f66e2e23673ac4b803edbeff'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
@@ -1322,6 +1619,22 @@
     <div class="mathcat">k permutations of n</div>
 </td>
 <td>
+<pre id='id-1-c43624c7ba12569d89af4808141bf8f1'><a class='self' href='#id-1-c43624c7ba12569d89af4808141bf8f1'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mmultiscripts>
+  &lt;mi>P&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">p pre superscript n, subscript k</div>
+</td>
+<td>
 <pre id='id-0-3716f4793653bd61581dbebc1b085ec7'><a class='self' href='#id-0-3716f4793653bd61581dbebc1b085ec7'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mmultiscripts
@@ -1398,6 +1711,19 @@
     <div class="mathcat">k permutations of n</div>
 </td>
 <td>
+<pre id='id-1-4bdbc5745c0f3110152e6b2a2d3f6d01'><a class='self' href='#id-1-4bdbc5745c0f3110152e6b2a2d3f6d01'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msubsup>
+  &lt;mi>P&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">p sub k super n</div>
+</td>
+<td>
 <pre id='id-0-0f4c881ea228eb401346b05c82c7c2ae'><a class='self' href='#id-0-0f4c881ea228eb401346b05c82c7c2ae'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup
@@ -1469,6 +1795,22 @@
 <td>
 <pre id='id-1-a02818e8503174d9163c64154c80fd6c'><a class='self' href='#id-1-a02818e8503174d9163c64154c80fd6c'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>P&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">p of, open paren n comma k, close paren</div>
+</td>
+<td>
+<pre id='id-1-2c0b9552044a4683662f71a1f6301997'><a class='self' href='#id-1-2c0b9552044a4683662f71a1f6301997'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>P&lt;/mi>
   &lt;mo>(&lt;/mo>
@@ -1564,6 +1906,19 @@
     <div class="mathcat">x is a subset of y</div>
 </td>
 <td>
+<pre id='id-1-ed82f5dbb256d75f865bbc3e70ca19e2'><a class='self' href='#id-1-ed82f5dbb256d75f865bbc3e70ca19e2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x2282;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x is a subset of y</div>
+</td>
+<td>
 <pre id='id-0-9aadff51d8e52fc3aae665cafa0e8e31'><a class='self' href='#id-0-9aadff51d8e52fc3aae665cafa0e8e31'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -1607,6 +1962,19 @@
 <td>
 <pre id='id-1-f9cc51bff2f0962f9fd4045dfb21b279'><a class='self' href='#id-1-f9cc51bff2f0962f9fd4045dfb21b279'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo <b>intent='parallel'</b>>‖&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x parallel y</div>
+</td>
+<td>
+<pre id='id-1-772617e78ce7dde2f4ef32ee70031c26'><a class='self' href='#id-1-772617e78ce7dde2f4ef32ee70031c26'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
   &lt;mo <b>intent='parallel'</b>>‖&lt;/mo>
@@ -1693,6 +2061,25 @@
 <td>
 <pre id='id-1-24e59bc70b677dcd9bd5dc5656cdfde3'><a class='self' href='#id-1-24e59bc70b677dcd9bd5dc5656cdfde3'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>A&lt;/mi>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mrow>
+   &lt;mo>(&lt;/mo>
+   &lt;mi>n&lt;/mi>
+   &lt;mo>,&lt;/mo>
+   &lt;mi>m&lt;/mi>
+   &lt;mo>)&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">eigh of, open paren n comma m, close paren</div>
+</td>
+<td>
+<pre id='id-1-0d814129b1b0cbaef2d125e965c48998'><a class='self' href='#id-1-0d814129b1b0cbaef2d125e965c48998'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>A&lt;/mi>
   &lt;mo>&amp;#x2061;&lt;/mo>
@@ -1818,6 +2205,29 @@
     <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
 </td>
 <td>
+<pre id='id-1-a01811210ad3eba5221c36d7d4b9a94b'><a class='self' href='#id-1-a01811210ad3eba5221c36d7d4b9a94b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mrow>
+    &lt;mo>(&lt;/mo>
+    &lt;mi>g&lt;/mi>
+    &lt;mo>∘&lt;/mo>
+    &lt;mi>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
+</td>
+<td>
 <pre id='id-0-175ca5113cd4437872820c9f1fb78bab'><a class='self' href='#id-0-175ca5113cd4437872820c9f1fb78bab'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$op3($x)'</b>>
@@ -1883,6 +2293,25 @@
     <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
 </td>
 <td>
+<pre id='id-1-c18ab5e2fc777f407514530e3c6eb3f4'><a class='self' href='#id-1-c18ab5e2fc777f407514530e3c6eb3f4'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>g&lt;/mi>
+  &lt;mo>∘&lt;/mo>
+  &lt;mi>h&lt;/mi>
+  &lt;mo>)&lt;/mo>
+  &lt;mo>′&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
+</td>
+<td>
 <pre id='id-0-7d478bafd6d9042ed06c7956a7f6734a'><a class='self' href='#id-0-7d478bafd6d9042ed06c7956a7f6734a'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='first-derivative(function-composition:infix(g,h))(x)'</b>>
@@ -1931,6 +2360,29 @@
 <td>
 <pre id='id-1-e4af7443c3bcb729ce97a5a06b8e705e'><a class='self' href='#id-1-e4af7443c3bcb729ce97a5a06b8e705e'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mrow>
+    &lt;mo>(&lt;/mo>
+    &lt;mi>g&lt;/mi>
+    &lt;mo>∘&lt;/mo>
+    &lt;mi>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
+</td>
+<td>
+<pre id='id-1-a01811210ad3eba5221c36d7d4b9a94b'><a class='self' href='#id-1-a01811210ad3eba5221c36d7d4b9a94b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;msup>
    &lt;mrow>
@@ -2028,6 +2480,30 @@
     <div class="mathcat">open paren, g composed with h, close paren prime, of x</div>
 </td>
 <td>
+<pre id='id-1-e45fd2349e0219ad7621e3f7ed5957a7'><a class='self' href='#id-1-e45fd2349e0219ad7621e3f7ed5957a7'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mrow>
+    &lt;mo>(&lt;/mo>
+    &lt;mi>g&lt;/mi>
+    &lt;mo>∘&lt;/mo>
+    &lt;mi>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime of x</div>
+</td>
+<td>
 <pre id='id-0-c2b20191dd349e0670f569b56619d179'><a class='self' href='#id-0-c2b20191dd349e0670f569b56619d179'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -2095,7 +2571,27 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">f superscript times, of p</div>
+    <div class="mathcat">f times, of p</div>
+</td>
+<td>
+<pre id='id-1-cf3e439458f4f9d6ca2252888f3c80e2'><a class='self' href='#id-1-cf3e439458f4f9d6ca2252888f3c80e2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mi>f&lt;/mi>
+   &lt;mo>*&lt;/mo>
+  &lt;/msup>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mrow>
+   &lt;mo>(&lt;/mo>
+   &lt;mi>p&lt;/mi>
+   &lt;mo>)&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">f star of p</div>
 </td>
 <td>
 <pre id='id-0-1a5e46e4b131e9d9971f0dfdd01ba643'><a class='self' href='#id-0-1a5e46e4b131e9d9971f0dfdd01ba643'>&#xa7;</a>
@@ -2151,7 +2647,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">f superscript convex conjugate, of p</div>
+    <div class="mathcat">f convex conjugate, of p</div>
 </td>
 
     <td>f^*(p)</td>
@@ -2176,6 +2672,18 @@
 <td>
 <pre id='id-1-6864b772c02fe19be4a2009a4220e7c3'><a class='self' href='#id-1-6864b772c02fe19be4a2009a4220e7c3'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">🐇   x</div>
+</td>
+<td>
+<pre id='id-1-a6d18774581c16e063e62f06a99781d4'><a class='self' href='#id-1-a6d18774581c16e063e62f06a99781d4'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
@@ -2236,6 +2744,18 @@
 <td>
 <pre id='id-1-6864b772c02fe19be4a2009a4220e7c3'><a class='self' href='#id-1-6864b772c02fe19be4a2009a4220e7c3'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">🐇   x</div>
+</td>
+<td>
+<pre id='id-1-a6d18774581c16e063e62f06a99781d4'><a class='self' href='#id-1-a6d18774581c16e063e62f06a99781d4'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
@@ -2318,6 +2838,19 @@
 <td>
 <pre id='id-1-af2eb5502faad175064b0dde9d40e420'><a class='self' href='#id-1-af2eb5502faad175064b0dde9d40e420'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>⨯&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x cross product y</div>
+</td>
+<td>
+<pre id='id-1-0c0912758b4947ee16133609b4bd528e'><a class='self' href='#id-1-0c0912758b4947ee16133609b4bd528e'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
   &lt;mo>⨯&lt;/mo>
@@ -2423,6 +2956,19 @@
     <div class="mathcat">x squared plus y</div>
 </td>
 <td>
+<pre id='id-1-048feb1ac6e4f893c92d6b9d5c67af63'><a class='self' href='#id-1-048feb1ac6e4f893c92d6b9d5c67af63'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x229e;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x squared plus y</div>
+</td>
+<td>
 <pre id='id-0-736d135c9ee634336bdcda1d7b0c264b'><a class='self' href='#id-0-736d135c9ee634336bdcda1d7b0c264b'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='foo:infix($x,$y)'</b>>
@@ -2481,6 +3027,19 @@
     <div class="mathcat">the absolute value of x,</div>
 </td>
 <td>
+<pre id='id-1-871ed5ca252d8234d40d5a3cb7907740'><a class='self' href='#id-1-871ed5ca252d8234d40d5a3cb7907740'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>|&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>|&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">vertical line x vertical line</div>
+</td>
+<td>
 <pre id='id-0-f9ed3357eeee4b9d6c9d1cccf148f471'><a class='self' href='#id-0-f9ed3357eeee4b9d6c9d1cccf148f471'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='absolute-value($x)'</b>>
@@ -2530,6 +3089,22 @@
     <div class="mathcat">the absolute value of x, sub 2</div>
 </td>
 <td>
+<pre id='id-1-9eb3878343459f5c66b37c2f13d95648'><a class='self' href='#id-1-9eb3878343459f5c66b37c2f13d95648'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msub>
+  &lt;mrow>
+   &lt;mo>|&lt;/mo>
+   &lt;mi>x&lt;/mi>
+   &lt;mo>|&lt;/mo>
+  &lt;/mrow>
+  &lt;mn>2&lt;/mn>
+ &lt;/msub>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">vertical line x vertical line sub 2</div>
+</td>
+<td>
 <pre id='id-0-0afb544d3785eee992d32f7308dd185d'><a class='self' href='#id-0-0afb544d3785eee992d32f7308dd185d'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msub <b>intent='l2-norm($x)'</b>>
@@ -2574,6 +3149,19 @@
 </pre>
 
     <div class="mathcat">the absolute value of   m,</div>
+</td>
+<td>
+<pre id='id-1-84163d44315bb32b017548d8d157670c'><a class='self' href='#id-1-84163d44315bb32b017548d8d157670c'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>|&lt;/mo>
+  &lt;mi>M&lt;/mi>
+  &lt;mo>|&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">vertical line   m vertical line</div>
 </td>
 <td>
 <pre id='id-0-084467a3aaf207bdc03d25343d3e942a'><a class='self' href='#id-0-084467a3aaf207bdc03d25343d3e942a'>&#xa7;</a>
@@ -2634,7 +3222,29 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d;</div>
+    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end determinant</div>
+</td>
+<td>
+<pre id='id-1-17f6fe5360c4a5b3a45215dda6f0d8c2'><a class='self' href='#id-1-17f6fe5360c4a5b3a45215dda6f0d8c2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>|&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>c&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>d&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>|&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">vertical line; table with 2 rows and 2 columns; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; vertical line</div>
 </td>
 <td>
 <pre id='id-0-42f452b821276f28a9e7fabfcf9f5c28'><a class='self' href='#id-0-42f452b821276f28a9e7fabfcf9f5c28'>&#xa7;</a>
@@ -2656,7 +3266,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the determinant of the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d;</div>
+    <div class="mathcat">the determinant of the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end matrix</div>
 <pre id='id-0-07d5bf6d4bb17eb690c44022b3d7a8d2'><a class='self' href='#id-0-07d5bf6d4bb17eb690c44022b3d7a8d2'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$M'</b>>
@@ -2676,7 +3286,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d;</div>
+    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end determinant</div>
 </td>
 
     <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
@@ -2707,6 +3317,19 @@
 </pre>
 
     <div class="mathcat">magnitude of, x</div>
+</td>
+<td>
+<pre id='id-1-e91251005537e0202c1f0432a7b01a27'><a class='self' href='#id-1-e91251005537e0202c1f0432a7b01a27'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>‖&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>‖&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">double vertical line x double vertical line</div>
 </td>
 <td>
 <pre id='id-0-f42af00c7de4c526fdf17953ca0544c8'><a class='self' href='#id-0-f42af00c7de4c526fdf17953ca0544c8'>&#xa7;</a>
@@ -2743,6 +3366,21 @@
 <td>
 <pre id='id-1-2718762ce1065e3fd0b22d9d8a716b0e'><a class='self' href='#id-1-2718762ce1065e3fd0b22d9d8a716b0e'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>]&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>[&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">close bracket, x comma y open bracket</div>
+</td>
+<td>
+<pre id='id-1-626902e2338259cfd2ea232ab7cd89f0'><a class='self' href='#id-1-626902e2338259cfd2ea232ab7cd89f0'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mo>]&lt;/mo>
   &lt;mi>x&lt;/mi>
@@ -2805,6 +3443,21 @@
     <div class="mathcat">open paren x comma y, close paren</div>
 </td>
 <td>
+<pre id='id-1-d1557f62f722daa7cf89c01640d2047d'><a class='self' href='#id-1-d1557f62f722daa7cf89c01640d2047d'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren x comma y, close paren</div>
+</td>
+<td>
 <pre id='id-0-18841687c369334d3964c5efbac3294c'><a class='self' href='#id-0-18841687c369334d3964c5efbac3294c'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='open-interval($x,$y)'</b>>
@@ -2851,6 +3504,21 @@
 </pre>
 
     <div class="mathcat">the open closed interval from x to y</div>
+</td>
+<td>
+<pre id='id-1-ca1010078d03ef69bf87708189d45563'><a class='self' href='#id-1-ca1010078d03ef69bf87708189d45563'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren x comma y, close bracket</div>
 </td>
 <td>
 <pre id='id-0-40dd4e466608b4569802710840c8bfa3'><a class='self' href='#id-0-40dd4e466608b4569802710840c8bfa3'>&#xa7;</a>
@@ -2901,6 +3569,21 @@
     <div class="mathcat">the closed open interval from x to y</div>
 </td>
 <td>
+<pre id='id-1-51f2ab85318fd777b42002db48d1f9eb'><a class='self' href='#id-1-51f2ab85318fd777b42002db48d1f9eb'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open bracket x comma y, close paren</div>
+</td>
+<td>
 <pre id='id-0-b1afeaecb6dd3286e4b906a7e934dba9'><a class='self' href='#id-0-b1afeaecb6dd3286e4b906a7e934dba9'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='closed-open-interval($x,$y)'</b>>
@@ -2947,6 +3630,21 @@
 </pre>
 
     <div class="mathcat">the closed interval from x to y</div>
+</td>
+<td>
+<pre id='id-1-6cb5599359cd8dc07b47aa953171e57e'><a class='self' href='#id-1-6cb5599359cd8dc07b47aa953171e57e'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open bracket x comma y, close bracket</div>
 </td>
 <td>
 <pre id='id-0-a30dc8d43d861228bb6c248b9a2f2a97'><a class='self' href='#id-0-a30dc8d43d861228bb6c248b9a2f2a97'>&#xa7;</a>
@@ -3001,6 +3699,25 @@
 <td>
 <pre id='id-1-69a127b13bd95d3a42a2ec1b9316df71'><a class='self' href='#id-1-69a127b13bd95d3a42a2ec1b9316df71'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x2009;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>&amp;#x2009;&lt;/mo>
+  &lt;mi>c&lt;/mi>
+  &lt;mo>&amp;#x2009;&lt;/mo>
+  &lt;mi>d&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, x y c d, close paren</div>
+</td>
+<td>
+<pre id='id-1-ebcf790ee616c35c61bd4f0b5aeeeef9'><a class='self' href='#id-1-ebcf790ee616c35c61bd4f0b5aeeeef9'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mo>(&lt;/mo>
   &lt;mi>x&lt;/mi>
@@ -3136,7 +3853,29 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y;</div>
+    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+</td>
+<td>
+<pre id='id-1-ad902dbe0ac83a025aaa4cbd806cc650'><a class='self' href='#id-1-ad902dbe0ac83a025aaa4cbd806cc650'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open bracket; table with 2 rows and 2 columns; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; close bracket</div>
 </td>
 <td>
 <pre id='id-0-59cada63c210300c874cbe6b0553ad50'><a class='self' href='#id-0-59cada63c210300c874cbe6b0553ad50'>&#xa7;</a>
@@ -3158,7 +3897,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y;</div>
+    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
 </td>
 
     <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
@@ -3206,7 +3945,29 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y;</div>
+    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+</td>
+<td>
+<pre id='id-1-a45321d8953d7936c10452591d86ce4a'><a class='self' href='#id-1-a45321d8953d7936c10452591d86ce4a'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren; table with 2 rows and 2 columns; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; close paren</div>
 </td>
 <td>
 <pre id='id-0-40e3a86e91d392b3bc5b43381ba09421'><a class='self' href='#id-0-40e3a86e91d392b3bc5b43381ba09421'>&#xa7;</a>
@@ -3228,7 +3989,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y;</div>
+    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
 </td>
 
     <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
@@ -3295,6 +4056,37 @@
 </pre>
 
     <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to, 2; <br/>case 2; x minus y, is equal to, 0;</div>
+</td>
+<td>
+<pre id='id-1-72bb9f542b411b7e3a460843fdb24705'><a class='self' href='#id-1-72bb9f542b411b7e3a460843fdb24705'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mo>{&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>
+     &lt;mi>x&lt;/mi>
+     &lt;mo>+&lt;/mo>
+     &lt;mi>y&lt;/mi>
+    &lt;/mtd>
+    &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+    &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>
+     &lt;mi>x&lt;/mi>
+     &lt;mo>&amp;#x2212;&lt;/mo>
+     &lt;mi>y&lt;/mi>
+    &lt;/mtd>
+    &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+    &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open brace; table with 2 rows and 3 columns; <br/>column 1; x plus y; <br/>column 2; is equal to; <br/>column 3; 2; <br/>column 1; x minus y; <br/>column 2; is equal to; <br/>column 3; 0;</div>
 </td>
 <td>
 <pre id='id-0-3c31b433b077d391ce8c045b7b9a4400'><a class='self' href='#id-0-3c31b433b077d391ce8c045b7b9a4400'>&#xa7;</a>
@@ -3402,6 +4194,42 @@
 </pre>
 
     <div class="mathcat">2 equations, <br/>equation 1; 2 x, is equal to, 1; <br/>equation 2; y, is greater than, x minus 3;</div>
+</td>
+<td>
+<pre id='id-1-92af8f1a91c72ec9a46bb1484d1087c5'><a class='self' href='#id-1-92af8f1a91c72ec9a46bb1484d1087c5'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mtable>
+  &lt;mtr>
+   &lt;mtd columnalign='right'>
+    &lt;mn>2&lt;/mn>
+    &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+    &lt;mi>x&lt;/mi>
+   &lt;/mtd>
+   &lt;mtd columnalign='center'>
+    &lt;mo>=&lt;/mo>
+   &lt;/mtd>
+   &lt;mtd columnalign='left'>
+    &lt;mn>1&lt;/mn>
+   &lt;/mtd>
+  &lt;/mtr>
+  &lt;mtr>
+   &lt;mtd columnalign='right'>
+    &lt;mi>y&lt;/mi>
+   &lt;/mtd>
+   &lt;mtd columnalign='center'>
+    &lt;mo>>&lt;/mo>
+   &lt;/mtd>
+   &lt;mtd columnalign='left'>
+    &lt;mi>x&lt;/mi>
+    &lt;mo>&amp;#x2212;&lt;/mo>
+    &lt;mn>3&lt;/mn>
+   &lt;/mtd>
+  &lt;/mtr>
+ &lt;/mtable>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">table with 2 rows and 3 columns; <br/>column 1; 2 x; <br/>column 2; is equal to; <br/>column 3; 1; <br/>column 1; y; <br/>column 2; is greater than; <br/>column 3; x minus 3;</div>
 </td>
 <td>
 <pre id='id-0-dff2490ee4c13900c19dff5a5c50b931'><a class='self' href='#id-0-dff2490ee4c13900c19dff5a5c50b931'>&#xa7;</a>
@@ -3513,6 +4341,41 @@
 </pre>
 
     <div class="mathcat">2 equations, <br/>equation 1; eigh, is equal to, b plus c minus d; <br/>equation 2; empty, empty, plus e minus f;</div>
+</td>
+<td>
+<pre id='id-1-3f2dea5b3d4622d90c3db6fa446e7f0c'><a class='self' href='#id-1-3f2dea5b3d4622d90c3db6fa446e7f0c'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mtable>
+  &lt;mtr>
+   &lt;mtd columnalign='right'>
+    &lt;mi>a&lt;/mi>
+   &lt;/mtd>
+   &lt;mtd columnalign='center'>
+    &lt;mo>=&lt;/mo>
+   &lt;/mtd>
+   &lt;mtd columnalign='left'>
+    &lt;mi>b&lt;/mi>
+    &lt;mo>+&lt;/mo>
+    &lt;mi>c&lt;/mi>
+    &lt;mo>&amp;#x2212;&lt;/mo>
+    &lt;mi>d&lt;/mi>
+   &lt;/mtd>
+  &lt;/mtr>
+  &lt;mtr>
+   &lt;mtd columnalign='right'>&lt;/mtd>
+   &lt;mtd columnalign='center'>&lt;/mtd>
+   &lt;mtd columnalign='left'>
+    &lt;mo form='infix'>+&lt;/mo>
+    &lt;mi>e&lt;/mi>
+    &lt;mo>&amp;#x2212;&lt;/mo>
+    &lt;mi>f&lt;/mi>
+   &lt;/mtd>
+  &lt;/mtr>
+ &lt;/mtable>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">table with 2 rows and 3 columns; <br/>column 1; eigh; <br/>column 2; is equal to; <br/>column 3; b plus c minus d; <br/>column 1; empty; <br/>column 2; empty; <br/>column 3; plus e minus f;</div>
 </td>
 <td>
 <pre id='id-0-77c472c05ef269691bd0221fc866fc5d'><a class='self' href='#id-0-77c472c05ef269691bd0221fc866fc5d'>&#xa7;</a>
@@ -3739,6 +4602,80 @@
     <div class="mathcat">3 equations, <br/>equation 1; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; <br/>equation 2; empty, less than or slanted equal to, 2 eigh b, plus b squared; <br/>equation 3; empty, is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
 </td>
 <td>
+<pre id='id-1-27cf4514a13800994f34e6637d4c289b'><a class='self' href='#id-1-27cf4514a13800994f34e6637d4c289b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>
+     &lt;msup>
+      &lt;mrow>
+       &lt;mo>(&lt;/mo>&lt;mi>a&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>b&lt;/mi>&lt;mo>)&lt;/mo>
+      &lt;/mrow>
+      &lt;mn>2&lt;/mn>
+     &lt;/msup>
+    &lt;/mtd>
+    &lt;mtd>
+     &lt;mo>=&lt;/mo>
+    &lt;/mtd>
+    &lt;mtd>
+     &lt;msup>&lt;mi>a&lt;/mi>&lt;mn>2&lt;/mn>&lt;/msup>
+     &lt;mo>+&lt;/mo>
+     &lt;mrow>
+      &lt;mn>2&lt;/mn>
+      &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+      &lt;mi>a&lt;/mi>
+      &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+      &lt;mi>b&lt;/mi>
+     &lt;/mrow>
+     &lt;mo>+&lt;/mo>
+     &lt;msup>&lt;mi>b&lt;/mi>&lt;mn>2&lt;/mn>&lt;/msup>
+    &lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;/mtd>
+    &lt;mtd>
+     &lt;mo>&amp;#x2a7d;&lt;/mo>
+    &lt;/mtd>
+    &lt;mtd>
+     &lt;mrow>
+      &lt;mn>2&lt;/mn>
+      &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+      &lt;mi>a&lt;/mi>
+      &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+      &lt;mi>b&lt;/mi>
+     &lt;/mrow>
+     &lt;mo>+&lt;/mo>
+     &lt;msup>&lt;mi>b&lt;/mi>&lt;mn>2&lt;/mn>&lt;/msup>
+    &lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;/mtd>
+    &lt;mtd>
+     &lt;mo>=&lt;/mo>
+    &lt;/mtd>
+    &lt;mtd>
+     &lt;mi>b&lt;/mi>
+     &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+     &lt;mrow>
+      &lt;mo>(&lt;/mo>
+      &lt;mn>2&lt;/mn>
+      &lt;mo>&amp;#x2062;&lt;!--InvisibleTimes-->&lt;/mo>
+      &lt;mi>a&lt;/mi>
+      &lt;mo>+&lt;/mo>
+      &lt;mi>b&lt;/mi>
+      &lt;mo>)&lt;/mo>
+     &lt;/mrow>
+    &lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">table with 3 rows and 3 columns; <br/>column 1; open paren eigh plus b, close paren super 2; <br/>column 2; is equal to; <br/>column 3; eigh super 2 plus 2 eigh b, plus b super 2; <br/>column 1; empty; <br/>column 2; less than or slanted equal to; <br/>column 3; 2 eigh b, plus b super 2; <br/>column 1; empty; <br/>column 2; is equal to; <br/>column 3; b times, open paren, 2 eigh plus b, close paren;</div>
+</td>
+<td>
 <pre id='id-0-0b585d8ae1a3372e8af93d2cdcf2de29'><a class='self' href='#id-0-0b585d8ae1a3372e8af93d2cdcf2de29'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='derivation($m)'</b>>
@@ -3846,6 +4783,18 @@
     <div class="mathcat">x with dot above</div>
 </td>
 <td>
+<pre id='id-1-7e0d3d0477853f202f0725c140048388'><a class='self' href='#id-1-7e0d3d0477853f202f0725c140048388'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mover>
+  &lt;mo>x&lt;/mo>
+  &lt;mo>&amp;#x02D9;&lt;/mo>
+ &lt;/mover>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x with dot above</div>
+</td>
+<td>
 <pre id='id-0-8989f3861dc3d56e51684a6900bd3c76'><a class='self' href='#id-0-8989f3861dc3d56e51684a6900bd3c76'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mover <b>intent='derivative($x,1)'</b>>
@@ -3895,6 +4844,18 @@
 <td>
 <pre id='id-1-a3cfa2653dcf190bb5576cebb788586c'><a class='self' href='#id-1-a3cfa2653dcf190bb5576cebb788586c'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mover>
+  &lt;mo>x&lt;/mo>
+  &lt;mo>&amp;#x00A8;&lt;/mo>
+ &lt;/mover>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x with double dot above</div>
+</td>
+<td>
+<pre id='id-1-1a0c5be5754946457c7757c2321aba6e'><a class='self' href='#id-1-1a0c5be5754946457c7757c2321aba6e'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mover>
   &lt;mo>x&lt;/mo>
   &lt;mo>&amp;#x00A8;&lt;/mo>
@@ -3963,6 +4924,18 @@
 </pre>
 
     <div class="mathcat">fraction, d x, over, d t, end fraction;</div>
+</td>
+<td>
+<pre id='id-1-939b04860c35cd6a2ca99621efb0a509'><a class='self' href='#id-1-939b04860c35cd6a2ca99621efb0a509'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi>x&lt;/mi>&lt;/mrow>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi>t&lt;/mi>&lt;/mrow>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, d x comma d t</div>
 </td>
 <td>
 <pre id='id-0-51622a958cb8b5fd5390bb84c9f5486c'><a class='self' href='#id-0-51622a958cb8b5fd5390bb84c9f5486c'>&#xa7;</a>
@@ -4043,6 +5016,27 @@
 </pre>
 
     <div class="mathcat">fraction, d over, d t, end fraction; f of t</div>
+</td>
+<td>
+<pre id='id-1-861482abf78981181ebff9dd267327e9'><a class='self' href='#id-1-861482abf78981181ebff9dd267327e9'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mfrac>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;/mrow>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi>t&lt;/mi>&lt;/mrow>
+  &lt;/mfrac>
+  &lt;mrow>
+   &lt;mi>f&lt;/mi>
+   &lt;mo>&amp;#x2061;&lt;/mo>
+   &lt;mo>(&lt;/mo>
+   &lt;mi>t&lt;/mi>
+   &lt;mo>)&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, d comma d t, f of t</div>
 </td>
 <td>
 <pre id='id-0-9f95208a0a8ba7e5860051ced0ee22df'><a class='self' href='#id-0-9f95208a0a8ba7e5860051ced0ee22df'>&#xa7;</a>
@@ -4134,6 +5128,29 @@
 </pre>
 
     <div class="mathcat">fraction, d squared x, over, d t squared, end fraction;</div>
+</td>
+<td>
+<pre id='id-1-9af3f46a93e34d006626e7fd5486da13'><a class='self' href='#id-1-9af3f46a93e34d006626e7fd5486da13'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mrow>
+   &lt;msup>
+    &lt;mi>d&lt;/mi>&lt;mn>2&lt;/mn>
+   &lt;/msup>
+   &lt;mi>x&lt;/mi>
+  &lt;/mrow>
+  &lt;mrow>
+   &lt;mi>d&lt;/mi>
+   &lt;msup>
+    &lt;mi>t&lt;/mi>
+    &lt;mn>2&lt;/mn>
+   &lt;/msup>
+  &lt;/mrow>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, d super 2 x comma d t super 2</div>
 </td>
 <td>
 <pre id='id-0-9c5eec168db60555e1bf894552dc35b8'><a class='self' href='#id-0-9c5eec168db60555e1bf894552dc35b8'>&#xa7;</a>
@@ -4259,6 +5276,32 @@
     <div class="mathcat">fraction, partial derivative squared f, over, partial derivative x, partial derivative y, end fraction;</div>
 </td>
 <td>
+<pre id='id-1-4524b97e4561f652203f2107900a5f90'><a class='self' href='#id-1-4524b97e4561f652203f2107900a5f90'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mrow>
+   &lt;msup>
+    &lt;mo>&amp;#x2202;&lt;/mo>&lt;mn>2&lt;/mn>
+   &lt;/msup>
+   &lt;mi>f&lt;/mi>
+  &lt;/mrow>
+  &lt;mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi>x&lt;/mi>
+   &lt;/mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi>y&lt;/mi>
+   &lt;/mrow>
+  &lt;/mrow>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, partial derivative super 2 f comma, partial derivative x, partial derivative y</div>
+</td>
+<td>
 <pre id='id-0-e147bc4202faa415783a9ee0542fda3c'><a class='self' href='#id-0-e147bc4202faa415783a9ee0542fda3c'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mfrac <b>intent='partial-second-derivative(
@@ -4355,6 +5398,26 @@
     <div class="mathcat">the integral of f of x d x</div>
 </td>
 <td>
+<pre id='id-1-5ccc5217de78d34817de33cf546ac023'><a class='self' href='#id-1-5ccc5217de78d34817de33cf546ac023'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mo>&amp;#x222B;&lt;/mo>
+ &lt;mrow>
+  &lt;mi>f&lt;/mi>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">the integral of f of x d x</div>
+</td>
+<td>
 <pre id='id-0-091870152a451765138b38f4a0457136'><a class='self' href='#id-0-091870152a451765138b38f4a0457136'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mo>&amp;#x222B;&lt;/mo>
@@ -4415,6 +5478,24 @@
     <div class="mathcat">the integral from 0 to 1 of, x squared d x</div>
 </td>
 <td>
+<pre id='id-1-25812f80d56825bc83467d7e3b1e235b'><a class='self' href='#id-1-25812f80d56825bc83467d7e3b1e235b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;msubsup>
+   &lt;mo>∫&lt;/mo>
+   &lt;mn>0&lt;/mn>
+   &lt;mn>1&lt;/mn>
+  &lt;/msubsup>
+  &lt;msup>&lt;mi>x&lt;/mi>&lt;mn>2&lt;/mn>&lt;/msup>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">integral sub 0 super 1, x super 2 d x</div>
+</td>
+<td>
 <pre id='id-0-05433277f3761cb0780a5e07b7001ce6'><a class='self' href='#id-0-05433277f3761cb0780a5e07b7001ce6'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -4472,6 +5553,25 @@
 </pre>
 
     <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+</td>
+<td>
+<pre id='id-1-04ee4cd877af52ca18c2118bb5025e94'><a class='self' href='#id-1-04ee4cd877af52ca18c2118bb5025e94'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block' mathbackground='yellow'>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>
+  &lt;mn>2&lt;/mn>
+  &lt;mo>&amp;#x2062;&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;msubsup>
+   &lt;mo>]&lt;/mo>
+   &lt;mn>0&lt;/mn>
+   &lt;mn>1&lt;/mn>
+  &lt;/msubsup>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open bracket 2 x close bracket sub 0 super 1</div>
 </td>
 <td>
 <pre id='id-0-e14b9a0a4dcee3797c8f5b1b20e1b016'><a class='self' href='#id-0-e14b9a0a4dcee3797c8f5b1b20e1b016'>&#xa7;</a>
@@ -4534,6 +5634,25 @@
     <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
 </td>
 <td>
+<pre id='id-1-7a393c9dd9b4c467334c94dbff5f19c3'><a class='self' href='#id-1-7a393c9dd9b4c467334c94dbff5f19c3'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block' mathbackground='yellow'>
+ &lt;msubsup>
+  &lt;mrow>
+   &lt;mo>[&lt;/mo>
+   &lt;mn>2&lt;/mn>
+   &lt;mo>&amp;#x2062;&lt;/mo>
+   &lt;mi>x&lt;/mi>
+   &lt;mo>]&lt;/mo>
+  &lt;/mrow>
+  &lt;mn>0&lt;/mn>
+  &lt;mn>1&lt;/mn>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open bracket 2 x close bracket sub 0 super 1</div>
+</td>
+<td>
 <pre id='id-0-66d1c8662e0e6eb33f97e1705ccc530a'><a class='self' href='#id-0-66d1c8662e0e6eb33f97e1705ccc530a'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup>
@@ -4592,6 +5711,24 @@
     <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 </td>
 <td>
+<pre id='id-1-dc5913097513f4689524fe8e6c1c7635'><a class='self' href='#id-1-dc5913097513f4689524fe8e6c1c7635'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block' mathbackground='yellow'>
+ &lt;mrow>
+  &lt;mn>2&lt;/mn>
+  &lt;mo>&amp;#x2062;&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;msubsup>
+   &lt;mo>|&lt;/mo>
+   &lt;mn>0&lt;/mn>
+   &lt;mn>1&lt;/mn>
+  &lt;/msubsup>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">2 x, vertical line sub 0 super 1</div>
+</td>
+<td>
 <pre id='id-0-44a4ece0b62620a4b34cc8d5ea46b962'><a class='self' href='#id-0-44a4ece0b62620a4b34cc8d5ea46b962'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -4647,6 +5784,24 @@
 </pre>
 
     <div class="mathcat">2 x vertical line sub 0 to the first</div>
+</td>
+<td>
+<pre id='id-1-fc88e8409ffdc16f26a97d21a85cf04c'><a class='self' href='#id-1-fc88e8409ffdc16f26a97d21a85cf04c'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block' mathbackground='yellow'>
+ &lt;msubsup>
+  &lt;mrow>
+   &lt;mn>2&lt;/mn>
+   &lt;mo>&amp;#x2062;&lt;/mo>
+   &lt;mi>x&lt;/mi>
+   &lt;mo>|&lt;/mo>
+  &lt;/mrow>
+  &lt;mn>0&lt;/mn>
+  &lt;mn>1&lt;/mn>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">2 x vertical line sub 0 super 1</div>
 </td>
 <td>
 <pre id='id-0-45e01aeb7c9e8099e62faa3045feac8a'><a class='self' href='#id-0-45e01aeb7c9e8099e62faa3045feac8a'>&#xa7;</a>
@@ -4708,6 +5863,26 @@
 </pre>
 
     <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
+</td>
+<td>
+<pre id='id-1-67235cab1fbe855775b1708f34992516'><a class='self' href='#id-1-67235cab1fbe855775b1708f34992516'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;msub>
+  &lt;mo>&amp;#x222E;&lt;/mo>
+  &lt;mi>C&lt;/mi>
+ &lt;/msub>
+ &lt;mfrac>
+  &lt;mn>1&lt;/mn>
+  &lt;mi>z&lt;/mi>
+ &lt;/mfrac>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>z&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">contour integral sub   c; mfrac of, 1 comma z, d z</div>
 </td>
 <td>
 <pre id='id-0-efd88c256f1b8171db8cec3617f850b0'><a class='self' href='#id-0-efd88c256f1b8171db8cec3617f850b0'>&#xa7;</a>
@@ -4795,6 +5970,33 @@
     <div class="mathcat">v dot, ** 2, plus w dot, ** 2</div>
 </td>
 <td>
+<pre id='id-1-314778fc4c26c81faff254e8f1920a28'><a class='self' href='#id-1-314778fc4c26c81faff254e8f1920a28'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mrow>
+   &lt;mover>
+    &lt;mi>v&lt;/mi>
+    &lt;mo>&amp;#x02d9;&lt;/mo>
+   &lt;/mover>
+   &lt;mo>**&lt;/mo>
+   &lt;mn>2&lt;/mn>
+  &lt;/mrow>
+  &lt;mo>+&lt;/mo>
+  &lt;mrow>
+   &lt;mover>
+    &lt;mi>w&lt;/mi>
+    &lt;mo>&amp;#x02d9;&lt;/mo>
+   &lt;/mover>
+   &lt;mo>**&lt;/mo>
+   &lt;mn>2&lt;/mn>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">v dot ** 2 plus w dot ** 2</div>
+</td>
+<td>
 <pre id='id-0-11d4ff268a13a3f5c1bdf2d9db98adf2'><a class='self' href='#id-0-11d4ff268a13a3f5c1bdf2d9db98adf2'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -4848,6 +6050,15 @@
     <div class="mathcat">x</div>
 </td>
 <td>
+<pre id='id-1-187cfebc376c74ad737f5951792dc3b2'><a class='self' href='#id-1-187cfebc376c74ad737f5951792dc3b2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mi>x&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x</div>
+</td>
+<td>
 <pre id='id-0-8d9cb0811d5e2354f3acd029cd131407'><a class='self' href='#id-0-8d9cb0811d5e2354f3acd029cd131407'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mi <b>intent='the_variable_x'</b>>x&lt;/mi>
@@ -4877,6 +6088,20 @@
 <td>
 <pre id='id-1-d1a1c479bfe76d0e573cec75c414a6d2'><a class='self' href='#id-1-d1a1c479bfe76d0e573cec75c414a6d2'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>a&lt;/mi>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>b&lt;/mi>
+  &lt;mo>!&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">eigh plus b factorial</div>
+</td>
+<td>
+<pre id='id-1-59334b42948d1aa90bceeba8cc562b9d'><a class='self' href='#id-1-59334b42948d1aa90bceeba8cc562b9d'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>a&lt;/mi>
   &lt;mo>+&lt;/mo>
@@ -4933,6 +6158,19 @@
     <div class="mathcat">eigh plus b</div>
 </td>
 <td>
+<pre id='id-1-6f2a53bdd3891e0bd8ab681795cbe035'><a class='self' href='#id-1-6f2a53bdd3891e0bd8ab681795cbe035'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mi>a&lt;/mi>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>b&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">eigh plus b</div>
+</td>
+<td>
 <pre id='id-0-79d832ed979a143b18819ab6023e4462'><a class='self' href='#id-0-79d832ed979a143b18819ab6023e4462'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='foo:int:silent(bar:positive-int-int, $a:foo-bar-foo-bar, $b:number)'</b>>
@@ -4966,6 +6204,20 @@
 <td>
 <pre id='id-1-41a3bc82380d38a604152cc47fb41b60'><a class='self' href='#id-1-41a3bc82380d38a604152cc47fb41b60'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>R&lt;/mi>
+  &lt;mo>&amp;#x27e8;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+  &lt;mo>&amp;#x27e9;&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">r, left angle bracket   x right angle bracket</div>
+</td>
+<td>
+<pre id='id-1-03fb66a346a9b76ff03f1bff33ac2489'><a class='self' href='#id-1-03fb66a346a9b76ff03f1bff33ac2489'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>R&lt;/mi>
   &lt;mo>&amp;#x27e8;&lt;/mo>
@@ -5056,6 +6308,24 @@
     <div class="mathcat">x plus; 2, the absolute value of y minus z, end absolute value,</div>
 </td>
 <td>
+<pre id='id-1-b9cd51a0abfa966fda1d7b14629e50f3'><a class='self' href='#id-1-b9cd51a0abfa966fda1d7b14629e50f3'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>+&lt;/mo>
+  &lt;mn>2&lt;/mn>
+  &lt;mo>|&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>-&lt;/mo>
+  &lt;mi>z&lt;/mi>
+  &lt;mo>|&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x plus, 2 times, vertical line y minus z, vertical line</div>
+</td>
+<td>
 <pre id='id-0-0f1585692692954a3bcf66086065c33a'><a class='self' href='#id-0-0f1585692692954a3bcf66086065c33a'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='plus:infix($x,times:infix(2,absolute-value(minus:infix($y,$z))))'</b>>
@@ -5140,6 +6410,18 @@
     <div class="mathcat">log   x</div>
 </td>
 <td>
+<pre id='id-1-51f39ad9b5527c635f3e74785b8f2b68'><a class='self' href='#id-1-51f39ad9b5527c635f3e74785b8f2b68'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mi>log&lt;/mi>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">log   x</div>
+</td>
+<td>
 <pre id='id-0-8432568773ad69f56bbe2044279ff86d'><a class='self' href='#id-0-8432568773ad69f56bbe2044279ff86d'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='log(x)'</b>/>
@@ -5189,6 +6471,17 @@
 <td>
 <pre id='id-1-948db560550797b598744fe6a2aff2c2'><a class='self' href='#id-1-948db560550797b598744fe6a2aff2c2'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mi>x&lt;/mi>
+ &lt;mo>+&lt;/mo>
+ &lt;mtext>a &lt;b>bold&lt;/b> word&lt;/mtext>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x plus a  bold word</div>
+</td>
+<td>
+<pre id='id-1-4000d6f6f5f1c0757d2ed3909128a334'><a class='self' href='#id-1-4000d6f6f5f1c0757d2ed3909128a334'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mi>x&lt;/mi>
  &lt;mo>+&lt;/mo>
  &lt;mtext>a &lt;b>bold&lt;/b> word&lt;/mtext>
@@ -5249,6 +6542,22 @@
 </pre>
 
     <div class="mathcat">h, subscript 2;   o,</div>
+</td>
+<td>
+<pre id='id-1-e1f687d7f8c0c6f0f7f63ce769205dab'><a class='self' href='#id-1-e1f687d7f8c0c6f0f7f63ce769205dab'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+     &lt;mmultiscripts>
+       &lt;mi mathvariant='normal'>H&lt;/mi>
+       &lt;mn>2&lt;/mn>
+       &lt;mrow/>
+     &lt;/mmultiscripts>
+     &lt;mi mathvariant='normal'>O&lt;/mi>
+   &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">h subscript 2   o</div>
 </td>
 <td>
 <pre id='id-0-2be5f20778912dd4979dc7cc1969aa04'><a class='self' href='#id-0-2be5f20778912dd4979dc7cc1969aa04'>&#xa7;</a>
@@ -5353,6 +6662,47 @@
     <div class="mathcat">2,   h, subscript 2;   o; reacts to form; 2   h, subscript 2; plus   o, subscript 2,</div>
 </td>
 <td>
+<pre id='id-1-8dfadec13ddecd4e402421f5d8726e0e'><a class='self' href='#id-1-8dfadec13ddecd4e402421f5d8726e0e'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mrow>
+   &lt;mn>2&lt;/mn>
+   &lt;mo>&amp;#x2062;&lt;/mo>
+   &lt;mrow>
+    &lt;mmultiscripts>
+     &lt;mi mathvariant='normal'>H&lt;/mi>
+     &lt;mn>2&lt;/mn>
+     &lt;mrow/>
+    &lt;/mmultiscripts>
+    &lt;mo>&amp;#x2063;&lt;/mo>
+    &lt;mi mathvariant='normal'>O&lt;/mi>
+   &lt;/mrow>
+  &lt;/mrow>
+  &lt;mo>⟶&lt;/mo>
+  &lt;mrow>
+   &lt;mrow>
+    &lt;mn>2&lt;/mn>
+    &lt;mo>&amp;#x2062;&lt;/mo>
+    &lt;mmultiscripts>
+     &lt;mi mathvariant='normal'>H&lt;/mi>
+     &lt;mn>2&lt;/mn>
+     &lt;mrow/>
+    &lt;/mmultiscripts>
+   &lt;/mrow>
+   &lt;mo>+&lt;/mo>
+   &lt;mmultiscripts>
+    &lt;mi mathvariant='normal'>O&lt;/mi>
+    &lt;mn>2&lt;/mn>
+    &lt;mrow/>
+   &lt;/mmultiscripts>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">2   h subscript 2   o; long rightwards arrow; 2   h subscript 2, plus   o subscript 2</div>
+</td>
+<td>
 <pre id='id-0-f0d49362c6dcd837422d34a9feb643d9'><a class='self' href='#id-0-f0d49362c6dcd837422d34a9feb643d9'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent=':chemical-equation'</b>>
@@ -5426,6 +6776,18 @@
     <div class="mathcat">x over y,</div>
 </td>
 <td>
+<pre id='id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, x comma y</div>
+</td>
+<td>
 <pre id='id-0-124e667e06a35566028b5bd670604217'><a class='self' href='#id-0-124e667e06a35566028b5bd670604217'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mfrac <b>intent='divides'</b>>
@@ -5465,6 +6827,18 @@
     <div class="mathcat">x over y,</div>
 </td>
 <td>
+<pre id='id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, x comma y</div>
+</td>
+<td>
 <pre id='id-0-15d3748636e71158cfbe96975e6e9859'><a class='self' href='#id-0-15d3748636e71158cfbe96975e6e9859'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mfrac <b>intent='divides(z)'</b>>
@@ -5502,6 +6876,18 @@
 </pre>
 
     <div class="mathcat">x over y,</div>
+</td>
+<td>
+<pre id='id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, x comma y</div>
 </td>
 <td>
 <pre id='id-0-6947db6140491f9d59f41cc15f988d12'><a class='self' href='#id-0-6947db6140491f9d59f41cc15f988d12'>&#xa7;</a>
@@ -5544,6 +6930,18 @@
     <div class="mathcat">vector   x</div>
 </td>
 <td>
+<pre id='id-1-2344855baf8a86c3b4c277ec4a53b2e3'><a class='self' href='#id-1-2344855baf8a86c3b4c277ec4a53b2e3'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mover>
+  &lt;mi>X&lt;/mi>
+  &lt;mo>→&lt;/mo>
+ &lt;/mover>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x right arrow</div>
+</td>
+<td>
 <pre id='id-0-f4f08f87cf4ea95d8826cf3bea74ce3d'><a class='self' href='#id-0-f4f08f87cf4ea95d8826cf3bea74ce3d'>&#xa7;</a>
 &lt;math display='block' mathbackground='yellow'>
  &lt;mover <b>intent='ray($X)'</b>>
@@ -5578,6 +6976,19 @@
 <td>
 <pre id='id-1-0fa1a4f6fd6c06a024ed98e27f9fbaa9'><a class='self' href='#id-1-0fa1a4f6fd6c06a024ed98e27f9fbaa9'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;apply>
+  &lt;sin/>
+  &lt;ci>x&lt;/ci>
+ &lt;/apply>
+&lt;/math>
+</pre>
+
+    <div class="mathcat"><span class='error' title='&apos;apply&apos; is not a valid MathML element
+'>problem with SetMathML</span></div>
+</td>
+<td>
+<pre id='id-1-b51ba16539e7dd7cb01ba50180cdbef6'><a class='self' href='#id-1-b51ba16539e7dd7cb01ba50180cdbef6'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;apply>
   &lt;sin/>
   &lt;ci>x&lt;/ci>
@@ -5632,6 +7043,18 @@
 </pre>
 
     <div class="mathcat">x over y,</div>
+</td>
+<td>
+<pre id='id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-1-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mfrac>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">mfrac of, x comma y</div>
 </td>
 <td>
 <pre id='id-0-2bbd9677188507686d1ceeb08e8631dd'><a class='self' href='#id-0-2bbd9677188507686d1ceeb08e8631dd'>&#xa7;</a>
@@ -5706,6 +7129,19 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
 <td>
 <pre id='id-1-8d9f2bc3213ad00b940dcd3ee12b171e'><a class='self' href='#id-1-8d9f2bc3213ad00b940dcd3ee12b171e'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mn>1.234&lt;/mn>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1.234 plus x</div>
+</td>
+<td>
+<pre id='id-1-23fa428582e9679b4ef0d780de16b80b'><a class='self' href='#id-1-23fa428582e9679b4ef0d780de16b80b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mn>1.234&lt;/mn>
   &lt;mo>+&lt;/mo>
@@ -5792,6 +7228,19 @@ caused by: intent arg &apos;$a&apos; not found
     <div class="mathcat">1.234 plus x</div>
 </td>
 <td>
+<pre id='id-1-23fa428582e9679b4ef0d780de16b80b'><a class='self' href='#id-1-23fa428582e9679b4ef0d780de16b80b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mrow>
+  &lt;mn>1.234&lt;/mn>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1.234 plus x</div>
+</td>
+<td>
 <pre id='id-0-5307274d0482c5ca3fbeedab94ab5e80'><a class='self' href='#id-0-5307274d0482c5ca3fbeedab94ab5e80'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='sum($1.234,$:x:)'</b>>
@@ -5859,6 +7308,15 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
     <div class="mathcat">x</div>
 </td>
 <td>
+<pre id='id-1-187cfebc376c74ad737f5951792dc3b2'><a class='self' href='#id-1-187cfebc376c74ad737f5951792dc3b2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mi>x&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x</div>
+</td>
+<td>
 <pre id='id-0-a282da83142fb46be6d0fbbfb71e6e3d'><a class='self' href='#id-0-a282da83142fb46be6d0fbbfb71e6e3d'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mi <b>intent='one two'</b>>x&lt;/mi>
@@ -5906,6 +7364,15 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
 <td>
 <pre id='id-1-266d130f9b94460198892d3d05934879'><a class='self' href='#id-1-266d130f9b94460198892d3d05934879'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mn>12&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">12</div>
+</td>
+<td>
+<pre id='id-1-faee46e1a49b2c47041a1ce0af0e9f8b'><a class='self' href='#id-1-faee46e1a49b2c47041a1ce0af0e9f8b'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mn>12&lt;/mn>
 &lt;/math>
 </pre>
@@ -5968,6 +7435,23 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
 <td>
 <pre id='id-1-84acef8dcdedb094dc82369328fcc4db'><a class='self' href='#id-1-84acef8dcdedb094dc82369328fcc4db'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mover>
+  &lt;mi>X&lt;/mi>
+  &lt;mo>&amp;#x203e;&lt;/mo>
+ &lt;/mover>
+ &lt;mo>+&lt;/mo>
+ &lt;mover>
+  &lt;mi>Y&lt;/mi>
+  &lt;mo>&amp;#x203e;&lt;/mo>
+ &lt;/mover>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x with ‾ above plus   y with ‾ above</div>
+</td>
+<td>
+<pre id='id-1-3f51ce2776ca751ecd21812cd976bfc3'><a class='self' href='#id-1-3f51ce2776ca751ecd21812cd976bfc3'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mover>
   &lt;mi>X&lt;/mi>
   &lt;mo>&amp;#x203e;&lt;/mo>
@@ -6084,6 +7568,15 @@ caused by: Illegal &apos;intent&apos; syntax: found None
     <div class="mathcat">x</div>
 </td>
 <td>
+<pre id='id-1-187cfebc376c74ad737f5951792dc3b2'><a class='self' href='#id-1-187cfebc376c74ad737f5951792dc3b2'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
+ &lt;mi>x&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x</div>
+</td>
+<td>
 <pre id='id-0-b3a4fd0ff0e344c761d019fe7f8ccaca'><a class='self' href='#id-0-b3a4fd0ff0e344c761d019fe7f8ccaca'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mi <b>intent='just say this'</b>>x&lt;/mi>
@@ -6134,6 +7627,17 @@ caused by: Error in intent value: extra unparsed intent &apos;this&apos; in inte
 <td>
 <pre id='id-1-75c8d9ac12a7ccb9a314e8cef8b06a0d'><a class='self' href='#id-1-75c8d9ac12a7ccb9a314e8cef8b06a0d'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x</div>
+</td>
+<td>
+<pre id='id-1-cb5dd1c6020e8ec4ffe5fd204b78bd2a'><a class='self' href='#id-1-cb5dd1c6020e8ec4ffe5fd204b78bd2a'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
  &lt;/mrow>
@@ -6199,6 +7703,18 @@ caused by: Error in intent value: extra unparsed intent &apos;this about $x&apos
 <td>
 <pre id='id-1-6864b772c02fe19be4a2009a4220e7c3'><a class='self' href='#id-1-6864b772c02fe19be4a2009a4220e7c3'>&#xa7;</a>
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">🐇   x</div>
+</td>
+<td>
+<pre id='id-1-a6d18774581c16e063e62f06a99781d4'><a class='self' href='#id-1-a6d18774581c16e063e62f06a99781d4'>&#xa7;</a>
+&lt;math <b>intent=':structure'</b> display='block'>
  &lt;mrow>
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>

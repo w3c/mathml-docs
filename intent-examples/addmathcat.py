@@ -67,6 +67,22 @@ def selflink(match):
   m3id = re.sub(r'[ \t()]','',m3)
   return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></t{}>\n </tr>".format(m1,m2,m3id,m3id,m3,m1)
 
+
+def ApplyMathCAT (i,mml):
+  hashid="id-{}-{}".format((- i) % 3,hashlib.md5(mml.encode('utf-8')).hexdigest())
+  print("<pre id='{}'><a class='self' href='#{}'>&#xa7;</a>".format(hashid,hashid) )
+  print(re.sub("((arg|intent)='[^']*')",r'<b>\1</b>',
+               mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
+  print("</pre>")
+  try:
+    SetMathMLForMathCAT(mml)
+    mcat=GetSpeech()
+    mcatl=re.sub(r'((line|column|case|equation) [0-9]+;)',r'<br/>\1',mcat)
+    print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
+  except Exception as e:
+    print ("\n    <div class=\"mathcat\"><span class='error' title='" + re.sub('apos;M[^& ]*','apos;M...',re.sub('C:.*?Rules','Rules',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;')) + "'>problem with SetMathML</span></div>")
+  
+
 i=0
 for mmltd in mmltds:
   i=i+1
@@ -81,20 +97,15 @@ for mmltd in mmltds:
     j=0
     for mml in mmls:
       j=j+1
-      hashid="id-{}-{}".format((- i) % 3,hashlib.md5(mml.encode('utf-8')).hexdigest())
       if(j % 2 == 0):
-        print("<pre id='{}'><a class='self' href='#{}'>&#xa7;</a>".format(hashid,hashid) )
-        print(re.sub("((arg|intent)='[^']*')",r'<b>\1</b>',
-              mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
-        print("</pre>")
-        try:
-          SetMathMLForMathCAT(mml)
-          mcat=GetSpeech()
-          mcatl=re.sub(r'((line|column|case|equation) [0-9]+;)',r'<br/>\1',mcat)
-          print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
-        except Exception as e:
-          print ("\n    <div class=\"mathcat\"><span class='error' title='" + re.sub('apos;M[^& ]*','apos;M...',re.sub('C:.*?Rules','Rules',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;')) + "'>problem with SetMathML</span></div>")
+        ApplyMathCAT(i,mml)
     print("</td>")
+    if(i % 3 == 2):
+      print("<td>")
+      mml=re.sub(r'\s*<math',r"<math intent=':structure'",mmltd)
+      mml=re.sub(r'</math>\s*',r"</math>",mml)
+      ApplyMathCAT(2,mml)
+      print("</td>")
   else:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
                selflink,
