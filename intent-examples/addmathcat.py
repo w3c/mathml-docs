@@ -104,7 +104,7 @@ for mmltd in mmltds:
       print("<td>")
       mml=re.sub(r'\s*<math',r"<math intent=':structure'",mmltd)
       mml=re.sub(r'</math>\s*',r"</math>",mml)
-      ApplyMathCAT(2,mml)
+      ApplyMathCAT(1,mml)
       print("</td>")
   else:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
