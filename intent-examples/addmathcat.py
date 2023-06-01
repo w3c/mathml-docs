@@ -68,11 +68,15 @@ def selflink(match):
   return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></t{}>\n </tr>".format(m1,m2,m3id,m3id,m3,m1)
 
 
-def ApplyMathCAT (i,mml):
+def ApplyMathCAT (i,mml,firstln):
   hashid="id-{}-{}".format((- i) % 3,hashlib.md5(mml.encode('utf-8')).hexdigest())
   print("<pre id='{}'><a class='self' href='#{}'>&#xa7;</a>".format(hashid,hashid) )
+  if firstln:
+    mmlb = re.split("\n+", mml)[0]
+  else:
+    mmlb = mml
   print(re.sub("((arg|intent)='[^']*')",r'<b>\1</b>',
-               mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
+         mmlb.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
   print("</pre>")
   try:
     SetMathMLForMathCAT(mml)
@@ -98,14 +102,18 @@ for mmltd in mmltds:
     for mml in mmls:
       j=j+1
       if(j % 2 == 0):
-        ApplyMathCAT(i,mml)
-    print("</td>")
+        ApplyMathCAT(i,mml,False)
     if(i % 3 == 2):
-      print("<td>")
-      mml=re.sub(r'\s*<math',r"<math intent=':structure'",mmltd)
+ #     print("<td>")
+      mml=re.sub(r'\s*<math',r"<math intent=':common'",mmltd)
       mml=re.sub(r'</math>\s*',r"</math>",mml)
-      ApplyMathCAT(1,mml)
-      print("</td>")
+      ApplyMathCAT(1,mml,True)
+      mml=re.sub(r"<math intent=':common'",r"<math intent=':structure'",mml)
+      ApplyMathCAT(1,mml,True)
+      mml=re.sub(r"<math intent=':structure'",r"<math intent=':chemistry'",mml)
+      ApplyMathCAT(1,mml,True)
+#      print("</td>")
+    print("</td>")
   else:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
                selflink,
