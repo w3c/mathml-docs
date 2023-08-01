@@ -225,66 +225,66 @@
   en: "equals $1 $2"
   fr: "égal $1 $2"
 
-- equiv
+- concept: equiv
 
-- gt
+- concept: gt
 
-- lt
+- concept: lt
 
-- leq
+- concept: leq
 
-- geq
+- concept: geq
 
-- approx
+- concept: approx
 
 ## ====================== 4.4.4 Calculus ============================
-  
-- int
+
+- concept: int
 
 ## derivative replaced by prime
 
-- prime
+- concept: prime
 
-- n-th derivative
+- concept: n-th derivative
 
-- partialdiff
+- concept: partialdiff
 
 ## TODO: divergence, curl, gradient, laplacian
 
 
 ## ====================== 4.4.5 Sets ============================
-- set
+- concept: set
 
-- list
+- concept: list
 
-- union
+- concept: union
 
-- intersect
+- concept: intersect
 
-- in
+- concept: in
 
-- notin
+- concept: notin
 
-- subset
+- concept: subset
 
 ## ?? - notsubset
 
-- prsubset
+- concept: prsubset
 
 ## ?? - notprsubset
 
-- setdiff
+- concept: setdiff
 
-- cartesianproduct
+- concept: cartesianproduct
 
 ## ====================== 4.4.6 sequence and series ============================
-- sum
+- concept: sum
 
-- product
+- concept: product
 
-- limit
+- concept: limit
 
-- tendsto
+- concept: tendsto
 
 ## ====================== 4.4.7 elementary classical functions ======================
 - concept: sine
@@ -303,28 +303,28 @@
   fr: "sinus de $1"
 
 ## trig functions
-- cos
+- concept: cos
 
-- tan
+- concept: tan
 
-- sec
+- concept: sec
 
-- csc
+- concept: csc
 
-- cot
+- concept: cot
 
 ## inverse trig functions
-- arcsin
+- concept: arcsin
 
-- arccos
+- concept: arccos
 
-- arctan
+- concept: arctan
 
-- arcsec
+- concept: arcsec
 
-- arccsc
+- concept: arccsc
 
-- arccot
+- concept: arccot
 
 ## hyperbolic trig functions
 - concept: hyperbolic-sine
@@ -352,30 +352,30 @@
    - "cosh $1"
    - "kosh $1"
 
-- tanh
+- concept: tanh
 
-- sech
+- concept: sech
 
-- csch
+- concept: csch
 
-- coth
+- concept: coth
 
 
 ## inverse hyperbolic trig functions
-- arcsinh
+- concept: arcsinh
 
-- arccosh
+- concept: arccosh
 
-- arctanh
+- concept: arctanh
 
-- arcsech
+- concept: arcsech
 
-- arccsch
+- concept: arccsch
 
-- arccoth
+- concept: arccoth
 
 ## exponential related functions
-- exp
+- concept: exp
 
 - concept: natural-logarithm
   arity: 1
@@ -402,24 +402,24 @@
 
 
 ## ====================== 4.4.8 Statistics ======================
-- mean
+- concept: mean
 
-- sdev
+- concept: sdev
 
-- variance
+- concept: variance
 
-- median
+- concept: median
 
-- mode
+- concept: mode
 
-- gamma-function # ??
+- concept: gamma-function # ??
 
 ## ====================== 4.4.9 Linear Algebra ======================
-- vector
+- concept: vector
 
-- matrix
+- concept: matrix
 
-- determinant
+- concept: determinant
 
 - concept: transpose
   arity: 1
@@ -435,42 +435,42 @@
   en: "transpose of $1"
   fr: "transposée de $1"
 
-- vectorproduct
+- concept: vectorproduct
 
-- scalarproduct
+- concept: scalarproduct
 
-- outerproduct
+- concept: outerproduct
 
 ## ====================== 4.4.10 Constants and Sets ======================
-- integers
+- concept: integers
 
-- reals
+- concept: reals
 
-- rationals
+- concept: rationals
 
-- naturalnumbers
+- concept: naturalnumbers
 
-- complexes
+- concept: complexes
 
-- primes ## ??
+- concept: primes ## ??
 
-- exponentiale
+- concept: exponentiale
 
-- imaginaryi
+- concept: imaginaryi
 
-- notanumber
+- concept: notanumber
 
-- true
+- concept: true
 
-- false
+- concept: false
 
-- emptyset
+- concept: emptyset
 
-- pi
+- concept: pi
 
-- eulergamma
+- concept: eulergamma
 
-- infinity
+- concept: infinity
 
 
 ## =======================================================
