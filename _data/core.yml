@@ -242,7 +242,7 @@
   - concept: approx
 
 ## ====================== 4.4.4 Calculus ============================
-- title: functions and inverses
+- title: calculus
   intents:
   - concept: int
 
@@ -258,6 +258,8 @@
 
 
   ## ====================== 4.4.5 Sets ============================
+- title: sets
+  intents:
   - concept: set
 
   - concept: list
@@ -283,6 +285,8 @@
   - concept: cartesianproduct
 
   ## ====================== 4.4.6 sequence and series ============================
+- title: sequence and series
+  intents:
   - concept: sum
 
   - concept: product
@@ -292,20 +296,14 @@
   - concept: tendsto
 
   ## ====================== 4.4.7 elementary classical functions ======================
+- title: elementary classical functions
+  intents:
   - concept: sine
     arity: 1
     property: prefix
     default: true
     en: "sine $1"
     fr: "sinus $1"
-
-
-  - concept: sine ## PL: differences between the two?
-    arity: 1
-    property: function
-    comment: "This row could be deleted, as it follows from the default behaviour"
-    en: "sine of $1"
-    fr: "sinus de $1"
 
   ## trig functions
   - concept: cos
@@ -407,6 +405,8 @@
 
 
   ## ====================== 4.4.8 Statistics ======================
+- title: Statistics
+  intents:
   - concept: mean
 
   - concept: sdev
@@ -420,6 +420,8 @@
   - concept: gamma-function # ??
 
   ## ====================== 4.4.9 Linear Algebra ======================
+- title: Linear Algebra
+  intents:
   - concept: vector
 
   - concept: matrix
@@ -447,71 +449,73 @@
   - concept: outerproduct
 
   ## ====================== 4.4.10 Constants and Sets ======================
-  - concept: integers
-    arity: 0
-    property: set
-    en: "Z"
-    fr: "Z"
+- title: Constants and Sets
+  intents:
+    - concept: integers
+      arity: 0
+      property: set
+      en: "Z"
+      fr: "Z"
 
-  - concept: reals
-    arity: 0
-    property: set
-    en: "R"
-    fr: "R"
+    - concept: reals
+      arity: 0
+      property: set
+      en: "R"
+      fr: "R"
 
-  - concept: rationals
-    arity: 0
-    property: set
-    en: "Q"
-    fr: "Q"
+    - concept: rationals
+      arity: 0
+      property: set
+      en: "Q"
+      fr: "Q"
 
-  - concept: naturalnumbers
-    arity: 0
-    property: set
-    en: "N"
-    fr: "N"
+    - concept: naturalnumbers
+      arity: 0
+      property: set
+      en: "N"
+      fr: "N"
 
-  - concept: complexes
-    arity: 0
-    property: set
-    en: "C"
-    fr: "C"
+    - concept: complexes
+      arity: 0
+      property: set
+      en: "C"
+      fr: "C"
 
-  - concept: primes ## ??
-    arity: 0
-    property: set
-    en: "P"
-    fr: "P"
+    - concept: primes ## ??
+      arity: 0
+      property: set
+      en: "P"
+      fr: "P"
 
-  - concept: exponentiale
-    arity: 0
-    property: number
-    en: "e"
-    fr: "e"
+    - concept: exponentiale
+      arity: 0
+      property: number
+      en: "e"
+      fr: "e"
 
-  - concept: imaginaryi
-    arity: 0
-    property: number
-    en: "i"
-    fr: "i"
+    - concept: imaginaryi
+      arity: 0
+      property: number
+      en: "i"
+      fr: "i"
 
-  - concept: notanumber
-    arity: 0
-    property: number
-    en: "not a number"
-    fr: "NaN"
+    - concept: notanumber
+      arity: 0
+      property: number
+      en: "not a number"
+      fr: "NaN"
 
-  - concept: true
+    - concept: true
 
-  - concept: false
+    - concept: false
 
-  - concept: emptyset
+    - concept: emptyset
 
-  - concept: pi
+    - concept: pi
 
-  - concept: eulergamma
+    - concept: eulergamma
 
-  - concept: infinity
+    - concept: infinity
 
 
 ## =======================================================
