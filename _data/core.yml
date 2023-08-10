@@ -4,250 +4,252 @@
 ## TODO: numbers representations
 
 ## ================ 4.4.1 functions and inverses ====================
+- title: functions and inverses
+  intents:
+  - concept: interval-cc
+    arity: 2
+    property: infix
+    en: closed interval between $1 and $2
+    fr: intervalle fermé entre $1 et $2
 
-- concept: interval-cc
-  arity: 2
-  property: infix
-  en: closed interval between $1 and $2
-  fr: intervalle fermé entre $1 et $2
+  - concept: interval-co
+    arity: 2
+    property: infix
+    en: interval between $1 (included) and $2
+    fr: intervalle ouvert à droite entre $1 et $2
 
-- concept: interval-co
-  arity: 2
-  property: infix
-  en: interval between $1 (included) and $2
-  fr: intervalle ouvert à droite entre $1 et $2
+  - concept: interval-oc
+    arity: 2
+    property: infix
+    ## TODO: include parameters
+    en: left open interval...
+    fr: intervalle ouvert à gauche...
 
-- concept: interval-oc
-  arity: 2
-  property: infix
-  ## TODO: include parameters
-  en: left open interval...
-  fr: intervalle ouvert à gauche...
+  - concept: interval-oo
+    arity: 2
+    property: infix
+    en: open interval
+    fr: intervalle ouvert
 
-- concept: interval-oo
-  arity: 2
-  property: infix
-  en: open interval
-  fr: intervalle ouvert
+  - concept: inverse
+    arity: 1
+    property: postfix
+    en: ?names canonical?
+    fr: ?name canonical?
 
-- concept: inverse
-  arity: 1
-  property: postfix
-  en: ?names canonical?
-  fr: ?name canonical?
+  - concept: domain
+    arity: 1
+    property: prefix
+    en: domain of $1
+    fr: domaine de définition de $1
 
-- concept: domain
-  arity: 1
-  property: prefix
-  en: domain of $1
-  fr: domaine de définition de $1
+  - concept: codomain
+    arity: 1
+    property: prefix
+    en: codomain of $1
+    fr: ensemble d'arrivée de $1
 
-- concept: codomain
-  arity: 1
-  property: prefix
-  en: codomain of $1
-  fr: ensemble d'arrivée de $1
+  - concept: image
+    arity: 1
+    property: prefix
+    en: image of $1
+    fr: image de $1
 
-- concept: image
-  arity: 1
-  property: prefix
-  en: image of $1
-  fr: image de $1
+  ## TODO: piecewise
 
-## TODO: piecewise
+  - concept: quotient
+    arity: 2
+    property: infix
+    en: quotient $1 through $2
+    fr: quotient de $1 par $2
 
-- concept: quotient
-  arity: 2
-  property: infix
-  en: quotient $1 through $2
-  fr: quotient de $1 par $2
+  - concept: divide
+    arity: 2
+    property: infix
+    en: $1 divided by $2
+    fr: $1 divisé par $2
 
-- concept: divide
-  arity: 2
-  property: infix
-  en: $1 divided by $2
-  fr: $1 divisé par $2
+  - concept: remainder
+    arity: 2
+    property: infix
+    en: rest of $1 divided by $2
+    fr: reste de la divsion de $1 par $2
 
-- concept: remainder
-  arity: 2
-  property: infix
-  en: rest of $1 divided by $2
-  fr: reste de la divsion de $1 par $2
+  - concept: times
+    arity: 2
+    property: prefix
+    en: $1 times $2
+    fr: $1 fois $2
 
-- concept: times
-  arity: 2
-  property: prefix
-  en: $1 times $2
-  fr: $1 fois $2
-
-- concept: factorial
-  arity: 1
-  property: postfix
-  default: true
-  en: "$1 factorial"
-  fr: "$1 factorial"
-
-
-## not done: max, min
-
-- concept: unary-minus
-  arity: 1
-  property: prefix ## default??
-  en: minus $1
-  fr: moins $1
-
-- concept: minus
-  arity: 2
-  property: infix ## default??
-  en: $1 minus $2
-  fr: $1 moins $2
-
-- concept: plus
-  arity: 2
-  property: infix ## default??
-  en: $1 plus $2
-  fr: $1 plus $2
-
-- concept: unary-minus
-  arity: 1
-  property: prefix ## default??
-  en: minus $1
-  fr: moins $1
-
-- concept: power ## exponentiation
-  arity: 2
-  property: infix
-  default: true
-  conditions:
-    - condition: "$2=2"
-      en: "$1 squared"
-      fr: "$1 carré"
-    - condition: "$2=3"
-      en: "$1 cubed"
-      fr: "$1 cube"
-    - condition: ""
-      en: "$1 to the $2<i>th</i> power"
-      fr: "$1 à la $2"
-
-- concept: root
-  arity: 2
-  property: function
-  default: true
-  comment: even number of conditions to test zebra stripes
-  conditions:
-    - condition: "$2=2"
-      en: "square root of $1"
-    - condition: "$2=3"
-      en: "cube root of $1"
-    - condition: "$2=4"
-      en: "fourth root of $1"
-    - condition: ""
-      en: "$2<i>th</i> root of $1"
-
-- concept: gcd
-  arity: n ## ??
-  property: prefix ## default??
-  en: greatest common divisor of $x
-  fr: plus grand commun diviseur de $1
-
-- concept: lcm
-  arity: n ## ??
-  property: prefix ## default??
-  en: lest common multiple of $x
-  fr: plus grand commun diviseur de $1
-
-## not done and, or, xor
-
-- concept: logical not
-  arity: 1
-  property: infix ## default??
-  en: not $1
-  fr: non $1
-
-- concept: implies
-  arity: 2
-  property: infix ## default??
-  en: $1 implies $2
-  fr: $1 implique $2
-
-- concept: logical equivalence
-  arity: 2
-  property: infix ## default??
-  en: $1 if and only if $2
-  fr: $1 si et seulement si $2
+  - concept: factorial
+    arity: 1
+    property: postfix
+    default: true
+    en: "$1 factorial"
+    fr: "$1 factorial"
 
 
-- concept: forall
-  arity: 1
-  property: prefix ## default??
-  en: for all $1 ## should include "for all x we have y" ??
-  fr: pour tout $1
+  ## not done: max, min
 
-- concept: exists
-  arity: 1
-  property: prefix ## default??
-  en: there exists $1
-  fr: il existe $1
+  - concept: unary-minus
+    arity: 1
+    property: prefix ## default??
+    en: minus $1
+    fr: moins $1
+
+  - concept: minus
+    arity: 2
+    property: infix ## default??
+    en: $1 minus $2
+    fr: $1 moins $2
+
+  - concept: plus
+    arity: 2
+    property: infix ## default??
+    en: $1 plus $2
+    fr: $1 plus $2
+
+  - concept: unary-minus
+    arity: 1
+    property: prefix ## default??
+    en: minus $1
+    fr: moins $1
+
+  - concept: power ## exponentiation
+    arity: 2
+    property: infix
+    default: true
+    conditions:
+      - condition: "$2=2"
+        en: "$1 squared"
+        fr: "$1 carré"
+      - condition: "$2=3"
+        en: "$1 cubed"
+        fr: "$1 cube"
+      - condition: ""
+        en: "$1 to the $2<i>th</i> power"
+        fr: "$1 à la $2"
+
+  - concept: root
+    arity: 2
+    property: function
+    default: true
+    comment: even number of conditions to test zebra stripes
+    conditions:
+      - condition: "$2=2"
+        en: "square root of $1"
+      - condition: "$2=3"
+        en: "cube root of $1"
+      - condition: "$2=4"
+        en: "fourth root of $1"
+      - condition: ""
+        en: "$2<i>th</i> root of $1"
+
+  - concept: gcd
+    arity: n ## ??
+    property: prefix ## default??
+    en: greatest common divisor of $x
+    fr: plus grand commun diviseur de $1
+
+  - concept: lcm
+    arity: n ## ??
+    property: prefix ## default??
+    en: lest common multiple of $x
+    fr: plus grand commun diviseur de $1
+
+  ## not done and, or, xor
+
+  - concept: logical not
+    arity: 1
+    property: infix ## default??
+    en: not $1
+    fr: non $1
+
+  - concept: implies
+    arity: 2
+    property: infix ## default??
+    en: $1 implies $2
+    fr: $1 implique $2
+
+  - concept: logical equivalence
+    arity: 2
+    property: infix ## default??
+    en: $1 if and only if $2
+    fr: $1 si et seulement si $2
 
 
-- concept: abs
-  arity: 1
-  property: prefix ## roundfix ?? ;-)
-  en: absolute value of $1
-  fr: valeur absolue de $1
-  de: Betrag von $1
+  - concept: forall
+    arity: 1
+    property: prefix ## default??
+    en: for all $1 ## should include "for all x we have y" ??
+    fr: pour tout $1
 
-- concept: conjugate
-  arity: 1
-  property: prefix ## ??
-  en: conjugate of $1
-  fr: $1 conjugé
-
-## todo: arg, real, imaginary
-
-## todo: floor, ceiling, fractional
+  - concept: exists
+    arity: 1
+    property: prefix ## default??
+    en: there exists $1
+    fr: il existe $1
 
 
-## ================= 4.4.3 Relations ===================
+  - concept: abs
+    arity: 1
+    property: prefix ## roundfix ?? ;-)
+    en: absolute value of $1
+    fr: valeur absolue de $1
+    de: Betrag von $1
 
-- concept: equals
-  arity: 2
-  property: infix
-  default: true
-  en:
-    - "$1 equals $2"
-    - "$1 is equal to $2"
-  fr: "$1 est égal à $2"
+  - concept: conjugate
+    arity: 1
+    property: prefix ## ??
+    en: conjugate of $1
+    fr: $1 conjugé
 
-- concept: equals
-  arity: 2
-  property: function
-  en: "equals $1 $2"
-  fr: "égal $1 $2"
+  ## todo: arg, real, imaginary
 
-- concept: equiv
+  ## todo: floor, ceiling, fractional
 
-- concept: gt
 
-- concept: lt
+  ## ================= 4.4.3 Relations ===================
 
-- concept: leq
+  - concept: equals
+    arity: 2
+    property: infix
+    default: true
+    en:
+      - "$1 equals $2"
+      - "$1 is equal to $2"
+    fr: "$1 est égal à $2"
 
-- concept: geq
+  - concept: equals
+    arity: 2
+    property: function
+    en: "equals $1 $2"
+    fr: "égal $1 $2"
 
-- concept: approx
+  - concept: equiv
+
+  - concept: gt
+
+  - concept: lt
+
+  - concept: leq
+
+  - concept: geq
+
+  - concept: approx
 
 ## ====================== 4.4.4 Calculus ============================
+- title: functions and inverses
+  intents:
+  - concept: int
 
-- concept: int
+  ## derivative replaced by prime
 
-## derivative replaced by prime
+  - concept: prime
 
-- concept: prime
+  - concept: n-th derivative
 
-- concept: n-th derivative
-
-- concept: partialdiff
+  - concept: partialdiff
 
 ## TODO: divergence, curl, gradient, laplacian
 
@@ -443,22 +445,58 @@
 
 ## ====================== 4.4.10 Constants and Sets ======================
 - concept: integers
+  arity: 0
+  property: set
+  en: "Z"
+  fr: "Z"
 
 - concept: reals
+  arity: 0
+  property: set
+  en: "R"
+  fr: "R"
 
 - concept: rationals
+  arity: 0
+  property: set
+  en: "Q"
+  fr: "Q"
 
 - concept: naturalnumbers
+  arity: 0
+  property: set
+  en: "N"
+  fr: "N"
 
 - concept: complexes
+  arity: 0
+  property: set
+  en: "C"
+  fr: "C"
 
 - concept: primes ## ??
+  arity: 0
+  property: set
+  en: "P"
+  fr: "P"
 
 - concept: exponentiale
+  arity: 0
+  property: number
+  en: "e"
+  fr: "e"
 
 - concept: imaginaryi
+  arity: 0
+  property: number
+  en: "i"
+  fr: "i"
 
 - concept: notanumber
+  arity: 0
+  property: number
+  en: "not a number"
+  fr: "NaN"
 
 - concept: true
 

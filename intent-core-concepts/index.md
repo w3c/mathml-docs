@@ -82,7 +82,8 @@ Localised texts can be added to the YAML file:
 </p>
 </details>
 
-
+{%- for section in site.data.core -%}
+<h1>{{section.title}}</h1>
 <table>
 <thead>
 <tr class="row0">
@@ -97,7 +98,7 @@ Localised texts can be added to the YAML file:
 </tr>
 </thead>
 <tbody>
-{%- for c in site.data.core -%}
+{%- for c in section.intents -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- if c.conditions %}
 {%- for cond in c.conditions -%}
@@ -147,7 +148,8 @@ Localised texts can be added to the YAML file:
 {%- endfor -%}
 </tbody>
 </table>
-
+<hr>
+{%- endfor -%}
 
 ### Key
 
