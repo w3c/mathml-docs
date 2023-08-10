@@ -157,40 +157,6 @@
     en: lest common multiple of $x
     fr: plus grand commun diviseur de $1
 
-  ## not done and, or, xor
-
-  - concept: logical not
-    arity: 1
-    property: infix ## default??
-    en: not $1
-    fr: non $1
-
-  - concept: implies
-    arity: 2
-    property: infix ## default??
-    en: $1 implies $2
-    fr: $1 implique $2
-
-  - concept: logical equivalence
-    arity: 2
-    property: infix ## default??
-    en: $1 if and only if $2
-    fr: $1 si et seulement si $2
-
-
-  - concept: forall
-    arity: 1
-    property: prefix ## default??
-    en: for all $1 ## should include "for all x we have y" ??
-    fr: pour tout $1
-
-  - concept: exists
-    arity: 1
-    property: prefix ## default??
-    en: there exists $1
-    fr: il existe $1
-
-
   - concept: abs
     arity: 1
     property: prefix ## roundfix ?? ;-)
@@ -209,8 +175,45 @@
   ## todo: floor, ceiling, fractional
 
 
+- title: logic
+  intents:
+  - concept: logical not
+    arity: 1
+    property: infix ## default??
+    en: not $1
+    fr: non $1
+
+  - concept: implies
+    arity: 2
+    property: infix ## default??
+    en: $1 implies $2
+    fr: $1 implique $2
+
+  - concept: logical equivalence
+    arity: 2
+    property: infix ## default??
+    en: $1 if and only if $2
+    fr: $1 si et seulement si $2
+
+  - concept: forall
+    arity: 1
+    property: prefix ## default??
+    en: for all $1 ## should include "for all x we have y" ??
+    fr: pour tout $1
+
+  - concept: exists
+    arity: 1
+    property: prefix ## default??
+    en: there exists $1
+    fr: il existe $1
+
+    ## not done and, or, xor
+
+
   ## ================= 4.4.3 Relations ===================
 
+- title: relations
+  intents:
   - concept: equals
     arity: 2
     property: infix
@@ -254,261 +257,261 @@
 ## TODO: divergence, curl, gradient, laplacian
 
 
-## ====================== 4.4.5 Sets ============================
-- concept: set
+  ## ====================== 4.4.5 Sets ============================
+  - concept: set
 
-- concept: list
+  - concept: list
 
-- concept: union
+  - concept: union
 
-- concept: intersect
+  - concept: intersect
 
-- concept: in
+  - concept: in
 
-- concept: notin
+  - concept: notin
 
-- concept: subset
+  - concept: subset
 
-## ?? - notsubset
+  ## ?? - notsubset
 
-- concept: prsubset
+  - concept: prsubset
 
-## ?? - notprsubset
+  ## ?? - notprsubset
 
-- concept: setdiff
+  - concept: setdiff
 
-- concept: cartesianproduct
+  - concept: cartesianproduct
 
-## ====================== 4.4.6 sequence and series ============================
-- concept: sum
+  ## ====================== 4.4.6 sequence and series ============================
+  - concept: sum
 
-- concept: product
+  - concept: product
 
-- concept: limit
+  - concept: limit
 
-- concept: tendsto
+  - concept: tendsto
 
-## ====================== 4.4.7 elementary classical functions ======================
-- concept: sine
-  arity: 1
-  property: prefix
-  default: true
-  en: "sine $1"
-  fr: "sinus $1"
+  ## ====================== 4.4.7 elementary classical functions ======================
+  - concept: sine
+    arity: 1
+    property: prefix
+    default: true
+    en: "sine $1"
+    fr: "sinus $1"
 
 
-- concept: sine ## PL: differences between the two?
-  arity: 1
-  property: function
-  comment: "This row could be deleted, as it follows from the default behaviour"
-  en: "sine of $1"
-  fr: "sinus de $1"
+  - concept: sine ## PL: differences between the two?
+    arity: 1
+    property: function
+    comment: "This row could be deleted, as it follows from the default behaviour"
+    en: "sine of $1"
+    fr: "sinus de $1"
 
-## trig functions
-- concept: cos
+  ## trig functions
+  - concept: cos
 
-- concept: tan
+  - concept: tan
 
-- concept: sec
+  - concept: sec
 
-- concept: csc
+  - concept: csc
 
-- concept: cot
+  - concept: cot
 
-## inverse trig functions
-- concept: arcsin
+  ## inverse trig functions
+  - concept: arcsin
 
-- concept: arccos
+  - concept: arccos
 
-- concept: arctan
+  - concept: arctan
 
-- concept: arcsec
+  - concept: arcsec
 
-- concept: arccsc
+  - concept: arccsc
 
-- concept: arccot
+  - concept: arccot
 
-## hyperbolic trig functions
-- concept: hyperbolic-sine
-  arity: 1
-  property: prefix
-  default: true
-  comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-  en:
-    - "shine $1"
-    - "sinus hyperbolique $1"
-  fr:
-    - "shine $1"
-    - "sinus hyperbolique $1"
+  ## hyperbolic trig functions
+  - concept: hyperbolic-sine
+    arity: 1
+    property: prefix
+    default: true
+    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    en:
+      - "shine $1"
+      - "sinus hyperbolique $1"
+    fr:
+      - "shine $1"
+      - "sinus hyperbolique $1"
 
 
-- concept: hyperbolic-cosine
-  arity: 1
-  property: prefix
-  default: true
-  comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-  en:
-    - "cosh $1"
-    - "cosinus hyperbolique $1"
-  fr:
-   - "cosh $1"
-   - "kosh $1"
+  - concept: hyperbolic-cosine
+    arity: 1
+    property: prefix
+    default: true
+    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    en:
+      - "cosh $1"
+      - "cosinus hyperbolique $1"
+    fr:
+     - "cosh $1"
+     - "kosh $1"
 
-- concept: tanh
+  - concept: tanh
 
-- concept: sech
+  - concept: sech
 
-- concept: csch
+  - concept: csch
 
-- concept: coth
+  - concept: coth
 
 
-## inverse hyperbolic trig functions
-- concept: arcsinh
+  ## inverse hyperbolic trig functions
+  - concept: arcsinh
 
-- concept: arccosh
+  - concept: arccosh
 
-- concept: arctanh
+  - concept: arctanh
 
-- concept: arcsech
+  - concept: arcsech
 
-- concept: arccsch
+  - concept: arccsch
 
-- concept: arccoth
+  - concept: arccoth
 
-## exponential related functions
-- concept: exp
+  ## exponential related functions
+  - concept: exp
 
-- concept: natural-logarithm
-  arity: 1
-  property: prefix
-  default: true
-  en:
-    - "natural log of $1"
-    - "log of $1"
-    - "log base e of $1"
-  fr:
-    -"natural log of $1"
-    - "log of $1 "
-    - "log base e of $1"
+  - concept: natural-logarithm
+    arity: 1
+    property: prefix
+    default: true
+    en:
+      - "natural log of $1"
+      - "log of $1"
+      - "log base e of $1"
+    fr:
+      -"natural log of $1"
+      - "log of $1 "
+      - "log base e of $1"
 
-- concept: logarithm
-  arity: 2
-  property: function
-  default: true
-  comment: "arity 1 log(x)  needs no rule here"
-  en: "log base $2 of $1"
-  fr: "log base $2 of $1"
+  - concept: logarithm
+    arity: 2
+    property: function
+    default: true
+    comment: "arity 1 log(x)  needs no rule here"
+    en: "log base $2 of $1"
+    fr: "log base $2 of $1"
 
 
 
 
-## ====================== 4.4.8 Statistics ======================
-- concept: mean
+  ## ====================== 4.4.8 Statistics ======================
+  - concept: mean
 
-- concept: sdev
+  - concept: sdev
 
-- concept: variance
+  - concept: variance
 
-- concept: median
+  - concept: median
 
-- concept: mode
+  - concept: mode
 
-- concept: gamma-function # ??
+  - concept: gamma-function # ??
 
-## ====================== 4.4.9 Linear Algebra ======================
-- concept: vector
+  ## ====================== 4.4.9 Linear Algebra ======================
+  - concept: vector
 
-- concept: matrix
+  - concept: matrix
 
-- concept: determinant
+  - concept: determinant
 
-- concept: transpose
-  arity: 1
-  property: postfix
-  default: true
-  en: "$1 transpose"
-  fr: "$1 transposée"
+  - concept: transpose
+    arity: 1
+    property: postfix
+    default: true
+    en: "$1 transpose"
+    fr: "$1 transposée"
 
-- concept: transpose
-  arity: 1
-  property: function
-  comment: "This row could be deleted, as it follows from the default behaviour"
-  en: "transpose of $1"
-  fr: "transposée de $1"
+  - concept: transpose
+    arity: 1
+    property: function
+    comment: "This row could be deleted, as it follows from the default behaviour"
+    en: "transpose of $1"
+    fr: "transposée de $1"
 
-- concept: vectorproduct
+  - concept: vectorproduct
 
-- concept: scalarproduct
+  - concept: scalarproduct
 
-- concept: outerproduct
+  - concept: outerproduct
 
-## ====================== 4.4.10 Constants and Sets ======================
-- concept: integers
-  arity: 0
-  property: set
-  en: "Z"
-  fr: "Z"
+  ## ====================== 4.4.10 Constants and Sets ======================
+  - concept: integers
+    arity: 0
+    property: set
+    en: "Z"
+    fr: "Z"
 
-- concept: reals
-  arity: 0
-  property: set
-  en: "R"
-  fr: "R"
+  - concept: reals
+    arity: 0
+    property: set
+    en: "R"
+    fr: "R"
 
-- concept: rationals
-  arity: 0
-  property: set
-  en: "Q"
-  fr: "Q"
+  - concept: rationals
+    arity: 0
+    property: set
+    en: "Q"
+    fr: "Q"
 
-- concept: naturalnumbers
-  arity: 0
-  property: set
-  en: "N"
-  fr: "N"
+  - concept: naturalnumbers
+    arity: 0
+    property: set
+    en: "N"
+    fr: "N"
 
-- concept: complexes
-  arity: 0
-  property: set
-  en: "C"
-  fr: "C"
+  - concept: complexes
+    arity: 0
+    property: set
+    en: "C"
+    fr: "C"
 
-- concept: primes ## ??
-  arity: 0
-  property: set
-  en: "P"
-  fr: "P"
+  - concept: primes ## ??
+    arity: 0
+    property: set
+    en: "P"
+    fr: "P"
 
-- concept: exponentiale
-  arity: 0
-  property: number
-  en: "e"
-  fr: "e"
+  - concept: exponentiale
+    arity: 0
+    property: number
+    en: "e"
+    fr: "e"
 
-- concept: imaginaryi
-  arity: 0
-  property: number
-  en: "i"
-  fr: "i"
+  - concept: imaginaryi
+    arity: 0
+    property: number
+    en: "i"
+    fr: "i"
 
-- concept: notanumber
-  arity: 0
-  property: number
-  en: "not a number"
-  fr: "NaN"
+  - concept: notanumber
+    arity: 0
+    property: number
+    en: "not a number"
+    fr: "NaN"
 
-- concept: true
+  - concept: true
 
-- concept: false
+  - concept: false
 
-- concept: emptyset
+  - concept: emptyset
 
-- concept: pi
+  - concept: pi
 
-- concept: eulergamma
+  - concept: eulergamma
 
-- concept: infinity
+  - concept: infinity
 
 
 ## =======================================================
