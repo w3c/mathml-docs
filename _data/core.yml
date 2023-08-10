@@ -1,7 +1,7 @@
 ## From chapter 4 of MathML3
 
 
-## TODO: numbers representations
+- concept: TODO numbers representations
 
 ## ================ 4.4.1 functions and inverses ====================
 - title: functions and inverses
@@ -21,7 +21,7 @@
   - concept: interval-oc
     arity: 2
     property: infix
-    ## TODO: include parameters
+  - concept: TODO include parameters
     en: left open interval...
     fr: intervalle ouvert à gauche...
 
@@ -55,7 +55,7 @@
     en: image of $1
     fr: image de $1
 
-  ## TODO: piecewise
+  - concept: TODO piecewise
 
   - concept: quotient
     arity: 2
@@ -89,7 +89,7 @@
     fr: "$1 factorial"
 
 
-  ## not done: max, min
+  - concept: TODO not done max, min
 
   - concept: unary-minus
     arity: 1
@@ -170,9 +170,9 @@
     en: conjugate of $1
     fr: $1 conjugé
 
-  ## todo: arg, real, imaginary
+  - concept: todo arg, real, imaginary
 
-  ## todo: floor, ceiling, fractional
+  - concept: TODO floor, ceiling, fractional
 
 
 - title: logic
@@ -207,11 +207,10 @@
     en: there exists $1
     fr: il existe $1
 
-    ## not done and, or, xor
+    ## TODO not done and, or, xor
 
 
   ## ================= 4.4.3 Relations ===================
-
 - title: relations
   intents:
   - concept: equals
@@ -254,10 +253,10 @@
 
   - concept: partialdiff
 
-## TODO: divergence, curl, gradient, laplacian
+- concept: TODO divergence, curl, gradient, laplacian
 
 
-  ## ====================== 4.4.5 Sets ============================
+## ====================== 4.4.5 Sets ============================
 - title: sets
   intents:
   - concept: set
@@ -274,11 +273,11 @@
 
   - concept: subset
 
-  ## ?? - notsubset
+  - concept: ?? - notsubset
 
   - concept: prsubset
 
-  ## ?? - notprsubset
+  - concept: ?? - notprsubset
 
   - concept: setdiff
 
