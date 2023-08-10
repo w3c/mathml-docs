@@ -1,5 +1,11 @@
-## From chapter 4 of MathML3
+## Defaults:
+### - property infix => arity 2
+### - property prefix => arity 1
+### - property suffix => arity 1
+### - property set, number => arity 0
 
+
+## From chapter 4 of MathML3
 
 - concept: TODO numbers representations
 
@@ -7,50 +13,42 @@
 - title: functions and inverses
   intents:
   - concept: interval-cc
-    arity: 2
     property: infix
     en: closed interval between $1 and $2
     fr: intervalle fermé entre $1 et $2
 
   - concept: interval-co
-    arity: 2
     property: infix
     en: interval between $1 (included) and $2
     fr: intervalle ouvert à droite entre $1 et $2
 
   - concept: interval-oc
-    arity: 2
     property: infix
   - concept: TODO include parameters
     en: left open interval...
     fr: intervalle ouvert à gauche...
 
   - concept: interval-oo
-    arity: 2
     property: infix
     en: open interval
     fr: intervalle ouvert
 
   - concept: inverse
-    arity: 1
     property: postfix
     en: ?names canonical?
     fr: ?name canonical?
 
   - concept: domain
-    arity: 1
     property: prefix
     en: domain of $1
     fr: domaine de définition de $1
 
   - concept: codomain
-    arity: 1
     property: prefix
     en: codomain of $1
     fr: ensemble d'arrivée de $1
 
   - concept: image
-    arity: 1
     property: prefix
     en: image of $1
     fr: image de $1
@@ -58,31 +56,26 @@
   - concept: TODO piecewise
 
   - concept: quotient
-    arity: 2
     property: infix
     en: quotient $1 through $2
     fr: quotient de $1 par $2
 
   - concept: divide
-    arity: 2
     property: infix
     en: $1 divided by $2
     fr: $1 divisé par $2
 
   - concept: remainder
-    arity: 2
     property: infix
     en: rest of $1 divided by $2
     fr: reste de la divsion de $1 par $2
 
   - concept: times
-    arity: 2
-    property: prefix
+    property: infix
     en: $1 times $2
     fr: $1 fois $2
 
   - concept: factorial
-    arity: 1
     property: postfix
     default: true
     en: "$1 factorial"
@@ -92,31 +85,26 @@
   - concept: TODO not done max, min
 
   - concept: unary-minus
-    arity: 1
-    property: prefix ## default??
+    property: prefix
     en: minus $1
     fr: moins $1
 
   - concept: minus
-    arity: 2
-    property: infix ## default??
+    property: infix
     en: $1 minus $2
     fr: $1 moins $2
 
   - concept: plus
-    arity: 2
-    property: infix ## default??
+    property: infix
     en: $1 plus $2
     fr: $1 plus $2
 
   - concept: unary-minus
-    arity: 1
-    property: prefix ## default??
+    property: prefix
     en: minus $1
     fr: moins $1
 
   - concept: power ## exponentiation
-    arity: 2
     property: infix
     default: true
     conditions:
@@ -146,27 +134,27 @@
         en: "$2<i>th</i> root of $1"
 
   - concept: gcd
-    arity: n ## ??
-    property: prefix ## default??
+    arity: n
+    property: prefix
     en: greatest common divisor of $x
     fr: plus grand commun diviseur de $1
 
   - concept: lcm
-    arity: n ## ??
-    property: prefix ## default??
+    arity: n
+    property: prefix
     en: lest common multiple of $x
     fr: plus grand commun diviseur de $1
 
   - concept: abs
     arity: 1
-    property: prefix ## roundfix ?? ;-)
+    property: prefix ??
     en: absolute value of $1
     fr: valeur absolue de $1
     de: Betrag von $1
 
   - concept: conjugate
     arity: 1
-    property: prefix ## ??
+    property: prefix
     en: conjugate of $1
     fr: $1 conjugé
 
@@ -178,31 +166,28 @@
 - title: logic
   intents:
   - concept: logical not
-    arity: 1
-    property: infix ## default??
+    property: prefix
     en: not $1
     fr: non $1
 
   - concept: implies
-    arity: 2
     property: infix ## default??
     en: $1 implies $2
     fr: $1 implique $2
 
   - concept: logical equivalence
-    arity: 2
-    property: infix ## default??
+    property: infix
     en: $1 if and only if $2
     fr: $1 si et seulement si $2
 
   - concept: forall
-    arity: 1
-    property: prefix ## default??
+    arity: 2?
+    property: prefix
     en: for all $1 ## should include "for all x we have y" ??
     fr: pour tout $1
 
   - concept: exists
-    arity: 1
+    arity: 2?
     property: prefix ## default??
     en: there exists $1
     fr: il existe $1
@@ -214,7 +199,6 @@
 - title: relations
   intents:
   - concept: equals
-    arity: 2
     property: infix
     default: true
     en:
@@ -223,7 +207,6 @@
     fr: "$1 est égal à $2"
 
   - concept: equals
-    arity: 2
     property: function
     en: "equals $1 $2"
     fr: "égal $1 $2"
@@ -298,7 +281,6 @@
 - title: elementary classical functions
   intents:
   - concept: sine
-    arity: 1
     property: prefix
     default: true
     en: "sine $1"
@@ -330,7 +312,6 @@
 
   ## hyperbolic trig functions
   - concept: hyperbolic-sine
-    arity: 1
     property: prefix
     default: true
     comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -343,7 +324,6 @@
 
 
   - concept: hyperbolic-cosine
-    arity: 1
     property: prefix
     default: true
     comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -380,7 +360,6 @@
   - concept: exp
 
   - concept: natural-logarithm
-    arity: 1
     property: prefix
     default: true
     en:
@@ -428,15 +407,13 @@
   - concept: determinant
 
   - concept: transpose
-    arity: 1
     property: postfix
     default: true
     en: "$1 transpose"
     fr: "$1 transposée"
 
   - concept: transpose
-    arity: 1
-    property: function
+    property: suffix
     comment: "This row could be deleted, as it follows from the default behaviour"
     en: "transpose of $1"
     fr: "transposée de $1"
@@ -451,55 +428,46 @@
 - title: Constants and Sets
   intents:
     - concept: integers
-      arity: 0
       property: set
       en: "Z"
       fr: "Z"
 
     - concept: reals
-      arity: 0
       property: set
       en: "R"
       fr: "R"
 
     - concept: rationals
-      arity: 0
       property: set
       en: "Q"
       fr: "Q"
 
     - concept: naturalnumbers
-      arity: 0
       property: set
       en: "N"
       fr: "N"
 
     - concept: complexes
-      arity: 0
       property: set
       en: "C"
       fr: "C"
 
     - concept: primes ## ??
-      arity: 0
       property: set
       en: "P"
       fr: "P"
 
     - concept: exponentiale
-      arity: 0
       property: number
       en: "e"
       fr: "e"
 
     - concept: imaginaryi
-      arity: 0
       property: number
       en: "i"
       fr: "i"
 
     - concept: notanumber
-      arity: 0
       property: number
       en: "not a number"
       fr: "NaN"
