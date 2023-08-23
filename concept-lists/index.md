@@ -1,5 +1,5 @@
 ---
-title: "Maintaing MathML Concept Lists"
+title: "Maintaining MathML Concept Lists"
 layout: wgnote
 ---
 
