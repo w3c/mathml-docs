@@ -5,6 +5,11 @@
   label-regional: English
   label-english: English
 
+- language-code: fr
+  label-regional: Français
+  label-english: French
+
+
 - language-code: de
   label-regional: Deutsch
   label-english: German
@@ -12,11 +17,6 @@
 - language-code: es
   label-regional: Español
   label-english: Spanish
-
-- language-code: fr
-  label-regional: Français
-  label-english: French
-
 
 
 
