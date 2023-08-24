@@ -10,7 +10,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 </style>
 
 <style id="langcss">
-{% for language in site.data.languages offset:1-%}
+{% for language in site.data.languages offset:2-%}
   {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
 {%- endfor -%}
  {display:none}
