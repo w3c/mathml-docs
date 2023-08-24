@@ -25,7 +25,8 @@ Don't forget:
 - locale-name that our user is representing (language, region, mathematical domain of specialty)
 - questions that give enough content so that the formulæ are unambiguously read, e.g. using a sentence around it
 - permission to reproduce the input text and/or translated formula
-- voice
+- voice upload
+- formulæ that are ambiguous too
 - contact information for further questions (this will not be shared)
 
 ## Elaboration process
