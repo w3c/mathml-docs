@@ -72,7 +72,7 @@ Localised texts can be added to the YAML file:
  <input
 	onchange="updatelang(this)"
 	type="checkbox"
-	{% if lang == "en" %} checked {% endif %}
+	{% if lang == "en" or lang == "fr" %} checked {% endif %}
       id="cb-{{lang}}"
       name="language"
       value="{{lang}}" />
