@@ -335,14 +335,22 @@
   intents:
   - concept: sine
     property: prefix
-    default: true
     en: "sine $1"
     fr: "sinus $1"
+    comments: used as 'sin', 'sen'
 
-  ## trig functions
-  - concept: cos
+  - concept: cosine
+    property: prefix
+    en:
+    - "(verbose) cosine $1"
+    - "(terse) cos $1"
 
-  - concept: tan
+  - concept: tangent
+    property: prefix
+    en:
+    - "(verbose) tangent $1"
+    - "(terse) tan $1"
+    comments: used as 'tan', 'tg'
 
   - concept: sec
 
@@ -351,7 +359,13 @@
   - concept: cot
 
   ## inverse trig functions
-  - concept: arcsin
+  - concept: arc-sine
+    property: prefix
+    en:
+    - "(verbose) arc sine $1"
+    comments:
+    - "used as 'arcsin', 'arc sin'"
+    - "this is distinct from sin inverse ($sin^{-1})"
 
   - concept: arccos
 
@@ -480,63 +494,86 @@
   ## ====================== 4.4.10 Constants and Sets ======================
 - title: Constants and Sets
   intents:
-    - concept: integers
-      property: set
-      en: "Z"
+    - concept: set-of-integers
+      arity: 0
+      en:
+      - "(verbose) set of all integers"
+      - "(terse) Z"
       fr: "Z"
 
-    - concept: reals
-      property: set
-      en: "R"
-      fr: "R"
+    - concept: set-of-reals
+      arity: 0
+      en:
+      - "(verbose) set of all real numbers"
+      - "(terse) R"
 
-    - concept: rationals
-      property: set
-      en: "Q"
-      fr: "Q"
+    - concept: set-of-rationals
+      arity: 0
+      en:
+      - "(verbose) set of all rational numbers"
+      - "(terse) R"
 
-    - concept: naturalnumbers
-      property: set
-      en: "N"
-      fr: "N"
+    - concept: set-of-natural-numbers
+      arity: 0
+      en:
+      - "(verbose) set of all natural numbers"
+      - "(terse) N"
 
-    - concept: complexes
-      property: set
-      en: "C"
-      fr: "C"
+    - concept: set-of-complex-numbers
+      arity: 0
+      en:
+      - "(verbose) set of all complex numbers"
+      - "(terse) C"
 
-    - concept: primes ## ??
-      property: set
-      en: "P"
-      fr: "P"
+    - concept: set-of-primes
+      arity: 0
+      en:
+      - "(verbose) set of all prime numbers"
+      - "(terse) P"
 
-    - concept: exponentiale
-      property: number
+    - concept: exponential-e
+      arity: 0
       en: "e"
       fr: "e"
 
-    - concept: imaginaryi
-      property: number
+    - concept: imaginary-i
+      arity: 0
       en: "i"
       fr: "i"
 
-    - concept: notanumber
-      property: number
+    - concept: exponential-e
+      arity: 0
+      en: "e"
+      fr: "e"
+
+    - concept: not-a-number???
+      arity: 0
       en: "not a number"
       fr: "NaN"
 
     - concept: true
+      arity: 0
+      en: "true"
 
     - concept: false
+      arity: 0
+      en: "false"
 
-    - concept: emptyset
+    - concept: empty-set
+      arity: 0
+      en: "empty set"
 
-    - concept: pi
+    - concept: pi???
+      arity: 0
+      en: "pi"
 
-    - concept: eulergamma
+    - concept: euler-gamma???
+      arity: 0
+      en: "gamma"
 
-    - concept: infinity
-
+    - concept: infinity???
+      arity: 0
+      en: "infinity"
 
 ## =======================================================
 
