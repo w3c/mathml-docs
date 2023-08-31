@@ -337,7 +337,7 @@
     property: prefix
     en: "sine $1"
     fr: "sinus $1"
-    comments: used as 'sin', 'sen'
+    comment: used as 'sin', 'sen'
 
   - concept: cosine
     property: prefix
@@ -350,7 +350,7 @@
     en:
     - "(verbose) tangent $1"
     - "(terse) tan $1"
-    comments: used as 'tan', 'tg'
+    comment: used as 'tan', 'tg'
 
   - concept: sec
 
@@ -363,7 +363,7 @@
     property: prefix
     en:
     - "(verbose) arc sine $1"
-    comments:
+    comment:
     - "used as 'arcsin', 'arc sin'"
     - "this is distinct from sin inverse ($sin^{-1})"
 
