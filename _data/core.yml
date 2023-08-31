@@ -7,7 +7,7 @@
 
 ## From chapter 4 of MathML3
 
-- concept: TODO numbers representations
+## - concept: TODO numbers representations
 
 ## ================ 4.4.1 functions and inverses ====================
 - title: functions and inverses
@@ -363,8 +363,8 @@
     en:
     - "(verbose) arc sine $1"
     comment:
-    - "used as 'arcsin', 'arc sin'"
-    - "this is distinct from sin inverse ($sin^{-1}$)"
+    - "used as 'arcsin', 'arc sin'<br>"
+    - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mn>−1</mn></msup></math>)"
 
   - concept: arccos
 
