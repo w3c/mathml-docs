@@ -141,7 +141,6 @@
     arity: 2
     property: function
     default: true
-    comment: even number of conditions to test zebra stripes
     conditions:
       - condition: "$2=2"
         en: "square root of $1"
@@ -365,7 +364,7 @@
     - "(verbose) arc sine $1"
     comment:
     - "used as 'arcsin', 'arc sin'"
-    - "this is distinct from sin inverse ($sin^{-1})"
+    - "this is distinct from sin inverse ($sin^{-1}$)"
 
   - concept: arccos
 
