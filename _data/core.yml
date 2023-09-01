@@ -36,11 +36,10 @@
     en: open interval between $1 and $2
     fr: intervalle ouvert
 
-  - concept: ???inverse
+  - concept: inverse
     arity: 1
     property: postfix
-    en: ?names canonical?
-    fr: ?name canonical?
+    en: inverse of $1
 
   - concept: domain
     arity: 1
@@ -151,19 +150,19 @@
       - condition: ""
         en: "$2<i>th</i> root of $1"
 
-  - concept: gcd
+  - concept: greatest-common-divsor
     arity: "*"
     property: function
     en: greatest common divisor of $1, $2, ...
     fr: plus grand commun diviseur de $1, $2, ...
 
-  - concept: lcm
+  - concept: least-common-multiple
     arity: "*"
     property: function
     en: lest common multiple of  $1, $2, ...
     fr: plus grand commun diviseur de $1, $2, ...
 
-  - concept: abs
+  - concept: absolute-value
     arity: 1
     property: function
     en: absolute value of $1
@@ -176,10 +175,10 @@
     en: complex conjugate of $1
     fr: $1 conjugé
 
-  - concept: angle-part
+  - concept: complex-arg
     arity: 1
     property: function
-    en: angle of $1
+    en: arg of $1
 
   - concept: real-part
     arity: 1
@@ -227,62 +226,119 @@
     en: $1 implies $2
     fr: $1 implique $2
 
-  - concept: logical equivalence
+  - concept: logical-equivalence
     property: infix
     en: $1 if and only if $2
     fr: $1 si et seulement si $2
 
   - concept: forall
-    arity: 2?
+    arity: 2
     property: prefix
-    en: for all $1 ## should include "for all x we have y" ??
-    fr: pour tout $1
+    en: for all $1 $2
+    fr: pour tout $1 $2
 
   - concept: exists
-    arity: 2?
-    property: prefix ## default??
+    arity: 1
+    property: prefix
     en: there exists $1
     fr: il existe $1
 
-    ## TODO not done and, or, xor
+  - concept: and
+    arity: 2
+    property: infix
+    en: $1 and $2
 
+  - concept: or
+    arity: 2
+    property: infix
+    en: $1 or $2
+
+  - concept: xor
+    arity: 2
+    property: infix
+    en: $1 xor $2
 
   ## ================= 4.4.3 Relations ===================
 - title: relations
   intents:
   - concept: equals
+    arity: 2
     property: infix
-    default: true
     en:
-      - "$1 equals $2"
-      - "$1 is equal to $2"
+      - "(terse) $1 equals $2"
+      - "(verbose) $1 is equal to $2"
     fr: "$1 est égal à $2"
 
-  - concept: equals
-    property: function
-    en: "equals $1 $2"
-    fr: "égal $1 $2"
+  - concept: not-equals
+    arity: 2
+    property: infix
+    en:
+      - "(terse) $1 not equals $2"
+      - "(verbose) $1 is not equal to $2"
 
-  - concept: equiv
+  - concept: greater-than
+    arity: 2
+    property: infix
+    en:
+      - "(terse) $1 greater than $2"
+      - "(verbose) $1 is greater than $2"
 
-  - concept: gt
+  - concept: less-than
+    arity: 2
+    property: infix
+    en:
+      - "(terse) $1 less than $2"
+      - "(verbose) $1 is less than $2"
 
-  - concept: lt
+  - concept: greater-than-or-equals
+    arity: 2
+    property: infix
+    en:
+      - "(terse) $1 greater than or equal to $2"
+      - "(verbose) $1 is greater than or equal to $2"
 
-  - concept: leq
+  - concept: less-than-or-equals
+    arity: 2
+    property: infix
+    en:
+      - "(terse) $1 less than or equal to $2"
+      - "(verbose) $1 is less than or equal to $2"
 
-  - concept: geq
+  - concept: approximately
+    arity: 2
+    property: infix
+    en:
+      - "(terse) $1 approximately equal to $2"
+      - "(verbose) $1 is approximately equal to $2"
 
-  - concept: approx
+  - concept: divides
+    arity: 2
+    property: infix
+    en: "$1 divides $2"
 
 ## ====================== 4.4.4 Calculus ============================
 - title: calculus
   intents:
-  - concept: int
+  - concept: integral
+    arity: 1
+    property: function
+    en: "integral of $1"
+
+  - concept: definite-integral
+    arity: 2
+    property: function
+    en: "integral over $1 of $2"
+
+  - concept: definite-integral
+    arity: 3
+    property: function
+    en: "integral from $1 to $2 of $3"
 
   ## derivative replaced by prime
 
-  - concept: prime
+  - concept: ???derivative-prime
+  - concept: ???derivative-dot
+  - concept: derivative
 
   - concept: n-th derivative
 
@@ -333,48 +389,89 @@
 - title: elementary classical functions
   intents:
   - concept: sine
+    arity: 1
     property: prefix
     en: "sine $1"
     fr: "sinus $1"
     comment: used as 'sin', 'sen'
 
   - concept: cosine
+    arity: 1
     property: prefix
     en:
     - "(verbose) cosine $1"
     - "(terse) cos $1"
 
   - concept: tangent
+    arity: 1
     property: prefix
     en:
     - "(verbose) tangent $1"
     - "(terse) tan $1"
     comment: used as 'tan', 'tg'
 
-  - concept: sec
-
-  - concept: csc
-
-  - concept: cot
-
-  ## inverse trig functions
-  - concept: arc-sine
+  - concept: secant
+    arity: 1
     property: prefix
     en:
-    - "(verbose) arc sine $1"
+    - "(verbose) secant $1"
+    - "(terse) seech $1"
+    comment: used as 'sec'
+
+  - concept: cosecant
+    arity: 1
+    property: prefix
+    en:
+    - "(verbose) cosecant $1"
+    - "(terse) co-seech $1"
+    comment: used as 'csc'
+
+  - concept: cotangent
+    property: prefix
+    en:
+    - "(verbose) cotangent $1"
+    - "(terse) co-tan $1"
+    comment: used as 'cot'
+
+
+  ## inverse trig functions
+  - concept: arcsine
+    property: prefix
+    en:
+    - "(verbose) arcsine $1"
     comment:
     - "used as 'arcsin', 'arc sin'"
-    - "this is distinct from sin inverse ($sin^{-1}$)"
+    - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
 
-  - concept: arccos
+  - concept: arccosine
+    property: prefix
+    en:
+    - "(verbose) arccosine $1"
+    comment: "used as 'arccos', 'arc cos'"
 
-  - concept: arctan
+  - concept: arctangent
+    property: prefix
+    en:
+    - "(verbose) arctangent $1"
+    comment: "used as 'arctan', 'arc tan'"
 
-  - concept: arcsec
+  - concept: arcsecant
+    property: prefix
+    en:
+    - "(verbose) arcsecant $1"
+    comment: "used as 'arcsec', 'arc sec'"
 
-  - concept: arccsc
+  - concept: arccosecant
+    property: prefix
+    en:
+    - "(verbose) arc-cosecant $1"
+    comment: "used as 'arccos', 'arc cos'"
 
-  - concept: arccot
+  - concept: arccotangent
+    property: prefix
+    en:
+    - "(verbose) arc-cotangent $1"
+    comment: "used as 'arccos', 'arc cos'"
 
   ## hyperbolic trig functions
   - concept: hyperbolic-sine
@@ -540,39 +637,11 @@
       en: "i"
       fr: "i"
 
-    - concept: exponential-e
+    - concept: differential-d
       arity: 0
-      en: "e"
-      fr: "e"
+      en: "d"
+      fr: "d"
 
-    - concept: not-a-number???
-      arity: 0
-      en: "not a number"
-      fr: "NaN"
-
-    - concept: true
-      arity: 0
-      en: "true"
-
-    - concept: false
-      arity: 0
-      en: "false"
-
-    - concept: empty-set
-      arity: 0
-      en: "empty set"
-
-    - concept: pi???
-      arity: 0
-      en: "pi"
-
-    - concept: euler-gamma???
-      arity: 0
-      en: "gamma"
-
-    - concept: infinity???
-      arity: 0
-      en: "infinity"
 
 ## =======================================================
 
