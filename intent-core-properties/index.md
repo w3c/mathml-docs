@@ -36,7 +36,8 @@ The data displayed below is derived from the YAML file
 {% endif %}
 
 <li><a href="#prop-{{tocp.property}}">{{tocp.property}}</a></li>
-% if toct != tocp.type %}
+
+{% if toct != tocp.type %}
 {%- assign toct = tocp.type -%}
 </ul>
 {% endif %}
