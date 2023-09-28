@@ -31,7 +31,7 @@ The data displayed below is derived from the YAML file
 <ul class="toc">
 
 {%- assign toct = "" -%}
-{%- for tocp in site.data.core-properties -%}
+{%- for tocp in site.data.open-properties -%}
 {% if toct != tocp.type %}
 
 {% unless toct == "" %}
