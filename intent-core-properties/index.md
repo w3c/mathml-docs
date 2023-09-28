@@ -50,6 +50,8 @@ The data displayed below is derived from the YAML file
 {% endfor %}
 </ul>
 
+## Settings
+
 <details>
 <summary>Available Template Languages</summary>
 <p id="langchoice" class="langs">
@@ -69,6 +71,8 @@ The data displayed below is derived from the YAML file
 {% endfor %}
 </p>
 </details>
+
+## Properties
 
 {%- assign t = "" -%}
 {%- for p in site.data.core-properties -%}
