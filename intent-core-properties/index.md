@@ -26,6 +26,7 @@ The data displayed below is derived from the YAML file
 [core-properties.yml](https://github.com/w3c/mathml-docs/blob/main/_data/core-properties.yml)
 
 ## Contents
+
 <ul class="toc">
 
 {%- assign toct = "" -%}
@@ -35,7 +36,7 @@ The data displayed below is derived from the YAML file
 
 {% unless toct == "" %}
 
-</p>
+X</p>
 
 {% endunless %}
 
