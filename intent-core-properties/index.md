@@ -28,8 +28,8 @@ The data displayed below is derived from the YAML file
 
 {%- assign toct = "" -%}
 {%- for tocp in site.data.core-properties -%}
-{% if t != p.type %}
-{%- assign t = tocp.type -%}
+{% if t != tocp.type %}
+{%- assign toct = tocp.type -%}
 
 <li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
 {% endif %}
