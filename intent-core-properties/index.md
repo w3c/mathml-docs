@@ -10,7 +10,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body .highlight, figure.highlight {margin-left:0em; margin-bottom:0em}
 div.ex {border: solid thin #CCD; margin-top: .5em;}
 
-ul.toc p {margin-left:2em; margin-bottom:0em;}
+ul.toc p {margin-left:2em; margin-top:0em; margin-bottom:0em;}
 </style>
 
 <style id="langcss">
