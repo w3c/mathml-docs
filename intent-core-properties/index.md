@@ -48,6 +48,7 @@ The data displayed below is derived from the YAML file
 
 
 {% endfor %}
+
 </ul>
 
 ## Settings
@@ -83,7 +84,7 @@ The data displayed below is derived from the YAML file
 
 {%- assign t = p.type -%}
 
-<h2 id="{{t | capitalize}}">{{t | capitalize | replace: "-", " "}}</h2>
+<h3 id="{{t | capitalize}}">{{t | capitalize | replace: "-", " "}}</h3>
 
 <dl>
 
