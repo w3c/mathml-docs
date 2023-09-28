@@ -32,13 +32,12 @@ The data displayed below is derived from the YAML file
 {%- assign toct = "" -%}
 {%- for tocp in site.data.core-properties -%}
 {% if toct != tocp.type %}
-{%- assign toct = tocp.type -%}
 
 {% unless toct == "" %}
-
-X</p>
-
+</p>
 {% endunless %}
+
+{%- assign toct = tocp.type -%}
 
 <li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
 <p>
