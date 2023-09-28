@@ -35,11 +35,12 @@ The data displayed below is derived from the YAML file
 
 {% unless toct == "" %}
 </p>
+</li>
 {% endunless %}
 
 {%- assign toct = tocp.type -%}
 
-<li><b><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></b></li>
+<li><b><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></b>
 <p>
 
 {% endif %}
@@ -50,6 +51,7 @@ The data displayed below is derived from the YAML file
 {% endfor %}
 
 </p>
+</li>
 </ul>
 
 ## Settings
