@@ -9,6 +9,8 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 .markdown-body .highlight, figure.highlight {margin-left:0em; margin-bottom:0em}
 div.ex {border: solid thin #CCD; margin-top: .5em}
+
+ul.toc p {margin-left:2em;}
 </style>
 
 <style id="langcss">
@@ -32,11 +34,14 @@ The data displayed below is derived from the YAML file
 {%- assign toct = tocp.type -%}
 
 {% unless toct == "" %}
+
 </p>
+
 {% endunless %}
 
 <li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
 <p>
+
 {% endif %}
 
 <a href="#prop-{{tocp.property}}">{{tocp.property}}</a>
