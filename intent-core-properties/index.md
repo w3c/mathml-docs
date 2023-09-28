@@ -32,6 +32,7 @@ The data displayed below is derived from the YAML file
 {%- assign t = tocp.type -%}
 
 <li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
+{% endif %}
 
 {% endfor %}
 </ul>
