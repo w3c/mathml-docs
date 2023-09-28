@@ -1,6 +1,7 @@
 ---
 title: Core Intent Property List
 ---
+
 <style>
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
