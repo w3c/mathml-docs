@@ -32,14 +32,14 @@ The data displayed below is derived from the YAML file
 {%- assign toct = tocp.type -%}
 
 {% unless toct == "" %}
-</ul>
+</p>
 {% endunless %}
 
 <li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
-<ul>
+<p>
 {% endif %}
 
-<li><a href="#prop-{{tocp.property}}">{{tocp.property}}</a></li>
+<a href="#prop-{{tocp.property}}">{{tocp.property}}</a>
 
 
 {% endfor %}
