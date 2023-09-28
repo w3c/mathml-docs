@@ -29,18 +29,18 @@ The data displayed below is derived from the YAML file
 {%- assign toct = "" -%}
 {%- for tocp in site.data.core-properties -%}
 {% if toct != tocp.type %}
-{%- assign newtoct = tocp.type -%}
+{%- assign toct = tocp.type -%}
 
-<li><a href="#{{newtoct | capitalize}}">{{newtoct | capitalize | replace: "-", " "}}</a></li>
+{% unless toct == "" %}
+</ul>
+{% endunless %}
+
+<li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
 <ul>
 {% endif %}
 
 <li><a href="#prop-{{tocp.property}}">{{tocp.property}}</a></li>
 
-{% if toct != tocp.type %}
-{%- assign toct = tocp.type -%}
-</ul>
-{% endif %}
 
 {% endfor %}
 </ul>
