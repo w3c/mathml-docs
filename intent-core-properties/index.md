@@ -28,10 +28,17 @@ The data displayed below is derived from the YAML file
 
 {%- assign toct = "" -%}
 {%- for tocp in site.data.core-properties -%}
-{% if t != tocp.type %}
-{%- assign toct = tocp.type -%}
+{% if toct != tocp.type %}
+{%- assign newtoct = tocp.type -%}
 
-<li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
+<li><a href="#{{newtoct | capitalize}}">{{newtoct | capitalize | replace: "-", " "}}</a></li>
+<ul>
+{% endif %}
+
+<li><a href="#prop-{{tocp.property}}">{{tocp.property}}</a></li>
+% if toct != tocp.type %}
+{%- assign toct = tocp.type -%}
+</ul>
 {% endif %}
 
 {% endfor %}
@@ -72,7 +79,7 @@ The data displayed below is derived from the YAML file
 
 {% endif %}
 
-<dt>{{p.property}}</dt>
+<dt id="prop-{{p.property}}">{{p.property}}</dt>
 <dd>
 {%- if p.effect -%}<div><i>Effect</i>: {{p.effect}}</div>{%- endif -%}
 {%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
