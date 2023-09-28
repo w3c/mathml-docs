@@ -8,9 +8,9 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 .markdown-body .highlight, figure.highlight {margin-left:0em; margin-bottom:0em}
-div.ex {border: solid thin #CCD; margin-top: .5em; margin-bottom:0em;}
+div.ex {border: solid thin #CCD; margin-top: .5em;}
 
-ul.toc p {margin-left:2em;}
+ul.toc p {margin-left:2em; margin-bottom:0em;}
 </style>
 
 <style id="langcss">
