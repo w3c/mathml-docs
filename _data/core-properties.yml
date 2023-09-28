@@ -201,7 +201,7 @@
   applicability: mn
   examples:
     - mathml: "<mi intent=':roman-numeral'>cd</mi>"
-      en: cd
+      en: c d
     - mathml: "<mi intent=':roman-numeral'>XVI</mi>"
       en: x v i
       comment: some braille codes (e.g., CMU) have special rules for roman numerals
