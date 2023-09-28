@@ -27,7 +27,7 @@
   effect: >
     the arguments followed by the function are voiced, with no connecting words.
   examples:
-    - intent: "f:posfix(x)"
+    - intent: "f:postfix(x)"
       en: "x f"
 
 
@@ -196,18 +196,47 @@
       en: 1.50 pounds
       
 
+- property: roman-numeral
+  type: number
+  applicability: mn
+  examples:
+    - mathml: "<mi intent=':roman-numeral'>cd</mi>"
+      en: cd
+    - mathml: "<mi intent=':roman-numeral'>XVI</mi>"
+      en: x v i
+      comment: some braille codes (e.g., CMU) have special rules for roman numerals
+    - mathml: "<mrow>
+          <menclose notation='top'><menclose notation='top'><mi>VI</mi></menclose></menclose>
+          <menclose notation='top'><mi>XL</mi></menclose>
+          <mi>DXXI</mi>
+        </mrow>"
+      en: ???
+
+- property: omission
+  type: fill-in-the-blank
+  applicability: mi, mo, mn, mtext, menclose
+  examples:
+    - mathml: "<mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mi intent=':omission'>__</mi></mrow>"
+      en: 2 plus 2 equals blank
+      comment: different MathML generators may use <mi>, <mn>, <mo> or other elements for the blanks
+    - mathml: "<mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mi intent=':omission'>?</mi></mrow>"
+      en: 2 plus 2 equals question mark
+    - mathml: "<mrow><mn>1</mn><mo>□</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow>"
+      en: 1 empty square 2 = 3
+
+
 - property: chemical-element
   type: chemistry
   examples:
-    - mathml: |
-        <mrow intent=':chemical-formula'>
+    - mathml:
+        "<mrow intent=':chemical-formula'>
           <mmultiscripts>
             <mi mathvariant='normal' intent=':chemical-element'>H</mi>
             <mn>2</mn>
             <mrow/>
           </mmultiscripts>
           <mi mathvariant='normal' intent=':chemical-element'>O</mi>
-        </mrow>
+        </mrow>"
       en: cap h 2 cap o
 
 
