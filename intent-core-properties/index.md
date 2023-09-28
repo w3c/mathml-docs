@@ -49,6 +49,7 @@ The data displayed below is derived from the YAML file
 
 {% endfor %}
 
+</p>
 </ul>
 
 ## Settings
