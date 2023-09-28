@@ -23,6 +23,18 @@ div.ex {border: solid thin #CCD; margin-top: .5em}
 The data displayed below is derived from the YAML file
 [core-properties.yml](https://github.com/w3c/mathml-docs/blob/main/_data/core-properties.yml)
 
+## Contents
+<ul class="toc">
+
+{%- assign toct = "" -%}
+{%- for tocp in site.data.core-properties -%}
+{% if t != p.type %}
+{%- assign t = tocp.type -%}
+
+<li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
+
+{% endfor %}
+</ul>
 
 <details>
 <summary>Available Template Languages</summary>
@@ -64,7 +76,7 @@ The data displayed below is derived from the YAML file
 {%- if p.effect -%}<div><i>Effect</i>: {{p.effect}}</div>{%- endif -%}
 {%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
 {%- if p.intent -%}<div><i>Intent</i>: <code>{{p.intent}}</code></div>{%- endif -%}
-{%- if p.comment -%}<div><i>Comment:</i>: <i>{{p.comment}}</i></div>{%- endif -%}
+{%- if p.comment -%}<div><i>Comment</i>: <i>{{p.comment}}</i></div>{%- endif -%}
 {%- for e in p.examples %}
 <div class="ex">
 {%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}
