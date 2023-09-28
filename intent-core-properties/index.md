@@ -39,7 +39,7 @@ The data displayed below is derived from the YAML file
 
 {%- assign toct = tocp.type -%}
 
-<li><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></li>
+<li><b><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></b></li>
 <p>
 
 {% endif %}
