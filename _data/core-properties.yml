@@ -205,7 +205,6 @@
       en: c d
     - mathml: "<mi intent=':roman-numeral'>XVI</mi>"
       en: x v i
-      comment: xsome braille codes (e.g., CMU) have special rules for roman numerals
     - mathml: "<mrow intent=':roman-numeral'>
           <menclose notation='top'><menclose notation='top'><mi>VI</mi></menclose></menclose>
           <menclose notation='top'><mi>XL</mi></menclose>
@@ -220,7 +219,6 @@
   examples:
     - mathml: "<mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mi intent=':omission'>__</mi></mrow>"
       en: 2 plus 2 equals blank
-      comment: xdifferent MathML generators may use <mi>, <mn>, <mo> or other elements for the blanks
     - mathml: "<mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mi intent=':omission'>?</mi></mrow>"
       en: 2 plus 2 equals question mark
     - mathml: "<mrow><mn>1</mn><mo intent=':omission'>□</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow>"
