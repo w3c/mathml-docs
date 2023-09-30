@@ -99,7 +99,7 @@ The data displayed below is derived from the YAML file
 {%- if p.effect -%}<div><i>Effect</i>: {{p.effect}}</div>{%- endif -%}
 {%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
 {%- if p.intent -%}<div><i>Intent</i>: <code>{{p.intent}}</code></div>{%- endif -%}
-{%- if p.comment -%}<div><i>Comment</i>: <i>{{p.comment | markdownify | replace "p>", "span>" }}</i></div>{%- endif -%}
+{%- if p.comment -%}<div><i>Comment</i>: <i>X{{p.comment | markdownify | replace "p>", "span>" }}X</i></div>{%- endif -%}
 {%- for e in p.examples %}
 <div class="ex">
 {%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}
