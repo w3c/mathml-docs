@@ -1,6 +1,7 @@
 ---
 title: Core Intent Property List
 ---
+
 <style>
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
@@ -8,7 +9,9 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 .markdown-body .highlight, figure.highlight {margin-left:0em; margin-bottom:0em}
-div.ex {border: solid thin #CCD; margin-top: .5em}
+div.ex {border: solid thin #CCD; margin-top: .5em;}
+
+ul.toc p {margin-left:2em; margin-top:0em; margin-bottom:0em;}
 </style>
 
 <style id="langcss">
@@ -23,6 +26,36 @@ div.ex {border: solid thin #CCD; margin-top: .5em}
 The data displayed below is derived from the YAML file
 [core-properties.yml](https://github.com/w3c/mathml-docs/blob/main/_data/core-properties.yml)
 
+## Contents
+
+<ul class="toc">
+
+{%- assign toct = "" -%}
+{%- for tocp in site.data.core-properties -%}
+{% if toct != tocp.type %}
+
+{% unless toct == "" %}
+</p>
+</li>
+{% endunless %}
+
+{%- assign toct = tocp.type -%}
+
+<li><b><a href="#{{toct | capitalize}}">{{toct | capitalize | replace: "-", " "}}</a></b>
+<p>
+
+{% endif %}
+
+<a href="#prop-{{tocp.property}}">{{tocp.property}}</a>
+
+
+{% endfor %}
+
+</p>
+</li>
+</ul>
+
+## Settings
 
 <details>
 <summary>Available Template Languages</summary>
@@ -44,6 +77,8 @@ The data displayed below is derived from the YAML file
 </p>
 </details>
 
+## Properties
+
 {%- assign t = "" -%}
 {%- for p in site.data.core-properties -%}
 {% if t != p.type %}
@@ -53,17 +88,18 @@ The data displayed below is derived from the YAML file
 
 {%- assign t = p.type -%}
 
-<h2 id="{{t | capitalize}}">{{t | capitalize | replace: "-", " "}}</h2>
+<h3 id="{{t | capitalize}}">{{t | capitalize | replace: "-", " "}}</h3>
 
 <dl>
 
 {% endif %}
 
-<dt>{{p.property}}</dt>
+<dt id="prop-{{p.property}}">{{p.property}}</dt>
 <dd>
 {%- if p.effect -%}<div><i>Effect</i>: {{p.effect}}</div>{%- endif -%}
 {%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
 {%- if p.intent -%}<div><i>Intent</i>: <code>{{p.intent}}</code></div>{%- endif -%}
+{%- if p.comment -%}<div><i>Comment</i>: <i>{{p.comment | markdownify | replace: "p>", "span>" }}</i></div>{%- endif -%}
 {%- for e in p.examples %}
 <div class="ex">
 {%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}

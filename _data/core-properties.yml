@@ -199,19 +199,18 @@
 - property: roman-numeral
   type: number
   applicability: mn
+  comment: some braille codes (e.g., CMU) have special rules for roman numerals
   examples:
     - mathml: "<mi intent=':roman-numeral'>cd</mi>"
       en: c d
     - mathml: "<mi intent=':roman-numeral'>XVI</mi>"
       en: x v i
-      comment: some braille codes (e.g., CMU) have special rules for roman numerals
     - mathml: "<mrow intent=':roman-numeral'>
           <menclose notation='top'><menclose notation='top'><mi>VI</mi></menclose></menclose>
           <menclose notation='top'><mi>XL</mi></menclose>
           <mi>DXXI</mi>
         </mrow>"
       en: ???
-
 
 - property: chemical-element
   type: chemistry
