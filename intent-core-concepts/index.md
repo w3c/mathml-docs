@@ -142,7 +142,10 @@ Localised texts can be added to the YAML file:
 {% endif %}
 </td>
 {%- endfor -%}
-<td>{{c.comment | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}</td>
+<td>{%- for com in c.comment -%}
+{{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %} </td>
 </tr>
 {%- endif -%}
 {%- endfor -%}
