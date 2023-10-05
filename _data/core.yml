@@ -708,7 +708,7 @@
     - concept: blank
       arity: 1
       en:
-      - "blank"
+      - "blankity"
       comment:
       - blanks can be represented in many ways in MathML. Some examples:
       -   "<mi intent='blank'>__</mi>"
