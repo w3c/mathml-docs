@@ -120,7 +120,10 @@ Localised texts can be added to the YAML file:
 {% endif %}
 </td>
 {%- endfor -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.comment | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}</td>{%- endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
+{{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}</td>{%- endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
@@ -145,7 +148,7 @@ Localised texts can be added to the YAML file:
 <td>{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %} </td>
+{% endfor %}</td>
 </tr>
 {%- endif -%}
 {%- endfor -%}
