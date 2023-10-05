@@ -212,18 +212,6 @@
         </mrow>"
       en: ???
 
-- property: omission
-  type: fill-in-the-blank
-  applicability: mi, mo, mn, mtext, menclose
-  examples:
-    - mathml: "<mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mi intent=':omission'>__</mi></mrow>"
-      en: 2 plus 2 equals blank
-      comment: different MathML generators may use <mi>, <mn>, <mo> or other elements for the blanks
-    - mathml: "<mrow><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mi intent=':omission'>?</mi></mrow>"
-      en: 2 plus 2 equals question mark
-    - mathml: "<mrow><mn>1</mn><mo intent=':omission'>□</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow>"
-      en: 1 empty square 2 = 3
-
 
 - property: chemical-element
   type: chemistry

@@ -701,9 +701,17 @@
       fr: "d"
 
 
-## =======================================================
+## other areas =======================================================
 
-
-
-
-
+- title: Fill in the blank
+  intents:
+    - concept: blank
+      arity: 1
+      en:
+      - "blank"
+      comment: "blanks can be represented in many ways in MathML. Some examples\n
+          `<mi intent='blank'>__</mi>`\n
+          `<mi intent='blank'>?</mi>` \n
+          `<mo intent='blank'>□</mo>` \n
+          `<mspace intent='blank' width='3em'/>` \n
+          `<menclose intent='blank' notation='box'> <mspace width='3em'/> </menclose>``"
