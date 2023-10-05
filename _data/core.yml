@@ -58,8 +58,6 @@
   - concept: domain
     arity: 1
     property: function
-    arity: 1
-    property: function
     en: domain of $1
     fr: domaine de définition de $1
 
@@ -74,7 +72,6 @@
 
   - concept: image
     arity: 1
-    arity: 1
     property: prefix
     en: image of $1
     fr: image de $1
@@ -88,15 +85,9 @@
     arity: 2
     property: function
     en: integer part of $1 divided by $2
-    arity: 2
-    property: function
-    en: integer part of $1 divided by $2
     fr: quotient de $1 par $2
-    comment: 
-    comment: 
 
   - concept: divide
-    arity: 2
     arity: 2
     property: infix
     en: $1 divided by $2
@@ -192,7 +183,6 @@
   - concept: absolute-value
     arity: 1
     property: function
-    property: function
     en: absolute value of $1
     fr: valeur absolue de $1
     de: Betrag von $1
@@ -200,8 +190,6 @@
   - concept: complex-conjugate
   - concept: complex-conjugate
     arity: 1
-    property: function
-    en: complex conjugate of $1
     property: function
     en: complex conjugate of $1
     fr: $1 conjugé
@@ -271,14 +259,11 @@
   intents:
   - concept: logical not
     arity: 1
-    arity: 1
     property: prefix
     en: not $1
     fr: non $1
 
   - concept: implies
-    arity: 2
-    property: infix
     arity: 2
     property: infix
     en: $1 implies $2
@@ -708,11 +693,11 @@
     - concept: blank
       arity: 1
       en:
-      - "blankity"
+      - "blank"
       comment:
-      - blanks can be represented in many ways in MathML. Some examples:
-      -   "<mi intent='blank'>__</mi>"
-      -   "<mi intent='blank'>?</mi>"
-      -   "<mo intent='blank'>□</mo>"
-      -   "<mspace intent='blank' width='3em'/>"
-      -   "<menclose intent='blank' notation='box'> <mspace width='3em'/> </menclose>"
+      - "blanks can be represented in many ways in MathML. Some examples:"
+      - "  <mi intent='blank'>__</mi>"
+      - "  <mi intent='blank'>?</mi>"
+      - "  <mo intent='blank'>□</mo>"
+      - "  <mspace intent='blank' width='3em'/>"
+      - "  <menclose intent='blank' notation='box'> <mspace width='3em'/> </menclose>"
