@@ -520,50 +520,119 @@
   - concept: hyperbolic-sine
     property: prefix
     default: true
-    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    comment:
+    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    - "used as 'sinh'"
     en:
-      - "shine $1"
-      - "sinus hyperbolique $1"
+      - "short form 'shine $1'"
     fr:
-      - "shine $1"
       - "sinus hyperbolique $1"
 
 
   - concept: hyperbolic-cosine
     property: prefix
     default: true
-    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    comment:
+    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    - "used as 'cosh'"
     en:
-      - "cosh $1"
-      - "cosinus hyperbolique $1"
+      - "short form 'cosh $1'"
     fr:
      - "cosh $1"
      - "kosh $1"
 
-  - concept: tanh
+  - concept: hyperbolic-tangent
+    property: prefix
+    default: true
+    comment:
+    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    - "used as 'tanh'"
+    en:
+      - "short form American 'tanch $1'"
+      - "short form British 'than $1'"
 
-  - concept: sech
+  - concept: hyperbolic-secant
+    property: prefix
+    default: true
+    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    en:
+      - "short form American 'sech $1'"
+      - "short form British 'shek $1'"
 
-  - concept: csch
+  - concept: hyperbolic-cosecant
+    property: prefix
+    default: true
+    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    en:
+      - "short form American 'cosech $1'"
+      - "short form British 'coshek $1'"
 
-  - concept: coth
+
+  - concept: hyperbolic-cotangent
+    property: prefix
+    default: true
+    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    en:
+      - "short form American 'coth $1'"
+      - "short form British 'coath $1'"
+
 
 
   ## inverse hyperbolic trig functions
-  - concept: arcsinh
+  - concept: arc-hyperbolic-sine
+    property: prefix
+    default: true
+    en:
+      - "short form 'arc shine $1'"
+    fr:
+      - "sinus hyperbolique $1"
 
-  - concept: arccosh
 
-  - concept: arctanh
+  - concept: arc-hyperbolic-cosine
+    property: prefix
+    default: true
+    en:
+      - "short form 'arc cosh $1'"
+    fr:
+     - "cosh $1"
+     - "kosh $1"
 
-  - concept: arcsech
+  - concept: arc-hyperbolic-tangent
+    property: prefix
+    default: true
+    en:
+      - "short form American 'arc tanch $1'"
+      - "short form British 'arc than $1'"
 
-  - concept: arccsch
+  - concept: arc-hyperbolic-secant
+    property: prefix
+    default: true
+    en:
+      - "short form American 'arc sech $1'"
+      - "short form British 'arc shek $1'"
 
-  - concept: arccoth
+  - concept: arc-hyperbolic-cosecant
+    property: prefix
+    default: true
+    en:
+      - "short form American 'arc cosech $1'"
+      - "short form British 'arc coshek $1'"
+
+
+  - concept: arc-hyperbolic-cotangent
+    property: prefix
+    default: true
+    en:
+      - "short form American 'arc coth $1'"
+      - "short form British 'arc coath $1'"
+
 
   ## exponential related functions
-  - concept: exp
+  - concept: exponential
+    property: prefix
+    default: true
+    en:
+      - "exponential of $1"
 
   - concept: natural-logarithm
     property: prefix
