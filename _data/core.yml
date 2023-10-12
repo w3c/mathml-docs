@@ -5,10 +5,13 @@
 ### - property set, number => arity 0
 
 
-default-fixity:
-    infix: [plus,minus,times,less-than]
-    postfix: [factorial]
-    silent: [invisible-times]
+defaultfixity:
+   - fixity: infix
+     concepts: [plus,minus,times,less-than]
+   - fixity: postfix
+     concepts: [factorial]
+   - fixity: silent
+     concepts: [invisible-times]
     
     
 concepts:
