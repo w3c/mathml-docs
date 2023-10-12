@@ -61,6 +61,8 @@ Localised texts can be added to the YAML file:
 
 ## Core List
 
+----
+
 ## Core Concept Default Fixity propertites
 
 The following concepts do not require special speech templates
@@ -78,6 +80,8 @@ but do have default fixity properties other than `function`.
 </dd>
 {% endfor %}
 </dl>
+
+----
 
 ## Core Concept Templates
 
