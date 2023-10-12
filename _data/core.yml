@@ -5,13 +5,13 @@
 ### - property set, number => arity 0
 
 
-- default-fixity:
+default-fixity:
     infix: [plus,minus,times,less-than]
     postfix: [factorial]
     silent: [invisible-times]
     
     
-- concepts:
+concepts:
 
   ## From chapter 4 of MathML3
   
