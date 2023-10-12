@@ -61,6 +61,29 @@ Localised texts can be added to the YAML file:
 
 ## Core List
 
+----
+
+## Core Concept Default Fixity propertites
+
+The following concepts do not require special speech templates
+but do have default fixity properties other than `function`.
+
+<dl>
+
+{%- for fix in site.data.core.defaultfixity -%}
+
+<dt id="{{fix.fixity}}"><b>{{fix.fixity}}</b></dt>
+<dd>
+{%- for c in fix.concepts -%}
+{{c}} {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
+</dd>
+{% endfor %}
+</dl>
+
+----
+
+## Core Concept Templates
 
 <details>
 <summary>Available Template Languages</summary>
@@ -82,8 +105,10 @@ Localised texts can be added to the YAML file:
 </p>
 </details>
 
-{%- for section in site.data.core -%}
-<h1>{{section.title}}</h1>
+{%- for section in site.data.core.concepts -%}
+
+### {{section.title}}
+
 <table>
 <thead>
 <tr class="row0">
