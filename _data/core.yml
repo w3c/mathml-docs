@@ -554,7 +554,9 @@
   - concept: hyperbolic-secant
     property: prefix
     default: true
-    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    comment:
+    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    - "used as 'sech'"
     en:
       - "short form American 'sech $1'"
       - "short form British 'shek $1'"
@@ -562,7 +564,9 @@
   - concept: hyperbolic-cosecant
     property: prefix
     default: true
-    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    comment:
+    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    - "used as 'cosech'"
     en:
       - "short form American 'cosech $1'"
       - "short form British 'coshek $1'"
@@ -571,7 +575,9 @@
   - concept: hyperbolic-cotangent
     property: prefix
     default: true
-    comment: "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    comment:
+    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+    - "used as 'coth'"
     en:
       - "short form American 'coth $1'"
       - "short form British 'coath $1'"
@@ -582,6 +588,7 @@
   - concept: arc-hyperbolic-sine
     property: prefix
     default: true
+    comment: "used as 'asinh'"
     en:
       - "short form 'arc shine $1'"
     fr:
@@ -591,6 +598,7 @@
   - concept: arc-hyperbolic-cosine
     property: prefix
     default: true
+    comment: "used as 'acosh'"
     en:
       - "short form 'arc cosh $1'"
     fr:
@@ -600,6 +608,7 @@
   - concept: arc-hyperbolic-tangent
     property: prefix
     default: true
+    comment: "used as 'atanh'"
     en:
       - "short form American 'arc tanch $1'"
       - "short form British 'arc than $1'"
@@ -607,6 +616,7 @@
   - concept: arc-hyperbolic-secant
     property: prefix
     default: true
+    comment: "used as 'asech'"
     en:
       - "short form American 'arc sech $1'"
       - "short form British 'arc shek $1'"
@@ -614,6 +624,7 @@
   - concept: arc-hyperbolic-cosecant
     property: prefix
     default: true
+    comment: "used as 'acsch'"
     en:
       - "short form American 'arc cosech $1'"
       - "short form British 'arc coshek $1'"
@@ -622,6 +633,7 @@
   - concept: arc-hyperbolic-cotangent
     property: prefix
     default: true
+    comment: "used as 'acoth'"
     en:
       - "short form American 'arc coth $1'"
       - "short form British 'arc coath $1'"
