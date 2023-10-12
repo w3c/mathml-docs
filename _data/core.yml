@@ -765,8 +765,8 @@
       - "blank"
       comment:
       - "blanks can be represented in many ways in MathML. Some examples:"
-      - "`  <mi intent='blank'>__</mi>`"
-      - "`  <mi intent='blank'>?</mi>`"
-      - "`  <mo intent='blank'>□</mo>`"
-      - "`  <mspace intent='blank' width='3em'/>`"
-      - "`  <menclose intent='blank' notation='box'> <mspace width='3em'/> </menclose>`"
+      - "`<mi intent='blank'>__</mi>`"
+      - "`<mi intent='blank'>?</mi>`"
+      - "`<mo intent='blank'>□</mo>`"
+      - "`<mspace intent='blank' width='3em'/>`"
+      - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
