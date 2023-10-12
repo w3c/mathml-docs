@@ -14,7 +14,7 @@ defaultfixity:
        - less-than
    - fixity: postfix
      concepts:
-       - facorial
+       - factorial
    - fixity: silent
      concepts:
        - invisible-times
