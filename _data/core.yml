@@ -7,11 +7,17 @@
 
 defaultfixity:
    - fixity: infix
-     concepts: [plus,minus,times,less-than]
+     concepts:
+       - plus
+       - minus
+       - times
+       - less-than
    - fixity: postfix
-     concepts: [factorial]
+     concepts:
+       - facorial
    - fixity: silent
-     concepts: [invisible-times]
+     concepts:
+       - invisible-times
     
     
 concepts:
