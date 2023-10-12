@@ -5,780 +5,789 @@
 ### - property set, number => arity 0
 
 
-## From chapter 4 of MathML3
-
-## - concept: TODO numbers representations
-
-## ================ 4.4.1 functions and inverses ====================
-- title: functions and inverses
-  intents:
-  - concept: closed-interval
-    arity: 2
-    property: function
-  - concept: closed-interval
-    arity: 2
-    property: function
-    en: closed interval between $1 and $2
-    fr: intervalle fermé entre $1 et $2
-
-  - concept: closed-open-interval
-    arity: 2
-    property: function
-  - concept: closed-open-interval
-    arity: 2
-    property: function
-    en: interval between $1 (included) and $2
-    fr: intervalle ouvert à droite entre $1 et $2
-
-  - concept: open-closed-interval
-    arity: 2
-    property: function
-    en:  interval between $1 and $2, included
-  - concept: open-closed-interval
-    arity: 2
-    property: function
-    en:  interval between $1 and $2, included
-    fr: intervalle ouvert à gauche...
-
-  - concept: open-interval
-    arity: 2
-    property: function
-    en: open interval between $1 and $2
-  - concept: open-interval
-    arity: 2
-    property: function
-    en: open interval between $1 and $2
-    fr: intervalle ouvert
-
-  - concept: inverse
-    arity: 1
-    property: postfix
-    en: inverse of $1
-
-  - concept: domain
-    arity: 1
-    property: function
-    en: domain of $1
-    fr: domaine de définition de $1
-
-  - concept: co-domain
-    arity: 1
-    property: function
-  - concept: co-domain
-    arity: 1
-    property: function
-    en: codomain of $1
-    fr: ensemble d'arrivée de $1
-
-  - concept: image
-    arity: 1
-    property: prefix
-    en: image of $1
-    fr: image de $1
-
-  - concept: ??? piecewise
-    comment: property on a table or mrow around a table?
-  - concept: ??? piecewise
-    comment: property on a table or mrow around a table?
-
-  - concept: quotient
-    arity: 2
-    property: function
-    en: integer part of $1 divided by $2
-    fr: quotient de $1 par $2
-
-  - concept: divide
-    arity: 2
-    property: infix
-    en: $1 divided by $2
-    fr: $1 divisé par $2
-
-  - concept: remainder
-    arity: 2
-    property: function
-    en: the remainder of $1 divided by $2
-    fr: reste de la divsion de $1 par $2
-
-  - concept: times
-    arity: 2
-    property: infix
-    en: $1 times $2
-    fr: $1 fois $2
-
-  - concept: factorial
-    arity: 1
-    property: postfix
-    en: "$1 factorial"
-    fr: "$1 factorial"
-
-  - concept: max
-    arity: "*"
-    property: function
-    en: "max of $1, $2, ..."
-
-  - concept: min
-    arity: "*"
-    property: function
-    en: "min of $1, $2, ..."
-
-  - concept: unary-minus
-    arity: 1
-    property: prefix
-    en: minus $1
-    fr: moins $1
-
-  - concept: minus
-    arity: 2
-    property: infix
-    en: $1 minus $2
-    fr: $1 moins $2
-
-  - concept: plus
-    arity: 2
-    property: infix
-    en: $1 plus $2
-    fr: $1 plus $2
-
-  - concept: power
-    arity: 2
-    property: infix
-    default: true
-    conditions:
-      - condition: "$2=2"
-        en: "$1 squared"
-        fr: "$1 carré"
-      - condition: "$2=3"
-        en: "$1 cubed"
-        fr: "$1 cube"
-      - condition: ""
-        en: "$1 to the $2<i>th</i> power"
-        fr: "$1 à la $2"
-
-  - concept: root
-    arity: 2
-    property: function
-    default: true
-    conditions:
-      - condition: "$2=2"
-        en: "square root of $1"
-      - condition: "$2=3"
-        en: "cube root of $1"
-      - condition: "$2=4"
-        en: "fourth root of $1"
-      - condition: ""
-        en: "$2<i>th</i> root of $1"
-
-  - concept: greatest-common-divsor
-    arity: "*"
-    property: function
-    en: greatest common divisor of $1, $2, ...
-    fr: plus grand commun diviseur de $1, $2, ...
-
-  - concept: least-common-multiple
-    arity: "*"
-    property: function
-    en: lest common multiple of  $1, $2, ...
-    fr: plus grand commun diviseur de $1, $2, ...
-
-  - concept: absolute-value
-    arity: 1
-    property: function
-    en: absolute value of $1
-    fr: valeur absolue de $1
-    de: Betrag von $1
-
-  - concept: complex-conjugate
-  - concept: complex-conjugate
-    arity: 1
-    property: function
-    en: complex conjugate of $1
-    fr: $1 conjugé
-
-  - concept: complex-arg
-    arity: 1
-    property: function
-    en: arg of $1
-
-  - concept: real-part
-    arity: 1
-    property: function
-    en: real part of $1
-
-
-  - concept: imaginary-part
-    arity: 1
-    property: function
-    en: imaginary part of $1
-  - concept: imaginary-part
-    arity: 1
-    property: function
-    en: imaginary part of $1
-
-
-  - concept: floor
-    arity: 1
-    property: function
-    en: floor of $1
-
-  - concept: ceiling
-    arity: 1
-    property: function
-    en: ceiling of $1
-
-  - concept: floor
-    arity: 1
-    property: function
-    en: floor of $1
-
-  - concept: fractional-part
-    arity: 1
-    property: function
-    en: fractional part of $1
-
-  - concept: floor
-    arity: 1
-    property: function
-    en: floor of $1
-
-  - concept: ceiling
-    arity: 1
-    property: function
-    en: ceiling of $1
-
-  - concept: floor
-    arity: 1
-    property: function
-    en: floor of $1
-
-  - concept: fractional-part
-    arity: 1
-    property: function
-    en: fractional part of $1
-
-- title: logic
-  intents:
-  - concept: logical not
-    arity: 1
-    property: prefix
-    en: not $1
-    fr: non $1
-
-  - concept: implies
-    arity: 2
-    property: infix
-    en: $1 implies $2
-    fr: $1 implique $2
-
-  - concept: logical-equivalence
-    property: infix
-    en: $1 if and only if $2
-    fr: $1 si et seulement si $2
-
-  - concept: forall
-    arity: 2
-    property: prefix
-    en: for all $1 $2
-    fr: pour tout $1 $2
-
-  - concept: exists
-    arity: 1
-    property: prefix
-    en: there exists $1
-    fr: il existe $1
-
-  - concept: and
-    arity: 2
-    property: infix
-    en: $1 and $2
-
-  - concept: or
-    arity: 2
-    property: infix
-    en: $1 or $2
-
-  - concept: xor
-    arity: 2
-    property: infix
-    en: $1 xor $2
-
-  ## ================= 4.4.3 Relations ===================
-- title: relations
-  intents:
-  - concept: equals
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 equals $2"
-      - "(verbose) $1 is equal to $2"
-    fr: "$1 est égal à $2"
-
-  - concept: not-equals
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 not equals $2"
-      - "(verbose) $1 is not equal to $2"
-
-  - concept: greater-than
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 greater than $2"
-      - "(verbose) $1 is greater than $2"
-
-  - concept: less-than
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 less than $2"
-      - "(verbose) $1 is less than $2"
-
-  - concept: greater-than-or-equals
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 greater than or equal to $2"
-      - "(verbose) $1 is greater than or equal to $2"
-
-  - concept: less-than-or-equals
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 less than or equal to $2"
-      - "(verbose) $1 is less than or equal to $2"
-
-  - concept: approximately
-    arity: 2
-    property: infix
-    en:
-      - "(terse) $1 approximately equal to $2"
-      - "(verbose) $1 is approximately equal to $2"
-
-  - concept: divides
-    arity: 2
-    property: infix
-    en: "$1 divides $2"
-
-## ====================== 4.4.4 Calculus ============================
-- title: calculus
-  intents:
-  - concept: integral
-    arity: 1
-    property: function
-    en: "integral of $1"
-
-  - concept: definite-integral
-    arity: 2
-    property: function
-    en: "integral over $1 of $2"
-
-  - concept: definite-integral
-    arity: 3
-    property: function
-    en: "integral from $1 to $2 of $3"
-
-  ## derivative replaced by prime
-
-  - concept: ???derivative-prime
-  - concept: ???derivative-dot
-  - concept: derivative
-
-  - concept: n-th derivative
-
-  - concept: partialdiff
-
-- concept: TODO divergence, curl, gradient, laplacian
-
-
-## ====================== 4.4.5 Sets ============================
-- title: sets
-  intents:
-  - concept: set
-
-  - concept: list
-
-  - concept: union
-
-  - concept: intersect
-
-  - concept: in
-
-  - concept: notin
-
-  - concept: subset
-
-  - concept: ?? - notsubset
-
-  - concept: prsubset
-
-  - concept: ?? - notprsubset
-
-  - concept: setdiff
-
-  - concept: cartesianproduct
-
-  ## ====================== 4.4.6 sequence and series ============================
-- title: sequence and series
-  intents:
-  - concept: sum
-
-  - concept: product
-
-  - concept: limit
-
-  - concept: tendsto
-
-  ## ====================== 4.4.7 elementary classical functions ======================
-- title: elementary classical functions
-  intents:
-  - concept: sine
-    arity: 1
-    property: prefix
-    en: "sine $1"
-    fr: "sinus $1"
-    comment: used as 'sin', 'sen'
-
-  - concept: cosine
-    arity: 1
-    property: prefix
-    en:
-    - "(verbose) cosine $1"
-    - "(terse) cos $1"
-
-  - concept: tangent
-    arity: 1
-    property: prefix
-    en:
-    - "(verbose) tangent $1"
-    - "(terse) tan $1"
-    comment: used as 'tan', 'tg'
-
-  - concept: secant
-    arity: 1
-    property: prefix
-    en:
-    - "(verbose) secant $1"
-    - "(terse) seech $1"
-    comment: used as 'sec'
-
-  - concept: cosecant
-    arity: 1
-    property: prefix
-    en:
-    - "(verbose) cosecant $1"
-    - "(terse) co-seech $1"
-    comment: used as 'csc'
-
-  - concept: cotangent
-    property: prefix
-    en:
-    - "(verbose) cotangent $1"
-    - "(terse) co-tan $1"
-    comment: used as 'cot'
-
-
-  ## inverse trig functions
-  - concept: arcsine
-    property: prefix
-    en:
-    - "(verbose) arcsine $1"
-    comment:
-    - "used as 'arcsin', 'arc sin'"
-    - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
-
-  - concept: arccosine
-    property: prefix
-    en:
-    - "(verbose) arccosine $1"
-    comment: "used as 'arccos', 'arc cos'"
-
-  - concept: arctangent
-    property: prefix
-    en:
-    - "(verbose) arctangent $1"
-    comment: "used as 'arctan', 'arc tan'"
-
-  - concept: arcsecant
-    property: prefix
-    en:
-    - "(verbose) arcsecant $1"
-    comment: "used as 'arcsec', 'arc sec'"
-
-  - concept: arccosecant
-    property: prefix
-    en:
-    - "(verbose) arc-cosecant $1"
-    comment: "used as 'arccos', 'arc cos'"
-
-  - concept: arccotangent
-    property: prefix
-    en:
-    - "(verbose) arc-cotangent $1"
-    comment: "used as 'arccos', 'arc cos'"
-
-  ## hyperbolic trig functions
-  - concept: hyperbolic-sine
-    property: prefix
-    default: true
-    comment:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'sinh'"
-    en:
-      - "short form 'shine $1'"
-    fr:
-      - "sinus hyperbolique $1"
-
-
-  - concept: hyperbolic-cosine
-    property: prefix
-    default: true
-    comment:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'cosh'"
-    en:
-      - "short form 'cosh $1'"
-    fr:
-     - "cosh $1"
-     - "kosh $1"
-
-  - concept: hyperbolic-tangent
-    property: prefix
-    default: true
-    comment:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'tanh'"
-    en:
-      - "short form American 'tanch $1'"
-      - "short form British 'than $1'"
-
-  - concept: hyperbolic-secant
-    property: prefix
-    default: true
-    comment:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'sech'"
-    en:
-      - "short form American 'sech $1'"
-      - "short form British 'shek $1'"
-
-  - concept: hyperbolic-cosecant
-    property: prefix
-    default: true
-    comment:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'cosech'"
-    en:
-      - "short form American 'cosech $1'"
-      - "short form British 'coshek $1'"
-
-
-  - concept: hyperbolic-cotangent
-    property: prefix
-    default: true
-    comment:
-    - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
-    - "used as 'coth'"
-    en:
-      - "short form American 'coth $1'"
-      - "short form British 'coath $1'"
-
-
-
-  ## inverse hyperbolic trig functions
-  - concept: arc-hyperbolic-sine
-    property: prefix
-    default: true
-    comment: "used as 'asinh'"
-    en:
-      - "short form 'arc shine $1'"
-    fr:
-      - "sinus hyperbolique $1"
-
-
-  - concept: arc-hyperbolic-cosine
-    property: prefix
-    default: true
-    comment: "used as 'acosh'"
-    en:
-      - "short form 'arc cosh $1'"
-    fr:
-     - "cosh $1"
-     - "kosh $1"
-
-  - concept: arc-hyperbolic-tangent
-    property: prefix
-    default: true
-    comment: "used as 'atanh'"
-    en:
-      - "short form American 'arc tanch $1'"
-      - "short form British 'arc than $1'"
-
-  - concept: arc-hyperbolic-secant
-    property: prefix
-    default: true
-    comment: "used as 'asech'"
-    en:
-      - "short form American 'arc sech $1'"
-      - "short form British 'arc shek $1'"
-
-  - concept: arc-hyperbolic-cosecant
-    property: prefix
-    default: true
-    comment: "used as 'acsch'"
-    en:
-      - "short form American 'arc cosech $1'"
-      - "short form British 'arc coshek $1'"
-
-
-  - concept: arc-hyperbolic-cotangent
-    property: prefix
-    default: true
-    comment: "used as 'acoth'"
-    en:
-      - "short form American 'arc coth $1'"
-      - "short form British 'arc coath $1'"
-
-
-  ## exponential related functions
-  - concept: exponential
-    property: prefix
-    default: true
-    en:
-      - "exponential of $1"
-
-  - concept: natural-logarithm
-    property: prefix
-    default: true
-    en:
-      - "natural log of $1"
-      - "log of $1"
-      - "log base e of $1"
-    fr:
-      -"natural log of $1"
-      - "log of $1 "
-      - "log base e of $1"
-
-  - concept: logarithm
-    arity: 2
-    property: function
-    default: true
-    comment: "arity 1 log(x)  needs no rule here"
-    en: "log base $2 of $1"
-    fr: "log base $2 of $1"
-
-
-
-
-  ## ====================== 4.4.8 Statistics ======================
-- title: Statistics
-  intents:
-  - concept: mean
-
-  - concept: sdev
-
-  - concept: variance
-
-  - concept: median
-
-  - concept: mode
-
-  - concept: gamma-function # ??
-
-  ## ====================== 4.4.9 Linear Algebra ======================
-- title: Linear Algebra
-  intents:
-  - concept: vector
-
-  - concept: matrix
-
-  - concept: determinant
-
-  - concept: transpose
-    property: postfix
-    default: true
-    en: "$1 transpose"
-    fr: "$1 transposée"
-
-  - concept: transpose
-    property: suffix
-    comment: "This row could be deleted, as it follows from the default behaviour"
-    en: "transpose of $1"
-    fr: "transposée de $1"
-
-  - concept: vectorproduct
-
-  - concept: scalarproduct
-
-  - concept: outerproduct
-
-  ## ====================== 4.4.10 Constants and Sets ======================
-- title: Constants and Sets
-  intents:
-    - concept: set-of-integers
-      arity: 0
-      en:
-      - "(verbose) set of all integers"
-      - "(terse) Z"
-      fr: "Z"
-
-    - concept: set-of-reals
-      arity: 0
-      en:
-      - "(verbose) set of all real numbers"
-      - "(terse) R"
-
-    - concept: set-of-rationals
-      arity: 0
-      en:
-      - "(verbose) set of all rational numbers"
-      - "(terse) R"
-
-    - concept: set-of-natural-numbers
-      arity: 0
-      en:
-      - "(verbose) set of all natural numbers"
-      - "(terse) N"
-
-    - concept: set-of-complex-numbers
-      arity: 0
-      en:
-      - "(verbose) set of all complex numbers"
-      - "(terse) C"
-
-    - concept: set-of-primes
-      arity: 0
-      en:
-      - "(verbose) set of all prime numbers"
-      - "(terse) P"
-
-    - concept: exponential-e
-      arity: 0
-      en: "e"
-      fr: "e"
-
-    - concept: imaginary-i
-      arity: 0
-      en: "i"
-      fr: "i"
-
-    - concept: differential-d
-      arity: 0
-      en: "d"
-      fr: "d"
-
-
-## other areas =======================================================
-
-- title: Fill in the blank
-  intents:
-    - concept: blank
+- default-fixity:
+    infix: [plus,minus,times,less-than]
+    postfix: [factorial]
+    silent: [invisible-times]
+    
+    
+- concepts:
+
+  ## From chapter 4 of MathML3
+  
+  ## - concept: TODO numbers representations
+  
+  ## ================ 4.4.1 functions and inverses ====================
+  - title: functions and inverses
+    intents:
+    - concept: closed-interval
+      arity: 2
+      property: function
+    - concept: closed-interval
+      arity: 2
+      property: function
+      en: closed interval between $1 and $2
+      fr: intervalle fermé entre $1 et $2
+  
+    - concept: closed-open-interval
+      arity: 2
+      property: function
+    - concept: closed-open-interval
+      arity: 2
+      property: function
+      en: interval between $1 (included) and $2
+      fr: intervalle ouvert à droite entre $1 et $2
+  
+    - concept: open-closed-interval
+      arity: 2
+      property: function
+      en:  interval between $1 and $2, included
+    - concept: open-closed-interval
+      arity: 2
+      property: function
+      en:  interval between $1 and $2, included
+      fr: intervalle ouvert à gauche...
+  
+    - concept: open-interval
+      arity: 2
+      property: function
+      en: open interval between $1 and $2
+    - concept: open-interval
+      arity: 2
+      property: function
+      en: open interval between $1 and $2
+      fr: intervalle ouvert
+  
+    - concept: inverse
       arity: 1
+      property: postfix
+      en: inverse of $1
+  
+    - concept: domain
+      arity: 1
+      property: function
+      en: domain of $1
+      fr: domaine de définition de $1
+  
+    - concept: co-domain
+      arity: 1
+      property: function
+    - concept: co-domain
+      arity: 1
+      property: function
+      en: codomain of $1
+      fr: ensemble d'arrivée de $1
+  
+    - concept: image
+      arity: 1
+      property: prefix
+      en: image of $1
+      fr: image de $1
+  
+    - concept: ??? piecewise
+      comment: property on a table or mrow around a table?
+    - concept: ??? piecewise
+      comment: property on a table or mrow around a table?
+  
+    - concept: quotient
+      arity: 2
+      property: function
+      en: integer part of $1 divided by $2
+      fr: quotient de $1 par $2
+  
+    - concept: divide
+      arity: 2
+      property: infix
+      en: $1 divided by $2
+      fr: $1 divisé par $2
+  
+    - concept: remainder
+      arity: 2
+      property: function
+      en: the remainder of $1 divided by $2
+      fr: reste de la divsion de $1 par $2
+  
+    - concept: times
+      arity: 2
+      property: infix
+      en: $1 times $2
+      fr: $1 fois $2
+  
+    - concept: factorial
+      arity: 1
+      property: postfix
+      en: "$1 factorial"
+      fr: "$1 factorial"
+  
+    - concept: max
+      arity: "*"
+      property: function
+      en: "max of $1, $2, ..."
+  
+    - concept: min
+      arity: "*"
+      property: function
+      en: "min of $1, $2, ..."
+  
+    - concept: unary-minus
+      arity: 1
+      property: prefix
+      en: minus $1
+      fr: moins $1
+  
+    - concept: minus
+      arity: 2
+      property: infix
+      en: $1 minus $2
+      fr: $1 moins $2
+  
+    - concept: plus
+      arity: 2
+      property: infix
+      en: $1 plus $2
+      fr: $1 plus $2
+  
+    - concept: power
+      arity: 2
+      property: infix
+      default: true
+      conditions:
+        - condition: "$2=2"
+          en: "$1 squared"
+          fr: "$1 carré"
+        - condition: "$2=3"
+          en: "$1 cubed"
+          fr: "$1 cube"
+        - condition: ""
+          en: "$1 to the $2<i>th</i> power"
+          fr: "$1 à la $2"
+  
+    - concept: root
+      arity: 2
+      property: function
+      default: true
+      conditions:
+        - condition: "$2=2"
+          en: "square root of $1"
+        - condition: "$2=3"
+          en: "cube root of $1"
+        - condition: "$2=4"
+          en: "fourth root of $1"
+        - condition: ""
+          en: "$2<i>th</i> root of $1"
+  
+    - concept: greatest-common-divsor
+      arity: "*"
+      property: function
+      en: greatest common divisor of $1, $2, ...
+      fr: plus grand commun diviseur de $1, $2, ...
+  
+    - concept: least-common-multiple
+      arity: "*"
+      property: function
+      en: lest common multiple of  $1, $2, ...
+      fr: plus grand commun diviseur de $1, $2, ...
+  
+    - concept: absolute-value
+      arity: 1
+      property: function
+      en: absolute value of $1
+      fr: valeur absolue de $1
+      de: Betrag von $1
+  
+    - concept: complex-conjugate
+    - concept: complex-conjugate
+      arity: 1
+      property: function
+      en: complex conjugate of $1
+      fr: $1 conjugé
+  
+    - concept: complex-arg
+      arity: 1
+      property: function
+      en: arg of $1
+  
+    - concept: real-part
+      arity: 1
+      property: function
+      en: real part of $1
+  
+  
+    - concept: imaginary-part
+      arity: 1
+      property: function
+      en: imaginary part of $1
+    - concept: imaginary-part
+      arity: 1
+      property: function
+      en: imaginary part of $1
+  
+  
+    - concept: floor
+      arity: 1
+      property: function
+      en: floor of $1
+  
+    - concept: ceiling
+      arity: 1
+      property: function
+      en: ceiling of $1
+  
+    - concept: floor
+      arity: 1
+      property: function
+      en: floor of $1
+  
+    - concept: fractional-part
+      arity: 1
+      property: function
+      en: fractional part of $1
+  
+    - concept: floor
+      arity: 1
+      property: function
+      en: floor of $1
+  
+    - concept: ceiling
+      arity: 1
+      property: function
+      en: ceiling of $1
+  
+    - concept: floor
+      arity: 1
+      property: function
+      en: floor of $1
+  
+    - concept: fractional-part
+      arity: 1
+      property: function
+      en: fractional part of $1
+  
+  - title: logic
+    intents:
+    - concept: logical not
+      arity: 1
+      property: prefix
+      en: not $1
+      fr: non $1
+  
+    - concept: implies
+      arity: 2
+      property: infix
+      en: $1 implies $2
+      fr: $1 implique $2
+  
+    - concept: logical-equivalence
+      property: infix
+      en: $1 if and only if $2
+      fr: $1 si et seulement si $2
+  
+    - concept: forall
+      arity: 2
+      property: prefix
+      en: for all $1 $2
+      fr: pour tout $1 $2
+  
+    - concept: exists
+      arity: 1
+      property: prefix
+      en: there exists $1
+      fr: il existe $1
+  
+    - concept: and
+      arity: 2
+      property: infix
+      en: $1 and $2
+  
+    - concept: or
+      arity: 2
+      property: infix
+      en: $1 or $2
+  
+    - concept: xor
+      arity: 2
+      property: infix
+      en: $1 xor $2
+  
+    ## ================= 4.4.3 Relations ===================
+  - title: relations
+    intents:
+    - concept: equals
+      arity: 2
+      property: infix
       en:
-      - "blank"
+        - "(terse) $1 equals $2"
+        - "(verbose) $1 is equal to $2"
+      fr: "$1 est égal à $2"
+  
+    - concept: not-equals
+      arity: 2
+      property: infix
+      en:
+        - "(terse) $1 not equals $2"
+        - "(verbose) $1 is not equal to $2"
+  
+    - concept: greater-than
+      arity: 2
+      property: infix
+      en:
+        - "(terse) $1 greater than $2"
+        - "(verbose) $1 is greater than $2"
+  
+    - concept: less-than
+      arity: 2
+      property: infix
+      en:
+        - "(terse) $1 less than $2"
+        - "(verbose) $1 is less than $2"
+  
+    - concept: greater-than-or-equals
+      arity: 2
+      property: infix
+      en:
+        - "(terse) $1 greater than or equal to $2"
+        - "(verbose) $1 is greater than or equal to $2"
+  
+    - concept: less-than-or-equals
+      arity: 2
+      property: infix
+      en:
+        - "(terse) $1 less than or equal to $2"
+        - "(verbose) $1 is less than or equal to $2"
+  
+    - concept: approximately
+      arity: 2
+      property: infix
+      en:
+        - "(terse) $1 approximately equal to $2"
+        - "(verbose) $1 is approximately equal to $2"
+  
+    - concept: divides
+      arity: 2
+      property: infix
+      en: "$1 divides $2"
+  
+  ## ====================== 4.4.4 Calculus ============================
+  - title: calculus
+    intents:
+    - concept: integral
+      arity: 1
+      property: function
+      en: "integral of $1"
+  
+    - concept: definite-integral
+      arity: 2
+      property: function
+      en: "integral over $1 of $2"
+  
+    - concept: definite-integral
+      arity: 3
+      property: function
+      en: "integral from $1 to $2 of $3"
+  
+    ## derivative replaced by prime
+  
+    - concept: ???derivative-prime
+    - concept: ???derivative-dot
+    - concept: derivative
+  
+    - concept: n-th derivative
+  
+    - concept: partialdiff
+  
+  - concept: TODO divergence, curl, gradient, laplacian
+  
+  
+  ## ====================== 4.4.5 Sets ============================
+  - title: sets
+    intents:
+    - concept: set
+  
+    - concept: list
+  
+    - concept: union
+  
+    - concept: intersect
+  
+    - concept: in
+  
+    - concept: notin
+  
+    - concept: subset
+  
+    - concept: ?? - notsubset
+  
+    - concept: prsubset
+  
+    - concept: ?? - notprsubset
+  
+    - concept: setdiff
+  
+    - concept: cartesianproduct
+  
+    ## ====================== 4.4.6 sequence and series ============================
+  - title: sequence and series
+    intents:
+    - concept: sum
+  
+    - concept: product
+  
+    - concept: limit
+  
+    - concept: tendsto
+  
+    ## ====================== 4.4.7 elementary classical functions ======================
+  - title: elementary classical functions
+    intents:
+    - concept: sine
+      arity: 1
+      property: prefix
+      en: "sine $1"
+      fr: "sinus $1"
+      comment: used as 'sin', 'sen'
+  
+    - concept: cosine
+      arity: 1
+      property: prefix
+      en:
+      - "(verbose) cosine $1"
+      - "(terse) cos $1"
+  
+    - concept: tangent
+      arity: 1
+      property: prefix
+      en:
+      - "(verbose) tangent $1"
+      - "(terse) tan $1"
+      comment: used as 'tan', 'tg'
+  
+    - concept: secant
+      arity: 1
+      property: prefix
+      en:
+      - "(verbose) secant $1"
+      - "(terse) seech $1"
+      comment: used as 'sec'
+  
+    - concept: cosecant
+      arity: 1
+      property: prefix
+      en:
+      - "(verbose) cosecant $1"
+      - "(terse) co-seech $1"
+      comment: used as 'csc'
+  
+    - concept: cotangent
+      property: prefix
+      en:
+      - "(verbose) cotangent $1"
+      - "(terse) co-tan $1"
+      comment: used as 'cot'
+  
+  
+    ## inverse trig functions
+    - concept: arcsine
+      property: prefix
+      en:
+      - "(verbose) arcsine $1"
       comment:
-      - "blanks can be represented in many ways in MathML. Some examples:"
-      - "`<mi intent='blank'>__</mi>`"
-      - "`<mi intent='blank'>?</mi>`"
-      - "`<mo intent='blank'>□</mo>`"
-      - "`<mspace intent='blank' width='3em'/>`"
-      - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
+      - "used as 'arcsin', 'arc sin'"
+      - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
+  
+    - concept: arccosine
+      property: prefix
+      en:
+      - "(verbose) arccosine $1"
+      comment: "used as 'arccos', 'arc cos'"
+  
+    - concept: arctangent
+      property: prefix
+      en:
+      - "(verbose) arctangent $1"
+      comment: "used as 'arctan', 'arc tan'"
+  
+    - concept: arcsecant
+      property: prefix
+      en:
+      - "(verbose) arcsecant $1"
+      comment: "used as 'arcsec', 'arc sec'"
+  
+    - concept: arccosecant
+      property: prefix
+      en:
+      - "(verbose) arc-cosecant $1"
+      comment: "used as 'arccos', 'arc cos'"
+  
+    - concept: arccotangent
+      property: prefix
+      en:
+      - "(verbose) arc-cotangent $1"
+      comment: "used as 'arccos', 'arc cos'"
+  
+    ## hyperbolic trig functions
+    - concept: hyperbolic-sine
+      property: prefix
+      default: true
+      comment:
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'sinh'"
+      en:
+        - "short form 'shine $1'"
+      fr:
+        - "sinus hyperbolique $1"
+  
+  
+    - concept: hyperbolic-cosine
+      property: prefix
+      default: true
+      comment:
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'cosh'"
+      en:
+        - "short form 'cosh $1'"
+      fr:
+       - "cosh $1"
+       - "kosh $1"
+  
+    - concept: hyperbolic-tangent
+      property: prefix
+      default: true
+      comment:
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'tanh'"
+      en:
+        - "short form American 'tanch $1'"
+        - "short form British 'than $1'"
+  
+    - concept: hyperbolic-secant
+      property: prefix
+      default: true
+      comment:
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'sech'"
+      en:
+        - "short form American 'sech $1'"
+        - "short form British 'shek $1'"
+  
+    - concept: hyperbolic-cosecant
+      property: prefix
+      default: true
+      comment:
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'cosech'"
+      en:
+        - "short form American 'cosech $1'"
+        - "short form British 'coshek $1'"
+  
+  
+    - concept: hyperbolic-cotangent
+      property: prefix
+      default: true
+      comment:
+      - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
+      - "used as 'coth'"
+      en:
+        - "short form American 'coth $1'"
+        - "short form British 'coath $1'"
+  
+  
+  
+    ## inverse hyperbolic trig functions
+    - concept: arc-hyperbolic-sine
+      property: prefix
+      default: true
+      comment: "used as 'asinh'"
+      en:
+        - "short form 'arc shine $1'"
+      fr:
+        - "sinus hyperbolique $1"
+  
+  
+    - concept: arc-hyperbolic-cosine
+      property: prefix
+      default: true
+      comment: "used as 'acosh'"
+      en:
+        - "short form 'arc cosh $1'"
+      fr:
+       - "cosh $1"
+       - "kosh $1"
+  
+    - concept: arc-hyperbolic-tangent
+      property: prefix
+      default: true
+      comment: "used as 'atanh'"
+      en:
+        - "short form American 'arc tanch $1'"
+        - "short form British 'arc than $1'"
+  
+    - concept: arc-hyperbolic-secant
+      property: prefix
+      default: true
+      comment: "used as 'asech'"
+      en:
+        - "short form American 'arc sech $1'"
+        - "short form British 'arc shek $1'"
+  
+    - concept: arc-hyperbolic-cosecant
+      property: prefix
+      default: true
+      comment: "used as 'acsch'"
+      en:
+        - "short form American 'arc cosech $1'"
+        - "short form British 'arc coshek $1'"
+  
+  
+    - concept: arc-hyperbolic-cotangent
+      property: prefix
+      default: true
+      comment: "used as 'acoth'"
+      en:
+        - "short form American 'arc coth $1'"
+        - "short form British 'arc coath $1'"
+  
+  
+    ## exponential related functions
+    - concept: exponential
+      property: prefix
+      default: true
+      en:
+        - "exponential of $1"
+  
+    - concept: natural-logarithm
+      property: prefix
+      default: true
+      en:
+        - "natural log of $1"
+        - "log of $1"
+        - "log base e of $1"
+      fr:
+        -"natural log of $1"
+        - "log of $1 "
+        - "log base e of $1"
+  
+    - concept: logarithm
+      arity: 2
+      property: function
+      default: true
+      comment: "arity 1 log(x)  needs no rule here"
+      en: "log base $2 of $1"
+      fr: "log base $2 of $1"
+  
+  
+  
+  
+    ## ====================== 4.4.8 Statistics ======================
+  - title: Statistics
+    intents:
+    - concept: mean
+  
+    - concept: sdev
+  
+    - concept: variance
+  
+    - concept: median
+  
+    - concept: mode
+  
+    - concept: gamma-function # ??
+  
+    ## ====================== 4.4.9 Linear Algebra ======================
+  - title: Linear Algebra
+    intents:
+    - concept: vector
+  
+    - concept: matrix
+  
+    - concept: determinant
+  
+    - concept: transpose
+      property: postfix
+      default: true
+      en: "$1 transpose"
+      fr: "$1 transposée"
+  
+    - concept: transpose
+      property: suffix
+      comment: "This row could be deleted, as it follows from the default behaviour"
+      en: "transpose of $1"
+      fr: "transposée de $1"
+  
+    - concept: vectorproduct
+  
+    - concept: scalarproduct
+  
+    - concept: outerproduct
+  
+    ## ====================== 4.4.10 Constants and Sets ======================
+  - title: Constants and Sets
+    intents:
+      - concept: set-of-integers
+        arity: 0
+        en:
+        - "(verbose) set of all integers"
+        - "(terse) Z"
+        fr: "Z"
+  
+      - concept: set-of-reals
+        arity: 0
+        en:
+        - "(verbose) set of all real numbers"
+        - "(terse) R"
+  
+      - concept: set-of-rationals
+        arity: 0
+        en:
+        - "(verbose) set of all rational numbers"
+        - "(terse) R"
+  
+      - concept: set-of-natural-numbers
+        arity: 0
+        en:
+        - "(verbose) set of all natural numbers"
+        - "(terse) N"
+  
+      - concept: set-of-complex-numbers
+        arity: 0
+        en:
+        - "(verbose) set of all complex numbers"
+        - "(terse) C"
+  
+      - concept: set-of-primes
+        arity: 0
+        en:
+        - "(verbose) set of all prime numbers"
+        - "(terse) P"
+  
+      - concept: exponential-e
+        arity: 0
+        en: "e"
+        fr: "e"
+  
+      - concept: imaginary-i
+        arity: 0
+        en: "i"
+        fr: "i"
+  
+      - concept: differential-d
+        arity: 0
+        en: "d"
+        fr: "d"
+  
+  
+  ## other areas =======================================================
+  
+  - title: Fill in the blank
+    intents:
+      - concept: blank
+        arity: 1
+        en:
+        - "blank"
+        comment:
+        - "blanks can be represented in many ways in MathML. Some examples:"
+        - "`<mi intent='blank'>__</mi>`"
+        - "`<mi intent='blank'>?</mi>`"
+        - "`<mo intent='blank'>□</mo>`"
+        - "`<mspace intent='blank' width='3em'/>`"
+        - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
+  

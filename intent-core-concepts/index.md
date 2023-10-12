@@ -82,7 +82,7 @@ Localised texts can be added to the YAML file:
 </p>
 </details>
 
-{%- for section in site.data.core -%}
+{%- for section in site.data.core.concepts -%}
 <h1>{{section.title}}</h1>
 <table>
 <thead>
