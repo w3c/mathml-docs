@@ -102,7 +102,8 @@ but do have default fixity properties other than `function`.
 </details>
 
 {%- for section in site.data.core.concepts -%}
-<h1>{{section.title}}</h1>
+
+### {{section.title}}
 <table>
 <thead>
 <tr class="row0">
