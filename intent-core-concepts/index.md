@@ -70,7 +70,7 @@ but do have default fixity properties other than `function`.
 
 {%- for fix in site.data.core.defaultfixity -%}
 
-<dt id="{{fixity}}><b>{{fixity}}</b></dt>
+<dt id="{{fixity}}"><b>{{fixity}}</b></dt>
 <dd>
 {%- for c in fix.concepts -%}
 {{c}}
