@@ -17,6 +17,7 @@ defaultfixity:
        - for-all (∀)
        - measured-angle (∡)
        - minus (-, −)
+       - not (¬)
        - partial-derivative (∂)
        - right-angle (∟)
        - square-root-of (√)
@@ -27,6 +28,8 @@ defaultfixity:
      concepts:
        - and (⁤∧)
        - approaches (→)
+       - approximately (≈)
+       - cartesian-product (×)
        - composed-with (∘)
        - cross-product (×)
        - divided-by (/, ÷, :)
@@ -35,30 +38,31 @@ defaultfixity:
        - does-not-divide (∤)
        - element-of (∈, ∊)
        - equals (=)
+       - equivalent-to (≡)
        - given (|)
        - greater-than (>)
        - greater-than-or-equal-to (≥, ≧)
-       - identical-to (≡)
+       - implies (⇒)
        - intersection (∩)
        - less-than (<)
        - less-than-or-equal-to (≤, ≦)
        - member-of (∈, ∊)
        - minus (-, −)
        - minus-or-plus (∓)
-       - not (¬)
-       - not-a-subset (⊄)
-       - not-a-superset (⊅)
+       - not-subset (⊄)
+       - not-superset (⊅)
        - not-equal-to (≠)
        - not-member-of (∉)
        - not-parallel-to (∦)
-       - of (⁡)  # invisible functional call
+       - of (⁡[U+2061])
        - or (∨)
        - parallel-to (∥)
-       - plus (+)
+       - plus (+, ⁤[U+2064])
        - plus-or-minus (±)
        - precedes (≺)
        - proportional (∝, ∷, ∼, ~)
        - ratio (:, ∶)
+       - set-difference (∖)
        - subset (⊂)
        - subset-or-equal (⊆)
        - succeeds (≻)
@@ -68,6 +72,7 @@ defaultfixity:
        - tilde (~)
        - times (*, ·, ×, ∗)
        - union (∪)
+       - xor (⊕)
 
    - fixity: postfix
      concepts:
@@ -75,7 +80,8 @@ defaultfixity:
 
    - fixity: silent
      concepts:
-       - invisible-times
+       - invisible-times (⁢ [U+2062])
+       - invisible-separator (⁣ [U+2063])
    
     
 concepts:
@@ -139,31 +145,13 @@ concepts:
       property: function
       en: integer part of $1 divided by $2
       fr: quotient de $1 par $2
-  
-    - concept: divide
-      arity: 2
-      property: infix
-      en: $1 divided by $2
-      fr: $1 divisé par $2
-  
+    
     - concept: remainder
       arity: 2
       property: function
       en: the remainder of $1 divided by $2
       fr: reste de la divsion de $1 par $2
-  
-    - concept: times
-      arity: 2
-      property: infix
-      en: $1 times $2
-      fr: $1 fois $2
-  
-    - concept: factorial
-      arity: 1
-      property: postfix
-      en: "$1 factorial"
-      fr: "$1 factorial"
-  
+    
     - concept: max
       arity: "*"
       property: function
@@ -173,25 +161,7 @@ concepts:
       arity: "*"
       property: function
       en: "min of $1, $2, ..."
-  
-    - concept: unary-minus
-      arity: 1
-      property: prefix
-      en: minus $1
-      fr: moins $1
-  
-    - concept: minus
-      arity: 2
-      property: infix
-      en: $1 minus $2
-      fr: $1 moins $2
-  
-    - concept: plus
-      arity: 2
-      property: infix
-      en: $1 plus $2
-      fr: $1 plus $2
-  
+    
     - concept: power
       arity: 2
       property: infix
@@ -278,110 +248,6 @@ concepts:
       arity: 1
       property: function
       en: fractional part of $1
-    
-  - title: logic
-    intents:
-    - concept: logical not
-      arity: 1
-      property: prefix
-      en: not $1
-      fr: non $1
-  
-    - concept: implies
-      arity: 2
-      property: infix
-      en: $1 implies $2
-      fr: $1 implique $2
-  
-    - concept: logical-equivalence
-      property: infix
-      en: $1 if and only if $2
-      fr: $1 si et seulement si $2
-  
-    - concept: forall
-      arity: 2
-      property: prefix
-      en: for all $1 $2
-      fr: pour tout $1 $2
-  
-    - concept: exists
-      arity: 1
-      property: prefix
-      en: there exists $1
-      fr: il existe $1
-  
-    - concept: and
-      arity: 2
-      property: infix
-      en: $1 and $2
-  
-    - concept: or
-      arity: 2
-      property: infix
-      en: $1 or $2
-  
-    - concept: xor
-      arity: 2
-      property: infix
-      en: $1 xor $2
-  
-    ## ================= 4.4.3 Relations ===================
-  - title: relations
-    intents:
-    - concept: equals
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 equals $2"
-        - "(verbose) $1 is equal to $2"
-      fr: "$1 est égal à $2"
-  
-    - concept: not-equals
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 not equals $2"
-        - "(verbose) $1 is not equal to $2"
-  
-    - concept: greater-than
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 greater than $2"
-        - "(verbose) $1 is greater than $2"
-  
-    - concept: less-than
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 less than $2"
-        - "(verbose) $1 is less than $2"
-  
-    - concept: greater-than-or-equals
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 greater than or equal to $2"
-        - "(verbose) $1 is greater than or equal to $2"
-  
-    - concept: less-than-or-equals
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 less than or equal to $2"
-        - "(verbose) $1 is less than or equal to $2"
-  
-    - concept: approximately
-      arity: 2
-      property: infix
-      en:
-        - "(terse) $1 approximately equal to $2"
-        - "(verbose) $1 is approximately equal to $2"
-  
-    - concept: divides
-      arity: 2
-      property: infix
-      en: "$1 divides $2"
   
   ## ====================== 4.4.4 Calculus ============================
   - title: calculus
@@ -410,38 +276,13 @@ concepts:
   
     - concept: curl
   
-    - concept: gradient
-  
-    - concept: laplacian
-  
   
   ## ====================== 4.4.5 Sets ============================
   - title: sets
     intents:
     - concept: set
   
-    - concept: list
-  
-    - concept: union
-  
-    - concept: intersect
-  
-    - concept: in
-  
-    - concept: notin
-  
-    - concept: subset
-  
-    - concept: ?? - notsubset
-  
-    - concept: prsubset
-  
-    - concept: ?? - notprsubset
-  
-    - concept: setdiff
-  
-    - concept: cartesianproduct
-  
+    - concept: list  
     ## ====================== 4.4.6 sequence and series ============================
   - title: sequence and series
     intents:
