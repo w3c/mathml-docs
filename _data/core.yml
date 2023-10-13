@@ -6,19 +6,77 @@
 
 
 defaultfixity:
+   - fixity: function
+     concepts:
+       - gradient (∇)
+       - laplacian (∆)
+
+   - fixity: prefix
+     concepts:
+       - angle (∠)
+       - for-all (∀)
+       - measured-angle (∡)
+       - minus (-, −)
+       - partial-derivative (∂)
+       - right-angle (∟)
+       - square-root-of (√)
+       - there-does-not-exist (∄)
+       - there-exists (∃)
+
    - fixity: infix
      concepts:
-       - plus
-       - minus
-       - times
-       - less-than
+       - and (⁤∧)
+       - approaches (→)
+       - composed-with (∘)
+       - cross-product (×)
+       - divided-by (/, ÷, :)
+       - divides (|, ∣)
+       - does-not-belong-to (∉)
+       - does-not-divide (∤)
+       - element-of (∈, ∊)
+       - equals (=)
+       - given (|)
+       - greater-than (>)
+       - greater-than-or-equal-to (≥, ≧)
+       - identical-to (≡)
+       - intersection (∩)
+       - less-than (<)
+       - less-than-or-equal-to (≤, ≦)
+       - member-of (∈, ∊)
+       - minus (-, −)
+       - minus-or-plus (∓)
+       - not (¬)
+       - not-a-subset (⊄)
+       - not-a-superset (⊅)
+       - not-equal-to (≠)
+       - not-member-of (∉)
+       - not-parallel-to (∦)
+       - of (⁡)  # invisible functional call
+       - or (∨)
+       - parallel-to (∥)
+       - plus (+)
+       - plus-or-minus (±)
+       - precedes (≺)
+       - proportional (∝, ∷, ∼, ~)
+       - ratio (:, ∶)
+       - subset (⊂)
+       - subset-or-equal (⊆)
+       - succeeds (≻)
+       - such-that (|)
+       - superset (⊃)
+       - superset-or-equal (⊇)
+       - tilde (~)
+       - times (*, ·, ×, ∗)
+       - union (∪)
+
    - fixity: postfix
      concepts:
-       - factorial
+       - factorial (!)
+
    - fixity: silent
      concepts:
        - invisible-times
-    
+   
     
 concepts:
 
