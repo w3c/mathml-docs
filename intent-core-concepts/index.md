@@ -80,7 +80,7 @@ but do have default fixity properties other than `function`.
 {{ch}}
 ,
 {%- endfor %-}
-{%- unless forloop.last -%}, {% endunless -%}
+,
 {%- endfor %}
 </dd>
 {% endfor %}
