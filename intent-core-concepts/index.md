@@ -79,7 +79,7 @@ but do have default fixity properties other than `function`.
 {%- for ch in c.characters -%}
 {{ch}}
 ,
-{%- endfor %-}
+{%- endfor -%}
 ,
 {%- endfor %}
 </dd>
