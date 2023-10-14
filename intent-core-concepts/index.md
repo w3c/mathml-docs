@@ -75,7 +75,14 @@ but do have default fixity properties other than `function`.
 <dt id="{{fix.fixity}}"><b>{{fix.fixity}}</b></dt>
 <dd>
 {%- for c in fix.concepts -%}
-{{c}} {%- unless forloop.last -%}, {% endunless -%}
+{{c.concept}} 
+(
+{%- for ch in c.characters -%}
+{{ch}}
+{%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %-}
+)
+{%- unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
 </dd>
 {% endfor %}
