@@ -53,7 +53,7 @@ defaultfixity:
        - concept: divided-by
          characters: [/, ÷, ":"]
        - concept: divides
-         characters: [|, ∣]
+         characters: ["|", "∣"]
        - concept: does-not-belong-to
          characters: [∉]
        - concept: does-not-divide
@@ -61,11 +61,11 @@ defaultfixity:
        - concept: element-of
          characters: [∈, ∊]
        - concept: equals
-         characters: [=]
+         characters: ["="]
        - concept: equivalent-to
          characters: [≡]
        - concept: given
-         characters: [|]
+         characters: ["|"]
        - concept: greater-than
          characters: [>]
        - concept: greater-than-or-equal-to
@@ -113,7 +113,7 @@ defaultfixity:
        - concept: proportional
          characters: [∝, ∷, ∼, ~]
        - concept: ratio
-         characters: [:, ∶]
+         characters: [":", "∶"]
        - concept: set-difference
          characters: [∖]
        - concept: subset
