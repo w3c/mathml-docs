@@ -77,7 +77,7 @@ defaultfixity:
        - concept: intersection
          characters: [∩]
        - concept: less-than
-         characters: ["<"]
+         characters: ["&lt;"]
        - concept: less-than-or-equal-to
          characters: [≤, ≦]
        - concept: member-of
