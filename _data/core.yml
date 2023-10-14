@@ -51,7 +51,7 @@ defaultfixity:
        - concept: cross-product
          characters: [×]
        - concept: divided-by
-         characters: [/, ÷, :]
+         characters: [/, ÷, ":"]
        - concept: divides
          characters: [|, ∣]
        - concept: does-not-belong-to
