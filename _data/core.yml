@@ -67,7 +67,7 @@ defaultfixity:
        - concept: given
          characters: ["|"]
        - concept: greater-than
-         characters: [>]
+         characters: [">"]
        - concept: greater-than-or-equal-to
          characters: [≥, ≧]
        - concept: implies
@@ -75,13 +75,13 @@ defaultfixity:
        - concept: intersection
          characters: [∩]
        - concept: less-than
-         characters: [<]
+         characters: ["<"]
        - concept: less-than-or-equal-to
          characters: [≤, ≦]
        - concept: member-of
          characters: [∈, ∊]
        - concept: minus
-         characters: [-, −]
+         characters: ["-", "−"]
        - concept: minus-or-plus
          characters: [∓]
        - concept: not-subset
@@ -127,7 +127,7 @@ defaultfixity:
        - concept: tilde
          characters: [~]
        - concept: times
-         characters: [*, ·, ×, ∗]
+         characters: ["*", "·", "×", "∗"]
        - concept: union
          characters: [∪]
        - concept: xor
@@ -136,7 +136,7 @@ defaultfixity:
    - fixity: postfix
      concepts:
        - concept: factorial
-         characters: [!]
+         characters: ["!"]
 
    - fixity: silent
      concepts:
