@@ -67,7 +67,7 @@ defaultfixity:
        - concept: given
          characters: ["|"]
        - concept: greater-than
-         characters: [">"]
+         characters: ["&gt;"]
        - concept: greater-than-or-equal-to
          characters: [≥, ≧]
        - concept: implies
