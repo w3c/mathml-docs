@@ -119,7 +119,7 @@ defaultfixity:
        - concept: succeeds
          characters: [≻]
        - concept: such-that
-         characters: [|]
+         characters: ["|"]
        - concept: superset
          characters: [⊃]
        - concept: superset-or-equal
