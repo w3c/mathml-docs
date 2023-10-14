@@ -78,7 +78,7 @@ but do have default fixity properties other than `function`.
 {{c.concept}} 
 {%- for ch in c.characters -%}
 {{ch}}
-{%- unless forloop.last -%}, {% endunless -%}
+,
 {%- endfor %-}
 {%- unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
