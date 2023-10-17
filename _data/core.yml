@@ -1,89 +1,153 @@
 ## Defaults:
 ### - property infix => arity 2
 ### - property prefix => arity 1
-### - property suffix => arity 1
+### - property suffix => arity 1(((((
 ### - property set, number => arity 0
 
 
 defaultfixity:
    - fixity: function
      concepts:
-       - gradient (∇)
-       - laplacian (∆)
+       - concept: gradient
+         characters: [∇]
+       - concept: laplacian
+         characters: [∆]
 
    - fixity: prefix
      concepts:
-       - angle (∠)
-       - for-all (∀)
-       - measured-angle (∡)
-       - minus (-, −)
-       - not (¬)
-       - partial-derivative (∂)
-       - right-angle (∟)
-       - square-root-of (√)
-       - there-does-not-exist (∄)
-       - there-exists (∃)
+       - concept: angle
+         characters: [∠]
+       - concept: for-all
+         characters: [∀]
+       - concept: measured-angle
+         characters: [∡]
+       - concept: minus
+         characters: [-, −]
+       - concept: not
+         characters: [¬]
+       - concept: partial-derivative
+         characters: [∂]
+       - concept: right-angle
+         characters: [∟]
+       - concept: square-root-of
+         characters: [√]
+       - concept: there-does-not-exist
+         characters: [∄]
+       - concept: there-exists
+         characters: [∃]
 
    - fixity: infix
      concepts:
-       - and (⁤∧)
-       - approaches (→)
-       - approximately (≈)
-       - cartesian-product (×)
-       - composed-with (∘)
-       - cross-product (×)
-       - divided-by (/, ÷, :)
-       - divides (|, ∣)
-       - does-not-belong-to (∉)
-       - does-not-divide (∤)
-       - element-of (∈, ∊)
-       - equals (=)
-       - equivalent-to (≡)
-       - given (|)
-       - greater-than (>)
-       - greater-than-or-equal-to (≥, ≧)
-       - implies (⇒)
-       - inner-product (⋅)
-       - intersection (∩)
-       - less-than (<)
-       - less-than-or-equal-to (≤, ≦)
-       - member-of (∈, ∊)
-       - minus (-, −)
-       - minus-or-plus (∓)
-       - not-subset (⊄)
-       - not-superset (⊅)
-       - not-equal-to (≠)
-       - not-member-of (∉)
-       - not-parallel-to (∦)
-       - of (⁡[U+2061])
-       - or (∨)
-       - outer-product (⊗)
-       - parallel-to (∥)
-       - plus (+, ⁤[U+2064])
-       - plus-or-minus (±)
-       - precedes (≺)
-       - proportional (∝, ∷, ∼, ~)
-       - ratio (:, ∶)
-       - set-difference (∖)
-       - subset (⊂)
-       - subset-or-equal (⊆)
-       - succeeds (≻)
-       - such-that (|)
-       - superset (⊃)
-       - superset-or-equal (⊇)
-       - tilde (~)
-       - times (*, ·, ×, ∗)
-       - union (∪)
-       - xor (⊕)
+       - concept: and
+         characters: [⁤∧]
+       - concept: approaches
+         characters: [→]
+       - concept: approximately
+         characters: [≈]
+       - concept: cartesian-product
+         characters: [×]
+       - concept: composed-with
+         characters: [∘]
+       - concept: cross-product
+         characters: [×]
+       - concept: divided-by
+         characters: [/, ÷, :]
+       - concept: divides
+         characters: [|, ∣]
+       - concept: does-not-belong-to
+         characters: [∉]
+       - concept: does-not-divide
+         characters: [∤]
+       - concept: element-of
+         characters: [∈, ∊]
+       - concept: equals
+         characters: [=]
+       - concept: equivalent-to
+         characters: [≡]
+       - concept: given
+         characters: [|]
+       - concept: greater-than
+         characters: [>]
+       - concept: greater-than-or-equal-to
+         characters: [≥, ≧]
+       - concept: implies
+         characters: [⇒]
+       - concept: inner-product
+         characters: [⋅]
+       - concept: intersection
+         characters: [∩]
+       - concept: less-than
+         characters: [<]
+       - concept: less-than-or-equal-to
+         characters: [≤, ≦]
+       - concept: member-of
+         characters: [∈, ∊]
+       - concept: minus
+         characters: [-, −]
+       - concept: minus-or-plus
+         characters: [∓]
+       - concept: not-subset
+         characters: [⊄]
+       - concept: not-superset
+         characters: [⊅]
+       - concept: not-equal-to
+         characters: [≠]
+       - concept: not-member-of
+         characters: [∉]
+       - concept: not-parallel-to
+         characters: [∦]
+       - concept: of
+         characters: [⁡U+2061]
+       - concept: or
+         characters: [∨]
+       - concept: outer-product
+         characters: [⊗]
+       - concept: parallel-to
+         characters: [∥]
+       - concept: plus
+         characters: [+,U+2064]
+       - concept: plus-or-minus
+         characters: [±]
+       - concept: precedes
+         characters: [≺]
+       - concept: proportional
+         characters: [∝, ∷, ∼, ~]
+       - concept: ratio
+         characters: [:, ∶]
+       - concept: set-difference
+         characters: [∖]
+       - concept: subset
+         characters: [⊂]
+       - concept: subset-or-equal
+         characters: [⊆]
+       - concept: succeeds
+         characters: [≻]
+       - concept: such-that
+         characters: [|]
+       - concept: superset
+         characters: [⊃]
+       - concept: superset-or-equal
+         characters: [⊇]
+       - concept: tilde
+         characters: [~]
+       - concept: times
+         characters: [*, ·, ×, ∗]
+       - concept: union
+         characters: [∪]
+       - concept: xor
+         characters: [⊕]
 
    - fixity: postfix
      concepts:
-       - factorial (!)
+       - concept: factorial
+         characters: [!]
 
    - fixity: silent
      concepts:
-       - invisible-times (⁢ [U+2062])
-       - invisible-separator (⁣ [U+2063])
+       - concept: invisible-times
+         characters: [⁢U+2062]
+       - concept: invisible-separator
+         characters: [⁣U+2063]
    
     
 concepts:
