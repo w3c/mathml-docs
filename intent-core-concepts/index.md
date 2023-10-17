@@ -63,7 +63,7 @@ Localised texts can be added to the YAML file:
 
 ----
 
-## Core Concept Default Fixity propertites
+## Core Concept Default Fixity properties
 
 The following concepts do not require special speech templates
 but do have default fixity properties other than `function`.
