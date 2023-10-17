@@ -695,13 +695,13 @@ concepts:
     - concept: transpose
       arity: 1
       property: postfix
-      default: true
       en: "$1 transpose"
       fr: "$1 transposée"
   
     - concept: transpose
       arity: 1
       property: suffix
+      default: false
       en: "transpose of $1"
       fr: "transposée de $1"
     
