@@ -179,6 +179,13 @@ concepts:
           fr: "$1 à la $2"
   
     - concept: root
+      arity: 1
+      property: function
+      conditions:
+        - condition: "element is `msqrt`"
+          en: "square root of $1"
+  
+    - concept: root
       arity: 2
       property: function
       conditions:
@@ -306,21 +313,25 @@ concepts:
     - concept: sum
       arity: 3
       property: function
+      condition: "`munderover` or `msubsup` parent"
       en: "sum from $1 to $2 of $3"
 
     - concept: product
       arity: 1
       property: function
+      condition: "`mrow` parent"
       en: "product of $1"
   
     - concept: product
       arity: 2
       property: function
+      condition: "`munder` or `msub` parent"
       en: "product over $1 of $2"
   
     - concept: product
       arity: 3
       property: function
+      condition: "`munderover` or `msubsup` parent"
       en: "product from $1 to $2 of $3"
   
     - concept: limit
