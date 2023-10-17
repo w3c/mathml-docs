@@ -165,7 +165,6 @@ concepts:
     - concept: power
       arity: 2
       property: infix
-      default: true
       conditions:
         - condition: "$2=2"
           en: "$1 squared"
@@ -180,7 +179,6 @@ concepts:
     - concept: root
       arity: 2
       property: function
-      default: true
       conditions:
         - condition: "$2=2"
           en: "square root of $1"
@@ -385,7 +383,6 @@ concepts:
     ## hyperbolic trig functions
     - concept: hyperbolic-sine
       property: function
-      default: true
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'sinh'"
@@ -397,7 +394,6 @@ concepts:
   
     - concept: hyperbolic-cosine
       property: function
-      default: true
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'cosh'"
@@ -409,7 +405,6 @@ concepts:
   
     - concept: hyperbolic-tangent
       property: function
-      default: true
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'tanh'"
@@ -419,7 +414,6 @@ concepts:
   
     - concept: hyperbolic-secant
       property: function
-      default: true
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'sech'"
@@ -429,7 +423,6 @@ concepts:
   
     - concept: hyperbolic-cosecant
       property: function
-      default: true
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'cosech'"
@@ -440,7 +433,6 @@ concepts:
   
     - concept: hyperbolic-cotangent
       property: function
-      default: true
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'coth'"
@@ -453,7 +445,6 @@ concepts:
     ## inverse hyperbolic trig functions
     - concept: arc-hyperbolic-sine
       property: function
-      default: true
       comment: "used as 'asinh'"
       en:
         - "short form 'arc shine $1'"
@@ -463,7 +454,6 @@ concepts:
   
     - concept: arc-hyperbolic-cosine
       property: function
-      default: true
       comment: "used as 'acosh'"
       en:
         - "short form 'arc cosh $1'"
@@ -473,7 +463,6 @@ concepts:
   
     - concept: arc-hyperbolic-tangent
       property: function
-      default: true
       comment: "used as 'atanh'"
       en:
         - "short form American 'arc tanch $1'"
@@ -481,7 +470,6 @@ concepts:
   
     - concept: arc-hyperbolic-secant
       property: function
-      default: true
       comment: "used as 'asech'"
       en:
         - "short form American 'arc sech $1'"
@@ -489,7 +477,6 @@ concepts:
   
     - concept: arc-hyperbolic-cosecant
       property: function
-      default: true
       comment: "used as 'acsch'"
       en:
         - "short form American 'arc cosech $1'"
@@ -498,7 +485,6 @@ concepts:
   
     - concept: arc-hyperbolic-cotangent
       property: function
-      default: true
       comment: "used as 'acoth'"
       en:
         - "short form American 'arc coth $1'"
@@ -508,13 +494,11 @@ concepts:
     ## exponential related functions
     - concept: exponential
       property: function
-      default: true
       en:
         - "exponential of $1"
   
     - concept: natural-logarithm
       property: function
-      default: true
       en:
         - "natural log of $1"
         - "log of $1"
@@ -527,7 +511,6 @@ concepts:
     - concept: logarithm
       arity: 2
       property: function
-      default: true
       comment: "arity 1 log(x)  needs no rule here"
       en: "log base $2 of $1"
       fr: "log base $2 of $1"
@@ -567,7 +550,6 @@ concepts:
   
     - concept: transpose
       property: suffix
-      comment: "This row could be deleted, as it follows from the default behaviour"
       en: "transpose of $1"
       fr: "transposée de $1"
   
