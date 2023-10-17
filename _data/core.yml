@@ -606,12 +606,12 @@ concepts:
   
     - concept: transpose
       property: postfix
-      default: true
       en: "$1 transpose"
       fr: "$1 transposée"
   
     - concept: transpose
       property: suffix
+      default: false
       en: "transpose of $1"
       fr: "transposée de $1"
   
