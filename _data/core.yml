@@ -595,7 +595,7 @@ concepts:
     - concept: mode
       arity: 1
       property: function
-       en: "mode of $1"
+      en: "mode of $1"
  
     ## ====================== 4.4.9 Linear Algebra ======================
   - title: Linear Algebra
