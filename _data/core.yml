@@ -72,6 +72,8 @@ defaultfixity:
          characters: [≥, ≧]
        - concept: implies
          characters: [⇒]
+       - concept: inner-product
+         characters: [⋅]
        - concept: intersection
          characters: [∩]
        - concept: less-than
@@ -98,6 +100,8 @@ defaultfixity:
          characters: [⁡U+2061]
        - concept: or
          characters: [∨]
+       - concept: outer-product
+         characters: [⊗]
        - concept: parallel-to
          characters: [∥]
        - concept: plus
@@ -239,6 +243,13 @@ concepts:
           fr: "$1 à la $2"
   
     - concept: root
+      arity: 1
+      property: function
+      conditions:
+        - condition: "element is `msqrt`"
+          en: "square root of $1"
+  
+    - concept: root
       arity: 2
       property: function
       conditions:
@@ -318,6 +329,11 @@ concepts:
       en: "integral of $1"
   
     - concept: definite-integral
+      arity: 2
+      property: function
+      en: "integral over $1 of $2"
+  
+    - concept: definite-integral
       arity: 3
       property: function
       en: "integral from $1 to $2 of $3"
@@ -347,12 +363,44 @@ concepts:
   - title: sequence and series
     intents:
     - concept: sum
+      arity: 1
+      property: function
+      condition: "`mrow` parent"
+      en: "sum of $1"
+  
+    - concept: sum
+      arity: 2
+      property: function
+      condition: "`munder` or `msub` parent"
+      en: "sum over $1 of $2"
+  
+    - concept: sum
+      arity: 3
+      property: function
+      condition: "`munderover` or `msubsup` parent"
+      en: "sum from $1 to $2 of $3"
+
+    - concept: product
+      arity: 1
+      property: function
+      condition: "`mrow` parent"
+      en: "product of $1"
   
     - concept: product
+      arity: 2
+      property: function
+      condition: "`munder` or `msub` parent"
+      en: "product over $1 of $2"
+  
+    - concept: product
+      arity: 3
+      property: function
+      condition: "`munderover` or `msubsup` parent"
+      en: "product from $1 to $2 of $3"
   
     - concept: limit
   
-    - concept: tendsto
+    - concept: tends-to
   
     ## ====================== 4.4.7 elementary classical functions ======================
   - title: elementary classical functions
@@ -396,6 +444,7 @@ concepts:
       comment: used as 'csc'
   
     - concept: cotangent
+      arity: 1
       property: function
       en:
       - "(verbose) cotangent $1"
@@ -405,6 +454,7 @@ concepts:
   
     ## inverse trig functions
     - concept: arcsine
+      arity: 1
       property: function
       en:
       - "(verbose) arcsine $1"
@@ -413,30 +463,35 @@ concepts:
       - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
   
     - concept: arccosine
+      arity: 1
       property: function
       en:
       - "(verbose) arccosine $1"
       comment: "used as 'arccos', 'arc cos'"
   
     - concept: arctangent
+      arity: 1
       property: function
       en:
       - "(verbose) arctangent $1"
       comment: "used as 'arctan', 'arc tan'"
   
     - concept: arcsecant
+      arity: 1
       property: function
       en:
       - "(verbose) arcsecant $1"
       comment: "used as 'arcsec', 'arc sec'"
   
     - concept: arccosecant
+      arity: 1
       property: function
       en:
       - "(verbose) arc-cosecant $1"
       comment: "used as 'arccos', 'arc cos'"
   
     - concept: arccotangent
+      arity: 1
       property: function
       en:
       - "(verbose) arc-cotangent $1"
@@ -444,6 +499,7 @@ concepts:
   
     ## hyperbolic trig functions
     - concept: hyperbolic-sine
+      arity: 1
       property: function
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -455,6 +511,7 @@ concepts:
   
   
     - concept: hyperbolic-cosine
+      arity: 1
       property: function
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -466,6 +523,7 @@ concepts:
        - "kosh $1"
   
     - concept: hyperbolic-tangent
+      arity: 1
       property: function
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -475,6 +533,7 @@ concepts:
         - "short form British 'than $1'"
   
     - concept: hyperbolic-secant
+      arity: 1
       property: function
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -484,6 +543,7 @@ concepts:
         - "short form British 'shek $1'"
   
     - concept: hyperbolic-cosecant
+      arity: 1
       property: function
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -494,6 +554,7 @@ concepts:
   
   
     - concept: hyperbolic-cotangent
+      arity: 1
       property: function
       comment:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
@@ -506,6 +567,7 @@ concepts:
   
     ## inverse hyperbolic trig functions
     - concept: arc-hyperbolic-sine
+      arity: 1
       property: function
       comment: "used as 'asinh'"
       en:
@@ -515,6 +577,7 @@ concepts:
   
   
     - concept: arc-hyperbolic-cosine
+      arity: 1
       property: function
       comment: "used as 'acosh'"
       en:
@@ -524,6 +587,7 @@ concepts:
        - "kosh $1"
   
     - concept: arc-hyperbolic-tangent
+      arity: 1
       property: function
       comment: "used as 'atanh'"
       en:
@@ -531,6 +595,7 @@ concepts:
         - "short form British 'arc than $1'"
   
     - concept: arc-hyperbolic-secant
+      arity: 1
       property: function
       comment: "used as 'asech'"
       en:
@@ -538,6 +603,7 @@ concepts:
         - "short form British 'arc shek $1'"
   
     - concept: arc-hyperbolic-cosecant
+      arity: 1
       property: function
       comment: "used as 'acsch'"
       en:
@@ -546,6 +612,7 @@ concepts:
   
   
     - concept: arc-hyperbolic-cotangent
+      arity: 1
       property: function
       comment: "used as 'acoth'"
       en:
@@ -555,27 +622,27 @@ concepts:
   
     ## exponential related functions
     - concept: exponential
+      arity: 1
       property: function
       en:
         - "exponential of $1"
   
     - concept: natural-logarithm
+      arity: 1
       property: function
       en:
         - "natural log of $1"
         - "log of $1"
-        - "log base e of $1"
-      fr:
-        -"natural log of $1"
-        - "log of $1 "
-        - "log base e of $1"
+  
+    - concept: logarithm
+      arity: 1
+      property: function
+      en: "log of $1"
   
     - concept: logarithm
       arity: 2
       property: function
-      comment: "arity 1 log(x)  needs no rule here"
       en: "log base $2 of $1"
-      fr: "log base $2 of $1"
   
   
   
@@ -584,43 +651,60 @@ concepts:
   - title: Statistics
     intents:
     - concept: mean
+      arity: 1
+      property: function
+      en: "mean of $1"
   
-    - concept: sdev
+    - concept: standard-deviation
+      arity: 1
+      property: function
+      en: "standard deviation of $1"
   
     - concept: variance
+      arity: 1
+      property: function
+      en: "variance of $1"
   
     - concept: median
+      arity: 1
+      property: function
+      en: "median of $1"
   
     - concept: mode
-  
-    - concept: gamma-function # ??
-  
+      arity: 1
+      property: function
+      en: "mode of $1"
+ 
     ## ====================== 4.4.9 Linear Algebra ======================
   - title: Linear Algebra
     intents:
     - concept: vector
+      arity: 1
+      property: function
   
     - concept: matrix
+      arity: 1
+      property: function
+      comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
   
     - concept: determinant
+      arity: 1
+      property: function
+      comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
   
     - concept: transpose
+      arity: 1
       property: postfix
       en: "$1 transpose"
       fr: "$1 transposée"
   
     - concept: transpose
+      arity: 1
       property: suffix
       default: false
       en: "transpose of $1"
       fr: "transposée de $1"
-  
-    - concept: vectorproduct
-  
-    - concept: scalarproduct
-  
-    - concept: outerproduct
-  
+    
     ## ====================== 4.4.10 Constants and Sets ======================
   - title: Constants and Sets
     intents:
@@ -682,7 +766,7 @@ concepts:
   - title: Fill in the blank
     intents:
       - concept: blank
-        arity: 1
+        arity: 0
         en:
         - "blank"
         comment:
