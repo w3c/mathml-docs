@@ -142,7 +142,7 @@ but do have default fixity properties other than `function`.
 <tr {% if forloop.first %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false -%}*{%- endunless -%}</td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 <td>{{cond.condition}}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
@@ -167,7 +167,7 @@ but do have default fixity properties other than `function`.
 <tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}">
 <td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
-<td>{{c.property}}{%- unless c.default == false -%}*{%- endunless -%}</td>
+<td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 <td>{{c.condition}}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
