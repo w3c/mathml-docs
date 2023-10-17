@@ -294,11 +294,13 @@ concepts:
     - concept: sum
       arity: 1
       property: function
+      condition: `mrow` parent
       en: "sum of $1"
   
     - concept: sum
       arity: 2
       property: function
+      condition: `munder` or `msub` parent
       en: "sum over $1 of $2"
   
     - concept: sum
@@ -551,6 +553,7 @@ concepts:
         - "exponential of $1"
   
     - concept: natural-logarithm
+      arity: 1
       property: function
       en:
         - "natural log of $1"
