@@ -64,7 +64,7 @@ Wikipedia
 DLMF
 {%- else -%}
 u
--%}
+{%- endif -%}
 </a><br/>
 {% endfor %}
 {%-endif -%}
