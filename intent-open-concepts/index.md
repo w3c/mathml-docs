@@ -57,7 +57,15 @@ Additional contributions are welcome:
 <td>
 {%- if c.urls -%}
 {% for u in c.urls %}
-<a href="{{u}}">{{u}}</a><br/>
+<a href="{{u}}">
+{%- if u contains "wikipedia" -%}
+Wikipedia
+{%- elsif u contains "dlmf" -%}
+DLMF
+{%- else -%}
+u
+-%}
+</a><br/>
 {% endfor %}
 {%-endif -%}
 </td>
