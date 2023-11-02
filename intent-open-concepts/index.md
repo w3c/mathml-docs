@@ -65,13 +65,15 @@ DLMF
 {%- elsif u contains "ncatlab" -%}
 nLab
 {%- elsif u contains "encyclopediaofmath" -%}
-Encyclopedia of Mathematics
-{%- elsif u contains "stackexchange" -%}
+Encyclopedia of Math
+htt{%- elsif u contains "stackexchange" -%}
 Stackexchange
 {%- elsif u contains "mathworld.wolfram" -%}
 MathWorld
+{%- elsif u contains "arxiv" -%}
+arXiv
 {%- else -%}
-{{u}}
+{{ u | remove: "http://" | remove: "https://" | split: "/" | first }}
 {%- endif -%}
 </a><br/>
 {% endfor %}
