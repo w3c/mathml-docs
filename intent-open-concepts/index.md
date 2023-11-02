@@ -65,7 +65,7 @@ DLMF
 {%- elsif u contains "ncatlab" -%}
 nLab
 {%- elsif u contains "encyclopediaofmath" -%}
-Encyclopedia of Math
+Encyclopedia&#160;of&#160;Math
 {%- elsif u contains "stackexchange" -%}
 Stackexchange
 {%- elsif u contains "mathworld.wolfram" -%}
