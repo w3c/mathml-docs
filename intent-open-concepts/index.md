@@ -62,8 +62,16 @@ Additional contributions are welcome:
 Wikipedia
 {%- elsif u contains "dlmf" -%}
 DLMF
+{%- elsif u contains "ncatlab" -%}
+nLab
+{%- elsif u contains "encyclopediaofmath" -%}
+Encyclopedia of Mathematics
+{%- elsif u contains "stackexchange" -%}
+Stackexchange
+{%- elsif u contains "mathworld.wolfram" -%}
+MathWorld
 {%- else -%}
-u
+{{u}}
 {%- endif -%}
 </a><br/>
 {% endfor %}
