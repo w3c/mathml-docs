@@ -804,7 +804,7 @@ concepts:
         en:
         - "line segment $1 $2"
         comment:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>
+        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
 
       - concept: shape
         arity: "*"
