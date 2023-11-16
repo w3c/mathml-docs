@@ -886,7 +886,7 @@ concepts:
         property: function
         en: "translation by $1 comma $2"
         comment:
-        - "Example: $T_{(1,3)}"
+        - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
    
   - title: Grouping
     intents:
