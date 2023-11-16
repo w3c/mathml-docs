@@ -40,6 +40,8 @@ defaultfixity:
      concepts:
        - concept: and
          characters: [⁤∧]
+       - concept: applied-to
+         characters: [⁡U+2061]
        - concept: approaches
          characters: [→]
        - concept: approximately
@@ -96,8 +98,6 @@ defaultfixity:
          characters: [∉]
        - concept: not-parallel-to
          characters: [∦]
-       - concept: of
-         characters: [⁡U+2061]
        - concept: or
          characters: [∨]
        - concept: outer-product
