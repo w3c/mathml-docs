@@ -154,6 +154,12 @@ defaultfixity:
          characters: ["→"]
        - concept: such-that
          characters: [":", "|"]
+       - concept: if-and-only-if
+         characters: ["⟺"]
+       - concept: perpendicular
+         characters: ["⟂"]
+       - concept: defined-as
+         characters: ["=", "≔"]
 
    - fixity: postfix
      concepts:
@@ -806,6 +812,30 @@ concepts:
         comment:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
 
+      - concept: line
+        arity: 2
+        property: prefix
+        en:
+        - "line $1 $2"
+        comment:
+        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
+
+      - concept: ray
+        arity: 2
+        property: prefix
+        en:
+        - "ray $1 $2"
+        comment:
+        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+
+      - concept: arc
+        arity: 2
+        property: prefix
+        en:
+        - "arc $1 $2"
+        comment:
+        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
+
       - concept: shape
         arity: "*"
         property: prefix
@@ -897,3 +927,19 @@ concepts:
         comment:
         - "this includes parens, brackets, and braces"
  
+      - concept: annotation
+        arity: 2
+        property: function
+        en: "H 2 0, which is water"
+        comment:
+        - "used with `mover` or `munder`"
+        - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
+ 
+ 
+      - concept: braced-group
+        arity: 1
+        property: function
+        en: "grouped $1 end-grouped"
+        comment:
+        - "used with `mover` or `munder`"
+        - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"

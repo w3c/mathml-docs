@@ -212,6 +212,14 @@
         </mrow>"
       en: ???
 
+- property: shape
+  type: geometry
+  applicability: mo
+  comment: there are many shape characters in unicode, including filled and shaded ones. Some have mathematical meaning. The shape property is used when they are meant to be used as a geometric shape.
+  examples:
+    - mathml: "<mo intent=':shape'>▭</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi>"
+      en: rectangle A B C D
+
 - property: chemical-element
   type: chemistry
   examples:
