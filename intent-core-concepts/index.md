@@ -121,7 +121,7 @@ but do have default fixity properties other than `function`.
 
 ### {{section.title}}
 
-<table>
+<table style="width:100%">
 <thead>
 <tr class="row0">
 <th>Concept</th>
@@ -130,7 +130,7 @@ but do have default fixity properties other than `function`.
 {%- for language in site.data.languages -%}
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
-<th>Comments</th>
+<th style="width:auto">Comments</th>
 </tr>
 </thead>
 <tbody>
@@ -156,7 +156,7 @@ but do have default fixity properties other than `function`.
 {% endif %}
 </td>
 {%- endfor -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
+{%- if forloop.first-%}<td  style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
@@ -180,7 +180,7 @@ but do have default fixity properties other than `function`.
 {% endif %}
 </td>
 {%- endfor -%}
-<td>{%- for com in c.comment -%}
+<td style="width:auto">{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>
