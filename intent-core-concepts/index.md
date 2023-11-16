@@ -127,7 +127,6 @@ but do have default fixity properties other than `function`.
 <th>Concept</th>
 <th>Arity</th>
 <th>Property</th>
-<th>Condition</th>
 {%- for language in site.data.languages -%}
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
@@ -143,7 +142,6 @@ but do have default fixity properties other than `function`.
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
-<td>{{cond.condition}}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 [{{cond.condition}}]:
@@ -169,7 +167,6 @@ but do have default fixity properties other than `function`.
 <td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
-<td>{{c.condition}}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 {%- if c[language.language-code] -%}
