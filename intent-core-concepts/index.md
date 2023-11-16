@@ -146,7 +146,8 @@ but do have default fixity properties other than `function`.
 <td>{{cond.condition}}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
-{%- if cond[language.language-code] -%}
+[{{cond.condition}}]:
+{% if cond[language.language-code] -%}
 {%- for l in cond[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
