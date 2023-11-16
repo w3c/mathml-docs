@@ -22,7 +22,7 @@ defaultfixity:
        - concept: measured-angle
          characters: [∡]
        - concept: minus
-         characters: [-, −]
+         characters: ["-"", "−"]
        - concept: not
          characters: [¬]
        - concept: partial-derivative
@@ -35,6 +35,10 @@ defaultfixity:
          characters: [∄]
        - concept: there-exists
          characters: [∃]
+       - concept: number-of
+         characters: ["#"]
+       - concept: change
+         characters: ["Δ"]
 
    - fixity: infix
      concepts:
@@ -136,11 +140,40 @@ defaultfixity:
          characters: [∪]
        - concept: xor
          characters: [⊕]
+       - concept: list-separator
+         characters: [",", ";"]
+       - concept: range-separator
+         characters: ["-", "‐", "‑", "–", "—"]
+       - concept: ellipsis
+         characters: ["…"]
+       - concept: evaluates-to
+         characters: ["→"]
+       - concept: maps-to
+         characters: ["→"]
+       - concept: translates-to
+         characters: ["→"]
+       - concept: such-that
+         characters: [":", "|"]
 
    - fixity: postfix
      concepts:
        - concept: factorial
          characters: ["!"]
+       - concept: percent
+         characters: ["%"]
+
+   - fixity: nofix
+     concepts:
+       - concept: radius
+         characters: ["r"]
+       - concept: diameter
+         characters: ["d"]
+       - concept: probability
+         characters: ["P"]
+       - concept: distance
+         characters: ["d", "D"]
+       - concept: volume
+         characters: ["V"]
 
    - fixity: silent
      concepts:
@@ -763,6 +796,31 @@ concepts:
   
   ## other areas =======================================================
   
+  - title: Geometry
+    intents:
+      - concept: line-segment
+        arity: 2
+        property: prefix
+        en:
+        - "line segment $1 $2"
+        comment:
+        - "Example: (`mover`): $\\overline{AB}$"
+
+      - concept: shape
+        arity: "*"
+        property: prefix
+        en:
+        - "shape $1 $2 $3 $4"
+
+      - concept: point-at
+        arity: "3"
+        property: ???
+        en:
+        - "point $1 with coordinates $2 and $3"
+        comment:
+        - "Example: P(1,2)"
+   
+
   - title: Fill in the blank
     intents:
       - concept: blank
@@ -776,4 +834,66 @@ concepts:
         - "`<mo intent='blank'>□</mo>`"
         - "`<mspace intent='blank' width='3em'/>`"
         - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
-  
+   
+  - title: Separators
+    intents:
+      - concept: time-separator
+        arity: 2
+        property: infix
+        en: $1 $2
+        comment:
+        - "separates hours and minutes and is typically silent"
+        - "Example: 2:31"
+ 
+   
+  - title: Generic Concepts
+    intents:
+      - concept: fenced-group
+        arity: 1
+        property: function
+        en: "fenced-group of $1"
+        comment:
+        - "this includes parens, brackets, and braces"
+      
+      - concept: ordered-pair
+        arity: 2
+        property: function
+        en: "the pair $1 and $2"
+      
+      - concept: highlight
+        arity: 1
+        property: postfix
+        en: "$1 highlighted"
+        comment:
+        - "this typically would be used inside of a larger expression and not on its own"
+        - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
+   
+      - concept: least-common-denominator
+        arity: "*"
+        property: function
+        en: "least common denominator of $*"
+   
+      - concept: rate
+        arity: 2
+        property: infix
+        en: "$1 per $2"
+        comment:
+        - "Typically used with units"
+        - "Used with `mfrac` or `/`"
+   
+      - concept: translation
+        arity: 2
+        property: function
+        en: "translation by $1 comma $2"
+        comment:
+        - "Example: $T_{(1,3)}"
+   
+  - title: Grouping
+    intents:
+      - concept: fenced-group
+        arity: 1
+        property: function
+        en: "fenced-group of $1"
+        comment:
+        - "this includes parens, brackets, and braces"
+ 
