@@ -418,7 +418,7 @@ concepts:
       property: function
       en: "product of $1"
       comment: usually on `<mrow>`
-	
+        
     - concept: product
       arity: 2
       property: function
