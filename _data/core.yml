@@ -22,7 +22,7 @@ defaultfixity:
        - concept: measured-angle
          characters: [∡]
        - concept: minus
-         characters: ["-"", "−"]
+         characters: ["-", "−"]
        - concept: not
          characters: [¬]
        - concept: partial-derivative
