@@ -193,14 +193,14 @@ defaultfixity:
          characters: [⁢U+2062]
        - concept: invisible-separator
          characters: [⁣U+2063]
-   
-    
+
+
 concepts:
 
   ## From chapter 4 of MathML3
-  
+
   ## - concept: TODO numbers representations
-  
+
   ## ================ 4.4.1 functions and inverses ====================
   - title: functions and inverses
     intents:
@@ -209,70 +209,70 @@ concepts:
       property: function
       en: closed interval between $1 and $2
       fr: intervalle fermé entre $1 et $2
-  
+
     - concept: closed-open-interval
       arity: 2
       property: function
       en: interval between $1 (included) and $2
       fr: intervalle ouvert à droite entre $1 et $2
-  
+
     - concept: open-closed-interval
       arity: 2
       property: function
       en:  interval between $1 and $2, included
       fr: intervalle ouvert à gauche...
-  
+
     - concept: open-interval
       arity: 2
       property: function
       en: open interval between $1 and $2
       fr: intervalle ouvert
-  
+
     - concept: inverse
       arity: 1
       property: postfix
       en: inverse of $1
-  
+
     - concept: domain
       arity: 1
       property: function
       en: domain of $1
       fr: domaine de définition de $1
-  
+
     - concept: codomain
       arity: 1
       property: function
       en: codomain of $1
       fr: ensemble d'arrivée de $1
-  
+
     - concept: image
       arity: 1
       property: prefix
       en: image of $1
       fr: image de $1
-  
+
     - concept: quotient
       arity: 2
       property: function
       en: integer part of $1 divided by $2
       fr: quotient de $1 par $2
-    
+
     - concept: remainder
       arity: 2
       property: function
       en: the remainder of $1 divided by $2
       fr: reste de la divsion de $1 par $2
-    
+
     - concept: max
       arity: "*"
       property: function
       en: "max of $1, $2, ..."
-  
+
     - concept: min
       arity: "*"
       property: function
       en: "min of $1, $2, ..."
-    
+
     - concept: power
       arity: 2
       property: infix
@@ -286,14 +286,8 @@ concepts:
         - condition: ""
           en: "$1 to the $2<i>th</i> power"
           fr: "$1 à la $2"
-  
-    - concept: root
-      arity: 1
-      property: function
-      conditions:
-        - condition: "element is `msqrt`"
-          en: "square root of $1"
-  
+
+
     - concept: root
       arity: 2
       property: function
@@ -306,65 +300,65 @@ concepts:
           en: "fourth root of $1"
         - condition: ""
           en: "$2<i>th</i> root of $1"
-  
+
     - concept: greatest-common-divsor
       arity: "*"
       property: function
       en: greatest common divisor of $1, $2, ...
       fr: plus grand commun diviseur de $1, $2, ...
-  
+
     - concept: least-common-multiple
       arity: "*"
       property: function
       en: lest common multiple of  $1, $2, ...
       fr: plus grand commun diviseur de $1, $2, ...
-  
+
     - concept: absolute-value
       arity: 1
       property: function
       en: absolute value of $1
       fr: valeur absolue de $1
       de: Betrag von $1
-  
+
     - concept: complex-conjugate
       arity: 1
       property: function
       en: complex conjugate of $1
       fr: $1 conjugé
-  
+
     - concept: complex-arg
       arity: 1
       property: function
       en: arg of $1
-  
+
     - concept: real-part
       arity: 1
       property: function
       en: real part of $1
-  
-  
+
+
       en: imaginary part of $1
     - concept: imaginary-part
       arity: 1
       property: function
       en: imaginary part of $1
-  
-  
+
+
     - concept: floor
       arity: 1
       property: function
       en: floor of $1
-  
+
     - concept: ceiling
       arity: 1
       property: function
       en: ceiling of $1
-  
+
     - concept: fractional-part
       arity: 1
       property: function
       en: fractional part of $1
-  
+
   ## ====================== 4.4.4 Calculus ============================
   - title: calculus
     intents:
@@ -372,77 +366,77 @@ concepts:
       arity: 1
       property: function
       en: "integral of $1"
-  
+
     - concept: definite-integral
       arity: 2
       property: function
       en: "integral over $1 of $2"
-  
+
     - concept: definite-integral
       arity: 3
       property: function
       en: "integral from $1 to $2 of $3"
-  
+
     ## derivative replaced by prime
-  
+
     - concept: ???derivative-prime
     - concept: ???derivative-dot
     - concept: derivative
-  
+
     - concept: n-th derivative
-  
+
     - concept: partialdiff
-  
+
     - concept: divergence
-  
+
     - concept: curl
-  
-  
+
+
   ## ====================== 4.4.5 Sets ============================
   - title: sets
     intents:
     - concept: set
-  
-    - concept: list  
+
+    - concept: list
     ## ====================== 4.4.6 sequence and series ============================
   - title: sequence and series
     intents:
     - concept: sum
       arity: 1
       property: function
-      condition: "`mrow` parent"
       en: "sum of $1"
-  
+      comment: usually on `<mrow>`
+
     - concept: sum
       arity: 2
       property: function
-      condition: "`munder` or `msub` parent"
       en: "sum over $1 of $2"
-  
+      comment: usually on `<munder>` or `<msub>`
+
     - concept: sum
       arity: 3
       property: function
-      condition: "`munderover` or `msubsup` parent"
       en: "sum from $1 to $2 of $3"
+      comment: usually on `<munderover>` or `<msubsup>`
 
     - concept: product
       arity: 1
       property: function
-      condition: "`mrow` parent"
       en: "product of $1"
-  
+      comment: usually on `<mrow>`
+	
     - concept: product
       arity: 2
       property: function
-      condition: "`munder` or `msub` parent"
       en: "product over $1 of $2"
-  
+      comment: usually on `<munder>` or `<msub>`
+
     - concept: product
       arity: 3
       property: function
-      condition: "`munderover` or `msubsup` parent"
       en: "product from $1 to $2 of $3"
-  
+      comment: usually on `<munderover>` or `<msubsup>`
+
     - concept: limit
   
 
@@ -455,14 +449,14 @@ concepts:
       en: "sine $1"
       fr: "sinus $1"
       comment: used as 'sin', 'sen'
-  
+
     - concept: cosine
       arity: 1
       property: function
       en:
       - "(verbose) cosine $1"
       - "(terse) cos $1"
-  
+
     - concept: tangent
       arity: 1
       property: function
@@ -470,7 +464,7 @@ concepts:
       - "(verbose) tangent $1"
       - "(terse) tan $1"
       comment: used as 'tan', 'tg'
-  
+
     - concept: secant
       arity: 1
       property: function
@@ -478,7 +472,7 @@ concepts:
       - "(verbose) secant $1"
       - "(terse) seech $1"
       comment: used as 'sec'
-  
+
     - concept: cosecant
       arity: 1
       property: function
@@ -486,7 +480,7 @@ concepts:
       - "(verbose) cosecant $1"
       - "(terse) co-seech $1"
       comment: used as 'csc'
-  
+
     - concept: cotangent
       arity: 1
       property: function
@@ -494,8 +488,8 @@ concepts:
       - "(verbose) cotangent $1"
       - "(terse) co-tan $1"
       comment: used as 'cot'
-  
-  
+
+
     ## inverse trig functions
     - concept: arcsine
       arity: 1
@@ -505,42 +499,42 @@ concepts:
       comment:
       - "used as 'arcsin', 'arc sin'"
       - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
-  
+
     - concept: arccosine
       arity: 1
       property: function
       en:
       - "(verbose) arccosine $1"
       comment: "used as 'arccos', 'arc cos'"
-  
+
     - concept: arctangent
       arity: 1
       property: function
       en:
       - "(verbose) arctangent $1"
       comment: "used as 'arctan', 'arc tan'"
-  
+
     - concept: arcsecant
       arity: 1
       property: function
       en:
       - "(verbose) arcsecant $1"
       comment: "used as 'arcsec', 'arc sec'"
-  
+
     - concept: arccosecant
       arity: 1
       property: function
       en:
       - "(verbose) arc-cosecant $1"
       comment: "used as 'arccos', 'arc cos'"
-  
+
     - concept: arccotangent
       arity: 1
       property: function
       en:
       - "(verbose) arc-cotangent $1"
       comment: "used as 'arccos', 'arc cos'"
-  
+
     ## hyperbolic trig functions
     - concept: hyperbolic-sine
       arity: 1
@@ -552,8 +546,8 @@ concepts:
         - "short form 'shine $1'"
       fr:
         - "sinus hyperbolique $1"
-  
-  
+
+
     - concept: hyperbolic-cosine
       arity: 1
       property: function
@@ -565,7 +559,7 @@ concepts:
       fr:
        - "cosh $1"
        - "kosh $1"
-  
+
     - concept: hyperbolic-tangent
       arity: 1
       property: function
@@ -575,7 +569,7 @@ concepts:
       en:
         - "short form American 'tanch $1'"
         - "short form British 'than $1'"
-  
+
     - concept: hyperbolic-secant
       arity: 1
       property: function
@@ -585,7 +579,7 @@ concepts:
       en:
         - "short form American 'sech $1'"
         - "short form British 'shek $1'"
-  
+
     - concept: hyperbolic-cosecant
       arity: 1
       property: function
@@ -595,8 +589,8 @@ concepts:
       en:
         - "short form American 'cosech $1'"
         - "short form British 'coshek $1'"
-  
-  
+
+
     - concept: hyperbolic-cotangent
       arity: 1
       property: function
@@ -606,9 +600,9 @@ concepts:
       en:
         - "short form American 'coth $1'"
         - "short form British 'coath $1'"
-  
-  
-  
+
+
+
     ## inverse hyperbolic trig functions
     - concept: arc-hyperbolic-sine
       arity: 1
@@ -618,8 +612,8 @@ concepts:
         - "short form 'arc shine $1'"
       fr:
         - "sinus hyperbolique $1"
-  
-  
+
+
     - concept: arc-hyperbolic-cosine
       arity: 1
       property: function
@@ -629,7 +623,7 @@ concepts:
       fr:
        - "cosh $1"
        - "kosh $1"
-  
+
     - concept: arc-hyperbolic-tangent
       arity: 1
       property: function
@@ -637,7 +631,7 @@ concepts:
       en:
         - "short form American 'arc tanch $1'"
         - "short form British 'arc than $1'"
-  
+
     - concept: arc-hyperbolic-secant
       arity: 1
       property: function
@@ -645,7 +639,7 @@ concepts:
       en:
         - "short form American 'arc sech $1'"
         - "short form British 'arc shek $1'"
-  
+
     - concept: arc-hyperbolic-cosecant
       arity: 1
       property: function
@@ -653,8 +647,8 @@ concepts:
       en:
         - "short form American 'arc cosech $1'"
         - "short form British 'arc coshek $1'"
-  
-  
+
+
     - concept: arc-hyperbolic-cotangent
       arity: 1
       property: function
@@ -662,35 +656,35 @@ concepts:
       en:
         - "short form American 'arc coth $1'"
         - "short form British 'arc coath $1'"
-  
-  
+
+
     ## exponential related functions
     - concept: exponential
       arity: 1
       property: function
       en:
         - "exponential of $1"
-  
+
     - concept: natural-logarithm
       arity: 1
       property: function
       en:
         - "natural log of $1"
         - "log of $1"
-  
+
     - concept: logarithm
       arity: 1
       property: function
       en: "log of $1"
-  
+
     - concept: logarithm
       arity: 2
       property: function
       en: "log base $2 of $1"
-  
-  
-  
-  
+
+
+
+
     ## ====================== 4.4.8 Statistics ======================
   - title: Statistics
     intents:
@@ -698,57 +692,57 @@ concepts:
       arity: 1
       property: function
       en: "mean of $1"
-  
+
     - concept: standard-deviation
       arity: 1
       property: function
       en: "standard deviation of $1"
-  
+
     - concept: variance
       arity: 1
       property: function
       en: "variance of $1"
-  
+
     - concept: median
       arity: 1
       property: function
       en: "median of $1"
-  
+
     - concept: mode
       arity: 1
       property: function
       en: "mode of $1"
- 
+
     ## ====================== 4.4.9 Linear Algebra ======================
   - title: Linear Algebra
     intents:
     - concept: vector
       arity: 1
       property: function
-  
+
     - concept: matrix
       arity: 1
       property: function
       comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
-  
+
     - concept: determinant
       arity: 1
       property: function
       comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
-  
+
     - concept: transpose
       arity: 1
       property: postfix
       en: "$1 transpose"
       fr: "$1 transposée"
-  
+
     - concept: transpose
       arity: 1
       property: suffix
       default: false
       en: "transpose of $1"
       fr: "transposée de $1"
-    
+
     ## ====================== 4.4.10 Constants and Sets ======================
   - title: Constants and Sets
     intents:
@@ -758,47 +752,47 @@ concepts:
         - "(verbose) set of all integers"
         - "(terse) Z"
         fr: "Z"
-  
+
       - concept: set-of-reals
         arity: 0
         en:
         - "(verbose) set of all real numbers"
         - "(terse) R"
-  
+
       - concept: set-of-rationals
         arity: 0
         en:
         - "(verbose) set of all rational numbers"
         - "(terse) R"
-  
+
       - concept: set-of-natural-numbers
         arity: 0
         en:
         - "(verbose) set of all natural numbers"
         - "(terse) N"
-  
+
       - concept: set-of-complex-numbers
         arity: 0
         en:
         - "(verbose) set of all complex numbers"
         - "(terse) C"
-  
+
       - concept: set-of-primes
         arity: 0
         en:
         - "(verbose) set of all prime numbers"
         - "(terse) P"
-  
+
       - concept: exponential-e
         arity: 0
         en: "e"
         fr: "e"
-  
+
       - concept: imaginary-i
         arity: 0
         en: "i"
         fr: "i"
-  
+
       - concept: differential-d
         arity: 0
         en: "d"
@@ -812,7 +806,7 @@ concepts:
   
   
   ## other areas =======================================================
-  
+
   - title: Geometry
     intents:
       - concept: line-segment
@@ -875,7 +869,7 @@ concepts:
         - "point $1 with coordinates $2 and $3"
         comment:
         - "Example: P(1,2)"
-   
+
 
   - title: Fill in the blank
     intents:
@@ -890,7 +884,7 @@ concepts:
         - "`<mo intent='blank'>□</mo>`"
         - "`<mspace intent='blank' width='3em'/>`"
         - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
-   
+
   - title: Separators
     intents:
       - concept: time-separator
@@ -900,10 +894,17 @@ concepts:
         comment:
         - "separates hours and minutes and is typically silent"
         - "Example: 2:31"
- 
-   
+
+
   - title: Generic Concepts
     intents:
+      - concept: fenced-group
+        arity: 1
+        property: function
+        en: "fenced-group of $1"
+        comment:
+        - "this includes parens, brackets, and braces"
+
       - concept: ordered-pair
         arity: 2
         property: function
@@ -923,12 +924,12 @@ concepts:
         comment:
         - "this typically would be used inside of a larger expression and not on its own"
         - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
-   
+
       - concept: least-common-denominator
         arity: "*"
         property: function
         en: "least common denominator of $*"
-   
+
       - concept: rate
         arity: 2
         property: infix
@@ -936,7 +937,7 @@ concepts:
         comment:
         - "Typically used with units"
         - "Used with `mfrac` or `/`"
-   
+
       - concept: translation
         arity: 2
         property: function
@@ -959,7 +960,7 @@ concepts:
         en: "fenced-group of $1"
         comment:
         - "this includes parens, brackets, and braces"
- 
+
       - concept: annotation
         arity: 2
         property: function
@@ -967,8 +968,8 @@ concepts:
         comment:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
- 
- 
+
+
       - concept: braced-group
         arity: 1
         property: function
