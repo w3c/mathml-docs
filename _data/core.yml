@@ -858,20 +858,20 @@ concepts:
         - "length of $1"
         comment:
         - |
-	  Example: 
-              ```
-	      <math><mrow intent='length(line-segment($start, $end))'>
+          Example: 
+         ```
+          <math><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
               </mrow></math>
-	      ```
-               <math display='block'><mrow intent='length(line-segment($start, $end))'>
+         ```
+          <math display='block'><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
               </mrow></math>
-	      
+          
 
-	      
+
 
       - concept: area
         arity: "*"
