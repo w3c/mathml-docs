@@ -442,8 +442,7 @@ concepts:
       comment: usually on `<munderover>` or `<msubsup>`
 
     - concept: limit
-  
-  
+
 
     ## ====================== 4.4.7 elementary classical functions ======================
   - title: elementary classical functions
@@ -808,8 +807,9 @@ concepts:
         en: "golden ratio"
         fr: "d"
         comment: "Often denoted as φ"
-  
-  
+
+
+
   ## other areas =======================================================
 
   - title: Geometry
@@ -903,6 +903,13 @@ concepts:
 
   - title: Generic Concepts
     intents:
+      - concept: fenced-group
+        arity: 1
+        property: function
+        en: "fenced-group of $1"
+        comment:
+        - "this includes parens, brackets, and braces"
+
       - concept: ordered-pair
         arity: 2
         property: function
@@ -914,7 +921,7 @@ concepts:
         en: "$1 indexed by $2"
         comment:
         - "this is typically a subscript and might also be spoken as '$1 sub $2'"
-      
+
       - concept: highlight
         arity: 1
         property: postfix
@@ -942,7 +949,7 @@ concepts:
         en: "translation by $1 comma $2"
         comment:
         - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
-   
+        
       - concept: constraint
         arity: 2
         property: infix
