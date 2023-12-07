@@ -75,7 +75,7 @@
   effect: the table should be read in a style suitable for a piecewise definition 
   examples:
     - intent: ":piecewise"
-      mathml: |
+      mathml:
         <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
         <mo>=</mo>
         <mrow>
