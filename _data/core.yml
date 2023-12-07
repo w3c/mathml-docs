@@ -734,6 +734,11 @@ concepts:
       property: function
       comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
 
+    - concept: magnitude
+      arity: 1
+      property: function
+      comment: "often used with matchfix single or double vertical bars"
+
     - concept: transpose
       arity: 1
       property: postfix
@@ -901,7 +906,7 @@ concepts:
         - "Example: 2:31"
 
 
-  - title: Generic Concepts
+  - title: General Concepts
     intents:
       - concept: fenced-group
         arity: 1
@@ -956,6 +961,37 @@ concepts:
         en: "fraction 2 over x minus 1 with constraint x not equal to 1"
         comment:
         - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
+        
+      - concept: binomial-coefficient
+        arity: 2
+        property: infix
+        en: "n choose k"
+        comment:
+        - "There are many notations used for the binomial coefficient. Here are some of them: 
+          <math><mrow intent='binomial-coefficent($power, $term)>
+            <mo>(</mo>
+            <mfrac linethickness='0'>
+                <mi arg='power'>n</mi>
+                <mi arg='term'>k</mi>
+            </mfrac>
+            <mo>)</mo>
+          </mrow></math>, 
+          <math>
+            <msubsup intent='binomial-coefficent($power, $term>)'>
+              <mi>C</mi>
+              <mi arg='term'>k</mi>
+              <mi arg='power'>n</mi>
+            </msubsup>
+          </math>, 
+          <math>
+            <mmultiscripts intent='binomial-coefficent($power, $term)'>
+              <mi>C</mi>
+              <mi arg='term'>k</mi> <none/>
+              <mprescripts/>
+              <mi arg='power'>n</mi> <none/>
+            </mmultiscripts>
+          </math>"
+        
    
   - title: Grouping
     intents:
