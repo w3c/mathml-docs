@@ -967,8 +967,8 @@ concepts:
         property: infix
         en: "n choose k"
         comment:
-        - "There are many notations used for the binomial coefficient. Here are some of them:"
-        - "<math><mrow intent='binomial-coefficent($power, $term)>
+        - "There are many notations used for the binomial coefficient. Here are some of them: 
+          <math><mrow intent='binomial-coefficent($power, $term)>
             <mo>(</mo>
             <mfrac linethickness='0'>
                 <mi arg='power'>n</mi>
