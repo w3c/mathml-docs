@@ -906,7 +906,7 @@ concepts:
         - "Example: 2:31"
 
 
-  - title: greater-than-or-equal-to Concepts
+  - title: General Concepts
     intents:
       - concept: fenced-group
         arity: 1
@@ -977,14 +977,14 @@ concepts:
             <mo>)</mo>
           </mrow></math>"
         - "<math>
-            <msubsup intent='binomial-coefficent($power, $term>)>
+            <msubsup intent='binomial-coefficent($power, $term>)'>
               <mi>C</mi>
               <mi arg='term'>k</mi>
               <mi arg='power'>n</mi>
             </msubsup>
           </math>"
         - "<math>
-            <mmultiscripts intent='binomial-coefficent($power, $term)>
+            <mmultiscripts intent='binomial-coefficent($power, $term)'>
               <mi>C</mi>
               <mi arg='term'>k</mi> <none/>
               <mprescripts/>
