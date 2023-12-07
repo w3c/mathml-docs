@@ -128,6 +128,8 @@ defaultfixity:
          characters: [∉]
        - concept: not-parallel-to
          characters: [∦]
+       - concept: obtained-from
+         characters: [←]
        - concept: or
          characters: [∨]
        - concept: outer-product
@@ -150,8 +152,8 @@ defaultfixity:
          characters: [":", "∶"]
        - concept: set-difference
          characters: "[∼, ~, -, −, \\]"
-       - concept: similar-to
-         characters: [≅]
+       - concept: similar
+         characters: [∖]
        - concept: subset
          characters: [⊂]
        - concept: subset-or-equal
@@ -461,6 +463,7 @@ concepts:
           </mfrac>
           ```
 
+
     - concept: partial-derivative
       arity: 3 or more
       property: ???
@@ -488,19 +491,27 @@ concepts:
       comment:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
-      - "Example: <math><munder intent='limit($lim)'><mi>lim</mi><mrow arg='lim' intent='tends-to-from-below($x, $val)'><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow></munder></math> might be spoken as \"limit as x tends to from below 0\" and marked up as:"
+      - "Example: <math>
+              <munder intent='limit($lim)'>
+                  <mi>lim</mi>
+                  <mrow arg='lim' intent='tends-to-from-below($x, $val)''><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
+              </munder>
+          </math>
+          might be spoken as \"limit as x tends to from below 0\" and marked up as:"
       - |
         ```
         <munder intent='limit($lim)'>
             <mi>lim</mi>
-            <mrow arg='lim' intent='tends-to-from-below($x, $val)'>
+            <mrow arg='lim' intent='tends-to-from-below($x, $val)''>
               <mi arg='x'>x</mi>
               <mo>↗</mo>
               <mn arg='val'>0</mn>
             </mrow>
         </munder>
         ```
-      - "Another notation that might be spoken similarly is  <math><munder><mi>lim</mi><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math> "
+      - "Another notation that might be spoken similarly is
+        <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
+        "
     
     - concept: tends-to
       arity: 2
@@ -908,6 +919,8 @@ concepts:
       property: function
       en: "mode of $1"
 
+
+
     - concept: conditional-probability
       arity: 2
       property: function
@@ -1244,7 +1257,7 @@ concepts:
       - concept: binomial-coefficient
         arity: 2
         property: infix
-        en: "n choose k"
+        en: "$1 choose $2"
         comment:
         - "There are many notations used for the binomial coefficient. Here are some of them: 
           <math><mrow intent='binomial-coefficent($power, $term)'>
@@ -1303,7 +1316,7 @@ concepts:
       - concept: permutation-cycle
         arity: "*"
         property: function
-        en: "permutation cycle of 1 3 2"
+        en: "permutation cycle of $1 $2 ..."
         comment:
         - "A common notation for a permutation cycle is <math><mo>(</mo>
                 <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
@@ -1320,9 +1333,14 @@ concepts:
             </mtr></mtable>
           <mo>)</mo>
           ```
-    
 
-
+      - concept: embellished-name
+        arity: 2
+        property: infix
+        en: "$1 with annotation $2"
+        comment:
+        - "used with `mover` or `munder`"
+ 
    
   - title: Grouping
     intents:
@@ -1336,7 +1354,7 @@ concepts:
       - concept: annotation
         arity: 2
         property: function
-        en: "H 2 0, which is water"
+        en: "$1 which is $2"
         comment:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
@@ -1352,7 +1370,7 @@ concepts:
       - concept: repeating-decimal
         arity: 1
         property: function
-        en: "repeating decimal 14"
+        en: "repeating decimal $1"
         comment:
         - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
         - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
