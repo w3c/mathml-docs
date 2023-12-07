@@ -870,7 +870,7 @@ concepts:
         - "area of $1 $2 $3 $4 "
         comment:
         - "There are many notations. Here's one
-        <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></math>"
+        <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
 
       - concept: point-at
         arity: "3"
