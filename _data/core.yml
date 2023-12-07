@@ -17,6 +17,8 @@ defaultfixity:
      concepts:
        - concept: angle
          characters: [∠]
+       - concept: angle-measure
+         characters: [∡]
        - concept: for-all
          characters: [∀]
        - concept: measured-angle
@@ -802,6 +804,12 @@ concepts:
         en: "d"
         fr: "d"
   
+      - concept: golden-ratio
+        arity: 0
+        en: "golden ratio"
+        fr: "d"
+        comment: "Often denoted as φ"
+  
   
   ## other areas =======================================================
   
@@ -842,17 +850,22 @@ concepts:
       - concept: length
         arity: 1
         property: function
-        en: |
+        en:
+        - "length of $1"
+        comment:
+        - "Example: |
               <math><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
               </mrow></math>"
 
-      - concept: shape
+      - concept: area
         arity: "*"
-        property: prefix
+        property: function
         en:
-        - "shape $1 $2 $3 $4"
+        - "area of $1 $2 $3 $4"
+        comment:
+        - "There are many notations. Here's one <math><mo>[</mo><mi mathvariant='normal'>A</mi><mi mathvariant='normal'>B</mi><mi mathvariant='normal'>C</mi><mi mathvariant='normal'>D</mi><mo>]</mo></math>"
 
       - concept: point-at
         arity: "3"
