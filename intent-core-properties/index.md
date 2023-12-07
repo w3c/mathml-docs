@@ -32,7 +32,9 @@ The data displayed below is derived from the YAML file
 
 {%- assign toct = "" -%}
 {%- for tocp in site.data.core-properties -%}
-{% if toct != tocp.type %}
+{% if toct == tocp.type -%}
+,
+{% else %}
 
 {% unless toct == "" %}
 </p>
