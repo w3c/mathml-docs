@@ -55,7 +55,7 @@
 - property: matrix
   type: table
   applicability: mtable
-  effect: the table should be read in a style suitable for matricies
+  effect: the table should be read in a style suitable for matrices
   examples:
     - intent: ":matrix"
       mathml: |
@@ -67,8 +67,36 @@
          </mtable>
          <mo>]</mo>
         </mrow>
-
       en: "the 2 by 2 matrix; column 1; a; column 2; b; column 1; c; column 2; d"
+
+- property: piecewise
+  type: table
+  applicability: mrow(mtable)
+  effect: the table should be read in a style suitable for a piecewise definition 
+  examples:
+    - intent: ":piecewise"
+      mathml: |
+        <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mtable columnalign="right left" columnspacing="1em" rowspacing=".2em">
+            <mtr>
+              <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
+              <mtd><mtext>if</mtext></mtd>
+              <mtd><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+            </mtr>
+            <mtr>
+              <mtd><mi>x</mi></mtd>
+              <mtd><mtext>if</mtext></mtd>
+              <mtd><mi>x</mi><mo>&#x2265;</mo><mn>0</mn></mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      en: "f of x is equal to; 3 cases,
+                case 1; negative 1 if x; is less than 0;
+                case 2; 0 if x, is equal to 0;
+                case 3; 1 if x, is greater than 0;"
 
 - property: system-of-equations
   type: table
@@ -174,7 +202,6 @@
 
 
 
-
 - property: unit
   type: units-and-currency
   applicability: mi
@@ -183,6 +210,8 @@
       en: 1.5 kilometres
     - mathml: "<mrow><mn>2</mn><mi mathvariant='normal' intent=':unit'>Ω</mi></mrow>"
       en: 2 ohms
+  comment:
+  - "This includes SI units, English units, etc. It also includes radians, degrees, etc."
 
 - property: currency
   type: units-and-currency

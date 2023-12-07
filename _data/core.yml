@@ -50,12 +50,16 @@ defaultfixity:
          characters: [→]
        - concept: approximately
          characters: [≈]
+       - concept: congruent
+         characters: [≅]
        - concept: cartesian-product
          characters: [×]
        - concept: composed-with
          characters: [∘]
        - concept: cross-product
          characters: [×]
+       - concept: defined-as
+         characters: [≝]
        - concept: divided-by
          characters: [/, ÷, ":"]
        - concept: divides
@@ -149,8 +153,6 @@ defaultfixity:
        - concept: evaluates-to
          characters: ["→"]
        - concept: maps-to
-         characters: ["→"]
-       - concept: translates-to
          characters: ["→"]
        - concept: such-that
          characters: [":", "|"]
@@ -439,8 +441,7 @@ concepts:
   
     - concept: limit
   
-    - concept: tends-to
-  
+
     ## ====================== 4.4.7 elementary classical functions ======================
   - title: elementary classical functions
     intents:
@@ -836,6 +837,17 @@ concepts:
         comment:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
 
+      - concept: length
+        arity: 1
+        property: function
+        en:
+        - "length of $1"
+        comment:
+        - "Example: <math><mrow intent='length(line-segment($start, $end))'>
+                 <mi arg='start' mathvariant='normal'>A</mi>
+                 <mi arg='end' mathvariant='normal'>B</mi>
+              </mrow></math>"
+
       - concept: shape
         arity: "*"
         property: prefix
@@ -878,17 +890,17 @@ concepts:
    
   - title: Generic Concepts
     intents:
-      - concept: fenced-group
-        arity: 1
-        property: function
-        en: "fenced-group of $1"
-        comment:
-        - "this includes parens, brackets, and braces"
-      
       - concept: ordered-pair
         arity: 2
         property: function
         en: "the pair $1 and $2"
+      
+      - concept: indexed-by
+        arity: 2
+        property: infix
+        en: "$1 indexed by $2"
+        comment:
+        - "this is typically a subscript and might also be spoken as '$1 sub $2'"
       
       - concept: highlight
         arity: 1
@@ -917,6 +929,13 @@ concepts:
         en: "translation by $1 comma $2"
         comment:
         - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
+   
+      - concept: constraint
+        arity: 2
+        property: infix
+        en: "fraction 2 over x minus 1 with constraint x not equal to 1"
+        comment:
+        - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
    
   - title: Grouping
     intents:
