@@ -777,6 +777,26 @@ concepts:
       arity: 2
       property: function
       en: "probability of $1 given $2"
+      comment: "The intent should be on the `mrow` that includes the \"P\" "
+      mathml: |
+        <math>
+            <mrow intent='conditional-probability($arg1, $arg2)'>
+                <mi>P</mi>
+                <mo>(</mo>
+                <mrow>
+                    <mi arg='arg1'>A</mi>
+                    <mo>|</mo>
+                    <mi arg='arg2'>B</mi>
+                </mrow>
+                <mo>)</mo>
+            </mrow>
+        </math>
+
+
+    - concept: conditional-probability
+      arity: 2
+      property: function
+      en: "probability of $1 given $2"
       comment: |
                 The intent should be on the `mrow` that includes the "P"
       
