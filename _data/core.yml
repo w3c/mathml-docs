@@ -54,12 +54,16 @@ defaultfixity:
          characters: [≈]
        - concept: congruent
          characters: [≅]
+       - concept: congruent
+         characters: [≅]
        - concept: cartesian-product
          characters: [×]
        - concept: composed-with
          characters: [∘]
        - concept: cross-product
          characters: [×]
+       - concept: defined-as
+         characters: [≝]
        - concept: defined-as
          characters: [≝]
        - concept: divided-by
@@ -438,6 +442,7 @@ concepts:
       comment: usually on `<munderover>` or `<msubsup>`
 
     - concept: limit
+  
   
 
     ## ====================== 4.4.7 elementary classical functions ======================
@@ -898,13 +903,6 @@ concepts:
 
   - title: Generic Concepts
     intents:
-      - concept: fenced-group
-        arity: 1
-        property: function
-        en: "fenced-group of $1"
-        comment:
-        - "this includes parens, brackets, and braces"
-
       - concept: ordered-pair
         arity: 2
         property: function

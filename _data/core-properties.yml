@@ -56,6 +56,7 @@
   type: table
   applicability: mtable
   effect: the table should be read in a style suitable for matrices
+  effect: the table should be read in a style suitable for matrices
   examples:
     - intent: ":matrix"
       mathml: |
