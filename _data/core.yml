@@ -17,6 +17,8 @@ defaultfixity:
      concepts:
        - concept: angle
          characters: [∠]
+       - concept: angle-measure
+         characters: [∡]
        - concept: for-all
          characters: [∀]
        - concept: measured-angle
@@ -50,12 +52,20 @@ defaultfixity:
          characters: [→]
        - concept: approximately
          characters: [≈]
+       - concept: congruent
+         characters: [≅]
+       - concept: congruent
+         characters: [≅]
        - concept: cartesian-product
          characters: [×]
        - concept: composed-with
          characters: [∘]
        - concept: cross-product
          characters: [×]
+       - concept: defined-as
+         characters: [≝]
+       - concept: defined-as
+         characters: [≝]
        - concept: divided-by
          characters: [/, ÷, ":"]
        - concept: divides
@@ -119,6 +129,8 @@ defaultfixity:
        - concept: ratio
          characters: [":", "∶"]
        - concept: set-difference
+         characters: [∼, ~]
+       - concept: similar
          characters: [∖]
        - concept: subset
          characters: [⊂]
@@ -149,8 +161,6 @@ defaultfixity:
        - concept: evaluates-to
          characters: ["→"]
        - concept: maps-to
-         characters: ["→"]
-       - concept: translates-to
          characters: ["→"]
        - concept: such-that
          characters: [":", "|"]
@@ -433,7 +443,6 @@ concepts:
 
     - concept: limit
 
-    - concept: tends-to
 
     ## ====================== 4.4.7 elementary classical functions ======================
   - title: elementary classical functions
@@ -792,6 +801,13 @@ concepts:
         arity: 0
         en: "d"
         fr: "d"
+  
+      - concept: golden-ratio
+        arity: 0
+        en: "golden ratio"
+        fr: "d"
+        comment: "Often denoted as φ"
+
 
 
   ## other areas =======================================================
@@ -830,11 +846,26 @@ concepts:
         comment:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
 
-      - concept: shape
+      - concept: length
         arity: "*"
-        property: prefix
+        property: function
         en:
-        - "shape $1 $2 $3 $4"
+        - "length of $1"
+        comment:
+        - Example: 
+              <math><mrow intent='length(line-segment($start, $end))'>
+                 <mi arg='start' mathvariant='normal'>A</mi>
+                 <mi arg='end' mathvariant='normal'>B</mi>
+              </mrow></math>
+
+      - concept: area
+        arity: "*"
+        property: function
+        en:
+        - "area of $1 $2 $3 $4 "
+        comment:
+        - "There are many notations. Here's one
+        <math><mrow intent='area(<mo>[</mo><mi mathvariant='normal'>A</mi><mi mathvariant='normal'>B</mi><mi mathvariant='normal'>C</mi><mi mathvariant='normal'>D</mi><mo>]</mo></math>"
 
       - concept: point-at
         arity: "3"
@@ -883,6 +914,13 @@ concepts:
         arity: 2
         property: function
         en: "the pair $1 and $2"
+      
+      - concept: indexed-by
+        arity: 2
+        property: infix
+        en: "$1 indexed by $2"
+        comment:
+        - "this is typically a subscript and might also be spoken as '$1 sub $2'"
 
       - concept: highlight
         arity: 1
@@ -911,7 +949,14 @@ concepts:
         en: "translation by $1 comma $2"
         comment:
         - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
-
+        
+      - concept: constraint
+        arity: 2
+        property: infix
+        en: "fraction 2 over x minus 1 with constraint x not equal to 1"
+        comment:
+        - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
+   
   - title: Grouping
     intents:
       - concept: fenced-group
