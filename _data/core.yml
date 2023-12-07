@@ -975,15 +975,15 @@ concepts:
                 <mi arg='term'>k</mi>
             </mfrac>
             <mo>)</mo>
-          </mrow></math>"
-        - "<math>
+          </mrow></math>, 
+          <math>
             <msubsup intent='binomial-coefficent($power, $term>)'>
               <mi>C</mi>
               <mi arg='term'>k</mi>
               <mi arg='power'>n</mi>
             </msubsup>
-          </math>"
-        - "<math>
+          </math>, 
+          <math>
             <mmultiscripts intent='binomial-coefficent($power, $term)'>
               <mi>C</mi>
               <mi arg='term'>k</mi> <none/>
