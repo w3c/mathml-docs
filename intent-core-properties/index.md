@@ -112,7 +112,7 @@ The data displayed below is derived from the YAML file
 {% highlight xml %}
 {{e.mathml }}
 {% endhighlight %}
-<math display="block>{{e.mathml}}</math>
+<math display="block">{{e.mathml}}</math>
 {% endif %}
 {%- for language in site.data.languages -%}
 {%- if e[language.language-code] %}
