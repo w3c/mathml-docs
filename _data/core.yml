@@ -123,6 +123,8 @@ defaultfixity:
        - concept: ratio
          characters: [":", "∶"]
        - concept: set-difference
+         characters: [∼, ~]
+       - concept: similar
          characters: [∖]
        - concept: subset
          characters: [⊂]
@@ -843,11 +845,11 @@ concepts:
         en:
         - "length of $1"
         comment:
-        - "Example: |
-              <math><mrow intent='length(line-segment($start, $end))'>
-                 <mi arg='start' mathvariant='normal'>A</mi>
-                 <mi arg='end' mathvariant='normal'>B</mi>
-              </mrow></math>"
+        - "Example:"
+        - " <math><mrow intent='length(line-segment($start, $end))'>"
+        - "      <mi arg='start' mathvariant='normal'>A</mi>"
+        - "      <mi arg='end' mathvariant='normal'>B</mi>"
+        - " </mrow></math>"
 
       - concept: shape
         arity: "*"
