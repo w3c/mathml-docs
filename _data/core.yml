@@ -852,36 +852,50 @@ concepts:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
 
       - concept: length
-        arity: "*"
+        arity: 1
         property: function
         en:
         - "length of $1"
         comment:
+        - "It may be necessary to 'nest' the intent as shown here for the example"
         - |
-          Example: 
-          ```
-          <math><mrow intent='length(line-segment($start, $end))'>
-                 <mi arg='start' mathvariant='normal'>A</mi>
-                 <mi arg='end' mathvariant='normal'>B</mi>
-          </mrow></math>
-          ```
           <math display='block'><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
               </mrow></math>
+            :
+          ```
+          <mrow intent='length(line-segment($start, $end))'>
+                 <mi arg='start' mathvariant='normal'>A</mi>
+                 <mi arg='end' mathvariant='normal'>B</mi>
+          </mrow>
+          ```
           
 
 
 
       - concept: area
-        arity: "*"
+        arity: 1
         property: function
         en:
-        - "area of $1 $2 $3 $4 "
+        - "area of $1"
         comment:
-        - "There are many notations. Here's one
-        <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
-
+        - "There are many notations. Here's one: 
+            <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
+        - | The markup for this is:
+          ```
+          <mrow intent='area($shape)'>
+              <mo>[</mo>
+              <mrow arg='shape'>
+                  <mi mathvariant='normal'>A</mi>
+                  <mi mathvariant='normal'>B</mi>
+                  <mi mathvariant='normal'>C</mi>
+                  <mi mathvariant='normal'>D</mi>
+                  <mo>]</mo>
+              </mrow>
+          </mrow>
+          ```
+        - "It may be necessary to 'nest' the intent as shown in the `length` intent"
       - concept: point-at
         arity: "3"
         property: ???

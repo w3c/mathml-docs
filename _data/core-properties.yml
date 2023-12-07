@@ -81,7 +81,7 @@
         <mo>=</mo>
         <mrow>
           <mo>{</mo>
-          <mtable intent=":piecewise" columnalign="right left" columnspacing="1em" rowspacing=".2em">
+          <mtable intent=":piecewise" columnalign="right left" columnspacing="0" rowspacing=".2em">
             <mtr>
               <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
               <mtd><mtext>if</mtext></mtd>
