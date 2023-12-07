@@ -842,14 +842,11 @@ concepts:
       - concept: length
         arity: 1
         property: function
-        en:
-        - "length of $1"
-        comment:
-        - "Example:"
-        - " <math><mrow intent='length(line-segment($start, $end))'>"
-        - "      <mi arg='start' mathvariant='normal'>A</mi>"
-        - "      <mi arg='end' mathvariant='normal'>B</mi>"
-        - " </mrow></math>"
+        en: |
+              <math><mrow intent='length(line-segment($start, $end))'>
+                 <mi arg='start' mathvariant='normal'>A</mi>
+                 <mi arg='end' mathvariant='normal'>B</mi>
+              </mrow></math>"
 
       - concept: shape
         arity: "*"
