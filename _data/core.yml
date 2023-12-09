@@ -129,7 +129,7 @@ defaultfixity:
        - concept: ratio
          characters: [":", "∶"]
        - concept: set-difference
-         characters: [∼, ~]
+         characters: "[∼, ~, -, −, \\]"
        - concept: similar
          characters: [∖]
        - concept: subset
@@ -236,6 +236,7 @@ concepts:
       arity: 1
       property: postfix
       en: inverse of $1
+      comment: "`inverse` can be used for function inverses, matrix inverses, etc."
 
     - concept: domain
       arity: 1
@@ -397,9 +398,61 @@ concepts:
 
 
   ## ====================== 4.4.5 Sets ============================
-  - title: sets
+  - title: Sets
     intents:
     - concept: set
+      arity: 1
+      property: function
+      en: "set of $1"
+      comment: "the argument to `set` is typically an `mrow`. For example:"
+      mathml: |
+        <math>
+            <mrow intent='set($members)'>
+                <mo>{</mo>
+                <mrow arg='members'>
+                    <mn>2</mn>
+                    <mo>,</mo>
+                    <mn>4</mn>
+                    <mo>,</mo>
+                    <mn>6</mn>
+                    <mo>,</mo>
+                    <mn>8</mn>
+                </mrow>
+                <mo>}</mo>
+            </mrow>
+        </math>
+
+    - concept: set-difference
+      arity: 2
+      property: function
+      en: "set difference of $1 and $2"
+      comment:
+      - "This can be spoken in many ways. See other entry for infix speech."
+      - "There are several notations that are used and their order of appearance differs:
+        <math><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
+
+    - concept: set-difference
+      arity: 2
+      property: infix
+      en: "\"$1 minus $2\" or \"$2 subtracted from $1\""
+      comment:
+      - "This can be spoken in many ways. See other entry for functional speech."
+      - "See functional form for some notational usages."
+
+    - concept: complement
+      arity: 1
+      property: function
+      en: "complement of $1"
+      comment:
+      - "This can be spoken in many ways. See other entry for functional speech."
+      - "Two notations used for complement are: 
+        <math><msup><mi>A</mi><mi>C</mi></msup></math>, <math><msup><mi>A</mi><mo>'</mo></msup></math>"
+
+    - concept: empty-set
+      arity: 0
+      en: "empty set"
+      comment:
+      - "Three notations used for empty set are: { }, ∅, and ∅"
 
     - concept: list
     ## ====================== 4.4.6 sequence and series ============================
@@ -690,7 +743,7 @@ concepts:
 
 
     ## ====================== 4.4.8 Statistics ======================
-  - title: Statistics
+  - title: Statistics and Probability
     intents:
     - concept: mean
       arity: 1
@@ -717,6 +770,26 @@ concepts:
       property: function
       en: "mode of $1"
 
+    - concept: conditional-probability
+      arity: 2
+      property: function
+      en: "probability of $1 given $2"
+      comment: "The intent should be on the `mrow` that includes the \"P\" "
+      mathml: |
+        <math>
+            <mrow intent='conditional-probability($arg1, $arg2)'>
+                <mi>P</mi>
+                <mo>(</mo>
+                <mrow>
+                    <mi arg='arg1'>A</mi>
+                    <mo>|</mo>
+                    <mi arg='arg2'>B</mi>
+                </mrow>
+                <mo>)</mo>
+            </mrow>
+        </math>
+
+
     ## ====================== 4.4.9 Linear Algebra ======================
   - title: Linear Algebra
     intents:
@@ -734,10 +807,28 @@ concepts:
       property: function
       comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
 
+    - concept: adjugate
+      arity: 1
+      property: function
+      comment: "sometimes used when computing an inverse matrix"
+
     - concept: magnitude
       arity: 1
       property: function
       comment: "often used with matchfix single or double vertical bars"
+
+    - concept: unit-vector
+      arity: 1
+      property: prefix
+      comment:
+      - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
+      en: "unit vector x"
+
+    - concept: identity-matrix
+      arity: 0
+      comment:
+      - "This is typically represented as 'I' or bold-faced '𝐈'"
+      en: "identity matrix"
 
     - concept: transpose
       arity: 1
@@ -852,36 +943,48 @@ concepts:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
 
       - concept: length
-        arity: "*"
+        arity: 1
         property: function
         en:
         - "length of $1"
         comment:
-        - |
-          Example: 
-          ```
+        - "It may be necessary to 'nest' the intent as shown here for the example:
           <math><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
-          </mrow></math>
+              </mrow></math>"
+        - "The markup for this is:"
+        - |
           ```
-          <math display='block'><mrow intent='length(line-segment($start, $end))'>
+          <mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
-              </mrow></math>
-          
-
-
+          </mrow>
+          ```
 
       - concept: area
-        arity: "*"
+        arity: 1
         property: function
         en:
-        - "area of $1 $2 $3 $4 "
+        - "area of $1"
         comment:
-        - "There are many notations. Here's one
-        <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
-
+        - "There are many notations. Here's one: 
+            <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
+        - "The markup for this is:"
+        - |
+          ```
+          <mrow intent='area($shape)'>
+              <mo>[</mo>
+              <mrow arg='shape'>
+                  <mi mathvariant='normal'>A</mi>
+                  <mi mathvariant='normal'>B</mi>
+                  <mi mathvariant='normal'>C</mi>
+                  <mi mathvariant='normal'>D</mi>
+                  <mo>]</mo>
+              </mrow>
+          </mrow>
+          ```
+        - "It may be necessary to 'nest' the intent as shown in the `length` intent"
       - concept: point-at
         arity: "3"
         property: ???
@@ -890,6 +993,13 @@ concepts:
         comment:
         - "Example: P(1,2)"
 
+      - concept: volume
+        arity: 1
+        property: function
+        en:
+        - "volume of $1"
+        comment:
+        - "See comments for `length` and `volume` for examples of how this might be marked up"
 
   - title: Fill in the blank
     intents:
@@ -1001,7 +1111,38 @@ concepts:
               <mi arg='power'>n</mi> <none/>
             </mmultiscripts>
           </math>"
-        
+
+      - concept: pochhammer
+        arity: 2
+        property: function
+        en: "$2 permutation of $1"
+        comment:
+        - "There are many notations for this: some of them are 
+            <math>
+              <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
+              <mo>,</mo><mo>&#xA0;</mo>
+              <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><mi>n</mi><none/></mmultiscripts>
+              <mo>,</mo><mo>&#xA0;</mo>
+              <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts>
+              <mo>,</mo><mo>&#xA0;</mo>
+              <msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub>
+              <mo>,</mo><mo>&#xA0;</mo>
+              <mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)
+              </mo><mo>,</mo><mo>&#xA0;</mo>
+              <msup><mi>n</mi><menclose notation='bottom'><mi>k</mi></menclose></msup>
+          </math>"
+        - "The first of these would be marked up as:"
+        - |
+          ```
+          <msubsup intent='P($n, $k)'>
+              <mi>P</mi>
+              <mi arg='k'>k</mi>
+              <mi arg='n'>n</mi>
+          </msubsup>
+          ```
+    
+
+
    
   - title: Grouping
     intents:
