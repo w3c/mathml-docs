@@ -774,7 +774,9 @@ concepts:
       arity: 2
       property: function
       en: "probability of $1 given $2"
-      comment: | The intent should be on the `mrow` that includes the "P"
+      comment: |
+                The intent should be on the `mrow` that includes the "P"
+      
                  ```
                  <math>
                   <mrow intent='conditional-probability($arg1, $arg2)'>
