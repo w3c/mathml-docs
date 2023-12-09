@@ -423,7 +423,7 @@ concepts:
                  <mo>}</mo>
                 </mrow>
                </math>
-	       ```
+               ```
 
     - concept: set-difference
       arity: 2
