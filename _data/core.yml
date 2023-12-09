@@ -404,8 +404,10 @@ concepts:
       arity: 1
       property: function
       en: "set of $1"
-      comment: "the argument to `set` is typically an `mrow`. For example:"
-      mathml: |
+      comment: |
+               the argument to `set` is typically an `mrow`. For example:
+
+               ```
                <math>
                 <mrow intent='set($members)'>
                  <mo>{</mo>
@@ -421,6 +423,7 @@ concepts:
                  <mo>}</mo>
                 </mrow>
                </math>
+	       ```
 
     - concept: set-difference
       arity: 2
