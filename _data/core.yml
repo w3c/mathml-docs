@@ -339,10 +339,9 @@ concepts:
     - concept: real-part
       arity: 1
       property: function
-      en: real part of $1
-
-
-      en: imaginary part of $1
+      en:
+      - real part of $1
+      - imaginary part of $1
     - concept: imaginary-part
       arity: 1
       property: function
@@ -370,12 +369,12 @@ concepts:
     - concept: definite-integral
       arity: 1
       property: ???
-      en: "integral over $1
+      en: "integral over $1"
 
     - concept: definite-integral
       arity: 2
       property: ???
-      en: "integral from $1 to $2
+      en: "integral from $1 to $2"
 
     
 
