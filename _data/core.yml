@@ -443,7 +443,7 @@ concepts:
                   <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
               </munder>
           </math>
-          might be spoken as 'limit as x approaches from below 0' and marked up as:
+          might be spoken as \"limit as x approaches from below 0\" and marked up as:
         ```
         <munder intent='lim(x, ↗, 0)'>
           <mi>lim</mi>
