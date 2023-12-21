@@ -262,6 +262,16 @@ concepts:
       en: integer part of $1 divided by $2
       fr: quotient de $1 par $2
 
+    - concept: evaluated-at
+      arity: 2
+      property: infix
+      en: $1 evaluated-at $2
+      comment:
+      - "Two common notations are
+        <math><msub><menclose notation='right'><msup><mi>x</mi><mn>2</mn></msup></menclose><mn>3</mn></msub></math>
+        and
+        <math><msub><menclose notation='right'><msup><mi>x</mi><mn>2</mn></msup></menclose><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></msub></math>
+        "
     - concept: remainder
       arity: 2
       property: function
@@ -816,6 +826,7 @@ concepts:
       arity: 1
       property: function
       en: "mean of $1"
+      comment: "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
 
     - concept: standard-deviation
       arity: 1
