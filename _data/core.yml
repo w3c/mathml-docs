@@ -268,9 +268,17 @@ concepts:
       en: $1 evaluated-at $2
       comment:
       - "Two common notations are
-        <math><msub><menclose notation='right'><msup><mi>x</mi><mn>2</mn></msup></menclose><mn>3</mn></msub></math>
+        <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
         and
-        <math><msub><menclose notation='right'><msup><mi>x</mi><mn>2</mn></msup></menclose><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></msub></math>
+        <math>
+          <msub>
+              <mrow>
+                  <msup><mi>x</mi><mn>2</mn></msup>
+                  <mo>|</mo>
+              </mrow>
+              <mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow>
+          </msub>
+        </math>
         "
     - concept: remainder
       arity: 2
