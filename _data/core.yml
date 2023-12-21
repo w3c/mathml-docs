@@ -388,11 +388,11 @@ concepts:
       - "the terse reading only makes sense for Leibniz notation such as 
           <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
           or
-          <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math>.
+          <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>.
           It does not make sense for other notations such as 
-          <math><msup><mi>f</mi><mo>''</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>
+          <math><msup><mi>f</mi><mo>''</mo></msup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>
           "
-      - "the first of these examples might be marked up as"
+      - "The first of these examples might be marked up as"
       - |
           ```
           <mfrac intent='derivative(y, x, 2)'>
@@ -413,7 +413,9 @@ concepts:
       property: ???
       en:
       - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
-      mathml: |
+      comment:
+      - |
+        ````
         <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
           <mrow>
               <msup><mo>&#x2202;</mo><mn>3</mn></msup>
@@ -424,6 +426,7 @@ concepts:
               <mi>x</mi><mo>&#x2202;</mo><mi>y</mi>
           </mrow>
         </mfrac>
+        ````
 
 
     - concept: divergence
@@ -806,26 +809,6 @@ concepts:
       arity: 1
       property: function
       en: "mode of $1"
-
-    - concept: conditional-probability
-      arity: 2
-      property: function
-      en: "probability of $1 given $2"
-      comment: "The intent should be on the `mrow` that includes the \"P\" "
-      mathml: |
-        <math>
-            <mrow intent='conditional-probability($arg1, $arg2)'>
-                <mi>P</mi>
-                <mo>(</mo>
-                <mrow>
-                    <mi arg='arg1'>A</mi>
-                    <mo>|</mo>
-                    <mi arg='arg2'>B</mi>
-                </mrow>
-                <mo>)</mo>
-            </mrow>
-        </math>
-
 
     - concept: conditional-probability
       arity: 2
