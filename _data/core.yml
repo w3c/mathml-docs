@@ -455,18 +455,17 @@ concepts:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
       - "Example: <math>
-              <munder intent='lim(x, ↗, 0)'>
+              <munder intent='lim($x, $arrow, $val)'>
                   <mi>lim</mi>
-                  </mrow>
-                  <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+                  <mrow><mi arg='x'>x</mi><mo arg='arrow'>↗</mo><mn arg='val'>0</mn></mrow>
               </munder>
           </math>
           might be spoken as \"limit as x approaches from below 0\" and marked up as:"
       - |
         ```
-        <munder intent='lim(x, ↗, 0)'>
-          <mi>lim</mi>
-          <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+        <munder intent='lim($x, $arrow, $val)'>
+            <mi>lim</mi>
+            <mrow><mi arg='x'>x</mi><mo arg='arrow'>↗</mo><mn arg='val'>0</mn></mrow>
         </munder>
         ```
       - "Another notation that might be spoken similarly is
