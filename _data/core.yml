@@ -367,30 +367,65 @@ concepts:
   ## ====================== 4.4.4 Calculus ============================
   - title: calculus
     intents:
-    - concept: integral
+    - concept: definite-integral
       arity: 1
-      property: function
-      en: "integral of $1"
+      property: ???
+      en: "integral over $1
 
     - concept: definite-integral
       arity: 2
-      property: function
-      en: "integral over $1 of $2"
+      property: ???
+      en: "integral from $1 to $2
 
-    - concept: definite-integral
-      arity: 3
-      property: function
-      en: "integral from $1 to $2 of $3"
+    
 
-    ## derivative replaced by prime
-
-    - concept: ???derivative-prime
-    - concept: ???derivative-dot
     - concept: derivative
+      arity: 3
+      property: ???
+      en:
+      - "(verbose) the $3 derivative of $1 with respect to $2"
+      - "(terse) d <$3 if $3 != 1> $1 by d $2 <$3 if $3 != 1>"
+      comment:
+      - "the terse reading only makes sense for Leibniz notation such as 
+          <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
+          or
+          <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math>.
+          It does not make sense for other notations such as 
+          <math><msup><mi>f</mi><mo>''</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>
+          "
+      - "the first of these examples might be marked up as"
+      - |
+          ```
+          <mfrac intent='derivative(y, x, 2)'>
+            <mrow>
+              <msup><mi>d</mi><mn arg>2</mn></msup>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <msup><mi>x</mi><mn>2</mn></msup>
+            </mrow>
+          </mfrac>
+          ```
 
-    - concept: n-th derivative
 
-    - concept: partialdiff
+    - concept: partial-derivative
+      arity: 3 or more
+      property: ???
+      en:
+      - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
+      mathml: |
+        <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
+          <mrow>
+              <msup><mo>&#x2202;</mo><mn>3</mn></msup>
+              <mrow arg='f'><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>y</mi></mrow>
+          </mrow>
+          <mrow>
+              <msup><mo>&#x2202;</mo><mn>2</mn></msup>
+              <mi>x</mi><mo>&#x2202;</mo><mi>y</mi>
+          </mrow>
+        </mfrac>
+
 
     - concept: divergence
 
