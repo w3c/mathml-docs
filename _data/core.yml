@@ -262,6 +262,24 @@ concepts:
       en: integer part of $1 divided by $2
       fr: quotient de $1 par $2
 
+    - concept: evaluated-at
+      arity: 2
+      property: infix
+      en: $1 evaluated-at $2
+      comment:
+      - "Two common notations are
+        <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
+        and
+        <math>
+          <msub>
+              <mrow>
+                  <msup><mi>x</mi><mn>2</mn></msup>
+                  <mo>|</mo>
+              </mrow>
+              <mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow>
+          </msub>
+        </math>
+        "
     - concept: remainder
       arity: 2
       property: function
@@ -339,10 +357,9 @@ concepts:
     - concept: real-part
       arity: 1
       property: function
-      en: real part of $1
-
-
-      en: imaginary part of $1
+      en:
+      - real part of $1
+      - imaginary part of $1
     - concept: imaginary-part
       arity: 1
       property: function
@@ -367,30 +384,95 @@ concepts:
   ## ====================== 4.4.4 Calculus ============================
   - title: calculus
     intents:
-    - concept: integral
+    - concept: definite-integral
       arity: 1
-      property: function
-      en: "integral of $1"
+      property: ???
+      en: "integral over $1"
+      comment: "integral sign is not an argument"
 
     - concept: definite-integral
       arity: 2
-      property: function
-      en: "integral over $1 of $2"
+      property: ???
+      en: "integral from $1 to $2"
+      comment: "integral sign is not an argument"
+    
 
-    - concept: definite-integral
-      arity: 3
-      property: function
-      en: "integral from $1 to $2 of $3"
-
-    ## derivative replaced by prime
-
-    - concept: ???derivative-prime
-    - concept: ???derivative-dot
     - concept: derivative
+      arity: 3
+      property: ???
+      en:
+      - "(verbose) the $3 derivative of $1 with respect to $2"
+      - "(terse) d <$3 if $3 != 1> $1 by d $2 <$3 if $3 != 1>"
+      comment:
+      - "the terse reading only makes sense for Leibniz notation such as 
+          <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
+          or
+          <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>.
+          It does not make sense for other notations such as 
+          <math><msup><mi>f</mi><mo>''</mo></msup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>
+          "
+      - "The first of these examples might be marked up as"
+      - |
+          ```
+          <mfrac intent='derivative(y, x, 2)'>
+            <mrow>
+              <msup><mi>d</mi><mn arg>2</mn></msup>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <msup><mi>x</mi><mn>2</mn></msup>
+            </mrow>
+          </mfrac>
+          ```
 
-    - concept: n-th derivative
 
-    - concept: partialdiff
+    - concept: partial-derivative
+      arity: 3 or more
+      property: ???
+      en:
+      - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
+      comment:
+      - |
+        ```
+        <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
+          <mrow>
+              <msup><mo>&#x2202;</mo><mn>3</mn></msup>
+              <mrow arg='f'><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>y</mi></mrow>
+          </mrow>
+          <mrow>
+              <msup><mo>&#x2202;</mo><mn>2</mn></msup>
+              <mi>x</mi><mo>&#x2202;</mo><mi>y</mi>
+          </mrow>
+        </mfrac>
+        ```
+
+    - concept: limit
+      arity: 3
+      property: ???
+      en: "limit as $1 $2 $3"
+      comment:
+      - "limit is not an argument, but intent should be on `msub` or `munder`"
+      - "There are several arrows used for limits. "
+      - "Example: <math>
+              <munder intent='lim(x, ↗, 0)'>
+                  <mi>lim</mi>
+                  </mrow>
+                  <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+              </munder>
+          </math>
+          might be spoken as \"limit as x approaches from below 0\" and marked up as:"
+      - |
+        ```
+        <munder intent='lim(x, ↗, 0)'>
+          <mi>lim</mi>
+          <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+        </munder>
+        ```
+      - "Another notation that might be spoken similarly is
+        <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
+        "
+    
 
     - concept: divergence
 
@@ -752,6 +834,7 @@ concepts:
       arity: 1
       property: function
       en: "mean of $1"
+      comment: "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
 
     - concept: standard-deviation
       arity: 1
