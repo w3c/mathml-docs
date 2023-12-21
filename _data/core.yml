@@ -465,7 +465,11 @@ concepts:
         ```
         <munder intent='lim($x, $arrow, $val)'>
             <mi>lim</mi>
-            <mrow><mi arg='x'>x</mi><mo arg='arrow'>↗</mo><mn arg='val'>0</mn></mrow>
+            <mrow>
+              <mi arg='x'>x</mi>
+              <mo arg='arrow'>↗</mo>
+              <mn arg='val'>0</mn>
+            </mrow>
         </munder>
         ```
       - "Another notation that might be spoken similarly is
