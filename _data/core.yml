@@ -370,12 +370,13 @@ concepts:
       arity: 1
       property: ???
       en: "integral over $1"
+      comment: "integral sign is not an argument"
 
     - concept: definite-integral
       arity: 2
       property: ???
       en: "integral from $1 to $2"
-
+      comment: "integral sign is not an argument"
     
 
     - concept: derivative
@@ -428,6 +429,33 @@ concepts:
         </mfrac>
         ````
 
+    - concept: limit
+      arity: 3
+      property: ???
+      en: "limit as $1 $2 $3"
+      comment:
+      - "limit is not an argument, but intent should be on `msub` or `munder`"
+      - "There are several arrows used for limits. "
+      - "Example: <math>
+              <munder intent='lim(x, ↗, 0)'>
+                  <mi>lim</mi>
+                  </mrow>
+                  <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+              </munder>
+          </math>
+          might be spoken as 'limit as x approaches from below 0' and marked up as:
+        ```
+        <munder intent='lim(x, ↗, 0)'>
+        <mi>lim</mi>
+        </mrow>
+        <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+        </munder>
+        ````
+         "
+      - "Another notation that might be spoken similarly is
+        <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
+        "
+    
 
     - concept: divergence
 
