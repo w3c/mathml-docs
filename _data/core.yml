@@ -19,6 +19,8 @@ defaultfixity:
          characters: [∠]
        - concept: angle-measure
          characters: [∡]
+       - concept: change
+         characters: ["Δ"]
        - concept: for-all
          characters: [∀]
        - concept: measured-angle
@@ -27,6 +29,8 @@ defaultfixity:
          characters: ["-", "−"]
        - concept: not
          characters: [¬]
+       - concept: number-of
+         characters: ["#"]
        - concept: partial-derivative
          characters: [∂]
        - concept: right-angle
@@ -37,10 +41,6 @@ defaultfixity:
          characters: [∄]
        - concept: there-exists
          characters: [∃]
-       - concept: number-of
-         characters: ["#"]
-       - concept: change
-         characters: ["Δ"]
 
    - fixity: infix
      concepts:
@@ -54,8 +54,6 @@ defaultfixity:
          characters: [≈]
        - concept: congruent
          characters: [≅]
-       - concept: congruent
-         characters: [≅]
        - concept: cartesian-product
          characters: [×]
        - concept: composed-with
@@ -63,9 +61,7 @@ defaultfixity:
        - concept: cross-product
          characters: [×]
        - concept: defined-as
-         characters: [≝]
-       - concept: defined-as
-         characters: [≝]
+         characters: ["≝", "=", "≔"]
        - concept: divided-by
          characters: [/, ÷, ":"]
        - concept: divides
@@ -76,16 +72,22 @@ defaultfixity:
          characters: [∤]
        - concept: element-of
          characters: [∈, ∊]
+       - concept: ellipsis
+         characters: ["…"]
        - concept: equals
          characters: ["="]
        - concept: equivalent-to
          characters: [≡]
+       - concept: evaluates-to
+         characters: ["→"]
        - concept: given
          characters: ["|"]
        - concept: greater-than
          characters: ["&gt;"]
        - concept: greater-than-or-equal-to
          characters: [≥, ≧]
+       - concept: if-and-only-if
+         characters: ["⟺"]
        - concept: implies
          characters: [⇒]
        - concept: inner-product
@@ -96,6 +98,10 @@ defaultfixity:
          characters: ["&lt;"]
        - concept: less-than-or-equal-to
          characters: [≤, ≦]
+       - concept: list-separator
+         characters: [",", ";"]
+       - concept: maps-to
+         characters: ["→"]
        - concept: member-of
          characters: [∈, ∊]
        - concept: minus
@@ -118,6 +124,8 @@ defaultfixity:
          characters: [⊗]
        - concept: parallel-to
          characters: [∥]
+       - concept: perpendicular
+         characters: ["⟂"]
        - concept: plus
          characters: [+,U+2064]
        - concept: plus-or-minus
@@ -126,6 +134,8 @@ defaultfixity:
          characters: [≺]
        - concept: proportional
          characters: [∝, ∷, ∼, ~]
+       - concept: range-separator
+         characters: ["-", "‐", "‑", "–", "—"]
        - concept: ratio
          characters: [":", "∶"]
        - concept: set-difference
@@ -139,7 +149,7 @@ defaultfixity:
        - concept: succeeds
          characters: [≻]
        - concept: such-that
-         characters: ["|"]
+         characters: [":", "|"]
        - concept: superset
          characters: [⊃]
        - concept: superset-or-equal
@@ -152,24 +162,6 @@ defaultfixity:
          characters: [∪]
        - concept: xor
          characters: [⊕]
-       - concept: list-separator
-         characters: [",", ";"]
-       - concept: range-separator
-         characters: ["-", "‐", "‑", "–", "—"]
-       - concept: ellipsis
-         characters: ["…"]
-       - concept: evaluates-to
-         characters: ["→"]
-       - concept: maps-to
-         characters: ["→"]
-       - concept: such-that
-         characters: [":", "|"]
-       - concept: if-and-only-if
-         characters: ["⟺"]
-       - concept: perpendicular
-         characters: ["⟂"]
-       - concept: defined-as
-         characters: ["=", "≔"]
 
    - fixity: postfix
      concepts:
@@ -180,23 +172,23 @@ defaultfixity:
 
    - fixity: nofix
      concepts:
-       - concept: radius
-         characters: ["r"]
        - concept: diameter
          characters: ["d"]
-       - concept: probability
-         characters: ["P"]
        - concept: distance
          characters: ["d", "D"]
+       - concept: probability
+         characters: ["P"]
+       - concept: radius
+         characters: ["r"]
        - concept: volume
          characters: ["V"]
 
    - fixity: silent
      concepts:
-       - concept: invisible-times
-         characters: [⁢U+2062]
        - concept: invisible-separator
          characters: [⁣U+2063]
+       - concept: invisible-times
+         characters: [⁢U+2062]
 
 
 concepts:
@@ -455,18 +447,21 @@ concepts:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
       - "Example: <math>
-              <munder intent='lim(x, ↗, 0)'>
+              <munder intent='lim($x, $arrow, $val)'>
                   <mi>lim</mi>
-                  </mrow>
-                  <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+                  <mrow><mi arg='x'>x</mi><mo arg='arrow'>↗</mo><mn arg='val'>0</mn></mrow>
               </munder>
           </math>
           might be spoken as \"limit as x approaches from below 0\" and marked up as:"
       - |
         ```
-        <munder intent='lim(x, ↗, 0)'>
-          <mi>lim</mi>
-          <mrow><mi>x</mi><mo>↗</mo><mn>0</mn></mrow>
+        <munder intent='lim($x, $arrow, $val)'>
+            <mi>lim</mi>
+            <mrow>
+              <mi arg='x'>x</mi>
+              <mo arg='arrow'>↗</mo>
+              <mn arg='val'>0</mn>
+            </mrow>
         </munder>
         ```
       - "Another notation that might be spoken similarly is
