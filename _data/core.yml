@@ -8,6 +8,10 @@
 defaultfixity:
    - fixity: function
      concepts:
+       - concept: curl
+         characters: [∇]
+       - concept: divergence
+         characters: [∇]
        - concept: gradient
          characters: [∇]
        - concept: laplacian
@@ -70,6 +74,8 @@ defaultfixity:
          characters: [∉]
        - concept: does-not-divide
          characters: [∤]
+       - concept: dot-product
+         characters: ["·"]
        - concept: downwards-diagonal-ellipsis
          characters: ["⋱"]
        - concept: element-of
@@ -371,10 +377,17 @@ concepts:
       en:
       - real part of $1
       - imaginary part of $1
+      
     - concept: imaginary-part
       arity: 1
       property: function
       en: imaginary part of $1
+
+    - concept: polar-coordinate
+      arity: 2
+      property: function
+      en: "polar coordinate of $1 comma $2"
+      comment: "The first argument is the radius, the second argument is the angle"
 
 
     - concept: floor
@@ -487,6 +500,11 @@ concepts:
         <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
         "
     
+    - concept: tends-to
+      arity: 3
+      property: ???
+      en: "limit as $1 $2 $3"
+
 
     - concept: divergence
 
@@ -554,6 +572,13 @@ concepts:
       - "Three notations used for empty set are: { }, ∅, and ∅"
 
     - concept: list
+      arity: "*"
+      en: "list of $1, ..."
+
+    - concept: tuple
+      arity: "*"
+      en: "tuple of $1, ..."
+
     ## ====================== 4.4.6 sequence and series ============================
   - title: sequence and series
     intents:
@@ -592,8 +617,6 @@ concepts:
       property: function
       en: "product from $1 to $2 of $3"
       comment: usually on `<munderover>` or `<msubsup>`
-
-    - concept: limit
 
 
     ## ====================== 4.4.7 elementary classical functions ======================
@@ -1019,6 +1042,14 @@ concepts:
         - "line segment $1 $2"
         comment:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
+
+      - concept: directed-line-segment
+        arity: 2
+        property: prefix
+        en:
+        - "directed line segment $1 $2"
+        comment:
+        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
 
       - concept: line
         arity: 2
