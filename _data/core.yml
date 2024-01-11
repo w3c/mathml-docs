@@ -500,16 +500,10 @@ concepts:
         <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
         "
     
-    - concept: tends-to
-      arity: 3
-      property: ???
-      en: "limit as $1 $2 $3"
-
-
-    - concept: divergence
-
-    - concept: curl
-
+    # - concept: tends-to
+    #   arity: 3
+    #   property: ???
+    #   en: "limit as $1 $2 $3"
 
   ## ====================== 4.4.5 Sets ============================
   - title: Sets
