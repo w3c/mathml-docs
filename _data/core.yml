@@ -1277,5 +1277,21 @@ concepts:
         en: "repeating decimal 14"
         comment:
         - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
-        - 0.045"
         - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
+        - "This right hand side of this might be might be marked up as:"
+        - |
+          ```
+          <mn>0.0</mn>
+          <mover intent='repeating-decimal($repeat)'>
+              <mn arg='repeat'>45</mn>
+              <mo>_</mo>
+          </mover>
+          ```
+        - "or using the elementary math elements in MathML full as"
+        - |
+          ```
+          <mstack intent='_(0.0, repeating-decimal(45)'>
+            <msline length="2"/>
+            <mn>0.045</mn>
+          </mstack>
+          ```
