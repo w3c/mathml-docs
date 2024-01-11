@@ -8,6 +8,10 @@
 defaultfixity:
    - fixity: function
      concepts:
+       - concept: curl
+         characters: [∇]
+       - concept: divergence
+         characters: [∇]
        - concept: gradient
          characters: [∇]
        - concept: laplacian
@@ -70,10 +74,14 @@ defaultfixity:
          characters: [∉]
        - concept: does-not-divide
          characters: [∤]
+       - concept: dot-product
+         characters: ["·"]
+       - concept: downwards-diagonal-ellipsis
+         characters: ["⋱"]
        - concept: element-of
          characters: [∈, ∊]
        - concept: ellipsis
-         characters: ["…"]
+         characters: ["…", "⋯"]
        - concept: equals
          characters: ["="]
        - concept: equivalent-to
@@ -160,6 +168,10 @@ defaultfixity:
          characters: ["*", "·", "×", "∗"]
        - concept: union
          characters: [∪]
+       - concept: upwards-diagonal-ellipsis
+         characters: ["⋰"]
+       - concept: vertical-ellipsis
+         characters: ["⋮"]
        - concept: xor
          characters: [⊕]
 
@@ -247,6 +259,19 @@ concepts:
       property: prefix
       en: image of $1
       fr: image de $1
+
+    - concept: fraction
+      arity: 2
+      property: function
+      en: fraction $1 over $2 end fraction
+
+    - concept: mixed-fraction
+      arity: 2
+      property: function
+      en: $1 and $2
+      comment:
+      - "$1 is a positive integer and $2 is a fraction with positive numerical components.
+        The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
 
     - concept: quotient
       arity: 2
@@ -352,10 +377,17 @@ concepts:
       en:
       - real part of $1
       - imaginary part of $1
+      
     - concept: imaginary-part
       arity: 1
       property: function
       en: imaginary part of $1
+
+    - concept: polar-coordinate
+      arity: 2
+      property: function
+      en: "polar coordinate of $1 comma $2"
+      comment: "The first argument is the radius, the second argument is the angle"
 
 
     - concept: floor
@@ -468,11 +500,10 @@ concepts:
         <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
         "
     
-
-    - concept: divergence
-
-    - concept: curl
-
+    # - concept: tends-to
+    #   arity: 3
+    #   property: ???
+    #   en: "limit as $1 $2 $3"
 
   ## ====================== 4.4.5 Sets ============================
   - title: Sets
@@ -535,6 +566,13 @@ concepts:
       - "Three notations used for empty set are: { }, ∅, and ∅"
 
     - concept: list
+      arity: "*"
+      en: "list of $1, ..."
+
+    - concept: tuple
+      arity: "*"
+      en: "tuple of $1, ..."
+
     ## ====================== 4.4.6 sequence and series ============================
   - title: sequence and series
     intents:
@@ -573,8 +611,6 @@ concepts:
       property: function
       en: "product from $1 to $2 of $3"
       comment: usually on `<munderover>` or `<msubsup>`
-
-    - concept: limit
 
 
     ## ====================== 4.4.7 elementary classical functions ======================
@@ -1001,6 +1037,14 @@ concepts:
         comment:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
 
+      - concept: directed-line-segment
+        arity: 2
+        property: prefix
+        en:
+        - "directed line segment $1 $2"
+        comment:
+        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+
       - concept: line
         arity: 2
         property: prefix
@@ -1244,7 +1288,6 @@ concepts:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
 
-
       - concept: braced-group
         arity: 1
         property: function
@@ -1252,3 +1295,28 @@ concepts:
         comment:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
+
+      - concept: repeating-decimal
+        arity: 1
+        property: function
+        en: "repeating decimal 14"
+        comment:
+        - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
+        - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
+        - "This right hand side of this might be might be marked up as:"
+        - |
+          ```
+          <mn>0.0</mn>
+          <mover intent='repeating-decimal($repeat)'>
+              <mn arg='repeat'>45</mn>
+              <mo>_</mo>
+          </mover>
+          ```
+        - "or using the elementary math elements in MathML full as"
+        - |
+          ```
+          <mstack intent='_(0.0, repeating-decimal(45)'>
+            <msline length="2"/>
+            <mn>0.045</mn>
+          </mstack>
+          ```
