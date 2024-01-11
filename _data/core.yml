@@ -70,10 +70,12 @@ defaultfixity:
          characters: [∉]
        - concept: does-not-divide
          characters: [∤]
+       - concept: downwards-diagonal-ellipsis
+         characters: ["⋱"]
        - concept: element-of
          characters: [∈, ∊]
        - concept: ellipsis
-         characters: ["…"]
+         characters: ["…", "⋯"]
        - concept: equals
          characters: ["="]
        - concept: equivalent-to
@@ -160,6 +162,10 @@ defaultfixity:
          characters: ["*", "·", "×", "∗"]
        - concept: union
          characters: [∪]
+       - concept: upwards-diagonal-ellipsis
+         characters: ["⋰"]
+       - concept: vertical-ellipsis
+         characters: ["⋮"]
        - concept: xor
          characters: [⊕]
 
@@ -247,6 +253,19 @@ concepts:
       property: prefix
       en: image of $1
       fr: image de $1
+
+    - concept: fraction
+      arity: 2
+      property: function
+      en: fraction $1 over $2 end fraction
+
+    - concept: mixed-fraction
+      arity: 2
+      property: function
+      en: $1 and $2
+      comment:
+      - "$1 is a positive integer and $2 is a fraction with positive numerical components.
+        The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
 
     - concept: quotient
       arity: 2
@@ -1244,7 +1263,6 @@ concepts:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
 
-
       - concept: braced-group
         arity: 1
         property: function
@@ -1252,3 +1270,12 @@ concepts:
         comment:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
+
+      - concept: repeating-decimal
+        arity: 1
+        property: function
+        en: "repeating decimal 14"
+        comment:
+        - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
+        - 0.045"
+        - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
