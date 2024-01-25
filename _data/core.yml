@@ -52,8 +52,6 @@ defaultfixity:
          characters: [⁤∧]
        - concept: applied-to
          characters: [⁡U+2061]
-       - concept: approaches
-         characters: [→]
        - concept: approximately
          characters: [≈]
        - concept: congruent
@@ -78,6 +76,8 @@ defaultfixity:
          characters: ["·"]
        - concept: downwards-diagonal-ellipsis
          characters: ["⋱"]
+       - concept: direct-product
+         characters: [×]
        - concept: element-of
          characters: [∈, ∊]
        - concept: ellipsis
@@ -94,6 +94,8 @@ defaultfixity:
          characters: ["&gt;"]
        - concept: greater-than-or-equal-to
          characters: [≥, ≧]
+       - concept: identically-equals
+         characters: [≡]
        - concept: if-and-only-if
          characters: ["⟺"]
        - concept: implies
@@ -148,8 +150,8 @@ defaultfixity:
          characters: [":", "∶"]
        - concept: set-difference
          characters: "[∼, ~, -, −, \\]"
-       - concept: similar
-         characters: [∖]
+       - concept: similar-to
+         characters: [≅]
        - concept: subset
          characters: [⊂]
        - concept: subset-or-equal
@@ -400,6 +402,15 @@ concepts:
       property: function
       en: ceiling of $1
 
+    - concept: round
+      arity: 1
+      property: function
+      en: rounded-value of $1
+      comment: "This sometimes uses the notation
+        <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
+        or
+        <math><mo>[</mo><mi>x</mi><mo>]</mo></math>"
+
     - concept: fractional-part
       arity: 1
       property: function
@@ -472,26 +483,26 @@ concepts:
         ```
 
     - concept: limit
-      arity: 3
-      property: ???
-      en: "limit as $1 $2 $3"
+      arity: 1
+      property: prefix
+      en: "limit as $1"
       comment:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
       - "Example: <math>
-              <munder intent='lim($x, $arrow, $val)'>
+              <munder intent='limit($lim)'>
                   <mi>lim</mi>
-                  <mrow><mi arg='x'>x</mi><mo arg='arrow'>↗</mo><mn arg='val'>0</mn></mrow>
+                  <mrow arg='lim' intent='tends-to-from-below($x, $val)''><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
               </munder>
           </math>
-          might be spoken as \"limit as x approaches from below 0\" and marked up as:"
+          might be spoken as \"limit as x tends to from below 0\" and marked up as:"
       - |
         ```
-        <munder intent='lim($x, $arrow, $val)'>
+        <munder intent='limit($lim)'>
             <mi>lim</mi>
-            <mrow>
+            <mrow arg='lim' intent='tends-to-from-below($x, $val)''>
               <mi arg='x'>x</mi>
-              <mo arg='arrow'>↗</mo>
+              <mo>↗</mo>
               <mn arg='val'>0</mn>
             </mrow>
         </munder>
@@ -500,10 +511,23 @@ concepts:
         <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
         "
     
-    # - concept: tends-to
-    #   arity: 3
-    #   property: ???
-    #   en: "limit as $1 $2 $3"
+    - concept: tends-to
+      arity: 2
+      property: infix
+      en: "$1 tends to $2"
+      comment: "see \"limit\" example"
+    
+    - concept: tends-to-from-above
+      arity: 2
+      property: infix
+      en: "$1 tends to from above $2"
+      comment: "see \"limit\" example"
+    
+    - concept: tends-to-from-below
+      arity: 2
+      property: infix
+      en: "$1 tends to from below $2"
+      comment: "see \"limit\" example"
 
   ## ====================== 4.4.5 Sets ============================
   - title: Sets
@@ -564,6 +588,12 @@ concepts:
       en: "empty set"
       comment:
       - "Three notations used for empty set are: { }, ∅, and ∅"
+
+
+    - concept: cardinality
+      arity: 1
+      property: function
+      comment: "often used with matchfix single vertical bars"
 
     - concept: list
       arity: "*"
@@ -936,6 +966,16 @@ concepts:
       property: function
       comment: "often used with matchfix single or double vertical bars"
 
+    - concept: norm
+      arity: 1
+      property: function
+      comment: "often used with matchfix double vertical bars"
+
+    - concept: span
+      arity: 1
+      property: function
+      comment: "often used with matchfix angle brackets"
+
     - concept: unit-vector
       arity: 1
       property: prefix
@@ -961,6 +1001,7 @@ concepts:
       default: false
       en: "transpose of $1"
       fr: "transposée de $1"
+
 
     ## ====================== 4.4.10 Constants and Sets ======================
   - title: Constants and Sets
@@ -1261,11 +1302,32 @@ concepts:
         - "The first of these would be marked up as:"
         - |
           ```
-          <msubsup intent='P($n, $k)'>
+          <msubsup intent='pochhammer($n, $k)'>
               <mi>P</mi>
               <mi arg='k'>k</mi>
               <mi arg='n'>n</mi>
           </msubsup>
+          ```
+
+      - concept: permutation-cycle
+        arity: "*"
+        property: function
+        en: "permutation cycle of 1 3 2"
+        comment:
+        - "A common notation for a permutation cycle is <math><mo>(</mo>
+                <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
+                <mo>)</mo></math>
+        - "This would be marked up as:"
+        - |
+          ```
+          <mrow intent='permutation-cycle($arg1, $arg2, $arg3)'
+          <mo>(</mo>
+            <mtable><mtr>
+               <mtd><mn arg='arg1'>1</mn></mtd>
+               <mtd><mn arg='arg2'>3</mn></mtd>
+               <mtd><mn arg='arg3'>2</mn></mtd>
+            </mtr></mtable>
+          <mo>)</mo>
           ```
     
 
