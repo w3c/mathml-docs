@@ -1316,7 +1316,7 @@ concepts:
         comment:
         - "A common notation for a permutation cycle is <math><mo>(</mo>
                 <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
-                <mo>)</mo></math>
+                <mo>)</mo></math>"
         - "This would be marked up as:"
         - |
           ```
