@@ -461,7 +461,6 @@ concepts:
           </mfrac>
           ```
 
-
     - concept: partial-derivative
       arity: 3 or more
       property: ???
@@ -507,9 +506,7 @@ concepts:
             </mrow>
         </munder>
         ```
-      - "Another notation that might be spoken similarly is
-        <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
-        "
+      - "Another notation that might be spoken similarly is  <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math> "
     
     - concept: tends-to
       arity: 2
