@@ -493,7 +493,7 @@ concepts:
         ```
         <munder intent='limit($lim)'>
             <mi>lim</mi>
-            <mrow arg='lim' intent='tends-to-from-below($x, $val)''>
+            <mrow arg='lim' intent='tends-to-from-below($x, $val)'>
               <mi arg='x'>x</mi>
               <mo>↗</mo>
               <mn arg='val'>0</mn>
