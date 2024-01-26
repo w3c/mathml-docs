@@ -488,13 +488,7 @@ concepts:
       comment:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
-      - "Example: <math>
-              <munder intent='limit($lim)'>
-                  <mi>lim</mi>
-                  <mrow arg='lim' intent='tends-to-from-below($x, $val)''><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
-              </munder>
-          </math>
-          might be spoken as \"limit as x tends to from below 0\" and marked up as:"
+      - "Example: <math><munder intent='limit($lim)'><mi>lim</mi><mrow arg='lim' intent='tends-to-from-below($x, $val)'><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow></munder></math> might be spoken as \"limit as x tends to from below 0\" and marked up as:"
       - |
         ```
         <munder intent='limit($lim)'>
@@ -506,7 +500,7 @@ concepts:
             </mrow>
         </munder>
         ```
-      - "Another notation that might be spoken similarly is  <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math> "
+      - "Another notation that might be spoken similarly is  <math><munder><mi>lim</mi><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math> "
     
     - concept: tends-to
       arity: 2
