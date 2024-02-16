@@ -153,7 +153,7 @@ defaultfixity:
        - concept: set-difference
          characters: "[∼, ~, -, −, \\]"
        - concept: similar
-         characters: [∖]
+         characters: [≅]
        - concept: subset
          characters: [⊂]
        - concept: subset-or-equal
@@ -494,7 +494,7 @@ concepts:
       - "Example: <math>
               <munder intent='limit($lim)'>
                   <mi>lim</mi>
-                  <mrow arg='lim' intent='tends-to-from-below($x, $val)''><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
+                  <mrow arg='lim' intent='tends-to-from-below($x, $val)'><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
               </munder>
           </math>
           might be spoken as \"limit as x tends to from below 0\" and marked up as:"
