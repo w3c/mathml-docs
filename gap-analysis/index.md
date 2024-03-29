@@ -5,7 +5,7 @@ layout: wgnote
 
 <dl>
 <dt>Last Updated</dt>
-<dd>Mon Oct 18 2023</dt>
+<dd>Mon Oct 18 2023</dd>
 </dl>
 
 <nav id="toc" markdown="1">
