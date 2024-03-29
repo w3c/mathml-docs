@@ -3,6 +3,8 @@ title: "MathML Accessibility Gap Analysis"
 layout: wgnote
 ---
 
+Updated: {{ page.date }} Mon Oct 18 2023
+
 <nav id="toc" markdown="1">
 
 ## Table of Contents
