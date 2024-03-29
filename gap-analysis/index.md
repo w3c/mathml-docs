@@ -5,7 +5,7 @@ layout: wgnote
 
 <dl>
 <dt>Last Updated</dt>
-<dd>Mon Oct 18 2021</dd> <!-- git log -1 --pretty="format:%ci" index.md -->
+<dd>Mon, 18 Oct 2021</dd> <!-- git log -1 --pretty="format:%cD" index.md -->
 </dl>
 
 <nav id="toc" markdown="1">
