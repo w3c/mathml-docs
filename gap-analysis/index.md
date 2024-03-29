@@ -3,7 +3,10 @@ title: "MathML Accessibility Gap Analysis"
 layout: wgnote
 ---
 
-Updated: {{ page.date }} Mon Oct 18 2023
+<dl>
+<dt>Last Updated</dt>
+<dd>Mon Oct 18 2023</dt>
+</dl>
 
 <nav id="toc" markdown="1">
 
