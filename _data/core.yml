@@ -64,6 +64,8 @@ defaultfixity:
          characters: [×]
        - concept: defined-as
          characters: ["≝", "=", "≔"]
+       - concept: dimensional-product
+         characters: [×]
        - concept: divided-by
          characters: [/, ÷, ":"]
        - concept: divides
@@ -1005,6 +1007,14 @@ concepts:
       default: false
       en: "transpose of $1"
       fr: "transposée de $1"
+
+    - concept: dimensional-product
+      arity: "*"
+      property: infix
+      default: false
+      en: "$1 by $2"
+      comment: "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
+                A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
 
 
     ## ====================== 4.4.10 Constants and Sets ======================
