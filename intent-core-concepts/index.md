@@ -87,7 +87,7 @@ if c.link
 {%- else -%}
 {{c.concept}}
 {%- endif -%}
-">{{c.concept}</a> 
+">{{c.concept}}</a> 
 (
 {%- for ch in c.characters -%}
 {{ch}}
