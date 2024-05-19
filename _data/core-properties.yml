@@ -143,6 +143,16 @@
   applicability: mtr
   effect: indicates that the row continues an equation wrapped from the row above
 
+- property: by-row
+  type: table
+  applicability: mtable
+  effect: indicates that the table should be read row by row
+
+- property: by-column
+  type: table
+  applicability: mtable
+  effect: indicates that the table should be read column by column
+
 
 - property: number-set
   type: mathematical-category
