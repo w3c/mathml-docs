@@ -79,7 +79,15 @@ but do have default fixity properties other than `function`.
 </dt>
 <dd>
 {%- for c in fix.concepts -%}
-<a href="#{{c.concept}}">{{c.concept}}</a> 
+<a href="#
+{%-
+if c.link
+-%}
+{{c.link}}
+{%- else -%}
+{{c.concept}}
+{%- endif -%}
+">{{c.concept}</a> 
 (
 {%- for ch in c.characters -%}
 {{ch}}

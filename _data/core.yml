@@ -66,6 +66,7 @@ defaultfixity:
          characters: ["≝", "=", "≔"]
        - concept: dimensional-product
          characters: [×]
+	 link: "dimensional-product*infix"
        - concept: divided-by
          characters: [/, ÷, ":"]
        - concept: divides
