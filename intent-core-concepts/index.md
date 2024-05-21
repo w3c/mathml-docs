@@ -7,7 +7,7 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
-a {color: font-weight:550}
+a.link {color: font-weight:550}
 a.self {color: black; font-weight:550}
 </style>
 
@@ -85,7 +85,7 @@ but do have default fixity properties other than `function`.
 {%
 if c.link
 -%}
- href="#{{c.link}}"
+ href="#{{c.link}}" "class="link"
 {%- else -%}
  href="#{{c.concept}}" class="self"
 {%- endif -%}
