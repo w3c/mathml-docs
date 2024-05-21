@@ -7,6 +7,7 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+a.self {color: black}
 </style>
 
 <style id="langcss">
@@ -79,15 +80,15 @@ but do have default fixity properties other than `function`.
 </dt>
 <dd>
 {%- for c in fix.concepts -%}
-<a href="#
-{%-
+<a
+{%
 if c.link
 -%}
-{{c.link}}
+ href="#{{c.link}}"
 {%- else -%}
-{{c.concept}}
+ href="#{{c.concept}}" class="self"
 {%- endif -%}
-">{{c.concept}}</a> 
+>{{c.concept}}</a> 
 (
 {%- for ch in c.characters -%}
 {{ch}}
@@ -147,7 +148,7 @@ if c.link
 {%- if c.conditions %}
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
@@ -172,7 +173,7 @@ if c.link
 {%- endfor -%}
 {%- else -%}
 <tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}">
-<td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
+<td><a class="self" href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
