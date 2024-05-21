@@ -7,8 +7,8 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
-a.link {font-weight:550}
-a.self {color: black; font-weight:550}
+a.link {font-weight:500}
+a.self {color: black; font-weight:500}
 </style>
 
 <style id="langcss">
