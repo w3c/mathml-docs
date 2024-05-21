@@ -85,7 +85,7 @@ but do have default fixity properties other than `function`.
 {%
 if c.link
 -%}
- href="#{{c.link}}" "class="link"
+ href="#{{c.link}}" class="link"
 {%- else -%}
  href="#{{c.concept}}" class="self"
 {%- endif -%}
