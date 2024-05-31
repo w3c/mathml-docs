@@ -12,7 +12,7 @@ layout: default
 * [Intent Core Properties](intent-core-properties/)
 * [Intent Open Properties](intent-open-properties/)
 * [Intent Examples](intent-examples/)
-
+* [Unicode Speech Templates](unicode-speech/)
 ---
 
 ## Working Group Notes
