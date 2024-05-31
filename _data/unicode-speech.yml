@@ -1,5 +1,9 @@
 ---
 -
+    - char: ¡
+    - u: "00A1"
+    - t: inverted exclamation mark
+-
     - char: ¢
     - u: "00A2"
     - t: cents
@@ -36,13 +40,13 @@
     - u: "00AA"
     - t: feminine ordinal indicator
 -
-    - char: ¬
-    - u: "00AC"
-    - t: not
--
     - char: «
     - u: "00AB"
     - t: left-pointing double angle quote mark
+-
+    - char: ¬
+    - u: "00AC"
+    - t: not
 -
     - char: ¯
     - u: "00AF"
@@ -69,13 +73,9 @@
     - u: "00B5"
     - t: micro
 -
-    - char: ¹
-    - u: "00B9"
-    - t: one
--
-    - char: º
-    - u: "00BA"
-    - t: masculine ordinal indicator
+    - char: ¶
+    - u: "00B6"
+    - t: paragraph mark
 -
     - char: ·
     - u: "00B7"
@@ -85,6 +85,30 @@
           - t: times
         else:
           - t: dot
+-
+    - char: ¹
+    - u: "00B9"
+    - t: one
+-
+    - char: º
+    - u: "00BA"
+    - t: masculine ordinal indicator
+-
+    - char: ¼
+    - u: "00BC"
+    - t: one quarter
+-
+    - char: ½
+    - u: "00BD"
+    - t: one half
+-
+    - char: ¾
+    - u: "00BE"
+    - t: three quarters
+-
+    - char: ¿
+    - u: "00BF"
+    - t: inverted question mark
 -
     - char: ×
     - u: "00D7"
@@ -102,18 +126,6 @@
     - char: ÷
     - u: "00F7"
     - t: divided by
--
-    - char: ¡
-    - u: "00A1"
-    - t: inverted exclamation mark
--
-    - char: ¶
-    - u: "00B6"
-    - t: paragraph mark
--
-    - char: ¿
-    - u: "00BF"
-    - t: inverted question mark
 -
     - char: ʰ
     - u: "02B0"
@@ -785,6 +797,10 @@
     - u: "03D9"
     - t: archaic koppa
 -
+    - char: ϝ
+    - u: "03DD"
+    - t: digamma
+-
     - char: ϵ
     - u: "03F5"
     - t: epsilon
@@ -953,6 +969,22 @@
     - u: "0608"
     - t: Arabic ray
 -
+    - char:  - 
+    - u: "2000-2007"
+    - t: " "
+-
+    - char:  
+    - u: "2009"
+    - t: ""
+-
+    - char:  
+    - u: "200A"
+    - t: ""
+-
+    - char: ​
+    - u: "200B"
+    - t: ""
+-
     - char: ‐
     - u: "2010"
     - t: hyphen
@@ -988,10 +1020,6 @@
     - char: ‡
     - u: "2021"
     - t: double dagger
--
-    - char:  - 
-    - u: "2000-2007"
-    - t: " "
 -
     - char: •
     - u: "2022"
@@ -1061,9 +1089,21 @@
     - u: "203A"
     - t: single right pointing angle quote mark
 -
+    - char: ※
+    - u: "203B"
+    - t: reference mark
+-
     - char: ‼
     - u: "203C"
     - t: double factorial
+-
+    - char: ‿
+    - u: "203F"
+    - t: under tie
+-
+    - char: ⁀
+    - u: "2040"
+    - t: tie
 -
     - char: ⁄
     - u: "2044"
@@ -1076,18 +1116,6 @@
     - char: ⁆
     - u: "2046"
     - t: right square bracket with quill
--
-    - char: ※
-    - u: "203B"
-    - t: reference mark
--
-    - char: ‿
-    - u: "203F"
-    - t: under tie
--
-    - char: ⁀
-    - u: "2040"
-    - t: tie
 -
     - char: ⁎
     - u: "204E"
@@ -1112,6 +1140,10 @@
     - char: ⁗
     - u: "2057"
     - t: quadruple prime
+-
+    - char:  
+    - u: "205F"
+    - t: ""
 -
     - char: ⁠
     - u: "2060"
@@ -1668,6 +1700,22 @@
     - u: "2140"
     - t: double struck n-ary summation
 -
+    - char: ⅅ
+    - u: "2145"
+    - t: D
+-
+    - char: ⅆ
+    - u: "2146"
+    - t: d
+-
+    - char: ⅇ
+    - u: "2147"
+    - t: e
+-
+    - char: ⅈ
+    - u: "2148"
+    - t: i
+-
     - char: ⅋
     - u: "214B"
     - t: turned ampersand
@@ -1679,18 +1727,6 @@
     - char: ⅎ
     - u: "214E"
     - t: turned F
--
-    - char: ¼
-    - u: "00BC"
-    - t: one quarter
--
-    - char: ½
-    - u: "00BD"
-    - t: one half
--
-    - char: ¾
-    - u: "00BE"
-    - t: three quarters
 -
     - char: ⅐
     - u: "2150"
@@ -4051,6 +4087,14 @@
     - u: "2395"
     - t: box
 -
+    - char: ⎴
+    - u: "23B4"
+    - t: over square bracket
+-
+    - char: ⎵
+    - u: "23B5"
+    - t: under square bracket
+-
     - char: ⎶
     - u: "23B6"
     - t: bottom square bracket over top square bracket
@@ -4778,22 +4822,6 @@
     - u: "2649"
     - t: taurus
 -
-    - char: ♩
-    - u: "2669"
-    - t: quarter note
--
-    - char: ♭
-    - u: "266D"
-    - t: flat
--
-    - char: ♮
-    - u: "266E"
-    - t: natural
--
-    - char: ♯
-    - u: "266F"
-    - t: sharp
--
     - char: ♠
     - u: "2660"
     - t: black spade suit
@@ -4825,6 +4853,22 @@
     - char: ♧
     - u: "2667"
     - t: white club suit
+-
+    - char: ♩
+    - u: "2669"
+    - t: quarter note
+-
+    - char: ♭
+    - u: "266D"
+    - t: flat
+-
+    - char: ♮
+    - u: "266E"
+    - t: natural
+-
+    - char: ♯
+    - u: "266F"
+    - t: sharp
 -
     - char: ⚀
     - u: "2680"
@@ -8770,340 +8814,6 @@
     - u: "33FF"
     - t: gallons
 -
-    - char: ⎵
-    - u: "23B5"
-    - t: under square bracket
--
-    - char: ⎴
-    - u: "23B4"
-    - t: over square bracket
--
-    - char: ϝ
-    - u: "03DD"
-    - t: digamma
--
-    - char: ⅆ
-    - u: "2146"
-    - t: d
--
-    - char: ⅇ
-    - u: "2147"
-    - t: e
--
-    - char: ⅈ
-    - u: "2148"
-    - t: i
--
-    - char: ⅅ
-    - u: "2145"
-    - t: D
--
-    - char: ​
-    - u: "200B"
-    - t: ""
--
-    - char:  
-    - u: "2009"
-    - t: ""
--
-    - char:  
-    - u: "205F"
-    - t: ""
--
-    - char:  
-    - u: "200A"
-    - t: ""
--
-    - char: 𝔄-𝔜
-    - u: "1D504-1D51C"
-    - t: fraktur
-    - spell: translate('.', '𝔄𝔅𝔆𝔇𝔈𝔉𝔊𝔋𝔌𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔𝔕𝔖𝔗𝔘𝔙𝔚𝔛𝔜',
-        'ABCDEFGHIJKLMNOPQRSTUVWXY')
--
-    - char: 𝔞-𝔷
-    - u: "1D51E-1D537"
-    - t: fraktur
-    - spell: translate('.', '𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝕬-𝖅
-    - u: "1D56C-1D585"
-    - t: fraktur bold
-    - spell: translate('.', '𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝖆-𝖟
-    - u: "1D586-1D59F"
-    - t: fraktur bold
-    - spell: translate('.', '𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝔸-𝕐
-    - u: "1D538-1D550"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', '𝔸𝔹𝔺𝔻𝔼𝔽𝔾𝔿𝕀𝕁𝕂𝕃𝕄𝕅𝕆𝕇𝕈𝕉𝕊𝕋𝕌𝕍𝕎𝕏𝕐',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝕒-𝕫
-    - u: "1D552-1D56B"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', '𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝟘-𝟡
-    - u: "1D7D8-1D7E1"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', '𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡', '0123456789')
--
-    - char: 𝒜-𝒵
-    - u: "1D49C-1D4B5"
-    - t: script
-    - spell: translate('.', '𝒜𝒝𝒞𝒟𝒠𝒡𝒢𝒣𝒤𝒥𝒦𝒧𝒨𝒩𝒪𝒫𝒬𝒭𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝒶-𝓏
-    - u: "1D4B6-1D4CF"
-    - t: script
-    - spell: translate('.', '𝒶𝒷𝒸𝒹𝒺𝒻𝒼𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝓄𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝓐-𝓩
-    - u: "1D4D0-1D4E9"
-    - t: script bold
-    - spell: translate('.', '𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝓪-𝔃
-    - u: "1D4EA-1D503"
-    - t: script bold
-    - spell: translate('.', '𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝐀-𝐙
-    - u: "1D400-1D419"
-    - t: bold
-    - spell: translate('.', '𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝐚-𝐳
-    - u: "1D41A-1D433"
-    - t: bold
-    - spell: translate('.', '𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝐴-𝑍
-    - u: "1D434-1D44D"
-    - spell: translate('.', '𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝑎-𝑧
-    - u: "1D44E-1D467"
-    - spell: translate('.', '𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝑕𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝑨-𝒁
-    - u: "1D468-1D481"
-    - t: bold
-    - spell: translate('.', '𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝒂-𝒛
-    - u: "1D482-1D49B"
-    - t: bold
-    - spell: translate('.', '𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝖠-𝖹
-    - u: "1D5A0-1D5B9"
-    - spell: translate('.', '𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝖺-𝗓
-    - u: "1D5BA-1D5D3"
-    - spell: translate('.', '𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝗔-𝗭
-    - u: "1D5D4-1D5ED"
-    - t: bold
-    - spell: translate('.', '𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝗮-𝘇
-    - u: "1D5EE-1D607"
-    - t: bold
-    - spell: translate('.', '𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝘈-𝘡
-    - u: "1D608-1D621"
-    - spell: translate('.', '𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝘢-𝘻
-    - u: "1D622-1D63B"
-    - spell: translate('.', '𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝘼-𝙕
-    - u: "1D63C-1D655"
-    - t: bold
-    - spell: translate('.', '𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝙖-𝙯
-    - u: "1D656-1D66F"
-    - t: bold
-    - spell: translate('.', '𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝙰-𝚉
-    - u: "1D670-1D689"
-    - spell: translate('.', '𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉',
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
--
-    - char: 𝚊-𝚣
-    - u: "1D68A-1D6A3"
-    - spell: translate('.', '𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣',
-        'abcdefghijklmnopqrstuvwxyz')
--
-    - char: 𝚤
-    - u: "1D6A4"
-    - t: dotless i
--
-    - char: 𝚥
-    - u: "1D6A5"
-    - t: dotless j
--
-    - char: 𝚨-𝛀
-    - u: "1D6A8-1D6C0"
-    - t: bold
-    - spell: translate('.', '𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚹𝚺𝚻𝚼𝚽𝚾𝚿𝛀',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
--
-    - char: 𝛂-𝛚
-    - u: "1D6C2-1D6DA"
-    - t: bold
-    - spell: translate('.', '𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛓𝛔𝛕𝛖𝛗𝛘𝛙𝛚',
-        'αβγδεζηθικλμνξοπρςστυφχψω')
--
-    - char: 𝛁
-    - u: "1D6C1"
-    - t: bold nabla
--
-    - char: 𝛛𝛜𝛝𝛞𝛟𝛠𝛡
-    - u: "1D6DB 1D6DC 1D6DD 1D6DE 1D6DF 1D6E0 1D6E1"
-    - t: bold
-    - spell: translate('.', '𝛛𝛜𝛝𝛞𝛟𝛠𝛡', '∂εθκφρπ')
--
-    - char: 𝛢-𝛺
-    - u: "1D6E2-1D6FA"
-    - spell: translate('.', '𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛳𝛴𝛵𝛶𝛷𝛸𝛹𝛺',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
--
-    - char: 𝛼-𝜔
-    - u: "1D6FC-1D714"
-    - spell: translate('.', '𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜍𝜎𝜏𝜐𝜑𝜒𝜓𝜔',
-        'αβγδεζηθικλμνξοπρςστυφχψω')
--
-    - char: 𝛻
-    - u: "1D6FB"
-    - t: italic nabla
--
-    - char: 𝜕𝜖𝜗𝜘𝜙𝜚𝜛
-    - u: "1D715 1D716 1D717 1D718 1D719 1D71A 1D71B"
-    - spell: translate('.', '𝜕𝜖𝜗𝜘𝜙𝜚𝜛', '∂εθκφρπ')
--
-    - char: 𝜜-𝜴
-    - u: "1D71C-1D734"
-    - t: bold
-    - spell: translate('.', '𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜭𝜮𝜯𝜰𝜱𝜲𝜳𝜴',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
--
-    - char: 𝜶-𝝎
-    - u: "1D736-1D74E"
-    - t: bold
-    - spell: translate('.', '𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝇𝝈𝝉𝝊𝝋𝝌𝝍𝝎',
-        'αβγδεζηθικλμνξοπρςστυφχψω')
--
-    - char: 𝝏𝝐𝝑𝝒𝝓𝝔𝝕
-    - u: "1D74F 1D750 1D751 1D752 1D753 1D754 1D755"
-    - t: bold
-    - spell: translate('.', '𝝏𝝐𝝑𝝒𝝓𝝔𝝕', '∂εθκφρπ')
--
-    - char: 𝜵
-    - u: "1D735"
-    - t: bold italic nabla
--
-    - char: 𝝖-𝝮
-    - u: "1D756-1D76E"
-    - t: bold
-    - spell: translate('.', '𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝧𝝨𝝩𝝪𝝫𝝬𝝭𝝮',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
--
-    - char: 𝝰-𝞈
-    - u: "1D770-1D788"
-    - t: bold
-    - spell: translate('.', '𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞁𝞂𝞃𝞄𝞅𝞆𝞇𝞈',
-        'αβγδεζηθικλμνξοπρςστυφχψω')
--
-    - char: 𝞉𝞊𝞋𝞌𝞍𝞎𝞏
-    - u: "1D789 1D78A 1D78B 1D78C 1D78D 1D78E 1D78F"
-    - t: bold
-    - spell: translate('.', '𝞉𝞊𝞋𝞌𝞍𝞎𝞏', '∂εθκφρπ')
--
-    - char: 𝝯
-    - u: "1D76F"
-    - t: bold nabla
--
-    - char: 𝞐-𝞨
-    - u: "1D790-1D7A8"
-    - t: bold
-    - spell: translate('.', '𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞡𝞢𝞣𝞤𝞥𝞦𝞧𝞨',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
--
-    - char: 𝞪-𝟂
-    - u: "1D7AA-1D7C2"
-    - t: bold
-    - spell: translate('.', '𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞻𝞼𝞽𝞾𝞿𝟀𝟁𝟂',
-        'αβγδεζηθικλμνξοπρςστυφχψω')
--
-    - char: 𝟃𝟄𝟅𝟆𝟇𝟈𝟉
-    - u: "1D7C3 1D7C4 1D7C5 1D7C6 1D7C7 1D7C8 1D7C9"
-    - t: bold
-    - spell: translate('.', '𝟃𝟄𝟅𝟆𝟇𝟈𝟉', '∂εθκφρπ')
--
-    - char: 𝞩
-    - u: "1D7A9"
-    - t: bold nabla
--
-    - char: 𝟎-𝟗
-    - u: "1D7CE-1D7D7"
-    - t: bold
-    - spell: translate('.', '𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗', '0123456789')
--
-    - char: 𝟬-𝟵
-    - u: "1D7EC-1D7F5"
-    - t: bold
-    - spell: translate('.', '𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵', '0123456789')
--
-    - char: 𝟢-𝟫
-    - u: "1D7E2-1D7EB"
-    - spell: translate('.', '𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
--
-    - char: 𝟶-𝟿
-    - u: "1D7F6-1D7FF"
-    - spell: translate('.', '𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
--
     - char: ﬀ
     - u: "FB00"
     - t: ff
@@ -9283,3 +8993,293 @@
     - char: �
     - u: "FFFD"
     - t: unknown or missing character
+-
+    - char: 𝐀-𝐙
+    - u: "1D400-1D419"
+    - t: bold
+    - spell: translate('.', '𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝐚-𝐳
+    - u: "1D41A-1D433"
+    - t: bold
+    - spell: translate('.', '𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝐴-𝑍
+    - u: "1D434-1D44D"
+    - spell: translate('.', '𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝑎-𝑧
+    - u: "1D44E-1D467"
+    - spell: translate('.', '𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝑕𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝑨-𝒁
+    - u: "1D468-1D481"
+    - t: bold
+    - spell: translate('.', '𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝒂-𝒛
+    - u: "1D482-1D49B"
+    - t: bold
+    - spell: translate('.', '𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝒜-𝒵
+    - u: "1D49C-1D4B5"
+    - t: script
+    - spell: translate('.', '𝒜𝒝𝒞𝒟𝒠𝒡𝒢𝒣𝒤𝒥𝒦𝒧𝒨𝒩𝒪𝒫𝒬𝒭𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝒶-𝓏
+    - u: "1D4B6-1D4CF"
+    - t: script
+    - spell: translate('.', '𝒶𝒷𝒸𝒹𝒺𝒻𝒼𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝓄𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝓐-𝓩
+    - u: "1D4D0-1D4E9"
+    - t: script bold
+    - spell: translate('.', '𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝓪-𝔃
+    - u: "1D4EA-1D503"
+    - t: script bold
+    - spell: translate('.', '𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝔄-𝔜
+    - u: "1D504-1D51C"
+    - t: fraktur
+    - spell: translate('.', '𝔄𝔅𝔆𝔇𝔈𝔉𝔊𝔋𝔌𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔𝔕𝔖𝔗𝔘𝔙𝔚𝔛𝔜',
+        'ABCDEFGHIJKLMNOPQRSTUVWXY')
+-
+    - char: 𝔞-𝔷
+    - u: "1D51E-1D537"
+    - t: fraktur
+    - spell: translate('.', '𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝔸-𝕐
+    - u: "1D538-1D550"
+    - test:
+        if: $Verbosity!='Terse'
+        then:
+          - t: double struck
+    - spell: translate('.', '𝔸𝔹𝔺𝔻𝔼𝔽𝔾𝔿𝕀𝕁𝕂𝕃𝕄𝕅𝕆𝕇𝕈𝕉𝕊𝕋𝕌𝕍𝕎𝕏𝕐',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝕒-𝕫
+    - u: "1D552-1D56B"
+    - test:
+        if: $Verbosity!='Terse'
+        then:
+          - t: double struck
+    - spell: translate('.', '𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝕬-𝖅
+    - u: "1D56C-1D585"
+    - t: fraktur bold
+    - spell: translate('.', '𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝖆-𝖟
+    - u: "1D586-1D59F"
+    - t: fraktur bold
+    - spell: translate('.', '𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝖠-𝖹
+    - u: "1D5A0-1D5B9"
+    - spell: translate('.', '𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝖺-𝗓
+    - u: "1D5BA-1D5D3"
+    - spell: translate('.', '𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝗔-𝗭
+    - u: "1D5D4-1D5ED"
+    - t: bold
+    - spell: translate('.', '𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝗮-𝘇
+    - u: "1D5EE-1D607"
+    - t: bold
+    - spell: translate('.', '𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝘈-𝘡
+    - u: "1D608-1D621"
+    - spell: translate('.', '𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝘢-𝘻
+    - u: "1D622-1D63B"
+    - spell: translate('.', '𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝘼-𝙕
+    - u: "1D63C-1D655"
+    - t: bold
+    - spell: translate('.', '𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝙖-𝙯
+    - u: "1D656-1D66F"
+    - t: bold
+    - spell: translate('.', '𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝙰-𝚉
+    - u: "1D670-1D689"
+    - spell: translate('.', '𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+-
+    - char: 𝚊-𝚣
+    - u: "1D68A-1D6A3"
+    - spell: translate('.', '𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣',
+        'abcdefghijklmnopqrstuvwxyz')
+-
+    - char: 𝚤
+    - u: "1D6A4"
+    - t: dotless i
+-
+    - char: 𝚥
+    - u: "1D6A5"
+    - t: dotless j
+-
+    - char: 𝚨-𝛀
+    - u: "1D6A8-1D6C0"
+    - t: bold
+    - spell: translate('.', '𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚹𝚺𝚻𝚼𝚽𝚾𝚿𝛀',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+-
+    - char: 𝛁
+    - u: "1D6C1"
+    - t: bold nabla
+-
+    - char: 𝛂-𝛚
+    - u: "1D6C2-1D6DA"
+    - t: bold
+    - spell: translate('.', '𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛓𝛔𝛕𝛖𝛗𝛘𝛙𝛚',
+        'αβγδεζηθικλμνξοπρςστυφχψω')
+-
+    - char: 𝛛𝛜𝛝𝛞𝛟𝛠𝛡
+    - u: "1D6DB 1D6DC 1D6DD 1D6DE 1D6DF 1D6E0 1D6E1"
+    - t: bold
+    - spell: translate('.', '𝛛𝛜𝛝𝛞𝛟𝛠𝛡', '∂εθκφρπ')
+-
+    - char: 𝛢-𝛺
+    - u: "1D6E2-1D6FA"
+    - spell: translate('.', '𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛳𝛴𝛵𝛶𝛷𝛸𝛹𝛺',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+-
+    - char: 𝛻
+    - u: "1D6FB"
+    - t: italic nabla
+-
+    - char: 𝛼-𝜔
+    - u: "1D6FC-1D714"
+    - spell: translate('.', '𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜍𝜎𝜏𝜐𝜑𝜒𝜓𝜔',
+        'αβγδεζηθικλμνξοπρςστυφχψω')
+-
+    - char: 𝜕𝜖𝜗𝜘𝜙𝜚𝜛
+    - u: "1D715 1D716 1D717 1D718 1D719 1D71A 1D71B"
+    - spell: translate('.', '𝜕𝜖𝜗𝜘𝜙𝜚𝜛', '∂εθκφρπ')
+-
+    - char: 𝜜-𝜴
+    - u: "1D71C-1D734"
+    - t: bold
+    - spell: translate('.', '𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜭𝜮𝜯𝜰𝜱𝜲𝜳𝜴',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+-
+    - char: 𝜵
+    - u: "1D735"
+    - t: bold italic nabla
+-
+    - char: 𝜶-𝝎
+    - u: "1D736-1D74E"
+    - t: bold
+    - spell: translate('.', '𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝇𝝈𝝉𝝊𝝋𝝌𝝍𝝎',
+        'αβγδεζηθικλμνξοπρςστυφχψω')
+-
+    - char: 𝝏𝝐𝝑𝝒𝝓𝝔𝝕
+    - u: "1D74F 1D750 1D751 1D752 1D753 1D754 1D755"
+    - t: bold
+    - spell: translate('.', '𝝏𝝐𝝑𝝒𝝓𝝔𝝕', '∂εθκφρπ')
+-
+    - char: 𝝖-𝝮
+    - u: "1D756-1D76E"
+    - t: bold
+    - spell: translate('.', '𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝧𝝨𝝩𝝪𝝫𝝬𝝭𝝮',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+-
+    - char: 𝝯
+    - u: "1D76F"
+    - t: bold nabla
+-
+    - char: 𝝰-𝞈
+    - u: "1D770-1D788"
+    - t: bold
+    - spell: translate('.', '𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞁𝞂𝞃𝞄𝞅𝞆𝞇𝞈',
+        'αβγδεζηθικλμνξοπρςστυφχψω')
+-
+    - char: 𝞉𝞊𝞋𝞌𝞍𝞎𝞏
+    - u: "1D789 1D78A 1D78B 1D78C 1D78D 1D78E 1D78F"
+    - t: bold
+    - spell: translate('.', '𝞉𝞊𝞋𝞌𝞍𝞎𝞏', '∂εθκφρπ')
+-
+    - char: 𝞐-𝞨
+    - u: "1D790-1D7A8"
+    - t: bold
+    - spell: translate('.', '𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞡𝞢𝞣𝞤𝞥𝞦𝞧𝞨',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+-
+    - char: 𝞩
+    - u: "1D7A9"
+    - t: bold nabla
+-
+    - char: 𝞪-𝟂
+    - u: "1D7AA-1D7C2"
+    - t: bold
+    - spell: translate('.', '𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞻𝞼𝞽𝞾𝞿𝟀𝟁𝟂',
+        'αβγδεζηθικλμνξοπρςστυφχψω')
+-
+    - char: 𝟃𝟄𝟅𝟆𝟇𝟈𝟉
+    - u: "1D7C3 1D7C4 1D7C5 1D7C6 1D7C7 1D7C8 1D7C9"
+    - t: bold
+    - spell: translate('.', '𝟃𝟄𝟅𝟆𝟇𝟈𝟉', '∂εθκφρπ')
+-
+    - char: 𝟎-𝟗
+    - u: "1D7CE-1D7D7"
+    - t: bold
+    - spell: translate('.', '𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗', '0123456789')
+-
+    - char: 𝟘-𝟡
+    - u: "1D7D8-1D7E1"
+    - test:
+        if: $Verbosity!='Terse'
+        then:
+          - t: double struck
+    - spell: translate('.', '𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡', '0123456789')
+-
+    - char: 𝟢-𝟫
+    - u: "1D7E2-1D7EB"
+    - spell: translate('.', '𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
+-
+    - char: 𝟬-𝟵
+    - u: "1D7EC-1D7F5"
+    - t: bold
+    - spell: translate('.', '𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵', '0123456789')
+-
+    - char: 𝟶-𝟿
+    - u: "1D7F6-1D7FF"
+    - spell: translate('.', '𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
