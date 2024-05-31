@@ -13,7 +13,8 @@ layout: default
 * [Intent Open Properties](intent-open-properties/)
 * [Intent Examples](intent-examples/)
 * [Unicode Speech Templates](unicode-speech/)
----
+
+----
 
 ## Working Group Notes
 
@@ -23,7 +24,8 @@ layout: default
 [MathML Media Types](mathml-media-types)
 
 [Maintaining MathML Concept Lists](concept-lists)
----
+
+----
 
 ## Other Documents
 
@@ -44,7 +46,7 @@ discussions. Some may be submitted later as W3C WG Notes or W3C Recommendations.
 
 [Intent: Suggestions for a Minimal Intent List](minimal-intent-core)
 
----
+----
 
 
 
