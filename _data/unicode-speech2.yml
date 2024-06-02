@@ -997,7 +997,7 @@
     - char: …
     - u: "2026"
     - choose:
-        - ellipsis-son-end: and so on up to
+        - ellipsis-so-on-end: and so on up to
         - ellipsis-so-on: and so on
 	- default: dot dot dot
 -
