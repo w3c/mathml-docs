@@ -34,7 +34,7 @@ hr.sp {height:.1em;padding:0;margin:0}
 {%- if f.choose -%}
 {%- for c in f.choose  -%}
 {%- unless forloop.first %}<br/>{% endunless%}
-{{c | replace: '{"', '<b>' | replace '"=>"', </b>: }}
+{{c | replace: '{"', '<b>' | replace '"=>"', '</b>: ' | replace '"}', ''}}
 {%- endfor -%}
 {%- endif -%}
 
