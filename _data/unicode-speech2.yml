@@ -798,16 +798,10 @@
     - u: "0410-042F"
     - choose:
         - capital-beep: beep
-    - test:
-        if: $CapitalLetters_UseWord
-        then_test:
-          if: $SpeechOverrides_CapitalLetters = ''
-          then_test:
-            if: $Impairment = 'Blindness'
-            then:
-              - t: cap
-          else:
-            - x: $SpeechOverrides_CapitalLetters
+	- default:
+    - choose:
+        - capital-prefix: cap
+	- default:
     - spell: translate('.', 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
 -
     - char: а
@@ -1004,28 +998,17 @@
 -
     - char: •
     - u: "2022"
-    - test:
-        if: "@data-chem-formula-op"
-        then:
-          - t: dot
-        else:
-          - t: bullet
+    - choose:
+        - bullet-dot: dot
+	- default: bullet
 -
     - char: …
     - u: "2026"
-    - test:
-      if:
-        - $SpeechStyle != 'ClearSpeak' or $ClearSpeak_Ellipses = 'Auto' or
-        - ../*[1][text()='…']
-      then:
-        - t: dot dot dot
-      else_test:
-        if: count(following-sibling::*) = 0
-        then:
-          - t: and so on
-        else:
-          - t: and so on up to
--
+    - choose:
+        - ellipsis-son-end: and so on up to
+        - ellipsis-so-on: and so on
+	- default: dot dot dot
+ -
     - char: ‰
     - u: "2030"
     - t: per mille
