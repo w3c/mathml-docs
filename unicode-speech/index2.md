@@ -42,6 +42,10 @@ hr.sp {height:.1em;padding:0;margin:0}
 <br/><b>map:</b> {{f.map}}
 {%- endif -%}
 
+{%- if f.t -%}
+{{f.t}}
+{%- endif -%}
+
 {%- endfor -%}
 </td>
 </tr>
