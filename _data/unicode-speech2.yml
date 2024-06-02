@@ -1000,7 +1000,7 @@
         - ellipsis-son-end: and so on up to
         - ellipsis-so-on: and so on
 	- default: dot dot dot
- -
+-
     - char: ‰
     - u: "2030"
     - t: per mille
