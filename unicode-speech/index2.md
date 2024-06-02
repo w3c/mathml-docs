@@ -23,7 +23,7 @@ hr.sp {height:.1em;padding:0;margin:0}
 
 <table style="width:100%">
 <tbody>
-{%- for u in site.data.unicode-speech -%}
+{%- for u in site.data.unicode-speech2 -%}
 <tr id="U{{u[1].u | replace: " ", "_"}}">
 <td><a class="self" href="#U{{u[1].u | replace: " ", "_"}}">{{u[1].u}}</a></td>
 <td>{{u[0].char}}</td>
