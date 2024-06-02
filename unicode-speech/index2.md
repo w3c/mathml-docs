@@ -32,6 +32,7 @@ hr.sp {height:.1em;padding:0;margin:0}
 {%- unless forloop.first %}<hr class="sp"/>{% endunless%}
 
 {%- if f.choose -%}
+<br/>aaa{{f.choose}}bbb<br/>
 {%- for c in f.choose  -%}
 {%- unless forloop.first %}<br/>{% endunless%}
 xxx{{c}}yyy
