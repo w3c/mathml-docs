@@ -45,7 +45,7 @@ hr.sp {height:.1em;padding:0;margin:0}
  <b>&#160;If</b> {{f.test.else_test.if}}<br/>
  <b>&#160;Then</b><br/>&#160;{{f.test.else_test.then[0].t}}<br/>
  <b>&#160;Else</b><br/>&#160;{{f.test.else_test.else[0].t}}<br/>
- <b>&#160;EndIf</b>
+ <b>&#160;EndIf</b><br/>
  {%- else -%}
  {{f.test.else_test}}<br/>
  {%- endif -%}
