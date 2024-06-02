@@ -706,19 +706,11 @@
 -
     - char: ΪΫϏ
     - u: "03AA 03AB 03CF"
-    - test:
     - choose:
         - capital-beep: beep
-    - test:
-        if: $CapitalLetters_UseWord
-        then_test:
-          if: $SpeechOverrides_CapitalLetters = ''
-          then_test:
-            if: $Impairment = 'Blindness'
-            then:
-              - t: cap
-          else:
-            - x: $SpeechOverrides_CapitalLetters
+    - choose:
+        - capital-prefix: cap
+	- default:
     - spell: translate('.', 'ΪΫϏ', 'ιυϗ')
     - t: with dialytika
 -
@@ -2389,105 +2381,38 @@
 -
     - char: ∈
     - u: "2208"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak'
-        then:
-          - t: an element of
-        else_test:
-          if: ../../self::m:set or ../../../self::m:set
-          then_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: in
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Member'
-              then:
-                - t: member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: element of
-            - else:
-                - t: belonging to
-          else_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol =
-                'Member'
-              then:
-                - t: is a member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: is an element of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: is in
-            - else:
-                - t: belongs to
+    - choose:
+        - element-member-verbose: is a member of
+        - element-member: member of
+        - element-belonging: belonging to
+        - element-belongs: belongs to
+	- element-in-verbose: is in
+	- element-in: in
+	- element-verbose: is an element of
+        - default: an element of
 -
     - char: ∉
     - u: "2209"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak'
-        then:
-          - t: is not an element of
-        else_test:
-          if: ../../self::m:set or ../../../self::m:set
-          then_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: not in
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Member'
-              then:
-                - t: not member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: not element of
-            - else:
-                - t: not belonging to
-          else_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol =
-                'Member'
-              then:
-                - t: is not a member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: is not an element of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: is not in
-            - else:
-                - t: does not belong to
--
+    - choose:
+        - element-member-verbose: is not a member of
+        - element-member: not member of
+        - element-belonging: not belonging to
+        - element-belongs: does not belong to
+	- element-in-verbose: is not in
+	- element-in: not in
+	- element-verbose: is not an element of
+        - default: not an element of
     - char: ∊
     - u: "220A"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak'
-        then:
-          - t: is an element of
-        else_test:
-          if: ../../self::m:set or ../../../self::m:set
-          then_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: in
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Member'
-              then:
-                - t: member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: element of
-            - else:
-                - t: belonging to
-          else_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol =
-                'Member'
-              then:
-                - t: is a member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: is an element of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: is in
-            - else:
-                - t: belongs to
+    - choose:
+        - element-member-verbose: is a member of
+        - element-member: member of
+        - element-belonging: belonging to
+        - element-belongs: belongs to
+	- element-in-verbose: is in
+	- element-in: in
+	- element-verbose: is an element of
+        - default: an element of
 -
     - char: ∋
     - u: "220B"
@@ -2547,12 +2472,10 @@
 -
     - char: ∙
     - u: "2219"
-    - test:
-        if: "@data-chem-formula-op"
-        then:
-          - t: dot
-        else:
-          - t: times
+    - choose:
+        - bullet-dot: dot
+        - bullet-times: times
+        - default: bullet
 -
     - char: √
     - u: "221A"
@@ -3410,12 +3333,10 @@
 -
     - char: ⋅
     - u: "22C5"
-    - test:
-        if: "@data-chem-formula-op"
-        then:
-          - t: dot
-        else:
-          - t: times
+    - choose:
+        - bullet-dot: dot
+        - bullet-times: times
+        - default: bullet
 -
     - char: ⋆
     - u: "22C6"
@@ -8817,19 +8738,11 @@
 -
     - char: ｜
     - u: "FF5C"
-    - test:
-        - if: $SpeechStyle != 'ClearSpeak' or not(preceding-sibling::*) or
-            not(following-sibling::*)
-          then:
-            - t: vertical line
-        - else_if: $ClearSpeak_VerticalLine = 'SuchThat'
-          then:
-            - t: such that
-        - else_if: $ClearSpeak_VerticalLine = 'Given'
-          then:
-            - t: given
-        - else:
-            - t: divides
+    - choose:
+        - vline-suchthat: such that
+        - vline-given: given
+        - vline-divides: divides
+        - default: vertical line
 -
     - char: ～
     - u: "FF5E"
