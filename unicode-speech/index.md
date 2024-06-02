@@ -41,16 +41,16 @@ hr.sp {height:.1em;padding:0;margin:0}
  {%- if f.test.else[0].t %} {{f.test.else[0].t}}{%- else -%} {{f.test.else}} {%- endif -%}<br/>
  {%- endif-%}
  {%- if f.test.else_test -%}<b>Else0</b><br/>
- {%- if f.test.else_test.if and f.test.else_test.then.t and f.test.else_test.else.t %-}
+ {%- if f.test.else_test.if and f.test.else_test.then[0].t and f.test.else_test.else[0].t %-}
  <b>If</b> {{f.test.else_test.if}}<br/>
- <b>Then</b><br/>{{f.test.else_test.then.t}}<br/>
- <b>Else1</b><br/>{{f.test.else_test.else.t}}<br/>
+ <b>Then</b><br/>{{f.test.else_test.then[0].t}}<br/>
+ <b>Else1</b><br/>{{f.test.else_test.else[0].t}}<br/>
  <b>EndIf</b>
  {%- else -%}
  {{f.test.else_test}}<br/>
  {%- endif -%}
  {%- endif-%}
- <b>EndIf</b>
+ <b>EndIf1</b>
 
  {%- else -%}
  {%- if f.test[0].if -%}
