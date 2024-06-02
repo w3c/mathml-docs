@@ -710,7 +710,7 @@
         - capital-beep: beep
     - choose:
         - capital-prefix: cap
-	- default:
+        - default:
     - map: ('ΪΫϏ', 'ιυϗ')
     - t: with dialytika
 -
@@ -790,10 +790,10 @@
     - u: "0410-042F"
     - choose:
         - capital-beep: beep
-	- default:
+        - default:
     - choose:
         - capital-prefix: cap
-	- default:
+        - default:
     - map: ('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
 -
     - char: а
@@ -992,14 +992,14 @@
     - u: "2022"
     - choose:
         - bullet-dot: dot
-	- default: bullet
+        - default: bullet
 -
     - char: …
     - u: "2026"
     - choose:
         - ellipsis-so-on-end: and so on up to
         - ellipsis-so-on: and so on
-	- default: dot dot dot
+        - default: dot dot dot
 -
     - char: ‰
     - u: "2030"
@@ -2386,9 +2386,9 @@
         - element-member: member of
         - element-belonging: belonging to
         - element-belongs: belongs to
-	- element-in-verbose: is in
-	- element-in: in
-	- element-verbose: is an element of
+        - element-in-verbose: is in
+        - element-in: in
+        - element-verbose: is an element of
         - default: an element of
 -
     - char: ∉
@@ -2398,9 +2398,9 @@
         - element-member: not member of
         - element-belonging: not belonging to
         - element-belongs: does not belong to
-	- element-in-verbose: is not in
-	- element-in: not in
-	- element-verbose: is not an element of
+        - element-in-verbose: is not in
+        - element-in: not in
+        - element-verbose: is not an element of
         - default: not an element of
     - char: ∊
     - u: "220A"
@@ -2409,9 +2409,9 @@
         - element-member: member of
         - element-belonging: belonging to
         - element-belongs: belongs to
-	- element-in-verbose: is in
-	- element-in: in
-	- element-verbose: is an element of
+        - element-in-verbose: is in
+        - element-in: in
+        - element-verbose: is an element of
         - default: an element of
 -
     - char: ∋
