@@ -710,7 +710,7 @@
         - capital-beep: beep
     - choose:
         - capital-prefix: cap
-        - default:
+        - default: ""
     - map: ('ΪΫϏ', 'ιυϗ')
     - t: with dialytika
 -
@@ -790,10 +790,10 @@
     - u: "0410-042F"
     - choose:
         - capital-beep: beep
-        - default:
+        - default: ""
     - choose:
         - capital-prefix: cap
-        - default:
+        - default: ""
     - map: ('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
 -
     - char: а
