@@ -32,7 +32,7 @@ span.n {font-size:80%;font-style: monospace}
 <td>{{u[0].char}}</td>
 <td>
 {%- for f in u offset:2  -%}
-{%- unless forloop.first %}<hr class="sp"/>{% endunless%}
+{%- unless forloop.first or u.n %}<hr class="sp"/>{% endunless%}
 
 {%- if f.choose -%}
 {%- for c in f.choose  -%}

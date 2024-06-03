@@ -1101,7 +1101,7 @@
     - char:  
     - u: "205F"
     - t: ""
-    - n: medium mathematical space"
+    - n: "medium mathematical space"
 -
     - char: ⁠
     - u: "2060"
