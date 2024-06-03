@@ -936,7 +936,7 @@
     - char:  - 
     - u: "2000-2007"
     - t: " "
-    - n: "<en quad>-<figure space>
+    - n: "<en quad>-<figure space>"
 "-
     - char:  
     - u: "2009"
