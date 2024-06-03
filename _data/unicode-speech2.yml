@@ -1548,8 +1548,7 @@
     - char: ℍℙℾℿ
     - u: "210D 2119 213E 213F"
     - choose:
-        - terse: ""
-        - default: double struck
+        - not-terse: double struck
     - map: ('ℍℙℾℿ', 'HPΓΠ')
 -
     - char: ℎ
@@ -2346,8 +2345,7 @@
     - char: ∁
     - u: "2201"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: complement of
 -
     - char: ∂
@@ -2371,15 +2369,13 @@
     - char: ∆
     - u: "2206"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: laplacian of
 -
     - char: ∇
     - u: "2207"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: gradient of
 -
     - char: ∈
@@ -2484,29 +2480,25 @@
     - char: √
     - u: "221A"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: square root of
 -
     - char: ∛
     - u: "221B"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: cube root of
 -
     - char: ∜
     - u: "221C"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: fourth root of
 -
     - char: ∝
     - u: "221D"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: proportional to
 -
     - char: ∞
@@ -2600,8 +2592,7 @@
     - char: ∶
     - u: "2236"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: to
 -
     - char: ∷
@@ -2619,15 +2610,13 @@
     - char: ∺
     - u: "223A"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: geometrically proportional to
 -
     - char: ∻
     - u: "223B"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: homothetic to
 -
     - char: ∼
@@ -2641,8 +2630,7 @@
     - char: ∾
     - u: "223E"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: most positive
 -
     - char: ∿
@@ -2664,57 +2652,49 @@
     - char: ≃
     - u: "2243"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: asymptotically equal to
 -
     - char: ≄
     - u: "2244"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not asymptotically equal to
 -
     - char: ≅
     - u: "2245"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: approximately equal to
 -
     - char: ≆
     - u: "2246"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: approximately but not actually equal to
 -
     - char: ≇
     - u: "2247"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither approximately nor actually equal to
 -
     - char: ≈
     - u: "2248"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: almost equal to
 -
     - char: ≉
     - u: "2249"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not almost equal to
 -
     - char: ≊
     - u: "224A"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: almost equal or equal to
 -
     - char: ≋
@@ -2728,22 +2708,19 @@
     - char: ≍
     - u: "224D"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equivalent to
 -
     - char: ≎
     - u: "224E"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: geometrically equivalent to
 -
     - char: ≏
     - u: "224F"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: difference between
 -
     - char: ≐
@@ -2753,22 +2730,19 @@
     - char: ≑
     - u: "2251"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: geometrically equal to
 -
     - char: ≒
     - u: "2252"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: approximately equal to or the image of
 -
     - char: ≓
     - u: "2253"
     - choose:
-        - terse: ""
-        - default: is the
+        - not-terse: is the
     - t: image of or approximately equal to
 -
     - char: ≔
@@ -2786,8 +2760,7 @@
     - char: ≗
     - u: "2257"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: approximately equal to
 -
     - char: ≘
@@ -2801,8 +2774,7 @@
     - char: ≚
     - u: "225A"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equiangular to
 -
     - char: ≛
@@ -2820,8 +2792,7 @@
     - char: ≞
     - u: "225E"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: measured by
 -
     - char: ≟
@@ -2831,29 +2802,25 @@
     - char: ≠
     - u: "2260"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not equal to
 -
     - char: ≡
     - u: "2261"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: identical to
 -
     - char: ≢
     - u: "2262"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not identical to
 -
     - char: ≣
     - u: "2263"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: strictly equivalent to
 -
     - char: ≦
@@ -2867,127 +2834,109 @@
     - char: ≨
     - u: "2268"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: less than but not equal to
 -
     - char: ≩
     - u: "2269"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: greater than but not equal to
 -
     - char: ≪
     - u: "226A"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: much less than
 -
     - char: ≫
     - u: "226B"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: much greater than
 -
     - char: ≬
     - u: "226C"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: between
 -
     - char: ≭
     - u: "226D"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not equivalent to
 -
     - char: ≮
     - u: "226E"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not less than
 -
     - char: ≯
     - u: "226F"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not greater than
 -
     - char: ≰
     - u: "2270"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither less than nor equal to
 -
     - char: ≱
     - u: "2271"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither greater than nor equal to
 -
     - char: ≲
     - u: "2272"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: less than or equivalent to
 -
     - char: ≳
     - u: "2273"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: greater than or equivalent to
 -
     - char: ≴
     - u: "2274"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither less than nor equivalent to
 -
     - char: ≵
     - u: "2275"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither greater than nor equivalent to
 -
     - char: ≶
     - u: "2276"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: less than or greater than
 -
     - char: ≷
     - u: "2277"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: greater than or less than
 -
     - char: ≸
     - u: "2278"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither less than nor greater than
 -
     - char: ≹
     - u: "2279"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither greater than nor less than
 -
     - char: ≺
@@ -3025,57 +2974,49 @@
     - char: ⊂
     - u: "2282"
     - choose:
-        - terse: ""
-        - default: is a
+        - not-terse: is a
     - t: subset of
 -
     - char: ⊃
     - u: "2283"
     - choose:
-        - terse: ""
-        - default: is a
+        - not-terse: is a
     - t: superset of
 -
     - char: ⊄
     - u: "2284"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not a subset of
 -
     - char: ⊅
     - u: "2285"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not a superset of
 -
     - char: ⊆
     - u: "2286"
     - choose:
-        - terse: ""
-        - default: is a
+        - not-terse: is a
     - t: subset of or equal to
 -
     - char: ⊇
     - u: "2287"
     - choose:
-        - terse: ""
-        - default: is a
+        - not-terse: is a
     - t: superset of or equal to
 -
     - char: ⊈
     - u: "2288"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither a subset of nor equal to
 -
     - char: ⊉
     - u: "2289"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: neither a superset of nor equal to
 -
     - char: ⊊
@@ -3189,8 +3130,7 @@
     - char: ⊥
     - u: "22A5"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: bottom
 -
     - char: ⊦
@@ -3204,8 +3144,7 @@
     - char: ⊨
     - u: "22A8"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: "true"
 -
     - char: ⊩
@@ -3227,8 +3166,7 @@
     - char: ⊭
     - u: "22AD"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not true
 -
     - char: ⊮
@@ -3250,8 +3188,7 @@
     - char: ⊲
     - u: "22B2"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: a normal subgroup of
 -
     - char: ⊳
@@ -3261,8 +3198,7 @@
     - char: ⊴
     - u: "22B4"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: a normal subgroup of or equal to
 -
     - char: ⊵
@@ -3272,15 +3208,13 @@
     - char: ⊶
     - u: "22B6"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: the original of
 -
     - char: ⊷
     - u: "22B7"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: an image of
 -
     - char: ⊸
@@ -3357,29 +3291,25 @@
     - char: ⋉
     - u: "22C9"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: the left normal factor semidirect product of
 -
     - char: ⋊
     - u: "22CA"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: the right normal factor semidirect product of
 -
     - char: ⋋
     - u: "22CB"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: the left semidirect product of
 -
     - char: ⋌
     - u: "22CC"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: the right semidirect product of
 -
     - char: ⋍
@@ -3397,43 +3327,37 @@
     - char: ⋐
     - u: "22D0"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: a double subset of
 -
     - char: ⋑
     - u: "22D1"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: a double superset of
 -
     - char: ⋒
     - u: "22D2"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: double intersection of
 -
     - char: ⋓
     - u: "22D3"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: double union of
 -
     - char: ⋔
     - u: "22D4"
     - choose:
-        - terse: ""
-        - default: the
+        - not-terse: the
     - t: proper intersection of
 -
     - char: ⋕
     - u: "22D5"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equal to and parallel to
 -
     - char: ⋖
@@ -3447,57 +3371,49 @@
     - char: ⋘
     - u: "22D8"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: very much less than
 -
     - char: ⋙
     - u: "22D9"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: very much greater than
 -
     - char: ⋚
     - u: "22DA"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: less than equal to or greater than
 -
     - char: ⋛
     - u: "22DB"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: greater than equal to or less than
 -
     - char: ⋜
     - u: "22DC"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equal to or less than
 -
     - char: ⋝
     - u: "22DD"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equal to or greater than
 -
     - char: ⋞
     - u: "22DE"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equal to or precedes
 -
     - char: ⋟
     - u: "22DF"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: equal to or succeeds
 -
     - char: ⋠
@@ -3527,15 +3443,13 @@
     - char: ⋦
     - u: "22E6"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: less than but not equivalent to
 -
     - char: ⋧
     - u: "22E7"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: greater than but not equivalent to
 -
     - char: ⋨
@@ -3549,8 +3463,7 @@
     - char: ⋪
     - u: "22EA"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not a normal subgroup of
 -
     - char: ⋫
@@ -3560,8 +3473,7 @@
     - char: ⋬
     - u: "22EC"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: not a normal subgroup of nor is equal to
 -
     - char: ⋭
@@ -5094,22 +5006,19 @@
     - char: ⟂
     - u: "27C2"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: perpendicular to
 -
     - char: ⟃
     - u: "27C3"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: an open subset of
 -
     - char: ⟄
     - u: "27C4"
     - choose:
-        - terse: ""
-        - default: is
+        - not-terse: is
     - t: an open superset of
 -
     - char: ⟅
@@ -8853,16 +8762,14 @@
     - char: 𝔸-𝕐
     - u: "1D538-1D550"
     - choose:
-        - terse: ""
-        - default: double struck
+        - not-terse: double struck
     - map: ('𝔸𝔹𝔺𝔻𝔼𝔽𝔾𝔿𝕀𝕁𝕂𝕃𝕄𝕅𝕆𝕇𝕈𝕉𝕊𝕋𝕌𝕍𝕎𝕏𝕐',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝕒-𝕫
     - u: "1D552-1D56B"
     - choose:
-        - terse: ""
-        - default: double struck
+        - not-terse: double struck
     - map: ('𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫',
         'abcdefghijklmnopqrstuvwxyz')
 -
@@ -9050,8 +8957,7 @@
     - char: 𝟘-𝟡
     - u: "1D7D8-1D7E1"
     - choose:
-        - terse: ""
-        - default: double struck
+        - not-terse: double struck
     - map: ('𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡', '0123456789')
 -
     - char: 𝟢-𝟫
