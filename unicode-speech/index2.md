@@ -9,6 +9,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
 hr.sp {height:.1em;padding:0;margin:0}
+span.n {font-size:80%;font-style: monospace}
 </style>
 
 
@@ -46,6 +47,11 @@ hr.sp {height:.1em;padding:0;margin:0}
 
 {%- if f.t -%}
 {{f.t}}
+{%- endif -%}
+
+
+{%- if f.n -%}
+<span class="n">&#160;{{f.n}}</span>
 {%- endif -%}
 
 {%- endfor -%}
