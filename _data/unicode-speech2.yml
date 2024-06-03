@@ -936,22 +936,22 @@
     - char:  - 
     - u: "2000-2007"
     - t: " "
-    - n: "<en quad>-<figure space>"
+    - n: "en quad-figure space"
 -
     - char:  
     - u: "2009"
     - t: ""
-    - n: "<thin space>"
+    - n: "thin space"
 -
     - char:  
     - u: "200A"
     - t: ""
-    - n: "<hair space>"
+    - n: "hair space"
 -
     - char: ​
     - u: "200B"
     - t: ""
-    - n: "<zero width space>"
+    - n: "zero width space"
 -
     - char: ‐
     - u: "2010"
@@ -1101,12 +1101,12 @@
     - char:  
     - u: "205F"
     - t: ""
-    - n: <medium mathematical space>"
+    - n: medium mathematical space"
 -
     - char: ⁠
     - u: "2060"
     - t: ""
-    - n: "<word joiner>"
+    - n: "word joiner"
 -
     - char: ⁰
     - u: "2070"

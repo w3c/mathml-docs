@@ -51,7 +51,7 @@ span.n {font-size:80%;font-style: monospace}
 
 
 {%- if f.n -%}
-<span class="n">&#160;{{f.n}}</span>
+<span class="n">&#160;&langle;{{f.n}}&rangle;</span>
 {%- endif -%}
 
 {%- endfor -%}
