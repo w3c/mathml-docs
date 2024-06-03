@@ -8730,9 +8730,9 @@
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝒶-𝓏
-    - u: "1D4B6-1D4CF"
+    - u: "1D4B6-1D4B9 212F 1D4BB 210A 1D4BD-1D4C3 2134 1D4C5-1D4CF"
     - t: script
-    - map: ('𝒶𝒷𝒸𝒹𝒺𝒻𝒼𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝓄𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏',
+    - map: ('𝒶𝒷𝒸𝒹ℯ𝒻ℊ𝒽𝒾𝒿𝓀𝓁𝓂𝓃ℴ𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝓐-𝓩
@@ -8748,9 +8748,9 @@
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝔄-𝔜
-    - u: "1D504-1D51C"
+    - u: "1D504-1D505 212D 1D507-1D50A 210C 2111 1D50D-1D514 211C 1D516-1D51C"
     - t: fraktur
-    - map: ('𝔄𝔅𝔆𝔇𝔈𝔉𝔊𝔋𝔌𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔𝔕𝔖𝔗𝔘𝔙𝔚𝔛𝔜',
+    - map: ('𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜',
         'ABCDEFGHIJKLMNOPQRSTUVWXY')
 -
     - char: 𝔞-𝔷
