@@ -23,6 +23,7 @@ hr.sp {height:.1em;padding:0;margin:0}
 
 <table style="width:100%">
 <tbody>
+{%- assign eobj = '"}' -%}
 {%- for u in site.data.unicode-speech2 -%}
 <tr id="U{{u[1].u | replace: " ", "_"}}">
 <td><a class="self" href="#U{{u[1].u | replace: " ", "_"}}">{{u[1].u}}</a></td>
@@ -34,7 +35,7 @@ hr.sp {height:.1em;padding:0;margin:0}
 {%- if f.choose -%}
 {%- for c in f.choose  -%}
 {%- unless forloop.first %}<br/>{% endunless%}
-{{c | remove: '}' | replace: '{"', '<b>' | replace: '"=>"', '</b>: '  }}
+{{c | replace: eobj, " " | replace: '{"', '<b>' | replace: '"=>"', '</b>: '  }}
 {%- endfor -%}
 {%- endif -%}
 
