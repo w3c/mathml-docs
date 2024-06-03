@@ -13,6 +13,7 @@ layout: default
 * [Intent Open Properties](intent-open-properties/)
 * [Intent Examples](intent-examples/)
 * [Unicode Speech Templates](unicode-speech/)
+* [Unicode Speech Templates (simplified conditions)](unicode-speech/index2)
 
 ----
 
