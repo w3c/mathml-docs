@@ -8760,11 +8760,11 @@
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝔸-𝕐
-    - u: "1D538-1D539 1D53B-1D53E 1D540-1D544 1D546 1D54A-1D550"
+    - u: "1D538-1D539 2102 1D53B-1D53E 210D 1D540-1D544 2115 1D546 2119-211A 211D 1D54A-1D550 2124"
     - choose:
         - not-terse: double struck
-    - map: ('𝔸𝔹𝔻𝔼𝔽𝔾𝕀𝕁𝕂𝕃𝕄𝕆𝕊𝕋𝕌𝕍𝕎𝕏𝕐',
-        'ABDEFGIJKLMOSTUVWXY')
+    - map: ('𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝕒-𝕫
     - u: "1D552-1D56B"
