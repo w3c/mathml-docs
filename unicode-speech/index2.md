@@ -41,7 +41,7 @@ hr.sp {height:.1em;padding:0;margin:0}
 {%- endif -%}
 
 {%- if f.map -%}
-<br/><b>map:</b> {{f.map}}
+<b>map:</b> {{f.map}}
 {%- endif -%}
 
 {%- if f.t -%}
