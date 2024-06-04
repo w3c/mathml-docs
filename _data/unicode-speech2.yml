@@ -1539,11 +1539,12 @@
     - char: ℊ
     - u: "210A"
     - t: script g
--
-    - char: ℌℑℨℭ
-    - u: "210C 2111 2128 212D"
-    - t: fraktur
-    - map: ('ℌℑℨℭ', 'HIZC')
+# Handled with full alphabet
+# -
+#     - char: ℌℑℨℭ
+#     - u: "210C 2111 2128 212D"
+#     - t: fraktur
+#     - map: ('ℌℑℨℭ', 'HIZC')
 # Handled with full alphabet
 # -
 #     - char: ℍℙℾℿ
