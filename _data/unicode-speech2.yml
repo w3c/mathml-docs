@@ -1571,10 +1571,6 @@
 #     - t: script
 #     - map: ('ℐℒ℘ℬℰℱℳ', 'ILPBEFM')
 -
-    - char: ℘
-    - u: "2118"
-    - t: Weierstrass p
--
     - char: ℓ
     - u: "2113"
     - t: script l
@@ -1586,6 +1582,10 @@
     - char: №
     - u: "2116"
     - t: number
+-
+    - char: ℘
+    - u: "2118"
+    - t: Weierstrass p
 -
     - char: ℥
     - u: "2125"
@@ -1619,26 +1619,6 @@
     - char: Ⅎ
     - u: "2132"
     - t: turned F
--
-    - char: ℺
-    - u: "213A"
-    - t: rotated Q
--
-    - char: ⅁
-    - u: "2141"
-    - t: turned sans-serif G
--
-    - char: ⅂
-    - u: "2142"
-    - t: turned sans-serif L
--
-    - char: ⅃
-    - u: "2143"
-    - t: reversed sans-serif L
--
-    - char: ⅄
-    - u: "2144"
-    - t: turned sans-serif Y
 # Handled with full alphabet
 # -
 #     - char: ℴ
@@ -1661,6 +1641,10 @@
     - u: "2138"
     - t: fourth transfinite cardinal
 -
+    - char: ℺
+    - u: "213A"
+    - t: rotated Q
+-
     - char: ℼ
     - u: "213C"
     - t: double struck pi
@@ -1672,6 +1656,22 @@
     - char: ⅀
     - u: "2140"
     - t: double struck n-ary summation
+-
+    - char: ⅁
+    - u: "2141"
+    - t: turned sans-serif G
+-
+    - char: ⅂
+    - u: "2142"
+    - t: turned sans-serif L
+-
+    - char: ⅃
+    - u: "2143"
+    - t: reversed sans-serif L
+-
+    - char: ⅄
+    - u: "2144"
+    - t: turned sans-serif Y
 -
     - char: ⅅ
     - u: "2145"
