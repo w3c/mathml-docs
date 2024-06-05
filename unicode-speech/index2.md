@@ -2,8 +2,17 @@
 title: Speech templates for Unicode Characters
 ---
 <style>
+/* https://github.com/stipub/stixfonts */
+@font-face {
+    font-family: STIX Two Math;
+    src: local('STIX Two Math'),
+	 local('STIXTwoMath-Regular'),
+         url('https://texlive.net/fonts/stix/STIXTwoMath-Regular.woff2');
+	 }
+@font-feature-values STIX Two Math { @styleset { roundhand: 1; } }
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
+.markdown-body table {font-family: "STIX Two Math", "Noto Sans";}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 a.link {font-weight:500}
