@@ -21,6 +21,16 @@ list.
 The list may also be used as a reference for the intended meaning of intent
 concept terms and so has many entries that do not require custom speech rules.
 
+Unless otherwise noted below, the argument order of the concepts
+follows the order used by the presentation MathML elements that are
+typically used represent the concept. For linear notations such as
+`plus`, this means the left-to-right order used in an mrow. For power,
+it means the order used in msup (base, exponent). And for `root`, it
+means the order used in mroot (radicand, index). Some concepts such as
+`binomial-coefficient` have multiple notations. Where the
+order might not be clear from the standard notation, the speech hint
+or comments should make clear what is the intended order of arguments.
+
 
 ----
 
