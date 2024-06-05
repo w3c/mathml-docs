@@ -8,7 +8,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
-hr.sp {height:.1em;padding:0;margin:0}
+hr.sp {height:.1em;max-width:6em;padding:0;margin:0}
 span.n {font-size:80%;font-style: monospace}
 </style>
 
