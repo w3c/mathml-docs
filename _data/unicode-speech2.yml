@@ -1535,10 +1535,11 @@
     - char: ℉
     - u: "2109"
     - t: degrees fahrenheit
--
-    - char: ℊ
-    - u: "210A"
-    - t: script g
+# Handled with full alphabet
+# -
+#    - char: ℊ
+#     - u: "210A"
+#     - t: script g
 # Handled with full alphabet
 # -
 #     - char: ℌℑℨℭ
@@ -1609,10 +1610,11 @@
     - char: Å
     - u: "212B"
     - t: angstroms
--
-    - char: ℯ
-    - u: "212F"
-    - t: script e
+# Handled with full alphabet
+# -
+#     - char: ℯ
+#     - u: "212F"
+#     - t: script e
 -
     - char: Ⅎ
     - u: "2132"
@@ -1637,10 +1639,11 @@
     - char: ⅄
     - u: "2144"
     - t: turned sans-serif Y
--
-    - char: ℴ
-    - u: "2134"
-    - t: script o
+# Handled with full alphabet
+# -
+#     - char: ℴ
+#     - u: "2134"
+#     - t: script o
 -
     - char: ℵ
     - u: "2135"
