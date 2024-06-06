@@ -64,7 +64,7 @@ Additional contributions are welcome:
  <input
 	onchange="updatelang(this)"
 	type="checkbox"
-	{% if lang == "en" or lang == "fr" %} checked {% endif %}
+	{% if lang == "en" or lang == "Xfr" %} checked {% endif %}
       id="cb-{{lang}}"
       name="language"
       value="{{lang}}" />
@@ -89,7 +89,6 @@ Additional contributions are welcome:
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
 <th>Comments</th>
-<th>notation</th>
 <th>Subject</th>
 <th>Sources</th>
 <th>Alias</th>
@@ -122,9 +121,8 @@ Additional contributions are welcome:
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">aa{{c.area}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">nn{{c.notation}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">uu1
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
@@ -149,7 +147,7 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">ll{{c.alias}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.alias}}</td>{%-endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
@@ -175,9 +173,8 @@ arXiv
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>
-<td>aaa{{c.area}}</td>
-<td>nn{{c.notation}}</td>
-<td>uu2
+<td>{{c.area}}</td>
+<td>
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
@@ -202,7 +199,7 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>
-<td>ll{{c.alias}}</td>
+<td>{{c.alias}}</td>
 </tr>
 {%- endif -%}
 {%- endfor -%}
