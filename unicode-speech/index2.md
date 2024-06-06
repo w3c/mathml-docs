@@ -15,7 +15,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table {font-family: "STIX Two Math", "Noto Sans";}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
-.markdown-body thead tr {font-weight: bold; background-color:#FEFFFE}
+.markdown-body thead tr {font-weight: bold; background-color:#F0F0F5}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
 hr.sp {height:.1em;max-width:6em;padding:0;margin:0}
