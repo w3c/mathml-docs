@@ -34,9 +34,9 @@ span.n {font-size:80%;font-style: monospace}
 <table style="width:100%">
 <thead>
 <tr>
-<td>Unicode</td><td>Character</td><td>Speech Template</d>
+<td>Unicode</td><td>Character</td><td>Speech Template</td>
 </tr>
-<tbody>
+</tbody>
 <tbody>
 {%- assign eobj = '"}' -%}
 {%- assign bobj = '{"' -%}
