@@ -1,4 +1,8 @@
 
+concepts:
+- title: Open Concepts
+  intents:
+  
 - concept: abelian-category
   arity: 0
   en: abelian-category
