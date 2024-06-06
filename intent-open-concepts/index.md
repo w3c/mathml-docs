@@ -115,9 +115,9 @@ Additional contributions are welcome:
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.notation}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">aa{{c.area}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">nn{{c.notation}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">uu
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
@@ -142,7 +142,7 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{{c.alias}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>ll{{c.alias}}</td>{%-endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
@@ -168,9 +168,9 @@ arXiv
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>
-<td>{{c.area}}</td>
-<td>{{c.notation}}</td>
-<td>
+<td>aaa{{c.area}}</td>
+<td>nn{{c.notation}}</td>
+<td>uu
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
@@ -195,7 +195,7 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>
-<td>{{c.alias}}</td>
+<td>ll{{c.alias}}</td>
 </tr>
 {%- endif -%}
 {%- endfor -%}
