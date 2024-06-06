@@ -10,6 +10,14 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 </style>
 
+<style id="langcss">
+{% for language in site.data.languages offset:2-%}
+  {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
+{%- endfor -%}
+ {display:none}
+</style>
+
+
 # Open Concept List
  
 This open list sketch has been extracted from the google spreadsheet
@@ -65,7 +73,6 @@ Additional contributions are welcome:
 {% endfor %}
 </p>
 </details>
-
 
 {%- for section in site.data.open.concepts -%}
 
