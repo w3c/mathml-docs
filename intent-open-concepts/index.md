@@ -116,8 +116,8 @@ Additional contributions are welcome:
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{{c.notation}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.notation}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
