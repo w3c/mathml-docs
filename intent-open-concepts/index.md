@@ -124,7 +124,7 @@ Additional contributions are welcome:
 {% endfor %}</td>{%- endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">aa{{c.area}}</td>{%-endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">nn{{c.notation}}</td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">uu
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">uu1
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
@@ -177,7 +177,7 @@ arXiv
 {% endfor %}</td>
 <td>aaa{{c.area}}</td>
 <td>nn{{c.notation}}</td>
-<td>uu
+<td>uu2
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
