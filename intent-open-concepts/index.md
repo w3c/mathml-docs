@@ -82,6 +82,7 @@ Additional contributions are welcome:
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
 <th>Comments</th>
+<th>notation</th>
 <th>Subject</th>
 <th>Sources</th>
 <th>Alias</th>
@@ -114,9 +115,9 @@ Additional contributions are welcome:
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
-<td>{{c.area}}</td>
-<td>{{c.notation}}</td>
-<td>
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{{c.notation}}</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{%-endif -%}
 {%- if c.urls -%}
 {% for u in c.urls %}
 <a href="{{u}}">
@@ -140,8 +141,8 @@ arXiv
 </a><br/>
 {% endfor %}
 {%-endif -%}
-</td>
-<td>{{c.alias}}</td>
+</td>{%-endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{{c.alias}}</td>
 </tr>
 {%- endfor -%}
 {%- else -%}
