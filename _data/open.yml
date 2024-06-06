@@ -59,7 +59,7 @@ concepts:
     
     - concept: ad
       arity: 1
-      en: ad of $1
+      en: $1 a d
       property: postfix
       area: "calendar units"
       notation: "mi AD"
@@ -597,7 +597,7 @@ concepts:
     
     - concept: bc
       arity: 1
-      en: bc of $1
+      en: $1 b c
       property: postfix
       area: "calendar units"
       notation: "mi BC"
@@ -1918,7 +1918,7 @@ concepts:
     
     - concept: converge
       arity: 1
-      en: converge of $1
+      en: $1 converges
       property: postfix
       area: "computer science"
       notation: "mo ↓"
@@ -2781,7 +2781,7 @@ concepts:
     
     - concept: diverge
       arity: 1
-      en: diverge of $1
+      en: $1 diverges
       property: postfix
       area: "computer science"
       notation: "mo ↑"
