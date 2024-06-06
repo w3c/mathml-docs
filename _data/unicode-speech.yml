@@ -50,12 +50,9 @@
 -
     - char: ¯
     - u: "00AF"
-    - test:
-        if: ancestor::m:modified-variable and preceding-sibling::*[1][self::m:mi]
-        then:
-          - t: bar
-        else:
-          - t: line
+    - choose:
+        - modified-variable: bar
+        - default: line
 -
     - char: ²
     - u: "00B2"
@@ -79,12 +76,9 @@
 -
     - char: ·
     - u: "00B7"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak' or $ClearSpeak_MultSymbolDot = 'Auto'
-        then:
-          - t: times
-        else:
-          - t: dot
+    - choose:
+        - dot-times: times
+        - default: dot
 -
     - char: ¹
     - u: "00B9"
@@ -112,16 +106,10 @@
 -
     - char: ×
     - u: "00D7"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak' or $ClearSpeak_MultSymbolX = 'Auto'
-        then:
-          - t: times
-        else_test:
-          if: $ClearSpeak_MultSymbolX = 'By'
-          then:
-            - t: by
-          else:
-            - t: cross
+    - choose:
+        - times-by: by
+        - times-cross: cross
+        - default: times
 -
     - char: ÷
     - u: "00F7"
@@ -718,23 +706,11 @@
 -
     - char: ΪΫϏ
     - u: "03AA 03AB 03CF"
-    - test:
-        if: $CapitalLetters_Beep
-        then:
-          - audio:
-              value: beep.mp4
-              replace: []
-    - test:
-        if: $CapitalLetters_UseWord
-        then_test:
-          if: $SpeechOverrides_CapitalLetters = ''
-          then_test:
-            if: $Impairment = 'Blindness'
-            then:
-              - t: cap
-          else:
-            - x: $SpeechOverrides_CapitalLetters
-    - spell: translate('.', 'ΪΫϏ', 'ιυϗ')
+    - choose:
+        - capital-beep: beep
+    - choose:
+        - capital-prefix: cap
+    - map: ('ΪΫϏ', 'ιυϗ')
     - t: with dialytika
 -
     - char: ϊ
@@ -811,23 +787,11 @@
 -
     - char: А-Я
     - u: "0410-042F"
-    - test:
-        if: $CapitalLetters_Beep
-        then:
-          - audio:
-              value: beep.mp4
-              replace: []
-    - test:
-        if: $CapitalLetters_UseWord
-        then_test:
-          if: $SpeechOverrides_CapitalLetters = ''
-          then_test:
-            if: $Impairment = 'Blindness'
-            then:
-              - t: cap
-          else:
-            - x: $SpeechOverrides_CapitalLetters
-    - spell: translate('.', 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
+    - choose:
+        - capital-beep: beep
+    - choose:
+        - capital-prefix: cap
+    - map: ('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
 -
     - char: а
     - u: "0430"
@@ -972,18 +936,22 @@
     - char:  - 
     - u: "2000-2007"
     - t: " "
+    - n: "en quad-figure space"
 -
     - char:  
     - u: "2009"
     - t: ""
+    - n: "thin space"
 -
     - char:  
     - u: "200A"
     - t: ""
+    - n: "hair space"
 -
     - char: ​
     - u: "200B"
     - t: ""
+    - n: "zero width space"
 -
     - char: ‐
     - u: "2010"
@@ -1023,27 +991,16 @@
 -
     - char: •
     - u: "2022"
-    - test:
-        if: "@data-chem-formula-op"
-        then:
-          - t: dot
-        else:
-          - t: bullet
+    - choose:
+        - bullet-dot: dot
+        - default: bullet
 -
     - char: …
     - u: "2026"
-    - test:
-      if:
-        - $SpeechStyle != 'ClearSpeak' or $ClearSpeak_Ellipses = 'Auto' or
-        - ../*[1][text()='…']
-      then:
-        - t: dot dot dot
-      else_test:
-        if: count(following-sibling::*) = 0
-        then:
-          - t: and so on
-        else:
-          - t: and so on up to
+    - choose:
+        - ellipsis-so-on-end: and so on up to
+        - ellipsis-so-on: and so on
+        - default: dot dot dot
 -
     - char: ‰
     - u: "2030"
@@ -1144,10 +1101,12 @@
     - char:  
     - u: "205F"
     - t: ""
+    - n: "medium mathematical space"
 -
     - char: ⁠
     - u: "2060"
     - t: ""
+    - n: "word joiner"
 -
     - char: ⁰
     - u: "2070"
@@ -1576,41 +1535,41 @@
     - char: ℉
     - u: "2109"
     - t: degrees fahrenheit
--
-    - char: ℊ
-    - u: "210A"
-    - t: script g
--
-    - char: ℌℑℨℭ
-    - u: "210C 2111 2128 212D"
-    - t: fraktur
-    - spell: translate('.', 'ℌℑℨℭ', 'HIZC')
--
-    - char: ℍℙℾℿ
-    - u: "210D 2119 213E 213F"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', 'ℍℙℾℿ', 'HPΓΠ')
--
-    - char: ℎ
-    - u: "210E"
-    - t: planck constant
+# Handled with full alphabet
+# -
+#    - char: ℊ
+#     - u: "210A"
+#     - t: script g
+# Handled with full alphabet
+# -
+#     - char: ℌℑℨℭ
+#     - u: "210C 2111 2128 212D"
+#     - t: fraktur
+#     - map: ('ℌℑℨℭ', 'HIZC')
+# Handled with full alphabet
+# -
+#     - char: ℍℙℾℿ
+#     - u: "210D 2119 213E 213F"
+#     - choose:
+#         - not-terse: double struck
+#     - map: ('ℍℙℾℿ', 'HPΓΠ')
+# Normal math italic h
+# -
+#     - char: ℎ
+#     - u: "210E"
+#     - t: planck constant
 -
     - char: ℏ
     - u: "210F"
-    - test:
-        if: ($Verbosity='Terse')
-        then:
-          - t: h bar
-        else:
-          - t: reduced planck constant
--
-    - char: ℐℒ℘ℬℰℱℳ
-    - u: "2110 2112 2118 212C 2130 2131 2133"
-    - t: script
-    - spell: translate('.', 'ℐℒ℘ℬℰℱℳ', 'ILPBEFM')
+    - choose:
+        - terse: h bar
+        - default: reduced planck constant
+# just Weierstrass, others handled with alphabet
+# -
+#     - char: ℐℒ℘ℬℰℱℳ
+#     - u: "2110 2112 2118 212C 2130 2131 2133"
+#     - t: script
+#     - map: ('ℐℒ℘ℬℰℱℳ', 'ILPBEFM')
 -
     - char: ℓ
     - u: "2113"
@@ -1623,6 +1582,10 @@
     - char: №
     - u: "2116"
     - t: number
+-
+    - char: ℘
+    - u: "2118"
+    - t: Weierstrass p
 -
     - char: ℥
     - u: "2125"
@@ -1647,30 +1610,20 @@
     - char: Å
     - u: "212B"
     - t: angstroms
+# Handled with full alphabet
+# -
+#     - char: ℯ
+#     - u: "212F"
+#     - t: script e
 -
-    - char: ℯ
-    - u: "212F"
-    - t: script e
--
-    - char: Ⅎ℺⅁⅂⅃⅄
-    - u: "2132 213A 2141 2142 2143 2144"
-    - test:
-        - if: "'.' = '℺'"
-          then:
-            - t: rotated
-        - else_if: "'.' = 'Ⅎ'"
-          then:
-            - t: turned
-        - else_if: "'.' = '⅃'"
-          then:
-            - t: reversed sans-serif
-          else:
-            - t: turned sans-serif
-    - spell: translate('.', 'Ⅎ℺⅁⅂⅃⅄', 'FQGLLY')
--
-    - char: ℴ
-    - u: "2134"
-    - t: script o
+    - char: Ⅎ
+    - u: "2132"
+    - t: turned F
+# Handled with full alphabet
+# -
+#     - char: ℴ
+#     - u: "2134"
+#     - t: script o
 -
     - char: ℵ
     - u: "2135"
@@ -1688,6 +1641,10 @@
     - u: "2138"
     - t: fourth transfinite cardinal
 -
+    - char: ℺
+    - u: "213A"
+    - t: rotated Q
+-
     - char: ℼ
     - u: "213C"
     - t: double struck pi
@@ -1699,6 +1656,22 @@
     - char: ⅀
     - u: "2140"
     - t: double struck n-ary summation
+-
+    - char: ⅁
+    - u: "2141"
+    - t: turned sans-serif G
+-
+    - char: ⅂
+    - u: "2142"
+    - t: turned sans-serif L
+-
+    - char: ⅃
+    - u: "2143"
+    - t: reversed sans-serif L
+-
+    - char: ⅄
+    - u: "2144"
+    - t: turned sans-serif Y
 -
     - char: ⅅ
     - u: "2145"
@@ -1954,21 +1927,15 @@
 -
     - char: ↗
     - u: "2197"
-    - test:
-        if: ancestor::*[2][self::m:limit]
-        then:
-          - t: approaches from below
-        else:
-          - t: north east arrow
+    - choose:
+        - limit: approaches from below
+        - default: north east arrow
 -
     - char: ↘
     - u: "2198"
-    - test:
-        if: ancestor::*[2][self::m:limit]
-        then:
-          - t: approaches from above
-        else:
-          - t: south east arrow
+    - choose:
+        - limit: approaches from above
+        - default: south east arrow
 -
     - char: ↙
     - u: "2199"
@@ -2388,20 +2355,15 @@
 -
     - char: ∁
     - u: "2201"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: complement of
 -
     - char: ∂
     - u: "2202"
-    - test:
-        if: $Verbosity='Terse'
-        then:
-          - t: partial
-        else:
-          - t: partial derivative
+    - choose:
+        - terse: partial
+        - default: partial derivative
 -
     - char: ∃
     - u: "2203"
@@ -2417,121 +2379,51 @@
 -
     - char: ∆
     - u: "2206"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: laplacian of
 -
     - char: ∇
     - u: "2207"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: gradient of
 -
     - char: ∈
     - u: "2208"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak'
-        then:
-          - t: an element of
-        else_test:
-          if: ../../self::m:set or ../../../self::m:set
-          then_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: in
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Member'
-              then:
-                - t: member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: element of
-            - else:
-                - t: belonging to
-          else_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol =
-                'Member'
-              then:
-                - t: is a member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: is an element of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: is in
-            - else:
-                - t: belongs to
+    - choose:
+        - element-member-verbose: is a member of
+        - element-member: member of
+        - element-belonging: belonging to
+        - element-belongs: belongs to
+        - element-in-verbose: is in
+        - element-in: in
+        - element-verbose: is an element of
+        - default: an element of
 -
     - char: ∉
     - u: "2209"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak'
-        then:
-          - t: is not an element of
-        else_test:
-          if: ../../self::m:set or ../../../self::m:set
-          then_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: not in
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Member'
-              then:
-                - t: not member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: not element of
-            - else:
-                - t: not belonging to
-          else_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol =
-                'Member'
-              then:
-                - t: is not a member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: is not an element of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: is not in
-            - else:
-                - t: does not belong to
+    - choose:
+        - element-member-verbose: is not a member of
+        - element-member: not member of
+        - element-belonging: not belonging to
+        - element-belongs: does not belong to
+        - element-in-verbose: is not in
+        - element-in: not in
+        - element-verbose: is not an element of
+        - default: not an element of
 -
     - char: ∊
     - u: "220A"
-    - test:
-        if: $SpeechStyle != 'ClearSpeak'
-        then:
-          - t: is an element of
-        else_test:
-          if: ../../self::m:set or ../../../self::m:set
-          then_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: in
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Member'
-              then:
-                - t: member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: element of
-            - else:
-                - t: belonging to
-          else_test:
-            - if: $ClearSpeak_SetMemberSymbol = 'Auto' or $ClearSpeak_SetMemberSymbol =
-                'Member'
-              then:
-                - t: is a member of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'Element'
-              then:
-                - t: is an element of
-            - else_if: $ClearSpeak_SetMemberSymbol = 'In'
-              then:
-                - t: is in
-            - else:
-                - t: belongs to
+    - choose:
+        - element-member-verbose: is a member of
+        - element-member: member of
+        - element-belonging: belonging to
+        - element-belongs: belongs to
+        - element-in-verbose: is in
+        - element-in: in
+        - element-verbose: is an element of
+        - default: an element of
 -
     - char: ∋
     - u: "220B"
@@ -2591,43 +2483,33 @@
 -
     - char: ∙
     - u: "2219"
-    - test:
-        if: "@data-chem-formula-op"
-        then:
-          - t: dot
-        else:
-          - t: times
+    - choose:
+        - bullet-dot: dot
+        - bullet-times: times
+        - default: bullet
 -
     - char: √
     - u: "221A"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: square root of
 -
     - char: ∛
     - u: "221B"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: cube root of
 -
     - char: ∜
     - u: "221C"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: fourth root of
 -
     - char: ∝
     - u: "221D"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: proportional to
 -
     - char: ∞
@@ -2720,10 +2602,8 @@
 -
     - char: ∶
     - u: "2236"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: to
 -
     - char: ∷
@@ -2740,18 +2620,14 @@
 -
     - char: ∺
     - u: "223A"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: geometrically proportional to
 -
     - char: ∻
     - u: "223B"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: homothetic to
 -
     - char: ∼
@@ -2764,10 +2640,8 @@
 -
     - char: ∾
     - u: "223E"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: most positive
 -
     - char: ∿
@@ -2788,66 +2662,50 @@
 -
     - char: ≃
     - u: "2243"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: asymptotically equal to
 -
     - char: ≄
     - u: "2244"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not asymptotically equal to
 -
     - char: ≅
     - u: "2245"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: approximately equal to
 -
     - char: ≆
     - u: "2246"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: approximately but not actually equal to
 -
     - char: ≇
     - u: "2247"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither approximately nor actually equal to
 -
     - char: ≈
     - u: "2248"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: almost equal to
 -
     - char: ≉
     - u: "2249"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not almost equal to
 -
     - char: ≊
     - u: "224A"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: almost equal or equal to
 -
     - char: ≋
@@ -2860,26 +2718,20 @@
 -
     - char: ≍
     - u: "224D"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equivalent to
 -
     - char: ≎
     - u: "224E"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: geometrically equivalent to
 -
     - char: ≏
     - u: "224F"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: difference between
 -
     - char: ≐
@@ -2888,26 +2740,20 @@
 -
     - char: ≑
     - u: "2251"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: geometrically equal to
 -
     - char: ≒
     - u: "2252"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: approximately equal to or the image of
 -
     - char: ≓
     - u: "2253"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is the
+    - choose:
+        - not-terse: is the
     - t: image of or approximately equal to
 -
     - char: ≔
@@ -2924,10 +2770,8 @@
 -
     - char: ≗
     - u: "2257"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: approximately equal to
 -
     - char: ≘
@@ -2940,10 +2784,8 @@
 -
     - char: ≚
     - u: "225A"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equiangular to
 -
     - char: ≛
@@ -2960,10 +2802,8 @@
 -
     - char: ≞
     - u: "225E"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: measured by
 -
     - char: ≟
@@ -2972,34 +2812,26 @@
 -
     - char: ≠
     - u: "2260"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not equal to
 -
     - char: ≡
     - u: "2261"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: identical to
 -
     - char: ≢
     - u: "2262"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not identical to
 -
     - char: ≣
     - u: "2263"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: strictly equivalent to
 -
     - char: ≦
@@ -3012,146 +2844,110 @@
 -
     - char: ≨
     - u: "2268"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: less than but not equal to
 -
     - char: ≩
     - u: "2269"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: greater than but not equal to
 -
     - char: ≪
     - u: "226A"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: much less than
 -
     - char: ≫
     - u: "226B"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: much greater than
 -
     - char: ≬
     - u: "226C"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: between
 -
     - char: ≭
     - u: "226D"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not equivalent to
 -
     - char: ≮
     - u: "226E"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not less than
 -
     - char: ≯
     - u: "226F"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not greater than
 -
     - char: ≰
     - u: "2270"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither less than nor equal to
 -
     - char: ≱
     - u: "2271"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither greater than nor equal to
 -
     - char: ≲
     - u: "2272"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: less than or equivalent to
 -
     - char: ≳
     - u: "2273"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: greater than or equivalent to
 -
     - char: ≴
     - u: "2274"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither less than nor equivalent to
 -
     - char: ≵
     - u: "2275"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither greater than nor equivalent to
 -
     - char: ≶
     - u: "2276"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: less than or greater than
 -
     - char: ≷
     - u: "2277"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: greater than or less than
 -
     - char: ≸
     - u: "2278"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither less than nor greater than
 -
     - char: ≹
     - u: "2279"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither greater than nor less than
 -
     - char: ≺
@@ -3188,66 +2984,50 @@
 -
     - char: ⊂
     - u: "2282"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is a
+    - choose:
+        - not-terse: is a
     - t: subset of
 -
     - char: ⊃
     - u: "2283"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is a
+    - choose:
+        - not-terse: is a
     - t: superset of
 -
     - char: ⊄
     - u: "2284"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not a subset of
 -
     - char: ⊅
     - u: "2285"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not a superset of
 -
     - char: ⊆
     - u: "2286"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is a
+    - choose:
+        - not-terse: is a
     - t: subset of or equal to
 -
     - char: ⊇
     - u: "2287"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is a
+    - choose:
+        - not-terse: is a
     - t: superset of or equal to
 -
     - char: ⊈
     - u: "2288"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither a subset of nor equal to
 -
     - char: ⊉
     - u: "2289"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: neither a superset of nor equal to
 -
     - char: ⊊
@@ -3360,10 +3140,8 @@
 -
     - char: ⊥
     - u: "22A5"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: bottom
 -
     - char: ⊦
@@ -3376,10 +3154,8 @@
 -
     - char: ⊨
     - u: "22A8"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: "true"
 -
     - char: ⊩
@@ -3400,10 +3176,8 @@
 -
     - char: ⊭
     - u: "22AD"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not true
 -
     - char: ⊮
@@ -3424,10 +3198,8 @@
 -
     - char: ⊲
     - u: "22B2"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: a normal subgroup of
 -
     - char: ⊳
@@ -3436,10 +3208,8 @@
 -
     - char: ⊴
     - u: "22B4"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: a normal subgroup of or equal to
 -
     - char: ⊵
@@ -3448,18 +3218,14 @@
 -
     - char: ⊶
     - u: "22B6"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: the original of
 -
     - char: ⊷
     - u: "22B7"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: an image of
 -
     - char: ⊸
@@ -3516,12 +3282,10 @@
 -
     - char: ⋅
     - u: "22C5"
-    - test:
-        if: "@data-chem-formula-op"
-        then:
-          - t: dot
-        else:
-          - t: times
+    - choose:
+        - bullet-dot: dot
+        - bullet-times: times
+        - default: bullet
 -
     - char: ⋆
     - u: "22C6"
@@ -3537,34 +3301,26 @@
 -
     - char: ⋉
     - u: "22C9"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: the left normal factor semidirect product of
 -
     - char: ⋊
     - u: "22CA"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: the right normal factor semidirect product of
 -
     - char: ⋋
     - u: "22CB"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: the left semidirect product of
 -
     - char: ⋌
     - u: "22CC"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: the right semidirect product of
 -
     - char: ⋍
@@ -3581,50 +3337,38 @@
 -
     - char: ⋐
     - u: "22D0"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: a double subset of
 -
     - char: ⋑
     - u: "22D1"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: a double superset of
 -
     - char: ⋒
     - u: "22D2"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: double intersection of
 -
     - char: ⋓
     - u: "22D3"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: double union of
 -
     - char: ⋔
     - u: "22D4"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: the
+    - choose:
+        - not-terse: the
     - t: proper intersection of
 -
     - char: ⋕
     - u: "22D5"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equal to and parallel to
 -
     - char: ⋖
@@ -3637,66 +3381,50 @@
 -
     - char: ⋘
     - u: "22D8"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: very much less than
 -
     - char: ⋙
     - u: "22D9"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: very much greater than
 -
     - char: ⋚
     - u: "22DA"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: less than equal to or greater than
 -
     - char: ⋛
     - u: "22DB"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: greater than equal to or less than
 -
     - char: ⋜
     - u: "22DC"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equal to or less than
 -
     - char: ⋝
     - u: "22DD"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equal to or greater than
 -
     - char: ⋞
     - u: "22DE"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equal to or precedes
 -
     - char: ⋟
     - u: "22DF"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: equal to or succeeds
 -
     - char: ⋠
@@ -3725,18 +3453,14 @@
 -
     - char: ⋦
     - u: "22E6"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: less than but not equivalent to
 -
     - char: ⋧
     - u: "22E7"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: greater than but not equivalent to
 -
     - char: ⋨
@@ -3749,10 +3473,8 @@
 -
     - char: ⋪
     - u: "22EA"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not a normal subgroup of
 -
     - char: ⋫
@@ -3761,10 +3483,8 @@
 -
     - char: ⋬
     - u: "22EC"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: not a normal subgroup of nor is equal to
 -
     - char: ⋭
@@ -4151,7 +3871,7 @@
     - char: ①-⑨
     - u: "2460-2468"
     - t: circled
-    - spell: translate('.', '①②③④⑤⑥⑦⑧⑨', '123456789')
+    - map: ('①②③④⑤⑥⑦⑧⑨', '123456789')
 -
     - char: ⑩
     - u: "2469"
@@ -4196,7 +3916,7 @@
     - char: ⑴-⑼
     - u: "2474-247C"
     - t: parenthesized
-    - spell: translate('.', '⑴⑵⑶⑷⑸⑹⑺⑻⑼', '123456789')
+    - map: ('⑴⑵⑶⑷⑸⑹⑺⑻⑼', '123456789')
 -
     - char: ⑽
     - u: "247D"
@@ -4244,7 +3964,7 @@
 -
     - char: ⒈-⒐
     - u: "2488-2490"
-    - spell: translate('.', '⒈⒉⒊⒋⒌⒍⒎⒏⒐', '123456789')
+    - map: ('⒈⒉⒊⒋⒌⒍⒎⒏⒐', '123456789')
     - t: with period
 -
     - char: ⒑
@@ -4294,19 +4014,19 @@
     - char: ⒜-⒵
     - u: "249C-24B5"
     - t: parenthesized
-    - spell: translate('.', '⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵',
+    - map: ('⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: Ⓐ-ⓩ
     - u: "24B6-24E9"
     - t: circled
-    - spell: translate('.', 'ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ',
+    - map: ('ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: ⓐ-ⓩ
     - u: "24D0-24E9"
     - t: circled
-    - spell: translate('.', 'ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ',
+    - map: ('ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: ⓪
@@ -4356,7 +4076,7 @@
     - char: ⓵-⓽
     - u: "24F5-24FD"
     - t: double circled
-    - spell: translate('.', '⓵⓶⓷⓸⓹⓺⓻⓼⓽', '123456789')
+    - map: ('⓵⓶⓷⓸⓹⓺⓻⓼⓽', '123456789')
 -
     - char: ⓾
     - u: "24FE"
@@ -5296,26 +5016,20 @@
 -
     - char: ⟂
     - u: "27C2"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: perpendicular to
 -
     - char: ⟃
     - u: "27C3"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: an open subset of
 -
     - char: ⟄
     - u: "27C4"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: is
+    - choose:
+        - not-terse: is
     - t: an open superset of
 -
     - char: ⟅
@@ -8948,19 +8662,11 @@
 -
     - char: ｜
     - u: "FF5C"
-    - test:
-        - if: $SpeechStyle != 'ClearSpeak' or not(preceding-sibling::*) or
-            not(following-sibling::*)
-          then:
-            - t: vertical line
-        - else_if: $ClearSpeak_VerticalLine = 'SuchThat'
-          then:
-            - t: such that
-        - else_if: $ClearSpeak_VerticalLine = 'Given'
-          then:
-            - t: given
-        - else:
-            - t: divides
+    - choose:
+        - vline-suchthat: such that
+        - vline-given: given
+        - vline-divides: divides
+        - default: vertical line
 -
     - char: ～
     - u: "FF5E"
@@ -8997,155 +8703,151 @@
     - char: 𝐀-𝐙
     - u: "1D400-1D419"
     - t: bold
-    - spell: translate('.', '𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙',
+    - map: ('𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝐚-𝐳
     - u: "1D41A-1D433"
     - t: bold
-    - spell: translate('.', '𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳',
+    - map: ('𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝐴-𝑍
     - u: "1D434-1D44D"
-    - spell: translate('.', '𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍',
+    - map: ('𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝑎-𝑧
-    - u: "1D44E-1D467"
-    - spell: translate('.', '𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝑕𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧',
+    - u: "1D44E-1D454 210E 1D456-1D467"
+    - map: ('𝑎𝑏𝑐𝑑𝑒𝑓𝑔ℎ𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝑨-𝒁
     - u: "1D468-1D481"
     - t: bold
-    - spell: translate('.', '𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁',
+    - map: ('𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝒂-𝒛
     - u: "1D482-1D49B"
     - t: bold
-    - spell: translate('.', '𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛',
+    - map: ('𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝒜-𝒵
-    - u: "1D49C-1D4B5"
+    - u: "1D49C 212C 1D49E-1D49F 2130-2131 1D4A2 210B-2110 1D4A5-1D4A6 2112 2133 1D4A9-1D4AC 211B 1D4AE-1D4B5"
     - t: script
-    - spell: translate('.', '𝒜𝒝𝒞𝒟𝒠𝒡𝒢𝒣𝒤𝒥𝒦𝒧𝒨𝒩𝒪𝒫𝒬𝒭𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵',
+    - map: ('𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝒶-𝓏
-    - u: "1D4B6-1D4CF"
+    - u: "1D4B6-1D4B9 212F 1D4BB 210A 1D4BD-1D4C3 2134 1D4C5-1D4CF"
     - t: script
-    - spell: translate('.', '𝒶𝒷𝒸𝒹𝒺𝒻𝒼𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝓄𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏',
+    - map: ('𝒶𝒷𝒸𝒹ℯ𝒻ℊ𝒽𝒾𝒿𝓀𝓁𝓂𝓃ℴ𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝓐-𝓩
     - u: "1D4D0-1D4E9"
     - t: script bold
-    - spell: translate('.', '𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩',
+    - map: ('𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝓪-𝔃
     - u: "1D4EA-1D503"
     - t: script bold
-    - spell: translate('.', '𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃',
+    - map: ('𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝔄-𝔜
-    - u: "1D504-1D51C"
+    - u: "1D504-1D505 212D 1D507-1D50A 210C 2111 1D50D-1D514 211C 1D516-1D51C 2128"
     - t: fraktur
-    - spell: translate('.', '𝔄𝔅𝔆𝔇𝔈𝔉𝔊𝔋𝔌𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔𝔕𝔖𝔗𝔘𝔙𝔚𝔛𝔜',
-        'ABCDEFGHIJKLMNOPQRSTUVWXY')
+    - map: ('𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ',
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝔞-𝔷
     - u: "1D51E-1D537"
     - t: fraktur
-    - spell: translate('.', '𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷',
+    - map: ('𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝔸-𝕐
-    - u: "1D538-1D550"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', '𝔸𝔹𝔺𝔻𝔼𝔽𝔾𝔿𝕀𝕁𝕂𝕃𝕄𝕅𝕆𝕇𝕈𝕉𝕊𝕋𝕌𝕍𝕎𝕏𝕐',
+    - u: "1D538-1D539 2102 1D53B-1D53E 210D 1D540-1D544 2115 1D546 2119-211A 211D 1D54A-1D550 2124"
+    - choose:
+        - not-terse: double struck
+    - map: ('𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝕒-𝕫
     - u: "1D552-1D56B"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', '𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫',
+    - choose:
+        - not-terse: double struck
+    - map: ('𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝕬-𝖅
     - u: "1D56C-1D585"
     - t: fraktur bold
-    - spell: translate('.', '𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅',
+    - map: ('𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝖆-𝖟
     - u: "1D586-1D59F"
     - t: fraktur bold
-    - spell: translate('.', '𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟',
+    - map: ('𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝖠-𝖹
     - u: "1D5A0-1D5B9"
-    - spell: translate('.', '𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹',
+    - map: ('𝖠𝖡𝖢𝖣𝖤𝖥𝖦𝖧𝖨𝖩𝖪𝖫𝖬𝖭𝖮𝖯𝖰𝖱𝖲𝖳𝖴𝖵𝖶𝖷𝖸𝖹',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝖺-𝗓
     - u: "1D5BA-1D5D3"
-    - spell: translate('.', '𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓',
+    - map: ('𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝗔-𝗭
     - u: "1D5D4-1D5ED"
     - t: bold
-    - spell: translate('.', '𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭',
+    - map: ('𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝗮-𝘇
     - u: "1D5EE-1D607"
     - t: bold
-    - spell: translate('.', '𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇',
+    - map: ('𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝘈-𝘡
     - u: "1D608-1D621"
-    - spell: translate('.', '𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡',
+    - map: ('𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝘢-𝘻
     - u: "1D622-1D63B"
-    - spell: translate('.', '𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻',
+    - map: ('𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝘼-𝙕
     - u: "1D63C-1D655"
     - t: bold
-    - spell: translate('.', '𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕',
+    - map: ('𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝙖-𝙯
     - u: "1D656-1D66F"
     - t: bold
-    - spell: translate('.', '𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯',
+    - map: ('𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝙰-𝚉
     - u: "1D670-1D689"
-    - spell: translate('.', '𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉',
+    - map: ('𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉',
         'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     - char: 𝚊-𝚣
     - u: "1D68A-1D6A3"
-    - spell: translate('.', '𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣',
+    - map: ('𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣',
         'abcdefghijklmnopqrstuvwxyz')
 -
     - char: 𝚤
@@ -9159,8 +8861,8 @@
     - char: 𝚨-𝛀
     - u: "1D6A8-1D6C0"
     - t: bold
-    - spell: translate('.', '𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚹𝚺𝚻𝚼𝚽𝚾𝚿𝛀',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+    - map: ('𝚨𝚩𝚪𝚫𝚬𝚭𝚮𝚯𝚰𝚱𝚲𝚳𝚴𝚵𝚶𝚷𝚸𝚹𝚺𝚻𝚼𝚽𝚾𝚿𝛀',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡϴΣΤΥΦΧΨΩ')
 -
     - char: 𝛁
     - u: "1D6C1"
@@ -9169,18 +8871,18 @@
     - char: 𝛂-𝛚
     - u: "1D6C2-1D6DA"
     - t: bold
-    - spell: translate('.', '𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛓𝛔𝛕𝛖𝛗𝛘𝛙𝛚',
+    - map: ('𝛂𝛃𝛄𝛅𝛆𝛇𝛈𝛉𝛊𝛋𝛌𝛍𝛎𝛏𝛐𝛑𝛒𝛓𝛔𝛕𝛖𝛗𝛘𝛙𝛚',
         'αβγδεζηθικλμνξοπρςστυφχψω')
 -
     - char: 𝛛𝛜𝛝𝛞𝛟𝛠𝛡
-    - u: "1D6DB 1D6DC 1D6DD 1D6DE 1D6DF 1D6E0 1D6E1"
+    - u: "1D6DB-1D6E1"
     - t: bold
-    - spell: translate('.', '𝛛𝛜𝛝𝛞𝛟𝛠𝛡', '∂εθκφρπ')
+    - map: ('𝛛𝛜𝛝𝛞𝛟𝛠𝛡', '∂εθκφρπ')
 -
     - char: 𝛢-𝛺
     - u: "1D6E2-1D6FA"
-    - spell: translate('.', '𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛳𝛴𝛵𝛶𝛷𝛸𝛹𝛺',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+    - map: ('𝛢𝛣𝛤𝛥𝛦𝛧𝛨𝛩𝛪𝛫𝛬𝛭𝛮𝛯𝛰𝛱𝛲𝛳𝛴𝛵𝛶𝛷𝛸𝛹𝛺',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡϴΣΤΥΦΧΨΩ')
 -
     - char: 𝛻
     - u: "1D6FB"
@@ -9188,18 +8890,18 @@
 -
     - char: 𝛼-𝜔
     - u: "1D6FC-1D714"
-    - spell: translate('.', '𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜍𝜎𝜏𝜐𝜑𝜒𝜓𝜔',
+    - map: ('𝛼𝛽𝛾𝛿𝜀𝜁𝜂𝜃𝜄𝜅𝜆𝜇𝜈𝜉𝜊𝜋𝜌𝜍𝜎𝜏𝜐𝜑𝜒𝜓𝜔',
         'αβγδεζηθικλμνξοπρςστυφχψω')
 -
     - char: 𝜕𝜖𝜗𝜘𝜙𝜚𝜛
-    - u: "1D715 1D716 1D717 1D718 1D719 1D71A 1D71B"
-    - spell: translate('.', '𝜕𝜖𝜗𝜘𝜙𝜚𝜛', '∂εθκφρπ')
+    - u: "1D715-1D71B"
+    - map: ('𝜕𝜖𝜗𝜘𝜙𝜚𝜛', '∂εθκφρπ')
 -
     - char: 𝜜-𝜴
     - u: "1D71C-1D734"
     - t: bold
-    - spell: translate('.', '𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜭𝜮𝜯𝜰𝜱𝜲𝜳𝜴',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+    - map: ('𝜜𝜝𝜞𝜟𝜠𝜡𝜢𝜣𝜤𝜥𝜦𝜧𝜨𝜩𝜪𝜫𝜬𝜭𝜮𝜯𝜰𝜱𝜲𝜳𝜴',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡϴΣΤΥΦΧΨΩ')
 -
     - char: 𝜵
     - u: "1D735"
@@ -9208,19 +8910,19 @@
     - char: 𝜶-𝝎
     - u: "1D736-1D74E"
     - t: bold
-    - spell: translate('.', '𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝇𝝈𝝉𝝊𝝋𝝌𝝍𝝎',
+    - map: ('𝜶𝜷𝜸𝜹𝜺𝜻𝜼𝜽𝜾𝜿𝝀𝝁𝝂𝝃𝝄𝝅𝝆𝝇𝝈𝝉𝝊𝝋𝝌𝝍𝝎',
         'αβγδεζηθικλμνξοπρςστυφχψω')
 -
     - char: 𝝏𝝐𝝑𝝒𝝓𝝔𝝕
-    - u: "1D74F 1D750 1D751 1D752 1D753 1D754 1D755"
+    - u: "1D74F-1D755"
     - t: bold
-    - spell: translate('.', '𝝏𝝐𝝑𝝒𝝓𝝔𝝕', '∂εθκφρπ')
+    - map: ('𝝏𝝐𝝑𝝒𝝓𝝔𝝕', '∂εθκφρπ')
 -
     - char: 𝝖-𝝮
     - u: "1D756-1D76E"
     - t: bold
-    - spell: translate('.', '𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝧𝝨𝝩𝝪𝝫𝝬𝝭𝝮',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+    - map: ('𝝖𝝗𝝘𝝙𝝚𝝛𝝜𝝝𝝞𝝟𝝠𝝡𝝢𝝣𝝤𝝥𝝦𝝧𝝨𝝩𝝪𝝫𝝬𝝭𝝮',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡϴΣΤΥΦΧΨΩ')
 -
     - char: 𝝯
     - u: "1D76F"
@@ -9229,19 +8931,19 @@
     - char: 𝝰-𝞈
     - u: "1D770-1D788"
     - t: bold
-    - spell: translate('.', '𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞁𝞂𝞃𝞄𝞅𝞆𝞇𝞈',
+    - map: ('𝝰𝝱𝝲𝝳𝝴𝝵𝝶𝝷𝝸𝝹𝝺𝝻𝝼𝝽𝝾𝝿𝞀𝞁𝞂𝞃𝞄𝞅𝞆𝞇𝞈',
         'αβγδεζηθικλμνξοπρςστυφχψω')
 -
     - char: 𝞉𝞊𝞋𝞌𝞍𝞎𝞏
-    - u: "1D789 1D78A 1D78B 1D78C 1D78D 1D78E 1D78F"
+    - u: "1D789-1D78F"
     - t: bold
-    - spell: translate('.', '𝞉𝞊𝞋𝞌𝞍𝞎𝞏', '∂εθκφρπ')
+    - map: ('𝞉𝞊𝞋𝞌𝞍𝞎𝞏', '∂εθκφρπ')
 -
     - char: 𝞐-𝞨
     - u: "1D790-1D7A8"
     - t: bold
-    - spell: translate('.', '𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞡𝞢𝞣𝞤𝞥𝞦𝞧𝞨',
-        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡ΢ΣΤΥΦΧΨΩ')
+    - map: ('𝞐𝞑𝞒𝞓𝞔𝞕𝞖𝞗𝞘𝞙𝞚𝞛𝞜𝞝𝞞𝞟𝞠𝞡𝞢𝞣𝞤𝞥𝞦𝞧𝞨',
+        'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡϴΣΤΥΦΧΨΩ')
 -
     - char: 𝞩
     - u: "1D7A9"
@@ -9250,36 +8952,34 @@
     - char: 𝞪-𝟂
     - u: "1D7AA-1D7C2"
     - t: bold
-    - spell: translate('.', '𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞻𝞼𝞽𝞾𝞿𝟀𝟁𝟂',
+    - map: ('𝞪𝞫𝞬𝞭𝞮𝞯𝞰𝞱𝞲𝞳𝞴𝞵𝞶𝞷𝞸𝞹𝞺𝞻𝞼𝞽𝞾𝞿𝟀𝟁𝟂',
         'αβγδεζηθικλμνξοπρςστυφχψω')
 -
     - char: 𝟃𝟄𝟅𝟆𝟇𝟈𝟉
-    - u: "1D7C3 1D7C4 1D7C5 1D7C6 1D7C7 1D7C8 1D7C9"
+    - u: "1D7C3-1D7C9"
     - t: bold
-    - spell: translate('.', '𝟃𝟄𝟅𝟆𝟇𝟈𝟉', '∂εθκφρπ')
+    - map: ('𝟃𝟄𝟅𝟆𝟇𝟈𝟉', '∂εθκφρπ')
 -
     - char: 𝟎-𝟗
     - u: "1D7CE-1D7D7"
     - t: bold
-    - spell: translate('.', '𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗', '0123456789')
+    - map: ('𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗', '0123456789')
 -
     - char: 𝟘-𝟡
     - u: "1D7D8-1D7E1"
-    - test:
-        if: $Verbosity!='Terse'
-        then:
-          - t: double struck
-    - spell: translate('.', '𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡', '0123456789')
+    - choose:
+        - not-terse: double struck
+    - map: ('𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡', '0123456789')
 -
     - char: 𝟢-𝟫
     - u: "1D7E2-1D7EB"
-    - spell: translate('.', '𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
+    - map: ('𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
 -
     - char: 𝟬-𝟵
     - u: "1D7EC-1D7F5"
     - t: bold
-    - spell: translate('.', '𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵', '0123456789')
+    - map: ('𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵', '0123456789')
 -
     - char: 𝟶-𝟿
     - u: "1D7F6-1D7FF"
-    - spell: translate('.', '𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
+    - map: ('𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿', '0123456789')
