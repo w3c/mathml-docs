@@ -142,7 +142,7 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{{c.alias}}</td>
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}"><td>{{c.alias}}</td>{%-endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
