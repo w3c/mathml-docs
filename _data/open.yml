@@ -7667,7 +7667,7 @@ concepts:
     
     - concept: ph
       arity: 0
-      en: ph
+      en: p h
       property: symbol
       area: "chemistry"
       notation: "mi pH"
