@@ -9678,7 +9678,7 @@ concepts:
     
     - concept: stalk
       arity: 2
-      en: stalk
+      en: stalk of $1 at $2
       property: msub
       area: "sheaf theory"
       notation: "msub $1 $2"
@@ -9711,7 +9711,7 @@ concepts:
     
     - concept: stanley-reisner-ring
       arity: 2
-      en: stanley reisner ring
+      en: stanley reisner ring $1 $2
       property: mixfix
       area: "commutative algebra"
       notation: "mrow $1 [ $2 ]"
@@ -9766,7 +9766,7 @@ concepts:
     
     - concept: stiefel-manifold
       arity: 2
-      en: stiefel manifold
+      en: stiefel manifold $1 $2
       property: mixfix
       area: "differential geometry"
       notation: "mrow msub V $1 /msub ( $2"
@@ -10376,7 +10376,7 @@ concepts:
     
     - concept: total-derivative
       arity: 2
-      en: total derivative
+      en: total derivative $1 with respect to $2
       property: mixfix
       area: "differential calculus"
       notation: "mrow d msub $1 $2 /msub"
@@ -10528,7 +10528,7 @@ concepts:
     
     - concept: turan-graph
       arity: 2
-      en: turan graph
+      en: turan graph $1 $2
       property: "function<br/>indexed function"
       area: "graph theory"
       notation: "mi T<br/>mi D<br/>msub T $1<br/>msub T $1,$2"
@@ -10602,7 +10602,7 @@ concepts:
     
     - concept: ultrapower
       arity: 2
-      en: ultrapower
+      en: ultrapower $1 $2
       property: mixfix
       area: "abstract algebra"
       notation: "mrow ∏ $1 / $2"
@@ -10913,7 +10913,7 @@ concepts:
     
     - concept: wavelet-transform
       arity: 2
-      en: wavelet transform
+      en: wavelet transform $1 $2
       property: "embellished function"
       area: "functional analysis"
       notation: "mrow [ msub W $1 /msub $2 ]"
@@ -11008,7 +11008,7 @@ concepts:
     
     - concept: weighted-lehmer-mean
       arity: 2
-      en: weighted lehmer mean
+      en: weighted lehmer mean $1 $2
       property: "indexed function"
       area: "means"
       notation: "msub L mrow $1 , $2 /mrow"
@@ -11052,7 +11052,7 @@ concepts:
     
     - concept: whitehead-bracket
       arity: 2
-      en: whitehead bracket
+      en: whitehead bracket $1 $2
       property: fenced
       area: "lie algebra"
       notation: "mrow [ $1, $2 ]"
@@ -11074,7 +11074,7 @@ concepts:
     
     - concept: whittaker-function
       arity: 2
-      en: whittaker function
+      en: whittaker function $1 $2
       property: "indexed function"
       area: "special functions"
       notation: "msub M mrow $1, $2 /mrow<br/>msub W mrow $1, $2 /mrow"
@@ -11237,7 +11237,7 @@ concepts:
     
     - concept: wronskian
       arity: 2
-      en: wronskian
+      en: wronskian of $1, $2
       property: operator
       area: "special functions"
       notation: "mrow 𝒲 { $1, $2 }<br/>mi W"
