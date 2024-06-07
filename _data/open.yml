@@ -641,7 +641,7 @@ concepts:
     
     - concept: bell-polynomial
       arity: n
-      en: bell polynomial
+      en: $1 th bell polynomial of $2, $3, ...
       property: "indexed function"
       area: "polynomials"
       notation: "mrow msub B $1 ($2, ... $n"
@@ -688,7 +688,7 @@ concepts:
     
     - concept: bernoulli-polynomial
       arity: 2
-      en: bernoulli polynomial
+      en: bernoulli polynomial $1 $2
       property: "indexed function"
       area: "number theory"
       notation: "msub B $1 ($2"
@@ -701,7 +701,7 @@ concepts:
     
     - concept: bessel-function
       arity: 2
-      en: bessel function
+      en: $1 th bessel function of $2
       property: "indexed function"
       area: "special functions"
       notation: "msub J $1 ($2"
@@ -713,7 +713,7 @@ concepts:
     
     - concept: bessel-function-of-second-kind
       arity: 2
-      en: bessel function of second kind
+      en: $1 th bessel function of second kind of $2
       property: "indexed function"
       area: "special functions"
       notation: "msub Y $1 ($2"
@@ -724,7 +724,7 @@ concepts:
     
     - concept: bessel-polynomial
       arity: 2
-      en: bessel polynomial
+      en: $1 th bessel polynomial of $2
       property: "indexed function"
       area: "special functions"
       notation: "msub y $1 ($2"
@@ -1015,7 +1015,7 @@ concepts:
     
     - concept: calderon-toeplitz-operator
       arity: 2
-      en: calderon toeplitz operator
+      en: calderon toeplitz operator $1 $2
       property: "indexed symbol"
       area: "operator theory"
       notation: "msub T mrow $1, $2"
@@ -3272,7 +3272,7 @@ concepts:
     
     - concept: equivariant-cohomology
       arity: 2
-      en: equivariant cohomology
+      en: equivariant cohomology $1 $2
       property: function
       area: "algebraic topology"
       notation: "msubsup H $1 $2"
@@ -3361,8 +3361,8 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Etale_cohomology"
     
     - concept: euclid-number
-      arity: 0
-      en: euclid number
+      arity: 1
+      en: euclid number $1
       property: symbol
       area: "number theory"
       notation: "msub E $1"
