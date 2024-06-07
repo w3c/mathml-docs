@@ -6,7 +6,7 @@ concepts:
   
     - concept: abelian-category
       arity: 0
-      en: abelian-category
+      en: abelian category
       property: symbol
       area: "category theory"
       notation: "mi Ab"
@@ -18,7 +18,7 @@ concepts:
     
     - concept: abelian-integral
       arity: 1
-      en: abelian-integral of $1
+      en: abelian integral of $1
       property: indexed
       area: "complex analysis"
       notation: "mo ∫"
@@ -48,7 +48,7 @@ concepts:
     
     - concept: ackermann-function
       arity: 1
-      en: ackermann-function of $1
+      en: ackermann function of $1
       property: function
       area: "computability theory"
       notation: "mi A"
@@ -68,7 +68,7 @@ concepts:
     
     - concept: additive-inverse
       arity: 1
-      en: additive-inverse of $1
+      en: additive inverse of $1
       property: prefix
       area: "abstract algebra"
       notation: "mo -"
@@ -81,7 +81,7 @@ concepts:
     
     - concept: adiabatic-invariant-first
       arity: 0
-      en: adiabatic-invariant-first
+      en: adiabatic invariant first
       property: symbol
       area: "plasma physics"
       notation: "mi μ"
@@ -92,7 +92,7 @@ concepts:
     
     - concept: adiabatic-invariant-second
       arity: 0
-      en: adiabatic-invariant-second
+      en: adiabatic invariant second
       property: symbol
       area: "plasma physics"
       notation: "mi J"
@@ -103,7 +103,7 @@ concepts:
     
     - concept: adiabatic-invariant-third
       arity: 0
-      en: adiabatic-invariant-third
+      en: adiabatic invariant third
       property: symbol
       area: "plasma physics"
       notation: "mi Φ"
@@ -125,7 +125,7 @@ concepts:
     
     - concept: adjoint-action
       arity: 1
-      en: adjoint-action of $1
+      en: adjoint action of $1
       property: "function/msub"
       area: "lie algebra"
       notation: "mi ad<br/>msub ad $1"
@@ -139,7 +139,7 @@ concepts:
     
     - concept: adjoint-representation
       arity: 1
-      en: adjoint-representation of $1
+      en: adjoint representation of $1
       property: function
       area: "lie algebra"
       notation: "mi Ad"
@@ -159,7 +159,7 @@ concepts:
     
     - concept: affine-group
       arity: 1
-      en: affine-group of $1
+      en: affine group of $1
       property: function
       area: "group theory"
       notation: "mi Aff"
@@ -170,7 +170,7 @@ concepts:
     
     - concept: affine-hull
       arity: 1
-      en: affine-hull of $1
+      en: affine hull of $1
       property: function
       area: "affine geometry"
       notation: "mi aff"
@@ -181,7 +181,7 @@ concepts:
     
     - concept: affine-line
       arity: 0
-      en: affine-line
+      en: affine line
       property: symbol
       area: "universal algebra?"
       notation: "mi 𝔸"
@@ -190,7 +190,7 @@ concepts:
     
     - concept: airy-function
       arity: 1
-      en: airy-function of $1
+      en: airy function of $1
       property: function
       area: "special functions"
       notation: "mi Ai<br/>mi Bi"
@@ -205,7 +205,7 @@ concepts:
     
     - concept: albanese-variety
       arity: 1
-      en: albanese-variety of $1
+      en: albanese variety of $1
       property: function
       area: "algebraic geometry"
       notation: "mi A<br/>mi Alb"
@@ -237,7 +237,7 @@ concepts:
     
     - concept: algebraic-closure
       arity: 1
-      en: algebraic-closure of $1
+      en: algebraic closure of $1
       property: mover/msup
       area: "algebra"
       notation: "mover ¯<br/>msup alg"
@@ -248,7 +248,7 @@ concepts:
     
     - concept: almost-surely
       arity: 1
-      en: almost-surely of $1
+      en: almost surely of $1
       property: 
       area: "probability theory"
       notation: "mtext a.s."
@@ -257,7 +257,7 @@ concepts:
     
     - concept: alternating-factorial
       arity: 1
-      en: alternating-factorial of $1
+      en: alternating factorial of $1
       property: function
       area: "functions"
       notation: "mi af"
@@ -266,7 +266,7 @@ concepts:
     
     - concept: alternating-group
       arity: 1
-      en: alternating-group of $1
+      en: alternating group of $1
       property: function
       area: "group theory"
       notation: "mi A<br/>mi Alt"
@@ -292,7 +292,7 @@ concepts:
     
     - concept: alternative-denial
       arity: 2
-      en: $1 alternative-denial $2
+      en: $1 alternative denial $2
       property: infix<br/>prefix
       area: "propositional calculus"
       notation: "mo | <br/>mo ↑<br/>mrow D $1 $2"
@@ -329,7 +329,7 @@ concepts:
     
     - concept: analytic-manifold
       arity: 0
-      en: analytic-manifold
+      en: analytic manifold
       property: symbol
       area: "topology"
       notation: "msup C w"
@@ -340,7 +340,7 @@ concepts:
     
     - concept: anger-function
       arity: 1
-      en: anger-function of $1
+      en: anger function of $1
       property: function
       area: "special functions"
       notation: "mi J"
@@ -352,7 +352,7 @@ concepts:
     
     - concept: angle-of-parallelism
       arity: 1
-      en: angle-of-parallelism of $1
+      en: angle of parallelism of $1
       property: function
       area: "hyperbolic geometry"
       notation: "mi Π"
@@ -362,7 +362,7 @@ concepts:
     
     - concept: angular-momentum
       arity: 0
-      en: angular-momentum
+      en: angular momentum
       property: symbol
       area: "classical mechanics"
       notation: "mi L"
@@ -373,7 +373,7 @@ concepts:
     
     - concept: angular-velocity
       arity: 0
-      en: angular-velocity
+      en: angular velocity
       property: symbol
       area: "classical mechanics"
       notation: "mi ω"
@@ -384,7 +384,7 @@ concepts:
     
     - concept: anharmonic-ratio
       arity: 4
-      en: "anharmonic-ratio of $1 , $2 , $3 , $4"
+      en: "anharmonic ratio of $1 , $2 , $3 , $4"
       property: fenced
       area: "geometry"
       notation: "mrow ($1 , $2 ; $3 , $4"
@@ -429,7 +429,7 @@ concepts:
     
     - concept: apartness-relation
       arity: 2
-      en: $1 apartness-relation $2
+      en: $1 apartness relation $2
       property: infix
       area: "constructive mathematics"
       notation: "mo #"
@@ -439,7 +439,7 @@ concepts:
     
     - concept: apery-constant
       arity: 0
-      en: apery-constant
+      en: apery constant
       property: symbol
       area: "special functions"
       notation: "mrow ζ(3"
@@ -489,7 +489,7 @@ concepts:
     
     - concept: arf-invariant
       arity: 1
-      en: arf-invariant of $1
+      en: arf invariant of $1
       property: function
       area: "geometric topology"
       notation: "mi Arf"
@@ -509,7 +509,7 @@ concepts:
     
     - concept: arithmetic-geometric-mean
       arity: 1
-      en: arithmetic-geometric-mean of $1
+      en: arithmetic geometric mean of $1
       property: function
       area: "special functions"
       notation: "mi agm<br/>mi AGM"
@@ -521,7 +521,7 @@ concepts:
     
     - concept: associated-legendre-polynomial
       arity: 1
-      en: associated-legendre-polynomial of $1
+      en: associated legendre polynomial of $1
       property: function
       area: "special functions"
       notation: "msubsup P l m"
@@ -544,7 +544,7 @@ concepts:
     
     - concept: automorphism-group
       arity: 1
-      en: automorphism-group of $1
+      en: automorphism group of $1
       property: function
       area: "group theory"
       notation: "mi Aut"
@@ -554,7 +554,7 @@ concepts:
     
     - concept: backward-difference
       arity: 1
-      en: backward-difference of $1
+      en: backward difference of $1
       property: operator
       area: "special functions"
       notation: "mi ∇"
@@ -565,7 +565,7 @@ concepts:
     
     - concept: baire-space
       arity: 0
-      en: baire-space
+      en: baire space
       property: symbol
       area: "set theory"
       notation: "msup N N<br/>msup ω ω"
@@ -589,7 +589,7 @@ concepts:
     
     - concept: bateman-function
       arity: 2
-      en: bateman-function
+      en: bateman function
       property: function
       area: "special functions"
       notation: "mrow msub k $1 ( $2"
@@ -600,7 +600,7 @@ concepts:
     
     - concept: baumslag-solitar-group
       arity: 2
-      en: baumslag-solitar-group
+      en: baumslag solitar group
       property: function
       area: "group theory"
       notation: "mrow BS ( $1, $2"
@@ -619,7 +619,7 @@ concepts:
     
     - concept: beatty-sequence
       arity: 1
-      en: beatty-sequence of $1
+      en: beatty sequence of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub 𝓑 $1"
@@ -629,7 +629,7 @@ concepts:
     
     - concept: bell-number
       arity: 1
-      en: bell-number of $1
+      en: bell number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub B $1"
@@ -641,7 +641,7 @@ concepts:
     
     - concept: bell-polynomial
       arity: n
-      en: bell-polynomial
+      en: bell polynomial
       property: "indexed function"
       area: "polynomials"
       notation: "mrow msub B $1 ($2, ... $n"
@@ -652,7 +652,7 @@ concepts:
     
     - concept: berezin-integral
       arity: 1
-      en: berezin-integral of $1
+      en: berezin integral of $1
       property: indexed
       area: "mathematical physics"
       notation: "mo ∫"
@@ -663,7 +663,7 @@ concepts:
     
     - concept: bergman-space
       arity: 2
-      en: bergman-space
+      en: bergman space
       property: "indexed function"
       area: "complex analysis"
       notation: "msup A $1 ($2"
@@ -674,7 +674,7 @@ concepts:
     
     - concept: bernoulli-number
       arity: 1
-      en: bernoulli-number of $1
+      en: bernoulli number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub B $1"
@@ -688,7 +688,7 @@ concepts:
     
     - concept: bernoulli-polynomial
       arity: 2
-      en: bernoulli-polynomial
+      en: bernoulli polynomial
       property: "indexed function"
       area: "number theory"
       notation: "msub B $1 ($2"
@@ -701,7 +701,7 @@ concepts:
     
     - concept: bessel-function
       arity: 2
-      en: bessel-function
+      en: bessel function
       property: "indexed function"
       area: "special functions"
       notation: "msub J $1 ($2"
@@ -713,7 +713,7 @@ concepts:
     
     - concept: bessel-function-of-second-kind
       arity: 2
-      en: bessel-function-of-second-kind
+      en: bessel function of second kind
       property: "indexed function"
       area: "special functions"
       notation: "msub Y $1 ($2"
@@ -724,7 +724,7 @@ concepts:
     
     - concept: bessel-polynomial
       arity: 2
-      en: bessel-polynomial
+      en: bessel polynomial
       property: "indexed function"
       area: "special functions"
       notation: "msub y $1 ($2"
@@ -736,7 +736,7 @@ concepts:
     
     - concept: beta-distribution
       arity: 1
-      en: beta-distribution of $1
+      en: beta distribution of $1
       property: function
       area: "probability theory"
       notation: "mi B<br/>mi Beta<br/>mi 𝓑𝓮<br/>mi β"
@@ -746,7 +746,7 @@ concepts:
     
     - concept: beta-function
       arity: 1
-      en: beta-function of $1
+      en: beta function of $1
       property: function
       area: "special functions"
       notation: "mi B<br/>mi β"
@@ -763,7 +763,7 @@ concepts:
     
     - concept: betti-number
       arity: 1
-      en: betti-number of $1
+      en: betti number of $1
       property: "indexed symbol"
       area: "graph theory"
       notation: "msub b $1"
@@ -788,7 +788,7 @@ concepts:
     
     - concept: big-O
       arity: 1
-      en: big-O of $1
+      en: big O of $1
       property: prefix
       area: "complexity"
       notation: "mi O<br/>"
@@ -798,7 +798,7 @@ concepts:
     
     - concept: bigeometric-integral
       arity: 1
-      en: bigeometric-integral of $1
+      en: bigeometric integral of $1
       property: indexed
       area: "calculus"
       notation: "mo Π"
@@ -816,7 +816,7 @@ concepts:
     
     - concept: binary-golay-code
       arity: 0
-      en: binary-golay-code
+      en: binary golay code
       property: symbol
       area: "coding theory"
       notation: "msub G 23"
@@ -826,7 +826,7 @@ concepts:
     
     - concept: binomial-coefficient
       arity: 1
-      en: binomial-coefficient of $1
+      en: binomial coefficient of $1
       property: "indexed function"
       area: "combinatorics"
       notation: "msubsup C"
@@ -841,7 +841,7 @@ concepts:
     
     - concept: binomial-distribution
       arity: 1
-      en: binomial-distribution of $1
+      en: binomial distribution of $1
       property: function
       area: "probability theory"
       notation: "mrow B(n,p"
@@ -863,7 +863,7 @@ concepts:
     
     - concept: bipolar-set
       arity: 1
-      en: bipolar-set of $1
+      en: bipolar set of $1
       property: msup
       area: "functional analysis"
       notation: "msup $1 °°"
@@ -883,7 +883,7 @@ concepts:
     
     - concept: blaschke-product
       arity: 1
-      en: blaschke-product of $1
+      en: blaschke product of $1
       property: function
       area: "complex analysis"
       notation: "mi B"
@@ -894,7 +894,7 @@ concepts:
     
     - concept: bloch-constant
       arity: 0
-      en: bloch-constant
+      en: bloch constant
       property: symbol
       area: "complex analysis"
       notation: "miB"
@@ -904,7 +904,7 @@ concepts:
     
     - concept: boolean-domain
       arity: 0
-      en: boolean-domain
+      en: boolean domain
       property: symbol
       area: "abstract algebra"
       notation: "mi 𝔹"
@@ -914,7 +914,7 @@ concepts:
     
     - concept: bottom-type
       arity: 0
-      en: bottom-type
+      en: bottom type
       property: symbol
       area: "category theory"
       notation: "mi ⊥"
@@ -927,7 +927,7 @@ concepts:
     
     - concept: bottom-element
       arity: 0
-      en: bottom-element
+      en: bottom element
       property: symbol
       area: "order theory"
       notation: "mi ⊥"
@@ -953,7 +953,7 @@ concepts:
     
     - concept: bounded-variation
       arity: 1
-      en: bounded-variation of $1
+      en: bounded variation of $1
       property: function
       area: "analysis"
       notation: "mi BV"
@@ -963,7 +963,7 @@ concepts:
     
     - concept: box-product
       arity: 2
-      en: $1 box-product $2
+      en: $1 box product $2
       property: infix
       area: "graph theory"
       notation: "mo ☐"
@@ -974,7 +974,7 @@ concepts:
     
     - concept: brauer-group
       arity: 1
-      en: brauer-group of $1
+      en: brauer group of $1
       property: function
       area: "group theory"
       notation: "mi Br"
@@ -986,7 +986,7 @@ concepts:
     
     - concept: brun-constant
       arity: 0
-      en: brun-constant
+      en: brun constant
       property: symbol
       area: "number theory"
       notation: "msub B 4"
@@ -996,7 +996,7 @@ concepts:
     
     - concept: burnside-group
       arity: 1
-      en: burnside-group of $1
+      en: burnside group of $1
       property: function
       area: "group theory"
       notation: "mi B"
@@ -1005,7 +1005,7 @@ concepts:
     
     - concept: cahen-constant
       arity: 0
-      en: cahen-constant
+      en: cahen constant
       property: symbol
       area: "number theory"
       notation: "mi C"
@@ -1015,7 +1015,7 @@ concepts:
     
     - concept: calderon-toeplitz-operator
       arity: 2
-      en: calderon-toeplitz-operator
+      en: calderon toeplitz operator
       property: "indexed symbol"
       area: "operator theory"
       notation: "msub T mrow $1, $2"
@@ -1024,7 +1024,7 @@ concepts:
     
     - concept: canonical-commutation-relation
       arity: 2
-      en: canonical-commutation-relation
+      en: canonical commutation relation
       property: fenced
       area: "quantum mechanics"
       notation: "mrow [ $1 , $2 ]"
@@ -1033,7 +1033,7 @@ concepts:
     
     - concept: cap-product
       arity: 2
-      en: $1 cap-product $2
+      en: $1 cap product $2
       property: infix
       area: "algebraic topology"
       notation: "mo ⌣"
@@ -1056,7 +1056,7 @@ concepts:
     
     - concept: carmichael-function
       arity: 1
-      en: carmichael-function of $1
+      en: carmichael function of $1
       property: function
       area: "number theory"
       notation: "mi λ"
@@ -1066,7 +1066,7 @@ concepts:
     
     - concept: cartesian-product
       arity: 2
-      en: $1 cartesian-product $2
+      en: $1 cartesian product $2
       property: infix
       area: "set theory"
       notation: "mo ×"
@@ -1079,7 +1079,7 @@ concepts:
     
     - concept: casimir-element
       arity: 0
-      en: casimir-element
+      en: casimir element
       property: symbol
       area: "lie algebra"
       notation: "mi Ω"
@@ -1088,7 +1088,7 @@ concepts:
     
     - concept: catalan-constant
       arity: 0
-      en: catalan-constant
+      en: catalan constant
       property: symbol
       area: "combinatorics"
       notation: "mi G"
@@ -1099,7 +1099,7 @@ concepts:
     
     - concept: catalan-number
       arity: 1
-      en: catalan-number of $1
+      en: catalan number of $1
       property: "indexed symbol"
       area: "combinatorics"
       notation: "msub C $1"
@@ -1110,7 +1110,7 @@ concepts:
     
     - concept: category-of-algebraic-lattices
       arity: 0
-      en: category-of-algebraic-lattices
+      en: category of algebraic lattices
       property: symbol
       area: "universal algebra"
       notation: "mi AlgCat"
@@ -1119,7 +1119,7 @@ concepts:
     
     - concept: category-of-sets
       arity: 0
-      en: category-of-sets
+      en: category of sets
       property: symbol
       area: "category theory"
       notation: "miSet"
@@ -1130,7 +1130,7 @@ concepts:
     
     - concept: category-of-small-categories
       arity: 0
-      en: category-of-small-categories
+      en: category of small categories
       property: symbol
       area: "category theory"
       notation: "miCat"
@@ -1139,7 +1139,7 @@ concepts:
     
     - concept: cauchy-principal-value
       arity: 1
-      en: cauchy-principal-value of $1
+      en: cauchy principal value of $1
       property: function
       area: "analysis"
       notation: "mi p.v."
@@ -1151,7 +1151,7 @@ concepts:
     
     - concept: cauchy-product
       arity: 2
-      en: $1 cauchy-product $2
+      en: $1 cauchy product $2
       property: infix
       area: "analysis"
       notation: "mo ⋅"
@@ -1161,7 +1161,7 @@ concepts:
     
     - concept: cavitation-number
       arity: 0
-      en: cavitation-number
+      en: cavitation number
       property: symbol
       area: "physics"
       notation: "mi Ca"
@@ -1170,7 +1170,7 @@ concepts:
     
     - concept: cayley-table
       arity: 1
-      en: cayley-table of $1
+      en: cayley table of $1
       property: mtable
       area: "group theory"
       notation: "mtable"
@@ -1225,7 +1225,7 @@ concepts:
     
     - concept: champernowne-constant
       arity: 0
-      en: champernowne-constant
+      en: champernowne constant
       property: constant
       area: "number theory"
       notation: "mi C<br/>msub C 10"
@@ -1261,7 +1261,7 @@ concepts:
     
     - concept: characteristic-function
       arity: 1
-      en: characteristic-function of $1
+      en: characteristic function of $1
       property: "indexed function<br/>function"
       area: "probability theory"
       notation: "msub 𝟏 $1<br/>mrow 𝟏 { $1 }"
@@ -1278,7 +1278,7 @@ concepts:
     
     - concept: characteristic-subgroup
       arity: 2
-      en: $1 characteristic-subgroup $2
+      en: $1 characteristic subgroup $2
       property: infix
       area: "group theory"
       notation: "mo char"
@@ -1288,7 +1288,7 @@ concepts:
     
     - concept: charlier-polynomial
       arity: 1
-      en: charlier-polynomial of $1
+      en: charlier polynomial of $1
       property: function
       area: "special functions"
       notation: "msub C $1"
@@ -1300,7 +1300,7 @@ concepts:
     
     - concept: chebyshev-polynomial-of-first-kind
       arity: 1
-      en: chebyshev-polynomial-of-first-kind of $1
+      en: chebyshev polynomial of first kind of $1
       property: function
       area: "number theory"
       notation: "mi θ<br/>mi ϑ<br/>mi T"
@@ -1313,7 +1313,7 @@ concepts:
     
     - concept: chebyshev-polynomial-of-second-kind
       arity: 1
-      en: chebyshev-polynomial-of-second-kind of $1
+      en: chebyshev polynomial of second kind of $1
       property: function
       area: "number theory"
       notation: "mi ψ<br/>mi U"
@@ -1326,7 +1326,7 @@ concepts:
     
     - concept: cheeger-constant
       arity: 1
-      en: cheeger-constant of $1
+      en: cheeger constant of $1
       property: function
       area: "Riemannian geometry"
       notation: "mi h"
@@ -1335,7 +1335,7 @@ concepts:
     
     - concept: cheeger-number
       arity: 1
-      en: cheeger-number of $1
+      en: cheeger number of $1
       property: function
       area: "graph theory"
       notation: "mi h"
@@ -1347,7 +1347,7 @@ concepts:
     
     - concept: chemical-equilibrium
       arity: 2
-      en: $1 chemical-equilibrium $2
+      en: $1 chemical equilibrium $2
       property: infix
       area: "chemistry"
       notation: "mo ⇌"
@@ -1358,7 +1358,7 @@ concepts:
     
     - concept: chi-squared-distribution
       arity: 0
-      en: chi-squared-distribution
+      en: chi squared distribution
       property: symbol
       area: "probability theory"
       notation: "msup χ 2"
@@ -1378,7 +1378,7 @@ concepts:
     
     - concept: christoffel-symbol-of-first-kind
       arity: 3
-      en: christoffel-symbol-of-first-kind>mrow msub Δ $1 [$2] ($3" of $1, $2, $3
+      en: christoffel symbol of first kind>mrow msub Δ $1 [$2] ($3" of $1, $2, $3
       property: "indexed symbol"
       area: "Riemannian geometry"
       notation: "msub Γ mrow $1 $2 $3"
@@ -1390,7 +1390,7 @@ concepts:
     
     - concept: christoffel-symbol-of-second-kind
       arity: 1
-      en: christoffel-symbol-of-second-kind of $1
+      en: christoffel symbol of second kind of $1
       property: "indexed symbol"
       area: "Riemannian geometry"
       notation: "msubsup Γ"
@@ -1402,7 +1402,7 @@ concepts:
     
     - concept: chromatic-polynomial
       arity: 1
-      en: chromatic-polynomial of $1
+      en: chromatic polynomial of $1
       property: function
       area: "graph theory"
       notation: "msub P $1<br/>msub π $1<br/>msub χ $1"
@@ -1412,7 +1412,7 @@ concepts:
     
     - concept: classifying-space
       arity: 1
-      en: classifying-space of $1
+      en: classifying space of $1
       property: function
       area: "group theory"
       notation: "mi B<br/>mi ℬ"
@@ -1423,7 +1423,7 @@ concepts:
     
     - concept: clausen-function
       arity: 1
-      en: clausen-function of $1
+      en: clausen function of $1
       property: function
       area: "special functions"
       notation: "msub Cl 2"
@@ -1432,7 +1432,7 @@ concepts:
     
     - concept: clebsch-gordan-coefficient
       arity: 8
-      en: clebsch-gordan-coefficient
+      en: clebsch gordan coefficient
       property: fenced
       area: "special functions"
       notation: "mrow ( $1 $2 $3 $4 | $5 $6 $7 $8 )<br/>mrow ⟨ $1 $2 $3 $4 |  $5 $6 $7 $8 ⟩"
@@ -1444,7 +1444,7 @@ concepts:
     
     - concept: clifford-algebra
       arity: 1
-      en: clifford-algebra of $1
+      en: clifford algebra of $1
       property: function
       area: "universal algebra"
       notation: "mi Cl"
@@ -1464,7 +1464,7 @@ concepts:
     
     - concept: clique-number
       arity: 1
-      en: clique-number of $1
+      en: clique number of $1
       property: function
       area: "graph theory"
       notation: "mi ω"
@@ -1473,7 +1473,7 @@ concepts:
     
     - concept: closed-ball
       arity: 2
-      en: closed-ball
+      en: closed ball
       property: mixfix
       area: "topology"
       notation: "mrow msub B $1 /msub [ $2 ]"
@@ -1485,7 +1485,7 @@ concepts:
     
     - concept: closed-interval
       arity: 2
-      en: closed-interval
+      en: closed interval
       property: fenced
       area: "calculus"
       notation: "mrow [ $1, $2 ]"
@@ -1495,7 +1495,7 @@ concepts:
     
     - concept: closed-neighbourhood
       arity: 2
-      en: closed-neighbourhood
+      en: closed neighbourhood
       property: "indexed function<br/>function"
       area: "graph theory"
       notation: "msub N $1 [ $2 ]<br/>mrow N [ $1 ]"
@@ -1539,7 +1539,7 @@ concepts:
     
     - concept: cofinite-filter
       arity: 0
-      en: cofinite-filter
+      en: cofinite filter
       property: symbol
       area: "order theory"
       notation: "mi F"
@@ -1583,7 +1583,7 @@ concepts:
     
     - concept: column-vector
       arity: 1
-      en: column-vector of $1
+      en: column vector of $1
       property: mtable
       area: "linear algebra"
       notation: "mtable"
@@ -1593,7 +1593,7 @@ concepts:
     
     - concept: comma-category
       arity: 2
-      en: comma-category
+      en: comma category
       property: mixfix
       area: "category theory"
       notation: "mrow ( $1 ↓ $2"
@@ -1614,7 +1614,7 @@ concepts:
     
     - concept: commutator-subgroup
       arity: 1
-      en: commutator-subgroup of $1
+      en: commutator subgroup of $1
       property: msup<br/>fenced
       area: "abstract algebra"
       notation: "msup $1 '<br/>msup $1 (1)<br/>mrow [ $1, $1 ]"
@@ -1629,7 +1629,7 @@ concepts:
     
     - concept: companion-lehmer-number
       arity: 1
-      en: companion-lehmer-number of $1
+      en: companion lehmer number of $1
       property: "indexed function"
       area: "number theory"
       notation: "msub V $1"
@@ -1651,7 +1651,7 @@ concepts:
     
     - concept: complement-of-interval
       arity: 2
-      en: complement-of-interval
+      en: complement of interval
       property: fenced
       area: "order theory"
       notation: "mrow ] $1, $2 ["
@@ -1660,7 +1660,7 @@ concepts:
     
     - concept: complementary-nome
       arity: 1
-      en: complementary-nome of $1
+      en: complementary nome of $1
       property: function
       area: "special functions"
       notation: "msub q 1"
@@ -1670,7 +1670,7 @@ concepts:
     
     - concept: complete-graph
       arity: 0
-      en: complete-graph
+      en: complete graph
       property: symbol
       area: "graph theory"
       notation: "msub K $1"
@@ -1683,7 +1683,7 @@ concepts:
     
     - concept: complex-conjugate
       arity: 1
-      en: complex-conjugate of $1
+      en: complex conjugate of $1
       property: msup
       area: "complex analysis"
       notation: "msup $1 *<br/>mover $1 ¯"
@@ -1694,7 +1694,7 @@ concepts:
     
     - concept: complex-projective-space
       arity: 0
-      en: complex-projective-space
+      en: complex projective space
       property: symbol
       area: "projective geometry"
       notation: "mrow ℂ⁢ ℙ"
@@ -1735,7 +1735,7 @@ concepts:
     
     - concept: compound-interest
       arity: 2
-      en: compound-interest
+      en: compound interest
       property: msup
       area: "finance"
       notation: "msup $1 ($2"
@@ -1754,7 +1754,7 @@ concepts:
     
     - concept: condition-number
       arity: 1
-      en: condition-number of $1
+      en: condition number of $1
       property: function
       area: "numerical analysis"
       notation: "mi κ"
@@ -1765,7 +1765,7 @@ concepts:
     
     - concept: conditional-expectation
       arity: 2
-      en: conditional-expectation
+      en: conditional expectation
       property: mixfix
       area: "probability theory"
       notation: "mrow E ( $1 | $2 )"
@@ -1775,7 +1775,7 @@ concepts:
     
     - concept: conditional-probability
       arity: 2
-      en: conditional-probability
+      en: conditional probability
       property: mixfix
       area: "probability theory"
       notation: "mrow P ( $1 | $2 )"
@@ -1795,7 +1795,7 @@ concepts:
     
     - concept: contraction-operator
       arity: 2
-      en: $1 contraction-operator $2
+      en: $1 contraction operator $2
       property: infix
       area: "algebraic geometry"
       notation: "mo ⌟"
@@ -1804,7 +1804,7 @@ concepts:
     
     - concept: contrast-function
       arity: 2
-      en: contrast-function
+      en: contrast function
       property: mixfix
       area: "statistics"
       notation: "D ( $1 | $2)"
@@ -1826,7 +1826,7 @@ concepts:
     
     - concept: congruence-relation
       arity: 2
-      en: $1 congruence-relation $2
+      en: $1 congruence relation $2
       property: infix
       area: "algebra<br/>geometry"
       notation: "mo ≡<br/>mo ≅"
@@ -1845,7 +1845,7 @@ concepts:
     
     - concept: conjugacy-class
       arity: 1
-      en: conjugacy-class of $1
+      en: conjugacy class of $1
       property: function
       area: "group theory"
       notation: "mi Cl"
@@ -1856,7 +1856,7 @@ concepts:
     
     - concept: conjugate-transpose
       arity: 1
-      en: conjugate-transpose of $1
+      en: conjugate transpose of $1
       property: msup
       area: "linear algebra"
       notation: "msup $1 H<br/>msup $1 *"
@@ -1866,7 +1866,7 @@ concepts:
     
     - concept: connected-sum
       arity: 2
-      en: $1 connected-sum $2
+      en: $1 connected sum $2
       property: infix
       area: "topology"
       notation: "mo #"
@@ -1888,7 +1888,7 @@ concepts:
     
     - concept: constant-of-integration
       arity: 0
-      en: constant-of-integration
+      en: constant of integration
       property: constant
       area: "calculus"
       notation: "mi C"
@@ -1911,7 +1911,7 @@ concepts:
     
     - concept: contingency-table
       arity: 1
-      en: contingency-table of $1
+      en: contingency table of $1
       property: mtable
       area: "statistics"
       notation: "mtable"
@@ -1923,7 +1923,7 @@ concepts:
     
     - concept: continued-fraction
       arity: 1
-      en: continued-fraction of $1
+      en: continued fraction of $1
       property: mixfix
       area: "number theory"
       notation: "mfrac"
@@ -1988,7 +1988,7 @@ concepts:
     
     - concept: converse-graph
       arity: 1
-      en: converse-graph of $1
+      en: converse graph of $1
       property: msup
       area: "graph theory"
       notation: "msup $1 '<br/>msup $1 T<br/>msup $1 R"
@@ -2014,7 +2014,7 @@ concepts:
     
     - concept: conway-group
       arity: 0
-      en: conway-group
+      en: conway group
       property: symbol
       area: "group theory"
       notation: "msub Co 0<br/>msub Co 1<br/>msub Co 2<br/>msub Co 3"
@@ -2062,7 +2062,7 @@ concepts:
     
     - concept: correlation-ratio
       arity: 0
-      en: correlation-ratio
+      en: correlation ratio
       property: symbol
       area: "statistics"
       notation: "mi η"
@@ -2073,7 +2073,7 @@ concepts:
     
     - concept: cosine-integral
       arity: 1
-      en: cosine-integral of $1
+      en: cosine integral of $1
       property: operator
       area: "special-functions"
       notation: "mi Ci"
@@ -2085,7 +2085,7 @@ concepts:
     
     - concept: coupling-constant
       arity: 0
-      en: coupling-constant
+      en: coupling constant
       property: symbol
       area: "gauge theory"
       notation: "mi g"
@@ -2110,7 +2110,7 @@ concepts:
     
     - concept: covariant-derivative
       arity: 1
-      en: covariant-derivative of $1
+      en: covariant derivative of $1
       property: "indexed operator"
       area: "differential geometry"
       notation: "msub ∇ $1"
@@ -2133,7 +2133,7 @@ concepts:
     
     - concept: covering-relation
       arity: 2
-      en: $1 covering-relation $2
+      en: $1 covering relation $2
       property: infix
       area: "order theory"
       notation: "mo ⋖<br/>mo <: "
@@ -2143,7 +2143,7 @@ concepts:
     
     - concept: cross-product
       arity: 2
-      en: $1 cross-product $2
+      en: $1 cross product $2
       property: infix
       area: "linear algebra"
       notation: "mo ×"
@@ -2157,7 +2157,7 @@ concepts:
     
     - concept: cross-ratio
       arity: 4
-      en: "cross-ratio of $1, $2, $3, $4"
+      en: "cross ratio of $1, $2, $3, $4"
       property: fenced
       area: "geometry"
       notation: "mrow ( $1, $2 ; $3, $4"
@@ -2169,7 +2169,7 @@ concepts:
     
     - concept: crossing-number
       arity: 1
-      en: crossing-number of $1
+      en: crossing number of $1
       property: function
       area: "graph theory"
       notation: "mi Cr"
@@ -2180,7 +2180,7 @@ concepts:
     
     - concept: cullen-number
       arity: 1
-      en: cullen-number of $1
+      en: cullen number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub C $1"
@@ -2203,7 +2203,7 @@ concepts:
     
     - concept: cumulative-distribution-function
       arity: 1
-      en: cumulative-distribution-function of $1
+      en: cumulative distribution function of $1
       property: "indexed symbol"
       area: "probability theory"
       notation: "msub F $1"
@@ -2216,7 +2216,7 @@ concepts:
     
     - concept: cup-product
       arity: 2
-      en: $1 cup-product $2
+      en: $1 cup product $2
       property: infix
       area: "algebraic topology"
       notation: "mo ⌣"
@@ -2273,7 +2273,7 @@ concepts:
     
     - concept: cycle-gene
       arity: 0
-      en: cycle-gene
+      en: cycle gene
       property: symbol
       area: "genetics"
       notation: "mi cyc"
@@ -2282,7 +2282,7 @@ concepts:
     
     - concept: cyclotomic-field
       arity: 1
-      en: cyclotomic-field of $1
+      en: cyclotomic field of $1
       property: embellished symbol
       area: "number theory"
       notation: "mrow Q( ζ )<br/>mrow Q( msub ζ $1"
@@ -2294,7 +2294,7 @@ concepts:
     
     - concept: cyclotomic-polynomial
       arity: 1
-      en: cyclotomic-polynomial of $1
+      en: cyclotomic polynomial of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub Φ $1"
@@ -2305,7 +2305,7 @@ concepts:
     
     - concept: dalembert-operator
       arity: 1
-      en: dalembert-operator of $1
+      en: dalembert operator of $1
       property: prefix
       area: "partial differential equations"
       notation: "mo ☐"
@@ -2319,7 +2319,7 @@ concepts:
     
     - concept: davenport-constant
       arity: 1
-      en: davenport-constant of $1
+      en: davenport constant of $1
       property: function
       area: "group theory"
       notation: "mi D"
@@ -2330,7 +2330,7 @@ concepts:
     
     - concept: dawson-function
       arity: 1
-      en: dawson-function of $1
+      en: dawson function of $1
       property: function
       area: "special-functions"
       notation: "mi F<br/>mi D<br/>mi sub D -<br/>mi sub D +"
@@ -2353,7 +2353,7 @@ concepts:
     
     - concept: decrease-tends-to?
       arity: 2
-      en: $1 decrease-tends-to? $2
+      en: $1 decrease tends to? $2
       property: infix
       area: "calculus"
       notation: "mo ↘"
@@ -2363,7 +2363,7 @@ concepts:
     
     - concept: dedekind-eta-function
       arity: 1
-      en: dedekind-eta-function of $1
+      en: dedekind eta function of $1
       property: function
       area: "special functions"
       notation: "mi η"
@@ -2374,7 +2374,7 @@ concepts:
     
     - concept: dedekind-zeta-function
       arity: 1
-      en: dedekind-zeta-function of $1
+      en: dedekind zeta function of $1
       property: function
       area: "special functions"
       notation: "mi ζ"
@@ -2383,7 +2383,7 @@ concepts:
     
     - concept: deductive-closure
       arity: 1
-      en: deductive-closure of $1
+      en: deductive closure of $1
       property: function
       area: "logic"
       notation: "mi Ded<br/>mi Th"
@@ -2392,7 +2392,7 @@ concepts:
     
     - concept: defined-as
       arity: 2
-      en: $1 defined-as $2
+      en: $1 defined as $2
       property: infix
       area: "general"
       notation: "mo ≜<br/>mo ≡<br/>mo : =<br/>mover = def<br/>mo : "
@@ -2418,7 +2418,7 @@ concepts:
     
     - concept: degree-of-graph
       arity: 1
-      en: degree-of-graph of $1
+      en: degree of graph of $1
       property: function
       area: "graph theory"
       notation: "mi deg"
@@ -2430,7 +2430,7 @@ concepts:
     
     - concept: degree-of-freedom
       arity: 0
-      en: degree-of-freedom
+      en: degree of freedom
       property: symbol
       area: "statistics"
       notation: "mi ν"
@@ -2440,7 +2440,7 @@ concepts:
     
     - concept: degree-of-mapping
       arity: 1
-      en: degree-of-mapping of $1
+      en: degree of mapping of $1
       property: function
       area: "topology"
       notation: "mi deg"
@@ -2451,7 +2451,7 @@ concepts:
     
     - concept: degree-of-polynomial
       arity: 1
-      en: degree-of-polynomial of $1
+      en: degree of polynomial of $1
       property: function
       area: "polynomials"
       notation: "mi deg"
@@ -2462,7 +2462,7 @@ concepts:
     
     - concept: dependence-relation
       arity: 2
-      en: $1 dependence-relation $2
+      en: $1 dependence relation $2
       property: infix
       area: "linear algebra"
       notation: "mo ◃"
@@ -2480,7 +2480,7 @@ concepts:
     
     - concept: derivation-tree
       arity: 1
-      en: derivation-tree of $1
+      en: derivation tree of $1
       property: mfrac
       area: "logic"
       notation: "mfrac"
@@ -2489,7 +2489,7 @@ concepts:
     
     - concept: derived-category
       arity: 1
-      en: derived-category of $1
+      en: derived category of $1
       property: function
       area: "category theory"
       notation: "mi D"
@@ -2500,7 +2500,7 @@ concepts:
     
     - concept: diagonal-functor
       arity: 0
-      en: diagonal-functor
+      en: diagonal functor
       property: symbol
       area: "category theory"
       notation: "mi Δ"
@@ -2510,7 +2510,7 @@ concepts:
     
     - concept: diagonal-intersection
       arity: 1
-      en: diagonal-intersection of $1
+      en: diagonal intersection of $1
       property: function
       area: "set theory"
       notation: "mi Δ"
@@ -2519,7 +2519,7 @@ concepts:
     
     - concept: diagonal-matrix
       arity: 1
-      en: diagonal-matrix of $1
+      en: diagonal matrix of $1
       property: function
       area: "linear algebra"
       notation: "mi diag"
@@ -2537,7 +2537,7 @@ concepts:
     
     - concept: dickman-function
       arity: 1
-      en: dickman-function of $1
+      en: dickman function of $1
       property: function
       area: "special functions"
       notation: "mi ρ"
@@ -2550,7 +2550,7 @@ concepts:
     
     - concept: different-ideal
       arity: 1
-      en: different-ideal of $1
+      en: different ideal of $1
       property: function
       area: "algebraic number theory"
       notation: "msub δ $1"
@@ -2561,7 +2561,7 @@ concepts:
     
     - concept: differential-entropy
       arity: 1
-      en: differential-entropy of $1
+      en: differential entropy of $1
       property: function
       area: "information theory"
       notation: "mi h"
@@ -2574,7 +2574,7 @@ concepts:
     
     - concept: differential-operator
       arity: 1
-      en: differential-operator of $1
+      en: differential operator of $1
       property: prefix
       area: "calculus"
       notation: "mi D<br/>mo ∂<br/>mfrac d mrow d $1"
@@ -2590,7 +2590,7 @@ concepts:
     
     - concept: digamma-function
       arity: 0
-      en: digamma-function
+      en: digamma function
       property: symbol
       area: "special functions"
       notation: "msub ψ 0<br/>msup ψ (0)<br/>mi Ϝ"
@@ -2600,7 +2600,7 @@ concepts:
     
     - concept: dihedral-group
       arity: 0
-      en: dihedral-group
+      en: dihedral group
       property: symbol
       area: "group theory"
       notation: "msub D $1<br/>msub Dih $1<br/>msub D 2$1"
@@ -2656,7 +2656,7 @@ concepts:
     
     - concept: dirac-delta-function
       arity: 1
-      en: dirac-delta-function of $1
+      en: dirac delta function of $1
       property: function
       area: "analysis"
       notation: "mi δ"
@@ -2668,7 +2668,7 @@ concepts:
     
     - concept: dirac-matrix
       arity: 0
-      en: dirac-matrix
+      en: dirac matrix
       property: constant
       area: "mathematical physics"
       notation: "msup γ 0<br/>msup γ 1<br/>msup γ 2<br/>msup γ 3"
@@ -2681,7 +2681,7 @@ concepts:
     
     - concept: dirac-measure
       arity: 1
-      en: dirac-measure of $1
+      en: dirac measure of $1
       property: function
       area: "measure theory"
       notation: "mi δ"
@@ -2690,7 +2690,7 @@ concepts:
     
     - concept: dirac-operator
       arity: 1
-      en: dirac-operator of $1
+      en: dirac operator of $1
       property: function
       area: "differential operators"
       notation: "mi D"
@@ -2701,7 +2701,7 @@ concepts:
     
     - concept: direct-limit
       arity: 1
-      en: direct-limit of $1
+      en: direct limit of $1
       property: prefix
       area: "category theory"
       notation: "munder lim →"
@@ -2712,7 +2712,7 @@ concepts:
     
     - concept: direct-product
       arity: 2
-      en: $1 direct-product $2
+      en: $1 direct product $2
       property: infix
       area: "abstract algebra"
       notation: "mo ×"
@@ -2725,7 +2725,7 @@ concepts:
     
     - concept: direct-sum
       arity: 2
-      en: $1 direct-sum $2
+      en: $1 direct sum $2
       property: infix
       area: "abstract algebra"
       notation: "mo ⊕"
@@ -2741,7 +2741,7 @@ concepts:
     
     - concept: directional-derivative
       arity: 1
-      en: directional-derivative of $1
+      en: directional derivative of $1
       property: "function<br/>mixfix"
       area: "differential calculus"
       notation: "msub ∇ v<br/>msub D v<br/>mrow v ⋅ ∇ $1"
@@ -2752,7 +2752,7 @@ concepts:
     
     - concept: dirichlet-character
       arity: 1
-      en: dirichlet-character of $1
+      en: dirichlet character of $1
       property: function
       area: "special-functions"
       notation: "mi χ"
@@ -2764,7 +2764,7 @@ concepts:
     
     - concept: dirichlet-convolution
       arity: 2
-      en: $1 dirichlet-convolution $2
+      en: $1 dirichlet convolution $2
       property: infix
       area: "number theory"
       notation: "mo ∗"
@@ -2774,7 +2774,7 @@ concepts:
     
     - concept: dirichlet-distribution
       arity: 0
-      en: dirichlet-distribution
+      en: dirichlet distribution
       property: symbol
       area: "statistics"
       notation: "mi Dir"
@@ -2785,7 +2785,7 @@ concepts:
     
     - concept: dirichlet-eta-function
       arity: 1
-      en: dirichlet-eta-function of $1
+      en: dirichlet eta function of $1
       property: function
       area: "analytic number theory"
       notation: "mi η"
@@ -2796,7 +2796,7 @@ concepts:
     
     - concept: dirichlet-kernel
       arity: 1
-      en: dirichlet-kernel of $1
+      en: dirichlet kernel of $1
       property: function
       area: "mathematical analysis"
       notation: "msub D n"
@@ -2807,7 +2807,7 @@ concepts:
     
     - concept: dirichlet-l-function
       arity: 1
-      en: dirichlet-l-function of $1
+      en: dirichlet l function of $1
       property: function
       area: "special-functions"
       notation: "mi L"
@@ -2819,7 +2819,7 @@ concepts:
     
     - concept: discrete-valuation
       arity: 1
-      en: discrete-valuation of $1
+      en: discrete valuation of $1
       property: function
       area: "commutative algebra"
       notation: "mi ν"
@@ -2841,7 +2841,7 @@ concepts:
     
     - concept: disjoint-union
       arity: 1
-      en: disjoint-union of $1
+      en: disjoint union of $1
       property: indexed
       area: "set theory"
       notation: "msup ∪ *<br/>mo ⊔"
@@ -2888,7 +2888,7 @@ concepts:
     
     - concept: divided-difference
       arity: 1
-      en: divided-difference of $1
+      en: divided difference of $1
       property: "fenced<br/>mixfix"
       area: "special functions"
       notation: "mrow [ $1, ... $n ]<br/>mrow #f [$1, ..., $n ]<br/>mrow D [ $1, ... $n ] #f"
@@ -2899,7 +2899,7 @@ concepts:
     
     - concept: divisible-by
       arity: 2
-      en: $1 divisible-by $2
+      en: $1 divisible by $2
       property: infix
       area: "number theory"
       notation: "$1 | $2<br/>$2 ⋮ $1<br/>$2 / $1"
@@ -2914,7 +2914,7 @@ concepts:
     
     - concept: divisor-function
       arity: 1
-      en: divisor-function of $1
+      en: divisor function of $1
       property: indexed
       area: "number theory"
       notation: "mi σ"
@@ -2937,7 +2937,7 @@ concepts:
     
     - concept: domain-of-discourse
       arity: 0
-      en: domain-of-discourse
+      en: domain of discourse
       property: symbol
       area: "formal semantics"
       notation: "mi 𝔻"
@@ -2948,7 +2948,7 @@ concepts:
     
     - concept: domination-number
       arity: 1
-      en: domination-number of $1
+      en: domination number of $1
       property: function
       area: "graph theory"
       notation: "mi γ"
@@ -2962,7 +2962,7 @@ concepts:
     
     - concept: dot-product
       arity: 2
-      en: $1 dot-product $2
+      en: $1 dot product $2
       property: infix
       area: "linear algebra"
       notation: "mo ⋅"
@@ -2974,7 +2974,7 @@ concepts:
     
     - concept: double-bond
       arity: 2
-      en: $1 double-bond $2
+      en: $1 double bond $2
       property: infix
       area: "chemistry"
       notation: "mo ="
@@ -2983,7 +2983,7 @@ concepts:
     
     - concept: double-category
       arity: 2
-      en: $1 double-category $2
+      en: $1 double category $2
       property: infix
       area: "category theory"
       notation: "mover → →"
@@ -2992,7 +2992,7 @@ concepts:
     
     - concept: double-factorial
       arity: 1
-      en: double-factorial of $1
+      en: double factorial of $1
       property: postfix
       area: "combinatorics"
       notation: "mo !!"
@@ -3005,7 +3005,7 @@ concepts:
     
     - concept: double-mersenne-number
       arity: 0
-      en: double-mersenne-number
+      en: double mersenne number
       property: symbol
       area: "number theory"
       notation: "msub M msub M $1"
@@ -3017,7 +3017,7 @@ concepts:
     
     - concept: drinfeld-center
       arity: 1
-      en: drinfeld-center of $1
+      en: drinfeld center of $1
       property: prefix
       area: "category theory"
       notation: "mi 𝒵"
@@ -3028,7 +3028,7 @@ concepts:
     
     - concept: dual-basis
       arity: 1
-      en: dual-basis of $1
+      en: dual basis of $1
       property: msup
       area: "linear algebra"
       notation: "msup $1 *"
@@ -3043,7 +3043,7 @@ concepts:
     
     - concept: dual-bundle
       arity: 1
-      en: dual-bundle of $1
+      en: dual bundle of $1
       property: msup
       area: "vector bundles"
       notation: "msup $1 *"
@@ -3056,7 +3056,7 @@ concepts:
     
     - concept: dual-space
       arity: 1
-      en: dual-space of $1
+      en: dual space of $1
       property: msup
       area: "linear algebra"
       notation: "msup $1 *<br/>msup $1 $1<br/>msup $1 '"
@@ -3082,7 +3082,7 @@ concepts:
     
     - concept: e-function
       arity: 1
-      en: e-function of $1
+      en: e function of $1
       property: function
       area: "special functions"
       notation: "mi E"
@@ -3105,7 +3105,7 @@ concepts:
     
     - concept: edge-cover-number
       arity: 1
-      en: edge-cover-number of $1
+      en: edge cover number of $1
       property: function
       area: "graph theory"
       notation: "mi ρ"
@@ -3115,7 +3115,7 @@ concepts:
     
     - concept: effective-domain
       arity: 1
-      en: effective-domain of $1
+      en: effective domain of $1
       property: function
       area: "convex analysis"
       notation: "mi dom"
@@ -3135,7 +3135,7 @@ concepts:
     
     - concept: einstein-tensor
       arity: 0
-      en: einstein-tensor
+      en: einstein tensor
       property: symbol
       area: "general relativity"
       notation: "mi G"
@@ -3146,7 +3146,7 @@ concepts:
     
     - concept: elliptic-function
       arity: 1
-      en: elliptic-function of $1
+      en: elliptic function of $1
       property: function
       area: "special functions"
       notation: "mi cn<br/>mi sn<br/>mi dn"
@@ -3169,7 +3169,7 @@ concepts:
     
     - concept: endomorphism-monoid
       arity: 1
-      en: endomorphism-monoid of $1
+      en: endomorphism monoid of $1
       property: function
       area: "category theory"
       notation: "mi End"
@@ -3190,7 +3190,7 @@ concepts:
     
     - concept: energy-of-signal
       arity: 0
-      en: energy-of-signal
+      en: energy of signal
       property: symbol
       area: "signal processing"
       notation: "msub E s"
@@ -3222,7 +3222,7 @@ concepts:
     
     - concept: epsilon-number
       arity: 0
-      en: epsilon-number
+      en: epsilon number
       property: symbol
       area: "ordinal numbers"
       notation: "mi ε"
@@ -3245,7 +3245,7 @@ concepts:
     
     - concept: equivalence-class
       arity: 1
-      en: equivalence-class of $1
+      en: equivalence class of $1
       property: fenced
       area: "set theory"
       notation: "mrow [ $1 ]"
@@ -3258,7 +3258,7 @@ concepts:
     
     - concept: equivalence-relation
       arity: 2
-      en: $1 equivalence-relation $2
+      en: $1 equivalence relation $2
       property: infix
       area: "set theory"
       notation: "mo ~"
@@ -3272,7 +3272,7 @@ concepts:
     
     - concept: equivariant-cohomology
       arity: 2
-      en: equivariant-cohomology
+      en: equivariant cohomology
       property: function
       area: "algebraic topology"
       notation: "msubsup H $1 $2"
@@ -3283,7 +3283,7 @@ concepts:
     
     - concept: erdos-borwein-constant
       arity: 0
-      en: erdos-borwein-constant
+      en: erdos borwein constant
       property: symbol
       area: "number theory"
       notation: "mi E"
@@ -3293,7 +3293,7 @@ concepts:
     
     - concept: error-function
       arity: 1
-      en: error-function of $1
+      en: error function of $1
       property: function
       area: "special functions"
       notation: "mi erf<br/>mi erfc<br/>mi w"
@@ -3305,7 +3305,7 @@ concepts:
     
     - concept: essential-extension
       arity: 2
-      en: $1 essential-extension $2
+      en: $1 essential extension $2
       property: infix
       area: "abstract algebra"
       notation: "msub ⊆ e<br/>mo ⊴<br/>mo ⊂"
@@ -3317,7 +3317,7 @@ concepts:
     
     - concept: essential-infimum
       arity: 1
-      en: essential-infimum of $1
+      en: essential infimum of $1
       property: function
       area: "measure theory"
       notation: "mi ess inf"
@@ -3328,7 +3328,7 @@ concepts:
     
     - concept: essential-supremum
       arity: 1
-      en: essential-supremum of $1
+      en: essential supremum of $1
       property: function
       area: "measure theory"
       notation: "mi ess sup"
@@ -3351,7 +3351,7 @@ concepts:
     
     - concept: etale-cohomology
       arity: 1
-      en: etale-cohomology of $1
+      en: etale cohomology of $1
       property: function
       area: "algebraic topology"
       notation: "msubsup H et •"
@@ -3362,7 +3362,7 @@ concepts:
     
     - concept: euclid-number
       arity: 0
-      en: euclid-number
+      en: euclid number
       property: symbol
       area: "number theory"
       notation: "msub E $1"
@@ -3372,7 +3372,7 @@ concepts:
     
     - concept: euclidean-distance
       arity: 1
-      en: euclidean-distance of $1
+      en: euclidean distance of $1
       property: function
       area: "geometry"
       notation: "mi d<br/>msub d $1"
@@ -3383,7 +3383,7 @@ concepts:
     
     - concept: euclidean-plane
       arity: 0
-      en: euclidean-plane
+      en: euclidean plane
       property: symbol
       area: "geometry"
       notation: "msup ℝ 2"
@@ -3394,7 +3394,7 @@ concepts:
     
     - concept: euler-characteristic
       arity: 1
-      en: euler-characteristic of $1
+      en: euler characteristic of $1
       property: function
       area: "algebraic topology"
       notation: "mi χ"
@@ -3406,7 +3406,7 @@ concepts:
     
     - concept: euler-class
       arity: 1
-      en: euler-class of $1
+      en: euler class of $1
       property: function
       area: "algebraic topology"
       notation: "mi e"
@@ -3417,7 +3417,7 @@ concepts:
     
     - concept: euler-constant
       arity: 0
-      en: euler-constant
+      en: euler constant
       property: symbol
       area: "analysis"
       notation: "mi γ<br/>mi 𝛾"
@@ -3432,7 +3432,7 @@ concepts:
     
     - concept: euler-number
       arity: 0
-      en: euler-number
+      en: euler number
       property: symbol
       area: "physics"
       notation: "mi Eu<br/>mi e<br/>mi 𝑒"
@@ -3449,7 +3449,7 @@ concepts:
     
     - concept: euler-polynomial
       arity: 1
-      en: euler-polynomial of $1
+      en: euler polynomial of $1
       property: function
       area: "special-functions"
       notation: "msub E $1"
@@ -3461,7 +3461,7 @@ concepts:
     
     - concept: euler-totient-function
       arity: 1
-      en: euler-totient-function of $1
+      en: euler totient function of $1
       property: function
       area: "number theory"
       notation: "mi φ<br/>mi ϕ"
@@ -3473,7 +3473,7 @@ concepts:
     
     - concept: euler-mascheroni-constant
       arity: 0
-      en: euler-mascheroni-constant
+      en: euler mascheroni constant
       property: constant
       area: "number theory"
       notation: "mi γ"
@@ -3484,7 +3484,7 @@ concepts:
     
     - concept: eulerian-number
       arity: 1
-      en: eulerian-number of $1
+      en: eulerian number of $1
       property: function
       area: "combinatorics"
       notation: "mi A"
@@ -3495,7 +3495,7 @@ concepts:
     
     - concept: exclusive-or
       arity: 2
-      en: $1 exclusive-or $2
+      en: $1 exclusive or $2
       property: infix
       area: "logic"
       notation: "mo ⊻<br/>mo ⊕<br/>mo ↮<br/>mo ≢<br/>mi XOR"
@@ -3510,7 +3510,7 @@ concepts:
     
     - concept: expectation-value
       arity: 1
-      en: expectation-value of $1
+      en: expectation value of $1
       property: fenced
       area: "quantum physics"
       notation: "mrow ⟨ $1 ⟩"
@@ -3521,7 +3521,7 @@ concepts:
     
     - concept: expected-value
       arity: 1
-      en: expected-value of $1
+      en: expected value of $1
       property: function
       area: "probability theory"
       notation: "mi E<br/>mi M<br/>msub μ $1<br/>"
@@ -3536,7 +3536,7 @@ concepts:
     
     - concept: exponential-factorial
       arity: 1
-      en: exponential-factorial of $1
+      en: exponential factorial of $1
       property: postfix
       area: "number theory"
       notation: "mo $"
@@ -3546,7 +3546,7 @@ concepts:
     
     - concept: exponential-integral
       arity: 1
-      en: exponential-integral of $1
+      en: exponential integral of $1
       property: 
       area: 
       notation: "mi Ei"
@@ -3571,7 +3571,7 @@ concepts:
     
     - concept: exterior-derivative
       arity: 1
-      en: exterior-derivative of $1
+      en: exterior derivative of $1
       property: operator
       area: "differential forms"
       notation: "mi d"
@@ -3581,7 +3581,7 @@ concepts:
     
     - concept: exterior-algebra
       arity: 1
-      en: exterior-algebra of $1
+      en: exterior algebra of $1
       property: function
       area: "multilinear algebra"
       notation: "mi Λ"
@@ -3590,7 +3590,7 @@ concepts:
     
     - concept: exterior-product
       arity: 2
-      en: $1 exterior-product $2
+      en: $1 exterior product $2
       property: infix
       area: "multilinear algebra"
       notation: "mo ∧"
@@ -3602,7 +3602,7 @@ concepts:
     
     - concept: f-distribution
       arity: 1
-      en: f-distribution of $1
+      en: f distribution of $1
       property: "indexed symbol"
       area: "probability theory"
       notation: "msub F $1"
@@ -3612,7 +3612,7 @@ concepts:
     
     - concept: faber-polynomial
       arity: 1
-      en: faber-polynomial of $1
+      en: faber polynomial of $1
       property: function
       area: "polynomials"
       notation: "msub P m"
@@ -3623,7 +3623,7 @@ concepts:
     
     - concept: falling-factorial
       arity: 2
-      en: falling-factorial
+      en: falling factorial
       property: mixfix
       area: "combinatorics"
       notation: "msup $1 mover $2 ¯<br/>msup $1 munder $2 ¯<br/>msub mrow ( $1 ) /mrow $2"
@@ -3639,7 +3639,7 @@ concepts:
     
     - concept: fatou-set
       arity: 1
-      en: fatou-set of $1
+      en: fatou set of $1
       property: function
       area: "complex dynamics"
       notation: "mi F"
@@ -3648,7 +3648,7 @@ concepts:
     
     - concept: farey-sequence
       arity: 0
-      en: farey-sequence
+      en: farey sequence
       property: symbol
       area: "number theory"
       notation: "mi F"
@@ -3658,7 +3658,7 @@ concepts:
     
     - concept: feferman-schutte-ordinal
       arity: 0
-      en: feferman-schutte-ordinal
+      en: feferman schutte ordinal
       property: symbol
       area: "ordinal numbers"
       notation: "msub Γ 0"
@@ -3667,7 +3667,7 @@ concepts:
     
     - concept: feigenbaum-constant
       arity: 0
-      en: feigenbaum-constant
+      en: feigenbaum constant
       property: symbol
       area: "chaos theory"
       notation: "mi δ"
@@ -3677,7 +3677,7 @@ concepts:
     
     - concept: fermat-number
       arity: 1
-      en: fermat-number of $1
+      en: fermat number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub F $1"
@@ -3687,7 +3687,7 @@ concepts:
     
     - concept: fermat-quotient
       arity: 1
-      en: fermat-quotient of $1
+      en: fermat quotient of $1
       property: function
       area: "number theory"
       notation: "msub q $1"
@@ -3697,7 +3697,7 @@ concepts:
     
     - concept: fermi-dirac-distribution
       arity: 1
-      en: fermi-dirac-distribution of $1
+      en: fermi dirac distribution of $1
       property: function
       area: "quantum statistics"
       notation: "mover n ¯"
@@ -3709,7 +3709,7 @@ concepts:
     
     - concept: feynman-slash
       arity: 1
-      en: feynman-slash of $1
+      en: feynman slash of $1
       property: menclose
       area: "quantum field theory"
       notation: "menclose notation=updiagonalstrike $1"
@@ -3718,7 +3718,7 @@ concepts:
     
     - concept: fibonacci-number
       arity: 1
-      en: fibonacci-number of $1
+      en: fibonacci number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub F $1"
@@ -3731,7 +3731,7 @@ concepts:
     
     - concept: fibonacci-polynomial
       arity: 1
-      en: fibonacci-polynomial of $1
+      en: fibonacci polynomial of $1
       property: "indexed function"
       area: "polynomials"
       notation: "msub F $1"
@@ -3742,7 +3742,7 @@ concepts:
     
     - concept: fibre-product
       arity: 1
-      en: fibre-product of $1
+      en: fibre product of $1
       property: indexed infix
       area: "category theory"
       notation: "msub × $1"
@@ -3756,7 +3756,7 @@ concepts:
     
     - concept: field-extension
       arity: 2
-      en: $1 field-extension $2
+      en: $1 field extension $2
       property: infix
       area: "algebra"
       notation: "mo /"
@@ -3768,7 +3768,7 @@ concepts:
     
     - concept: field-of-sets
       arity: 2
-      en: field-of-sets
+      en: field of sets
       property: fenced
       area: "boolean algebra"
       notation: "⟨$1, $2⟩"
@@ -3778,7 +3778,7 @@ concepts:
     
     - concept: first-isogonic-center
       arity: 0
-      en: first-isogonic-center
+      en: first isogonic center
       property: symbol
       area: "geometry"
       notation: "mrow X(13"
@@ -3787,7 +3787,7 @@ concepts:
     
     - concept: fisher-information
       arity: 1
-      en: fisher-information of $1
+      en: fisher information of $1
       property: function
       area: "statistics"
       notation: "mi I"
@@ -3823,7 +3823,7 @@ concepts:
     
     - concept: fock-space
       arity: 1
-      en: fock-space of $1
+      en: fock space of $1
       property: function
       area: "quantum mechanics"
       notation: "mi F"
@@ -3834,7 +3834,7 @@ concepts:
     
     - concept: forward-difference
       arity: 3
-      en: $1 th forward-difference of $3 over $2
+      en: $1 th forward difference of $3 over $2
       property: operator
       area: "numerical analysis"
       comment: "<math><msubsup><mi>&Delta;</mi><mi>x</mi><mi>n</mi></msubsup><mrow>mi<>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
@@ -3844,7 +3844,7 @@ concepts:
     
     - concept: fourier-cosine-transform
       arity: 1
-      en: fourier-cosine-transform of $1
+      en: fourier cosine transform of $1
       property: operator
       area: "functional analysis"
       notation: "msub ℱ c"
@@ -3855,7 +3855,7 @@ concepts:
     
     - concept: fourier-sine-transform
       arity: 1
-      en: fourier-sine-transform of $1
+      en: fourier sine transform of $1
       property: operator
       area: "functional analysis"
       notation: "msub ℱ s"
@@ -3866,7 +3866,7 @@ concepts:
     
     - concept: fourier-transform
       arity: 1
-      en: fourier-transform of $1
+      en: fourier transform of $1
       property: mover
       area: "fourier analysis"
       notation: "mover $1 ^"
@@ -3880,7 +3880,7 @@ concepts:
     
     - concept: fox-derivative
       arity: 1
-      en: fox-derivative of $1
+      en: fox derivative of $1
       property: mfrac
       area: "geometric topology"
       notation: "mfrac ∂..."
@@ -3891,7 +3891,7 @@ concepts:
     
     - concept: fox-wright-function
       arity: 1
-      en: fox-wright-function of $1
+      en: fox wright function of $1
       property: mmultiscripts
       area: "special functions"
       notation: "mmultiscripts Ψ q none mprescripts p none"
@@ -3902,7 +3902,7 @@ concepts:
     
     - concept: fractional-derivative
       arity: 1
-      en: fractional-derivative of $1
+      en: fractional derivative of $1
       property: operator
       area: "fractional caclulus"
       notation: "msup D $1"
@@ -3912,7 +3912,7 @@ concepts:
     
     - concept: fractional-integral
       arity: 1
-      en: fractional-integral of $1
+      en: fractional integral of $1
       property: operator
       area: "fractional caclulus"
       notation: "msup I $1"
@@ -3923,7 +3923,7 @@ concepts:
     
     - concept: fractional-part
       arity: 1
-      en: fractional-part of $1
+      en: fractional part of $1
       property: "function<br/>fenced"
       area: "arithmetic"
       notation: "mi frac<br/>mrow ⟦ $1 ⟧<br/>mrow { $1 }"
@@ -3937,7 +3937,7 @@ concepts:
     
     - concept: franel-number
       arity: 1
-      en: franel-number of $1
+      en: franel number of $1
       property: "indexed symbol"
       area: "combinatorics"
       notation: "mi Fr"
@@ -3946,7 +3946,7 @@ concepts:
     
     - concept: frattini-subgroup
       arity: 1
-      en: frattini-subgroup of $1
+      en: frattini subgroup of $1
       property: function
       area: "group theory"
       notation: "mi φ<br/>mi ϕ"
@@ -3957,7 +3957,7 @@ concepts:
     
     - concept: frechet-derivative
       arity: 1
-      en: frechet-derivative of $1
+      en: frechet derivative of $1
       property: operator
       area: "banach spaces"
       notation: "mi D"
@@ -3969,7 +3969,7 @@ concepts:
     
     - concept: frechet-topology
       arity: 0
-      en: frechet-topology
+      en: frechet topology
       property: constant
       area: "topology"
       notation: "msub T 1"
@@ -3981,7 +3981,7 @@ concepts:
     
     - concept: fredholm-determinant
       arity: 1
-      en: fredholm-determinant of $1
+      en: fredholm determinant of $1
       property: function
       area: "mathematical physics"
       notation: "mi det"
@@ -3992,7 +3992,7 @@ concepts:
     
     - concept: free-algebra
       arity: 2
-      en: free-algebra
+      en: free algebra
       property: mixfix
       area: "ring theory"
       notation: "mrow $1⟨$2⟩"
@@ -4003,7 +4003,7 @@ concepts:
     
     - concept: free-module
       arity: 2
-      en: free-module
+      en: free module
       property: mixfix<br/>msup
       area: "module theory"
       notation: "mrow $1 { $2 }<br/>msup $1 ($2"
@@ -4015,7 +4015,7 @@ concepts:
     
     - concept: free-monoid
       arity: 1
-      en: free-monoid of $1
+      en: free monoid of $1
       property: msup
       area: "abstract algebra"
       notation: "msup $1 *"
@@ -4026,7 +4026,7 @@ concepts:
     
     - concept: free-product
       arity: 2
-      en: $1 free-product $2
+      en: $1 free product $2
       property: infix
       area: "group theory"
       notation: "mo *"
@@ -4037,7 +4037,7 @@ concepts:
     
     - concept: fresnel-integral
       arity: 1
-      en: fresnel-integral of $1
+      en: fresnel integral of $1
       property: operator
       area: "special functions"
       notation: "mi ℱ<br/>mi C<br/>mi S"
@@ -4052,7 +4052,7 @@ concepts:
     
     - concept: frobenius-norm
       arity: 1
-      en: frobenius-norm of $1
+      en: frobenius norm of $1
       property: indexed fenced
       area: "linear algebra"
       notation: "msub mrow | $1 F"
@@ -4065,7 +4065,7 @@ concepts:
     
     - concept: frolicher-nijenhuis-bracket
       arity: 2
-      en: frolicher-nijenhuis-bracket
+      en: frolicher nijenhuis bracket
       property: fenced
       area: "differntial geometry"
       notation: "mrow [ $1 , $2 ]"
@@ -4075,7 +4075,7 @@ concepts:
     
     - concept: functional-congruence
       arity: 3
-      en: functional-congruence of $1 and $2 mod $3
+      en: functional congruence of $1 and $2 mod $3
       property: mixfix
       area: "number theory"
       notation: "mrow $1 ≡ $2 (mod $3"
@@ -4086,7 +4086,7 @@ concepts:
     
     - concept: functor-category
       arity: 2
-      en: functor-category
+      en: functor category
       property: msup<br/>fenced
       area: "category theory"
       notation: "msup $1 $2<br/>mrow [$1, $2]"
@@ -4096,7 +4096,7 @@ concepts:
     
     - concept: fundamental-matrix
       arity: 0
-      en: fundamental-matrix
+      en: fundamental matrix
       property: symbol
       area: "computer vision"
       notation: "mi F"
@@ -4105,7 +4105,7 @@ concepts:
     
     - concept: g-function
       arity: 1
-      en: g-function of $1
+      en: g function of $1
       property: "indexed function"
       area: "special functions"
       notation: "mi G"
@@ -4117,7 +4117,7 @@ concepts:
     
     - concept: gabor-transform
       arity: 1
-      en: gabor-transform of $1
+      en: gabor transform of $1
       property: operator
       area: "integral transforms"
       notation: "mi G"
@@ -4128,7 +4128,7 @@ concepts:
     
     - concept: gain-function
       arity: 1
-      en: gain-function of $1
+      en: gain function of $1
       property: function
       area: "graph theory"
       notation: "mi φ"
@@ -4139,7 +4139,7 @@ concepts:
     
     - concept: galilean-transformation
       arity: 1
-      en: galilean-transformation of $1
+      en: galilean transformation of $1
       property: function
       area: "physics"
       notation: "mi G"
@@ -4150,7 +4150,7 @@ concepts:
     
     - concept: galois-field
       arity: 1
-      en: galois-field of $1
+      en: galois field of $1
       property: function
       area: "finite fields"
       notation: "mrow GF ($1)<br/>msub F $1<br/>msub 𝔽 $1"
@@ -4163,7 +4163,7 @@ concepts:
     
     - concept: galois-group
       arity: 1
-      en: galois-group of $1
+      en: galois group of $1
       property: function
       area: "abstract algebra"
       notation: "mi Gal"
@@ -4175,7 +4175,7 @@ concepts:
     
     - concept: gamma-distribution
       arity: 0
-      en: gamma-distribution
+      en: gamma distribution
       property: symbol
       area: "probability theory"
       notation: "mi Γ"
@@ -4185,7 +4185,7 @@ concepts:
     
     - concept: gamma-function
       arity: 1
-      en: gamma-function of $1
+      en: gamma function of $1
       property: operator
       area: "special functions"
       notation: "mi Γ"
@@ -4201,7 +4201,7 @@ concepts:
     
     - concept: gateaux-derivative
       arity: 3
-      en: gateaux-derivative of $1 at $2 ; £3
+      en: gateaux derivative of $1 at $2 ; £3
       property: mixfix
       area: "differential calculus"
       notation: "mrow d$1($2; $3"
@@ -4224,7 +4224,7 @@ concepts:
     
     - concept: gaussian-distribution
       arity: 0
-      en: gaussian-distribution
+      en: gaussian distribution
       property: symbol
       area: "probability theory"
       notation: "mi 𝒩"
@@ -4237,7 +4237,7 @@ concepts:
     
     - concept: gaussian-curvature
       arity: 1
-      en: gaussian-curvature of $1
+      en: gaussian curvature of $1
       property: function
       area: "differential geometry"
       notation: "mi Κ"
@@ -4248,7 +4248,7 @@ concepts:
     
     - concept: gaussian-integers
       arity: 0
-      en: gaussian-integers
+      en: gaussian integers
       property: constant
       area: "number theory"
       notation: "mrow ℤ [i]"
@@ -4259,7 +4259,7 @@ concepts:
     
     - concept: gegenbauer-polynomial
       arity: 2
-      en: gegenbauer-polynomial
+      en: gegenbauer polynomial
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "msubsup C $1 ($2"
@@ -4271,7 +4271,7 @@ concepts:
     
     - concept: gelfand-triple
       arity: 3
-      en: gelfand-triple of $1, $2 and $3
+      en: gelfand triple of $1, $2 and $3
       property: fenced
       area: "functional analysis"
       notation: "mrow ( $1, $2, $3"
@@ -4280,7 +4280,7 @@ concepts:
     
     - concept: gelfond-constant
       arity: 0
-      en: gelfond-constant
+      en: gelfond constant
       property: constant
       area: "transcendental constants"
       notation: "msup e π"
@@ -4290,7 +4290,7 @@ concepts:
     
     - concept: gelfond-schneider-constant
       arity: 0
-      en: gelfond-schneider-constant
+      en: gelfond schneider constant
       property: constant
       area: "transcendental constants"
       notation: "msup 2 msqrt 2"
@@ -4300,7 +4300,7 @@ concepts:
     
     - concept: gell-mann-matrix
       arity: 0
-      en: gell-mann-matrix
+      en: gell mann matrix
       property: symbol
       area: "particle physics"
       notation: "mi λ"
@@ -4311,7 +4311,7 @@ concepts:
     
     - concept: general-linear-group
       arity: 1
-      en: general-linear-group of $1
+      en: general linear group of $1
       property: function
       area: "group theory"
       notation: "mi GL<br/>mi Aut"
@@ -4324,7 +4324,7 @@ concepts:
     
     - concept: generalized-hypergeometric-function
       arity: 1
-      en: generalized-hypergeometric-function of $1
+      en: generalized hypergeometric function of $1
       property: mmultiscripts
       area: "special functions"
       notation: "mmultiscripts F q none mprescripts p none"
@@ -4343,7 +4343,7 @@ concepts:
     
     - concept: generalized-mean
       arity: 1
-      en: generalized-mean of $1
+      en: generalized mean of $1
       property: function
       area: "means"
       notation: "msub M $1"
@@ -4357,7 +4357,7 @@ concepts:
     
     - concept: genocchi-number
       arity: 0
-      en: genocchi-number
+      en: genocchi number
       property: symbol
       area: "integer sequences"
       notation: "msub G $1"
@@ -4369,7 +4369,7 @@ concepts:
     
     - concept: geodesic-curvature
       arity: 0
-      en: geodesic-curvature
+      en: geodesic curvature
       property: symbol
       area: "riemannian geometry"
       notation: "msub k g"
@@ -4380,7 +4380,7 @@ concepts:
     
     - concept: geodesic-distance
       arity: 1
-      en: geodesic-distance of $1
+      en: geodesic distance of $1
       property: function
       area: "graph theory"
       notation: "mi d"
@@ -4394,7 +4394,7 @@ concepts:
     
     - concept: geometric-genus
       arity: 1
-      en: geometric-genus of $1
+      en: geometric genus of $1
       property: function
       area: "algebraic geometry"
       notation: "msub p g"
@@ -4405,7 +4405,7 @@ concepts:
     
     - concept: geometric-integral
       arity: 1
-      en: geometric-integral of $1
+      en: geometric integral of $1
       property: indexed
       area: "calculus"
       notation: "mo Π"
@@ -4414,7 +4414,7 @@ concepts:
     
     - concept: geometric-mean
       arity: 1
-      en: geometric-mean of $1
+      en: geometric mean of $1
       property: function
       area: "means"
       notation: "mi GM"
@@ -4425,7 +4425,7 @@ concepts:
     
     - concept: geometric-product
       arity: 2
-      en: $1 geometric-product $2
+      en: $1 geometric product $2
       property: infix
       area: "geometric algebra"
       notation: "mo invisible times"
@@ -4445,7 +4445,7 @@ concepts:
     
     - concept: glaisher-constant
       arity: 0
-      en: glaisher-constant
+      en: glaisher constant
       property: constant
       area: "number theory"
       notation: "mi A"
@@ -4458,7 +4458,7 @@ concepts:
     
     - concept: global-dimension
       arity: 1
-      en: global-dimension of $1
+      en: global dimension of $1
       property: function
       area: "ring theory"
       notation: "mi gl dim"
@@ -4470,7 +4470,7 @@ concepts:
     
     - concept: golden-ratio
       arity: 0
-      en: golden-ratio
+      en: golden ratio
       property: constant
       area: "geometry"
       notation: "mi φ<br/>mi ϕ"
@@ -4492,7 +4492,7 @@ concepts:
     
     - concept: graham-number
       arity: 0
-      en: graham-number
+      en: graham number
       property: constant
       area: "ramsey theory"
       notation: "msub g 64"
@@ -4502,7 +4502,7 @@ concepts:
     
     - concept: gram-determinant
       arity: 1
-      en: gram-determinant of $1
+      en: gram determinant of $1
       property: function
       area: "linear algebra"
       notation: "mi G<br/>mi Γ"
@@ -4512,7 +4512,7 @@ concepts:
     
     - concept: gram-matrix
       arity: 0
-      en: gram-matrix
+      en: gram matrix
       property: symbol
       area: "linear algebra"
       notation: "mi G"
@@ -4537,7 +4537,7 @@ concepts:
     
     - concept: green-function
       arity: 1
-      en: green-function of $1
+      en: green function of $1
       property: function
       area: "mathematical physics"
       notation: "mi G"
@@ -4550,7 +4550,7 @@ concepts:
     
     - concept: grobner-basis
       arity: 0
-      en: grobner-basis
+      en: grobner basis
       property: symbol
       area: "computer algebra"
       notation: "mi G"
@@ -4561,7 +4561,7 @@ concepts:
     
     - concept: group-algebra
       arity: 2
-      en: group-algebra
+      en: group algebra
       property: mixfix
       area: "ring theory"
       notation: "mrow $1[$2]<br/>mrow $1$2"
@@ -4573,7 +4573,7 @@ concepts:
     
     - concept: group-of-units
       arity: 1
-      en: group-of-units of $1
+      en: group of units of $1
       property: msup<br/>function
       area: "ring theory"
       notation: "msup $1 *<br/>msup $1 ×<br/>mi U"
@@ -4583,7 +4583,7 @@ concepts:
     
     - concept: group-ring
       arity: 2
-      en: group-ring
+      en: group ring
       property: mixfix<br/>infix
       area: "ring theory"
       notation: "mrow $1 [ $2 ]<br/>mrow $1 $2"
@@ -4593,7 +4593,7 @@ concepts:
     
     - concept: gudermannian-function
       arity: 1
-      en: gudermannian-function of $1
+      en: gudermannian function of $1
       property: function
       area: "trigonometry"
       notation: "mi gd"
@@ -4606,7 +4606,7 @@ concepts:
     
     - concept: hadamard-product
       arity: 2
-      en: $1 hadamard-product $2
+      en: $1 hadamard product $2
       property: infix
       area: "algebra"
       notation: "mo ∘<br/>mo ⊙"
@@ -4621,7 +4621,7 @@ concepts:
     
     - concept: hahn-polynomial
       arity: 1
-      en: hahn-polynomial of $1
+      en: hahn polynomial of $1
       property: function
       area: "orthogonal polynomials"
       notation: "msub q $1"
@@ -4645,7 +4645,7 @@ concepts:
     
     - concept: hankel-function
       arity: 1
-      en: hankel-function of $1
+      en: hankel function of $1
       property: "indexed function"
       area: "special functions"
       notation: "mi H"
@@ -4656,7 +4656,7 @@ concepts:
     
     - concept: hardy-class
       arity: 1
-      en: hardy-class of $1
+      en: hardy class of $1
       property: "indexed symbol"
       area: "complex analysis"
       notation: "msup H $1"
@@ -4668,7 +4668,7 @@ concepts:
     
     - concept: hardy-space
       arity: 1
-      en: hardy-space of $1
+      en: hardy space of $1
       property: mixfix
       area: "complex analysis"
       notation: "msup H p ($1"
@@ -4679,7 +4679,7 @@ concepts:
     
     - concept: hardy-littlewood-maximal-operator
       arity: 1
-      en: hardy-littlewood-maximal-operator of $1
+      en: hardy littlewood maximal operator of $1
       property: operator
       area: "real analysis"
       notation: "mi M"
@@ -4690,7 +4690,7 @@ concepts:
     
     - concept: harmonic-mean
       arity: 1
-      en: harmonic-mean of $1
+      en: harmonic mean of $1
       property: function
       area: "means"
       notation: "mi H"
@@ -4703,7 +4703,7 @@ concepts:
     
     - concept: hausdorff-measure
       arity: 1
-      en: hausdorff-measure of $1
+      en: hausdorff measure of $1
       property: "indexed function"
       area: "metric geometry"
       notation: "msup H $1"
@@ -4713,7 +4713,7 @@ concepts:
     
     - concept: hausdorff-metric
       arity: 1
-      en: hausdorff-metric of $1
+      en: hausdorff metric of $1
       property: function
       area: "metric geometry"
       notation: "msub d H"
@@ -4723,7 +4723,7 @@ concepts:
     
     - concept: hausdorff-space
       arity: 0
-      en: hausdorff-space
+      en: hausdorff space
       property: constant
       area: "topology"
       notation: "msub T 2"
@@ -4734,7 +4734,7 @@ concepts:
     
     - concept: hazard-function
       arity: 1
-      en: hazard-function of $1
+      en: hazard function of $1
       property: function
       area: "engineering"
       notation: "mi h"
@@ -4745,7 +4745,7 @@ concepts:
     
     - concept: heaviside-function
       arity: 1
-      en: heaviside-function of $1
+      en: heaviside function of $1
       property: function
       area: "special functions"
       notation: "mi H"
@@ -4759,7 +4759,7 @@ concepts:
     
     - concept: heawood-number
       arity: 1
-      en: heawood-number of $1
+      en: heawood number of $1
       property: function
       area: "topological graph theory"
       notation: "mi H"
@@ -4768,7 +4768,7 @@ concepts:
     
     - concept: hecke-operator
       arity: 1
-      en: hecke-operator of $1
+      en: hecke operator of $1
       property: operator
       area: "modular forms"
       notation: "msub T $1"
@@ -4778,7 +4778,7 @@ concepts:
     
     - concept: height-function
       arity: 1
-      en: height-function of $1
+      en: height function of $1
       property: function
       area: "algebra"
       notation: "mi H<br/>mi h"
@@ -4787,7 +4787,7 @@ concepts:
     
     - concept: height-of-abelian-group
       arity: 1
-      en: height-of-abelian-group of $1
+      en: height of abelian group of $1
       property: function
       area: "group theory"
       notation: "msub h $1"
@@ -4796,7 +4796,7 @@ concepts:
     
     - concept: height-of-prime-ideal
       arity: 1
-      en: height-of-prime-ideal of $1
+      en: height of prime ideal of $1
       property: function
       area: "commutative algebra"
       notation: "mi ht"
@@ -4809,7 +4809,7 @@ concepts:
     
     - concept: heisenberg-group
       arity: 0
-      en: heisenberg-group
+      en: heisenberg group
       property: symbol
       area: "group theory"
       notation: "mi H"
@@ -4820,7 +4820,7 @@ concepts:
     
     - concept: hermite-polynomial
       arity: 1
-      en: hermite-polynomial of $1
+      en: hermite polynomial of $1
       property: function
       area: "special functions"
       notation: "mi H<br/>mi He"
@@ -4833,7 +4833,7 @@ concepts:
     
     - concept: hermitian-adjoint
       arity: 1
-      en: hermitian-adjoint of $1
+      en: hermitian adjoint of $1
       property: msup
       area: "functional analysis"
       notation: "msup †,<br/>msup *"
@@ -4844,7 +4844,7 @@ concepts:
     
     - concept: hermitian-conjugate
       arity: 1
-      en: hermitian-conjugate of $1
+      en: hermitian conjugate of $1
       property: msup
       area: "linear algebra"
       notation: "msup H"
@@ -4856,7 +4856,7 @@ concepts:
     
     - concept: heronian-mean
       arity: 1
-      en: heronian-mean of $1
+      en: heronian mean of $1
       property: function
       area: "means"
       notation: "mi H"
@@ -4879,7 +4879,7 @@ concepts:
     
     - concept: heun-function
       arity: 1
-      en: heun-function of $1
+      en: heun function of $1
       property: function
       area: "special functions"
       notation: "mi Hf<br/>mi H⁢ℓ"
@@ -4891,7 +4891,7 @@ concepts:
     
     - concept: heun-polynomial
       arity: 1
-      en: heun-polynomial of $1
+      en: heun polynomial of $1
       property: function
       area: "special functions"
       notation: "mi Hp"
@@ -4912,7 +4912,7 @@ concepts:
     
     - concept: hilbert-symbol
       arity: 2
-      en: hilbert-symbol
+      en: hilbert symbol
       property: fenced
       area: "quadratic forms"
       notation: "mrow ( $1, $2"
@@ -4922,7 +4922,7 @@ concepts:
     
     - concept: hilbert-schmidt-norm
       arity: 1
-      en: hilbert-schmidt-norm of $1
+      en: hilbert schmidt norm of $1
       property: fenced
       area: "matrix norms"
       notation: "msub mrow | $1 | HS"
@@ -4934,7 +4934,7 @@ concepts:
     
     - concept: hit-or-miss-transform
       arity: 2
-      en: $1 hit-or-miss-transform $2
+      en: $1 hit or miss transform $2
       property: infix
       area: "mathematical morphology"
       notation: "mo ⊙"
@@ -4943,7 +4943,7 @@ concepts:
     
     - concept: hodge-star-operator
       arity: 1
-      en: hodge-star-operator of $1
+      en: hodge star operator of $1
       property: prefix
       area: "differential geometry"
       notation: "mo ⋆"
@@ -4963,7 +4963,7 @@ concepts:
     
     - concept: holonomy-group
       arity: 1
-      en: holonomy-group of $1
+      en: holonomy group of $1
       property: "indexed symbol"
       area: "differential geometry"
       notation: "mi Hol"
@@ -4974,7 +4974,7 @@ concepts:
     
     - concept: home-prime
       arity: 1
-      en: home-prime of $1
+      en: home prime of $1
       property: function
       area: "number theory"
       notation: "mi HP"
@@ -4984,7 +4984,7 @@ concepts:
     
     - concept: homology-group
       arity: 1
-      en: homology-group of $1
+      en: homology group of $1
       property: function
       area: "homology theory"
       notation: "msub H $1"
@@ -4994,7 +4994,7 @@ concepts:
     
     - concept: homomorphic-product
       arity: 2
-      en: $1 homomorphic-product $2
+      en: $1 homomorphic product $2
       property: infix
       area: "graph theory"
       notation: "mo ⋉"
@@ -5004,7 +5004,7 @@ concepts:
     
     - concept: homotopy-category
       arity: 1
-      en: homotopy-category of $1
+      en: homotopy category of $1
       property: function
       area: "category theory"
       notation: "mi Ho"
@@ -5013,7 +5013,7 @@ concepts:
     
     - concept: horsepower-mechanical
       arity: 1
-      en: horsepower-mechanical of $1
+      en: horsepower mechanical of $1
       property: unit
       area: "imperial unit"
       notation: "mi hp"
@@ -5024,7 +5024,7 @@ concepts:
     
     - concept: horsepower-metric
       arity: 1
-      en: horsepower-metric of $1
+      en: horsepower metric of $1
       property: unit
       area: "metric unit"
       notation: "mi PS<br/>mi cv<br/>mi hk<br/>mi pk<br/>mi ks<br/>mi ch"
@@ -5035,7 +5035,7 @@ concepts:
     
     - concept: hurwitz-zeta-function
       arity: 1
-      en: hurwitz-zeta-function of $1
+      en: hurwitz zeta function of $1
       property: function
       area: "special functions"
       notation: "mi ζ"
@@ -5059,7 +5059,7 @@ concepts:
     
     - concept: hydrated-compound
       arity: 2
-      en: $1 hydrated-compound $2
+      en: $1 hydrated compound $2
       property: infix
       area: "chemistry"
       notation: "mo ⋅<br/>mo •"
@@ -5070,7 +5070,7 @@ concepts:
     
     - concept: hyperbolic-cosine-integral
       arity: 1
-      en: hyperbolic-cosine-integral of $1
+      en: hyperbolic cosine integral of $1
       property: function
       area: "special functions"
       notation: "mi Chi"
@@ -5080,7 +5080,7 @@ concepts:
     
     - concept: hyperbolic-plane
       arity: 0
-      en: hyperbolic-plane
+      en: hyperbolic plane
       property: symbol
       area: "non-euclidean geometry"
       notation: "msup ℍ 2"
@@ -5090,7 +5090,7 @@ concepts:
     
     - concept: hyperbolic-sine-integral
       arity: 1
-      en: hyperbolic-sine-integral of $1
+      en: hyperbolic sine integral of $1
       property: function
       area: "special functions"
       notation: "mi Shi"
@@ -5100,7 +5100,7 @@ concepts:
     
     - concept: hyperbolic-space
       arity: 0
-      en: hyperbolic-space
+      en: hyperbolic space
       property: symbol
       area: "non-euclidean geometry"
       notation: "msupH$1"
@@ -5110,7 +5110,7 @@ concepts:
     
     - concept: hyperbolic-umbilic-canonical-integral-function
       arity: 1
-      en: hyperbolic-umbilic-canonical-integral-function of $1
+      en: hyperbolic umbilic canonical integral function of $1
       property: function
       area: "special functions"
       notation: "mrow Ψ sup (E"
@@ -5144,7 +5144,7 @@ concepts:
     
     - concept: identity-element
       arity: 0
-      en: identity-element
+      en: identity element
       property: symbol
       area: "group theory"
       notation: "mi e<br/>mi I<br/>mi E<br/>mn 1"
@@ -5158,7 +5158,7 @@ concepts:
     
     - concept: identity-function
       arity: 1
-      en: identity-function of $1
+      en: identity function of $1
       property: function
       area: "algebra"
       notation: "mi id<br/>msub id $1<br/>msub I $1"
@@ -5173,7 +5173,7 @@ concepts:
     
     - concept: identity-functor
       arity: 1
-      en: identity-functor of $1
+      en: identity functor of $1
       property: function
       area: "category theory"
       notation: "msub 1 $1<br/>msubI$1<br/>msub Id $1"
@@ -5183,7 +5183,7 @@ concepts:
     
     - concept: identity-matrix
       arity: 0
-      en: identity-matrix
+      en: identity matrix
       property: symbol
       area: "linear algebra"
       notation: "mi I"
@@ -5221,7 +5221,7 @@ concepts:
     
     - concept: incidence-relation
       arity: 2
-      en: $1 incidence-relation $2
+      en: $1 incidence relation $2
       property: infix
       area: "projective geometry"
       notation: "mi I"
@@ -5232,7 +5232,7 @@ concepts:
     
     - concept: incidence-structure
       arity: 3
-      en: incidence-structure of $1, $2 and $3
+      en: incidence structure of $1, $2 and $3
       property: fenced
       area: "incidence geometry"
       notation: "mrow ( $1, $2, $3"
@@ -5241,7 +5241,7 @@ concepts:
     
     - concept: inclusion-map
       arity: 1
-      en: inclusion-map of $1
+      en: inclusion map of $1
       property: function
       area: "set theory"
       notation: "mi ι"
@@ -5265,7 +5265,7 @@ concepts:
     
     - concept: incomplete-beta-function
       arity: 1
-      en: incomplete-beta-function of $1
+      en: incomplete beta function of $1
       property: function
       area: "special functions"
       notation: "mi B"
@@ -5277,7 +5277,7 @@ concepts:
     
     - concept: incomplete-elliptic-integral-of-the-first-kind
       arity: 1
-      en: incomplete-elliptic-integral-of-the-first-kind of $1
+      en: incomplete elliptic integral of the first kind of $1
       property: function
       area: "elliptic functions"
       notation: "mi F"
@@ -5288,7 +5288,7 @@ concepts:
     
     - concept: incomplete-elliptic-integral-of-the-second-kind
       arity: 1
-      en: incomplete-elliptic-integral-of-the-second-kind of $1
+      en: incomplete elliptic integral of the second kind of $1
       property: function
       area: "elliptic functions"
       notation: "mi E"
@@ -5299,7 +5299,7 @@ concepts:
     
     - concept: incomplete-gamma-function
       arity: 1
-      en: incomplete-gamma-function of $1
+      en: incomplete gamma function of $1
       property: function
       area: "special functions"
       notation: "mi Γ"
@@ -5323,7 +5323,7 @@ concepts:
     
     - concept: increase-tends-to?
       arity: 2
-      en: $1 increase-tends-to? $2
+      en: $1 increase tends to? $2
       property: infix
       area: "calculus"
       notation: "mo ↗"
@@ -5344,7 +5344,7 @@ concepts:
     
     - concept: index-of-subgroup
       arity: 2
-      en: index-of-subgroup
+      en: index of subgroup
       property: fenced
       area: "group theory"
       notation: "mrow [ $1 : $2 ]<br/>mrow ( $1 : $2 )<br/>mrow |$1 : $2 |"
@@ -5353,7 +5353,7 @@ concepts:
     
     - concept: index-of-lie-algebra
       arity: 1
-      en: index-of-lie-algebra of $1
+      en: index of lie algebra of $1
       property: function
       area: "lie algebra"
       notation: "mi ind"
@@ -5375,7 +5375,7 @@ concepts:
     
     - concept: infimum-limit
       arity: 1
-      en: infimum-limit of $1
+      en: infimum limit of $1
       property: indexed
       area: "limits"
       notation: "mi lim inf<br/>munder lim ¯"
@@ -5392,7 +5392,7 @@ concepts:
     
     - concept: infinite-product
       arity: 1
-      en: infinite-product of $1
+      en: infinite product of $1
       property: indexed
       area: "mathematical analysis"
       notation: "munderover Π $1∞"
@@ -5403,7 +5403,7 @@ concepts:
     
     - concept: infinitely-many-concurrently-active-copies
       arity: 1
-      en: infinitely-many-concurrently-active-copies of $1
+      en: infinitely many concurrently active copies of $1
       property: prefix
       area: "formal languages"
       notation: "mo !"
@@ -5421,7 +5421,7 @@ concepts:
     
     - concept: inner-automorphism-group
       arity: 1
-      en: inner-automorphism-group of $1
+      en: inner automorphism group of $1
       property: function
       area: "abstract algebra"
       notation: "mi Inn"
@@ -5435,7 +5435,7 @@ concepts:
     
     - concept: inner-jordan-measure
       arity: 1
-      en: inner-jordan-measure of $1
+      en: inner jordan measure of $1
       property: function
       area: "measure theory"
       notation: "msub m *"
@@ -5446,7 +5446,7 @@ concepts:
     
     - concept: inner-product
       arity: 2
-      en: $1 inner-product $2
+      en: $1 inner product $2
       property: infix<br/>fenced
       area: "linear algebra"
       notation: "mo ⋅<br/>mrow [ $1, $2 ]"
@@ -5459,7 +5459,7 @@ concepts:
     
     - concept: instantaneous-activity
       arity: 2
-      en: instantaneous-activity
+      en: instantaneous activity
       property: mixfix
       area: "chemistry"
       notation: "msub mrow { $1 } /mrow $2"
@@ -5468,7 +5468,7 @@ concepts:
     
     - concept: integer-part
       arity: 1
-      en: integer-part of $1
+      en: integer part of $1
       property: "function<br/>fenced"
       area: "number theory"
       notation: "mi int<br/>[ $1 ]"
@@ -5490,7 +5490,7 @@ concepts:
     
     - concept: interior-product
       arity: 1
-      en: interior-product of $1
+      en: interior product of $1
       property: "infix<br/>indexed function"
       area: "differential forms"
       notation: "mo ⨼<br/>msub ι $1"
@@ -5500,7 +5500,7 @@ concepts:
     
     - concept: intersection-number
       arity: 2
-      en: $1 intersection-number $2
+      en: $1 intersection number $2
       property: infix
       area: "algebraic geometry"
       notation: "mo ⋅<br/>"
@@ -5509,7 +5509,7 @@ concepts:
     
     - concept: inverse-image
       arity: 2
-      en: inverse-image
+      en: inverse image
       property: mixfix
       area: "set theory"
       notation: "mrow msup $1 -1 /msup [ $2 ]"
@@ -5521,7 +5521,7 @@ concepts:
     
     - concept: inverse-limit
       arity: 1
-      en: inverse-limit of $1
+      en: inverse limit of $1
       property: prefix
       area: "category theory"
       notation: "munder lim ←"
@@ -5534,7 +5534,7 @@ concepts:
     
     - concept: inverse-moment-of-function
       arity: 2
-      en: inverse-moment-of-function
+      en: inverse moment of function
       property: "<br/>msub<br/>mixfix"
       area: "mathematics"
       notation: "msub μ mrow - $1 /mrow<br/>mrow E [ msup $1 mrow - $2 /mrow ]"
@@ -5545,7 +5545,7 @@ concepts:
     
     - concept: inverse-tangent-integral
       arity: 1
-      en: inverse-tangent-integral of $1
+      en: inverse tangent integral of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub Ti $1"
@@ -5554,7 +5554,7 @@ concepts:
     
     - concept: inverse-wishart-distribution
       arity: 0
-      en: inverse-wishart-distribution
+      en: inverse wishart distribution
       property: symbol
       area: "probability theory"
       notation: "msubsup W p -1"
@@ -5565,7 +5565,7 @@ concepts:
     
     - concept: ionic-charge
       arity: 2
-      en: ionic-charge
+      en: ionic charge
       property: msup
       area: "chemistry"
       notation: "msup $1 $2<br/>"
@@ -5574,7 +5574,7 @@ concepts:
     
     - concept: isogonal-conjugate
       arity: 1
-      en: isogonal-conjugate of $1
+      en: isogonal conjugate of $1
       property: msup
       area: "geometry"
       notation: "msup $1 -1"
@@ -5598,7 +5598,7 @@ concepts:
     
     - concept: isotropy-group
       arity: 2
-      en: isotropy-group
+      en: isotropy group
       property: msub
       area: "group theory"
       notation: "msub $1 $2"
@@ -5611,7 +5611,7 @@ concepts:
     
     - concept: iverson-bracket
       arity: 1
-      en: iverson-bracket of $1
+      en: iverson bracket of $1
       property: fenced
       area: "set theory"
       urls: 
@@ -5619,7 +5619,7 @@ concepts:
     
     - concept: j-invariant
       arity: 1
-      en: j-invariant of $1
+      en: j invariant of $1
       property: function
       area: "number theory"
       notation: "mi j"
@@ -5629,7 +5629,7 @@ concepts:
     
     - concept: jacobi-matrix
       arity: 1
-      en: jacobi-matrix of $1
+      en: jacobi matrix of $1
       property: function
       area: "operator theory"
       notation: "mi J"
@@ -5642,7 +5642,7 @@ concepts:
     
     - concept: jacobi-polynomial
       arity: 1
-      en: jacobi-polynomial of $1
+      en: jacobi polynomial of $1
       property: function
       area: "orthogonal polynomials"
       notation: "msubsup P"
@@ -5656,7 +5656,7 @@ concepts:
     
     - concept: jacobi-symbol
       arity: 2
-      en: jacobi-symbol
+      en: jacobi symbol
       property: mixfix
       area: "number theory"
       notation: "mrow ( $1 | $2"
@@ -5668,7 +5668,7 @@ concepts:
     
     - concept: jacobi-theta-function
       arity: 1
-      en: jacobi-theta-function of $1
+      en: jacobi theta function of $1
       property: function
       area: "special-functions"
       notation: "mi ϑ"
@@ -5678,7 +5678,7 @@ concepts:
     
     - concept: jacobi-zeta-function
       arity: 2
-      en: jacobi-zeta-function
+      en: jacobi zeta function
       property: function
       area: "special-functions"
       notation: "mrow Z⁡ ( $1 |  $2 )"
@@ -5690,7 +5690,7 @@ concepts:
     
     - concept: jacobian-elliptic-function
       arity: 1
-      en: jacobian-elliptic-function of $1
+      en: jacobian elliptic function of $1
       property: function
       area: "special-functions"
       notation: "mi sn<br/>mi cn<br/>mi dn<br/>mi sd<br/>mi cd<br/>mi sc"
@@ -5705,7 +5705,7 @@ concepts:
     
     - concept: jacobson-radical
       arity: 1
-      en: jacobson-radical of $1
+      en: jacobson radical of $1
       property: function
       area: "ring theory"
       notation: "mi J<br/>mi rad"
@@ -5717,7 +5717,7 @@ concepts:
     
     - concept: jacobsthal-number
       arity: 0
-      en: jacobsthal-number
+      en: jacobsthal number
       property: symbol
       area: "number theory"
       notation: "mi J"
@@ -5727,7 +5727,7 @@ concepts:
     
     - concept: janko-group
       arity: 0
-      en: janko-group
+      en: janko group
       property: symbol
       area: "group theory"
       notation: "msub J 1<br/>msub J 2<br/>msub J 3<br/>msub J 4"
@@ -5760,7 +5760,7 @@ concepts:
     
     - concept: jone-polynomial
       arity: 1
-      en: jone-polynomial of $1
+      en: jone polynomial of $1
       property: function
       area: "knot theory"
       notation: "mi V"
@@ -5771,7 +5771,7 @@ concepts:
     
     - concept: jordan-block
       arity: 2
-      en: jordan-block
+      en: jordan block
       property: "indexed symbol"
       area: "linear algebra"
       notation: "msub J mrow $1, $2"
@@ -5783,7 +5783,7 @@ concepts:
     
     - concept: jordan-measure
       arity: 1
-      en: jordan-measure of $1
+      en: jordan measure of $1
       property: function
       area: "measure theory"
       notation: "mi m"
@@ -5794,7 +5794,7 @@ concepts:
     
     - concept: jordan-totient-function
       arity: 1
-      en: jordan-totient-function of $1
+      en: jordan totient function of $1
       property: function
       area: "number theory"
       notation: "msub J $1"
@@ -5803,7 +5803,7 @@ concepts:
     
     - concept: julia-set
       arity: 1
-      en: julia-set of $1
+      en: julia set of $1
       property: function
       area: "complex dynamics"
       notation: "mi J"
@@ -5814,7 +5814,7 @@ concepts:
     
     - concept: kaprekar-constant
       arity: 0
-      en: kaprekar-constant
+      en: kaprekar constant
       property: symbol
       area: "number theory"
       notation: "mn 6174"
@@ -5826,7 +5826,7 @@ concepts:
     
     - concept: kauffman-bracket
       arity: 1
-      en: kauffman-bracket of $1
+      en: kauffman bracket of $1
       property: fenced
       area: "knot theory"
       notation: "mrow ⟨ $1 ⟩"
@@ -5837,7 +5837,7 @@ concepts:
     
     - concept: kelvin-function
       arity: 1
-      en: kelvin-function of $1
+      en: kelvin function of $1
       property: function
       area: "special functions"
       notation: "msub ber ν⁡<br/>msub bei ν⁡"
@@ -5873,7 +5873,7 @@ concepts:
     
     - concept: khinchin-constant
       arity: 0
-      en: khinchin-constant
+      en: khinchin constant
       property: constant
       area: "continued fractions"
       notation: "mi K<br/>msub K 0"
@@ -5883,7 +5883,7 @@ concepts:
     
     - concept: killing-form
       arity: 1
-      en: killing-form of $1
+      en: killing form of $1
       property: function
       area: "lie algebra"
       notation: "mi B"
@@ -5895,7 +5895,7 @@ concepts:
     
     - concept: kleene-star
       arity: 1
-      en: kleene-star of $1
+      en: kleene star of $1
       property: msup
       area: "formal languages"
       notation: "msup *"
@@ -5904,7 +5904,7 @@ concepts:
     
     - concept: kleene-plus
       arity: 1
-      en: kleene-plus of $1
+      en: kleene plus of $1
       property: msup
       area: "formal languages"
       notation: "msup +"
@@ -5913,7 +5913,7 @@ concepts:
     
     - concept: klein-four-group
       arity: 0
-      en: klein-four-group
+      en: klein four group
       property: symbol
       area: "group theory"
       notation: "mi V<br/>msub K 4"
@@ -5923,7 +5923,7 @@ concepts:
     
     - concept: kloosterman-sum
       arity: 1
-      en: kloosterman-sum of $1
+      en: kloosterman sum of $1
       property: function
       area: "analytic number theory"
       notation: "mi S<br/>mi K"
@@ -5933,7 +5933,7 @@ concepts:
     
     - concept: kneser-graph
       arity: 2
-      en: kneser-graph
+      en: kneser graph
       property: "indexed symbol"
       area: "graph theory"
       notation: "mrow K ( $1, $2 )<br/>msub mi KG /mi $1, $2"
@@ -5943,7 +5943,7 @@ concepts:
     
     - concept: knodel-number
       arity: 1
-      en: knodel-number of $1
+      en: knodel number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "mi K"
@@ -5953,7 +5953,7 @@ concepts:
     
     - concept: kodaira-dimension
       arity: 1
-      en: kodaira-dimension of $1
+      en: kodaira dimension of $1
       property: function
       area: "algebraic geometry"
       notation: "mi κ"
@@ -5963,7 +5963,7 @@ concepts:
     
     - concept: kolmogorov-complexity
       arity: 1
-      en: kolmogorov-complexity of $1
+      en: kolmogorov complexity of $1
       property: function
       area: "information theory"
       notation: "mi K"
@@ -5973,7 +5973,7 @@ concepts:
     
     - concept: kolmogorov-space
       arity: 0
-      en: kolmogorov-space
+      en: kolmogorov space
       property: constant
       area: "topology"
       notation: "msub T 0"
@@ -5982,7 +5982,7 @@ concepts:
     
     - concept: kontsevich-integral
       arity: 1
-      en: kontsevich-integral of $1
+      en: kontsevich integral of $1
       property: function
       area: "knot theory"
       notation: "mi Z"
@@ -5994,7 +5994,7 @@ concepts:
     
     - concept: krawtchouk-polynomial
       arity: 1
-      en: krawtchouk-polynomial of $1
+      en: krawtchouk polynomial of $1
       property: function
       area: "orthogonal polynomials"
       notation: "msub K $1"
@@ -6006,7 +6006,7 @@ concepts:
     
     - concept: kripke-frame
       arity: 2
-      en: kripke-frame
+      en: kripke frame
       property: fenced
       area: "modal logic"
       notation: "mrow ⟨ $1, $2 ⟩"
@@ -6015,7 +6015,7 @@ concepts:
     
     - concept: kronecker-delta
       arity: 2
-      en: kronecker-delta
+      en: kronecker delta
       property: "indexed function"
       area: "special functions"
       notation: "msub δ mrow $1 $2 mrow"
@@ -6027,7 +6027,7 @@ concepts:
     
     - concept: kronecker-product
       arity: 2
-      en: $1 kronecker-product $2
+      en: $1 kronecker product $2
       property: infix
       area: "matrix theory"
       notation: "mo ⊗"
@@ -6040,7 +6040,7 @@ concepts:
     
     - concept: kronecker-symbol
       arity: 2
-      en: kronecker-symbol
+      en: kronecker symbol
       property: fenced<br/>fenced stacked
       area: "number theory"
       notation: "mrow ( $1 | $2 )<br/>( mfrac $1 $2 )"
@@ -6053,7 +6053,7 @@ concepts:
     
     - concept: krull-dimension
       arity: 1
-      en: krull-dimension of $1
+      en: krull dimension of $1
       property: function
       area: "commutative algebra"
       notation: "mi dim"
@@ -6064,7 +6064,7 @@ concepts:
     
     - concept: kulkarni-nomizu-product
       arity: 1
-      en: kulkarni-nomizu-product of $1
+      en: kulkarni nomizu product of $1
       property: embellished infix
       area: "differential geometry"
       notation: "mo ∧ /mo mspace=negative.../mspace mo ◯ /mo"
@@ -6073,7 +6073,7 @@ concepts:
     
     - concept: kullback-leibler-distance
       arity: 1
-      en: kullback-leibler-distance of $1
+      en: kullback leibler distance of $1
       property: function
       area: "mathematical statistics"
       notation: "mi KL<br/>msub D KL"
@@ -6099,7 +6099,7 @@ concepts:
     
     - concept: lagrange-multiplier
       arity: 0
-      en: lagrange-multiplier
+      en: lagrange multiplier
       property: symbol
       area: "mathematical optimization"
       notation: "mi λ"
@@ -6113,7 +6113,7 @@ concepts:
     
     - concept: lagrange-point
       arity: 0
-      en: lagrange-point
+      en: lagrange point
       property: symbol
       area: "celestial mechanics"
       notation: "msub L 1<br/>msub L 2<br/>msub L 3<br/>msub L 4<br/>msub L 5"
@@ -6126,7 +6126,7 @@ concepts:
     
     - concept: laguerre-polynomial
       arity: 1
-      en: laguerre-polynomial of $1
+      en: laguerre polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "mi L"
@@ -6140,7 +6140,7 @@ concepts:
     
     - concept: landau-constant
       arity: 0
-      en: landau-constant
+      en: landau constant
       property: constant
       area: "complex analysis"
       notation: "mi A<br/>mi B<br/>mi L"
@@ -6150,7 +6150,7 @@ concepts:
     
     - concept: laplace-operator
       arity: 1
-      en: laplace-operator of $1
+      en: laplace operator of $1
       property: "<br/>embellished operator<br/>"
       area: "differential operators"
       notation: "msup ∇ 2<br/>mrow ∇ · ∇<br/>mi Δ"
@@ -6161,7 +6161,7 @@ concepts:
     
     - concept: laplace-transform
       arity: 1
-      en: laplace-transform of $1
+      en: laplace transform of $1
       property: operator
       area: "integral transforms"
       notation: "mi ℒ⁡"
@@ -6173,7 +6173,7 @@ concepts:
     
     - concept: laplacian-matrix
       arity: 0
-      en: laplacian-matrix
+      en: laplacian matrix
       property: symbol
       area: "graph theory"
       notation: "mi L"
@@ -6183,7 +6183,7 @@ concepts:
     
     - concept: latin-rectangle
       arity: 1
-      en: latin-rectangle of $1
+      en: latin rectangle of $1
       property: mtable
       area: "combinatorial mathematics"
       notation: "mtable"
@@ -6194,7 +6194,7 @@ concepts:
     
     - concept: latin-square
       arity: 1
-      en: latin-square of $1
+      en: latin square of $1
       property: mtable
       area: "combinatorial mathematics"
       notation: "mtable"
@@ -6207,7 +6207,7 @@ concepts:
     
     - concept: least-prime-factor
       arity: 1
-      en: least-prime-factor of $1
+      en: least prime factor of $1
       property: function
       area: "number theory"
       notation: "mi lpf"
@@ -6216,7 +6216,7 @@ concepts:
     
     - concept: lebesgue-constant
       arity: 1
-      en: lebesgue-constant of $1
+      en: lebesgue constant of $1
       property: indexed constant
       area: "fourier series"
       notation: "msub L $1"
@@ -6228,7 +6228,7 @@ concepts:
     
     - concept: lebesgue-integral
       arity: 1
-      en: lebesgue-integral of $1
+      en: lebesgue integral of $1
       property: indexed
       area: "measure theory"
       notation: "mo ∫"
@@ -6238,7 +6238,7 @@ concepts:
     
     - concept: leech-lattice
       arity: 0
-      en: leech-lattice
+      en: leech lattice
       property: symbol
       area: "group theory"
       notation: "msub Λ 24"
@@ -6249,7 +6249,7 @@ concepts:
     
     - concept: left-adjoint
       arity: 2
-      en: $1 left-adjoint $2
+      en: $1 left adjoint $2
       property: infix
       area: "category theory"
       notation: "mo ⊣"
@@ -6258,7 +6258,7 @@ concepts:
     
     - concept: left-composition
       arity: 2
-      en: $1 left-composition $2
+      en: $1 left composition $2
       property: infix
       area: "algebra"
       notation: "mo ;"
@@ -6269,7 +6269,7 @@ concepts:
     
     - concept: left-derivative
       arity: 1
-      en: left-derivative of $1
+      en: left derivative of $1
       property: operator
       area: "calculus"
       notation: "msub ∂ –"
@@ -6278,7 +6278,7 @@ concepts:
     
     - concept: legendre-chi-function
       arity: 1
-      en: legendre-chi-function of $1
+      en: legendre chi function of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub χ $1"
@@ -6288,7 +6288,7 @@ concepts:
     
     - concept: legendre-polynomial
       arity: 1
-      en: legendre-polynomial of $1
+      en: legendre polynomial of $1
       property: function
       area: "orthogonal polynomials"
       notation: "msub P $1"
@@ -6301,7 +6301,7 @@ concepts:
     
     - concept: legendre-symbol
       arity: 2
-      en: legendre-symbol
+      en: legendre symbol
       property: fenced<br/>fenced stacked
       area: "number theory"
       notation: "mrow ( $1 | $2 )<br/>mrow ( mfrac $1 $2 )"
@@ -6314,7 +6314,7 @@ concepts:
     
     - concept: lehmer-mean
       arity: 1
-      en: lehmer-mean of $1
+      en: lehmer mean of $1
       property: "indexed function"
       area: "means"
       notation: "msub L $1"
@@ -6324,7 +6324,7 @@ concepts:
     
     - concept: lehmer-number
       arity: 1
-      en: lehmer-number of $1
+      en: lehmer number of $1
       property: "indexed function"
       area: "number theory"
       notation: "msub U $1"
@@ -6346,7 +6346,7 @@ concepts:
     
     - concept: levi-civita-symbol
       arity: 3
-      en: levi-civita-symbol  of $1, $2 and $3
+      en: levi civita symbol  of $1, $2 and $3
       property: "indexed symbol"
       area: "combinatorics"
       notation: "msub ϵ mrow $1$2$3 /mrow"
@@ -6359,7 +6359,7 @@ concepts:
     
     - concept: levy-prokhorov-metric
       arity: 1
-      en: levy-prokhorov-metric of $1
+      en: levy prokhorov metric of $1
       property: function
       area: "measure theory"
       notation: "mi π"
@@ -6369,7 +6369,7 @@ concepts:
     
     - concept: lexicographic-product
       arity: 2
-      en: $1 lexicographic-product $2
+      en: $1 lexicographic product $2
       property: infix<br/>mixfix
       area: "graph theory"
       notation: "mo ∙<br/>$1 [ $2 ]"
@@ -6380,7 +6380,7 @@ concepts:
     
     - concept: lexicographic-order
       arity: 2
-      en: $1 lexicographic-order $2
+      en: $1 lexicographic order $2
       property: infix
       area: "discrete mathematics"
       notation: "mo <"
@@ -6393,7 +6393,7 @@ concepts:
     
     - concept: lie-derivative
       arity: 1
-      en: lie-derivative of $1
+      en: lie derivative of $1
       property: "indexed operator"
       area: "lie algebra"
       notation: "msub ℒ $1"
@@ -6404,7 +6404,7 @@ concepts:
     
     - concept: lie-superbracket
       arity: 2
-      en: lie-superbracket
+      en: lie superbracket
       property: fenced
       area: "lie algebra"
       notation: "mrow [ $1 , $2 ]"
@@ -6415,7 +6415,7 @@ concepts:
     
     - concept: like-charge
       arity: 2
-      en: $1 like-charge $2
+      en: $1 like charge $2
       property: infix
       area: "physics"
       notation: "mo ⇈"
@@ -6424,7 +6424,7 @@ concepts:
     
     - concept: line-graph
       arity: 1
-      en: line-graph of $1
+      en: line graph of $1
       property: function
       area: "graph theory"
       notation: "mi L"
@@ -6434,7 +6434,7 @@ concepts:
     
     - concept: line-integral
       arity: 1
-      en: line-integral of $1
+      en: line integral of $1
       property: indexed
       area: "analysis"
       notation: "mo ∫"
@@ -6450,7 +6450,7 @@ concepts:
     
     - concept: linear-span
       arity: 1
-      en: linear-span of $1
+      en: linear span of $1
       property: function
       area: "linear algebra"
       notation: "mi span"
@@ -6472,7 +6472,7 @@ concepts:
     
     - concept: gunter-link
       arity: 1
-      en: gunter-link of $1
+      en: gunter link of $1
       property: unit
       area: "units"
       notation: "mi l.<br/>mi li.<br/>mi lnk."
@@ -6481,7 +6481,7 @@ concepts:
     
     - concept: liouville-constant
       arity: 0
-      en: liouville-constant
+      en: liouville constant
       property: constant
       area: "number theory"
       notation: "mi L"
@@ -6492,7 +6492,7 @@ concepts:
     
     - concept: liouville-function
       arity: 1
-      en: liouville-function of $1
+      en: liouville function of $1
       property: function
       area: "number theory"
       notation: "mi λ"
@@ -6516,7 +6516,7 @@ concepts:
     
     - concept: logarithmic-integral
       arity: 1
-      en: logarithmic-integral of $1
+      en: logarithmic integral of $1
       property: function
       area: "special functions"
       notation: "mi li"
@@ -6527,7 +6527,7 @@ concepts:
     
     - concept: logarithmic-moment-of-function
       arity: 2
-      en: logarithmic-moment-of-function
+      en: logarithmic moment of function
       property: "<br/><br/>mixfix"
       area: "mathematics"
       notation: "E [ msup ln $1 /msup ( $2 ) ]"
@@ -6547,7 +6547,7 @@ concepts:
     
     - concept: lommel-function
       arity: 2
-      en: lommel-function
+      en: lommel function
       property: "indexed function"
       area: "special functions"
       notation: "msub S mrow $1,$2 /mrow<br/>msub s mrow $1, $2 /mrow"
@@ -6560,7 +6560,7 @@ concepts:
     
     - concept: long-division
       arity: 1
-      en: long-division of $1
+      en: long division of $1
       property: mfrac
       area: "arithmetic"
       notation: "mfrac?"
@@ -6570,7 +6570,7 @@ concepts:
     
     - concept: loop-space
       arity: 1
-      en: loop-space of $1
+      en: loop space of $1
       property: function
       area: "topology"
       notation: "mi Ω"
@@ -6581,7 +6581,7 @@ concepts:
     
     - concept: lower-closure-poset
       arity: 1
-      en: lower-closure-poset of $1
+      en: lower closure poset of $1
       property: prefix
       area: "order theory"
       notation: "mo ↓"
@@ -6590,7 +6590,7 @@ concepts:
     
     - concept: lower-darboux-integral
       arity: 1
-      en: lower-darboux-integral of $1
+      en: lower darboux integral of $1
       property: indexed
       area: "real analysis"
       notation: "munder ¯"
@@ -6601,7 +6601,7 @@ concepts:
     
     - concept: lower-dini-derivative
       arity: 1
-      en: lower-dini-derivative of $1
+      en: lower dini derivative of $1
       property: decorated function
       area: "analysis"
       notation: "msubsup $1 - '"
@@ -6612,7 +6612,7 @@ concepts:
     
     - concept: lower-shadow
       arity: 1
-      en: lower-shadow of $1
+      en: lower shadow of $1
       property: function
       area: "combinatorics"
       notation: "mi 𝜕<br/>msub 𝜕 -"
@@ -6623,7 +6623,7 @@ concepts:
     
     - concept: lucas-number
       arity: 1
-      en: lucas-number of $1
+      en: lucas number of $1
       property: "indexed symbol"
       area: "integer sequences"
       notation: "msub L $1"
@@ -6634,7 +6634,7 @@ concepts:
     
     - concept: lucas-sequence
       arity: 1
-      en: lucas-sequence of $1
+      en: lucas sequence of $1
       property: "indexed function"
       area: "integer sequences"
       notation: "msub U $1<br/>msub V $1"
@@ -6644,7 +6644,7 @@ concepts:
     
     - concept: lyapunov-candidate-function
       arity: 1
-      en: lyapunov-candidate-function of $1
+      en: lyapunov candidate function of $1
       property: function
       area: "stability theory"
       notation: "mi V"
@@ -6657,7 +6657,7 @@ concepts:
     
     - concept: macdonald-polynomial
       arity: 1
-      en: macdonald-polynomial of $1
+      en: macdonald polynomial of $1
       property: function
       area: "orthogonal polynomials"
       notation: "msub P λ"
@@ -6667,7 +6667,7 @@ concepts:
     
     - concept: mahler-measure
       arity: 1
-      en: mahler-measure of $1
+      en: mahler measure of $1
       property: function
       area: "number theory"
       notation: "mi M"
@@ -6678,7 +6678,7 @@ concepts:
     
     - concept: mangoldt-function
       arity: 1
-      en: mangoldt-function of $1
+      en: mangoldt function of $1
       property: function
       area: "special functions"
       notation: "mi Λ"
@@ -6691,7 +6691,7 @@ concepts:
     
     - concept: mapping-class-group
       arity: 1
-      en: mapping-class-group of $1
+      en: mapping class group of $1
       property: function
       area: "geometric topology"
       notation: "mi MCG"
@@ -6701,7 +6701,7 @@ concepts:
     
     - concept: mapping-cone
       arity: 1
-      en: mapping-cone of $1
+      en: mapping cone of $1
       property: "indexed symbol"
       area: "homotopy theory"
       notation: "msub C $1<br/>mrow C $1"
@@ -6714,7 +6714,7 @@ concepts:
     
     - concept: matching-polynomial
       arity: 1
-      en: matching-polynomial of $1
+      en: matching polynomial of $1
       property: "indexed function"
       area: "graph theory"
       notation: "msub m $1<br/>msub M $1<br/>msub μ $1"
@@ -6723,7 +6723,7 @@ concepts:
     
     - concept: mathieu-function-of-first-kind
       arity: 1
-      en: mathieu-function-of-first-kind of $1
+      en: mathieu function of first kind of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub ce $1<br/>msub se $1"
@@ -6746,7 +6746,7 @@ concepts:
     
     - concept: mathieu-function-of-second-kind
       arity: 1
-      en: mathieu-function-of-second-kind of $1
+      en: mathieu function of second kind of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub fe $1<br/>msub ge $1"
@@ -6769,7 +6769,7 @@ concepts:
     
     - concept: mathieu-group
       arity: 1
-      en: mathieu-group of $1
+      en: mathieu group of $1
       property: "indexed symbol"
       area: "group theory"
       notation: "msub M 11<br/>msub M 12<br/>msub M 22<br/>msub M 23<br/>msub M 24"
@@ -6804,7 +6804,7 @@ concepts:
     
     - concept: matrix-ring
       arity: 1
-      en: matrix-ring of $1
+      en: matrix ring of $1
       property: function
       area: "abstract algebra"
       notation: "msub M $1"
@@ -6814,7 +6814,7 @@ concepts:
     
     - concept: maximum-degree
       arity: 1
-      en: maximum-degree of $1
+      en: maximum degree of $1
       property: function
       area: "graph theory"
       notation: "mi Δ"
@@ -6825,7 +6825,7 @@ concepts:
     
     - concept: mean-curvature
       arity: 1
-      en: mean-curvature of $1
+      en: mean curvature of $1
       property: function
       area: "differential geometry"
       notation: "mi H"
@@ -6836,7 +6836,7 @@ concepts:
     
     - concept: mean-squared-error
       arity: 1
-      en: mean-squared-error of $1
+      en: mean squared error of $1
       property: function
       area: "statistics"
       notation: "mi MSE"
@@ -6845,7 +6845,7 @@ concepts:
     
     - concept: meixner-pollaczek-polynomial
       arity: 1
-      en: meixner-pollaczek-polynomial of $1
+      en: meixner pollaczek polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "mi P"
@@ -6856,7 +6856,7 @@ concepts:
     
     - concept: mellin-transform
       arity: 1
-      en: mellin-transform of $1
+      en: mellin transform of $1
       property: operator
       area: "integral transforms"
       notation: "mi ℳ"
@@ -6868,7 +6868,7 @@ concepts:
     
     - concept: meridian-radius-of-curvature
       arity: 1
-      en: meridian-radius-of-curvature of $1
+      en: meridian radius of curvature of $1
       property: function
       area: "geodesy"
       notation: "mi M"
@@ -6878,7 +6878,7 @@ concepts:
     
     - concept: meridian-distance
       arity: 1
-      en: meridian-distance of $1
+      en: meridian distance of $1
       property: function
       area: "geodesy"
       notation: "mi m"
@@ -6887,7 +6887,7 @@ concepts:
     
     - concept: mersenne-number
       arity: 1
-      en: mersenne-number of $1
+      en: mersenne number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub M $1"
@@ -6897,7 +6897,7 @@ concepts:
     
     - concept: mersenne-prime
       arity: 1
-      en: mersenne-prime of $1
+      en: mersenne prime of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub M $1"
@@ -6908,7 +6908,7 @@ concepts:
     
     - concept: merten-function
       arity: 1
-      en: merten-function of $1
+      en: merten function of $1
       property: function
       area: "number theory"
       notation: "mi M"
@@ -6928,7 +6928,7 @@ concepts:
     
     - concept: metaplectic-group
       arity: 0
-      en: metaplectic-group
+      en: metaplectic group
       property: symbol
       area: "group theory"
       notation: "msub Mp 2n"
@@ -6939,7 +6939,7 @@ concepts:
     
     - concept: mills-constant
       arity: 0
-      en: mills-constant
+      en: mills constant
       property: symbol
       area: "number theory"
       notation: "mi A"
@@ -6950,7 +6950,7 @@ concepts:
     
     - concept: mills-ratio
       arity: 1
-      en: mills-ratio of $1
+      en: mills ratio of $1
       property: function
       area: "probability theory"
       notation: "mi m<br/>mi M"
@@ -6961,7 +6961,7 @@ concepts:
     
     - concept: minimum-degree
       arity: 1
-      en: minimum-degree of $1
+      en: minimum degree of $1
       property: function
       area: "graph theory"
       notation: "mi δ<br/>"
@@ -6972,7 +6972,7 @@ concepts:
     
     - concept: minkowski-difference
       arity: 2
-      en: $1 minkowski-difference $2
+      en: $1 minkowski difference $2
       property: infix
       area: "geometry"
       notation: "mo -"
@@ -6983,7 +6983,7 @@ concepts:
     
     - concept: minkowski-sum
       arity: 2
-      en: $1 minkowski-sum $2
+      en: $1 minkowski sum $2
       property: infix
       area: "geometry"
       notation: "mo +"
@@ -6995,7 +6995,7 @@ concepts:
     
     - concept: mittag-leffler-function
       arity: 1
-      en: mittag-leffler-function of $1
+      en: mittag leffler function of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub E $1"
@@ -7007,7 +7007,7 @@ concepts:
     
     - concept: mobius-function
       arity: 1
-      en: mobius-function of $1
+      en: mobius function of $1
       property: function
       area: "number theory"
       notation: "mi μ"
@@ -7020,7 +7020,7 @@ concepts:
     
     - concept: modified-bessel-function-of-first-kind
       arity: 1
-      en: modified-bessel-function-of-first-kind of $1
+      en: modified bessel function of first kind of $1
       property: function
       area: "special functions"
       notation: "msub I $1"
@@ -7031,7 +7031,7 @@ concepts:
     
     - concept: modified-bessel-function-of-second-kind
       arity: 1
-      en: modified-bessel-function-of-second-kind of $1
+      en: modified bessel function of second kind of $1
       property: function
       area: "special functions"
       notation: "msub K $1"
@@ -7042,7 +7042,7 @@ concepts:
     
     - concept: modified-mathieu-function
       arity: 1
-      en: modified-mathieu-function of $1
+      en: modified mathieu function of $1
       property: function
       area: "special functions"
       notation: "msub Ce $1<br/>msub Se $1<br/>msub Me $1<br/>msub Fe $1<br/>msub Ge $1"
@@ -7061,7 +7061,7 @@ concepts:
     
     - concept: modified-spherical-bessel-function
       arity: 1
-      en: modified-spherical-bessel-function of $1
+      en: modified spherical bessel function of $1
       property: function
       area: "special functions"
       notation: "msubsup i $1 (1)<br/>msubsup i $1 (2)<br/>msub k $1"
@@ -7073,7 +7073,7 @@ concepts:
     
     - concept: modified-struve-function
       arity: 1
-      en: modified-struve-function of $1
+      en: modified struve function of $1
       property: function
       area: "special functions"
       notation: "msub L $1"
@@ -7084,7 +7084,7 @@ concepts:
     
     - concept: modular-discriminant
       arity: 1
-      en: modular-discriminant of $1
+      en: modular discriminant of $1
       property: operator
       area: "special functions"
       notation: "mi Δ<br/>"
@@ -7108,7 +7108,7 @@ concepts:
     
     - concept: moebius-function
       arity: 1
-      en: moebius-function of $1
+      en: moebius function of $1
       property: function
       area: "number theory"
       notation: "mi μ"
@@ -7118,7 +7118,7 @@ concepts:
     
     - concept: moment-of-function
       arity: 2
-      en: moment-of-function
+      en: moment of function
       property: "<br/>msub<br/>mixfix"
       area: "mathematics"
       notation: "msub μ $1<br/>mrow E [ msup $1 $2 ]"
@@ -7142,7 +7142,7 @@ concepts:
     
     - concept: moment-of-inertia
       arity: 0
-      en: moment-of-inertia
+      en: moment of inertia
       property: symbol
       area: "physics"
       notation: "mi I"
@@ -7170,7 +7170,7 @@ concepts:
     
     - concept: monster-group
       arity: 0
-      en: monster-group
+      en: monster group
       property: symbol
       area: "group theory"
       notation: "mi M"
@@ -7183,7 +7183,7 @@ concepts:
     
     - concept: moore-penrose-inverse
       arity: 1
-      en: moore-penrose-inverse of $1
+      en: moore penrose inverse of $1
       property: msup
       area: "linear algebra"
       notation: "msup $1 +"
@@ -7194,7 +7194,7 @@ concepts:
     
     - concept: moore-smith-sequence
       arity: 1
-      en: moore-smith-sequence of $1
+      en: moore smith sequence of $1
       property: fenced
       area: "topology"
       notation: "mrow ( $1"
@@ -7206,7 +7206,7 @@ concepts:
     
     - concept: motzkin-number
       arity: 1
-      en: motzkin-number of $1
+      en: motzkin number of $1
       property: "indexed symbol"
       area: "combinatorial analysis"
       notation: "msub M $1<br/>mi M"
@@ -7218,7 +7218,7 @@ concepts:
     
     - concept: multiple-integral
       arity: 1
-      en: multiple-integral of $1
+      en: multiple integral of $1
       property: indexed
       area: "multivariable calculus"
       notation: "mo ∫ ⋯ ∫<br/>mo ∫"
@@ -7230,7 +7230,7 @@ concepts:
     
     - concept: multiplicative-inverse
       arity: 1
-      en: multiplicative-inverse of $1
+      en: multiplicative inverse of $1
       property: msup<br/>mixfix
       area: "abstract algebra"
       notation: "msup $1 -1<br/>mrow 1 / $1"
@@ -7246,7 +7246,7 @@ concepts:
     
     - concept: multiplicative-order
       arity: 1
-      en: multiplicative-order of $1
+      en: multiplicative order of $1
       property: "indexed function"
       area: "modular arithmetic"
       notation: "msub O $1<br/>msub ord $1"
@@ -7256,7 +7256,7 @@ concepts:
     
     - concept: multiplier-algebra
       arity: 1
-      en: multiplier-algebra of $1
+      en: multiplier algebra of $1
       property: function
       area: "functional analysis"
       notation: "mrow M($1"
@@ -7276,7 +7276,7 @@ concepts:
     
     - concept: multiset-coefficient
       arity: 2
-      en: multiset-coefficient
+      en: multiset coefficient
       property: fenced-stacked
       area: "combinatorics"
       notation: "mrow ( ( mfrac $1 $2 )"
@@ -7287,7 +7287,7 @@ concepts:
     
     - concept: multivariate-gaussian-distribution
       arity: 0
-      en: multivariate-gaussian-distribution
+      en: multivariate gaussian distribution
       property: symbol
       area: "probability theory"
       notation: "msub 𝒩 $1"
@@ -7315,7 +7315,7 @@ concepts:
     
     - concept: mutual-information
       arity: 1
-      en: mutual-information of $1
+      en: mutual information of $1
       property: function
       area: "information theory"
       notation: "mi I"
@@ -7325,7 +7325,7 @@ concepts:
     
     - concept: narayana-number
       arity: 2
-      en: narayana-number
+      en: narayana number
       property: function
       area: "combinatorial analysis"
       notation: "mrow N ($1, $2"
@@ -7336,7 +7336,7 @@ concepts:
     
     - concept: narrow-denjoy-integral
       arity: 1
-      en: narrow-denjoy-integral of $1
+      en: narrow denjoy integral of $1
       property: indexed
       area: "calculus"
       notation: "mo ∫"
@@ -7351,7 +7351,7 @@ concepts:
     
     - concept: negative-binomial-distribution
       arity: 0
-      en: negative-binomial-distribution
+      en: negative binomial distribution
       property: symbol
       area: "probability theory"
       notation: "mi NB"
@@ -7362,7 +7362,7 @@ concepts:
     
     - concept: negative-hypergeometric-distribution
       arity: 1
-      en: negative-hypergeometric-distribution of $1
+      en: negative hypergeometric distribution of $1
       property: "indexed symbol"
       area: "probability theory"
       notation: "mi NHG"
@@ -7383,7 +7383,7 @@ concepts:
     
     - concept: neighbourhood-filter
       arity: 1
-      en: neighbourhood-filter of $1
+      en: neighbourhood filter of $1
       property: function
       area: "topology"
       notation: "mi 𝒩"
@@ -7395,7 +7395,7 @@ concepts:
     
     - concept: neron-severi-group
       arity: 1
-      en: neron-severi-group of $1
+      en: neron severi group of $1
       property: function
       area: "group theory"
       notation: "mi NS"
@@ -7405,7 +7405,7 @@ concepts:
     
     - concept: neron-tate-height
       arity: 0
-      en: neron-tate-height
+      en: neron tate height
       property: symbol
       area: "number theory"
       notation: "mover h ^"
@@ -7437,7 +7437,7 @@ concepts:
     
     - concept: non-oriented-angle
       arity: 1
-      en: non-oriented-angle of $1
+      en: non oriented angle of $1
       property: prefix
       area: "geometry"
       notation: "mo ∠"
@@ -7485,7 +7485,7 @@ concepts:
     
     - concept: not-divisible-by
       arity: 2
-      en: $1 not-divisible-by $2
+      en: $1 not divisible by $2
       property: infix
       area: "number theory"
       notation: "mo ∤"
@@ -7494,7 +7494,7 @@ concepts:
     
     - concept: null-graph
       arity: 0
-      en: null-graph
+      en: null graph
       property: symbol
       area: "graph theory"
       notation: "msub mover K ¯ /mover $1"
@@ -7507,7 +7507,7 @@ concepts:
     
     - concept: numerical-part
       arity: 1
-      en: numerical-part of $1
+      en: numerical part of $1
       property: fenced
       area: "SI units"
       notation: "mrow { $1 }"
@@ -7553,7 +7553,7 @@ concepts:
     
     - concept: odds-ratio
       arity: 0
-      en: odds-ratio
+      en: odds ratio
       property: symbol
       area: "statistics"
       notation: "mi OR"
@@ -7562,7 +7562,7 @@ concepts:
     
     - concept: onsager-machlup-function
       arity: 1
-      en: onsager-machlup-function of $1
+      en: onsager machlup function of $1
       property: function
       area: "functional analysis"
       notation: "mi L"
@@ -7573,7 +7573,7 @@ concepts:
     
     - concept: open-ball
       arity: 2
-      en: open-ball
+      en: open ball
       property: mixfix
       area: "topology"
       notation: "mrow msub B $1 /msub ( $2"
@@ -7585,7 +7585,7 @@ concepts:
     
     - concept: open-interval
       arity: 2
-      en: open-interval
+      en: open interval
       property: fenced
       area: "algebra"
       notation: "mrow ( $1, $2 )<br/>mrow ] $1 , $2 ["
@@ -7595,7 +7595,7 @@ concepts:
     
     - concept: open-real-interval
       arity: 2
-      en: open-real-interval
+      en: open real interval
       property: fenced
       area: "algebra"
       notation: "mrow ($1 . . $2)"
@@ -7618,7 +7618,7 @@ concepts:
     
     - concept: opposite-charge
       arity: 2
-      en: $1 opposite-charge $2
+      en: $1 opposite charge $2
       property: infix
       area: "physics"
       notation: "mo ⇅"
@@ -7627,7 +7627,7 @@ concepts:
     
     - concept: or-product
       arity: 2
-      en: $1 or-product $2
+      en: $1 or product $2
       property: infix
       area: "graph theory"
       notation: "mo *"
@@ -7639,7 +7639,7 @@ concepts:
     
     - concept: order-of-group
       arity: 1
-      en: order-of-group of $1
+      en: order of group of $1
       property: "function<br/>fenced"
       area: "group theory"
       notation: "mi ord<br/>mrow | $1 |"
@@ -7673,7 +7673,7 @@ concepts:
     
     - concept: orthogonal-group
       arity: 1
-      en: orthogonal-group of $1
+      en: orthogonal group of $1
       property: function
       area: "group theory"
       notation: "mi O"
@@ -7686,7 +7686,7 @@ concepts:
     
     - concept: outer-automorphism-group
       arity: 1
-      en: outer-automorphism-group of $1
+      en: outer automorphism group of $1
       property: function
       area: "abstract algebra"
       notation: "mi Out"
@@ -7698,7 +7698,7 @@ concepts:
     
     - concept: outer-jordan-measure
       arity: 1
-      en: outer-jordan-measure of $1
+      en: outer jordan measure of $1
       property: function
       area: "measure theory"
       notation: "msup m *"
@@ -7709,7 +7709,7 @@ concepts:
     
     - concept: outer-product
       arity: 2
-      en: $1 outer-product $2
+      en: $1 outer product $2
       property: infix
       area: "linear algebra"
       notation: "mo ⊗"
@@ -7720,7 +7720,7 @@ concepts:
     
     - concept: p-core
       arity: 1
-      en: p-core of $1
+      en: p core of $1
       property: function
       area: "group theory"
       notation: "msub O p"
@@ -7732,7 +7732,7 @@ concepts:
     
     - concept: pade-approximant
       arity: 3
-      en: pade-approximant  of $1, $2 and $3
+      en: pade approximant  of $1, $2 and $3
       property: mixfix
       area: "numerical analysis"
       notation: "msub mrow [ $1 / $2 ] /mrow $3"
@@ -7743,7 +7743,7 @@ concepts:
     
     - concept: padovan-sequence
       arity: 1
-      en: padovan-sequence of $1
+      en: padovan sequence of $1
       property: function
       area: "number theory"
       notation: "mi P"
@@ -7753,7 +7753,7 @@ concepts:
     
     - concept: paraboloidal-coordinate
       arity: 3
-      en: paraboloidal-coordinate of $1, $2 and $3
+      en: paraboloidal coordinate of $1, $2 and $3
       property: fenced
       area: "geometry"
       notation: "mrow ( $1, $2 , $3"
@@ -7775,7 +7775,7 @@ concepts:
     
     - concept: parallel-morphism
       arity: 2
-      en: parallel-morphism
+      en: parallel morphism
       property: embellished infix
       area: "category theory"
       notation: "<munderover><br/><mrow/><br/><munder><mo>⟶</mo> $1</munder><br/><mover><mo>⟶</mo> $2</mover><br/></munderover>"
@@ -7784,7 +7784,7 @@ concepts:
     
     - concept: partial-charge
       arity: 0
-      en: partial-charge
+      en: partial charge
       property: symbol
       area: "chemistry"
       notation: "msup δ $1<br/>mrow δ $1"
@@ -7817,7 +7817,7 @@ concepts:
     
     - concept: partition-function
       arity: 1
-      en: partition-function of $1
+      en: partition function of $1
       property: function
       area: "number theory"
       notation: "mi p"
@@ -7826,7 +7826,7 @@ concepts:
     
     - concept: pauli-matrix
       arity: 1
-      en: pauli-matrix of $1
+      en: pauli matrix of $1
       property: "indexed symbol"
       area: "mathematical physics"
       notation: "msub σ $1"
@@ -7838,7 +7838,7 @@ concepts:
     
     - concept: peclet-number
       arity: 1
-      en: peclet-number of $1
+      en: peclet number of $1
       property: "indexed symbol"
       area: "fluid dynamics"
       notation: "msub Pe $1"
@@ -7849,7 +7849,7 @@ concepts:
     
     - concept: peirce-arrow
       arity: 2
-      en: $1 peirce-arrow $2
+      en: $1 peirce arrow $2
       property: infix
       area: "logic"
       notation: "mo ↓"
@@ -7858,7 +7858,7 @@ concepts:
     
     - concept: pell-number
       arity: 0
-      en: pell-number
+      en: pell number
       property: symbol
       area: "number theory"
       notation: "msub P $1"
@@ -7868,7 +7868,7 @@ concepts:
     
     - concept: pell-luca-number
       arity: 0
-      en: pell-luca-number
+      en: pell luca number
       property: symbol
       area: "number theory"
       notation: "msub Q $1"
@@ -7878,7 +7878,7 @@ concepts:
     
     - concept: periodic-continued-fraction
       arity: 1
-      en: periodic-continued-fraction of $1
+      en: periodic continued fraction of $1
       property: mfrac
       area: "mathematical analysis"
       notation: "mfrac with ellipses"
@@ -7922,7 +7922,7 @@ concepts:
     
     - concept: perrin-sequence
       arity: 1
-      en: perrin-sequence of $1
+      en: perrin sequence of $1
       property: function
       area: "number theory"
       notation: "mi P"
@@ -7969,7 +7969,7 @@ concepts:
     
     - concept: phi-coefficient
       arity: 0
-      en: phi-coefficient
+      en: phi coefficient
       property: symbol
       area: "statistics"
       notation: "mi φ<br/>msub r φ"
@@ -7980,7 +7980,7 @@ concepts:
     
     - concept: picard-group
       arity: 1
-      en: picard-group of $1
+      en: picard group of $1
       property: function
       area: "group theory"
       notation: "mi Pic"
@@ -7992,7 +7992,7 @@ concepts:
     
     - concept: planck-constant
       arity: 0
-      en: planck-constant
+      en: planck constant
       property: constant
       area: "physics"
       notation: "mi h<br/>mi ℎ"
@@ -8003,7 +8003,7 @@ concepts:
     
     - concept: plastic-constant
       arity: 0
-      en: plastic-constant
+      en: plastic constant
       property: constant
       area: "geometry"
       notation: "mi P<br/>mi p"
@@ -8020,7 +8020,7 @@ concepts:
     
     - concept: playing-card-suit
       arity: 1
-      en: playing-card-suit of $1
+      en: playing card suit of $1
       property: unit
       area: "game theory"
       notation: "mo ♣<br/>mo ♠<br/>mo ♦<br/>mo ♥"
@@ -8042,7 +8042,7 @@ concepts:
     
     - concept: plucker-coordinate
       arity: 2
-      en: plucker-coordinate
+      en: plucker coordinate
       property: fenced
       area: "geometry"
       notation: "mrow ( $1 : $2 : ... : $n"
@@ -8053,7 +8053,7 @@ concepts:
     
     - concept: pointwise-convergent
       arity: 1
-      en: pointwise-convergent of $1
+      en: pointwise convergent of $1
       property: postfix
       area: "convergence"
       notation: "mtext pointwise"
@@ -8064,7 +8064,7 @@ concepts:
     
     - concept: poisson-bracket
       arity: 2
-      en: poisson-bracket
+      en: poisson bracket
       property: fenced
       area: "classical mechanics"
       notation: "mrow { $1, $2 }"
@@ -8075,7 +8075,7 @@ concepts:
     
     - concept: poisson-distribution
       arity: 0
-      en: poisson-distribution
+      en: poisson distribution
       property: symbol
       area: "probability theory"
       notation: "mi Pois"
@@ -8087,7 +8087,7 @@ concepts:
     
     - concept: polar-set
       arity: 1
-      en: polar-set of $1
+      en: polar set of $1
       property: msup
       area: "functional analysis"
       notation: "msup $1 °"
@@ -8098,7 +8098,7 @@ concepts:
     
     - concept: pollaczek-polynomial
       arity: 1
-      en: pollaczek-polynomial of $1
+      en: pollaczek polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "msubsup P n (λ"
@@ -8109,7 +8109,7 @@ concepts:
     
     - concept: polygamma-function
       arity: 1
-      en: polygamma-function of $1
+      en: polygamma function of $1
       property: "indexed function"
       area: "special functions"
       notation: "mi ψ"
@@ -8121,7 +8121,7 @@ concepts:
     
     - concept: polynomial-ring
       arity: 2
-      en: polynomial-ring
+      en: polynomial ring
       property: mixfix
       area: "ring theory"
       notation: "mrow $1 [ $2 ]"
@@ -8145,7 +8145,7 @@ concepts:
     
     - concept: pontrjagin-dual
       arity: 1
-      en: pontrjagin-dual of $1
+      en: pontrjagin dual of $1
       property: mover
       area: "harmonic analysis"
       notation: "mover $1 ^"
@@ -8155,7 +8155,7 @@ concepts:
     
     - concept: pontryagin-class
       arity: 1
-      en: pontryagin-class of $1
+      en: pontryagin class of $1
       property: "indexed symbol"
       area: "differential topology"
       notation: "msub p $1"
@@ -8167,7 +8167,7 @@ concepts:
     
     - concept: positive-part
       arity: 1
-      en: positive-part of $1
+      en: positive part of $1
       property: msup<br/>msub
       area: "elementary mathematics"
       notation: "msup $1 +<br/>msub $1 +"
@@ -8178,7 +8178,7 @@ concepts:
     
     - concept: positivitiy-predicate
       arity: 1
-      en: positivitiy-predicate of $1
+      en: positivitiy predicate of $1
       property: prefix
       area: "predicative mathematics"
       notation: "mo ◊"
@@ -8187,7 +8187,7 @@ concepts:
     
     - concept: post-canonical-system
       arity: 1
-      en: post-canonical-system of $1
+      en: post canonical system of $1
       property: fenced
       area: "formal languages"
       notation: "mrow (A,I,R"
@@ -8198,7 +8198,7 @@ concepts:
     
     - concept: power-set
       arity: 1
-      en: power-set of $1
+      en: power set of $1
       property: "function<br/>msup"
       area: "set theory"
       notation: "mi P<br/>mi 𝒫<br/>mi ℙ<br/>mi ℘<br/>msup 2 $1"
@@ -8209,7 +8209,7 @@ concepts:
     
     - concept: preregular-space
       arity: 0
-      en: preregular-space
+      en: preregular space
       property: constant
       area: "topology"
       notation: "msub R 1"
@@ -8218,7 +8218,7 @@ concepts:
     
     - concept: present-value
       arity: 0
-      en: present-value
+      en: present value
       property: symbol
       area: "economics"
       notation: "mi PV<br/>mi v"
@@ -8228,7 +8228,7 @@ concepts:
     
     - concept: prime-constant
       arity: 0
-      en: prime-constant
+      en: prime constant
       property: symbol
       area: "number theory"
       notation: "mi P<br/>mi ρ"
@@ -8240,7 +8240,7 @@ concepts:
     
     - concept: prime-counting-function
       arity: 1
-      en: prime-counting-function of $1
+      en: prime counting function of $1
       property: function
       area: "number theory"
       notation: "mi π"
@@ -8249,7 +8249,7 @@ concepts:
     
     - concept: prime-difference-function
       arity: 1
-      en: prime-difference-function of $1
+      en: prime difference function of $1
       property: "indexed function"
       area: "number theory"
       notation: "mi d"
@@ -8258,7 +8258,7 @@ concepts:
     
     - concept: prime-gap
       arity: 1
-      en: prime-gap of $1
+      en: prime gap of $1
       property: "indexed function"
       area: "number theory"
       notation: "mi G<br/>mi g"
@@ -8278,7 +8278,7 @@ concepts:
     
     - concept: principal-value
       arity: 1
-      en: principal-value of $1
+      en: principal value of $1
       property: function
       area: "complex analysis"
       notation: "mi Log"
@@ -8287,7 +8287,7 @@ concepts:
     
     - concept: probability-limit
       arity: 1
-      en: probability-limit of $1
+      en: probability limit of $1
       property: "indexed function"
       area: "probability theory"
       notation: "mi plim"
@@ -8298,7 +8298,7 @@ concepts:
     
     - concept: product-integral
       arity: 1
-      en: product-integral of $1
+      en: product integral of $1
       property: indexed
       area: "calculus"
       notation: "mo ∏"
@@ -8309,7 +8309,7 @@ concepts:
     
     - concept: product-measure
       arity: 2
-      en: product-measure
+      en: product measure
       property: function
       area: "measure theory"
       notation: "mrow $1 × $2"
@@ -8319,7 +8319,7 @@ concepts:
     
     - concept: projective-line
       arity: 1
-      en: projective-line of $1
+      en: projective line of $1
       property: function
       area: "projective geometry"
       notation: "mi P"
@@ -8329,7 +8329,7 @@ concepts:
     
     - concept: projective-space
       arity: 0
-      en: projective-space
+      en: projective space
       property: symbol
       area: "projective geometry"
       notation: "mi ℙ<br/>mi ℝ⁢ ℙ"
@@ -8344,7 +8344,7 @@ concepts:
     
     - concept: proper-subgroup
       arity: 2
-      en: $1 proper-subgroup $2
+      en: $1 proper subgroup $2
       property: infix
       area: "group theory"
       notation: "mo <"
@@ -8366,7 +8366,7 @@ concepts:
     
     - concept: prouhet-thue-morse-constant
       arity: 0
-      en: prouhet-thue-morse-constant
+      en: prouhet thue morse constant
       property: constant
       area: "number theory"
       notation: "mi τ"
@@ -8375,7 +8375,7 @@ concepts:
     
     - concept: prufer-group
       arity: 1
-      en: prufer-group of $1
+      en: prufer group of $1
       property: mixfix
       area: "group theory"
       notation: "mrow Z ( msup $1 ∞ /msup"
@@ -8398,7 +8398,7 @@ concepts:
     
     - concept: pseudo-inner-product
       arity: 2
-      en: pseudo-inner-product
+      en: pseudo inner product
       property: fenced
       area: "lie algebra"
       notation: "mrow ( $1, $2"
@@ -8426,7 +8426,7 @@ concepts:
     
     - concept: pythagoras-constant
       arity: 0
-      en: pythagoras-constant
+      en: pythagoras constant
       property: constant
       area: "geometry"
       notation: "msqrt 2"
@@ -8440,7 +8440,7 @@ concepts:
     
     - concept: pythagorean-triple
       arity: 3
-      en: pythagorean-triple  $1, $2 and $3
+      en: pythagorean triple  $1, $2 and $3
       property: fenced
       area: "geometry"
       notation: "mrow ($1, $2, $3"
@@ -8450,7 +8450,7 @@ concepts:
     
     - concept: q-binomial-coefficient
       arity: 1
-      en: q-binomial-coefficient of $1
+      en: q binomial coefficient of $1
       property: fenced-stacked
       area: "combinatorics"
       notation: "msub mrow [ stacked mfrac ] q"
@@ -8471,7 +8471,7 @@ concepts:
     
     - concept: quadratic-differential
       arity: 1
-      en: quadratic-differential of $1
+      en: quadratic differential of $1
       property: mixfix
       area: "complex manifolds"
       notation: "mrow d $1 ⊗ d $1"
@@ -8482,7 +8482,7 @@ concepts:
     
     - concept: quadratic-variation
       arity: 2
-      en: quadratic-variation
+      en: quadratic variation
       property: indexed fenced
       area: "stochastic processes"
       notation: "msub mrow [ $1 ] /mrow $2"
@@ -8504,7 +8504,7 @@ concepts:
     
     - concept: quotient-group
       arity: 2
-      en: $1 quotient-group $2
+      en: $1 quotient group $2
       property: infix
       area: "group theory"
       notation: "mo /"
@@ -8515,7 +8515,7 @@ concepts:
     
     - concept: quotient-space
       arity: 2
-      en: $1 quotient-space $2
+      en: $1 quotient space $2
       property: infix
       area: "topology"
       notation: "mo /"
@@ -8530,7 +8530,7 @@ concepts:
     
     - concept: r-complexity-class
       arity: 0
-      en: r-complexity-class
+      en: r complexity class
       property: symbol
       area: "complexity theory"
       notation: "mi R"
@@ -8541,7 +8541,7 @@ concepts:
     
     - concept: racah-polynomial
       arity: 1
-      en: racah-polynomial of $1
+      en: racah polynomial of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub R $1"
@@ -8552,7 +8552,7 @@ concepts:
     
     - concept: radial-mathieu-function
       arity: 1
-      en: radial-mathieu-function of $1
+      en: radial mathieu function of $1
       property: "indexed function"
       area: "special functions"
       notation: "mi Mc<br/>mi Ms"
@@ -8577,7 +8577,7 @@ concepts:
     
     - concept: radius-vector
       arity: 0
-      en: radius-vector
+      en: radius vector
       property: symbol
       area: "geometry"
       notation: "mix<br/>mir<br/>mis"
@@ -8592,7 +8592,7 @@ concepts:
     
     - concept: ramanujan-sum
       arity: 1
-      en: ramanujan-sum of $1
+      en: ramanujan sum of $1
       property: "indexed function"
       area: "number theory"
       notation: "msub c $1"
@@ -8603,7 +8603,7 @@ concepts:
     
     - concept: ramanujan-tau-function
       arity: 1
-      en: ramanujan-tau-function of $1
+      en: ramanujan tau function of $1
       property: function
       area: "number theory"
       notation: "mi τ"
@@ -8614,7 +8614,7 @@ concepts:
     
     - concept: ramanujan-soldner-constant
       arity: 0
-      en: ramanujan-soldner-constant
+      en: ramanujan soldner constant
       property: constant
       area: "special functions"
       notation: "mi μ"
@@ -8627,7 +8627,7 @@ concepts:
     
     - concept: ramification-index
       arity: 1
-      en: ramification-index of $1
+      en: ramification index of $1
       property: msub
       area: "algebraic number theory"
       notation: "msub e $1"
@@ -8637,7 +8637,7 @@ concepts:
     
     - concept: ramsey-number
       arity: 1
-      en: ramsey-number of $1
+      en: ramsey number of $1
       property: function
       area: "graph theory"
       notation: "mi R"
@@ -8661,7 +8661,7 @@ concepts:
     
     - concept: real-bipolar
       arity: 1
-      en: real-bipolar of $1
+      en: real bipolar of $1
       property: msup
       area: "functional analysis"
       notation: "msup $1 r r"
@@ -8672,7 +8672,7 @@ concepts:
     
     - concept: real-part
       arity: 1
-      en: real-part of $1
+      en: real part of $1
       property: function
       area: "complex analysis"
       notation: "mi ℜ<br/>mi Re<br/>mi ℛℯ"
@@ -8683,7 +8683,7 @@ concepts:
     
     - concept: real-prepolar
       arity: 1
-      en: real-prepolar of $1
+      en: real prepolar of $1
       property: prescript
       area: "functional analysis"
       notation: "msup <mrow/> r /msup $1"
@@ -8694,7 +8694,7 @@ concepts:
     
     - concept: real-polar
       arity: 1
-      en: real-polar of $1
+      en: real polar of $1
       property: msup
       area: "functional analysis"
       notation: "msup $1 r"
@@ -8705,7 +8705,7 @@ concepts:
     
     - concept: recession-cone
       arity: 1
-      en: recession-cone of $1
+      en: recession cone of $1
       property: function
       area: "convex analysis"
       notation: "mi recc"
@@ -8714,7 +8714,7 @@ concepts:
     
     - concept: reciprocal-polynomial
       arity: 1
-      en: reciprocal-polynomial of $1
+      en: reciprocal polynomial of $1
       property: msup
       area: "algebra"
       notation: "msup $1 *<br/>msup $1 R"
@@ -8737,7 +8737,7 @@ concepts:
     
     - concept: reduced-suspension
       arity: 1
-      en: reduced-suspension of $1
+      en: reduced suspension of $1
       property: function
       area: "topology"
       notation: "mi Σ"
@@ -8746,7 +8746,7 @@ concepts:
     
     - concept: relative-homology
       arity: 1
-      en: relative-homology of $1
+      en: relative homology of $1
       property: "indexed function"
       area: "algebraic topology"
       notation: "mi H"
@@ -8790,7 +8790,7 @@ concepts:
     
     - concept: resolvent-set
       arity: 1
-      en: resolvent-set of $1
+      en: resolvent set of $1
       property: function
       area: "set theory"
       notation: "mi ρ"
@@ -8800,7 +8800,7 @@ concepts:
     
     - concept: restricted-quantifier
       arity: 2
-      en: restricted-quantifier
+      en: restricted quantifier
       property: mixfix
       area: "formal logic"
       notation: "msub mrow ( Ǝ $1 ) /mrow $2<br/>msub mrow ( ∀ $1 ) /mrow $2"
@@ -8810,7 +8810,7 @@ concepts:
     
     - concept: restricted-wreath-product
       arity: 2
-      en: $1 restricted-wreath-product $2
+      en: $1 restricted wreath product $2
       property: infix
       area: "group theory"
       notation: "mo wr<br/>msub wr $1"
@@ -8848,7 +8848,7 @@ concepts:
     
     - concept: rewrite-rule
       arity: 2
-      en: $1 rewrite-rule $2
+      en: $1 rewrite rule $2
       property: infix
       area: "logic"
       notation: "mo →"
@@ -8859,7 +8859,7 @@ concepts:
     
     - concept: reynolds-number
       arity: 0
-      en: reynolds-number
+      en: reynolds number
       property: symbol
       area: "fluid dynamics"
       notation: "mi Re"
@@ -8868,7 +8868,7 @@ concepts:
     
     - concept: ricci-scalar
       arity: 0
-      en: ricci-scalar
+      en: ricci scalar
       property: symbol
       area: "riemannian geometry"
       notation: "mi S<br/>mi R<br/>mi Sc"
@@ -8880,7 +8880,7 @@ concepts:
     
     - concept: ricci-tensor
       arity: 1
-      en: ricci-tensor of $1
+      en: ricci tensor of $1
       property: "indexed symbol"
       area: "riemannian geometry"
       notation: "mi R"
@@ -8890,7 +8890,7 @@ concepts:
     
     - concept: riemann-integral
       arity: 1
-      en: riemann-integral of $1
+      en: riemann integral of $1
       property: indexed
       area: "calculus"
       notation: "mo ∫"
@@ -8905,7 +8905,7 @@ concepts:
     
     - concept: riemann-sphere
       arity: 1
-      en: riemann-sphere of $1
+      en: riemann sphere of $1
       property: scripted symbol
       area: "projective geometry"
       notation: "mover ℂ ^<br/>mover ℂ ¯<br/>msub ℂ ∞"
@@ -8920,7 +8920,7 @@ concepts:
     
     - concept: riemann-theta-function
       arity: 1
-      en: riemann-theta-function of $1
+      en: riemann theta function of $1
       property: function
       area: "special functions"
       notation: "mi θ⁡"
@@ -8931,7 +8931,7 @@ concepts:
     
     - concept: riemann-zeta-function
       arity: 1
-      en: riemann-zeta-function of $1
+      en: riemann zeta function of $1
       property: function
       area: "special functions"
       notation: "mi ζ"
@@ -8946,7 +8946,7 @@ concepts:
     
     - concept: riemann-christoffel-tensor
       arity: 1
-      en: riemann-christoffel-tensor of $1
+      en: riemann christoffel tensor of $1
       property: "indexed function"
       area: "riemannian geometry"
       notation: "mi R"
@@ -8960,7 +8960,7 @@ concepts:
     
     - concept: riemann-stieltje-integral
       arity: 1
-      en: riemann-stieltje-integral of $1
+      en: riemann stieltje integral of $1
       property: indexed
       area: "measure theory"
       notation: "mo ∫"
@@ -8976,7 +8976,7 @@ concepts:
     
     - concept: right-angle
       arity: 1
-      en: right-angle of $1
+      en: right angle of $1
       property: prefix
       area: "geometry"
       notation: "mo ∟<br/>mo ⊾<br/>mo ⦜<br/>mo ⦝"
@@ -8986,7 +8986,7 @@ concepts:
     
     - concept: right-derivative
       arity: 1
-      en: right-derivative of $1
+      en: right derivative of $1
       property: operator
       area: "calculus"
       notation: "msub ∂ +"
@@ -8995,7 +8995,7 @@ concepts:
     
     - concept: right-quotient
       arity: 2
-      en: $1 right-quotient $2
+      en: $1 right quotient $2
       property: infix
       area: "formal languages"
       notation: "mo \\"
@@ -9004,7 +9004,7 @@ concepts:
     
     - concept: ring-of-formal-power-series
       arity: 2
-      en: ring-of-formal-power-series
+      en: ring of formal power series
       property: mixfix
       area: "ring theory"
       notation: "mrow $1 [[ $2 ]]"
@@ -9013,7 +9013,7 @@ concepts:
     
     - concept: rising-factorial
       arity: 2
-      en: rising-factorial
+      en: rising factorial
       property: mixfix
       area: "combinatorics"
       notation: "msup $1 mover $2 ¯<br/>msup $1 mrow ( $2 ) /mrow"
@@ -9030,7 +9030,7 @@ concepts:
     
     - concept: roman-numeral
       arity: 0
-      en: roman-numeral
+      en: roman numeral
       property: symbol
       area: "number theory"
       notation: "mi i<br/>mi ii<br/>mi iii<br/>mi iv<br/>mi v<br/>mi vi<br/>mi vii<br/>mi viii<br/>mi ix<br/>mi x"
@@ -9054,7 +9054,7 @@ concepts:
     
     - concept: root-of-unity
       arity: 0
-      en: root-of-unity
+      en: root of unity
       property: symbol
       area: "complex numbers"
       notation: "mi ω"
@@ -9065,7 +9065,7 @@ concepts:
     
     - concept: root-mean-square
       arity: 1
-      en: root-mean-square of $1
+      en: root mean square of $1
       property: msub
       area: "means"
       notation: "msub $1 RMS"
@@ -9077,7 +9077,7 @@ concepts:
     
     - concept: rooted-product-of-graphs
       arity: 2
-      en: $1 rooted-product-of-graphs $2
+      en: $1 rooted product of graphs $2
       property: infix
       area: "graph theory"
       notation: "mo ∘"
@@ -9086,7 +9086,7 @@ concepts:
     
     - concept: ruark-number
       arity: 0
-      en: ruark-number
+      en: ruark number
       property: symbol
       area: "physics"
       notation: "mi Ru"
@@ -9095,7 +9095,7 @@ concepts:
     
     - concept: s-set-theory
       arity: 0
-      en: s-set-theory
+      en: s set theory
       property: constant
       area: "set theory"
       notation: "miS"
@@ -9104,7 +9104,7 @@ concepts:
     
     - concept: s5-modal-logic
       arity: 0
-      en: s5-modal-logic
+      en: s5 modal logic
       property: constant
       area: "logic"
       notation: "miS5"
@@ -9113,7 +9113,7 @@ concepts:
     
     - concept: sample-space
       arity: 0
-      en: sample-space
+      en: sample space
       property: symbol
       area: "probability theory"
       notation: "mi S<br/>mi Ω<br/>mi U"
@@ -9124,7 +9124,7 @@ concepts:
     
     - concept: sample-variance
       arity: 1
-      en: sample-variance of $1
+      en: sample variance of $1
       property: embellished symbol
       area: "probability theory"
       notation: "msub m 2<br/>msup s 2<br/>msubsup s $1 2<br/>msubsup σ $1 2"
@@ -9135,7 +9135,7 @@ concepts:
     
     - concept: scalar-triple-product
       arity: 3
-      en: scalar-triple-product  of $1, $2 and $3
+      en: scalar triple product  of $1, $2 and $3
       property: mixfix<br/>fenced
       area: "vector algebra"
       notation: "mrow $1 ⋅ ( $2 × $3 )<br/>mrow [ $1 , $2 , $3 ]"
@@ -9145,7 +9145,7 @@ concepts:
     
     - concept: scaled-riemann-theta-function
       arity: 1
-      en: scaled-riemann-theta-function of $1
+      en: scaled riemann theta function of $1
       property: mover
       area: "special functions"
       notation: "mover θ⁡ ^"
@@ -9155,7 +9155,7 @@ concepts:
     
     - concept: schlaefli-symbol
       arity: 1
-      en: schlaefli-symbol of $1
+      en: schlaefli symbol of $1
       property: fenced
       area: "geometry"
       notation: "mrow { $1 , ..., $n }"
@@ -9164,7 +9164,7 @@ concepts:
     
     - concept: schroder-number
       arity: 1
-      en: schroder-number of $1
+      en: schroder number of $1
       property: "indexed symbol"
       area: "combinatorics"
       notation: "msub S $1"
@@ -9175,7 +9175,7 @@ concepts:
     
     - concept: schur-multiplier
       arity: 1
-      en: schur-multiplier of $1
+      en: schur multiplier of $1
       property: function
       area: "group theory"
       notation: "mi M"
@@ -9188,7 +9188,7 @@ concepts:
     
     - concept: schwartz-space
       arity: 0
-      en: schwartz-space
+      en: schwartz space
       property: symbol
       area: "topology"
       notation: "mi𝒮<br/>mi S"
@@ -9199,7 +9199,7 @@ concepts:
     
     - concept: schwarzian-derivative
       arity: 2
-      en: schwarzian-derivative
+      en: schwarzian derivative
       property: fenced<br/>mixfix
       area: "complex analysis"
       notation: "mrow { $1, $2 }<br/>mrow ( S $1 ) ($2"
@@ -9211,7 +9211,7 @@ concepts:
     
     - concept: second-carmichael-function
       arity: 1
-      en: second-carmichael-function of $1
+      en: second carmichael function of $1
       property: function
       area: "number theory"
       notation: "msup λ '"
@@ -9221,7 +9221,7 @@ concepts:
     
     - concept: sectional-curvature
       arity: 1
-      en: sectional-curvature of $1
+      en: sectional curvature of $1
       property: function
       area: "riemannian geometry"
       notation: "mi K<br/>mi κ"
@@ -9263,7 +9263,7 @@ concepts:
     
     - concept: set-of-invertible-maps
       arity: 1
-      en: set-of-invertible-maps of $1
+      en: set of invertible maps of $1
       property: prefix
       area: "commutative algebra"
       notation: "mo !"
@@ -9272,7 +9272,7 @@ concepts:
     
     - concept: shannon-entropy
       arity: 0
-      en: shannon-entropy
+      en: shannon entropy
       property: symbol
       area: "information theory"
       notation: "mi H"
@@ -9286,7 +9286,7 @@ concepts:
     
     - concept: shift-operator
       arity: 1
-      en: shift-operator of $1
+      en: shift operator of $1
       property: oeprator
       area: "functional analysis"
       notation: "msup T t"
@@ -9300,7 +9300,7 @@ concepts:
     
     - concept: shimura-variety
       arity: 1
-      en: shimura-variety of $1
+      en: shimura variety of $1
       property: function
       area: "algebraic geometry"
       notation: "mi Sh"
@@ -9311,7 +9311,7 @@ concepts:
     
     - concept: short-exact-sequence
       arity: 3
-      en: short-exact-sequence
+      en: short exact sequence
       property: mixfix
       area: "group theory"
       notation: "mrow 0 →$1 → $2 → $3 → 0"
@@ -9321,7 +9321,7 @@ concepts:
     
     - concept: short-rate
       arity: 0
-      en: short-rate
+      en: short rate
       property: symbol
       area: "mathematical finance"
       notation: "msub r t"
@@ -9333,7 +9333,7 @@ concepts:
     
     - concept: sidon-sequence
       arity: 0
-      en: sidon-sequence
+      en: sidon sequence
       property: symbol
       area: "combinatorics"
       notation: "mi A"
@@ -9345,7 +9345,7 @@ concepts:
     
     - concept: sign-function
       arity: 1
-      en: sign-function of $1
+      en: sign function of $1
       property: function
       area: "special-functions"
       notation: "mi sgn"
@@ -9356,7 +9356,7 @@ concepts:
     
     - concept: signature-of-permutation
       arity: 1
-      en: signature-of-permutation of $1
+      en: signature of permutation of $1
       property: function
       area: "combinatorics"
       notation: "mi sign"
@@ -9367,7 +9367,7 @@ concepts:
     
     - concept: silver-ratio
       arity: 0
-      en: silver-ratio
+      en: silver ratio
       property: constant
       area: "number theory"
       notation: "msub δ S"
@@ -9401,7 +9401,7 @@ concepts:
     
     - concept: sinc-function
       arity: 1
-      en: sinc-function of $1
+      en: sinc function of $1
       property: function
       area: "special functions"
       notation: "mi S<br/>mi sinc"
@@ -9412,7 +9412,7 @@ concepts:
     
     - concept: sine-integral
       arity: 1
-      en: sine-integral of $1
+      en: sine integral of $1
       property: operator
       area: "special functions"
       notation: "mi Si"
@@ -9424,7 +9424,7 @@ concepts:
     
     - concept: size-of-test
       arity: 0
-      en: size-of-test
+      en: size of test
       property: symbol
       area: "statistics"
       notation: "mi α"
@@ -9433,7 +9433,7 @@ concepts:
     
     - concept: skewes-number
       arity: 1
-      en: skewes-number of $1
+      en: skewes number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub Sk $1"
@@ -9443,7 +9443,7 @@ concepts:
     
     - concept: small-o
       arity: 1
-      en: small-o of $1
+      en: small o of $1
       property: prefix
       area: "complexity"
       notation: "mi o"
@@ -9453,7 +9453,7 @@ concepts:
     
     - concept: smith-number
       arity: 1
-      en: smith-number of $1
+      en: smith number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "mi S"
@@ -9463,7 +9463,7 @@ concepts:
     
     - concept: sobolev-space
       arity: 2
-      en: sobolev-space
+      en: sobolev space
       property: "indexed symbol"
       area: "fourier analysis"
       notation: "msubsup W $1 $2"
@@ -9487,7 +9487,7 @@ concepts:
     
     - concept: soft-o
       arity: 0
-      en: soft-o
+      en: soft o
       property: symbol
       area: "complexity theory"
       notation: "mi Õ"
@@ -9497,7 +9497,7 @@ concepts:
     
     - concept: solid-angle
       arity: 0
-      en: solid-angle
+      en: solid angle
       property: symbol
       area: "geometry"
       notation: "mi Ω"
@@ -9517,7 +9517,7 @@ concepts:
     
     - concept: special-linear-group
       arity: 1
-      en: special-linear-group of $1
+      en: special linear group of $1
       property: "indexed function"
       area: "group theory"
       notation: "msub SL $1"
@@ -9529,7 +9529,7 @@ concepts:
     
     - concept: special-orthogonal-group
       arity: 1
-      en: special-orthogonal-group of $1
+      en: special orthogonal group of $1
       property: "indexed function"
       area: "group theory"
       notation: "mi SO"
@@ -9539,7 +9539,7 @@ concepts:
     
     - concept: special-unitary-group
       arity: 1
-      en: special-unitary-group of $1
+      en: special unitary group of $1
       property: function
       area: "lie groups"
       notation: "mi SU"
@@ -9550,7 +9550,7 @@ concepts:
     
     - concept: spectral-radius
       arity: 1
-      en: spectral-radius of $1
+      en: spectral radius of $1
       property: function
       area: "spectral theory"
       notation: "mi ρ"
@@ -9570,7 +9570,7 @@ concepts:
     
     - concept: spectrum-category
       arity: 0
-      en: spectrum-category
+      en: spectrum category
       property: symbol
       area: "category theory"
       notation: "mi Sp"
@@ -9579,7 +9579,7 @@ concepts:
     
     - concept: spectrum-of-matrix
       arity: 1
-      en: spectrum-of-matrix of $1
+      en: spectrum of matrix of $1
       property: msub
       area: "linear algebra"
       notation: "msub σ $1"
@@ -9588,7 +9588,7 @@ concepts:
     
     - concept: spectrum-of-algebra
       arity: 1
-      en: spectrum-of-algebra of $1
+      en: spectrum of algebra of $1
       property: mover
       area: "algebra"
       notation: "mover ˆ"
@@ -9597,7 +9597,7 @@ concepts:
     
     - concept: spectrum-of-ring
       arity: 1
-      en: spectrum-of-ring of $1
+      en: spectrum of ring of $1
       property: function
       area: "group theory"
       notation: "mi Spec"
@@ -9606,7 +9606,7 @@ concepts:
     
     - concept: spherical-bessel-function-of-third-kind
       arity: 2
-      en: spherical-bessel-function-of-third-kind
+      en: spherical bessel function of third kind
       property: "indexed function"
       area: "special functions"
       notation: "msubsup h $1 (1)<br/>msubsup h $2 (2"
@@ -9617,7 +9617,7 @@ concepts:
     
     - concept: spherical-coordinate
       arity: 3
-      en: spherical-coordinate
+      en: spherical coordinate
       property: fenced
       area: "geometry"
       notation: "mrow ($1, $2, $3"
@@ -9627,7 +9627,7 @@ concepts:
     
     - concept: spin-angular-momentum
       arity: 0
-      en: spin-angular-momentum
+      en: spin angular momentum
       property: symbol
       area: "quantum mechanics"
       notation: "mi S"
@@ -9636,7 +9636,7 @@ concepts:
     
     - concept: spin-group
       arity: 0
-      en: spin-group
+      en: spin group
       property: symbol
       area: "group theory"
       notation: "mi Spin"
@@ -9648,7 +9648,7 @@ concepts:
     
     - concept: spin-quantum-number
       arity: 0
-      en: spin-quantum-number
+      en: spin quantum number
       property: symbol
       area: "quantum mechanics"
       notation: "mi s"
@@ -9667,7 +9667,7 @@ concepts:
     
     - concept: stable-distribution
       arity: 0
-      en: stable-distribution
+      en: stable distribution
       property: symbol
       area: "probability theory"
       notation: "msub S 1<br/>msub S 2"
@@ -9687,7 +9687,7 @@ concepts:
     
     - concept: standard-deviation
       arity: 0
-      en: standard-deviation
+      en: standard deviation
       property: symbol
       area: "probability theory"
       notation: "mi σ"
@@ -9699,7 +9699,7 @@ concepts:
     
     - concept: standard-flattening
       arity: 1
-      en: standard-flattening of $1
+      en: standard flattening of $1
       property: "indexed symbol"
       area: "multilinear algebra"
       notation: "msub 𝒜 ($1"
@@ -9711,7 +9711,7 @@ concepts:
     
     - concept: stanley-reisner-ring
       arity: 2
-      en: stanley-reisner-ring
+      en: stanley reisner ring
       property: mixfix
       area: "commutative algebra"
       notation: "mrow $1 [ $2 ]"
@@ -9724,7 +9724,7 @@ concepts:
     
     - concept: stanley-reisner-ideal
       arity: 1
-      en: stanley-reisner-ideal of $1
+      en: stanley reisner ideal of $1
       property: msub
       area: "commutative algebra"
       notation: "msub I $1"
@@ -9746,7 +9746,7 @@ concepts:
     
     - concept: star-height
       arity: 1
-      en: star-height of $1
+      en: star height of $1
       property: function
       area: "formal languages"
       notation: "mi h"
@@ -9755,7 +9755,7 @@ concepts:
     
     - concept: steinberg-group
       arity: 1
-      en: steinberg-group of $1
+      en: steinberg group of $1
       property: function
       area: "k-theory"
       notation: "mi St"
@@ -9766,7 +9766,7 @@ concepts:
     
     - concept: stiefel-manifold
       arity: 2
-      en: stiefel-manifold
+      en: stiefel manifold
       property: mixfix
       area: "differential geometry"
       notation: "mrow msub V $1 /msub ( $2"
@@ -9777,7 +9777,7 @@ concepts:
     
     - concept: stiefel-whitney-class
       arity: 1
-      en: stiefel-whitney-class of $1
+      en: stiefel whitney class of $1
       property: function
       area: "algebraic topology"
       notation: "mi w"
@@ -9790,7 +9790,7 @@ concepts:
     
     - concept: stieltjes-wigert-polynomial
       arity: 1
-      en: stieltjes-wigert-polynomial of $1
+      en: stieltjes wigert polynomial of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub S $1"
@@ -9801,7 +9801,7 @@ concepts:
     
     - concept: stirling-number-of-first-kind
       arity: 1
-      en: stirling-number-of-first-kind of $1
+      en: stirling number of first kind of $1
       property: function
       area: "special functions"
       notation: "mi s"
@@ -9812,7 +9812,7 @@ concepts:
     
     - concept: stirling-number-of-second-kind
       arity: 1
-      en: stirling-number-of-second-kind of $1
+      en: stirling number of second kind of $1
       property: function
       area: "special functions"
       notation: "mi S"
@@ -9823,7 +9823,7 @@ concepts:
     
     - concept: strength-of-a-graph
       arity: 1
-      en: strength-of-a-graph of $1
+      en: strength of a graph of $1
       property: function
       area: "graph theory"
       notation: "mi σ"
@@ -9834,7 +9834,7 @@ concepts:
     
     - concept: string-concatenation
       arity: 2
-      en: $1 string-concatenation $2
+      en: $1 string concatenation $2
       property: infix
       area: "computer science"
       notation: "mo"
@@ -9844,7 +9844,7 @@ concepts:
     
     - concept: strong-product
       arity: 2
-      en: $1 strong-product $2
+      en: $1 strong product $2
       property: infix
       area: "graph theory"
       notation: "mo ⊠"
@@ -9856,7 +9856,7 @@ concepts:
     
     - concept: struve-function
       arity: 1
-      en: struve-function of $1
+      en: struve function of $1
       property: "indexed function"
       area: "special functions"
       notation: "mi H"
@@ -9912,7 +9912,7 @@ concepts:
     
     - concept: succeeds-or-equals
       arity: 2
-      en: $1 succeeds-or-equals $2
+      en: $1 succeeds or equals $2
       property: infix
       area: "set theory"
       notation: "mo ≽"
@@ -9933,7 +9933,7 @@ concepts:
     
     - concept: such-that
       arity: 2
-      en: $1 such-that $2
+      en: $1 such that $2
       property: infix
       area: "set theory"
       notation: "$1 | $2<br/>$1 : $2"
@@ -9952,7 +9952,7 @@ concepts:
     
     - concept: superfluous-submodule
       arity: 2
-      en: $1 superfluous-submodule $2
+      en: $1 superfluous submodule $2
       property: infix
       area: "abstract algebra"
       notation: "msub ⊆ s<br/>mo ≪"
@@ -9991,7 +9991,7 @@ concepts:
     
     - concept: supremum-limit
       arity: 1
-      en: supremum-limit of $1
+      en: supremum limit of $1
       property: indexed
       area: "limits"
       notation: "mi lim sup<br/>mover lim ¯"
@@ -10008,7 +10008,7 @@ concepts:
     
     - concept: surface-integral
       arity: 1
-      en: surface-integral of $1
+      en: surface integral of $1
       property: indexed
       area: "calculus"
       notation: "mo ∫"
@@ -10041,7 +10041,7 @@ concepts:
     
     - concept: symmetric-algebra
       arity: 1
-      en: symmetric-algebra of $1
+      en: symmetric algebra of $1
       property: function
       area: "algebra"
       notation: "mi S<br/>mi Sym"
@@ -10052,7 +10052,7 @@ concepts:
     
     - concept: symmetric-difference
       arity: 2
-      en: $1 symmetric-difference $2
+      en: $1 symmetric difference $2
       property: infix
       area: "set theory"
       notation: "mo △<br/>mo ⊕<br/>mo ⊖"
@@ -10063,7 +10063,7 @@ concepts:
     
     - concept: symmetric-group
       arity: 1
-      en: symmetric-group of $1
+      en: symmetric group of $1
       property: "msub<br/>function<br/>postfix"
       area: "group theory"
       notation: "msub S $1<br/>msub 𝔖 $1<br/>msub Σ $1<br/>mrow Σ ( $1 )<br/>mrow Sym ( $1 )<br/>mrow $1 !<br/>"
@@ -10074,7 +10074,7 @@ concepts:
     
     - concept: symmetric-space
       arity: 0
-      en: symmetric-space
+      en: symmetric space
       property: constant
       area: "topology"
       notation: "msub R 0"
@@ -10083,7 +10083,7 @@ concepts:
     
     - concept: symplectic-group
       arity: 1
-      en: symplectic-group of $1
+      en: symplectic group of $1
       property: function
       area: "group theory"
       notation: "mi Sp"
@@ -10096,7 +10096,7 @@ concepts:
     
     - concept: szego-polynomial
       arity: 1
-      en: szego-polynomial of $1
+      en: szego polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "msub ϕ $1"
@@ -10107,7 +10107,7 @@ concepts:
     
     - concept: tangent-bundle
       arity: 1
-      en: tangent-bundle of $1
+      en: tangent bundle of $1
       property: function
       area: "differential geometry"
       notation: "mi T"
@@ -10119,7 +10119,7 @@ concepts:
     
     - concept: tangent-space
       arity: 1
-      en: tangent-space of $1
+      en: tangent space of $1
       property: "indexed function"
       area: "topology"
       notation: "msub T $1"
@@ -10130,7 +10130,7 @@ concepts:
     
     - concept: tate-algebra
       arity: 0
-      en: tate-algebra
+      en: tate algebra
       property: symbol
       area: "analytic geometry"
       notation: "msub T n"
@@ -10141,7 +10141,7 @@ concepts:
     
     - concept: tate-module
       arity: 1
-      en: tate-module of $1
+      en: tate module of $1
       property: "indexed function"
       area: "group theory"
       notation: "msub T $1"
@@ -10152,7 +10152,7 @@ concepts:
     
     - concept: tau-particle
       arity: 0
-      en: tau-particle
+      en: tau particle
       property: symbol
       area: "particle physics"
       notation: "mi τ"
@@ -10161,7 +10161,7 @@ concepts:
     
     - concept: taxicab-number
       arity: 1
-      en: taxicab-number of $1
+      en: taxicab number of $1
       property: function
       area: "number theory"
       notation: "mi Ta"
@@ -10171,7 +10171,7 @@ concepts:
     
     - concept: taylor-polynomial
       arity: 1
-      en: taylor-polynomial of $1
+      en: taylor polynomial of $1
       property: function
       area: "number theory"
       notation: "mi Ta"
@@ -10182,7 +10182,7 @@ concepts:
     
     - concept: teichmuller-space
       arity: 1
-      en: teichmuller-space of $1
+      en: teichmuller space of $1
       property: function
       area: "differential geometry"
       notation: "mi T"
@@ -10204,7 +10204,7 @@ concepts:
     
     - concept: tensor-algebra
       arity: 1
-      en: tensor-algebra of $1
+      en: tensor algebra of $1
       property: function
       area: "multilinear algebra"
       notation: "mi T<br/>msup T •"
@@ -10213,7 +10213,7 @@ concepts:
     
     - concept: tensor-product
       arity: 2
-      en: $1 tensor-product $2
+      en: $1 tensor product $2
       property: infix
       area: "algebra"
       notation: "mo ⊗"
@@ -10226,7 +10226,7 @@ concepts:
     
     - concept: tensor-product-of-graphs
       arity: 2
-      en: $1 tensor-product-of-graphs $2
+      en: $1 tensor product of graphs $2
       property: infix
       area: "graph theory"
       notation: "mo ×"
@@ -10238,7 +10238,7 @@ concepts:
     
     - concept: therefore-sign
       arity: 1
-      en: therefore-sign of $1
+      en: therefore sign of $1
       property: prefix
       area: "logic"
       notation: "mo ∴"
@@ -10249,7 +10249,7 @@ concepts:
     
     - concept: theta-function
       arity: 1
-      en: theta-function of $1
+      en: theta function of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub θ $1"
@@ -10263,7 +10263,7 @@ concepts:
     
     - concept: thom-space
       arity: 1
-      en: thom-space of $1
+      en: thom space of $1
       property: function
       area: "algebraic topology"
       notation: "mi T"
@@ -10274,7 +10274,7 @@ concepts:
     
     - concept: thompson-group
       arity: 0
-      en: thompson-group
+      en: thompson group
       property: symbol
       area: "group theory"
       notation: "mi Th"
@@ -10294,7 +10294,7 @@ concepts:
     
     - concept: todd-class
       arity: 1
-      en: todd-class of $1
+      en: todd class of $1
       property: function
       area: "characteristic classes"
       notation: "mi td<br/>mi Td"
@@ -10305,7 +10305,7 @@ concepts:
     
     - concept: topological-entropy
       arity: 1
-      en: topological-entropy of $1
+      en: topological entropy of $1
       property: function
       area: "topology"
       notation: "mi h"
@@ -10316,7 +10316,7 @@ concepts:
     
     - concept: toroidal-coordinate
       arity: 1
-      en: toroidal-coordinate of $1
+      en: toroidal coordinate of $1
       property: fenced
       area: "geometry"
       notation: "mrow ( σ , τ , ϕ"
@@ -10348,7 +10348,7 @@ concepts:
     
     - concept: torsion-submodule
       arity: 1
-      en: torsion-submodule of $1
+      en: torsion submodule of $1
       property: function
       area: "abstract algebra"
       notation: "mi T"
@@ -10357,7 +10357,7 @@ concepts:
     
     - concept: torsion-subgroup
       arity: 1
-      en: torsion-subgroup of $1
+      en: torsion subgroup of $1
       property: msub
       area: "group theory"
       notation: "msub $1 T"
@@ -10367,7 +10367,7 @@ concepts:
     
     - concept: torsion-tensor
       arity: 1
-      en: torsion-tensor of $1
+      en: torsion tensor of $1
       property: function
       area: "differential geometry"
       notation: "mi T"
@@ -10376,7 +10376,7 @@ concepts:
     
     - concept: total-derivative
       arity: 2
-      en: total-derivative
+      en: total derivative
       property: mixfix
       area: "differential calculus"
       notation: "mrow d msub $1 $2 /msub"
@@ -10389,7 +10389,7 @@ concepts:
     
     - concept: total-variation
       arity: 1
-      en: total-variation of $1
+      en: total variation of $1
       property: fenced
       area: "measure theory"
       notation: "mrow |$1 |"
@@ -10409,7 +10409,7 @@ concepts:
     
     - concept: transitive-closure
       arity: 1
-      en: transitive-closure of $1
+      en: transitive closure of $1
       property: msup
       area: "set theory"
       notation: "msup $1 +"
@@ -10432,7 +10432,7 @@ concepts:
     
     - concept: triangle-function
       arity: 1
-      en: triangle-function of $1
+      en: triangle function of $1
       property: function
       area: "special functions"
       notation: "mi Λ<br/>mi tri"
@@ -10445,7 +10445,7 @@ concepts:
     
     - concept: triangular-number
       arity: 1
-      en: triangular-number of $1
+      en: triangular number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub T $1"
@@ -10457,7 +10457,7 @@ concepts:
     
     - concept: trilinear-coordinates
       arity: 2
-      en: $1 trilinear-coordinates $2
+      en: $1 trilinear coordinates $2
       property: infix
       area: "geometry"
       notation: "mrow $1 : $2 : $3"
@@ -10477,7 +10477,7 @@ concepts:
     
     - concept: triple-bond
       arity: 2
-      en: $1 triple-bond $2
+      en: $1 triple bond $2
       property: infix
       area: "chemistry"
       notation: "mo ≡"
@@ -10486,7 +10486,7 @@ concepts:
     
     - concept: triple-scalar-product
       arity: 3
-      en: triple-scalar-product of $1, $2 and $3
+      en: triple scalar product of $1, $2 and $3
       property: fenced
       area: "algebra"
       notation: "mrow [$1, $2, $3]"
@@ -10497,7 +10497,7 @@ concepts:
     
     - concept: triple-torus
       arity: 1
-      en: triple-torus of $1
+      en: triple torus of $1
       property: "indexed symbol"
       area: "topology"
       notation: "msup 𝕋 3"
@@ -10518,7 +10518,7 @@ concepts:
     
     - concept: tube-domain
       arity: 1
-      en: tube-domain of $1
+      en: tube domain of $1
       property: msub
       area: "complex analysis"
       notation: "msub T $1"
@@ -10528,7 +10528,7 @@ concepts:
     
     - concept: turan-graph
       arity: 2
-      en: turan-graph
+      en: turan graph
       property: "function<br/>indexed function"
       area: "graph theory"
       notation: "mi T<br/>mi D<br/>msub T $1<br/>msub T $1,$2"
@@ -10539,7 +10539,7 @@ concepts:
     
     - concept: turan-number
       arity: 3
-      en: turan-number of $1, $2 and $3
+      en: turan number of $1, $2 and $3
       property: function
       area: "graph theory"
       notation: "mrow T($1,$2,$3"
@@ -10563,7 +10563,7 @@ concepts:
     
     - concept: twisted-tensor-product
       arity: 2
-      en: $1 twisted-tensor-product $2
+      en: $1 twisted tensor product $2
       property: infix
       area: "topology"
       notation: "msub ⊗ τ"
@@ -10572,7 +10572,7 @@ concepts:
     
     - concept: tychonoff-space
       arity: 0
-      en: tychonoff-space
+      en: tychonoff space
       property: symbol
       area: "topology"
       notation: "msub T 3<br/>msub T π<br/>msub T 3½"
@@ -10583,7 +10583,7 @@ concepts:
     
     - concept: typing-judgement
       arity: 2
-      en: $1 typing-judgement $2
+      en: $1 typing judgement $2
       property: infix
       area: "type theory"
       notation: "mo : "
@@ -10592,7 +10592,7 @@ concepts:
     
     - concept: ulam-number
       arity: 1
-      en: ulam-number of $1
+      en: ulam number of $1
       property: "indexed symbol"
       area: "integer sequences"
       notation: "msub U $1"
@@ -10624,7 +10624,7 @@ concepts:
     
     - concept: uniformly-convergent
       arity: 1
-      en: uniformly-convergent of $1
+      en: uniformly convergent of $1
       property: infix<br/>indexed<br/>postfix
       area: "convergence"
       notation: "mo ⇉<br/>mover ⟶ unif.<br/>mo unif lim<br/>mtext uniformly"
@@ -10633,7 +10633,7 @@ concepts:
     
     - concept: unit-part
       arity: 1
-      en: unit-part of $1
+      en: unit part of $1
       property: fenced
       area: "SI units"
       notation: "mrow [ $1 ]"
@@ -10643,7 +10643,7 @@ concepts:
     
     - concept: unit-vector
       arity: 1
-      en: unit-vector of $1
+      en: unit vector of $1
       property: mover
       area: "linear algebra"
       notation: "mover $1 ^"
@@ -10654,7 +10654,7 @@ concepts:
     
     - concept: unitary-group
       arity: 1
-      en: unitary-group of $1
+      en: unitary group of $1
       property: "indexed symbol"
       area: "group theory"
       notation: "msub U $1"
@@ -10666,7 +10666,7 @@ concepts:
     
     - concept: universal-gas-constant
       arity: 0
-      en: universal-gas-constant
+      en: universal gas constant
       property: constant
       area: "physics"
       notation: "mi R<br/>mover R -"
@@ -10679,7 +10679,7 @@ concepts:
     
     - concept: universal-parabolic-constant
       arity: 0
-      en: universal-parabolic-constant
+      en: universal parabolic constant
       property: constant
       area: "geometry"
       notation: "mi P"
@@ -10689,7 +10689,7 @@ concepts:
     
     - concept: universal-set
       arity: 0
-      en: universal-set
+      en: universal set
       property: symbol
       area: "set theory"
       notation: "miV<br/>miU<br/>miξ"
@@ -10702,7 +10702,7 @@ concepts:
     
     - concept: unique-existential
       arity: 1
-      en: unique-existential of $1
+      en: unique existential of $1
       property: prefix
       area: "logic"
       notation: "mo ∃ !<br/>msub ∃ mrow =1 /mrow"
@@ -10712,7 +10712,7 @@ concepts:
     
     - concept: unnatural-isomorphism
       arity: 2
-      en: $1 unnatural-isomorphism $2
+      en: $1 unnatural isomorphism $2
       property: infix
       area: "set theory"
       notation: "mo ≈"
@@ -10721,7 +10721,7 @@ concepts:
     
     - concept: unrestricted-wreath-product
       arity: 2
-      en: $1 unrestricted-wreath-product $2
+      en: $1 unrestricted wreath product $2
       property: infix
       area: "group theory"
       notation: "mo ≀<br/>mo Wr<br/>msub Wr $1"
@@ -10733,7 +10733,7 @@ concepts:
     
     - concept: upper-closure-poset
       arity: 1
-      en: upper-closure-poset of $1
+      en: upper closure poset of $1
       property: prefix
       area: "order theory"
       notation: "mo ↑"
@@ -10742,7 +10742,7 @@ concepts:
     
     - concept: upper-darboux-integral
       arity: 1
-      en: upper-darboux-integral of $1
+      en: upper darboux integral of $1
       property: indexed
       area: "real analysis"
       notation: "mover ¯"
@@ -10752,7 +10752,7 @@ concepts:
     
     - concept: upper-dini-derivative
       arity: 1
-      en: upper-dini-derivative of $1
+      en: upper dini derivative of $1
       property: decorated function
       area: "analysis"
       notation: "msubsup $1 + '"
@@ -10763,7 +10763,7 @@ concepts:
     
     - concept: upper-half-plane
       arity: 0
-      en: upper-half-plane
+      en: upper half plane
       property: symbol
       area: "complex analysis"
       notation: "mi ℍ<br/>msup ℍ +"
@@ -10774,7 +10774,7 @@ concepts:
     
     - concept: upper-shadow
       arity: 1
-      en: upper-shadow of $1
+      en: upper shadow of $1
       property: function
       area: "combinatorics"
       notation: "msup 𝜕 +"
@@ -10803,7 +10803,7 @@ concepts:
     
     - concept: vector-concatenation
       arity: 2
-      en: $1 vector-concatenation $2
+      en: $1 vector concatenation $2
       property: infix
       area: "machine learning"
       notation: "mo ◦<br/>mo ⊕"
@@ -10813,7 +10813,7 @@ concepts:
     
     - concept: vector-projection
       arity: 1
-      en: vector-projection of $1
+      en: vector projection of $1
       property: function
       area: "linear algebra"
       notation: "mi proj"
@@ -10858,7 +10858,7 @@ concepts:
     
     - concept: vertical-composition
       arity: 2
-      en: $1 vertical-composition $2
+      en: $1 vertical composition $2
       property: infix
       area: "category theory"
       notation: "mo ∘"
@@ -10868,7 +10868,7 @@ concepts:
     
     - concept: volterra-integral
       arity: 1
-      en: volterra-integral of $1
+      en: volterra integral of $1
       property: indexed
       area: "calculus"
       notation: "mo Π"
@@ -10892,7 +10892,7 @@ concepts:
     
     - concept: volume-element
       arity: 0
-      en: volume-element
+      en: volume element
       property: symbol
       area: "measure theory"
       notation: "mrow d V"
@@ -10902,7 +10902,7 @@ concepts:
     
     - concept: walsh-function
       arity: 1
-      en: walsh-function of $1
+      en: walsh function of $1
       property: "indexed function"
       area: "special functions"
       notation: "mi W"
@@ -10913,7 +10913,7 @@ concepts:
     
     - concept: wavelet-transform
       arity: 2
-      en: wavelet-transform
+      en: wavelet transform
       property: "embellished function"
       area: "functional analysis"
       notation: "mrow [ msub W $1 /msub $2 ]"
@@ -10926,7 +10926,7 @@ concepts:
     
     - concept: way-below
       arity: 2
-      en: $1 way-below $2
+      en: $1 way below $2
       property: infix
       area: "domain theory"
       notation: "mo≪<br/>mo≫"
@@ -10939,7 +10939,7 @@ concepts:
     
     - concept: weak-convergence
       arity: 2
-      en: $1 weak-convergence $2
+      en: $1 weak convergence $2
       property: infix
       area: "analysis"
       notation: "mover →w<br/>mo ⇀"
@@ -10949,7 +10949,7 @@ concepts:
     
     - concept: weber-function
       arity: 1
-      en: weber-function of $1
+      en: weber function of $1
       property: "indexed function"
       area: "special functions"
       notation: "msub E ν"
@@ -10960,7 +10960,7 @@ concepts:
     
     - concept: weierstrass-elliptic-function
       arity: 1
-      en: weierstrass-elliptic-function of $1
+      en: weierstrass elliptic function of $1
       property: function
       area: "special functions"
       notation: "mi ℘"
@@ -10973,7 +10973,7 @@ concepts:
     
     - concept: weierstrass-sigma-function
       arity: 1
-      en: weierstrass-sigma-function of $1
+      en: weierstrass sigma function of $1
       property: function
       area: "special functions"
       notation: "mi σ"
@@ -10985,7 +10985,7 @@ concepts:
     
     - concept: weierstrass-zeta-function
       arity: 1
-      en: weierstrass-zeta-function of $1
+      en: weierstrass zeta function of $1
       property: function
       area: "special functions"
       notation: "mi ζ"
@@ -11008,7 +11008,7 @@ concepts:
     
     - concept: weighted-lehmer-mean
       arity: 2
-      en: weighted-lehmer-mean
+      en: weighted lehmer mean
       property: "indexed function"
       area: "means"
       notation: "msub L mrow $1 , $2 /mrow"
@@ -11018,7 +11018,7 @@ concepts:
     
     - concept: weighted-mean
       arity: 1
-      en: weighted-mean of $1
+      en: weighted mean of $1
       property: fenced
       area: "special functions"
       notation: "mrow ⟨ $1 ⟩"
@@ -11031,7 +11031,7 @@ concepts:
     
     - concept: wheel-graph
       arity: 1
-      en: wheel-graph of $1
+      en: wheel graph of $1
       property: "indexed symbol"
       area: "graph theory"
       notation: "msub W $1"
@@ -11041,7 +11041,7 @@ concepts:
     
     - concept: whitehead-group
       arity: 1
-      en: whitehead-group of $1
+      en: whitehead group of $1
       property: function
       area: "group theory"
       notation: "mi Wh"
@@ -11052,7 +11052,7 @@ concepts:
     
     - concept: whitehead-bracket
       arity: 2
-      en: whitehead-bracket
+      en: whitehead bracket
       property: fenced
       area: "lie algebra"
       notation: "mrow [ $1, $2 ]"
@@ -11063,7 +11063,7 @@ concepts:
     
     - concept: whitehead-torsion
       arity: 1
-      en: whitehead-torsion of $1
+      en: whitehead torsion of $1
       property: function
       area: "geometric topology"
       notation: "mi τ"
@@ -11074,7 +11074,7 @@ concepts:
     
     - concept: whittaker-function
       arity: 2
-      en: whittaker-function
+      en: whittaker function
       property: "indexed function"
       area: "special functions"
       notation: "msub M mrow $1, $2 /mrow<br/>msub W mrow $1, $2 /mrow"
@@ -11086,7 +11086,7 @@ concepts:
     
     - concept: wiener-algebra
       arity: 0
-      en: wiener-algebra
+      en: wiener algebra
       property: symbol
       area: "Fourier analysis"
       notation: "mrowA(T"
@@ -11096,7 +11096,7 @@ concepts:
     
     - concept: wiener-process
       arity: 1
-      en: wiener-process of $1
+      en: wiener process of $1
       property: "indexed symbol"
       area: "martingale theory"
       notation: "msub W $1"
@@ -11107,7 +11107,7 @@ concepts:
     
     - concept: wiener-sausage
       arity: 1
-      en: wiener-sausage of $1
+      en: wiener sausage of $1
       property: "indexed symbol"
       area: "mathematical physics"
       notation: "msub W $1"
@@ -11118,7 +11118,7 @@ concepts:
     
     - concept: wilson-polynomial
       arity: 1
-      en: wilson-polynomial of $1
+      en: wilson polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "msub W $1"
@@ -11130,7 +11130,7 @@ concepts:
     
     - concept: wilson-quotient
       arity: 1
-      en: wilson-quotient of $1
+      en: wilson quotient of $1
       property: function
       area: "number theory"
       notation: "mi W"
@@ -11140,7 +11140,7 @@ concepts:
     
     - concept: winding-number
       arity: 1
-      en: winding-number of $1
+      en: winding number of $1
       property: "function<br/>symbol"
       area: "algebraic topology"
       notation: "mi 𝒩<br/>mi w"
@@ -11153,7 +11153,7 @@ concepts:
     
     - concept: window-function
       arity: 1
-      en: window-function of $1
+      en: window function of $1
       property: function
       area: "fourier analysis"
       notation: "mi w"
@@ -11164,7 +11164,7 @@ concepts:
     
     - concept: wishart-distribution
       arity: 0
-      en: wishart-distribution
+      en: wishart distribution
       property: symbol
       area: "probability theory"
       notation: "msub W p"
@@ -11175,7 +11175,7 @@ concepts:
     
     - concept: witt-polynomials
       arity: 1
-      en: witt-polynomials of $1
+      en: witt polynomials of $1
       property: "indexed function"
       area: "ring theory"
       notation: "msub W $1"
@@ -11185,7 +11185,7 @@ concepts:
     
     - concept: witt-vector
       arity: 1
-      en: witt-vector of $1
+      en: witt vector of $1
       property: fenced
       area: "ring theory"
       notation: "mrow ( $1, ... , $n"
@@ -11195,7 +11195,7 @@ concepts:
     
     - concept: woodall-number
       arity: 1
-      en: woodall-number of $1
+      en: woodall number of $1
       property: "indexed symbol"
       area: "number theory"
       notation: "msub W $1"
@@ -11206,7 +11206,7 @@ concepts:
     
     - concept: wright-function
       arity: 1
-      en: wright-function of $1
+      en: wright function of $1
       property: function
       area: "special functions"
       notation: "mi ϕ"
@@ -11215,7 +11215,7 @@ concepts:
     
     - concept: wright-omega-function
       arity: 1
-      en: wright-omega-function of $1
+      en: wright omega function of $1
       property: function
       area: "special functions"
       notation: "mi ω"
@@ -11250,7 +11250,7 @@ concepts:
     
     - concept: yang-mill-functional
       arity: 1
-      en: yang-mill-functional of $1
+      en: yang mill functional of $1
       property: function
       area: "gauge theory"
       notation: "mi ℒ"
@@ -11261,7 +11261,7 @@ concepts:
     
     - concept: z-matrix
       arity: 0
-      en: z-matrix
+      en: z matrix
       property: symbol
       area: "linear algebra"
       notation: "mi Z"
@@ -11270,7 +11270,7 @@ concepts:
     
     - concept: z-matrix-molecule
       arity: 1
-      en: z-matrix-molecule of $1
+      en: z matrix molecule of $1
       property: mtable
       area: "chemistry"
       notation: "mtable"
@@ -11279,7 +11279,7 @@ concepts:
     
     - concept: z-transform
       arity: 1
-      en: z-transform of $1
+      en: z transform of $1
       property: function
       area: "combinatorics"
       notation: "mi Z"
@@ -11291,7 +11291,7 @@ concepts:
     
     - concept: zernike-polynomial
       arity: 1
-      en: zernike-polynomial of $1
+      en: zernike polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
       notation: "msubsup Z"
@@ -11302,7 +11302,7 @@ concepts:
     
     - concept: zero-ideal
       arity: 0
-      en: zero-ideal
+      en: zero ideal
       property: symbol
       area: "ring theory"
       notation: "mrow {0}"
@@ -11312,7 +11312,7 @@ concepts:
     
     - concept: zero-matrix
       arity: 1
-      en: zero-matrix of $1
+      en: zero matrix of $1
       property: "indexed symbol"
       area: "linear algebra"
       notation: "msub mn 0 mrow m,n"
@@ -11321,7 +11321,7 @@ concepts:
     
     - concept: zero-morphism
       arity: 1
-      en: zero-morphism of $1
+      en: zero morphism of $1
       property: "indexed symbol"
       area: "category theory"
       notation: "msub mn 0 mrow X,Y"
@@ -11331,7 +11331,7 @@ concepts:
     
     - concept: zero-object
       arity: 0
-      en: zero-object
+      en: zero object
       property: symbol
       area: "algebra"
       notation: "mrow {0}"
@@ -11341,7 +11341,7 @@ concepts:
     
     - concept: zero-ring
       arity: 0
-      en: zero-ring
+      en: zero ring
       property: symbol
       area: "ring theory"
       notation: "mrow {0}<br/>mn 0"
@@ -11351,7 +11351,7 @@ concepts:
     
     - concept: zero-vector
       arity: 0
-      en: zero-vector
+      en: zero vector
       property: constant
       area: "linear algebra"
       notation: "mn 0"
@@ -11360,7 +11360,7 @@ concepts:
     
     - concept: zeta-function
       arity: 1
-      en: zeta-function of $1
+      en: zeta function of $1
       property: function
       area: "number theory"
       notation: "mi ζ"
@@ -11372,7 +11372,7 @@ concepts:
     
     - concept: zig-zag-product
       arity: 2
-      en: $1 zig-zag-product $2
+      en: $1 zig zag product $2
       property: infix
       area: "graph theory"
       notation: "mo ∘"
