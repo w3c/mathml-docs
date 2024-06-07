@@ -91,7 +91,6 @@ Additional contributions are welcome:
 <th style="width:auto">Comments</th>
 <th>Subject</th>
 <th>Sources</th>
-<th>Alias</th>
 </tr>
 </thead>
 <tbody>
@@ -120,7 +119,12 @@ Additional contributions are welcome:
 {%- if forloop.first-%}<td style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}</td>{%- endif -%}
+{% endfor %}
+{%- if c.alias -%}
+{%- if c.comment -%}<br>{%- endif -%}
+Aliases: {{c.alias}}
+{%-endif -%}
+</td>{%- endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">
 {%- if c.urls -%}
@@ -147,7 +151,6 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>{%-endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.alias}}</td>{%-endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
@@ -171,7 +174,12 @@ arXiv
 <td style="width:auto">{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}</td>
+{% endfor %}
+{%- if c.alias -%}
+{%- if c.comment -%}<br>{%- endif -%}
+Aliases: {{c.alias}}
+{%-endif -%}
+</td>
 <td>{{c.area}}</td>
 <td>
 {%- if c.urls -%}
