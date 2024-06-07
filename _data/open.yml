@@ -310,7 +310,7 @@ concepts:
       en: Free product with amalgamation of $1 and $3 with respect to $2
       property: indexed infix
       area: "group theory"
-      comment: "<math><mi>A</mi><msub><mo>*</mo><mi>C</mi></msub><mi>B</mi></math>"
+      comment: "<math><mi>A</mi><msub><mo>⁎</mo><mi>C</mi></msub><mi>B</mi></math>"
       urls: 
        - "https://math.stackexchange.com/questions/828828/amalgamated-product"
        - "https://en.wikipedia.org/wiki/Free_product"
