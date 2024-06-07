@@ -206,7 +206,6 @@ arXiv
 {% endfor %}
 {%-endif -%}
 </td>
-<td>{{c.alias}}</td>
 </tr>
 {%- endif -%}
 {%- endfor -%}
