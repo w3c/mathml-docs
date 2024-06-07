@@ -3837,7 +3837,7 @@ concepts:
       en: $1 th forward difference of $3 over $2
       property: operator
       area: "numerical analysis"
-      comment: "<math><msubsup><mi>&Delta;</mi><mi>x</mi><mi>n</mi></msubsup><mrow>mi<>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+      comment: "<math><msubsup><mi>&Delta;</mi><mi>x</mi><mi>n</mi></msubsup><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ForwardDifference.html)"
        - "https://dlmf.nist.gov/18.1#EGx1"
