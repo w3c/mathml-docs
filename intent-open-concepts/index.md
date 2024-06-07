@@ -1,7 +1,6 @@
 ---
 title: Open Concept List
 ---
-
 <style>
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
@@ -9,6 +8,8 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table {font-size:75%}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+a.link {font-weight:500}
+a.self {color: black; font-weight:500}
 </style>
 
 <style id="langcss">
@@ -17,7 +18,6 @@ span.cb {margin-right: 2em; white-space:nowrap}
 {%- endfor -%}
  {display:none}
 </style>
-
 
 # Open Concept List
  
@@ -79,17 +79,16 @@ Additional contributions are welcome:
 
 ### {{section.title}}
 
-<table>
+<table style="width:100%">
 <thead>
 <tr class="row0">
 <th>Concept</th>
 <th>Arity</th>
 <th>Property</th>
-<th>Condition</th>
 {%- for language in site.data.languages -%}
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
-<th>Comments</th>
+<th style="width:auto">Comments</th>
 <th>Subject</th>
 <th>Sources</th>
 <th>Alias</th>
@@ -101,13 +100,13 @@ Additional contributions are welcome:
 {%- if c.conditions %}
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
-<td>{{cond.condition}}</td>
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
-{%- if cond[language.language-code] -%}
+[{{cond.condition}}]:
+{% if cond[language.language-code] -%}
 {%- for l in cond[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
@@ -118,7 +117,7 @@ Additional contributions are welcome:
 {% endif %}
 </td>
 {%- endfor -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
+{%- if forloop.first-%}<td style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
@@ -153,10 +152,9 @@ arXiv
 {%- endfor -%}
 {%- else -%}
 <tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}">
-<td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
+<td><a class="self" href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
-<td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
-<td>{{c.condition}}</td>
+<td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 {%- if c[language.language-code] -%}
@@ -170,7 +168,7 @@ arXiv
 {% endif %}
 </td>
 {%- endfor -%}
-<td>{%- for com in c.comment -%}
+<td style="width:auto">{%- for com in c.comment -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>
