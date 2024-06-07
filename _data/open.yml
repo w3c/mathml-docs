@@ -374,7 +374,7 @@ concepts:
     
     - concept: anharmonic-ratio
       arity: 4
-      en: anharmonic-ratio
+      en: "anharmonic-ratio of $1 , $2 , $3 , $4"
       property: fenced
       area: "geometry"
       notation: "mrow ($1 , $2 ; $3 , $4"
@@ -1775,7 +1775,7 @@ concepts:
     
     - concept: configuration
       arity: 4
-      en: configuration
+      en: "configuration $1 sub $2, $3 sub $4"
       property: mixfix
       area: "geometry"
       notation: "(msub $1 $2 msub $3 $4"
@@ -2098,7 +2098,7 @@ concepts:
     
     - concept: cross-ratio
       arity: 4
-      en: cross-ratio
+      en: "cross-ratio of $1, $2, $3, $4"
       property: fenced
       area: "geometry"
       notation: "mrow ( $1, $2 ; $3, $4"
@@ -5871,7 +5871,7 @@ concepts:
     
     - concept: lagrange-bracket
       arity: 4
-      en: lagrange-bracket
+      en: "lagrange bracket of $1, $2, canonical coordinates $3, $4"
       property: indexed fenced
       area: "classical mechanics"
       notation: "msub<br/>mrow [ $1, $2] /mrow<br/>mrow $3, $4 /mrow"
@@ -7529,8 +7529,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/List_of_partition_topics"
     
     - concept: partition-frequency-representation
-      arity: 4
-      en: partition-frequency-representation
+      arity: "*"
+      en: "partition $1 sup $2, $2 sup $3, ..."
       property: mixfix
       area: "number theory"
       notation: "mrow ( msup $1 $2 /msup msup $3 $4 /msup ..."
@@ -9328,7 +9328,7 @@ concepts:
     
     - concept: square
       arity: 4
-      en: square
+      en: "square $1 $2 $3 $4"
       property: prefix
       area: "geometry"
       notation: "mrow ◻ $1 $2 $3 $4y"
