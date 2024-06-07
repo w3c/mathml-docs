@@ -1473,7 +1473,7 @@ concepts:
     
     - concept: closed-ball
       arity: 2
-      en: closed ball
+      en: closed ball $1 $2
       property: mixfix
       area: "topology"
       notation: "mrow msub B $1 /msub [ $2 ]"
@@ -1593,7 +1593,7 @@ concepts:
     
     - concept: comma-category
       arity: 2
-      en: comma category
+      en: comma category $1 $2
       property: mixfix
       area: "category theory"
       notation: "mrow ( $1 ↓ $2"
@@ -1765,7 +1765,7 @@ concepts:
     
     - concept: conditional-expectation
       arity: 2
-      en: conditional expectation
+      en: conditional expectation $1 $2
       property: mixfix
       area: "probability theory"
       notation: "mrow E ( $1 | $2 )"
@@ -1775,7 +1775,7 @@ concepts:
     
     - concept: conditional-probability
       arity: 2
-      en: conditional probability
+      en: conditional probability $1 $2
       property: mixfix
       area: "probability theory"
       notation: "mrow P ( $1 | $2 )"
@@ -1804,7 +1804,7 @@ concepts:
     
     - concept: contrast-function
       arity: 2
-      en: contrast function
+      en: contrast function $1 $2
       property: mixfix
       area: "statistics"
       notation: "D ( $1 | $2)"
@@ -3623,7 +3623,7 @@ concepts:
     
     - concept: falling-factorial
       arity: 2
-      en: falling factorial
+      en: falling factorial $1 $2
       property: mixfix
       area: "combinatorics"
       notation: "msup $1 mover $2 ¯<br/>msup $1 munder $2 ¯<br/>msub mrow ( $1 ) /mrow $2"
@@ -3992,7 +3992,7 @@ concepts:
     
     - concept: free-algebra
       arity: 2
-      en: free algebra
+      en: free algebra $1 $2
       property: mixfix
       area: "ring theory"
       notation: "mrow $1⟨$2⟩"
@@ -4003,7 +4003,7 @@ concepts:
     
     - concept: free-module
       arity: 2
-      en: free module
+      en: free module $1 $2
       property: mixfix<br/>msup
       area: "module theory"
       notation: "mrow $1 { $2 }<br/>msup $1 ($2"
@@ -4434,7 +4434,7 @@ concepts:
     
     - concept: germ
       arity: 2
-      en: germ
+      en: germ of $1 at $2
       property: mixfix
       area: "topology"
       notation: "mrow [ # 1 ] _ $2"
@@ -4561,7 +4561,7 @@ concepts:
     
     - concept: group-algebra
       arity: 2
-      en: group algebra
+      en: group algebra $1 $2
       property: mixfix
       area: "ring theory"
       notation: "mrow $1[$2]<br/>mrow $1$2"
@@ -4583,7 +4583,7 @@ concepts:
     
     - concept: group-ring
       arity: 2
-      en: group ring
+      en: group ring $1 $2
       property: mixfix<br/>infix
       area: "ring theory"
       notation: "mrow $1 [ $2 ]<br/>mrow $1 $2"
@@ -5195,7 +5195,7 @@ concepts:
     
     - concept: image
       arity: 2
-      en: image
+      en: image $1 $2
       property: mixfix
       area: "set theory"
       notation: "$1 [ $2 ]<br/>msub $1 *<br/>msup $1 →<br/>$1 '' $2"
@@ -5459,7 +5459,7 @@ concepts:
     
     - concept: instantaneous-activity
       arity: 2
-      en: instantaneous activity
+      en: instantaneous activity $1 $2
       property: mixfix
       area: "chemistry"
       notation: "msub mrow { $1 } /mrow $2"
@@ -5509,7 +5509,7 @@ concepts:
     
     - concept: inverse-image
       arity: 2
-      en: inverse image
+      en: inverse image $1 $2
       property: mixfix
       area: "set theory"
       notation: "mrow msup $1 -1 /msup [ $2 ]"
@@ -5534,7 +5534,7 @@ concepts:
     
     - concept: inverse-moment-of-function
       arity: 2
-      en: inverse moment of function
+      en: inverse moment of function $1 $2
       property: "<br/>msub<br/>mixfix"
       area: "mathematics"
       notation: "msub μ mrow - $1 /mrow<br/>mrow E [ msup $1 mrow - $2 /mrow ]"
@@ -5657,7 +5657,7 @@ concepts:
     - concept: jacobi-symbol
       arity: 2
       en: jacobi symbol
-      property: mixfix
+      property: mixfix$1 $2
       area: "number theory"
       notation: "mrow ( $1 | $2"
       urls: 
@@ -6503,7 +6503,7 @@ concepts:
     
     - concept: localization
       arity: 2
-      en: localization
+      en: localization $1 $2
       property: mixfix
       area: "module theory"
       notation: "msup $1 -1 /msup $2"
@@ -6527,7 +6527,7 @@ concepts:
     
     - concept: logarithmic-moment-of-function
       arity: 2
-      en: logarithmic moment of function
+      en: logarithmic moment of function $1 $2
       property: "<br/><br/>mixfix"
       area: "mathematics"
       notation: "E [ msup ln $1 /msup ( $2 ) ]"
@@ -7118,7 +7118,7 @@ concepts:
     
     - concept: moment-of-function
       arity: 2
-      en: moment of function
+      en: moment of function $1 $2
       property: "<br/>msub<br/>mixfix"
       area: "mathematics"
       notation: "msub μ $1<br/>mrow E [ msup $1 $2 ]"
@@ -7573,7 +7573,7 @@ concepts:
     
     - concept: open-ball
       arity: 2
-      en: open ball
+      en: open ball $1 $2
       property: mixfix
       area: "topology"
       notation: "mrow msub B $1 /msub ( $2"
@@ -8031,7 +8031,7 @@ concepts:
     
     - concept: plethysm
       arity: 2
-      en: plethysm
+      en: plethysm $1 $2
       property: mixfix
       area: "algebra"
       notation: "mrow { $1 } ⊗ { $2 }"
@@ -8121,7 +8121,7 @@ concepts:
     
     - concept: polynomial-ring
       arity: 2
-      en: polynomial ring
+      en: polynomial ring $1 $2
       property: mixfix
       area: "ring theory"
       notation: "mrow $1 [ $2 ]"
@@ -8386,7 +8386,7 @@ concepts:
     
     - concept: pseudovector
       arity: 2
-      en: pseudovector
+      en: pseudovector $1 $2
       property: mixfix
       area: "vector calculus"
       notation: "mrow (det $1) ($1 $2"
@@ -8800,7 +8800,7 @@ concepts:
     
     - concept: restricted-quantifier
       arity: 2
-      en: restricted quantifier
+      en: restricted quantifier $1 $2
       property: mixfix
       area: "formal logic"
       notation: "msub mrow ( Ǝ $1 ) /mrow $2<br/>msub mrow ( ∀ $1 ) /mrow $2"
@@ -9004,7 +9004,7 @@ concepts:
     
     - concept: ring-of-formal-power-series
       arity: 2
-      en: ring of formal power series
+      en: ring of formal power series $1 $2
       property: mixfix
       area: "ring theory"
       notation: "mrow $1 [[ $2 ]]"
@@ -9013,7 +9013,7 @@ concepts:
     
     - concept: rising-factorial
       arity: 2
-      en: rising factorial
+      en: rising factorial $1 $2
       property: mixfix
       area: "combinatorics"
       notation: "msup $1 mover $2 ¯<br/>msup $1 mrow ( $2 ) /mrow"
@@ -9199,7 +9199,7 @@ concepts:
     
     - concept: schwarzian-derivative
       arity: 2
-      en: schwarzian derivative
+      en: schwarzian derivative $1 $2
       property: fenced<br/>mixfix
       area: "complex analysis"
       notation: "mrow { $1, $2 }<br/>mrow ( S $1 ) ($2"
@@ -9311,7 +9311,7 @@ concepts:
     
     - concept: short-exact-sequence
       arity: 3
-      en: short exact sequence
+      en: short exact sequence $1 $2 $3
       property: mixfix
       area: "group theory"
       notation: "mrow 0 →$1 → $2 → $3 → 0"
@@ -10019,7 +10019,7 @@ concepts:
     
     - concept: surjection
       arity: 3
-      en: surjection
+      en: surjection  $1 $2 $3
       property: mixfix<br/>infix
       area: "set theory"
       notation: "mrow $1 : $2 ↠ $3<br/>msup mo ≤ mo * /msup"
