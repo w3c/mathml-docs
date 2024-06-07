@@ -122,7 +122,7 @@ Additional contributions are welcome:
 {% endfor %}
 {%- if c.alias -%}
 {%- if c.comment -%}<br>{%- endif -%}
-Aliases: {{c.alias}}
+Aliases: {% for al in c.alias -%}{{al}} {%- endfor -%}
 {%-endif -%}
 </td>{%- endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
@@ -177,7 +177,7 @@ arXiv
 {% endfor %}
 {%- if c.alias -%}
 {%- if c.comment -%}<br>{%- endif -%}
-Aliases: {{c.alias}}
+Aliases: {% for al in c.alias -%}{{al}} {%- endfor -%}
 {%-endif -%}
 </td>
 <td>{{c.area}}</td>

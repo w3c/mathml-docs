@@ -74,7 +74,10 @@ concepts:
       notation: "mo -"
       urls: 
        - "https://en.wikipedia.org/wiki/Additive_inverse"
-      alias: "opposite, sign-change, negation"
+      alias:
+       - opposite
+       - sign-change
+       - negation
     
     - concept: adiabatic-invariant-first
       arity: 0
@@ -131,7 +134,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Adjoint_representation"
        - "https://ncatlab.org/nlab/show/adjoint+action"
        - "https://www.encyclopediaofmath.org/index.php/Adjoint_action"
-      alias: adjoint-endomorphism
+      alias:
+       - adjoint-endomorphism
     
     - concept: adjoint-representation
       arity: 1
@@ -282,7 +286,9 @@ concepts:
        - "https://en.wikipedia.org/wiki/%E2%88%A8"
        - "https://en.wikipedia.org/wiki/Logical_disjunction"
        - "https://www.encyclopediaofmath.org/index.php/Alternation"
-      alias: "disjunction, or"
+      alias:
+       - disjunction
+       - or
     
     - concept: alternative-denial
       arity: 2
@@ -293,7 +299,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/AlternativeDenial.html"
        - "https://en.wikipedia.org/wiki/Sheffer_stroke"
-      alias: "sheffer-stroke, nand"
+      alias:
+       - sheffer-stroke
+       - nand
     
     - concept: amalgam
       arity: 1
@@ -315,7 +323,9 @@ concepts:
        - "https://math.stackexchange.com/questions/828828/amalgamated-product"
        - "https://en.wikipedia.org/wiki/Free_product"
        - "http//home.iiserb.ac.in/~kashyap/Group/thesis_abhay.pdf"
-      alias: "amalgamated-free-product<br/>free-product-with-amalgamation"
+      alias:
+       - amalgamated-free-product
+       - free-product-with-amalgamation
     
     - concept: analytic-manifold
       arity: 0
@@ -414,7 +424,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Antimatter"
        - "https://en.wikipedia.org/wiki/Antiparticle"
-      alias: antimatter
+      alias:
+       - antimatter
     
     - concept: apartness-relation
       arity: 2
@@ -449,7 +460,9 @@ concepts:
        - "https://en.wikipedia.org/wiki/Minute_of_arc"
        - "https://en.wikipedia.org/wiki/Arcsecond"
        - "https://en.wikipedia.org/wiki/Second_(angle)"
-      alias: "minute-arc, minute-of-arc"
+      alias:
+       - minute-arc
+       - minute-of-arc
     
     - concept: arcsecond
       arity: 1
@@ -745,7 +758,8 @@ concepts:
        - "https://dlmf.nist.gov/5.12"
        - "https://dlmf.nist.gov/5.12#E1"
        - "https://ncatlab.org/nlab/show/beta+function"
-      alias: euler-integral-of-the-first-kind
+      alias:
+       - euler-integral-of-the-first-kind
     
     - concept: betti-number
       arity: 1
@@ -768,7 +782,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Biconditional.html"
        - "https://ncatlab.org/nlab/show/biconditional"
-      alias: "iff, if-and-only-if"
+      alias:
+       - iff
+       - if-and-only-if
     
     - concept: big-O
       arity: 1
@@ -820,7 +836,8 @@ concepts:
        - "https://dlmf.nist.gov/1.2#E1"
        - "https://dlmf.nist.gov/26.3#SS1.p1"
        - "https://www.encyclopediaofmath.org/index.php/Binomial_coefficients"
-      alias: combination
+      alias:
+       - combination
     
     - concept: binomial-distribution
       arity: 1
@@ -904,7 +921,9 @@ concepts:
       urls: 
        - "https://ncatlab.org/nlab/show/bottom"
        - "https://en.wikipedia.org/wiki/Bottom_type"
-      alias: "empty-type, bottom"
+      alias:
+       - empty-type
+       - bottom
     
     - concept: bottom-element
       arity: 0
@@ -914,7 +933,9 @@ concepts:
       notation: "mi ⊥"
       urls: 
        - "https://en.wikipedia.org/wiki/Greatest_element_and_least_element"
-      alias: "bottom, least-element"
+      alias:
+       - bottom
+       - least-element
     
     - concept: boundary
       arity: 1
@@ -927,7 +948,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Boundary_(topology)"
        - "https://ncatlab.org/nlab/show/boundary"
        - "https://www.encyclopediaofmath.org/index.php/Boundary"
-      alias: frontier
+      alias:
+       - frontier
     
     - concept: bounded-variation
       arity: 1
@@ -947,7 +969,8 @@ concepts:
       notation: "mo ☐"
       urls: 
        - "https://en.wikipedia.org/wiki/Cartesian_product_of_graphs"
-      alias: cartesian-product
+      alias:
+       - cartesian-product
     
     - concept: brauer-group
       arity: 1
@@ -1028,7 +1051,8 @@ concepts:
        - "https://mathworld.wolfram.com/Cardinality.html"
        - "https://en.wikipedia.org/wiki/Cardinality"
        - "https://www.encyclopediaofmath.org/index.php/Cardinality"
-      alias: size
+      alias:
+       - size
     
     - concept: carmichael-function
       arity: 1
@@ -1175,7 +1199,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Center_(group_theory)"
        - "https://en.wikipedia.org/wiki/Center_(algebra)"
        - "https://ncatlab.org/nlab/show/center"
-      alias: centre
+      alias:
+       - centre
     
     - concept: centralizer
       arity: 1
@@ -1248,7 +1273,8 @@ concepts:
        - "https://ncatlab.org/nlab/show/characteristic+function"
        - "https://www.encyclopediaofmath.org/index.php/Characteristic_function"
        - "https://en.wikipedia.org/wiki/Expected_value#Interchanging_limits_and_expectation"
-      alias: indicator-function
+      alias:
+       - indicator-function
     
     - concept: characteristic-subgroup
       arity: 2
@@ -1282,7 +1308,8 @@ concepts:
        - "https://mathworld.wolfram.com/ChebyshevPolynomialoftheFirstKind.html"
        - "https://en.wikipedia.org/wiki/Chebyshev_polynomials"
        - "https://dlmf.nist.gov/18.3#T1.t1.r8"
-      alias: first-chebyshev-function
+      alias:
+       - first-chebyshev-function
     
     - concept: chebyshev-polynomial-of-second-kind
       arity: 1
@@ -1294,7 +1321,8 @@ concepts:
        - "https://mathworld.wolfram.com/ChebyshevPolynomialoftheSecondKind.html"
        - "https://en.wikipedia.org/wiki/Chebyshev_polynomials"
        - "https://dlmf.nist.gov/18.3#T1.t1.r11"
-      alias: second-chebyshev-function
+      alias:
+       - second-chebyshev-function
     
     - concept: cheeger-constant
       arity: 1
@@ -1313,7 +1341,9 @@ concepts:
       notation: "mi h"
       urls: 
        - "https://en.wikipedia.org/wiki/Cheeger_constant_(graph_theory)"
-      alias: "cheeger-constant, isoperimetric-number"
+      alias:
+       - cheeger-constant
+       - isoperimetric-number
     
     - concept: chemical-equilibrium
       arity: 2
@@ -1323,7 +1353,8 @@ concepts:
       notation: "mo ⇌"
       urls: 
        - "https://en.wikipedia.org/wiki/Chemical_equilibrium"
-      alias: equilibrium
+      alias:
+       - equilibrium
     
     - concept: chi-squared-distribution
       arity: 0
@@ -1449,7 +1480,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/OpenBall.html"
        - "https://en.wikipedia.org/wiki/Ball_(mathematics)"
-      alias: closed-metric-ball
+      alias:
+       - closed-metric-ball
     
     - concept: closed-interval
       arity: 2
@@ -1514,7 +1546,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/CofiniteFilter.html"
        - "https://en.wikipedia.org/wiki/Fr%C3%A9chet_filter"
-      alias: frechet-filter
+      alias:
+       - frechet-filter
     
     - concept: coherence
       arity: 1
@@ -1591,7 +1624,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Derived_series"
        - "https://ncatlab.org/nlab/show/commutator+subgroup"
        - "https://www.encyclopediaofmath.org/index.php/Commutator_subgroup"
-      alias: derived-subgroup
+      alias:
+       - derived-subgroup
     
     - concept: companion-lehmer-number
       arity: 1
@@ -1612,7 +1646,8 @@ concepts:
       notation: "munderover = > <"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
-      alias: comparable
+      alias:
+       - comparable
     
     - concept: complement-of-interval
       arity: 2
@@ -1642,7 +1677,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/CompleteGraph.html"
        - "https://en.wikipedia.org/wiki/Complete_graph"
-      alias: "Also complete bipartite graph: K_{n,m}"
+      alias:
+       - Also complete bipartite graph: K_{n
+       - m}
     
     - concept: complex-conjugate
       arity: 1
@@ -1678,7 +1715,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Complexification"
        - "https://ncatlab.org/nlab/show/complexification"
        - "https://www.encyclopediaofmath.org/index.php/Complexification_of_a_vector_space"
-      alias: complexification-of-vector-space
+      alias:
+       - complexification-of-vector-space
     
     - concept: composition
       arity: 2
@@ -1690,7 +1728,8 @@ concepts:
        - "https://mathworld.wolfram.com/Composition.html"
        - "https://ncatlab.org/nlab/show/composition"
        - "https://www.encyclopediaofmath.org/index.php/Composition"
-      alias: compose
+      alias:
+       - compose
     
     
     
@@ -1771,7 +1810,8 @@ concepts:
       notation: "D ( $1 | $2)"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(statistics)"
-      alias: divergence
+      alias:
+       - divergence
     
     - concept: configuration
       arity: 4
@@ -1798,7 +1838,10 @@ concepts:
        - "https://en.wikipedia.org/wiki/Congruence_(geometry)"
        - "https://ncatlab.org/nlab/show/congruence"
        - "https://www.encyclopediaofmath.org/index.php/Congruence"
-      alias: "congruence,<br/>congruent"
+      alias:
+       - congruence
+       - 
+       - congruent
     
     - concept: conjugacy-class
       arity: 1
@@ -1863,7 +1906,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Encompassment_ordering"
        - "https://en.wikipedia.org/wiki/Subset"
        - "https://en.wikipedia.org/wiki/%E2%8A%83"
-      alias: encompassment
+      alias:
+       - encompassment
     
     - concept: contingency-table
       arity: 1
@@ -1874,7 +1918,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/ContingencyTable.html"
        - "https://en.wikipedia.org/wiki/Contingency_table"
-      alias: two-way-frequency-table
+      alias:
+       - two-way-frequency-table
     
     - concept: continued-fraction
       arity: 1
@@ -1888,7 +1933,10 @@ concepts:
        - "https://dlmf.nist.gov/1.12#i"
        - "https://ncatlab.org/nlab/show/continued+fraction"
        - "https://www.encyclopediaofmath.org/index.php/Continued_fraction"
-      alias: "anthyphairetic-ratio,<br/>chain-fraction"
+      alias:
+       - anthyphairetic-ratio
+       - 
+       - chain-fraction
     
     - concept: continuum
       arity: 0
@@ -1924,7 +1972,8 @@ concepts:
       notation: "mo ↓"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
-      alias: convergence
+      alias:
+       - convergence
     
     - concept: converse
       arity: 1
@@ -1934,7 +1983,8 @@ concepts:
       notation: "msup $1 ˘"
       urls: 
        - "https://en.wikipedia.org/wiki/Relation_algebra"
-      alias: reciprocal
+      alias:
+       - reciprocal
     
     - concept: converse-graph
       arity: 1
@@ -1944,7 +1994,9 @@ concepts:
       notation: "msup $1 '<br/>msup $1 T<br/>msup $1 R"
       urls: 
        - "https://en.wikipedia.org/wiki/Transpose_graph"
-      alias: "transpose-graph, reverse-graph"
+      alias:
+       - transpose-graph
+       - reverse-graph
     
     - concept: convolution
       arity: 2
@@ -1957,7 +2009,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/List_of_convolutions_of_probability_distributions"
        - "https://en.wikipedia.org/wiki/Convolution_(computer_science)"
        - "https://en.wikipedia.org/wiki/Convolution"
-      alias: convolve
+      alias:
+       - convolve
     
     - concept: conway-group
       arity: 0
@@ -1981,7 +2034,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Coprime.html"
        - "https://en.wikipedia.org/wiki/Coprime_integers"
-      alias: "relatively-prime, mutually-prime"
+      alias:
+       - relatively-prime
+       - mutually-prime
     
     - concept: coproduct
       arity: 1
@@ -2036,7 +2091,9 @@ concepts:
       notation: "mi g"
       urls: 
        - "https://en.wikipedia.org/wiki/Coupling_constant"
-      alias: "gauge-coupling-parameter, coupling"
+      alias:
+       - gauge-coupling-parameter
+       - coupling
     
     - concept: covariance
       arity: 1
@@ -2071,7 +2128,8 @@ concepts:
       notation: "msub mrow [ $1, $2 ] /mrow $3"
       urls: 
        - "https://en.wikipedia.org/wiki/Quadratic_variation"
-      alias: cross-variance
+      alias:
+       - cross-variance
     
     - concept: covering-relation
       arity: 2
@@ -2094,7 +2152,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Cross_product"
        - "https://ncatlab.org/nlab/show/cross+product"
        - "https://www.encyclopediaofmath.org/index.php/Cross_product"
-      alias: vector-product
+      alias:
+       - vector-product
     
     - concept: cross-ratio
       arity: 4
@@ -2105,7 +2164,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Cross-Ratio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
-      alias: double-ratio
+      alias:
+       - double-ratio
     
     - concept: crossing-number
       arity: 1
@@ -2150,7 +2210,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/CumulativeDistributionFunction.html"
        - "https://en.wikipedia.org/wiki/Cumulative_distribution_function"
-      alias: "cdf, distribution-function"
+      alias:
+       - cdf
+       - distribution-function
     
     - concept: cup-product
       arity: 2
@@ -2250,7 +2312,10 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/D%27Alembert_operator"
        - "https://www.encyclopediaofmath.org/index.php/D'Alembert_operator"
-      alias: "dalembertian, wave-operator, box-operator"
+      alias:
+       - dalembertian
+       - wave-operator
+       - box-operator
     
     - concept: davenport-constant
       arity: 1
@@ -2274,7 +2339,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Dawson_function"
        - "https://dlmf.nist.gov/7.2#ii"
        - "https://dlmf.nist.gov/7.2#E5"
-      alias: dawson-integral
+      alias:
+       - dawson-integral
     
     - concept: decrease
       arity: 1
@@ -2333,7 +2399,9 @@ concepts:
       urls: 
        - "https://math.stackexchange.com/questions/522864/what-is-the-symbol-triangleq"
        - "https://drive.google.com/file/d/1z_dcQ6lsOA_0CsH55fwcg4hQF_w22olM/view"
-      alias: "defined-to-be-equal-to<br/>equal-to-by-definition"
+      alias:
+       - defined-to-be-equal-to
+       - equal-to-by-definition
     
     - concept: degree
       arity: 1
@@ -2356,7 +2424,9 @@ concepts:
       notation: "mi deg"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
-      alias: "valency, degree"
+      alias:
+       - valency
+       - degree
     
     - concept: degree-of-freedom
       arity: 0
@@ -2376,7 +2446,8 @@ concepts:
       notation: "mi deg"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping"
-      alias: degree
+      alias:
+       - degree
     
     - concept: degree-of-polynomial
       arity: 1
@@ -2386,7 +2457,8 @@ concepts:
       notation: "mi deg"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_of_a_polynomial"
-      alias: degree
+      alias:
+       - degree
     
     - concept: dependence-relation
       arity: 2
@@ -2473,7 +2545,8 @@ concepts:
        - "https://mathworld.wolfram.com/DickmanFunction.html"
        - "https://en.wikipedia.org/wiki/Dickman_function"
        - "https://www.encyclopediaofmath.org/index.php/Dickman_function"
-      alias: dickman-de-bruijn-function
+      alias:
+       - dickman-de-bruijn-function
     
     - concept: different-ideal
       arity: 1
@@ -2483,7 +2556,8 @@ concepts:
       notation: "msub δ $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Different_ideal"
-      alias: different
+      alias:
+       - different
     
     - concept: differential-entropy
       arity: 1
@@ -2495,7 +2569,8 @@ concepts:
        - "https://mathworld.wolfram.com/DifferentialEntropy.html"
        - "https://en.wikipedia.org/wiki/Differential_entropy"
        - "https://www.encyclopediaofmath.org/index.php/Differential_entropy"
-      alias: continuous-entropy
+      alias:
+       - continuous-entropy
     
     - concept: differential-operator
       arity: 1
@@ -2508,7 +2583,10 @@ concepts:
        - "https://en.wikipedia.org/wiki/Differential_operator"
        - "https://ncatlab.org/nlab/show/differential+operator"
        - "https://www.encyclopediaofmath.org/index.php/Differential_operator"
-      alias: "newton-leibniz-operator, differential, diff"
+      alias:
+       - newton-leibniz-operator
+       - differential
+       - diff
     
     - concept: digamma-function
       arity: 0
@@ -2551,7 +2629,8 @@ concepts:
        - "https://dlmf.nist.gov/25.12#E1"
        - "https://ncatlab.org/nlab/show/dilogarithm"
        - "https://ncatlab.org/nlab/show/dilogarithm"
-      alias: spence-function
+      alias:
+       - spence-function
     
     - concept: dimension
       arity: 1
@@ -2584,7 +2663,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/DiracDeltaFunction.html"
        - "https://en.wikipedia.org/wiki/Dirac_delta_function"
-      alias: delta-function
+      alias:
+       - delta-function
     
     - concept: dirac-matrix
       arity: 0
@@ -2596,7 +2676,8 @@ concepts:
        - "https://mathworld.wolfram.com/DiracMatrices.html"
        - "https://en.wikipedia.org/wiki/Gamma_matrices"
        - "https://www.encyclopediaofmath.org/index.php/Dirac_matrices"
-      alias: gamma-matrix
+      alias:
+       - gamma-matrix
     
     - concept: dirac-measure
       arity: 1
@@ -2733,7 +2814,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/DirichletL-Function.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_L-function"
-      alias: dirichlet-l-series
+      alias:
+       - dirichlet-l-series
     
     - concept: discrete-valuation
       arity: 1
@@ -2787,7 +2869,8 @@ concepts:
       notation: "mo ↑"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
-      alias: divergence
+      alias:
+       - divergence
     
     - concept: divergence
       arity: 1
@@ -2825,7 +2908,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Divisor"
        - "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C"
        - "https://youtu.be/a3wyG2mkmxc?t=32"
-      alias: divides
+      alias:
+       - divides
     
     
     - concept: divisor-function
@@ -2859,7 +2943,8 @@ concepts:
       notation: "mi 𝔻"
       urls: 
        - "https://en.wikipedia.org/wiki/Domain_of_discourse"
-      alias: universe-of-discourse
+      alias:
+       - universe-of-discourse
     
     - concept: domination-number
       arity: 1
@@ -2884,7 +2969,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/DotProduct.html"
        - "https://en.wikipedia.org/wiki/Dot_product"
-      alias: scalar-product
+      alias:
+       - scalar-product
     
     - concept: double-bond
       arity: 2
@@ -2914,7 +3000,8 @@ concepts:
        - "https://mathworld.wolfram.com/DoubleFactorial.html"
        - "https://en.wikipedia.org/wiki/Double_factorial"
        - "https://arxiv.org/pdf/0806.2334.pdf"
-      alias: semifactorial
+      alias:
+       - semifactorial
     
     - concept: double-mersenne-number
       arity: 0
@@ -2936,7 +3023,8 @@ concepts:
       notation: "mi 𝒵"
       urls: 
        - "https://en.wikipedia.org/wiki/Center_(category_theory)"
-      alias: center
+      alias:
+       - center
     
     - concept: dual-basis
       arity: 1
@@ -2949,7 +3037,9 @@ concepts:
        - "https://en.wikipedia.org/wiki/Dual_basis"
        - "https://ncatlab.org/nlab/show/dual+basis"
        - "https://www.encyclopediaofmath.org/index.php/Dual_basis"
-      alias: "dual-set<br/>reciprocal-basis"
+      alias:
+       - dual-set
+       - reciprocal-basis
     
     - concept: dual-bundle
       arity: 1
@@ -2961,7 +3051,8 @@ concepts:
        - "https://mathworld.wolfram.com/DualBundle.html"
        - "https://en.wikipedia.org/wiki/Dual_bundle"
        - "https://www.encyclopediaofmath.org/index.php/Dual_bundle"
-      alias: dual
+      alias:
+       - dual
     
     - concept: dual-space
       arity: 1
@@ -2973,7 +3064,8 @@ concepts:
        - "https://mathworld.wolfram.com/DualSpace.html"
        - "https://en.wikipedia.org/wiki/Dual_space"
        - "https://ncatlab.org/nlab/show/dual+space"
-      alias: dual
+      alias:
+       - dual
     
     - concept: duodecimal
       arity: 1
@@ -2984,7 +3076,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Duodecimal.html"
        - "https://en.wikipedia.org/wiki/Duodecimal#Base_notation"
-      alias: "base-twelve<br/>dozenal"
+      alias:
+       - base-twelve
+       - dozenal
     
     - concept: e-function
       arity: 1
@@ -3145,7 +3239,9 @@ concepts:
        - "https://mathworld.wolfram.com/Equalizer.html"
        - "https://en.wikipedia.org/wiki/Equaliser_(mathematics)"
        - "https://ncatlab.org/nlab/show/equalizer"
-      alias: "difference-kernel, equaliser"
+      alias:
+       - difference-kernel
+       - equaliser
     
     - concept: equivalence-class
       arity: 1
@@ -3171,7 +3267,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Equivalence_relation"
        - "https://ncatlab.org/nlab/show/equivalence+relation"
        - "https://www.encyclopediaofmath.org/index.php/Equivalence_relation"
-      alias: equivalence
+      alias:
+       - equivalence
     
     - concept: equivariant-cohomology
       arity: 2
@@ -3214,7 +3311,9 @@ concepts:
       notation: "msub ⊆ e<br/>mo ⊴<br/>mo ⊂"
       urls: 
        - "https://en.wikipedia.org/wiki/Essential_extension"
-      alias: "essential-submodule, large-submodule"
+      alias:
+       - essential-submodule
+       - large-submodule
     
     - concept: essential-infimum
       arity: 1
@@ -3246,7 +3345,9 @@ concepts:
       notation: "mi ℮"
       urls: 
        - "https://en.wikipedia.org/wiki/Estimation"
-      alias: "estimated-sign, e-mark"
+      alias:
+       - estimated-sign
+       - e-mark
     
     - concept: etale-cohomology
       arity: 1
@@ -3277,7 +3378,8 @@ concepts:
       notation: "mi d<br/>msub d $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Euclidean_distance"
-      alias: euclidean-metric
+      alias:
+       - euclidean-metric
     
     - concept: euclidean-plane
       arity: 0
@@ -3287,7 +3389,8 @@ concepts:
       notation: "msup ℝ 2"
       urls: 
        - "https://mathworld.wolfram.com/EuclideanPlane.html"
-      alias: euclidean-space
+      alias:
+       - euclidean-space
     
     - concept: euler-characteristic
       arity: 1
@@ -3324,7 +3427,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant"
        - "https://dlmf.nist.gov/5.2#E3"
        - "https://www.encyclopediaofmath.org/index.php/Euler_constant"
-      alias: euler-mascheroni-constant
+      alias:
+       - euler-mascheroni-constant
     
     - concept: euler-number
       arity: 0
@@ -3340,7 +3444,8 @@ concepts:
        - "https://dlmf.nist.gov/24.2#ii"
        - "https://ncatlab.org/nlab/show/Euler+number"
        - "https://www.encyclopediaofmath.org/index.php/Euler_numbers"
-      alias: napier-constant
+      alias:
+       - napier-constant
     
     - concept: euler-polynomial
       arity: 1
@@ -3363,7 +3468,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/EulerTotientFunction.html"
        - "https://en.wikipedia.org/wiki/Euler%27s_totient_function"
-      alias: totient-function
+      alias:
+       - totient-function
     
     - concept: euler-mascheroni-constant
       arity: 0
@@ -3398,7 +3504,9 @@ concepts:
        - "https://ncatlab.org/nlab/show/exclusive+disjunction"
        - "https://www.encyclopediaofmath.org/index.php/Exclusive_disjunction"
        - "https://en.wikipedia.org/wiki/Exclusive_or"
-      alias: "exclusive-disjunction, xor"
+      alias:
+       - exclusive-disjunction
+       - xor
     
     - concept: expectation-value
       arity: 1
@@ -3419,7 +3527,12 @@ concepts:
       notation: "mi E<br/>mi M<br/>msub μ $1<br/>"
       urls: 
        - "https://en.wikipedia.org/wiki/Expected_value#Notations"
-      alias: "mathematical-expectation, expectation, mean, average, first-moment"
+      alias:
+       - mathematical-expectation
+       - expectation
+       - mean
+       - average
+       - first-moment
     
     - concept: exponential-factorial
       arity: 1
@@ -3443,7 +3556,8 @@ concepts:
        - "https://dlmf.nist.gov/6.2#i"
        - "https://dlmf.nist.gov/6.2#E1"
        - "https://dlmf.nist.gov/6.2#SS1.p3"
-      alias: ei
+      alias:
+       - ei
     
     - concept: exterior
       arity: 1
@@ -3483,7 +3597,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/ExteriorProduct.html"
        - "https://www.encyclopediaofmath.org/index.php/Exterior_product"
-      alias: wedge-product
+      alias:
+       - wedge-product
     
     - concept: f-distribution
       arity: 1
@@ -3516,7 +3631,11 @@ concepts:
        - "https://en.wikipedia.org/wiki/Falling_and_rising_factorials"
        - "https://mathworld.wolfram.com/FallingFactorial.html"
        - "https://dlmf.nist.gov/26.1#P1.p1"
-      alias: "descending-factorial, falling-sequential-product, lower-factorial, pochhammer-symbol"
+      alias:
+       - descending-factorial
+       - falling-sequential-product
+       - lower-factorial
+       - pochhammer-symbol
     
     - concept: fatou-set
       arity: 1
@@ -3585,7 +3704,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_distribution"
        - "https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_distribution>s"
-      alias: f-d-distribution
+      alias:
+       - f-d-distribution
     
     - concept: feynman-slash
       arity: 1
@@ -3629,7 +3749,10 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Pullback_(category_theory)"
        - "https://www.encyclopediaofmath.org/index.php/Fibre_product"
-      alias: "pullback, fiber-product, cartesian-square"
+      alias:
+       - pullback
+       - fiber-product
+       - cartesian-square
     
     - concept: field-extension
       arity: 2
@@ -3671,7 +3794,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/FisherInformation.html"
        - "https://en.wikipedia.org/wiki/Fisher_information"
-      alias: information
+      alias:
+       - information
     
     - concept: flattening
       arity: 0
@@ -3682,7 +3806,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Flattening.html"
        - "https://en.wikipedia.org/wiki/Flattening"
-      alias: "ellipticity, oblateness"
+      alias:
+       - ellipticity
+       - oblateness
     
     - concept: floor
       arity: 1
@@ -3771,7 +3897,8 @@ concepts:
       notation: "mmultiscripts Ψ q none mprescripts p none"
       urls: 
        - "https://en.wikipedia.org/wiki/Fox%E2%80%93Wright_function"
-      alias: wright-function
+      alias:
+       - wright-function
     
     - concept: fractional-derivative
       arity: 1
@@ -3805,7 +3932,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Fractional_part"
        - "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions"
        - "https://en.wikipedia.org/wiki/Phase_(waves)"
-      alias: decimal-part
+      alias:
+       - decimal-part
     
     - concept: franel-number
       arity: 1
@@ -3847,7 +3975,9 @@ concepts:
       notation: "msub T 1"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions"
-      alias: "tikhonov-space, accessible-space"
+      alias:
+       - tikhonov-space
+       - accessible-space
     
     - concept: fredholm-determinant
       arity: 1
@@ -3929,7 +4059,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/FrobeniusNorm.html"
        - "https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm"
-      alias: "euclidean-norm, frobenius-matrix-norm"
+      alias:
+       - euclidean-norm
+       - frobenius-matrix-norm
     
     - concept: frolicher-nijenhuis-bracket
       arity: 2
@@ -3949,7 +4081,8 @@ concepts:
       notation: "mrow $1 ≡ $2 (mod $3"
       urls: 
        - "https://mathworld.wolfram.com/FunctionalCongruence.html"
-      alias: identical-congruence
+      alias:
+       - identical-congruence
     
     - concept: functor-category
       arity: 2
@@ -3979,7 +4112,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/G-Function.html"
        - "https://en.wikipedia.org/wiki/Meijer_G-function"
-      alias: meijer-g-function
+      alias:
+       - meijer-g-function
     
     - concept: gabor-transform
       arity: 1
@@ -4024,7 +4158,8 @@ concepts:
        - "https://mathworld.wolfram.com/GaloisField.html"
        - "https://en.wikipedia.org/wiki/Finite_field"
        - "https://www.encyclopediaofmath.org/index.php/Galois_field"
-      alias: finite-field
+      alias:
+       - finite-field
     
     - concept: galois-group
       arity: 1
@@ -4061,7 +4196,8 @@ concepts:
        - "https://dlmf.nist.gov/5#PT2"
        - "https://dlmf.nist.gov/5.2#E1"
        - "https://ncatlab.org/nlab/show/Gamma+function"
-      alias: euler-integral-of-the-second-kind
+      alias:
+       - euler-integral-of-the-second-kind
     
     - concept: gateaux-derivative
       arity: 3
@@ -4074,7 +4210,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/G%C3%A2teaux_derivative"
        - "https://www.encyclopediaofmath.org/index.php/Gateaux_derivative"
        - "https://www.encyclopediaofmath.org/index.php/GÃ¢teaux_derivative"
-      alias: gateaux-differential
+      alias:
+       - gateaux-differential
     
     - concept: gauss
       arity: 1
@@ -4093,7 +4230,10 @@ concepts:
       notation: "mi 𝒩"
       urls: 
        - "https://en.wikipedia.org/wiki/Normal_distribution"
-      alias: "normal-distribution, gauss-distribution, laplace-gauss-distribution"
+      alias:
+       - normal-distribution
+       - gauss-distribution
+       - laplace-gauss-distribution
     
     - concept: gaussian-curvature
       arity: 1
@@ -4211,7 +4351,9 @@ concepts:
        - "https://mathworld.wolfram.com/GeneralizedMean.html"
        - "https://en.wikipedia.org/wiki/Generalized_mean"
        - "https://en.wikipedia.org/wiki/Power_mean"
-      alias: "hoelder-mean, power-mean"
+      alias:
+       - hoelder-mean
+       - power-mean
     
     - concept: genocchi-number
       arity: 0
@@ -4247,7 +4389,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Diameter_(graph_theory)"
        - "https://en.wikipedia.org/wiki/Radius_(graph_theory)"
        - "https://www.encyclopediaofmath.org/index.php/Geodesic_distance"
-      alias: distance
+      alias:
+       - distance
     
     - concept: geometric-genus
       arity: 1
@@ -4310,7 +4453,8 @@ concepts:
        - "https://mathworld.wolfram.com/GlaisherConstant.html"
        - "https://en.wikipedia.org/wiki/Glaisher%E2%80%93Kinkelin_constant"
        - "https://dlmf.nist.gov/5.17#E6"
-      alias: glaisher-kinkelin-constant
+      alias:
+       - glaisher-kinkelin-constant
     
     - concept: global-dimension
       arity: 1
@@ -4320,7 +4464,9 @@ concepts:
       notation: "mi gl dim"
       urls: 
        - "https://en.wikipedia.org/wiki/Global_dimension"
-      alias: "global-homological-dimension, homological-dimension"
+      alias:
+       - global-homological-dimension
+       - homological-dimension
     
     - concept: golden-ratio
       arity: 0
@@ -4333,7 +4479,16 @@ concepts:
        - "https://en.wikipedia.org/wiki/Golden_ratio"
        - "https://en.wikipedia.org/wiki/List_of_works_designed_with_the_golden_ratio"
        - "https://www.encyclopediaofmath.org/index.php/Golden_ratio"
-      alias: "golden-number, golden-mean, golden-section, medial-section, divine-proportion, divine-section, golden-proportion, golden-cut,"
+      alias:
+       - golden-number
+       - golden-mean
+       - golden-section
+       - medial-section
+       - divine-proportion
+       - divine-section
+       - golden-proportion
+       - golden-cut
+       - 
     
     - concept: graham-number
       arity: 0
@@ -4365,7 +4520,9 @@ concepts:
        - "https://mathworld.wolfram.com/GramMatrix.html"
        - "https://en.wikipedia.org/wiki/Gramian_matrix"
        - "https://www.encyclopediaofmath.org/index.php/Gram_matrix"
-      alias: "gramian-matrix, gramian"
+      alias:
+       - gramian-matrix
+       - gramian
     
     - concept: grassmannian
       arity: 1
@@ -4444,7 +4601,8 @@ concepts:
        - "https://mathworld.wolfram.com/GudermannianFunction.html"
        - "https://en.wikipedia.org/wiki/Gudermannian_function"
        - "https://dlmf.nist.gov/4.23#E39"
-      alias: gudermannian
+      alias:
+       - gudermannian
     
     - concept: hadamard-product
       arity: 2
@@ -4455,7 +4613,11 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/HadamardProduct.html"
        - "https://en.wikipedia.org/wiki/Hadamard_product_(matrices)"
-      alias: "elementwise-product, entrywise-product,<br/>schur-product"
+      alias:
+       - elementwise-product
+       - entrywise-product
+       - 
+       - schur-product
     
     - concept: hahn-polynomial
       arity: 1
@@ -4501,7 +4663,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Hardy_space"
        - "https://www.encyclopediaofmath.org/index.php/Hardy_classes"
-      alias: hardy-space
+      alias:
+       - hardy-space
     
     - concept: hardy-space
       arity: 1
@@ -4522,7 +4685,8 @@ concepts:
       notation: "mi M"
       urls: 
        - "https://en.wikipedia.org/wiki/Hardy%E2%80%93Littlewood_maximal_function"
-      alias: hardy-littlewood-maximal-function
+      alias:
+       - hardy-littlewood-maximal-function
     
     - concept: harmonic-mean
       arity: 1
@@ -4534,7 +4698,8 @@ concepts:
        - "https://mathworld.wolfram.com/HarmonicMean.html"
        - "https://en.wikipedia.org/wiki/Harmonic_mean"
        - "https://en.wikipedia.org/wiki/Subcontrary_mean"
-      alias: subcontrary-mean
+      alias:
+       - subcontrary-mean
     
     - concept: hausdorff-measure
       arity: 1
@@ -4564,7 +4729,8 @@ concepts:
       notation: "msub T 2"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions"
-      alias: separated-space
+      alias:
+       - separated-space
     
     - concept: hazard-function
       arity: 1
@@ -4574,7 +4740,8 @@ concepts:
       notation: "mi h"
       urls: 
        - "https://mathworld.wolfram.com/HazardFunction.html"
-      alias: failure-rate
+      alias:
+       - failure-rate
     
     - concept: heaviside-function
       arity: 1
@@ -4585,7 +4752,10 @@ concepts:
       urls: 
        - "https://dlmf.nist.gov/1.16#E13)[https://en.wikipedia.org/wiki/Heaviside_step_function"
        - "https://en.wikipedia.org/wiki/Heaviside_step_function"
-      alias: "heaviside-step-function,<br/>unit-step-function"
+      alias:
+       - heaviside-step-function
+       - 
+       - unit-step-function
     
     - concept: heawood-number
       arity: 1
@@ -4632,7 +4802,10 @@ concepts:
       notation: "mi ht"
       urls: 
        - "https://en.wikipedia.org/wiki/Krull_dimension#height"
-      alias: "codimension-of-prime-ideal, rank-of-prime-ideal, altitude-of-prime-ideal"
+      alias:
+       - codimension-of-prime-ideal
+       - rank-of-prime-ideal
+       - altitude-of-prime-ideal
     
     - concept: heisenberg-group
       arity: 0
@@ -4666,7 +4839,8 @@ concepts:
       notation: "msup †,<br/>msup *"
       urls: 
        - "https://en.wikipedia.org/wiki/Hermitian_adjoint"
-      alias: adjoint-operator
+      alias:
+       - adjoint-operator
     
     - concept: hermitian-conjugate
       arity: 1
@@ -4677,7 +4851,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/HermitianConjugate.html"
        - "https://en.wikipedia.org/wiki/Conjugate_transpose"
-      alias: adjoint-matrix
+      alias:
+       - adjoint-matrix
     
     - concept: heronian-mean
       arity: 1
@@ -4699,7 +4874,8 @@ concepts:
        - "https://mathworld.wolfram.com/Hessian.html"
        - "https://en.wikipedia.org/wiki/Hessian_matrix"
        - "https://ncatlab.org/nlab/show/Hessian"
-      alias: hessian-matrix
+      alias:
+       - hessian-matrix
     
     - concept: heun-function
       arity: 1
@@ -4753,7 +4929,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Hilbert-SchmidtNorm.html"
        - "https://en.wikipedia.org/wiki/Hilbert%E2%80%93Schmidt_operator"
-      alias: 
+      alias:
+       - 
     
     - concept: hit-or-miss-transform
       arity: 2
@@ -4842,7 +5019,8 @@ concepts:
       notation: "mi hp"
       urls: 
        - "https://en.wikipedia.org/wiki/Horsepower"
-      alias: horsepower
+      alias:
+       - horsepower
     
     - concept: horsepower-metric
       arity: 1
@@ -4852,7 +5030,8 @@ concepts:
       notation: "mi PS<br/>mi cv<br/>mi hk<br/>mi pk<br/>mi ks<br/>mi ch"
       urls: 
        - "https://en.wikipedia.org/wiki/Metric_horsepower"
-      alias: horsepower
+      alias:
+       - horsepower
     
     - concept: hurwitz-zeta-function
       arity: 1
@@ -4959,7 +5138,9 @@ concepts:
       notation: "msupT$1"
       urls: 
        - "https://en.wikipedia.org/wiki/Torus#n-dimensional_torus"
-      alias: "n-torus, n-dimensional-torus"
+      alias:
+       - n-torus
+       - n-dimensional-torus
     
     - concept: identity-element
       arity: 0
@@ -4971,7 +5152,9 @@ concepts:
        - "https://mathworld.wolfram.com/IdentityElement.html"
        - "https://en.wikipedia.org/wiki/Identity_element"
        - "https://ncatlab.org/nlab/show/identity+element"
-      alias: "identity, two-sided-identity"
+      alias:
+       - identity
+       - two-sided-identity
     
     - concept: identity-function
       arity: 1
@@ -4983,7 +5166,10 @@ concepts:
        - "https://mathworld.wolfram.com/IdentityFunction.html"
        - "https://en.wikipedia.org/wiki/Identity_function"
        - "https://ncatlab.org/nlab/show/identity+function"
-      alias: "identity-map, identity-relation, identity-transformation"
+      alias:
+       - identity-map
+       - identity-relation
+       - identity-transformation
     
     - concept: identity-functor
       arity: 1
@@ -5004,7 +5190,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/IdentityMatrix.html"
        - "https://en.wikipedia.org/wiki/Identity_matrix"
-      alias: unit-matrix
+      alias:
+       - unit-matrix
     
     - concept: image
       arity: 2
@@ -5060,7 +5247,10 @@ concepts:
       notation: "mi ι"
       urls: 
        - "https://en.wikipedia.org/wiki/Inclusion_map"
-      alias: "inclusion-function, insertion, canonical-injection"
+      alias:
+       - inclusion-function
+       - insertion
+       - canonical-injection
     
     - concept: incomparability
       arity: 2
@@ -5070,7 +5260,8 @@ concepts:
       notation: "menclose notation='updiagonalstrike' munderover = > <"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
-      alias: incomparable
+      alias:
+       - incomparable
     
     - concept: incomplete-beta-function
       arity: 1
@@ -5178,7 +5369,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Infimum.html"
        - "https://en.wikipedia.org/wiki/Infimum_and_supremum"
-      alias: "meet, greatest-lower-bound"
+      alias:
+       - meet
+       - greatest-lower-bound
     
     - concept: infimum-limit
       arity: 1
@@ -5189,7 +5382,13 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/InfimumLimit.html"
        - "https://en.wikipedia.org/wiki/Limit_superior_and_limit_inferior"
-      alias: "limit-inferior, limit-infimum, liminf, inferior-limit, lower-limit, inner-limit"
+      alias:
+       - limit-inferior
+       - limit-infimum
+       - liminf
+       - inferior-limit
+       - lower-limit
+       - inner-limit
     
     - concept: infinite-product
       arity: 1
@@ -5231,7 +5430,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Inner_automorphism"
        - "https://ncatlab.org/nlab/show/inner+automorphism"
        - "https://www.encyclopediaofmath.org/index.php/Inner_automorphism"
-      alias: inner-automorphism
+      alias:
+       - inner-automorphism
     
     - concept: inner-jordan-measure
       arity: 1
@@ -5316,7 +5516,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Image_(mathematics)"
        - "https://ncatlab.org/nlab/show/inverse+image"
-      alias: preimage
+      alias:
+       - preimage
     
     - concept: inverse-limit
       arity: 1
@@ -5328,7 +5529,8 @@ concepts:
        - "https://mathworld.wolfram.com/InverseLimit.html"
        - "https://en.wikipedia.org/wiki/Inverse_limit"
        - "https://ncatlab.org/nlab/show/inverse+limit"
-      alias: projective limit
+      alias:
+       - projective limit
     
     - concept: inverse-moment-of-function
       arity: 2
@@ -5338,7 +5540,8 @@ concepts:
       notation: "msub μ mrow - $1 /mrow<br/>mrow E [ msup $1 mrow - $2 /mrow ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
-      alias: inverse-moment
+      alias:
+       - inverse-moment
     
     - concept: inverse-tangent-integral
       arity: 1
@@ -5390,7 +5593,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Isomorphism"
        - "https://ncatlab.org/nlab/show/isomorphism"
        - "https://www.encyclopediaofmath.org/index.php/Isomorphism"
-      alias: natural-isomorphism
+      alias:
+       - natural-isomorphism
     
     - concept: isotropy-group
       arity: 2
@@ -5401,7 +5605,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/IsotropyGroup.html"
        - "https://www.encyclopediaofmath.org/index.php/Isotropy_group"
-      alias: "little-group, stabilizer-subgroup"
+      alias:
+       - little-group
+       - stabilizer-subgroup
     
     - concept: iverson-bracket
       arity: 1
@@ -5431,7 +5637,8 @@ concepts:
        - "https://mathworld.wolfram.com/JacobiMatrix.html"
        - "https://en.wikipedia.org/wiki/Jacobi_operator"
        - "https://www.encyclopediaofmath.org/index.php/Jacobi_matrix"
-      alias: jacobi-operator
+      alias:
+       - jacobi-operator
     
     - concept: jacobi-polynomial
       arity: 1
@@ -5571,7 +5778,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/JordanBlock.html"
        - "https://en.wikipedia.org/wiki/Jordan_matrix"
-      alias: jordan-matrix
+      alias:
+       - jordan-matrix
     
     - concept: jordan-measure
       arity: 1
@@ -5613,7 +5821,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/KaprekarConstant.html"
        - "https://en.wikipedia.org/wiki/6174_(number)"
-      alias: kaprekar-number
+      alias:
+       - kaprekar-number
     
     - concept: kauffman-bracket
       arity: 1
@@ -5623,7 +5832,8 @@ concepts:
       notation: "mrow ⟨ $1 ⟩"
       urls: 
        - "https://en.wikipedia.org/wiki/Bracket_polynomial"
-      alias: bracket-polynomial
+      alias:
+       - bracket-polynomial
     
     - concept: kelvin-function
       arity: 1
@@ -5657,7 +5867,9 @@ concepts:
        - "https://en.wikipedia.org/wiki/Kernel_(statistics)"
        - "https://en.wikipedia.org/wiki/Covariance_function"
        - "https://ncatlab.org/nlab/show/kernel"
-      alias: "nullspace, null-space"
+      alias:
+       - nullspace
+       - null-space
     
     - concept: khinchin-constant
       arity: 0
@@ -5836,7 +6048,8 @@ concepts:
        - "https://mathworld.wolfram.com/KroneckerSymbol.html"
        - "https://en.wikipedia.org/wiki/Kronecker_symbol"
        - "https://www.encyclopediaofmath.org/index.php/Kronecker_symbol"
-      alias: 
+      alias:
+       - 
     
     - concept: krull-dimension
       arity: 1
@@ -5867,7 +6080,11 @@ concepts:
       urls: 
        - "http://users.monash.edu/~lloyd/tildeMML/KL/"
        - "https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence"
-      alias: "kl-distance, kl-divergence, kullback-leibler-divergence, relative-entropy"
+      alias:
+       - kl-distance
+       - kl-divergence
+       - kullback-leibler-divergence
+       - relative-entropy
     
     - concept: lagrange-bracket
       arity: 4
@@ -5891,7 +6108,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Lagrange_multiplier"
        - "https://ncatlab.org/nlab/show/Lagrange+multiplier"
        - "https://www.encyclopediaofmath.org/index.php/Lagrange_multipliers"
-      alias: lagrangian
+      alias:
+       - lagrangian
     
     - concept: lagrange-point
       arity: 0
@@ -5901,7 +6119,10 @@ concepts:
       notation: "msub L 1<br/>msub L 2<br/>msub L 3<br/>msub L 4<br/>msub L 5"
       urls: 
        - "https://en.wikipedia.org/wiki/Lagrange_point"
-      alias: "lagrangian-point, l-point, libration-point"
+      alias:
+       - lagrangian-point
+       - l-point
+       - libration-point
     
     - concept: laguerre-polynomial
       arity: 1
@@ -6043,7 +6264,8 @@ concepts:
       notation: "mo ;"
       urls: 
        - "https://en.wikipedia.org/wiki/Composition_of_relations"
-      alias: left-compose
+      alias:
+       - left-compose
     
     - concept: left-derivative
       arity: 1
@@ -6087,7 +6309,8 @@ concepts:
        - "https://mathworld.wolfram.com/LegendreSymbol.html"
        - "https://en.wikipedia.org/wiki/Legendre_symbol"
        - "https://dlmf.nist.gov/27.9"
-      alias: 
+      alias:
+       - 
     
     - concept: lehmer-mean
       arity: 1
@@ -6131,7 +6354,8 @@ concepts:
        - "https://mathworld.wolfram.com/Levi-CivitaSymbol.html"
        - "https://en.wikipedia.org/wiki/Levi-Civita_symbol"
        - "https://dlmf.nist.gov/1.6#E14"
-      alias: permutation-symbol
+      alias:
+       - permutation-symbol
     
     - concept: levy-prokhorov-metric
       arity: 1
@@ -6151,7 +6375,8 @@ concepts:
       notation: "mo ∙<br/>$1 [ $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Lexicographic_product_of_graphs"
-      alias: graph-composition
+      alias:
+       - graph-composition
     
     - concept: lexicographic-order
       arity: 2
@@ -6163,7 +6388,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Lexicographic_order"
        - "https://mathworld.wolfram.com/LexicographicOrder.html"
        - "https://ncatlab.org/nlab/show/lexicographic+order"
-      alias: dictionary-order
+      alias:
+       - dictionary-order
     
     - concept: lie-derivative
       arity: 1
@@ -6184,7 +6410,8 @@ concepts:
       notation: "mrow [ $1 , $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Lie_superalgebra"
-      alias: supercommutator
+      alias:
+       - supercommutator
     
     - concept: like-charge
       arity: 2
@@ -6215,7 +6442,11 @@ concepts:
        - "https://mathworld.wolfram.com/LineIntegral.html"
        - "https://en.wikipedia.org/wiki/Line_integral"
        - "https://ncatlab.org/nlab/show/line+integral"
-      alias: "curve-integral, path-integral, curvilinear-integral, contour-integral"
+      alias:
+       - curve-integral
+       - path-integral
+       - curvilinear-integral
+       - contour-integral
     
     - concept: linear-span
       arity: 1
@@ -6226,7 +6457,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/LinearSpan.html"
        - "https://en.wikipedia.org/wiki/Linear_span"
-      alias: "span, linear-hull"
+      alias:
+       - span
+       - linear-hull
     
     - concept: link
       arity: 1
@@ -6254,7 +6487,8 @@ concepts:
       notation: "mi L"
       urls: 
        - "https://mathworld.wolfram.com/LiouvillesConstant.html"
-      alias: liouville-number
+      alias:
+       - liouville-number
     
     - concept: liouville-function
       arity: 1
@@ -6299,7 +6533,8 @@ concepts:
       notation: "E [ msup ln $1 /msup ( $2 ) ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
-      alias: logarithmic-moment
+      alias:
+       - logarithmic-moment
     
     - concept: logit
       arity: 1
@@ -6383,7 +6618,8 @@ concepts:
       notation: "mi 𝜕<br/>msub 𝜕 -"
       urls: 
        - "http://qk206.user.srcf.net/notes/combinatorics.pdf"
-      alias: shadow
+      alias:
+       - shadow
     
     - concept: lucas-number
       arity: 1
@@ -6416,7 +6652,8 @@ concepts:
        - "https://mathworld.wolfram.com/LyapunovFunction.html"
        - "https://en.wikipedia.org/wiki/Lyapunov_function"
        - "https://www.encyclopediaofmath.org/index.php/Lyapunov_function"
-      alias: lyapunov-function
+      alias:
+       - lyapunov-function
     
     - concept: macdonald-polynomial
       arity: 1
@@ -6449,7 +6686,8 @@ concepts:
        - "https://mathworld.wolfram.com/MangoldtFunction.html"
        - "https://dlmf.nist.gov/27.2#E14"
        - "https://www.encyclopediaofmath.org/index.php/Mangoldt_function"
-      alias: von-mangoldt-function
+      alias:
+       - von-mangoldt-function
     
     - concept: mapping-class-group
       arity: 1
@@ -6471,7 +6709,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Mapping_cone_(topology)"
        - "https://en.wikipedia.org/wiki/Mapping_cone_(homological_algebra)"
        - "https://ncatlab.org/nlab/show/mapping+cone"
-      alias: homotopy-cofiber
+      alias:
+       - homotopy-cofiber
     
     - concept: matching-polynomial
       arity: 1
@@ -6501,7 +6740,9 @@ concepts:
        - "https://dlmf.nist.gov/28.12#SS2.p2"
        - "https://dlmf.nist.gov/28.2#SS6.p1"
        - "https://www.encyclopediaofmath.org/index.php/Mathieu_functions"
-      alias: "angular-mathieu-function, mathieu-function"
+      alias:
+       - angular-mathieu-function
+       - mathieu-function
     
     - concept: mathieu-function-of-second-kind
       arity: 1
@@ -6522,7 +6763,9 @@ concepts:
        - "https://dlmf.nist.gov/28.12#SS2.p2"
        - "https://dlmf.nist.gov/28.2#SS6.p1"
        - "https://www.encyclopediaofmath.org/index.php/Mathieu_functions"
-      alias: "angular-mathieu-function, mathieu-function"
+      alias:
+       - angular-mathieu-function
+       - mathieu-function
     
     - concept: mathieu-group
       arity: 1
@@ -6735,7 +6978,8 @@ concepts:
       notation: "mo -"
       urls: 
        - "https://en.wikipedia.org/wiki/Minkowski_addition"
-      alias: geometric-difference
+      alias:
+       - geometric-difference
     
     - concept: minkowski-sum
       arity: 2
@@ -6746,7 +6990,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/MinkowskiSum.html"
        - "https://en.wikipedia.org/wiki/Minkowski_addition"
-      alias: dilation
+      alias:
+       - dilation
     
     - concept: mittag-leffler-function
       arity: 1
@@ -6858,7 +7103,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Modulo_(jargon)"
        - "https://en.wikipedia.org/wiki/Modulo_operation"
        - "https://dlmf.nist.gov/front/introduction#Sx4.p2.t1.r10"
-      alias: mod
+      alias:
+       - mod
     
     - concept: moebius-function
       arity: 1
@@ -6878,7 +7124,8 @@ concepts:
       notation: "msub μ $1<br/>mrow E [ msup $1 $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
-      alias: moment
+      alias:
+       - moment
     
     - concept: moment
       arity: 0
@@ -6903,7 +7150,10 @@ concepts:
        - "https://mathworld.wolfram.com/MomentofInertia.html"
        - "https://en.wikipedia.org/wiki/Moment_of_inertia"
        - "https://ncatlab.org/nlab/show/moment+of+inertia"
-      alias: "mass-moment-of-inertia, angular-mass, rotational-inertia"
+      alias:
+       - mass-moment-of-inertia
+       - angular-mass
+       - rotational-inertia
     
     - concept: momentum
       arity: 0
@@ -6914,7 +7164,9 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Momentum"
        - "https://ncatlab.org/nlab/show/momentum"
-      alias: "linear-momentum, translational-momentum"
+      alias:
+       - linear-momentum
+       - translational-momentum
     
     - concept: monster-group
       arity: 0
@@ -6926,7 +7178,8 @@ concepts:
        - "https://mathworld.wolfram.com/MonsterGroup.html"
        - "https://en.wikipedia.org/wiki/Monster_group"
        - "https://ncatlab.org/nlab/show/Monster+group"
-      alias: friendly-giant
+      alias:
+       - friendly-giant
     
     - concept: moore-penrose-inverse
       arity: 1
@@ -6936,7 +7189,8 @@ concepts:
       notation: "msup $1 +"
       urls: 
        - "https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse"
-      alias: moore-penrose-pseudoinverse
+      alias:
+       - moore-penrose-pseudoinverse
     
     - concept: moore-smith-sequence
       arity: 1
@@ -6947,7 +7201,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Moore%E2%80%93Smith_limit"
        - "https://en.wikipedia.org/wiki/Net_(mathematics)"
-      alias: net
+      alias:
+       - net
     
     - concept: motzkin-number
       arity: 1
@@ -6986,7 +7241,8 @@ concepts:
        - "https://ncatlab.org/nlab/show/inverse"
        - "https://mathworld.wolfram.com/MultiplicativeInverse.html"
        - "https://en.wikipedia.org/wiki/Multiplicative_inverse"
-      alias: inverse
+      alias:
+       - inverse
     
     - concept: multiplicative-order
       arity: 1
@@ -7026,7 +7282,8 @@ concepts:
       notation: "mrow ( ( mfrac $1 $2 )"
       urls: 
        - "https://en.wikipedia.org/wiki/Multiset"
-      alias: multiset-number
+      alias:
+       - multiset-number
     
     - concept: multivariate-gaussian-distribution
       arity: 0
@@ -7036,7 +7293,9 @@ concepts:
       notation: "msub 𝒩 $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Multivariate_normal_distribution"
-      alias: "multivariate-normal-distribution, joint-normal-distribution"
+      alias:
+       - multivariate-normal-distribution
+       - joint-normal-distribution
     
     - concept: mutation
       arity: 2
@@ -7051,7 +7310,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Hua%27s_identity_(Jordan_algebra)"
        - "https://en.wikipedia.org/wiki/Mutation_(algebra)"
        - "https://en.wikipedia.org/wiki/Mutation_(genetic_algorithm)"
-      alias: homotope
+      alias:
+       - homotope
     
     - concept: mutual-information
       arity: 1
@@ -7084,7 +7344,10 @@ concepts:
        - "https://mathworld.wolfram.com/DenjoyIntegral.html"
        - "https://en.wikipedia.org/wiki/Henstock%E2%80%93Kurzweil_integral"
        - "https://www.encyclopediaofmath.org/index.php/Denjoy_integral"
-      alias: "henstock-kurzweil-integral, luzin-integral, perron-integral"
+      alias:
+       - henstock-kurzweil-integral
+       - luzin-integral
+       - perron-integral
     
     - concept: negative-binomial-distribution
       arity: 0
@@ -7115,7 +7378,8 @@ concepts:
       notation: "msub N $1 ( $2 )<br/>mrow N ( $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory)"
-      alias: open-neighbourhood
+      alias:
+       - open-neighbourhood
     
     - concept: neighbourhood-filter
       arity: 1
@@ -7125,7 +7389,9 @@ concepts:
       notation: "mi 𝒩"
       urls: 
        - "https://en.wikipedia.org/wiki/Neighbourhood_system"
-      alias: "neighbourhood-system, complete-system-of-neighbourhoods"
+      alias:
+       - neighbourhood-system
+       - complete-system-of-neighbourhoods
     
     - concept: neron-severi-group
       arity: 1
@@ -7145,7 +7411,8 @@ concepts:
       notation: "mover h ^"
       urls: 
        - "https://en.wikipedia.org/wiki/N%C3%A9ron%E2%80%93Tate_height"
-      alias: canonical-height
+      alias:
+       - canonical-height
     
     - concept: nerve
       arity: 1
@@ -7177,7 +7444,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Orientation_(vector_space)"
        - "https://en.wikipedia.org/wiki/Euclidean_space#Angle"
-      alias: angle
+      alias:
+       - angle
     
     - concept: nor
       arity: 2
@@ -7188,7 +7456,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Nor.html"
        - "https://mathworld.wolfram.com/NOR.html"
-      alias: joint-denial
+      alias:
+       - joint-denial
     
     - concept: norm
       arity: 1
@@ -7233,7 +7502,8 @@ concepts:
        - "https://mathworld.wolfram.com/NullGraph.html"
        - "https://en.wikipedia.org/wiki/Null_graph"
        - "https://en.wikipedia.org/wiki/Order-zero_graph"
-      alias: edgeless-graph
+      alias:
+       - edgeless-graph
     
     - concept: numerical-part
       arity: 1
@@ -7278,7 +7548,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Octonion"
        - "https://ncatlab.org/nlab/show/octonion"
        - "https://www.encyclopediaofmath.org/index.php/Octonion"
-      alias: cayley-numbers
+      alias:
+       - cayley-numbers
     
     - concept: odds-ratio
       arity: 0
@@ -7309,7 +7580,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/OpenBall.html"
        - "https://en.wikipedia.org/wiki/Ball_(mathematics)"
-      alias: open-metric-ball
+      alias:
+       - open-metric-ball
     
     - concept: open-interval
       arity: 2
@@ -7341,7 +7613,8 @@ concepts:
        - "https://ncatlab.org/nlab/show/opposite+category"
        - "https://en.wikipedia.org/wiki/Opposite_group"
        - "https://en.wikipedia.org/wiki/Opposite_ring"
-      alias: dual
+      alias:
+       - dual
     
     - concept: opposite-charge
       arity: 2
@@ -7360,7 +7633,9 @@ concepts:
       notation: "mo *"
       urls: 
        - "https://en.wikipedia.org/w/index.php?title=Graph_product"
-      alias: "disjunctive-product, co-normal-product"
+      alias:
+       - disjunctive-product
+       - co-normal-product
     
     - concept: order-of-group
       arity: 1
@@ -7393,7 +7668,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Orthogonality"
        - "https://ncatlab.org/nlab/show/orthogonality"
        - "https://www.encyclopediaofmath.org/index.php/Orthogonality"
-      alias: perpendicular
+      alias:
+       - perpendicular
     
     - concept: orthogonal-group
       arity: 1
@@ -7417,7 +7693,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/OuterAutomorphismGroup.html"
        - "https://en.wikipedia.org/wiki/Outer_automorphism_group"
-      alias: outer-automorphism
+      alias:
+       - outer-automorphism
     
     - concept: outer-jordan-measure
       arity: 1
@@ -7514,7 +7791,8 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Partial_charge"
        - "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/08._Basic_Concepts_of_Chemical_Bonding/8.S%3A_Basic_Concepts_of_Chemical_Bonding_(Summary)"
-      alias: delta-sign
+      alias:
+       - delta-sign
     
     - concept: partition
       arity: 2
@@ -7673,7 +7951,9 @@ concepts:
       notation: "mi pH"
       urls: 
        - "https://en.wikipedia.org/wiki/PH"
-      alias: "potential-of-hydrogen, power-of-hydrogen"
+      alias:
+       - potential-of-hydrogen
+       - power-of-hydrogen
     
     - concept: phase
       arity: 1
@@ -7695,7 +7975,8 @@ concepts:
       notation: "mi φ<br/>msub r φ"
       urls: 
        - "https://en.wikipedia.org/wiki/Phi_coefficient"
-      alias: mean-square-contingency-coefficient
+      alias:
+       - mean-square-contingency-coefficient
     
     - concept: picard-group
       arity: 1
@@ -7729,7 +8010,13 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/PlasticConstant.html"
        - "https://en.wikipedia.org/wiki/Plastic_number"
-      alias: "plastic-number, platin-number, minimal-pisot-number, plastic-ratio, siegel-number, le-nombre-radiant"
+      alias:
+       - plastic-number
+       - platin-number
+       - minimal-pisot-number
+       - plastic-ratio
+       - siegel-number
+       - le-nombre-radiant
     
     - concept: playing-card-suit
       arity: 1
@@ -7840,7 +8127,8 @@ concepts:
       notation: "mrow $1 [ $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Polynomial_ring#Definition_(univariate_case)"
-      alias: polynomial-algebra
+      alias:
+       - polynomial-algebra
     
     - concept: polylogarithm
       arity: 1
@@ -8005,7 +8293,8 @@ concepts:
       notation: "mi plim"
       urls: 
        - "https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability"
-      alias: convergence-in-probability
+      alias:
+       - convergence-in-probability
     
     - concept: product-integral
       arity: 1
@@ -8050,7 +8339,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Projective_space"
        - "https://ncatlab.org/nlab/show/projective+space"
        - "https://www.encyclopediaofmath.org/index.php/Projective_space"
-      alias: real-projective-space
+      alias:
+       - real-projective-space
     
     - concept: proper-subgroup
       arity: 2
@@ -8071,7 +8361,8 @@ concepts:
        - "https://mathworld.wolfram.com/Proportional.html"
        - "https://en.wikipedia.org/wiki/Proportionality_(mathematics)"
        - "https://en.wikipedia.org/wiki/Proportional_(fair_division)"
-      alias: directly-proportional
+      alias:
+       - directly-proportional
     
     - concept: prouhet-thue-morse-constant
       arity: 0
@@ -8090,7 +8381,8 @@ concepts:
       notation: "mrow Z ( msup $1 ∞ /msup"
       urls: 
        - "https://en.wikipedia.org/wiki/Pr%C3%BCfer_group"
-      alias: quasicyclic-group
+      alias:
+       - quasicyclic-group
     
     - concept: pseudovector
       arity: 2
@@ -8101,7 +8393,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Pseudovector.html"
        - "https://en.wikipedia.org/wiki/Pseudovector"
-      alias: axial-vector
+      alias:
+       - axial-vector
     
     - concept: pseudo-inner-product
       arity: 2
@@ -8142,7 +8435,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Sqrt(2)"
        - "https://en.wikipedia.org/wiki/%E2%88%9A2"
        - "https://en.wikipedia.org/wiki/Square_root_of_2"
-      alias: pythagoras-number
+      alias:
+       - pythagoras-number
     
     - concept: pythagorean-triple
       arity: 3
@@ -8171,7 +8465,9 @@ concepts:
       notation: "mo □<br/>mo ∎"
       urls: 
        - "https://en.wikipedia.org/wiki/Tombstone_(typography)"
-      alias: "end-of-proof, quod-erat-demonstrandum"
+      alias:
+       - end-of-proof
+       - quod-erat-demonstrandum
     
     - concept: quadratic-differential
       arity: 1
@@ -8203,7 +8499,8 @@ concepts:
        - "https://mathworld.wolfram.com/Quadrangle.html"
        - "https://en.wikipedia.org/wiki/Quadrilateral"
        - "https://www.encyclopediaofmath.org/index.php/Quadrangle"
-      alias: quadrangle
+      alias:
+       - quadrangle
     
     - concept: quotient-group
       arity: 2
@@ -8228,7 +8525,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Quotient_space_(linear_algebra)"
        - "https://ncatlab.org/nlab/show/quotient+space"
        - "https://www.encyclopediaofmath.org/index.php/Quotient_space"
-      alias: quotient-set
+      alias:
+       - quotient-set
     
     - concept: r-complexity-class
       arity: 0
@@ -8287,7 +8585,10 @@ concepts:
        - "https://mathworld.wolfram.com/RadiusVector.html"
        - "https://en.wikipedia.org/wiki/Position_(vector)"
        - "https://www.encyclopediaofmath.org/index.php/Radius_vector"
-      alias: "location-vector, position-vector, position"
+      alias:
+       - location-vector
+       - position-vector
+       - position
     
     - concept: ramanujan-sum
       arity: 1
@@ -8321,7 +8622,8 @@ concepts:
        - "https://mathworld.wolfram.com/Ramanujan-SoldnerConstant.html"
        - "https://en.wikipedia.org/wiki/Ramanujan%E2%80%93Soldner_constant"
        - "https://mathworld.wolfram.com/SoldnersConstant.html"
-      alias: soldner-constant
+      alias:
+       - soldner-constant
     
     - concept: ramification-index
       arity: 1
@@ -8419,7 +8721,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/ReciprocalPolynomial.html"
        - "https://en.wikipedia.org/wiki/Reciprocal_polynomial"
-      alias: reflected-polynomial
+      alias:
+       - reflected-polynomial
     
     - concept: rectification
       arity: 1
@@ -8540,7 +8843,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Resultant"
        - "https://ncatlab.org/nlab/show/resultant"
        - "https://www.encyclopediaofmath.org/index.php/Resultant"
-      alias: eliminant
+      alias:
+       - eliminant
     
     - concept: rewrite-rule
       arity: 2
@@ -8550,7 +8854,8 @@ concepts:
       notation: "mo →"
       urls: 
        - "https://en.wikipedia.org/wiki/Semi-Thue_system"
-      alias: rewrite-relation
+      alias:
+       - rewrite-relation
     
     - concept: reynolds-number
       arity: 0
@@ -8570,7 +8875,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/RicciScalar.html"
        - "https://en.wikipedia.org/wiki/Scalar_curvature"
-      alias: scalar-curvature
+      alias:
+       - scalar-curvature
     
     - concept: ricci-tensor
       arity: 1
@@ -8608,7 +8914,9 @@ concepts:
        - "https://en.wikipedia.org/wiki/Riemann_sphere"
        - "https://ncatlab.org/nlab/show/Riemann+sphere"
        - "https://www.encyclopediaofmath.org/index.php/Riemann_sphere"
-      alias: "extended-complex-numbers, extended-complex-plane"
+      alias:
+       - extended-complex-numbers
+       - extended-complex-plane
     
     - concept: riemann-theta-function
       arity: 1
@@ -8633,7 +8941,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Riemann_zeta_function"
        - "https://dlmf.nist.gov/25.1"
        - "https://dlmf.nist.gov/25.2#E1"
-      alias: euler-riemann-zeta-function
+      alias:
+       - euler-riemann-zeta-function
     
     - concept: riemann-christoffel-tensor
       arity: 1
@@ -8646,7 +8955,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Riemann_curvature_tensor"
        - "https://www.encyclopediaofmath.org/index.php/Riemann-Christoffel_tensor"
        - "https://www.encyclopediaofmath.org/index.php/RiemannâXXXXChristoffel_tensor"
-      alias: riemann-curvature-tensor
+      alias:
+       - riemann-curvature-tensor
     
     - concept: riemann-stieltje-integral
       arity: 1
@@ -8661,7 +8971,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Riemann%E2%80%93Stieltjes_integral"
        - "https://www.encyclopediaofmath.org/index.php/Riemann-Stieltjes_integral"
        - "https://www.encyclopediaofmath.org/index.php/RiemannâXXXXStieltjes_integral"
-      alias: stieltje-integral
+      alias:
+       - stieltje-integral
     
     - concept: right-angle
       arity: 1
@@ -8710,7 +9021,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/Falling_and_rising_factorials"
        - "https://mathworld.wolfram.com/RisingFactorial.html"
        - "https://dlmf.nist.gov/26.1#P1.p1"
-      alias: "pochhammer-function, pochhammer-polynomial, ascending-factorial, rising-sequential-product, upper-factorial"
+      alias:
+       - pochhammer-function
+       - pochhammer-polynomial
+       - ascending-factorial
+       - rising-sequential-product
+       - upper-factorial
     
     - concept: roman-numeral
       arity: 0
@@ -8732,7 +9048,9 @@ concepts:
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(category_theory)"
        - "https://ncatlab.org/nlab/show/span"
-      alias: "span, correspondence"
+      alias:
+       - span
+       - correspondence
     
     - concept: root-of-unity
       arity: 0
@@ -8753,7 +9071,9 @@ concepts:
       notation: "msub $1 RMS"
       urls: 
        - "https://mathworld.wolfram.com/Root-Mean-Square.html"
-      alias: "rms, quadratic-mean"
+      alias:
+       - rms
+       - quadratic-mean
     
     - concept: rooted-product-of-graphs
       arity: 2
@@ -8863,7 +9183,8 @@ concepts:
        - "https://mathworld.wolfram.com/SchurMultiplier.html"
        - "https://en.wikipedia.org/wiki/Schur_multiplier"
        - "https://en.wikipedia.org/wiki/Schur_cover"
-      alias: schur-multiplicator
+      alias:
+       - schur-multiplicator
     
     - concept: schwartz-space
       arity: 0
@@ -8937,7 +9258,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/Seminorm.html"
        - "https://en.wikipedia.org/wiki/Norm_(mathematics)"
-      alias: pseudonorm
+      alias:
+       - pseudonorm
     
     - concept: set-of-invertible-maps
       arity: 1
@@ -8959,7 +9281,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Entropy_(information_theory)"
        - "https://ncatlab.org/nlab/show/entropy"
        - "https://www.encyclopediaofmath.org/index.php/Entropy"
-      alias: entropy
+      alias:
+       - entropy
     
     - concept: shift-operator
       arity: 1
@@ -8971,7 +9294,9 @@ concepts:
        - "https://mathworld.wolfram.com/ShiftOperator.html"
        - "https://en.wikipedia.org/wiki/Shift_operator"
        - "https://www.encyclopediaofmath.org/index.php/Shift_operator"
-      alias: "translation-operator, lag-operator"
+      alias:
+       - translation-operator
+       - lag-operator
     
     - concept: shimura-variety
       arity: 1
@@ -9015,7 +9340,8 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/SidonSequence.html"
        - "https://en.wikipedia.org/wiki/Sidon_sequence"
-      alias: sidon-set
+      alias:
+       - sidon-set
     
     - concept: sign-function
       arity: 1
@@ -9025,7 +9351,8 @@ concepts:
       notation: "mi sgn"
       urls: 
        - "https://en.wikipedia.org/wiki/Sign_function"
-      alias: signum-function
+      alias:
+       - signum-function
     
     - concept: signature-of-permutation
       arity: 1
@@ -9035,7 +9362,8 @@ concepts:
       notation: "mi sign"
       urls: 
        - "https://ncatlab.org/nlab/show/signature+of+a+permutation"
-      alias: sign-of-permutation
+      alias:
+       - sign-of-permutation
     
     - concept: silver-ratio
       arity: 0
@@ -9164,7 +9492,8 @@ concepts:
       area: "complexity theory"
       notation: "mi Õ"
       urls: 
-      alias: Extensions_to_the_Bachmann–Landau_notations
+      alias:
+       - Extensions_to_the_Bachmann–Landau_notations
     
     - concept: solid-angle
       arity: 0
@@ -9376,7 +9705,9 @@ concepts:
       notation: "msub 𝒜 ($1"
       urls: 
        - "https://en.wikipedia.org/wiki/Matricization"
-      alias: "matricization, unfolding"
+      alias:
+       - matricization
+       - unfolding
     
     - concept: stanley-reisner-ring
       arity: 2
@@ -9388,7 +9719,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Stanley%E2%80%93Reisner_ring"
        - "https://www.encyclopediaofmath.org/index.php/Stanley-Reisner_ring"
        - "https://www.encyclopediaofmath.org/index.php/StanleyâXXXXReisner_ring"
-      alias: face-ring
+      alias:
+       - face-ring
     
     - concept: stanley-reisner-ideal
       arity: 1
@@ -9400,7 +9732,8 @@ concepts:
        - "https://en.wikipedia.org/wiki/Stanley%E2%80%93Reisner_ring"
        - "https://www.encyclopediaofmath.org/index.php/Stanley-Reisner_ring"
        - "https://www.encyclopediaofmath.org/index.php/StanleyâXXXXReisner_ring"
-      alias: face-ideal
+      alias:
+       - face-ideal
     
     - concept: star
       arity: 0
@@ -9496,7 +9829,8 @@ concepts:
       notation: "mi σ"
       urls: 
        - "https://en.wikipedia.org/wiki/Strength_of_a_graph"
-      alias: strength
+      alias:
+       - strength
     
     - concept: string-concatenation
       arity: 2
@@ -9516,7 +9850,9 @@ concepts:
       notation: "mo ⊠"
       urls: 
        - "https://en.wikipedia.org/w/index.php?title=Graph_product"
-      alias: "normal-product, and-product"
+      alias:
+       - normal-product
+       - and-product
     
     - concept: struve-function
       arity: 1
@@ -9548,7 +9884,9 @@ concepts:
       notation: "mo !"
       urls: 
        - "https://en.wikipedia.org/wiki/Derangement"
-      alias: "derangement-number<br/>de-montmort-number"
+      alias:
+       - derangement-number
+       - de-montmort-number
     
     - concept: subgroup
       arity: 2
@@ -9620,7 +9958,8 @@ concepts:
       notation: "msub ⊆ s<br/>mo ≪"
       urls: 
        - "https://en.wikipedia.org/wiki/Essential_extension"
-      alias: small-submodule
+      alias:
+       - small-submodule
     
     - concept: support
       arity: 1
@@ -9634,7 +9973,9 @@ concepts:
        - "https://en.wikipedia.org/wiki/Support_of_a_module"
        - "https://en.wikipedia.org/wiki/Support_(measure_theory)"
        - "https://ncatlab.org/nlab/show/support"
-      alias: "spectrum, topological-support"
+      alias:
+       - spectrum
+       - topological-support
     
     - concept: supremum
       arity: 1
@@ -9644,7 +9985,9 @@ concepts:
       notation: "mi sup<br/>mo ⋁"
       urls: 
        - "https://mathworld.wolfram.com/Supremum.html"
-      alias: "join, least-upper-bound"
+      alias:
+       - join
+       - least-upper-bound
     
     - concept: supremum-limit
       arity: 1
@@ -9655,7 +9998,13 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/SupremumLimit.html"
        - "https://en.wikipedia.org/wiki/Limit_superior_and_limit_inferior"
-      alias: "limit-superior, limit-supremum, limsup, superior-limit, upper-limit, outer-limit"
+      alias:
+       - limit-superior
+       - limit-supremum
+       - limsup
+       - superior-limit
+       - upper-limit
+       - outer-limit
     
     - concept: surface-integral
       arity: 1
@@ -9883,7 +10232,9 @@ concepts:
       notation: "mo ×"
       urls: 
        - "https://en.wikipedia.org/wiki/Tensor_product_of_graphs"
-      alias: "kronecker-product-of-graphs, categorical-product"
+      alias:
+       - kronecker-product-of-graphs
+       - categorical-product
     
     - concept: therefore-sign
       arity: 1
@@ -10033,7 +10384,8 @@ concepts:
        - "https://mathworld.wolfram.com/TotalDerivative.html"
        - "https://en.wikipedia.org/wiki/Total_derivative"
        - "https://www.encyclopediaofmath.org/index.php/Total_derivative"
-      alias: total-differential
+      alias:
+       - total-differential
     
     - concept: total-variation
       arity: 1
@@ -10087,7 +10439,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/TriangleFunction.html"
        - "https://en.wikipedia.org/wiki/Triangular_function"
-      alias: "hat-function, tent-function"
+      alias:
+       - hat-function
+       - tent-function
     
     - concept: triangular-number
       arity: 1
@@ -10118,7 +10472,8 @@ concepts:
       notation: "mi TM"
       urls: 
        - "https://en.wikipedia.org/wiki/Trimean"
-      alias: tukey-trimean
+      alias:
+       - tukey-trimean
     
     - concept: triple-bond
       arity: 2
@@ -10137,7 +10492,8 @@ concepts:
       notation: "mrow [$1, $2, $3]"
       urls: 
        - "https://mathworld.wolfram.com/TripleScalarProduct.html"
-      alias: scalar-triple-product
+      alias:
+       - scalar-triple-product
     
     - concept: triple-torus
       arity: 1
@@ -10200,7 +10556,10 @@ concepts:
       notation: "mi cyc<br/>mi rev<br/>mi tr<br/>mi pla"
       urls: 
        - "https://en.wikipedia.org/wiki/Turn_(geometry)"
-      alias: "cycle, revolution, plenus angulus"
+      alias:
+       - cycle
+       - revolution
+       - plenus angulus
     
     - concept: twisted-tensor-product
       arity: 2
@@ -10313,7 +10672,10 @@ concepts:
       notation: "mi R<br/>mover R -"
       urls: 
        - "https://en.wikipedia.org/wiki/Gas_constant"
-      alias: "gas-constant, molar-gas-constant, ideal-gas-constant"
+      alias:
+       - gas-constant
+       - molar-gas-constant
+       - ideal-gas-constant
     
     - concept: universal-parabolic-constant
       arity: 0
@@ -10335,7 +10697,8 @@ concepts:
        - "https://mathworld.wolfram.com/UniversalSet.html"
        - "https://en.wikipedia.org/wiki/Universal_set"
        - "https://www.encyclopediaofmath.org/index.php/Universal_set"
-      alias: universe
+      alias:
+       - universe
     
     - concept: unique-existential
       arity: 1
@@ -10426,7 +10789,8 @@ concepts:
       notation: "mi Var"
       urls: 
        - "https://en.wikipedia.org/wiki/Variance"
-      alias: dispersion
+      alias:
+       - dispersion
     
     - concept: vect
       arity: 1
@@ -10455,7 +10819,9 @@ concepts:
       notation: "mi proj"
       urls: 
        - "https://en.wikipedia.org/wiki/Vector_projection"
-      alias: "vector-component, vector-resolution"
+      alias:
+       - vector-component
+       - vector-resolution
     
     - concept: vectorization
       arity: 1
@@ -10555,7 +10921,8 @@ concepts:
        - "https://mathworld.wolfram.com/WaveletTransform.html"
        - "https://en.wikipedia.org/wiki/Wavelet_transform"
        - "https://en.wikipedia.org/wiki/Embedded_Zerotrees_of_Wavelet_transforms"
-      alias: integral-wavelet-transform
+      alias:
+       - integral-wavelet-transform
     
     - concept: way-below
       arity: 2
@@ -10566,7 +10933,9 @@ concepts:
       urls: 
        - "http://mizar.org/fm/1997-6/pdf6-1/waybel_3.pdf"
        - "https://en.wikipedia.org/wiki/Domain_theory"
-      alias: "way-inside, order-of-approximation"
+      alias:
+       - way-inside
+       - order-of-approximation
     
     - concept: weak-convergence
       arity: 2
@@ -10656,7 +11025,9 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/WeightedMean.html"
        - "https://en.wikipedia.org/wiki/Weighted_arithmetic_mean"
-      alias: "weighted-arithmetic-mean, weighted-average"
+      alias:
+       - weighted-arithmetic-mean
+       - weighted-average
     
     - concept: wheel-graph
       arity: 1
@@ -10850,7 +11221,8 @@ concepts:
       notation: "mi ω"
       urls: 
        - "https://en.wikipedia.org/wiki/Wright_Omega_function"
-      alias: wright-function
+      alias:
+       - wright-function
     
     - concept: writhe
       arity: 1
