@@ -2162,7 +2162,8 @@ concepts:
       en: "cross ratio of $1, $2, $3, $4"
       property: fenced
       area: "geometry"
-      notation: "mrow ( $1, $2 ; $3, $4"
+      comments:
+       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi>,</mo><mi>D</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cross-Ratio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -6094,7 +6095,8 @@ concepts:
       en: "lagrange bracket of $1, $2, canonical coordinates $3, $4"
       property: indexed fenced
       area: "classical mechanics"
-      notation: "msub<br/>mrow [ $1, $2] /mrow<br/>mrow $3, $4 /mrow"
+      comments:
+       - "<math><msub><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo></msub><mrow><mi>p</mi>,</mo><mi>q</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LagrangeBracket.html"
        - "https://en.wikipedia.org/wiki/Lagrange_bracket"
