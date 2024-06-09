@@ -1678,8 +1678,7 @@ concepts:
        - "https://mathworld.wolfram.com/CompleteGraph.html"
        - "https://en.wikipedia.org/wiki/Complete_graph"
       alias:
-       - Also complete bipartite graph: K_{n
-       - m}
+       - Also complete bipartite graph: K_{n,m}
     
     - concept: complex-conjugate
       arity: 1
