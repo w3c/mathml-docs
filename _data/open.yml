@@ -9133,10 +9133,12 @@ concepts:
     
     - concept: scalar-triple-product
       arity: 3
-      en: scalar triple product  of $1, $2 and $3
+      en: scalar-triple product  of $1, $2 and $3
       property: mixfix<br/>fenced
       area: "vector algebra"
-      notation: "mrow $1 ⋅ ( $2 × $3 )<br/>mrow [ $1 , $2 , $3 ]"
+      comments:
+       - "<math><mi>A</mi><mo>&cdot;</mo>(mrow><mo>(</mo><mi>B</mi><mo>&cdot;</mo><mi>C</mi><mo>)</mo></mrow></math>"
+       - "<math>mo>[</mo><mi>A</mi><mo>,</mo>(mrow><mi>B</mi><mo>,</mo><mi>C</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/ScalarTripleProduct.html"
        - "https://en.wikipedia.org/wiki/Triple_product"
