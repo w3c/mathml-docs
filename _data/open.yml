@@ -6096,7 +6096,7 @@ concepts:
       property: indexed fenced
       area: "classical mechanics"
       comments:
-       - "<math><msub><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi></msub><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msub></math>"
+       - "<math><msub><mrow><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi></mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LagrangeBracket.html"
        - "https://en.wikipedia.org/wiki/Lagrange_bracket"
@@ -9666,7 +9666,8 @@ concepts:
       en: "square $1 $2 $3 $4"
       property: prefix
       area: "geometry"
-      notation: "mrow ◻ $1 $2 $3 $4y"
+      comments:
+       - "<math><mo>&squ;</mo><mrow><mi>A</mi><mo>&thinsp;</mo><mi>B</mi><mo>&thinsp;</mo><mi>C</mi><mo>&thinsp;</mo><mi>D</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Square.html"
        - "https://en.wikipedia.org/wiki/Square"
