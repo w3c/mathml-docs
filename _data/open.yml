@@ -388,7 +388,8 @@ concepts:
       en: "anharmonic ratio of $1 , $2 , $3 , $4"
       property: fenced
       area: "geometry"
-      notation: "mrow ($1 , $2 ; $3 , $4"
+      comments:
+       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi>,</mo><mi>D</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/AnharmonicRatio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -1818,7 +1819,8 @@ concepts:
       en: "configuration $1 sub $2, $3 sub $4"
       property: mixfix
       area: "geometry"
-      notation: "(msub $1 $2 msub $3 $4"
+      comments:
+       - "<math><mo>(</mo><msub><mi>a</mi><mi>b</mi></msub><mo>,</mo><msub><mi>c</mi><mi>d</mi></msub><mo>)</mo></math>"     
       urls: 
        - "https://mathworld.wolfram.com/Configuration.html"
        - "https://en.wikipedia.org/wiki/Configuration_(geometry)"
@@ -9135,7 +9137,7 @@ concepts:
     
     - concept: scalar-triple-product
       arity: 3
-      en: scalar-triple product  of $1, $2 and $3
+      en: scalar triple product  of $1, $2 and $3
       property: mixfix<br/>fenced
       area: "vector algebra"
       comments:
