@@ -318,7 +318,8 @@ concepts:
       en: Free product with amalgamation of $1 and $3 with respect to $2
       property: indexed infix
       area: "group theory"
-      comment: "<math><mi>A</mi><msub><mo>⁎</mo><mi>C</mi></msub><mi>B</mi></math>"
+      comments:
+       - "<math><mi>A</mi><msub><mo>⁎</mo><mi>C</mi></msub><mi>B</mi></math>"
       urls: 
        - "https://math.stackexchange.com/questions/828828/amalgamated-product"
        - "https://en.wikipedia.org/wiki/Free_product"
@@ -3836,7 +3837,8 @@ concepts:
       en: $1 th forward difference of $3 over $2
       property: operator
       area: "numerical analysis"
-      comment: "<math><msubsup><mi>&Delta;</mi><mi>x</mi><mi>n</mi></msubsup><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+      comments:
+       - "<math><msubsup><mi>&Delta;</mi><mi>x</mi><mi>n</mi></msubsup><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ForwardDifference.html)"
        - "https://dlmf.nist.gov/18.1#EGx1"
@@ -9136,7 +9138,7 @@ concepts:
       en: scalar-triple product  of $1, $2 and $3
       property: mixfix<br/>fenced
       area: "vector algebra"
-      comment:
+      comments:
        - "<math><mi>A</mi><mo>&middot;</mo><mrow><mo>(</mo><mi>B</mi><mo>&middot;</mo><mi>C</mi><mo>)</mo></mrow></math>"
        - "<math><mo>[</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>]</mo></math>"
       urls: 
