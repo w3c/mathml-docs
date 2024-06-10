@@ -1399,7 +1399,7 @@ concepts:
       property: "indexed symbol"
       area: "Riemannian geometry"
       comments:
-       - "<math><multiscripts><mi>&Gamma;</mi><mrow/><mi>k</mi><mi>i</mi><mrow/><mi>j</mi><mrow/></multiscripts></math>"
+       - "<math><mmultiscripts><mi>&Gamma;</mi><mrow/><mi>k</mi><mi>i</mi><mrow/><mi>j</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChristoffelSymbol.html"
        - "https://en.wikipedia.org/wiki/Christoffel_symbols"
