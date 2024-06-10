@@ -33,7 +33,8 @@ concepts:
       en: abundance of $1
       property: prefix
       area: "number theory"
-      notation: "mi A"
+      comments:
+        - "<math><mrow><mi>A</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Abundance.html"
     
@@ -52,7 +53,8 @@ concepts:
       en: ackermann function of $1
       property: function
       area: "computability theory"
-      notation: "mi A"
+      comments:
+        - "<math><mrow><mi>A</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Ackermann_function"
        - "https://www.encyclopediaofmath.org/index.php/Ackermann_function"
@@ -146,7 +148,8 @@ concepts:
       en: adjoint representation of $1
       property: function
       area: "lie algebra"
-      notation: "mi Ad"
+      comments:
+        - "<math><mrow><mi>Ad</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdjointRepresentation.html"
        - "https://en.wikipedia.org/wiki/Adjoint_representation"
@@ -157,7 +160,8 @@ concepts:
       en: adjugate of $1
       property: function
       area: "linear algebra"
-      notation: "mi adj"
+      comments:
+        - "<math><mrow><mi>adj</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Adjugate_matrix"
     
@@ -166,7 +170,8 @@ concepts:
       en: affine group of $1
       property: function
       area: "group theory"
-      notation: "mi Aff"
+      comments:
+        - "<math><mrow><mi>Aff</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AffineGroup.html"
        - "https://en.wikipedia.org/wiki/Affine_group"
@@ -177,7 +182,8 @@ concepts:
       en: affine hull of $1
       property: function
       area: "affine geometry"
-      notation: "mi aff"
+      comments:
+        - "<math><mrow><mi>aff</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AffineHull.html"
        - "https://en.wikipedia.org/wiki/Affine_hull"
@@ -267,7 +273,8 @@ concepts:
       en: alternating factorial of $1
       property: function
       area: "functions"
-      notation: "mi af"
+      comments:
+        - "<math><mrow><mi>af</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Alternating_factorial"
     
@@ -351,7 +358,8 @@ concepts:
       en: anger function of $1
       property: function
       area: "special functions"
-      notation: "mi J"
+      comments:
+        - "<math><mrow><mi>J</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AngerFunction.html"
        - "https://en.wikipedia.org/wiki/Anger_function"
@@ -363,7 +371,8 @@ concepts:
       en: angle of parallelism of $1
       property: function
       area: "hyperbolic geometry"
-      notation: "mi Π"
+      comments:
+        - "<math><mrow><mi>Π</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AngleofParallelism.html"
        - "https://en.wikipedia.org/wiki/Angle_of_parallelism"
@@ -409,7 +418,8 @@ concepts:
       en: annihilator of $1
       property: function
       area: "ring theory"
-      notation: "mi Ann"
+      comments:
+        - "<math><mrow><mi>Ann</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Annihilator.html"
        - "https://en.wikipedia.org/wiki/Annihilator_(ring_theory)"
@@ -420,7 +430,8 @@ concepts:
       en: annulus of $1
       property: function
       area: "complex analysis"
-      notation: "mi ann"
+      comments:
+        - "<math><mrow><mi>ann</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Annulus_(mathematics)"
        - "https://ncatlab.org/nlab/show/annulus"
@@ -505,7 +516,8 @@ concepts:
       en: arf invariant of $1
       property: function
       area: "geometric topology"
-      notation: "mi Arf"
+      comments:
+        - "<math><mrow><mi>Arf</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ArfInvariant.html"
        - "https://en.wikipedia.org/wiki/Arf_invariant"
@@ -516,7 +528,8 @@ concepts:
       en: argument of $1
       property: function
       area: "complex analysis"
-      notation: "mi Arg"
+      comments:
+        - "<math><mrow><mi>Arg</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Argument_(complex_analysis)"
     
@@ -561,7 +574,8 @@ concepts:
       en: automorphism group of $1
       property: function
       area: "group theory"
-      notation: "mi Aut"
+      comments:
+        - "<math><mrow><mi>Aut</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AutomorphismGroup.html"
        - "https://en.wikipedia.org/wiki/Automorphism"
@@ -571,7 +585,8 @@ concepts:
       en: backward difference of $1
       property: operator
       area: "special functions"
-      notation: "mi ∇"
+      comments:
+        - "<math><mrow><mi>∇</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BackwardDifference.html"
        - "https://en.wikipedia.org/wiki/Finite_difference"
@@ -901,7 +916,8 @@ concepts:
       en: blaschke product of $1
       property: function
       area: "complex analysis"
-      notation: "mi B"
+      comments:
+        - "<math><mrow><mi>B</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BlaschkeProduct.html"
        - "https://en.wikipedia.org/wiki/Blaschke_product"
@@ -975,7 +991,8 @@ concepts:
       en: bounded variation of $1
       property: function
       area: "analysis"
-      notation: "mi BV"
+      comments:
+        - "<math><mrow><mi>BV</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BoundedVariation.html"
        - "https://en.wikipedia.org/wiki/Bounded_variation"
@@ -996,7 +1013,8 @@ concepts:
       en: brauer group of $1
       property: function
       area: "group theory"
-      notation: "mi Br"
+      comments:
+        - "<math><mrow><mi>Br</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BrauerGroup.html"
        - "https://en.wikipedia.org/wiki/Brauer_group"
@@ -1019,7 +1037,8 @@ concepts:
       en: burnside group of $1
       property: function
       area: "group theory"
-      notation: "mi B"
+      comments:
+        - "<math><mrow><mi>B</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Burnside_group"
     
@@ -1080,7 +1099,8 @@ concepts:
       en: carmichael function of $1
       property: function
       area: "number theory"
-      notation: "mi λ"
+      comments:
+        - "<math><mrow><mi>λ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CarmichaelFunction.html"
        - "https://en.wikipedia.org/wiki/Carmichael_function"
@@ -1219,7 +1239,8 @@ concepts:
       en: center of $1
       property: function
       area: "algebra"
-      notation: "mi Z"
+      comments:
+        - "<math><mrow><mi>Z</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Center_(group_theory)"
        - "https://en.wikipedia.org/wiki/Center_(algebra)"
@@ -1263,7 +1284,8 @@ concepts:
       en: character of $1
       property: "indexed function"
       area: "group theory"
-      notation: "mi χ"
+      comments:
+        - "<math><mrow><mi>χ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Character.html"
        - "https://en.wikipedia.org/wiki/Character_(mathematics)"
@@ -1277,7 +1299,8 @@ concepts:
       en: characteristic of $1
       property: function
       area: "ring theory"
-      notation: "mi char"
+      comments:
+        - "<math><mrow><mi>char</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Characteristic.html"
        - "https://en.wikipedia.org/wiki/Characteristic_(algebra)"
@@ -1354,7 +1377,8 @@ concepts:
       en: cheeger constant of $1
       property: function
       area: "Riemannian geometry"
-      notation: "mi h"
+      comments:
+        - "<math><mrow><mi>h</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cheeger_constant"
     
@@ -1363,7 +1387,8 @@ concepts:
       en: cheeger number of $1
       property: function
       area: "graph theory"
-      notation: "mi h"
+      comments:
+        - "<math><mrow><mi>h</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cheeger_constant_(graph_theory)"
       alias:
@@ -1397,7 +1422,8 @@ concepts:
       en: chord of $1
       property: function
       area: "geometry"
-      notation: "mi crd"
+      comments:
+        - "<math><mrow><mi>crd</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Chord_(geometry)"
     
@@ -1474,7 +1500,8 @@ concepts:
       en: clifford algebra of $1
       property: function
       area: "universal algebra"
-      notation: "mi Cl"
+      comments:
+        - "<math><mrow><mi>Cl</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Clifford_algebra"
     
@@ -1495,7 +1522,8 @@ concepts:
       en: clique number of $1
       property: function
       area: "graph theory"
-      notation: "mi ω"
+      comments:
+        - "<math><mrow><mi>ω</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Clique_number"
     
@@ -1548,7 +1576,8 @@ concepts:
       en: codimension of $1
       property: function
       area: "linear algebra"
-      notation: "mi codim"
+      comments:
+        - "<math><mrow><mi>codim</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Codimension.html"
        - "https://en.wikipedia.org/wiki/Codimension"
@@ -1560,7 +1589,8 @@ concepts:
       en: cofinality of $1
       property: function
       area: "order theory"
-      notation: "mi cf"
+      comments:
+        - "<math><mrow><mi>cf</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cofinality"
        - "https://ncatlab.org/nlab/show/cofinality"
@@ -1593,7 +1623,8 @@ concepts:
       en: coimage of $1
       property: function
       area: "abstract algebra"
-      notation: "mi coim"
+      comments:
+        - "<math><mrow><mi>coim</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Coimage"
        - "https://ncatlab.org/nlab/show/coimage"
@@ -1603,7 +1634,8 @@ concepts:
       en: cokernel of $1
       property: function
       area: "category theory"
-      notation: "mi coker"
+      comments:
+        - "<math><mrow><mi>coker</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cokernel.html"
        - "https://en.wikipedia.org/wiki/Cokernel"
@@ -1785,7 +1817,8 @@ concepts:
       en: condition number of $1
       property: function
       area: "numerical analysis"
-      notation: "mi κ"
+      comments:
+        - "<math><mrow><mi>κ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Condition_number"
        - "https://dlmf.nist.gov/3.2#SS5.p1"
@@ -1817,7 +1850,8 @@ concepts:
       en: conductor of $1
       property: function
       area: "algebraic number theory"
-      notation: "mi 𝔣⁢"
+      comments:
+        - "<math><mrow><mi>𝔣⁢</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Conductor_(class_field_theory)"
     
@@ -1877,7 +1911,8 @@ concepts:
       en: conjugacy class of $1
       property: function
       area: "group theory"
-      notation: "mi Cl"
+      comments:
+        - "<math><mrow><mi>Cl</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConjugacyClass.html"
        - "https://en.wikipedia.org/wiki/Conjugacy_class"
@@ -1909,7 +1944,8 @@ concepts:
       en: connectivity of $1
       property: function
       area: "graph theory"
-      notation: "mi κ"
+      comments:
+        - "<math><mrow><mi>κ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Connectivity.html"
        - "https://en.wikipedia.org/wiki/Connectivity_(graph_theory)"
@@ -2088,7 +2124,8 @@ concepts:
       en: correlation of $1
       property: function
       area: "statistics"
-      notation: "mi corr"
+      comments:
+        - "<math><mrow><mi>corr</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Correlation_and_dependence"
     
@@ -2109,7 +2146,8 @@ concepts:
       en: cosine integral of $1
       property: operator
       area: "special-functions"
-      notation: "mi Ci"
+      comments:
+        - "<math><mrow><mi>Ci</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CosineIntegral.html"
        - "https://dlmf.nist.gov/6.2#ii"
@@ -2134,7 +2172,8 @@ concepts:
       en: covariance of $1
       property: function
       area: "statistics"
-      notation: "mi cov"
+      comments:
+        - "<math><mrow><mi>cov</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Covariance.html"
        - "https://en.wikipedia.org/wiki/Covariance_operator"
@@ -2208,7 +2247,8 @@ concepts:
       en: crossing number of $1
       property: function
       area: "graph theory"
-      notation: "mi Cr"
+      comments:
+        - "<math><mrow><mi>Cr</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Crossing_number_(graph_theory)"
        - "https://en.wikipedia.org/wiki/Crossing_number_(knot_theory)"
@@ -2288,7 +2328,8 @@ concepts:
       en: curvature of $1
       property: function
       area: "differential geometry"
-      notation: "mi κ"
+      comments:
+        - "<math><mrow><mi>κ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Curvature.html"
        - "https://en.wikipedia.org/wiki/Geodesic_curvature"
@@ -2359,7 +2400,8 @@ concepts:
       en: davenport constant of $1
       property: function
       area: "group theory"
-      notation: "mi D"
+      comments:
+        - "<math><mrow><mi>D</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DavenportConstant.html"
        - "https://en.wikipedia.org/wiki/Davenport_constant"
@@ -2403,7 +2445,8 @@ concepts:
       en: dedekind eta function of $1
       property: function
       area: "special functions"
-      notation: "mi η"
+      comments:
+        - "<math><mrow><mi>η</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DedekindEtaFunction.html"
        - "https://en.wikipedia.org/wiki/Dedekind_eta_function"
@@ -2414,7 +2457,8 @@ concepts:
       en: dedekind zeta function of $1
       property: function
       area: "special functions"
-      notation: "mi ζ"
+      comments:
+        - "<math><mrow><mi>ζ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dedekind_zeta_function"
     
@@ -2458,7 +2502,8 @@ concepts:
       en: degree of graph of $1
       property: function
       area: "graph theory"
-      notation: "mi deg"
+      comments:
+        - "<math><mrow><mi>deg</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
       alias:
@@ -2481,7 +2526,8 @@ concepts:
       en: degree of mapping of $1
       property: function
       area: "topology"
-      notation: "mi deg"
+      comments:
+        - "<math><mrow><mi>deg</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping"
       alias:
@@ -2492,7 +2538,8 @@ concepts:
       en: degree of polynomial of $1
       property: function
       area: "polynomials"
-      notation: "mi deg"
+      comments:
+        - "<math><mrow><mi>deg</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_of_a_polynomial"
       alias:
@@ -2530,7 +2577,8 @@ concepts:
       en: derived category of $1
       property: function
       area: "category theory"
-      notation: "mi D"
+      comments:
+        - "<math><mrow><mi>D</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Derived_category"
        - "https://ncatlab.org/nlab/show/derived+category"
@@ -2552,7 +2600,8 @@ concepts:
       en: diagonal intersection of $1
       property: function
       area: "set theory"
-      notation: "mi Δ"
+      comments:
+        - "<math><mrow><mi>Δ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Diagonal_intersection"
     
@@ -2561,7 +2610,8 @@ concepts:
       en: diagonal matrix of $1
       property: function
       area: "linear algebra"
-      notation: "mi diag"
+      comments:
+        - "<math><mrow><mi>diag</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Diagonal_matrix"
     
@@ -2579,7 +2629,8 @@ concepts:
       en: dickman function of $1
       property: function
       area: "special functions"
-      notation: "mi ρ"
+      comments:
+        - "<math><mrow><mi>ρ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DickmanFunction.html"
        - "https://en.wikipedia.org/wiki/Dickman_function"
@@ -2603,7 +2654,8 @@ concepts:
       en: differential entropy of $1
       property: function
       area: "information theory"
-      notation: "mi h"
+      comments:
+        - "<math><mrow><mi>h</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DifferentialEntropy.html"
        - "https://en.wikipedia.org/wiki/Differential_entropy"
@@ -2698,7 +2750,8 @@ concepts:
       en: dirac delta function of $1
       property: function
       area: "analysis"
-      notation: "mi δ"
+      comments:
+        - "<math><mrow><mi>δ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiracDeltaFunction.html"
        - "https://en.wikipedia.org/wiki/Dirac_delta_function"
@@ -2723,7 +2776,8 @@ concepts:
       en: dirac measure of $1
       property: function
       area: "measure theory"
-      notation: "mi δ"
+      comments:
+        - "<math><mrow><mi>δ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dirac_measure"
     
@@ -2732,7 +2786,8 @@ concepts:
       en: dirac operator of $1
       property: function
       area: "differential operators"
-      notation: "mi D"
+      comments:
+        - "<math><mrow><mi>D</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiracOperator.html"
        - "https://en.wikipedia.org/wiki/Dirac_operator"
@@ -2794,7 +2849,8 @@ concepts:
       en: dirichlet character of $1
       property: function
       area: "special-functions"
-      notation: "mi χ"
+      comments:
+        - "<math><mrow><mi>χ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletCharacter.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_character"
@@ -2828,7 +2884,8 @@ concepts:
       en: dirichlet eta function of $1
       property: function
       area: "analytic number theory"
-      notation: "mi η"
+      comments:
+        - "<math><mrow><mi>η</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletEtaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%97(x)"
@@ -2850,7 +2907,8 @@ concepts:
       en: dirichlet l function of $1
       property: function
       area: "special-functions"
-      notation: "mi L"
+      comments:
+        - "<math><mrow><mi>L</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletL-Function.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_L-function"
@@ -2862,7 +2920,8 @@ concepts:
       en: discrete valuation of $1
       property: function
       area: "commutative algebra"
-      notation: "mi ν"
+      comments:
+        - "<math><mrow><mi>ν</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Discrete_valuation"
        - "https://ncatlab.org/nlab/show/discrete+valuation"
@@ -2957,7 +3016,8 @@ concepts:
       en: divisor function of $1
       property: indexed
       area: "number theory"
-      notation: "mi σ"
+      comments:
+        - "<math><mrow><mi>σ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DivisorFunction.html"
        - "https://en.wikipedia.org/wiki/D(n)"
@@ -2971,7 +3031,8 @@ concepts:
       en: domain of $1
       property: function
       area: "set theory"
-      notation: "mi dom"
+      comments:
+        - "<math><mrow><mi>dom</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Domain_of_a_function"
     
@@ -2992,7 +3053,8 @@ concepts:
       en: domination number of $1
       property: function
       area: "graph theory"
-      notation: "mi γ"
+      comments:
+        - "<math><mrow><mi>γ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DominationNumber.html"
        - "https://en.wikipedia.org/wiki/Dominating_set"
@@ -3061,7 +3123,8 @@ concepts:
       en: drinfeld center of $1
       property: prefix
       area: "category theory"
-      notation: "mi 𝒵"
+      comments:
+        - "<math><mrow><mi>𝒵</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Center_(category_theory)"
       alias:
@@ -3126,7 +3189,8 @@ concepts:
       en: e function of $1
       property: function
       area: "special functions"
-      notation: "mi E"
+      comments:
+        - "<math><mrow><mi>E</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/E-Function.html"
        - "https://en.wikipedia.org/wiki/E-function"
@@ -3149,7 +3213,8 @@ concepts:
       en: edge cover number of $1
       property: function
       area: "graph theory"
-      notation: "mi ρ"
+      comments:
+        - "<math><mrow><mi>ρ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EdgeCoverNumber.html"
        - "https://en.wikipedia.org/wiki/Edge_covering_number"
@@ -3159,7 +3224,8 @@ concepts:
       en: effective domain of $1
       property: function
       area: "convex analysis"
-      notation: "mi dom"
+      comments:
+        - "<math><mrow><mi>dom</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Effective_domain"
     
@@ -3168,7 +3234,8 @@ concepts:
       en: efficiency of $1
       property: function
       area: "statistics"
-      notation: "mi e"
+      comments:
+        - "<math><mrow><mi>e</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Antenna_efficiency"
        - "https://en.wikipedia.org/wiki/Efficiency_(statistics)"
@@ -3215,7 +3282,8 @@ concepts:
       en: endomorphism monoid of $1
       property: function
       area: "category theory"
-      notation: "mi End"
+      comments:
+        - "<math><mrow><mi>End</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Endomorphism.html"
        - "https://en.wikipedia.org/wiki/Endomorphism"
@@ -3247,7 +3315,8 @@ concepts:
       en: entropy of $1
       property: unit
       area: "physics"
-      notation: "mi S"
+      comments:
+        - "<math><mrow><mi>S</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Entropy"
        - "https://en.wikipedia.org/wiki/Entropy_(arrow_of_time)"
@@ -3260,7 +3329,8 @@ concepts:
       en: epigraph of $1
       property: function
       area: "analysis"
-      notation: "mi epi"
+      comments:
+        - "<math><mrow><mi>epi</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Epigraph_(mathematics)"
     
@@ -3279,7 +3349,8 @@ concepts:
       en: equalizer of $1
       property: function
       area: "set theory"
-      notation: "mi Eq"
+      comments:
+        - "<math><mrow><mi>Eq</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Equalizer.html"
        - "https://en.wikipedia.org/wiki/Equaliser_(mathematics)"
@@ -3444,7 +3515,8 @@ concepts:
       en: euler characteristic of $1
       property: function
       area: "algebraic topology"
-      notation: "mi χ"
+      comments:
+        - "<math><mrow><mi>χ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerCharacteristic.html"
        - "https://en.wikipedia.org/wiki/Euler_characteristic"
@@ -3456,7 +3528,8 @@ concepts:
       en: euler class of $1
       property: function
       area: "algebraic topology"
-      notation: "mi e"
+      comments:
+        - "<math><mrow><mi>e</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euler_class"
        - "https://ncatlab.org/nlab/show/Euler+class"
@@ -3535,7 +3608,8 @@ concepts:
       en: eulerian number of $1
       property: function
       area: "combinatorics"
-      notation: "mi A"
+      comments:
+        - "<math><mrow><mi>A</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerianNumber.html"
        - "https://en.wikipedia.org/wiki/Eulerian_number"
@@ -3597,7 +3671,8 @@ concepts:
       en: exponential integral of $1
       property: 
       area: 
-      notation: "mi Ei"
+      comments:
+        - "<math><mrow><mi>Ei</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExponentialIntegral.html"
        - "https://en.wikipedia.org/wiki/Exponential_integral"
@@ -3622,7 +3697,8 @@ concepts:
       en: exterior derivative of $1
       property: operator
       area: "differential forms"
-      notation: "mi d"
+      comments:
+        - "<math><mrow><mi>d</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExteriorDerivative.html"
        - "https://en.wikipedia.org/wiki/Exterior_derivative"
@@ -3632,7 +3708,8 @@ concepts:
       en: exterior algebra of $1
       property: function
       area: "multilinear algebra"
-      notation: "mi Λ"
+      comments:
+        - "<math><mrow><mi>Λ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Exterior_algebra"
     
@@ -3690,7 +3767,8 @@ concepts:
       en: fatou set of $1
       property: function
       area: "complex dynamics"
-      notation: "mi F"
+      comments:
+        - "<math><mrow><mi>F</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Julia_set"
     
@@ -3840,7 +3918,8 @@ concepts:
       en: fisher information of $1
       property: function
       area: "statistics"
-      notation: "mi I"
+      comments:
+        - "<math><mrow><mi>I</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FisherInformation.html"
        - "https://en.wikipedia.org/wiki/Fisher_information"
@@ -3877,7 +3956,8 @@ concepts:
       en: fock space of $1
       property: function
       area: "quantum mechanics"
-      notation: "mi F"
+      comments:
+        - "<math><mrow><mi>F</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fock_space"
        - "https://ncatlab.org/nlab/show/Fock+space"
@@ -3992,7 +4072,8 @@ concepts:
       en: franel number of $1
       property: "indexed symbol"
       area: "combinatorics"
-      notation: "mi Fr"
+      comments:
+        - "<math><mrow><mi>Fr</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FranelNumber.html"
     
@@ -4012,7 +4093,8 @@ concepts:
       en: frechet derivative of $1
       property: operator
       area: "banach spaces"
-      notation: "mi D"
+      comments:
+        - "<math><mrow><mi>D</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FrechetDerivative.html"
        - "https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative"
@@ -4036,7 +4118,8 @@ concepts:
       en: fredholm determinant of $1
       property: function
       area: "mathematical physics"
-      notation: "mi det"
+      comments:
+        - "<math><mrow><mi>det</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fredholm_determinant"
        - "https://ncatlab.org/nlab/show/Fredholm+determinant"
@@ -4162,7 +4245,8 @@ concepts:
       en: g function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "mi G"
+      comments:
+        - "<math><mrow><mi>G</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/G-Function.html"
        - "https://en.wikipedia.org/wiki/Meijer_G-function"
@@ -4174,7 +4258,8 @@ concepts:
       en: gabor transform of $1
       property: operator
       area: "integral transforms"
-      notation: "mi G"
+      comments:
+        - "<math><mrow><mi>G</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Gabor_transform"
        - "https://en.wikipedia.org/wiki/Gabor%E2%80%93Wigner_transform"
@@ -4185,7 +4270,8 @@ concepts:
       en: gain function of $1
       property: function
       area: "graph theory"
-      notation: "mi φ"
+      comments:
+        - "<math><mrow><mi>φ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Gain_graph"
        - "https://en.wikipedia.org/wiki/Gain_group"
@@ -4196,7 +4282,8 @@ concepts:
       en: galilean transformation of $1
       property: function
       area: "physics"
-      notation: "mi G"
+      comments:
+        - "<math><mrow><mi>G</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GalileanTransformation.html"
        - "https://en.wikipedia.org/wiki/Galilean_transformation"
@@ -4244,7 +4331,8 @@ concepts:
       en: gamma function of $1
       property: operator
       area: "special functions"
-      notation: "mi Γ"
+      comments:
+        - "<math><mrow><mi>Γ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GammaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%93(x)"
@@ -4273,7 +4361,8 @@ concepts:
       en: gauss of $1
       property: unit
       area: "physics"
-      notation: "mi G"
+      comments:
+        - "<math><mrow><mi>G</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Gauss_(unit)"
     
@@ -4296,7 +4385,8 @@ concepts:
       en: gaussian curvature of $1
       property: function
       area: "differential geometry"
-      notation: "mi Κ"
+      comments:
+        - "<math><mrow><mi>Κ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaussianCurvature.html"
        - "https://en.wikipedia.org/wiki/Gaussian_curvature"
@@ -4441,7 +4531,8 @@ concepts:
       en: geodesic distance of $1
       property: function
       area: "graph theory"
-      notation: "mi d"
+      comments:
+        - "<math><mrow><mi>d</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Distance_(graph_theory)"
        - "https://en.wikipedia.org/wiki/Diameter_(graph_theory)"
@@ -4475,7 +4566,8 @@ concepts:
       en: geometric mean of $1
       property: function
       area: "means"
-      notation: "mi GM"
+      comments:
+        - "<math><mrow><mi>GM</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeometricMean.html"
        - "https://en.wikipedia.org/wiki/Geometric_mean"
@@ -4589,7 +4681,8 @@ concepts:
       en: grassmannian of $1
       property: function
       area: "differential geometry"
-      notation: "mi Gr"
+      comments:
+        - "<math><mrow><mi>Gr</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Grassmannian.html"
        - "https://en.wikipedia.org/wiki/Grassmannian"
@@ -4600,7 +4693,8 @@ concepts:
       en: green function of $1
       property: function
       area: "mathematical physics"
-      notation: "mi G"
+      comments:
+        - "<math><mrow><mi>G</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GreensFunction.html"
        - "https://en.wikipedia.org/wiki/Green%27s_function_(many-body_theory)"
@@ -4657,7 +4751,8 @@ concepts:
       en: gudermannian function of $1
       property: function
       area: "trigonometry"
-      notation: "mi gd"
+      comments:
+        - "<math><mrow><mi>gd</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GudermannianFunction.html"
        - "https://en.wikipedia.org/wiki/Gudermannian_function"
@@ -4709,7 +4804,8 @@ concepts:
       en: hankel function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HankelFunction.html"
        - "https://dlmf.nist.gov/10.1"
@@ -4743,7 +4839,8 @@ concepts:
       en: hardy littlewood maximal operator of $1
       property: operator
       area: "real analysis"
-      notation: "mi M"
+      comments:
+        - "<math><mrow><mi>M</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hardy%E2%80%93Littlewood_maximal_function"
       alias:
@@ -4754,7 +4851,8 @@ concepts:
       en: harmonic mean of $1
       property: function
       area: "means"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HarmonicMean.html"
        - "https://en.wikipedia.org/wiki/Harmonic_mean"
@@ -4798,7 +4896,8 @@ concepts:
       en: hazard function of $1
       property: function
       area: "engineering"
-      notation: "mi h"
+      comments:
+        - "<math><mrow><mi>h</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HazardFunction.html"
       alias:
@@ -4809,7 +4908,8 @@ concepts:
       en: heaviside function of $1
       property: function
       area: "special functions"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/1.16#E13)[https://en.wikipedia.org/wiki/Heaviside_step_function"
        - "https://en.wikipedia.org/wiki/Heaviside_step_function"
@@ -4823,7 +4923,8 @@ concepts:
       en: heawood number of $1
       property: function
       area: "topological graph theory"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Heawood_number"
     
@@ -4860,7 +4961,8 @@ concepts:
       en: height of prime ideal of $1
       property: function
       area: "commutative algebra"
-      notation: "mi ht"
+      comments:
+        - "<math><mrow><mi>ht</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Krull_dimension#height"
       alias:
@@ -4873,7 +4975,8 @@ concepts:
       en: heisenberg group
       property: symbol
       area: "group theory"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HeisenbergGroup.html"
        - "https://en.wikipedia.org/wiki/Heisenberg_group"
@@ -4920,7 +5023,8 @@ concepts:
       en: heronian mean of $1
       property: function
       area: "means"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HeronianMean.html"
        - "https://en.wikipedia.org/wiki/Heronian_mean"
@@ -4930,7 +5034,8 @@ concepts:
       en: hessian of $1
       property: operator
       area: "differential operators"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Hessian.html"
        - "https://en.wikipedia.org/wiki/Hessian_matrix"
@@ -4955,7 +5060,8 @@ concepts:
       en: heun polynomial of $1
       property: function
       area: "special functions"
-      notation: "mi Hp"
+      comments:
+        - "<math><mrow><mi>Hp</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Heun_function"
        - "https://dlmf.nist.gov/31.5#p1"
@@ -5017,7 +5123,8 @@ concepts:
       en: holomorph of $1
       property: function
       area: "group theory"
-      notation: "mi Hol"
+      comments:
+        - "<math><mrow><mi>Hol</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Holomorph_(mathematics)"
        - "https://ncatlab.org/nlab/show/holomorph"
@@ -5027,7 +5134,8 @@ concepts:
       en: holonomy group of $1
       property: "indexed symbol"
       area: "differential geometry"
-      notation: "mi Hol"
+      comments:
+        - "<math><mrow><mi>Hol</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Holonomy.html"
        - "https://en.wikipedia.org/wiki/Holonomy"
@@ -5038,7 +5146,8 @@ concepts:
       en: home prime of $1
       property: function
       area: "number theory"
-      notation: "mi HP"
+      comments:
+        - "<math><mrow><mi>HP</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HomePrime.html"
        - "https://en.wikipedia.org/wiki/Home_prime"
@@ -5068,7 +5177,8 @@ concepts:
       en: homotopy category of $1
       property: function
       area: "category theory"
-      notation: "mi Ho"
+      comments:
+        - "<math><mrow><mi>Ho</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/homotopy+category"
     
@@ -5077,7 +5187,8 @@ concepts:
       en: horsepower mechanical of $1
       property: unit
       area: "imperial unit"
-      notation: "mi hp"
+      comments:
+        - "<math><mrow><mi>hp</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Horsepower"
       alias:
@@ -5099,7 +5210,8 @@ concepts:
       en: hurwitz zeta function of $1
       property: function
       area: "special functions"
-      notation: "mi ζ"
+      comments:
+        - "<math><mrow><mi>ζ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HurwitzZetaFunction.html"
        - "https://en.wikipedia.org/wiki/Hurwitz_zeta_function"
@@ -5111,7 +5223,8 @@ concepts:
       en: hvat of $1
       property: unit
       area: "customary units"
-      notation: "mi hvat"
+      comments:
+        - "<math><mrow><mi>hvat</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kubni_hvat"
        - "https://en.wikipedia.org/wiki/%C4%8Cetvorni_hvat"
@@ -5134,7 +5247,8 @@ concepts:
       en: hyperbolic cosine integral of $1
       property: function
       area: "special functions"
-      notation: "mi Chi"
+      comments:
+        - "<math><mrow><mi>Chi</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HyperbolicCosineIntegral.html"
        - "https://dlmf.nist.gov/6.2#E16"
@@ -5154,7 +5268,8 @@ concepts:
       en: hyperbolic sine integral of $1
       property: function
       area: "special functions"
-      notation: "mi Shi"
+      comments:
+        - "<math><mrow><mi>Shi</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HyperbolicSineIntegral.html"
        - "https://dlmf.nist.gov/6.2#E15"
@@ -5308,7 +5423,8 @@ concepts:
       en: inclusion map of $1
       property: function
       area: "set theory"
-      notation: "mi ι"
+      comments:
+        - "<math><mrow><mi>ι</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Inclusion_map"
       alias:
@@ -5332,7 +5448,8 @@ concepts:
       en: incomplete beta function of $1
       property: function
       area: "special functions"
-      notation: "mi B"
+      comments:
+        - "<math><mrow><mi>B</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/IncompleteBetaFunction.html"
        - "https://dlmf.nist.gov/8.17"
@@ -5344,7 +5461,8 @@ concepts:
       en: incomplete elliptic integral of the first kind of $1
       property: function
       area: "elliptic functions"
-      notation: "mi F"
+      comments:
+        - "<math><mrow><mi>F</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EllipticIntegral.html"
        - "https://en.wikipedia.org/wiki/Elliptic_integral"
@@ -5355,7 +5473,8 @@ concepts:
       en: incomplete elliptic integral of the second kind of $1
       property: function
       area: "elliptic functions"
-      notation: "mi E"
+      comments:
+        - "<math><mrow><mi>E</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EllipticIntegral.html"
        - "https://en.wikipedia.org/wiki/Elliptic_integral"
@@ -5366,7 +5485,8 @@ concepts:
       en: incomplete gamma function of $1
       property: function
       area: "special functions"
-      notation: "mi Γ"
+      comments:
+        - "<math><mrow><mi>Γ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/IncompleteGammaFunction.html"
        - "https://en.wikipedia.org/wiki/Incomplete_gamma_function"
@@ -5420,7 +5540,8 @@ concepts:
       en: index of lie algebra of $1
       property: function
       area: "lie algebra"
-      notation: "mi ind"
+      comments:
+        - "<math><mrow><mi>ind</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Index_of_a_Lie_algebra"
     
@@ -5489,7 +5610,8 @@ concepts:
       en: inner automorphism group of $1
       property: function
       area: "abstract algebra"
-      notation: "mi Inn"
+      comments:
+        - "<math><mrow><mi>Inn</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InnerAutomorphism.html"
        - "https://en.wikipedia.org/wiki/Inner_automorphism"
@@ -5687,7 +5809,8 @@ concepts:
       en: j invariant of $1
       property: function
       area: "number theory"
-      notation: "mi j"
+      comments:
+        - "<math><mrow><mi>j</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/j-Invariant.html"
        - "https://ncatlab.org/nlab/show/j-invariant"
@@ -5697,7 +5820,8 @@ concepts:
       en: jacobi matrix of $1
       property: function
       area: "operator theory"
-      notation: "mi J"
+      comments:
+        - "<math><mrow><mi>J</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiMatrix.html"
        - "https://en.wikipedia.org/wiki/Jacobi_operator"
@@ -5736,7 +5860,8 @@ concepts:
       en: jacobi theta function of $1
       property: function
       area: "special-functions"
-      notation: "mi ϑ"
+      comments:
+        - "<math><mrow><mi>ϑ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiThetaFunctions.html"
        - "https://en.wikipedia.org/wiki/Jacobi_theta_functions_(notational_variations)"
@@ -5829,7 +5954,8 @@ concepts:
       en: jone polynomial of $1
       property: function
       area: "knot theory"
-      notation: "mi V"
+      comments:
+        - "<math><mrow><mi>V</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JonesPolynomial.html"
        - "https://en.wikipedia.org/wiki/Jones_polynomial"
@@ -5852,7 +5978,8 @@ concepts:
       en: jordan measure of $1
       property: function
       area: "measure theory"
-      notation: "mi m"
+      comments:
+        - "<math><mrow><mi>m</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JordanMeasure.html"
        - "https://en.wikipedia.org/wiki/Jordan_measure"
@@ -5872,7 +5999,8 @@ concepts:
       en: julia set of $1
       property: function
       area: "complex dynamics"
-      notation: "mi J"
+      comments:
+        - "<math><mrow><mi>J</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JuliaSet.html"
        - "https://en.wikipedia.org/wiki/Julia_set"
@@ -5922,7 +6050,8 @@ concepts:
       en: kernel of $1
       property: function
       area: "linear algebra"
-      notation: "mi ker"
+      comments:
+        - "<math><mrow><mi>ker</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Kernel.html"
        - "https://en.wikipedia.org/wiki/Kernel_(algebra)"
@@ -5952,7 +6081,8 @@ concepts:
       en: killing form of $1
       property: function
       area: "lie algebra"
-      notation: "mi B"
+      comments:
+        - "<math><mrow><mi>B</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KillingForm.html"
        - "https://en.wikipedia.org/wiki/Killing_form"
@@ -6012,7 +6142,8 @@ concepts:
       en: knodel number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "mi K"
+      comments:
+        - "<math><mrow><mi>K</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KnoedelNumbers.html"
        - "https://en.wikipedia.org/wiki/Kn%C3%B6del_number"
@@ -6022,7 +6153,8 @@ concepts:
       en: kodaira dimension of $1
       property: function
       area: "algebraic geometry"
-      notation: "mi κ"
+      comments:
+        - "<math><mrow><mi>κ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kodaira_dimension"
        - "https://www.encyclopediaofmath.org/index.php/Kodaira_dimension"
@@ -6032,7 +6164,8 @@ concepts:
       en: kolmogorov complexity of $1
       property: function
       area: "information theory"
-      notation: "mi K"
+      comments:
+        - "<math><mrow><mi>K</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KolmogorovComplexity.html"
        - "https://en.wikipedia.org/wiki/Kolmogorov_complexity"
@@ -6051,7 +6184,8 @@ concepts:
       en: kontsevich integral of $1
       property: function
       area: "knot theory"
-      notation: "mi Z"
+      comments:
+        - "<math><mrow><mi>Z</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KontsevichIntegral.html"
        - "https://en.wikipedia.org/wiki/Kontsevich_invariant"
@@ -6122,7 +6256,8 @@ concepts:
       en: krull dimension of $1
       property: function
       area: "commutative algebra"
-      notation: "mi dim"
+      comments:
+        - "<math><mrow><mi>dim</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KrullDimension.html"
        - "https://en.wikipedia.org/wiki/Krull_dimension"
@@ -6197,7 +6332,8 @@ concepts:
       en: laguerre polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
-      notation: "mi L"
+      comments:
+        - "<math><mrow><mi>L</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LaguerrePolynomial.html"
        - "https://en.wikipedia.org/wiki/Laguerre_polynomials"
@@ -6232,7 +6368,8 @@ concepts:
       en: laplace transform of $1
       property: operator
       area: "integral transforms"
-      notation: "mi ℒ⁡"
+      comments:
+        - "<math><mrow><mi>ℒ⁡</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LaplaceTransform.html"
        - "https://en.wikipedia.org/wiki/Laplace_transform"
@@ -6279,7 +6416,8 @@ concepts:
       en: least prime factor of $1
       property: function
       area: "number theory"
-      notation: "mi lpf"
+      comments:
+        - "<math><mrow><mi>lpf</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LeastPrimeFactor.html"
     
@@ -6432,7 +6570,8 @@ concepts:
       en: levy prokhorov metric of $1
       property: function
       area: "measure theory"
-      notation: "mi π"
+      comments:
+        - "<math><mrow><mi>π</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/L%C3%A9vy%E2%80%93Prokhorov_metric"
        - "https://encyclopediaofmath.org/wiki/L%C3%A9vy-Prokhorov_metric"
@@ -6497,7 +6636,8 @@ concepts:
       en: line graph of $1
       property: function
       area: "graph theory"
-      notation: "mi L"
+      comments:
+        - "<math><mrow><mi>L</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LineGraph.html"
        - "https://en.wikipedia.org/wiki/Line_graph"
@@ -6523,7 +6663,8 @@ concepts:
       en: linear span of $1
       property: function
       area: "linear algebra"
-      notation: "mi span"
+      comments:
+        - "<math><mrow><mi>span</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LinearSpan.html"
        - "https://en.wikipedia.org/wiki/Linear_span"
@@ -6536,7 +6677,8 @@ concepts:
       en: link of $1
       property: function
       area: "graph theory"
-      notation: "mi Lk"
+      comments:
+        - "<math><mrow><mi>Lk</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Link.html"
     
@@ -6566,7 +6708,8 @@ concepts:
       en: liouville function of $1
       property: function
       area: "number theory"
-      notation: "mi λ"
+      comments:
+        - "<math><mrow><mi>λ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LiouvilleFunction.html"
        - "https://en.wikipedia.org/wiki/Liouville_function"
@@ -6590,7 +6733,8 @@ concepts:
       en: logarithmic integral of $1
       property: function
       area: "special functions"
-      notation: "mi li"
+      comments:
+        - "<math><mrow><mi>li</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LogarithmicIntegral.html"
        - "https://dlmf.nist.gov/6.2#i"
@@ -6612,7 +6756,8 @@ concepts:
       en: logit of $1
       property: function
       area: "statistics"
-      notation: "mi logit"
+      comments:
+        - "<math><mrow><mi>logit</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Logit"
     
@@ -6644,7 +6789,8 @@ concepts:
       en: loop space of $1
       property: function
       area: "topology"
-      notation: "mi Ω"
+      comments:
+        - "<math><mrow><mi>Ω</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LoopSpace.html"
        - "https://en.wikipedia.org/wiki/Loop_space"
@@ -6718,7 +6864,8 @@ concepts:
       en: lyapunov candidate function of $1
       property: function
       area: "stability theory"
-      notation: "mi V"
+      comments:
+        - "<math><mrow><mi>V</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LyapunovFunction.html"
        - "https://en.wikipedia.org/wiki/Lyapunov_function"
@@ -6741,7 +6888,8 @@ concepts:
       en: mahler measure of $1
       property: function
       area: "number theory"
-      notation: "mi M"
+      comments:
+        - "<math><mrow><mi>M</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MahlerMeasure.html"
        - "https://en.wikipedia.org/wiki/Mahler_measure"
@@ -6752,7 +6900,8 @@ concepts:
       en: mangoldt function of $1
       property: function
       area: "special functions"
-      notation: "mi Λ"
+      comments:
+        - "<math><mrow><mi>Λ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MangoldtFunction.html"
        - "https://dlmf.nist.gov/27.2#E14"
@@ -6765,7 +6914,8 @@ concepts:
       en: mapping class group of $1
       property: function
       area: "geometric topology"
-      notation: "mi MCG"
+      comments:
+        - "<math><mrow><mi>MCG</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Mapping_class_group"
        - "https://ncatlab.org/nlab/show/mapping+class+group"
@@ -6888,7 +7038,8 @@ concepts:
       en: maximum degree of $1
       property: function
       area: "graph theory"
-      notation: "mi Δ"
+      comments:
+        - "<math><mrow><mi>Δ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MaximumDegree.html"
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
@@ -6899,7 +7050,8 @@ concepts:
       en: mean curvature of $1
       property: function
       area: "differential geometry"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MeanCurvature.html"
        - "https://en.wikipedia.org/wiki/Mean_curvature"
@@ -6910,7 +7062,8 @@ concepts:
       en: mean squared error of $1
       property: function
       area: "statistics"
-      notation: "mi MSE"
+      comments:
+        - "<math><mrow><mi>MSE</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Mean_squared_error"
     
@@ -6919,7 +7072,8 @@ concepts:
       en: meixner pollaczek polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
-      notation: "mi P"
+      comments:
+        - "<math><mrow><mi>P</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Meixner-PollaczekPolynomial.html"
        - "https://en.wikipedia.org/wiki/Meixner%E2%80%93Pollaczek_polynomials"
@@ -6930,7 +7084,8 @@ concepts:
       en: mellin transform of $1
       property: operator
       area: "integral transforms"
-      notation: "mi ℳ"
+      comments:
+        - "<math><mrow><mi>ℳ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MellinTransform.html"
        - "https://en.wikipedia.org/wiki/Mellin_transform"
@@ -6942,7 +7097,8 @@ concepts:
       en: meridian radius of curvature of $1
       property: function
       area: "geodesy"
-      notation: "mi M"
+      comments:
+        - "<math><mrow><mi>M</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Meridian_arc"
        - "https://en.wikipedia.org/wiki/Meridian_arc"
@@ -6952,7 +7108,8 @@ concepts:
       en: meridian distance of $1
       property: function
       area: "geodesy"
-      notation: "mi m"
+      comments:
+        - "<math><mrow><mi>m</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Meridian.html"
     
@@ -6982,7 +7139,8 @@ concepts:
       en: merten function of $1
       property: function
       area: "number theory"
-      notation: "mi M"
+      comments:
+        - "<math><mrow><mi>M</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MertensFunction.html"
        - "https://en.wikipedia.org/wiki/Mertens_function"
@@ -7035,7 +7193,8 @@ concepts:
       en: minimum degree of $1
       property: function
       area: "graph theory"
-      notation: "mi δ<br/>"
+      comments:
+        - "<math><mrow><mi>δ<br/></mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MinimumDegree.html"
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
@@ -7081,7 +7240,8 @@ concepts:
       en: mobius function of $1
       property: function
       area: "number theory"
-      notation: "mi μ"
+      comments:
+        - "<math><mrow><mi>μ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MoebiusFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%9C(n)"
@@ -7158,7 +7318,8 @@ concepts:
       en: modular discriminant of $1
       property: operator
       area: "special functions"
-      notation: "mi Δ<br/>"
+      comments:
+        - "<math><mrow><mi>Δ<br/></mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ModularDiscriminant.html"
        - "https://en.wikipedia.org/wiki/Modular_form#The_modular_discriminant"
@@ -7182,7 +7343,8 @@ concepts:
       en: moebius function of $1
       property: function
       area: "number theory"
-      notation: "mi μ"
+      comments:
+        - "<math><mrow><mi>μ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Moebius_function"
        - "https://en.wikipedia.org/wiki/M%C3%B6bius_function"
@@ -7394,7 +7556,8 @@ concepts:
       en: mutual information of $1
       property: function
       area: "information theory"
-      notation: "mi I"
+      comments:
+        - "<math><mrow><mi>I</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MutualInformation.html"
        - "https://en.wikipedia.org/wiki/Mutual_information"
@@ -7442,7 +7605,8 @@ concepts:
       en: negative hypergeometric distribution of $1
       property: "indexed symbol"
       area: "probability theory"
-      notation: "mi NHG"
+      comments:
+        - "<math><mrow><mi>NHG</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Negative_hypergeometric_distribution"
        - "https://www.encyclopediaofmath.org/index.php/Negative_hypergeometric_distribution"
@@ -7463,7 +7627,8 @@ concepts:
       en: neighbourhood filter of $1
       property: function
       area: "topology"
-      notation: "mi 𝒩"
+      comments:
+        - "<math><mrow><mi>𝒩</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Neighbourhood_system"
       alias:
@@ -7475,7 +7640,8 @@ concepts:
       en: neron severi group of $1
       property: function
       area: "group theory"
-      notation: "mi NS"
+      comments:
+        - "<math><mrow><mi>NS</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Neron-SeveriGroup.html"
        - "https://encyclopediaofmath.org/wiki/N%C3%A9ron-Severi_group"
@@ -7496,7 +7662,8 @@ concepts:
       en: nerve of $1
       property: function
       area: "category theory"
-      notation: "mi N"
+      comments:
+        - "<math><mrow><mi>N</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Nerve.html"
        - "https://en.wikipedia.org/wiki/Nerve_(category_theory)"
@@ -7507,7 +7674,8 @@ concepts:
       en: nome of $1
       property: function
       area: "special functions"
-      notation: "mi q"
+      comments:
+        - "<math><mrow><mi>q</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Nome.html"
        - "https://en.wikipedia.org/wiki/Nome_(mathematics)"
@@ -7596,7 +7764,8 @@ concepts:
       en: object of $1
       property: prefix
       area: "category theory"
-      notation: "mi Obj"
+      comments:
+        - "<math><mrow><mi>Obj</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Object.html"
        - "https://en.wikipedia.org/wiki/Lattice-based_access_control"
@@ -7644,7 +7813,8 @@ concepts:
       en: onsager machlup function of $1
       property: function
       area: "functional analysis"
-      notation: "mi L"
+      comments:
+        - "<math><mrow><mi>L</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Onsager%E2%80%93Machlup_function"
        - "https://www.encyclopediaofmath.org/index.php/Onsager-Machlup_function"
@@ -7755,7 +7925,8 @@ concepts:
       en: orthogonal group of $1
       property: function
       area: "group theory"
-      notation: "mi O"
+      comments:
+        - "<math><mrow><mi>O</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OrthogonalGroup.html"
        - "https://en.wikipedia.org/wiki/Orthogonal_group"
@@ -7768,7 +7939,8 @@ concepts:
       en: outer automorphism group of $1
       property: function
       area: "abstract algebra"
-      notation: "mi Out"
+      comments:
+        - "<math><mrow><mi>Out</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OuterAutomorphismGroup.html"
        - "https://en.wikipedia.org/wiki/Outer_automorphism_group"
@@ -7826,7 +7998,8 @@ concepts:
       en: padovan sequence of $1
       property: function
       area: "number theory"
-      notation: "mi P"
+      comments:
+        - "<math><mrow><mi>P</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PadovanSequence.html"
        - "https://en.wikipedia.org/wiki/Padovan_sequence"
@@ -7901,7 +8074,8 @@ concepts:
       en: partition function of $1
       property: function
       area: "number theory"
-      notation: "mi p"
+      comments:
+        - "<math><mrow><mi>p</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Partition_(number_theory)"
     
@@ -7972,7 +8146,8 @@ concepts:
       en: permanent of $1
       property: function
       area: "linear algebra"
-      notation: "mi perm"
+      comments:
+        - "<math><mrow><mi>perm</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Permanent.html"
        - "https://en.wikipedia.org/wiki/Permanent"
@@ -8006,7 +8181,8 @@ concepts:
       en: perrin sequence of $1
       property: function
       area: "number theory"
-      notation: "mi P"
+      comments:
+        - "<math><mrow><mi>P</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PerrinNumber.html"
        - "https://en.wikipedia.org/wiki/Perrin_number"
@@ -8065,7 +8241,8 @@ concepts:
       en: picard group of $1
       property: function
       area: "group theory"
-      notation: "mi Pic"
+      comments:
+        - "<math><mrow><mi>Pic</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PicardGroup.html"
        - "https://en.wikipedia.org/wiki/Picard_group"
@@ -8195,7 +8372,8 @@ concepts:
       en: polygamma function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "mi ψ"
+      comments:
+        - "<math><mrow><mi>ψ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PolygammaFunction.html"
        - "https://en.wikipedia.org/wiki/Polygamma_function"
@@ -8326,7 +8504,8 @@ concepts:
       en: prime counting function of $1
       property: function
       area: "number theory"
-      notation: "mi π"
+      comments:
+        - "<math><mrow><mi>π</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PrimeCountingFunction.html"
     
@@ -8335,7 +8514,8 @@ concepts:
       en: prime difference function of $1
       property: "indexed function"
       area: "number theory"
-      notation: "mi d"
+      comments:
+        - "<math><mrow><mi>d</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PrimeDifferenceFunction.html"
     
@@ -8364,7 +8544,8 @@ concepts:
       en: principal value of $1
       property: function
       area: "complex analysis"
-      notation: "mi Log"
+      comments:
+        - "<math><mrow><mi>Log</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Complex_logarithm#Principal_value"
     
@@ -8373,7 +8554,8 @@ concepts:
       en: probability limit of $1
       property: "indexed function"
       area: "probability theory"
-      notation: "mi plim"
+      comments:
+        - "<math><mrow><mi>plim</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability"
       alias:
@@ -8405,7 +8587,8 @@ concepts:
       en: projective line of $1
       property: function
       area: "projective geometry"
-      notation: "mi P"
+      comments:
+        - "<math><mrow><mi>P</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Projective_line"
        - "https://ncatlab.org/nlab/show/projective+line"
@@ -8652,7 +8835,8 @@ concepts:
       en: radical of $1
       property: function
       area: "number theory"
-      notation: "mi rad"
+      comments:
+        - "<math><mrow><mi>rad</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Radical.html"
        - "https://en.wikipedia.org/wiki/Radical_of_a_Lie_algebra"
@@ -8692,7 +8876,8 @@ concepts:
       en: ramanujan tau function of $1
       property: function
       area: "number theory"
-      notation: "mi τ"
+      comments:
+        - "<math><mrow><mi>τ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RamanujansTauFunction.html"
        - "https://en.wikipedia.org/wiki/Ramanujan_tau_function"
@@ -8727,7 +8912,8 @@ concepts:
       en: ramsey number of $1
       property: function
       area: "graph theory"
-      notation: "mi R"
+      comments:
+        - "<math><mrow><mi>R</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RamseyNumber.html"
        - "https://www.encyclopediaofmath.org/index.php/Ramsey_number"
@@ -8795,7 +8981,8 @@ concepts:
       en: recession cone of $1
       property: function
       area: "convex analysis"
-      notation: "mi recc"
+      comments:
+        - "<math><mrow><mi>recc</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Recession_cone"
     
@@ -8816,7 +9003,8 @@ concepts:
       en: rectification of $1
       property: function
       area: "euclidean geometry"
-      notation: "mi r"
+      comments:
+        - "<math><mrow><mi>r</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Rectification.html"
        - "https://en.wikipedia.org/wiki/Rectification_(geometry)"
@@ -8827,7 +9015,8 @@ concepts:
       en: reduced suspension of $1
       property: function
       area: "topology"
-      notation: "mi Σ"
+      comments:
+        - "<math><mrow><mi>Σ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Suspension_(topology)"
     
@@ -8836,7 +9025,8 @@ concepts:
       en: relative homology of $1
       property: "indexed function"
       area: "algebraic topology"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Relative_homology"
        - "https://ncatlab.org/nlab/show/relative+homology"
@@ -8847,7 +9037,8 @@ concepts:
       en: repunit of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "mi R"
+      comments:
+        - "<math><mrow><mi>R</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Repunit.html"
        - "https://en.wikipedia.org/wiki/Repunit"
@@ -8880,7 +9071,8 @@ concepts:
       en: resolvent set of $1
       property: function
       area: "set theory"
-      notation: "mi ρ"
+      comments:
+        - "<math><mrow><mi>ρ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Resolvent_set"
        - "https://www.encyclopediaofmath.org/index.php/Resolvent_set"
@@ -8971,7 +9163,8 @@ concepts:
       en: ricci tensor of $1
       property: "indexed symbol"
       area: "riemannian geometry"
-      notation: "mi R"
+      comments:
+        - "<math><mrow><mi>R</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RicciTensor.html"
        - "https://www.encyclopediaofmath.org/index.php/Ricci_tensor"
@@ -9011,7 +9204,8 @@ concepts:
       en: riemann theta function of $1
       property: function
       area: "special functions"
-      notation: "mi θ⁡"
+      comments:
+        - "<math><mrow><mi>θ⁡</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannThetaFunction.html"
        - "https://dlmf.nist.gov/21.2#i"
@@ -9022,7 +9216,8 @@ concepts:
       en: riemann zeta function of $1
       property: function
       area: "special functions"
-      notation: "mi ζ"
+      comments:
+        - "<math><mrow><mi>ζ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannZetaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%96(x)"
@@ -9037,7 +9232,8 @@ concepts:
       en: riemann christoffel tensor of $1
       property: "indexed function"
       area: "riemannian geometry"
-      notation: "mi R"
+      comments:
+        - "<math><mrow><mi>R</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Riemann-ChristoffelTensor.html"
        - "https://en.wikipedia.org/wiki/Riemann_curvature_tensor"
@@ -9271,7 +9467,8 @@ concepts:
       en: schur multiplier of $1
       property: function
       area: "group theory"
-      notation: "mi M"
+      comments:
+        - "<math><mrow><mi>M</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SchurMultiplier.html"
        - "https://en.wikipedia.org/wiki/Schur_multiplier"
@@ -9399,7 +9596,8 @@ concepts:
       en: shimura variety of $1
       property: function
       area: "algebraic geometry"
-      notation: "mi Sh"
+      comments:
+        - "<math><mrow><mi>Sh</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Shimura_variety"
        - "https://ncatlab.org/nlab/show/Shimura+variety"
@@ -9446,7 +9644,8 @@ concepts:
       en: sign function of $1
       property: function
       area: "special-functions"
-      notation: "mi sgn"
+      comments:
+        - "<math><mrow><mi>sgn</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Sign_function"
       alias:
@@ -9457,7 +9656,8 @@ concepts:
       en: signature of permutation of $1
       property: function
       area: "combinatorics"
-      notation: "mi sign"
+      comments:
+        - "<math><mrow><mi>sign</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/signature+of+a+permutation"
       alias:
@@ -9513,7 +9713,8 @@ concepts:
       en: sine integral of $1
       property: operator
       area: "special functions"
-      notation: "mi Si"
+      comments:
+        - "<math><mrow><mi>Si</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SineIntegral.html"
        - "https://dlmf.nist.gov/6.2#ii"
@@ -9545,7 +9746,8 @@ concepts:
       en: small o of $1
       property: prefix
       area: "complexity"
-      notation: "mi o"
+      comments:
+        - "<math><mrow><mi>o</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Big_O_notation"
        - "https://mathworld.wolfram.com/o.html"
@@ -9555,7 +9757,8 @@ concepts:
       en: smith number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "mi S"
+      comments:
+        - "<math><mrow><mi>S</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SmithNumber.html"
        - "https://en.wikipedia.org/wiki/Smith_number"
@@ -9577,7 +9780,8 @@ concepts:
       en: socle of $1
       property: function
       area: "group theory"
-      notation: "mi soc"
+      comments:
+        - "<math><mrow><mi>soc</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Socle.html"
        - "https://en.wikipedia.org/wiki/Socle_(mathematics)"
@@ -9612,7 +9816,8 @@ concepts:
       en: span of $1
       property: unit
       area: "imperial units"
-      notation: "mi span"
+      comments:
+        - "<math><mrow><mi>span</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(unit)"
     
@@ -9633,7 +9838,8 @@ concepts:
       en: special orthogonal group of $1
       property: "indexed function"
       area: "group theory"
-      notation: "mi SO"
+      comments:
+        - "<math><mrow><mi>SO</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpecialOrthogonalGroup.html"
        - "https://ncatlab.org/nlab/show/special+orthogonal+group"
@@ -9643,7 +9849,8 @@ concepts:
       en: special unitary group of $1
       property: function
       area: "lie groups"
-      notation: "mi SU"
+      comments:
+        - "<math><mrow><mi>SU</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpecialUnitaryGroup.html"
        - "https://en.wikipedia.org/wiki/Special_unitary_group"
@@ -9654,7 +9861,8 @@ concepts:
       en: spectral radius of $1
       property: function
       area: "spectral theory"
-      notation: "mi ρ"
+      comments:
+        - "<math><mrow><mi>ρ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpectralRadius.html"
        - "https://en.wikipedia.org/wiki/Spectral_radius"
@@ -9665,7 +9873,8 @@ concepts:
       en: spectrum of $1
       property: function
       area: "functional analysis"
-      notation: "mi σ"
+      comments:
+        - "<math><mrow><mi>σ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_(functional_analysis)"
     
@@ -9702,7 +9911,8 @@ concepts:
       en: spectrum of ring of $1
       property: function
       area: "group theory"
-      notation: "mi Spec"
+      comments:
+        - "<math><mrow><mi>Spec</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_of_a_ring"
     
@@ -9857,7 +10067,8 @@ concepts:
       en: star height of $1
       property: function
       area: "formal languages"
-      notation: "mi h"
+      comments:
+        - "<math><mrow><mi>h</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Star_height"
     
@@ -9866,7 +10077,8 @@ concepts:
       en: steinberg group of $1
       property: function
       area: "k-theory"
-      notation: "mi St"
+      comments:
+        - "<math><mrow><mi>St</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Group_of_Lie_type"
        - "https://en.wikipedia.org/wiki/Steinberg_group_(K-theory)"
@@ -9888,7 +10100,8 @@ concepts:
       en: stiefel whitney class of $1
       property: function
       area: "algebraic topology"
-      notation: "mi w"
+      comments:
+        - "<math><mrow><mi>w</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Stiefel-WhitneyClass.html"
        - "https://en.wikipedia.org/wiki/Stiefel%E2%80%93Whitney_class"
@@ -9912,7 +10125,8 @@ concepts:
       en: stirling number of first kind of $1
       property: function
       area: "special functions"
-      notation: "mi s"
+      comments:
+        - "<math><mrow><mi>s</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/StirlingNumberoftheFirstKind.html"
        - "https://en.wikipedia.org/wiki/Stirling_numbers_of_the_first_kind"
@@ -9923,7 +10137,8 @@ concepts:
       en: stirling number of second kind of $1
       property: function
       area: "special functions"
-      notation: "mi S"
+      comments:
+        - "<math><mrow><mi>S</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/StirlingNumberoftheSecondKind.html"
        - "https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind"
@@ -9934,7 +10149,8 @@ concepts:
       en: strength of a graph of $1
       property: function
       area: "graph theory"
-      notation: "mi σ"
+      comments:
+        - "<math><mrow><mi>σ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Strength_of_a_graph"
       alias:
@@ -9967,7 +10183,8 @@ concepts:
       en: struve function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "mi H"
+      comments:
+        - "<math><mrow><mi>H</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/StruveFunction.html"
        - "https://en.wikipedia.org/wiki/Struve_function"
@@ -9980,7 +10197,8 @@ concepts:
       en: stufe of $1
       property: function
       area: "field theory"
-      notation: "mi s"
+      comments:
+        - "<math><mrow><mi>s</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Stufe_(algebra)"
     
@@ -10074,7 +10292,8 @@ concepts:
       en: support of $1
       property: function
       area: "analysis"
-      notation: "mi supp"
+      comments:
+        - "<math><mrow><mi>supp</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Support.html"
        - "https://en.wikipedia.org/wiki/Support_(mathematics)"
@@ -10141,7 +10360,8 @@ concepts:
       en: suspension of $1
       property: function
       area: "topology"
-      notation: "mi S"
+      comments:
+        - "<math><mrow><mi>S</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Suspension.html"
        - "https://en.wikipedia.org/wiki/Suspension_(topology)"
@@ -10195,7 +10415,8 @@ concepts:
       en: symplectic group of $1
       property: function
       area: "group theory"
-      notation: "mi Sp"
+      comments:
+        - "<math><mrow><mi>Sp</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SymplecticGroup.html"
        - "https://en.wikipedia.org/wiki/Symplectic_group"
@@ -10219,7 +10440,8 @@ concepts:
       en: tangent bundle of $1
       property: function
       area: "differential geometry"
-      notation: "mi T"
+      comments:
+        - "<math><mrow><mi>T</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TangentBundle.html"
        - "https://en.wikipedia.org/wiki/Tangent_bundle"
@@ -10274,7 +10496,8 @@ concepts:
       en: taxicab number of $1
       property: function
       area: "number theory"
-      notation: "mi Ta"
+      comments:
+        - "<math><mrow><mi>Ta</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TaxicabNumber.html"
        - "https://en.wikipedia.org/wiki/Taxicab_number"
@@ -10284,7 +10507,8 @@ concepts:
       en: taylor polynomial of $1
       property: function
       area: "number theory"
-      notation: "mi Ta"
+      comments:
+        - "<math><mrow><mi>Ta</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TaylorPolynomial.html"
        - "https://en.wikipedia.org/wiki/Taylor%27s_theorem"
@@ -10295,7 +10519,8 @@ concepts:
       en: teichmuller space of $1
       property: function
       area: "differential geometry"
-      notation: "mi T"
+      comments:
+        - "<math><mrow><mi>T</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TeichmuellerSpace.html"
        - "https://en.wikipedia.org/wiki/Teichm%C3%BCller_space"
@@ -10377,7 +10602,8 @@ concepts:
       en: thom space of $1
       property: function
       area: "algebraic topology"
-      notation: "mi T"
+      comments:
+        - "<math><mrow><mi>T</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Thom_space"
        - "https://ncatlab.org/nlab/show/Thom+space"
@@ -10420,7 +10646,8 @@ concepts:
       en: topological entropy of $1
       property: function
       area: "topology"
-      notation: "mi h"
+      comments:
+        - "<math><mrow><mi>h</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TopologicalEntropy.html"
        - "https://en.wikipedia.org/wiki/Topological_entropy"
@@ -10465,7 +10692,8 @@ concepts:
       en: torsion submodule of $1
       property: function
       area: "abstract algebra"
-      notation: "mi T"
+      comments:
+        - "<math><mrow><mi>T</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torsion_(algebra)"
     
@@ -10484,7 +10712,8 @@ concepts:
       en: torsion tensor of $1
       property: function
       area: "differential geometry"
-      notation: "mi T"
+      comments:
+        - "<math><mrow><mi>T</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torsion_tensor"
     
@@ -10517,7 +10746,8 @@ concepts:
       en: trace of $1
       property: function
       area: "linear algebra"
-      notation: "mi tr"
+      comments:
+        - "<math><mrow><mi>tr</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trace_(linear_algebra)"
     
@@ -10584,7 +10814,8 @@ concepts:
       en: trimean of $1
       property: function
       area: "statistics"
-      notation: "mi TM"
+      comments:
+        - "<math><mrow><mi>TM</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trimean"
       alias:
@@ -10627,7 +10858,8 @@ concepts:
       en: truncation of $1
       property: function
       area: "numerical analysis"
-      notation: "mi trunc"
+      comments:
+        - "<math><mrow><mi>trunc</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Truncation.html"
        - "https://en.wikipedia.org/wiki/Truncation"
@@ -10904,7 +11136,8 @@ concepts:
       en: variance of $1
       property: function
       area: "statistics"
-      notation: "mi Var"
+      comments:
+        - "<math><mrow><mi>Var</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Variance"
       alias:
@@ -10934,7 +11167,8 @@ concepts:
       en: vector projection of $1
       property: function
       area: "linear algebra"
-      notation: "mi proj"
+      comments:
+        - "<math><mrow><mi>proj</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Vector_projection"
       alias:
@@ -10946,7 +11180,8 @@ concepts:
       en: vectorization of $1
       property: function
       area: "linear algebra"
-      notation: "mi vec"
+      comments:
+        - "<math><mrow><mi>vec</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Vectorization_(mathematics)"
        - "https://en.wikipedia.org/wiki/Vectorization_(parallel_computing)"
@@ -11024,7 +11259,8 @@ concepts:
       en: walsh function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "mi W"
+      comments:
+        - "<math><mrow><mi>W</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WalshFunction.html"
        - "https://en.wikipedia.org/wiki/Walsh_function"
@@ -11082,7 +11318,8 @@ concepts:
       en: weierstrass elliptic function of $1
       property: function
       area: "special functions"
-      notation: "mi ℘"
+      comments:
+        - "<math><mrow><mi>℘</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeierstrassEllipticFunction.html"
        - "https://en.wikipedia.org/wiki/Weierstrass%27s_elliptic_functions"
@@ -11095,7 +11332,8 @@ concepts:
       en: weierstrass sigma function of $1
       property: function
       area: "special functions"
-      notation: "mi σ"
+      comments:
+        - "<math><mrow><mi>σ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeierstrassSigmaFunction.html"
        - "https://dlmf.nist.gov/23.1"
@@ -11107,7 +11345,8 @@ concepts:
       en: weierstrass zeta function of $1
       property: function
       area: "special functions"
-      notation: "mi ζ"
+      comments:
+        - "<math><mrow><mi>ζ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeierstrassZetaFunction.html"
        - "https://dlmf.nist.gov/23.1"
@@ -11119,7 +11358,8 @@ concepts:
       en: weight of $1
       property: function
       area: "group theory"
-      notation: "mi wt"
+      comments:
+        - "<math><mrow><mi>wt</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Weight_(strings)"
        - "https://ncatlab.org/nlab/show/weight"
@@ -11163,7 +11403,8 @@ concepts:
       en: whitehead group of $1
       property: function
       area: "group theory"
-      notation: "mi Wh"
+      comments:
+        - "<math><mrow><mi>Wh</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhiteheadGroup.html"
        - "https://en.wikipedia.org/wiki/Whitehead_torsion"
@@ -11185,7 +11426,8 @@ concepts:
       en: whitehead torsion of $1
       property: function
       area: "geometric topology"
-      notation: "mi τ"
+      comments:
+        - "<math><mrow><mi>τ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhiteheadTorsion.html"
        - "https://en.wikipedia.org/wiki/Whitehead_torsion"
@@ -11252,7 +11494,8 @@ concepts:
       en: wilson quotient of $1
       property: function
       area: "number theory"
-      notation: "mi W"
+      comments:
+        - "<math><mrow><mi>W</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WilsonQuotient.html"
        - "https://en.wikipedia.org/wiki/Wilson_quotient"
@@ -11275,7 +11518,8 @@ concepts:
       en: window function of $1
       property: function
       area: "fourier analysis"
-      notation: "mi w"
+      comments:
+        - "<math><mrow><mi>w</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WindowFunction.html"
        - "https://en.wikipedia.org/wiki/Window_function"
@@ -11328,7 +11572,8 @@ concepts:
       en: wright function of $1
       property: function
       area: "special functions"
-      notation: "mi ϕ"
+      comments:
+        - "<math><mrow><mi>ϕ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WrightFunction.html"
     
@@ -11337,7 +11582,8 @@ concepts:
       en: wright omega function of $1
       property: function
       area: "special functions"
-      notation: "mi ω"
+      comments:
+        - "<math><mrow><mi>ω</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Wright_Omega_function"
       alias:
@@ -11348,7 +11594,8 @@ concepts:
       en: writhe of $1
       property: function
       area: "knot theory"
-      notation: "mi Wr"
+      comments:
+        - "<math><mrow><mi>Wr</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Writhe.html"
        - "https://en.wikipedia.org/wiki/Writhe"
@@ -11372,7 +11619,8 @@ concepts:
       en: yang mill functional of $1
       property: function
       area: "gauge theory"
-      notation: "mi ℒ"
+      comments:
+        - "<math><mrow><mi>ℒ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Yang-MillsFunctional.html"
        - "https://www.encyclopediaofmath.org/index.php/Yang-Mills_functional"
@@ -11402,7 +11650,8 @@ concepts:
       en: z transform of $1
       property: function
       area: "combinatorics"
-      notation: "mi Z"
+      comments:
+        - "<math><mrow><mi>Z</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/z-Transform.html"
        - "https://mathworld.wolfram.com/Z-Transform.html"
@@ -11483,7 +11732,8 @@ concepts:
       en: zeta function of $1
       property: function
       area: "number theory"
-      notation: "mi ζ"
+      comments:
+        - "<math><mrow><mi>ζ</mi><mrow><mi>x</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZetaFunction.html"
        - "https://en.wikipedia.org/wiki/List_of_zeta_functions"
