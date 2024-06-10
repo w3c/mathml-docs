@@ -2131,7 +2131,8 @@ concepts:
       en: covariation of $1 and $2 over $3
       property: indexed fenced
       area: "stochastic processes"
-      notation: "msub mrow [ $1, $2 ] /mrow $3"
+      comments:
+       - "<math><msub><mrow><mo>[</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo>]</mo></mrow><mi>t</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Quadratic_variation"
       alias:
@@ -4086,7 +4087,8 @@ concepts:
       en: functional congruence of $1 and $2 mod $3
       property: mixfix
       area: "number theory"
-      notation: "mrow $1 ≡ $2 (mod $3"
+      comments:
+       - "<math><mrow><mi>f</mi><mo>≡</mo><mi>g</mi></mrow><mrow><mo>(</mo><mi>mod</mi><mi>n</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FunctionalCongruence.html"
       alias:
@@ -4217,7 +4219,6 @@ concepts:
        - "https://mathworld.wolfram.com/GateauxDerivative.html"
        - "https://en.wikipedia.org/wiki/G%C3%A2teaux_derivative"
        - "https://www.encyclopediaofmath.org/index.php/Gateaux_derivative"
-       - "https://www.encyclopediaofmath.org/index.php/GÃ¢teaux_derivative"
       alias:
        - gateaux-differential
     
@@ -4282,7 +4283,8 @@ concepts:
       en: gelfand triple of $1, $2 and $3
       property: fenced
       area: "functional analysis"
-      notation: "mrow ( $1, $2, $3"
+      comments:
+       - "<math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Rigged_Hilbert_space#Formal_definition_(Gelfand_triple)"
     
@@ -5424,7 +5426,8 @@ concepts:
       en: injection $1, from $2 to $3
       property: mixfix<br/>
       area: "set theory"
-      notation: "mrow $1 : $2 ↣ $3"
+      comments:
+       - "<math><mi>f</mi><mo>:</mo><mi>X</mi><mo>↣</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
     
@@ -6359,7 +6362,8 @@ concepts:
       en: levi civita symbol  of $1, $2 and $3
       property: "indexed symbol"
       area: "combinatorics"
-      notation: "msub ϵ mrow $1$2$3 /mrow"
+      comments:
+       - "<math><msub><mi>&#x03f5;</mi><mrow><mi>i</mi><mi>j</mi><mi>k</mi></mrow></msub></math>
       urls: 
        - "https://mathworld.wolfram.com/Levi-CivitaSymbol.html"
        - "https://en.wikipedia.org/wiki/Levi-Civita_symbol"
@@ -7539,7 +7543,8 @@ concepts:
       en: octant  of $1, $2 and $3
       property: fenced
       area: "euclidean solid geometry"
-      notation: "mrow (±,±,±)<br/>mrow (+,+,+)<br/>mrow ($1, $2, $3"
+      comments:
+       - "<math><mo>(</mo><mi>±</mi><mo>,</mo><mi>±</mi><mo>,</mo><mi>±</mi><mo>)</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Octant.html"
        - "https://en.wikipedia.org/wiki/Octant_(plane_geometry)"
@@ -7744,7 +7749,8 @@ concepts:
       en: pade approximant  of $1, $2 and $3
       property: mixfix
       area: "numerical analysis"
-      notation: "msub mrow [ $1 / $2 ] /mrow $3"
+      comments:
+       - "<math><msub><mrow><mo>[</mo><mi>X</mi><mo>/</mo><mi>Y</mi><mo>]</mo></mrow><mi>f</mi></msub></math>"
       urls: 
        - "https://dlmf.nist.gov/3.11#SS4.p1"
        - "https://mathworld.wolfram.com/PadeApproximant.html"
@@ -7765,7 +7771,8 @@ concepts:
       en: paraboloidal coordinate of $1, $2 and $3
       property: fenced
       area: "geometry"
-      notation: "mrow ( $1, $2 , $3"
+      comments:
+       - "<math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/ParaboloidalCoordinates.html"
        - "https://en.wikipedia.org/wiki/Paraboloidal_coordinates"
@@ -8452,7 +8459,8 @@ concepts:
       en: pythagorean triple  $1, $2 and $3
       property: fenced
       area: "geometry"
-      notation: "mrow ($1, $2, $3"
+      comments:
+       - "<math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/PythagoreanTriple.html"
        - "https://en.wikipedia.org/wiki/Pythagorean_triple"
