@@ -8920,7 +8920,7 @@ concepts:
       property: infix
       area: "group theory"
       comments:
-       - "<math><mrow><mi>X</mi><mo>&amp;lt;</mo><mi>Y</mi></mrow></math>"
+       - "<math><mrow><mi>X</mi><mo>&lt;</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Subgroup"
     
@@ -8929,6 +8929,7 @@ concepts:
       en: $1 proportional $2
       property: infix
       area: "arithmetic"
+      comments:
        - "<math><mrow><mi>X</mi><mo>∝</mo><mi>Y</mi></mrow></math>"
        - "<math><mrow><mi>X</mi><mo>~</mo><mi>Y</mi></mrow></math>"
       urls: 
@@ -9652,8 +9653,8 @@ concepts:
       en: roman numeral
       property: symbol
       area: "number theory"
-      notationi: "mi i"
-      notationh: "mi ii"
+      notationj: "mi i"
+      notationi: "mi ii"
       notationh: "mi iii"
       notationg: "mi iv"
       notationf: "mi v"
@@ -11919,7 +11920,7 @@ concepts:
       comments:
        - "<math><mrow><mi>𝒩</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
        - "<math><mrow><mi>w</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
-       urls: 
+      urls: 
        - "https://en.wikipedia.org/wiki/Winding_number"
        - "https://dlmf.nist.gov/1.9#E32"
        - "https://ncatlab.org/nlab/show/winding+number"
