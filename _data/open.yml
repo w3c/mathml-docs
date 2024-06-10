@@ -1321,7 +1321,8 @@ concepts:
       en: champernowne constant
       property: constant
       area: "number theory"
-      notation: "mi C"
+      comments:
+       - "<math><mi>C</mi></math>"
       notationa: "msub C 10"
       urls: 
        - "https://mathworld.wolfram.com/ChampernowneConstant.html"
@@ -2797,7 +2798,7 @@ concepts:
       area: "special functions"
       notation: "msub ψ 0"
       notationb: "msup ψ (0)"
-      notationa: "mi Ϝ"
+             - "<math><mi>Ϝ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DigammaFunction.html"
        - "https://en.wikipedia.org/wiki/Digamma_function"
@@ -3344,8 +3345,9 @@ concepts:
       en: eccentricity
       property: symbol
       area: "analytic geometry, graph theory"
-      notation: "mi e"
-      notationa: "mi ϵ"
+      comments:
+       - "<math><mi>e</mi></math>"
+             - "<math><mi>ϵ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Eccentricity.html"
        - "https://en.wikipedia.org/wiki/Eccentricity_(mathematics)"
@@ -3694,8 +3696,9 @@ concepts:
       en: euler constant
       property: symbol
       area: "analysis"
-      notation: "mi γ"
-      notationa: "mi 𝛾"
+      comments:
+       - "<math><mi>γ</mi></math>"
+             - "<math><mi>𝛾</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Euler-MascheroniConstant.html"
        - "https://en.wikipedia.org/wiki/%CE%93%27(1)"
@@ -3710,9 +3713,10 @@ concepts:
       en: euler number
       property: symbol
       area: "physics"
-      notation: "mi Eu"
-      notationb: "mi e"
-      notationa: "mi 𝑒"
+      comments:
+       - "<math><mi>Eu</mi></math>"
+             - "<math><mi>e</mi></math>"
+             - "<math><mi>𝑒</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerNumber.html"
        - "https://en.wikipedia.org/wiki/Euler_number"
@@ -4815,8 +4819,9 @@ concepts:
       en: golden ratio
       property: constant
       area: "geometry"
-      notation: "mi φ"
-      notationa: "mi ϕ"
+      comments:
+       - "<math><mi>φ</mi></math>"
+             - "<math><mi>ϕ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GoldenRatio.html"
        - "https://en.wikipedia.org/wiki/Golden_ratio"
@@ -5547,9 +5552,10 @@ concepts:
       en: identity element
       property: symbol
       area: "group theory"
-      notation: "mi e"
-      notationc: "mi I"
-      notationb: "mi E"
+      comments:
+       - "<math><mi>e</mi></math>"
+       - "<math><mi>I</mi></math>"
+       - "<math><mi>E</mi></math>"
       notationa: "mn 1"
       urls: 
        - "https://mathworld.wolfram.com/IdentityElement.html"
@@ -6333,7 +6339,8 @@ concepts:
       en: khinchin constant
       property: constant
       area: "continued fractions"
-      notation: "mi K"
+      comments:
+       - "<math><mi>K</mi></math>"
       notationa: "msub K 0"
       urls: 
        - "https://mathworld.wolfram.com/KhinchinsConstant.html"
@@ -6375,7 +6382,8 @@ concepts:
       en: klein four group
       property: symbol
       area: "group theory"
-      notation: "mi V"
+      comments:
+       - "<math><mi>V</mi></math>"
       notationa: "msub K 4"
       urls: 
        - "https://mathworld.wolfram.com/KleinFour-Group.html"
@@ -6622,9 +6630,10 @@ concepts:
       en: landau constant
       property: constant
       area: "complex analysis"
-      notation: "mi A"
-      notationb: "mi B"
-      notationa: "mi L"
+      comments:
+       - "<math><mi>A</mi></math>"
+       - "<math><mi>B</mi></math>"
+       - "<math><mi>L</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LandauConstant.html"
        - "https://en.wikipedia.org/wiki/Landau%27s_constants"
@@ -8112,9 +8121,10 @@ concepts:
       en: octonions
       property: symbol
       area: "compositional algebra"
-      notation: "mi 𝕆"
+      comments:
+       - "<math><mi>𝕆</mi></math>"
       notationb: "miO"
-      notationa: "mi O"
+       - "<math><mi>O</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Octonion.html"
        - "https://en.wikipedia.org/wiki/Octonion"
@@ -8577,7 +8587,8 @@ concepts:
       en: phi coefficient
       property: symbol
       area: "statistics"
-      notation: "mi φ"
+      comments:
+       - "<math><mi>φ</mi></math>"
       notationa: "msub r φ"
       urls: 
        - "https://en.wikipedia.org/wiki/Phi_coefficient"
@@ -8602,8 +8613,9 @@ concepts:
       en: planck constant
       property: constant
       area: "physics"
-      notation: "mi h"
-      notationa: "mi ℎ"
+      comments:
+       - "<math><mi>h</mi></math>"
+       - "<math><mi>ℎ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Planck_constant"
        - "https://ncatlab.org/nlab/show/Planck's+constant"
@@ -8614,8 +8626,9 @@ concepts:
       en: plastic constant
       property: constant
       area: "geometry"
-      notation: "mi P"
-      notationa: "mi p"
+      comments:
+       - "<math><mi>P</mi></math>"
+       - "<math><mi>p</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/PlasticConstant.html"
        - "https://en.wikipedia.org/wiki/Plastic_number"
@@ -8841,8 +8854,9 @@ concepts:
       en: present value
       property: symbol
       area: "economics"
-      notation: "mi PV"
-      notationa: "mi v"
+      comments:
+       - "<math><mi>PV</mi></math>"
+       - "<math><mi>v</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/PresentValue.html"
        - "https://en.wikipedia.org/wiki/Present_value"
@@ -8852,8 +8866,9 @@ concepts:
       en: prime constant
       property: symbol
       area: "number theory"
-      notation: "mi P"
-      notationa: "mi ρ"
+      comments:
+       - "<math><mi>P</mi></math>"
+       - "<math><mi>ρ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/PrimeConstant.html"
        - "https://en.wikipedia.org/wiki/Prime_constant"
@@ -8961,7 +8976,8 @@ concepts:
       en: projective space
       property: symbol
       area: "projective geometry"
-      notation: "mi ℙ"
+      comments:
+       - "<math><mi>ℙ</mi></math>"
       notationa: "mi ℝ⁢ ℙ"
       urls: 
        - "https://mathworld.wolfram.com/ProjectiveSpace.html"
@@ -9541,9 +9557,10 @@ concepts:
       en: ricci scalar
       property: symbol
       area: "riemannian geometry"
-      notation: "mi S"
-      notationb: "mi R"
-      notationa: "mi Sc"
+      comments:
+       - "<math><mi>S</mi></math>"
+       - "<math><mi>R</mi></math>"
+       - "<math><mi>Sc</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RicciScalar.html"
        - "https://en.wikipedia.org/wiki/Scalar_curvature"
@@ -9716,16 +9733,17 @@ concepts:
       en: roman numeral
       property: symbol
       area: "number theory"
-      notationj: "mi i"
-      notationi: "mi ii"
-      notationh: "mi iii"
-      notationg: "mi iv"
-      notationf: "mi v"
-      notatione: "mi vi"
-      notationd: "mi vii"
-      notationc: "mi viii"
-      notationb: "mi ix"
-      notationa: "mi x"
+      comments:
+       - "<math><mi mathvariant="normal">i</mi></math>"
+       - "<math><mi>ii</mi></math>"
+       - "<math><mi>iii</mi></math>"
+       - "<math><mi>iv</mi></math>"
+       - "<math><mi>v</mi></math>"
+       - "<math><mi>vi</mi></math>"
+       - "<math><mi>vii</mi></math>"
+       - "<math><mi>viii</mi></math>"
+       - "<math><mi>ix</mi></math>"
+       - "<math><mi>x</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RomanNumerals.html"
        - "https://en.wikipedia.org/wiki/Roman_numerals"
@@ -9812,9 +9830,10 @@ concepts:
       en: sample space
       property: symbol
       area: "probability theory"
-      notation: "mi S"
-      notationb: "mi Ω"
-      notationa: "mi U"
+      comments:
+       - "<math><mi>S</mi></math>"
+       - "<math><mi>Ω</mi></math>"
+       - "<math><mi>U</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SampleSpace.html"
        - "https://en.wikipedia.org/wiki/Sample_space"
@@ -11486,7 +11505,8 @@ concepts:
       en: universal gas constant
       property: constant
       area: "physics"
-      notation: "mi R"
+      comments:
+       - "<math><mi>R</mi></math>"
       notationa: "mover R -"
       urls: 
        - "https://en.wikipedia.org/wiki/Gas_constant"
@@ -11591,7 +11611,8 @@ concepts:
       en: upper half plane
       property: symbol
       area: "complex analysis"
-      notation: "mi ℍ"
+      comments:
+       - "<math><mi>ℍ</mi></math>"
       notationa: "msup ℍ +"
       urls: 
        - "https://mathworld.wolfram.com/UpperHalf-Plane.html"
