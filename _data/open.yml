@@ -7230,7 +7230,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-       - "<math><mrow><mi>δ<br/></mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MinimumDegree.html"
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
@@ -7357,7 +7357,7 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-       - "<math><mrow><mi>Δ<br/></mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ModularDiscriminant.html"
        - "https://en.wikipedia.org/wiki/Modular_form#The_modular_discriminant"
@@ -10455,7 +10455,7 @@ concepts:
     - concept: symmetric-group
       arity: 1
       en: symmetric group of $1
-      property: "msub<br/>function, postfix"
+      property: "msub, function, postfix"
       area: "group theory"
       notation: "msub S $1<br/>msub 𝔖 $1<br/>msub Σ $1<br/>mrow Σ ( $1 )<br/>mrow Sym ( $1 )<br/>mrow $1 !<br/>"
       urls: 
@@ -11534,11 +11534,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Wiener_process"
     
     - concept: wiener-sausage
-      arity: 1
-      en: wiener sausage of $1
+      arity: 2
+      en: wiener sausage of radius $1 and length $2
       property: "indexed symbol"
       area: "mathematical physics"
-      notation: "msub W $1"
+      comments:
+       - "<math><msub><mi>W</mi><mi>&delta;</mi></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WienerSausage.html"
        - "https://en.wikipedia.org/wiki/Wiener_sausage"
@@ -11549,7 +11550,8 @@ concepts:
       en: wilson polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
-      notation: "msub W $1"
+      comments:
+       - "<math><msub><mi>W</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WilsonPolynomial.html"
        - "https://en.wikipedia.org/wiki/Wilson_polynomials"
@@ -11622,7 +11624,8 @@ concepts:
       en: witt vector of $1
       property: fenced
       area: "ring theory"
-      notation: "mrow ( $1, ... , $n"
+      comments:
+       - "<math><mi>W</mi><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Witt_vector"
        - "https://www.encyclopediaofmath.org/index.php/Witt_vector"
@@ -11757,7 +11760,8 @@ concepts:
       en: zero matrix of $1
       property: "indexed symbol"
       area: "linear algebra"
-      notation: "msub mn 0 mrow m,n"
+      comments:
+       - "<math><msub><mn>0</mn>><mrow><mi>i</mi><mi>j</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_matrix"
     
