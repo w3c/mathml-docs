@@ -453,7 +453,8 @@ concepts:
       en: apery constant
       property: symbol
       area: "special functions"
-      notation: "mrow ζ(3"
+      comments:
+       - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AperysConstant.html"
        - "https://en.wikipedia.org/wiki/Zeta(3)"
@@ -911,7 +912,8 @@ concepts:
       en: bloch constant
       property: symbol
       area: "complex analysis"
-      notation: "miB"
+      comments:
+        - "<math><mi>B</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/BlochConstant.html"
        - "https://www.encyclopediaofmath.org/index.php/Bloch_constant"
@@ -1006,7 +1008,8 @@ concepts:
       en: brun constant
       property: symbol
       area: "number theory"
-      notation: "msub B 4"
+      comments:
+        - "<math><msub><mi>B</mi><mn>4</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BrunsConstant.html"
        - "https://en.wikipedia.org/wiki/Brun%27s_theorem"
