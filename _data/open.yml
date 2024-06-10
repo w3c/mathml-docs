@@ -9,7 +9,8 @@ concepts:
       en: abelian category
       property: symbol
       area: "category theory"
-      notation: "mi Ab"
+      comments:
+        - "<math><mi>Ab</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AbelianCategory.html"
        - "https://en.wikipedia.org/wiki/Abelian_category"
@@ -84,7 +85,8 @@ concepts:
       en: adiabatic invariant first
       property: symbol
       area: "plasma physics"
-      notation: "mi μ"
+      comments:
+        - "<math><mi>μ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdiabaticInvariant.html"
        - "https://en.wikipedia.org/wiki/Adiabatic_invariant"
@@ -95,7 +97,8 @@ concepts:
       en: adiabatic invariant second
       property: symbol
       area: "plasma physics"
-      notation: "mi J"
+      comments:
+        - "<math><mi>J</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdiabaticInvariant.html"
        - "https://en.wikipedia.org/wiki/Adiabatic_invariant"
@@ -106,7 +109,8 @@ concepts:
       en: adiabatic invariant third
       property: symbol
       area: "plasma physics"
-      notation: "mi Φ"
+      comments:
+        - "<math><mi>Φ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdiabaticInvariant.html"
        - "https://en.wikipedia.org/wiki/Adiabatic_invariant"
@@ -184,7 +188,8 @@ concepts:
       en: affine line
       property: symbol
       area: "universal algebra?"
-      notation: "mi 𝔸"
+      comments:
+        - "<math><mi>𝔸</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/affine+line"
     
@@ -220,7 +225,8 @@ concepts:
       en: aleph
       property: symbol
       area: "set theory"
-      notation: "mi ℵ"
+      comments:
+        - "<math><mi>ℵ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Aleph.html"
        - "https://ncatlab.org/nlab/show/aleph"
@@ -231,7 +237,8 @@ concepts:
       en: algebraics
       property: symbol
       area: "number theory"
-      notation: "mi 𝔸"
+      comments:
+        - "<math><mi>𝔸</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Algebraics.html"
     
@@ -366,7 +373,8 @@ concepts:
       en: angular momentum
       property: symbol
       area: "classical mechanics"
-      notation: "mi L"
+      comments:
+        - "<math><mi>L</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Angular_momentum"
        - "https://en.wikipedia.org/wiki/Introduction_to_angular_momentum"
@@ -377,7 +385,8 @@ concepts:
       en: angular velocity
       property: symbol
       area: "classical mechanics"
-      notation: "mi ω"
+      comments:
+        - "<math><mi>ω</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AngularVelocity.html"
        - "https://en.wikipedia.org/wiki/Angular_velocity"
@@ -483,7 +492,8 @@ concepts:
       en: area
       property: symbol
       area: "geometry"
-      notation: "mi A"
+      comments:
+        - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Area.html"
        - "https://en.wikipedia.org/wiki/Area"
@@ -911,7 +921,8 @@ concepts:
       en: boolean domain
       property: symbol
       area: "abstract algebra"
-      notation: "mi 𝔹"
+      comments:
+        - "<math><mi>𝔹</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Boolean_domain"
        - "https://ncatlab.org/nlab/show/boolean+domain"
@@ -921,7 +932,8 @@ concepts:
       en: bottom type
       property: symbol
       area: "category theory"
-      notation: "mi ⊥"
+      comments:
+        - "<math><mi>⊥</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/bottom"
        - "https://en.wikipedia.org/wiki/Bottom_type"
@@ -934,7 +946,8 @@ concepts:
       en: bottom element
       property: symbol
       area: "order theory"
-      notation: "mi ⊥"
+      comments:
+        - "<math><mi>⊥</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Greatest_element_and_least_element"
       alias:
@@ -1012,7 +1025,8 @@ concepts:
       en: cahen constant
       property: symbol
       area: "number theory"
-      notation: "mi C"
+      comments:
+        - "<math><mi>C</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CahensConstant.html"
        - "https://en.wikipedia.org/wiki/Cahen%27s_constant"
@@ -1086,7 +1100,8 @@ concepts:
       en: casimir element
       property: symbol
       area: "lie algebra"
-      notation: "mi Ω"
+      comments:
+        - "<math><mi>Ω</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Casimir_element"
     
@@ -1095,7 +1110,8 @@ concepts:
       en: catalan constant
       property: symbol
       area: "combinatorics"
-      notation: "mi G"
+      comments:
+        - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CatalansConstant.html"
        - "https://en.wikipedia.org/wiki/Catalan%27s_constant"
@@ -1117,7 +1133,8 @@ concepts:
       en: category of algebraic lattices
       property: symbol
       area: "universal algebra"
-      notation: "mi AlgCat"
+      comments:
+        - "<math><mi>AlgCat</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/algebraic+lattice"
     
@@ -1168,7 +1185,8 @@ concepts:
       en: cavitation number
       property: symbol
       area: "physics"
-      notation: "mi Ca"
+      comments:
+        - "<math><mi>Ca</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euler_number_(physics)#Cavitation_number"
     
@@ -1462,7 +1480,8 @@ concepts:
       en: clique
       property: symbol
       area: "graph theory"
-      notation: "mi C"
+      comments:
+        - "<math><mi>C</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Clique.html"
        - "https://en.wikipedia.org/wiki/Clique_(graph_theory)"
@@ -1548,7 +1567,8 @@ concepts:
       en: cofinite filter
       property: symbol
       area: "order theory"
-      notation: "mi F"
+      comments:
+        - "<math><mi>F</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CofiniteFilter.html"
        - "https://en.wikipedia.org/wiki/Fr%C3%A9chet_filter"
@@ -1897,7 +1917,8 @@ concepts:
       en: constant of integration
       property: constant
       area: "calculus"
-      notation: "mi C"
+      comments:
+        - "<math><mi>C</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConstantofIntegration.html"
        - "https://en.wikipedia.org/wiki/Constant_of_integration"
@@ -1949,7 +1970,8 @@ concepts:
       en: continuum
       property: constant
       area: "set theory"
-      notation: "mi 𝔠"
+      comments:
+        - "<math><mi>𝔠</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Continuum.html"
        - "https://en.wikipedia.org/wiki/List_of_continuity-related_topics"
@@ -1964,7 +1986,8 @@ concepts:
       en: contradiction
       property: constant
       area: "logic"
-      notation: "mo ⊥"
+      comments:
+        - "<math><mo>⊥</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Contradiction.html"
        - "https://en.wikipedia.org/wiki/Contradiction"
@@ -2071,7 +2094,8 @@ concepts:
       en: correlation ratio
       property: symbol
       area: "statistics"
-      notation: "mi η"
+      comments:
+        - "<math><mi>η</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CorrelationRatio.html"
        - "https://en.wikipedia.org/wiki/Correlation_ratio"
@@ -2094,7 +2118,8 @@ concepts:
       en: coupling constant
       property: symbol
       area: "gauge theory"
-      notation: "mi g"
+      comments:
+        - "<math><mi>g</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Coupling_constant"
       alias:
@@ -2284,7 +2309,8 @@ concepts:
       en: cycle gene
       property: symbol
       area: "genetics"
-      notation: "mi cyc"
+      comments:
+        - "<math><mi>cyc</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cycle_(gene)"
     
@@ -2441,7 +2467,8 @@ concepts:
       en: degree of freedom
       property: symbol
       area: "statistics"
-      notation: "mi ν"
+      comments:
+        - "<math><mi>ν</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DegreeofFreedom.html"
        - "https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)#Notation"
@@ -2511,7 +2538,8 @@ concepts:
       en: diagonal functor
       property: symbol
       area: "category theory"
-      notation: "mi Δ"
+      comments:
+        - "<math><mi>Δ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Diagonal_functor"
        - "https://ncatlab.org/nlab/show/diagonal+functor"
@@ -2785,7 +2813,8 @@ concepts:
       en: dirichlet distribution
       property: symbol
       area: "statistics"
-      notation: "mi Dir"
+      comments:
+        - "<math><mi>Dir</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletDistribution.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_distribution"
@@ -2948,7 +2977,8 @@ concepts:
       en: domain of discourse
       property: symbol
       area: "formal semantics"
-      notation: "mi 𝔻"
+      comments:
+        - "<math><mi>𝔻</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Domain_of_discourse"
       alias:
@@ -3146,7 +3176,8 @@ concepts:
       en: einstein tensor
       property: symbol
       area: "general relativity"
-      notation: "mi G"
+      comments:
+        - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/EinsteinTensor.html"
        - "https://en.wikipedia.org/wiki/Einstein_tensor"
@@ -3170,7 +3201,8 @@ concepts:
       en: end
       property: symbol
       area: "category theory"
-      notation: "mi e"
+      comments:
+        - "<math><mi>e</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/End_(category_theory)"
        - "https://ncatlab.org/nlab/show/end"
@@ -3192,7 +3224,8 @@ concepts:
       en: energy
       property: symbol
       area: "physics"
-      notation: "mi E"
+      comments:
+        - "<math><mi>E</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/energy"
     
@@ -3233,7 +3266,8 @@ concepts:
       en: epsilon number
       property: symbol
       area: "ordinal numbers"
-      notation: "mi ε"
+      comments:
+        - "<math><mi>ε</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Epsilon_numbers_(mathematics)"
     
@@ -3294,7 +3328,8 @@ concepts:
       en: erdos borwein constant
       property: symbol
       area: "number theory"
-      notation: "mi E"
+      comments:
+        - "<math><mi>E</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Erdos-BorweinConstant.html"
        - "https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Borwein_constant"
@@ -3350,7 +3385,8 @@ concepts:
       en: estimated
       property: symbol
       area: "symbols"
-      notation: "mi ℮"
+      comments:
+        - "<math><mi>℮</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Estimation"
       alias:
@@ -3484,7 +3520,8 @@ concepts:
       en: euler mascheroni constant
       property: constant
       area: "number theory"
-      notation: "mi γ"
+      comments:
+        - "<math><mi>γ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Euler-MascheroniConstant.html"
        - "https://en.wikipedia.org/wiki/%CE%93%27(1)"
@@ -3659,7 +3696,8 @@ concepts:
       en: farey sequence
       property: symbol
       area: "number theory"
-      notation: "mi F"
+      comments:
+        - "<math><mi>F</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/FareySequence.html"
        - "https://en.wikipedia.org/wiki/Farey_sequence"
@@ -3678,7 +3716,8 @@ concepts:
       en: feigenbaum constant
       property: symbol
       area: "chaos theory"
-      notation: "mi δ"
+      comments:
+        - "<math><mi>δ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/FeigenbaumConstant.html"
        - "https://en.wikipedia.org/wiki/Feigenbaum_constants"
@@ -3810,7 +3849,8 @@ concepts:
       en: flattening
       property: symbol
       area: "celestial mechanics"
-      notation: "mi f"
+      comments:
+        - "<math><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Flattening.html"
        - "https://en.wikipedia.org/wiki/Flattening"
@@ -4109,7 +4149,8 @@ concepts:
       en: fundamental matrix
       property: symbol
       area: "computer vision"
-      notation: "mi F"
+      comments:
+        - "<math><mi>F</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fundamental_matrix_(computer_vision)"
     
@@ -4176,7 +4217,8 @@ concepts:
       en: galois group of $1
       property: function
       area: "abstract algebra"
-      notation: "mi Gal"
+      comments:
+        - "<math><mi>Gal</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaloisGroup.html"
        - "https://en.wikipedia.org/wiki/Galois_group"
@@ -4188,7 +4230,8 @@ concepts:
       en: gamma distribution
       property: symbol
       area: "probability theory"
-      notation: "mi Γ"
+      comments:
+        - "<math><mi>Γ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GammaDistribution.html"
        - "https://en.wikipedia.org/wiki/Gamma_distribution"
@@ -4236,7 +4279,8 @@ concepts:
       en: gaussian distribution
       property: symbol
       area: "probability theory"
-      notation: "mi 𝒩"
+      comments:
+        - "<math><mi>𝒩</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Normal_distribution"
       alias:
@@ -4313,7 +4357,8 @@ concepts:
       en: gell mann matrix
       property: symbol
       area: "particle physics"
-      notation: "mi λ"
+      comments:
+        - "<math><mi>λ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Gell-MannMatrix.html"
        - "https://en.wikipedia.org/wiki/Gell-Mann_matrices"
@@ -4458,7 +4503,8 @@ concepts:
       en: glaisher constant
       property: constant
       area: "number theory"
-      notation: "mi A"
+      comments:
+        - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GlaisherConstant.html"
        - "https://en.wikipedia.org/wiki/Glaisher%E2%80%93Kinkelin_constant"
@@ -4525,7 +4571,8 @@ concepts:
       en: gram matrix
       property: symbol
       area: "linear algebra"
-      notation: "mi G"
+      comments:
+        - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GramMatrix.html"
        - "https://en.wikipedia.org/wiki/Gramian_matrix"
@@ -4563,7 +4610,8 @@ concepts:
       en: grobner basis
       property: symbol
       area: "computer algebra"
-      notation: "mi G"
+      comments:
+        - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GroebnerBasis.html"
        - "https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis"
@@ -5196,7 +5244,8 @@ concepts:
       en: identity matrix
       property: symbol
       area: "linear algebra"
-      notation: "mi I"
+      comments:
+        - "<math><mi>I</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/IdentityMatrix.html"
        - "https://en.wikipedia.org/wiki/Identity_matrix"
@@ -5222,7 +5271,8 @@ concepts:
       en: incenter
       property: symbol
       area: "geometry"
-      notation: "mi I"
+      comments:
+        - "<math><mi>I</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Incenter.html"
        - "https://en.wikipedia.org/wiki/Incircle_and_excircles_of_a_triangle"
@@ -5732,7 +5782,8 @@ concepts:
       en: jacobsthal number
       property: symbol
       area: "number theory"
-      notation: "mi J"
+      comments:
+        - "<math><mi>J</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobsthalNumber.html"
        - "https://en.wikipedia.org/wiki/Jacobsthal_number"
@@ -6115,7 +6166,8 @@ concepts:
       en: lagrange multiplier
       property: symbol
       area: "mathematical optimization"
-      notation: "mi λ"
+      comments:
+        - "<math><mi>λ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LagrangeMultiplier.html"
        - "https://en.wikipedia.org/wiki/Lagrange_multiplier"
@@ -6189,7 +6241,8 @@ concepts:
       en: laplacian matrix
       property: symbol
       area: "graph theory"
-      notation: "mi L"
+      comments:
+        - "<math><mi>L</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LaplacianMatrix.html"
        - "https://en.wikipedia.org/wiki/Laplacian_matrix"
@@ -6498,7 +6551,8 @@ concepts:
       en: liouville constant
       property: constant
       area: "number theory"
-      notation: "mi L"
+      comments:
+        - "<math><mi>L</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LiouvillesConstant.html"
       alias:
@@ -6955,7 +7009,8 @@ concepts:
       en: mills constant
       property: symbol
       area: "number theory"
-      notation: "mi A"
+      comments:
+        - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/MillsConstant.html"
        - "https://en.wikipedia.org/wiki/Mills%27_constant"
@@ -7145,7 +7200,8 @@ concepts:
       en: moment
       property: symbol
       area: "mechanics"
-      notation: "mi M"
+      comments:
+        - "<math><mi>M</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Moment.html"
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
@@ -7158,7 +7214,8 @@ concepts:
       en: moment of inertia
       property: symbol
       area: "physics"
-      notation: "mi I"
+      comments:
+        - "<math><mi>I</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/MomentofInertia.html"
        - "https://en.wikipedia.org/wiki/Moment_of_inertia"
@@ -7173,7 +7230,9 @@ concepts:
       en: momentum
       property: symbol
       area: "mechanics"
-      notation: "mi p<br/>mip"
+      comments:
+        - "<math><mi>p</mi></math>"
+        - "<math><mi>mip</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Momentum"
        - "https://ncatlab.org/nlab/show/momentum"
@@ -7186,7 +7245,8 @@ concepts:
       en: monster group
       property: symbol
       area: "group theory"
-      notation: "mi M"
+      comments:
+        - "<math><mi>M</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/MonsterGroup.html"
        - "https://en.wikipedia.org/wiki/Monster_group"
@@ -7367,7 +7427,8 @@ concepts:
       en: negative binomial distribution
       property: symbol
       area: "probability theory"
-      notation: "mi NB"
+      comments:
+        - "<math><mi>NB</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/NegativeBinomialDistribution.html"
        - "https://en.wikipedia.org/wiki/Negative_binomial_distribution"
@@ -7570,7 +7631,8 @@ concepts:
       en: odds ratio
       property: symbol
       area: "statistics"
-      notation: "mi OR"
+      comments:
+        - "<math><mi>OR</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Odds_ratio"
     
@@ -7964,7 +8026,8 @@ concepts:
       en: p h
       property: symbol
       area: "chemistry"
-      notation: "mi pH"
+      comments:
+        - "<math><mi>pH</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/PH"
       alias:
@@ -8094,7 +8157,8 @@ concepts:
       en: poisson distribution
       property: symbol
       area: "probability theory"
-      notation: "mi Pois"
+      comments:
+        - "<math><mi>Pois</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/PoissonDistribution.html"
        - "https://en.wikipedia.org/wiki/Poisson_distribution"
@@ -8385,7 +8449,8 @@ concepts:
       en: prouhet thue morse constant
       property: constant
       area: "number theory"
-      notation: "mi τ"
+      comments:
+        - "<math><mi>τ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Prouhet%E2%80%93Thue%E2%80%93Morse_constant"
     
@@ -8550,7 +8615,8 @@ concepts:
       en: r complexity class
       property: symbol
       area: "complexity theory"
-      notation: "mi R"
+      comments:
+        - "<math><mi>R</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/R.html"
        - "https://en.wikipedia.org/wiki/R_(complexity)"
@@ -8634,7 +8700,8 @@ concepts:
       en: ramanujan soldner constant
       property: constant
       area: "special functions"
-      notation: "mi μ"
+      comments:
+        - "<math><mi>μ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Ramanujan-SoldnerConstant.html"
        - "https://en.wikipedia.org/wiki/Ramanujan%E2%80%93Soldner_constant"
@@ -8879,7 +8946,8 @@ concepts:
       en: reynolds number
       property: symbol
       area: "fluid dynamics"
-      notation: "mi Re"
+      comments:
+        - "<math><mi>Re</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Reynolds_number"
     
@@ -9075,7 +9143,8 @@ concepts:
       en: root of unity
       property: symbol
       area: "complex numbers"
-      notation: "mi ω"
+      comments:
+        - "<math><mi>ω</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RootofUnity.html"
        - "https://en.wikipedia.org/wiki/Root_of_unity"
@@ -9107,7 +9176,8 @@ concepts:
       en: ruark number
       property: symbol
       area: "physics"
-      notation: "mi Ru"
+      comments:
+        - "<math><mi>Ru</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euler_number_(physics)"
     
@@ -9255,7 +9325,8 @@ concepts:
       en: sedenion
       property: symbol
       area: "abstract algebra"
-      notation: "mi 𝕊"
+      comments:
+        - "<math><mi>𝕊</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Sedenion"
        - "https://ncatlab.org/nlab/show/sedenion"
@@ -9296,7 +9367,8 @@ concepts:
       en: shannon entropy
       property: symbol
       area: "information theory"
-      notation: "mi H"
+      comments:
+        - "<math><mi>H</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShannonEntropy.html"
        - "https://en.wikipedia.org/wiki/Entropy_(information_theory)"
@@ -9358,7 +9430,8 @@ concepts:
       en: sidon sequence
       property: symbol
       area: "combinatorics"
-      notation: "mi A"
+      comments:
+        - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SidonSequence.html"
        - "https://en.wikipedia.org/wiki/Sidon_sequence"
@@ -9449,7 +9522,8 @@ concepts:
       en: size of test
       property: symbol
       area: "statistics"
-      notation: "mi α"
+      comments:
+        - "<math><mi>α</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Size_(statistics)"
     
@@ -9512,7 +9586,8 @@ concepts:
       en: soft o
       property: symbol
       area: "complexity theory"
-      notation: "mi Õ"
+      comments:
+        - "<math><mi>Õ</mi></math>"
       urls: 
       alias:
        - Extensions_to_the_Bachmann–Landau_notations
@@ -9522,7 +9597,8 @@ concepts:
       en: solid angle
       property: symbol
       area: "geometry"
-      notation: "mi Ω"
+      comments:
+        - "<math><mi>Ω</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SolidAngle.html"
        - "https://en.wikipedia.org/wiki/Solid_angle"
@@ -9595,7 +9671,8 @@ concepts:
       en: spectrum category
       property: symbol
       area: "category theory"
-      notation: "mi Sp"
+      comments:
+        - "<math><mi>Sp</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/Spectrum"
     
@@ -9653,7 +9730,8 @@ concepts:
       en: spin angular momentum
       property: symbol
       area: "quantum mechanics"
-      notation: "mi S"
+      comments:
+        - "<math><mi>S</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spin_(physics)"
     
@@ -9662,7 +9740,8 @@ concepts:
       en: spin group
       property: symbol
       area: "group theory"
-      notation: "mi Spin"
+      comments:
+        - "<math><mi>Spin</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpinGroup.html"
        - "https://en.wikipedia.org/wiki/Spin_group"
@@ -9674,7 +9753,8 @@ concepts:
       en: spin quantum number
       property: symbol
       area: "quantum mechanics"
-      notation: "mi s"
+      comments:
+        - "<math><mi>s</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spin_(physics)"
     
@@ -9714,7 +9794,8 @@ concepts:
       en: standard deviation
       property: symbol
       area: "probability theory"
-      notation: "mi σ"
+      comments:
+        - "<math><mi>σ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/StandardDeviation.html"
        - "https://en.wikipedia.org/wiki/Standard_deviation"
@@ -10180,7 +10261,8 @@ concepts:
       en: tau particle
       property: symbol
       area: "particle physics"
-      notation: "mi τ"
+      comments:
+        - "<math><mi>τ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tau_(particle)"
     
@@ -10221,7 +10303,8 @@ concepts:
       en: temperature
       property: symbol
       area: "physics"
-      notation: "mi T"
+      comments:
+        - "<math><mi>T</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Temperature.html"
        - "https://en.wikipedia.org/wiki/Temperature"
@@ -10302,7 +10385,8 @@ concepts:
       en: thompson group
       property: symbol
       area: "group theory"
-      notation: "mi Th"
+      comments:
+        - "<math><mi>Th</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ThompsonGroup.html"
        - "https://en.wikipedia.org/wiki/Thompson_groups"
@@ -10355,7 +10439,8 @@ concepts:
       en: torque
       property: symbol
       area: "mechanics"
-      notation: "mi τ"
+      comments:
+        - "<math><mi>τ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torque"
     
@@ -10364,7 +10449,8 @@ concepts:
       en: torsion
       property: symbol
       area: "differential geometry"
-      notation: "mi τ"
+      comments:
+        - "<math><mi>τ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Torsion.html"
        - "https://en.wikipedia.org/wiki/Torsion_of_a_curve"
@@ -10710,7 +10796,8 @@ concepts:
       en: universal parabolic constant
       property: constant
       area: "geometry"
-      notation: "mi P"
+      comments:
+        - "<math><mi>P</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/UniversalParabolicConstant.html"
        - "https://en.wikipedia.org/wiki/Universal_parabolic_constant"
@@ -10908,7 +10995,8 @@ concepts:
       en: volume
       property: symbol
       area: "physics"
-      notation: "mi V"
+      comments:
+        - "<math><mi>V</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Volume.html"
        - "https://en.wikipedia.org/wiki/Volume_(compression)"
@@ -11292,7 +11380,8 @@ concepts:
       en: z matrix
       property: symbol
       area: "linear algebra"
-      notation: "mi Z"
+      comments:
+        - "<math><mi>Z</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Z-matrix_(mathematics)"
     
