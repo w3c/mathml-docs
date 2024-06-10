@@ -154,7 +154,7 @@ defaultfixity:
        - concept: ratio
          characters: [":", "∶"]
        - concept: set-difference
-         characters: "[∼, ~, -, −, \\]"
+         characters: ["∼", "~", "-", "−", "\\"]
        - concept: similar
          characters: [≅]
        - concept: subset
