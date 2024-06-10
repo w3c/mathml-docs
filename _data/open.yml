@@ -9734,7 +9734,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-       - "<math><mi mathvariant="normal">i</mi></math>"
+       - "<math><mi mathvariant='normal'>i</mi></math>"
        - "<math><mi>ii</mi></math>"
        - "<math><mi>iii</mi></math>"
        - "<math><mi>iv</mi></math>"
