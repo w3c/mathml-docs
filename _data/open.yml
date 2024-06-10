@@ -11572,8 +11572,10 @@ concepts:
       en: winding number of $1
       property: "function, symbol"
       area: "algebraic topology"
-      notation: "mi 𝒩<br/>mi w"
-      urls: 
+      comments:
+       - "<math><mrow><mi>𝒩</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>w</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       urls: 
        - "https://en.wikipedia.org/wiki/Winding_number"
        - "https://dlmf.nist.gov/1.9#E32"
        - "https://ncatlab.org/nlab/show/winding+number"
@@ -11597,7 +11599,8 @@ concepts:
       en: wishart distribution
       property: symbol
       area: "probability theory"
-      notation: "msub W p"
+      comments:
+       - "<math><msub><mi>W</mi><mi>p</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WishartDistribution.html"
        - "https://en.wikipedia.org/wiki/Wishart_distribution"
@@ -11608,13 +11611,14 @@ concepts:
       en: witt polynomials of $1
       property: "indexed function"
       area: "ring theory"
-      notation: "msub W $1"
+      comments:
+       - "<math><msub><mi>W</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Witt_vector"
        - "https://www.encyclopediaofmath.org/index.php/Witt_vector"
     
     - concept: witt-vector
-      arity: 1
+      arity: n
       en: witt vector of $1
       property: fenced
       area: "ring theory"
@@ -11628,7 +11632,8 @@ concepts:
       en: woodall number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub W $1"
+      comments:
+       - "<math><msub><mi>W</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WoodallNumber.html"
        - "https://en.wikipedia.org/wiki/Woodall_number"
@@ -11741,7 +11746,8 @@ concepts:
       en: zero ideal
       property: symbol
       area: "ring theory"
-      notation: "mrow {0}"
+      comments:
+       - "<math><mo>{</mo><mn>0</mn><mo>}</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZeroIdeal.html"
        - "https://ncatlab.org/nlab/show/zero+ideal"
@@ -11770,7 +11776,8 @@ concepts:
       en: zero object
       property: symbol
       area: "algebra"
-      notation: "mrow {0}"
+      comments:
+       - "<math><mo>{</mo><mn>0</mn><mo>}</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_object_(algebra)"
        - "https://ncatlab.org/nlab/show/zero+object"
@@ -11780,7 +11787,9 @@ concepts:
       en: zero ring
       property: symbol
       area: "ring theory"
-      notation: "mrow {0}<br/>mn 0"
+      comments:
+       - "<math><mo>{</mo><mn>0</mn><mo>}</mo></math>"
+       - "<math><mn>0</mn></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZeroRing.html"
        - "https://en.wikipedia.org/wiki/Zero_ring"
@@ -11790,7 +11799,8 @@ concepts:
       en: zero vector
       property: constant
       area: "linear algebra"
-      notation: "mn 0"
+      comments:
+       - "<math><mn>0</mn></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZeroVector.html"
     
