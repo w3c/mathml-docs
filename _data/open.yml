@@ -63,7 +63,7 @@ concepts:
     - concept: ad
       arity: 1
       en: $1 a d
-      property: postfix
+      property: postfix. prefix
       area: "calendar units"
       notation: "mi AD"
       urls: 
@@ -74,7 +74,8 @@ concepts:
       en: additive inverse of $1
       property: prefix
       area: "abstract algebra"
-      notation: "mo -"
+      comments:
+       - "<math><mo>-</mo><mi>n</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Additive_inverse"
       alias:
@@ -308,7 +309,7 @@ concepts:
     - concept: alternative-denial
       arity: 2
       en: $1 alternative denial $2
-      property: infix<br/>prefix
+      property: infix, prefix
       area: "propositional calculus"
       notation: "mo | <br/>mo ↑<br/>mrow D $1 $2"
       urls: 
@@ -1233,7 +1234,7 @@ concepts:
     - concept: ceiling
       arity: 1
       en: ceiling of $1
-      property: fenced<br/>function
+      property: fenced, function
       area: "number theory"
       notation: "⌈ $1 ⌉<br/>〛 $1 〚<br/>] $1 [<br/>ceil ($1"
       urls: 
@@ -1316,7 +1317,7 @@ concepts:
     - concept: characteristic-function
       arity: 1
       en: characteristic function of $1
-      property: "indexed function<br/>function"
+      property: "indexed function, function"
       area: "probability theory"
       notation: "msub 𝟏 $1<br/>mrow 𝟏 { $1 }"
       urls: 
@@ -1560,7 +1561,7 @@ concepts:
     - concept: closed-neighbourhood
       arity: 2
       en: closed neighbourhood
-      property: "indexed function<br/>function"
+      property: "indexed function, function"
       area: "graph theory"
       notation: "msub N $1 [ $2 ]<br/>mrow N [ $1 ]"
       urls: 
@@ -1569,7 +1570,7 @@ concepts:
     - concept: closure
       arity: 1
       en: closure of $1
-      property: "function<br/>msup"
+      property: "function, msup"
       area: "abstract algebra,, topology"
       notation: "mi cl<br/>mi Cl<br/>msup $1 −"
       urls: 
@@ -1684,7 +1685,7 @@ concepts:
     - concept: commutator-subgroup
       arity: 1
       en: commutator subgroup of $1
-      property: msup<br/>fenced
+      property: msup, fenced
       area: "abstract algebra"
       notation: "msup $1 '<br/>msup $1 (1)<br/>mrow [ $1, $1 ]"
       urls: 
@@ -2504,7 +2505,7 @@ concepts:
     - concept: degree
       arity: 1
       en: degree of $1
-      property: prefix<br/>postfix
+      property: prefix, postfix
       area: "physics, geometry"
       notation: "mo °"
       urls: 
@@ -2636,7 +2637,7 @@ concepts:
     - concept: diameter
       arity: 1
       en: diameter of $1
-      property: symbol<br/>prefix unit
+      property: symbol, prefix unit
       area: "geometry"
       notation: "mi d<br/>mo ⌀<br/>mi DIA<br/>mi dia"
       urls: 
@@ -2745,7 +2746,7 @@ concepts:
     - concept: dimension
       arity: 1
       en: dimension of $1
-      property: "function<br/>fenced"
+      property: "function, fenced"
       area: "linear algebra, graph theory"
       notation: "mi dim<br/>mrow [ $1 ]"
       urls: 
@@ -2857,7 +2858,7 @@ concepts:
     - concept: directional-derivative
       arity: 1
       en: directional derivative of $1
-      property: "function<br/>mixfix"
+      property: "function, mixfix"
       area: "differential calculus"
       notation: "msub ∇ v<br/>msub D v<br/>mrow v ⋅ ∇ $1"
       urls: 
@@ -2996,7 +2997,7 @@ concepts:
     - concept: divergence
       arity: 1
       en: divergence of $1
-      property: "function<br/>mixfix"
+      property: "function, mixfix"
       area: "vector calculus"
       notation: "mi div<br/>mrow ∇ ⋅ $1"
       urls: 
@@ -3010,7 +3011,7 @@ concepts:
     - concept: divided-difference
       arity: 1
       en: divided difference of $1
-      property: "fenced<br/>mixfix"
+      property: "fenced, mixfix"
       area: "special functions"
       notation: "mrow [ $1, ... $n ]<br/>mrow #f [$1, ..., $n ]<br/>mrow D [ $1, ... $n ] #f"
       urls: 
@@ -3710,7 +3711,7 @@ concepts:
     - concept: exterior
       arity: 1
       en: exterior of $1
-      property: "function<br/>msup"
+      property: "function, msup"
       area: "topology"
       notation: "mi ext<br/>msup $1 e"
       urls: 
@@ -3970,7 +3971,7 @@ concepts:
     - concept: floor
       arity: 1
       en: floor of $1
-      property: fenced<br/>function
+      property: fenced, function
       area: "number theory"
       notation: "⌊ $1 ⌋<br/>〚 $1 〛<br/>[ $1 ]<br/>floor ($1"
       urls: 
@@ -4083,7 +4084,7 @@ concepts:
     - concept: fractional-part
       arity: 1
       en: fractional part of $1
-      property: "function<br/>fenced"
+      property: "function, fenced"
       area: "arithmetic"
       notation: "mi frac<br/>mrow ⟦ $1 ⟧<br/>mrow { $1 }"
       urls: 
@@ -4166,7 +4167,7 @@ concepts:
     - concept: free-module
       arity: 2
       en: free module $1 $2
-      property: mixfix<br/>msup
+      property: mixfix, msup
       area: "module theory"
       notation: "mrow $1 { $2 }<br/>msup $1 ($2"
       urls: 
@@ -4251,7 +4252,7 @@ concepts:
     - concept: functor-category
       arity: 2
       en: functor category
-      property: msup<br/>fenced
+      property: msup, fenced
       area: "category theory"
       notation: "msup $1 $2<br/>mrow [$1, $2]"
       urls: 
@@ -4757,7 +4758,7 @@ concepts:
     - concept: group-of-units
       arity: 1
       en: group of units of $1
-      property: msup<br/>function
+      property: msup, function
       area: "ring theory"
       notation: "msup $1 *<br/>msup $1 ×<br/>mi U"
       urls: 
@@ -4767,7 +4768,7 @@ concepts:
     - concept: group-ring
       arity: 2
       en: group ring $1 $2
-      property: mixfix<br/>infix
+      property: mixfix, infix
       area: "ring theory"
       notation: "mrow $1 [ $2 ]<br/>mrow $1 $2"
       urls: 
@@ -5328,7 +5329,7 @@ concepts:
     - concept: hyperdeterminant
       arity: 1
       en: hyperdeterminant of $1
-      property: "function<br/>fenced"
+      property: "function, fenced"
       area: "multilinear algebra"
       notation: "mi det<br/>mrow | $1 |"
       urls: 
@@ -5578,7 +5579,7 @@ concepts:
     - concept: infimum
       arity: 1
       en: infimum of $1
-      property: "function<br/>largeop"
+      property: "function, largeop"
       area: "order theory"
       notation: "mi inf<br/>mo ⋀"
       urls: 
@@ -5628,7 +5629,7 @@ concepts:
     - concept: injection
       arity: 3
       en: injection $1, from $2 to $3
-      property: mixfix<br/>
+      property: mixfix, 
       area: "set theory"
       comments:
        - "<math><mi>f</mi><mo>:</mo><mi>X</mi><mo>↣</mo><mi>Y</mi></math>"
@@ -5664,7 +5665,7 @@ concepts:
     - concept: inner-product
       arity: 2
       en: $1 inner product $2
-      property: infix<br/>fenced
+      property: infix, fenced
       area: "linear algebra"
       notation: "mo ⋅<br/>mrow [ $1, $2 ]"
       urls: 
@@ -5686,7 +5687,7 @@ concepts:
     - concept: integer-part
       arity: 1
       en: integer part of $1
-      property: "function<br/>fenced"
+      property: "function, fenced"
       area: "number theory"
       notation: "mi int<br/>[ $1 ]"
       urls: 
@@ -5708,7 +5709,7 @@ concepts:
     - concept: interior-product
       arity: 1
       en: interior product of $1
-      property: "infix<br/>indexed function"
+      property: "infix, indexed function"
       area: "differential forms"
       notation: "mo ⨼<br/>msub ι $1"
       urls: 
@@ -5752,7 +5753,7 @@ concepts:
     - concept: inverse-moment-of-function
       arity: 2
       en: inverse moment of function $1 $2
-      property: "<br/>msub<br/>mixfix"
+      property: "<br/>msub, mixfix"
       area: "mathematics"
       notation: "msub μ mrow - $1 /mrow<br/>mrow E [ msup $1 mrow - $2 /mrow ]"
       urls: 
@@ -6272,7 +6273,7 @@ concepts:
     - concept: kronecker-symbol
       arity: 2
       en: kronecker symbol
-      property: fenced<br/>fenced stacked
+      property: fenced, fenced stacked
       area: "number theory"
       notation: "mrow ( $1 | $2 )<br/>( mfrac $1 $2 )"
       urls: 
@@ -6386,7 +6387,7 @@ concepts:
     - concept: laplace-operator
       arity: 1
       en: laplace operator of $1
-      property: "<br/>embellished operator<br/>"
+      property: "<br/>embellished operator, "
       area: "differential operators"
       notation: "msup ∇ 2<br/>mrow ∇ · ∇<br/>mi Δ"
       urls: 
@@ -6542,7 +6543,7 @@ concepts:
     - concept: legendre-symbol
       arity: 2
       en: legendre symbol
-      property: fenced<br/>fenced stacked
+      property: fenced, fenced stacked
       area: "number theory"
       notation: "mrow ( $1 | $2 )<br/>mrow ( mfrac $1 $2 )"
       urls: 
@@ -6612,7 +6613,7 @@ concepts:
     - concept: lexicographic-product
       arity: 2
       en: $1 lexicographic product $2
-      property: infix<br/>mixfix
+      property: infix, mixfix
       area: "graph theory"
       notation: "mo ∙<br/>$1 [ $2 ]"
       urls: 
@@ -6778,7 +6779,7 @@ concepts:
     - concept: logarithmic-moment-of-function
       arity: 2
       en: logarithmic moment of function $1 $2
-      property: "<br/><br/>mixfix"
+      property: "<br/>, mixfix"
       area: "mathematics"
       notation: "E [ msup ln $1 /msup ( $2 ) ]"
       urls: 
@@ -7044,7 +7045,7 @@ concepts:
     - concept: matrix
       arity: 1
       en: matrix of $1
-      property: mtable<br/>fenced
+      property: mtable, fenced
       area: "algebra"
       notation: "mtable<br/>mrow [ $1 ]<br/>mrow ( $1"
       urls: 
@@ -7364,7 +7365,7 @@ concepts:
     - concept: modulo
       arity: 2
       en: $1 modulo $2
-      property: infix<br/>mixfix
+      property: infix, mixfix
       area: "modular arithmetic"
       notation: "mo mod<br/>mrow $1 ( mod $2"
       urls: 
@@ -7389,7 +7390,7 @@ concepts:
     - concept: moment-of-function
       arity: 2
       en: moment of function $1 $2
-      property: "<br/>msub<br/>mixfix"
+      property: "<br/>msub, mixfix"
       area: "mathematics"
       notation: "msub μ $1<br/>mrow E [ msup $1 $2 ]"
       urls: 
@@ -7506,7 +7507,7 @@ concepts:
     - concept: multiplicative-inverse
       arity: 1
       en: multiplicative inverse of $1
-      property: msup<br/>mixfix
+      property: msup, mixfix
       area: "abstract algebra"
       notation: "msup $1 -1<br/>mrow 1 / $1"
       urls: 
@@ -7651,7 +7652,7 @@ concepts:
     - concept: neighbourhood
       arity: 2
       en: neighbourhood
-      property: "indexed function<br/>function"
+      property: "indexed function, function"
       area: "graph theory"
       notation: "msub N $1 ( $2 )<br/>mrow N ( $1"
       urls: 
@@ -7930,7 +7931,7 @@ concepts:
     - concept: order-of-group
       arity: 1
       en: order of group of $1
-      property: "function<br/>fenced"
+      property: "function, fenced"
       area: "group theory"
       notation: "mi ord<br/>mrow | $1 |"
       urls: 
@@ -8202,7 +8203,7 @@ concepts:
     - concept: permutation
       arity: 1
       en: permutation of $1
-      property: fenced<br/>mtable<br/>mixfix
+      property: fenced<br/>mtable, mixfix
       area: "combinatorics"
       notation: "mrow ($1, ... $n)<br/>mtable<br/>mrow (312)(54)(8)(976"
       urls: 
@@ -8476,7 +8477,7 @@ concepts:
     - concept: positive-part
       arity: 1
       en: positive part of $1
-      property: msup<br/>msub
+      property: msup, msub
       area: "elementary mathematics"
       notation: "msup $1 +<br/>msub $1 +"
       urls: 
@@ -8507,7 +8508,7 @@ concepts:
     - concept: power-set
       arity: 1
       en: power set of $1
-      property: "function<br/>msup"
+      property: "function, msup"
       area: "set theory"
       notation: "mi P<br/>mi 𝒫<br/>mi ℙ<br/>mi ℘<br/>msup 2 $1"
       urls: 
@@ -9478,7 +9479,7 @@ concepts:
     - concept: scalar-triple-product
       arity: 3
       en: scalar triple product  of $1, $2 and $3
-      property: mixfix<br/>fenced
+      property: mixfix, fenced
       area: "vector algebra"
       comments:
        - "<math><mi>A</mi><mo>&middot;</mo><mrow><mo>(</mo><mi>B</mi><mo>&middot;</mo><mi>C</mi><mo>)</mo></mrow></math>"
@@ -9545,7 +9546,7 @@ concepts:
     - concept: schwarzian-derivative
       arity: 2
       en: schwarzian derivative $1 $2
-      property: fenced<br/>mixfix
+      property: fenced, mixfix
       area: "complex analysis"
       notation: "mrow { $1, $2 }<br/>mrow ( S $1 ) ($2"
       urls: 
@@ -10308,7 +10309,7 @@ concepts:
     - concept: successor
       arity: 1
       en: successor of $1
-      property: "function<br/>msup"
+      property: "function, msup"
       area: "number theory"
       notation: "msup $1 +<br/>mi s<br/>mi S"
       urls: 
@@ -10368,7 +10369,7 @@ concepts:
     - concept: supremum
       arity: 1
       en: supremum of $1
-      property: "function<br/>largeop"
+      property: "function, largeop"
       area: "order theory, lattice theory"
       notation: "mi sup<br/>mo ⋁"
       urls: 
@@ -10408,7 +10409,7 @@ concepts:
     - concept: surjection
       arity: 3
       en: surjection  $1 $2 $3
-      property: mixfix<br/>infix
+      property: mixfix, infix
       area: "set theory"
       comments:
        - "<math><mi>f</mi><mo>:</mo><mi>X</mi><mo>&#x21a0;</mo><mi>Y</mi></math>"
@@ -10454,7 +10455,7 @@ concepts:
     - concept: symmetric-group
       arity: 1
       en: symmetric group of $1
-      property: "msub<br/>function<br/>postfix"
+      property: "msub<br/>function, postfix"
       area: "group theory"
       notation: "msub S $1<br/>msub 𝔖 $1<br/>msub Σ $1<br/>mrow Σ ( $1 )<br/>mrow Sym ( $1 )<br/>mrow $1 !<br/>"
       urls: 
@@ -10941,7 +10942,7 @@ concepts:
     - concept: turan-graph
       arity: 2
       en: turan graph $1 $2
-      property: "function<br/>indexed function"
+      property: "function, indexed function"
       area: "graph theory"
       notation: "mi T<br/>mi D<br/>msub T $1<br/>msub T $1,$2"
       urls: 
@@ -11038,7 +11039,7 @@ concepts:
     - concept: uniformly-convergent
       arity: 1
       en: uniformly convergent of $1
-      property: infix<br/>indexed<br/>postfix
+      property: infix<br/>indexed, postfix
       area: "convergence"
       notation: "mo ⇉<br/>mover ⟶ unif.<br/>mo unif lim<br/>mtext uniformly"
       urls: 
@@ -11569,7 +11570,7 @@ concepts:
     - concept: winding-number
       arity: 1
       en: winding number of $1
-      property: "function<br/>symbol"
+      property: "function, symbol"
       area: "algebraic topology"
       notation: "mi 𝒩<br/>mi w"
       urls: 
