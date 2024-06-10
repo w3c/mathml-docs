@@ -6101,7 +6101,7 @@ concepts:
       property: indexed fenced
       area: "classical mechanics"
       comments:
-       - "<math><msub><mrow><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi></mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msub></math>"
+       - "<math><msub><mrow><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>]</mo></mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LagrangeBracket.html"
        - "https://en.wikipedia.org/wiki/Lagrange_bracket"
