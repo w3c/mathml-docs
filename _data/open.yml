@@ -6363,7 +6363,7 @@ concepts:
       property: "indexed symbol"
       area: "combinatorics"
       comments:
-       - "<math><msub><mi>&#x03f5;</mi><mrow><mi>i</mi><mi>j</mi><mi>k</mi></mrow></msub></math>
+       - "<math><msub><mi>&#x03f5;</mi><mrow><mi>i</mi><mi>j</mi><mi>k</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Levi-CivitaSymbol.html"
        - "https://en.wikipedia.org/wiki/Levi-Civita_symbol"
