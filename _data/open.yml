@@ -62,10 +62,11 @@ concepts:
     
     - concept: ad
       arity: 1
-      en: $1 a d
+      en: a d $1
       property: postfix. prefix
       area: "calendar units"
-      notation: "mi AD"
+      comments:
+       - "<math><mi>AD</mi><mo>&#x2009;</mo><mn>2024</mn></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Anno_Domini"
     
@@ -664,7 +665,8 @@ concepts:
       en: $1 b c
       property: postfix
       area: "calendar units"
-      notation: "mi BC"
+      comments:
+       - "<math><mn>2024</mn><mo>&#x2009;</mo><mi>BC</mi></math>"      
       urls: 
        - "https://en.wikipedia.org/wiki/Anno_Domini"
     
@@ -673,7 +675,8 @@ concepts:
       en: beatty sequence of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub 𝓑 $1"
+      comments:
+       - "<math><msub><mi>𝓑</mi><mi>r</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BeattySequence.html"
        - "https://en.wikipedia.org/wiki/Beatty_sequence"
@@ -683,7 +686,8 @@ concepts:
       en: bell number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub B $1"
+      comments:
+       - "<math><msub><mi>B</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BellNumber.html"
        - "https://en.wikipedia.org/wiki/Bell_number"
@@ -3237,7 +3241,8 @@ concepts:
       en: double factorial of $1
       property: postfix
       area: "combinatorics"
-      notation: "mo !!"
+      comments:
+       - "<math><mn>10</mn><mo>&#x203c;</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/DoubleFactorial.html"
        - "https://en.wikipedia.org/wiki/Double_factorial"
@@ -3250,7 +3255,8 @@ concepts:
       en: double mersenne number
       property: symbol
       area: "number theory"
-      notation: "msub M msub M $1"
+      comments:
+       - "<math><msub><mi>M</mi><msub><mi>M</mi><mi>p</mi></msub></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/DoubleMersenneNumber.html"
        - "https://en.wikipedia.org/wiki/Double_Mersenne_number"
@@ -3453,7 +3459,8 @@ concepts:
       en: energy of signal
       property: symbol
       area: "signal processing"
-      notation: "msub E s"
+      comments:
+       - "<math><msub><mi>E</mi><mi>s</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Energy_(signal_processing)"
        - "https://en.wikipedia.org/wiki/Energy_(signal_processing)"
