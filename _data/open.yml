@@ -2798,7 +2798,7 @@ concepts:
       area: "special functions"
       notation: "msub ψ 0"
       notationb: "msup ψ (0)"
-             - "<math><mi>Ϝ</mi></math>"
+      notationa: "mi F"
       urls: 
        - "https://mathworld.wolfram.com/DigammaFunction.html"
        - "https://en.wikipedia.org/wiki/Digamma_function"
@@ -3347,7 +3347,7 @@ concepts:
       area: "analytic geometry, graph theory"
       comments:
        - "<math><mi>e</mi></math>"
-             - "<math><mi>ϵ</mi></math>"
+       - "<math><mi>ϵ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Eccentricity.html"
        - "https://en.wikipedia.org/wiki/Eccentricity_(mathematics)"
@@ -3698,7 +3698,7 @@ concepts:
       area: "analysis"
       comments:
        - "<math><mi>γ</mi></math>"
-             - "<math><mi>𝛾</mi></math>"
+       - "<math><mi>𝛾</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Euler-MascheroniConstant.html"
        - "https://en.wikipedia.org/wiki/%CE%93%27(1)"
@@ -3715,8 +3715,8 @@ concepts:
       area: "physics"
       comments:
        - "<math><mi>Eu</mi></math>"
-             - "<math><mi>e</mi></math>"
-             - "<math><mi>𝑒</mi></math>"
+       - "<math><mi>e</mi></math>"
+       - "<math><mi>𝑒</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerNumber.html"
        - "https://en.wikipedia.org/wiki/Euler_number"
@@ -4821,7 +4821,7 @@ concepts:
       area: "geometry"
       comments:
        - "<math><mi>φ</mi></math>"
-             - "<math><mi>ϕ</mi></math>"
+       - "<math><mi>ϕ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GoldenRatio.html"
        - "https://en.wikipedia.org/wiki/Golden_ratio"
@@ -4836,7 +4836,6 @@ concepts:
        - divine-section
        - golden-proportion
        - golden-cut
-       - 
     
     - concept: graham-number
       arity: 0
@@ -8123,7 +8122,6 @@ concepts:
       area: "compositional algebra"
       comments:
        - "<math><mi>𝕆</mi></math>"
-      notationb: "miO"
        - "<math><mi>O</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Octonion.html"
