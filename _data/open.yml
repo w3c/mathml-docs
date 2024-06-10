@@ -294,7 +294,8 @@ concepts:
       en: $1 alternation $2
       property: infix
       area: "logic"
-      notation: "mo |"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>|</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Alternation_(formal_language_theory)"
        - "https://en.wikipedia.org/wiki/%E2%88%A8"
@@ -454,7 +455,8 @@ concepts:
       en: $1 apartness relation $2
       property: infix
       area: "constructive mathematics"
-      notation: "mo #"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>#</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Apartness_relation"
        - "https://ncatlab.org/nlab/show/apartness+relation"
@@ -1002,7 +1004,8 @@ concepts:
       en: $1 box product $2
       property: infix
       area: "graph theory"
-      notation: "mo ☐"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>☐</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cartesian_product_of_graphs"
       alias:
@@ -1076,7 +1079,8 @@ concepts:
       en: $1 cap product $2
       property: infix
       area: "algebraic topology"
-      notation: "mo ⌣"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⌣</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cap_product"
        - "https://ncatlab.org/nlab/show/cap+product"
@@ -1110,7 +1114,8 @@ concepts:
       en: $1 cartesian product $2
       property: infix
       area: "set theory"
-      notation: "mo ×"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CartesianProduct.html"
        - "https://en.wikipedia.org/wiki/Cartesian_product"
@@ -1198,7 +1203,8 @@ concepts:
       en: $1 cauchy product $2
       property: infix
       area: "analysis"
-      notation: "mo ⋅"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⋅</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CauchyProduct.html"
        - "https://en.wikipedia.org/wiki/Cauchy_product"
@@ -1329,7 +1335,8 @@ concepts:
       en: $1 characteristic subgroup $2
       property: infix
       area: "group theory"
-      notation: "mo char"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>char</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Characteristic_subgroup"
        - "https://www.encyclopediaofmath.org/index.php/Characteristic_subgroup"
@@ -1400,7 +1407,8 @@ concepts:
       en: $1 chemical equilibrium $2
       property: infix
       area: "chemistry"
-      notation: "mo ⇌"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⇌</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Chemical_equilibrium"
       alias:
@@ -1783,7 +1791,8 @@ concepts:
       en: $1 composition $2
       property: infix
       area: "algebra"
-      notation: "mo ∘"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∘</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Composition.html"
        - "https://ncatlab.org/nlab/show/composition"
@@ -1860,7 +1869,8 @@ concepts:
       en: $1 contraction operator $2
       property: infix
       area: "algebraic geometry"
-      notation: "mo ⌟"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⌟</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://arxiv.org/abs/1104.1240"
     
@@ -1933,7 +1943,8 @@ concepts:
       en: $1 connected sum $2
       property: infix
       area: "topology"
-      notation: "mo #"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>#</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConnectedSum.html"
        - "https://en.wikipedia.org/wiki/Connected_sum"
@@ -1967,7 +1978,8 @@ concepts:
       en: $1 containment $2
       property: infix
       area: "computer science"
-      notation: "mo ≤"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>≤</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Encompassment_ordering"
        - "https://en.wikipedia.org/wiki/Subset"
@@ -2071,7 +2083,8 @@ concepts:
       en: $1 convolution $2
       property: infix
       area: "functional analysis"
-      notation: "mo ∗"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∗</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Convolution.html"
        - "https://en.wikipedia.org/wiki/List_of_convolutions_of_probability_distributions"
@@ -2098,7 +2111,8 @@ concepts:
       en: $1 coprime $2
       property: infix
       area: "number theory"
-      notation: "mo ⊥"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊥</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Coprime.html"
        - "https://en.wikipedia.org/wiki/Coprime_integers"
@@ -2220,7 +2234,8 @@ concepts:
       en: $1 cross product $2
       property: infix
       area: "linear algebra"
-      notation: "mo ×"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CrossProduct.html"
        - "https://en.wikipedia.org/wiki/Cross_product"
@@ -2295,7 +2310,8 @@ concepts:
       en: $1 cup product $2
       property: infix
       area: "algebraic topology"
-      notation: "mo ⌣"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⌣</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cup_product"
        - "https://ncatlab.org/nlab/show/cup+product"
@@ -2435,7 +2451,8 @@ concepts:
       en: $1 decrease tends to? $2
       property: infix
       area: "calculus"
-      notation: "mo ↘"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>↘</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right"
        - "http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf"
@@ -2550,7 +2567,8 @@ concepts:
       en: $1 dependence relation $2
       property: infix
       area: "linear algebra"
-      notation: "mo ◃"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>◃</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dependence_relation"
     
@@ -2704,7 +2722,8 @@ concepts:
       en: $1 dilation $2
       property: infix
       area: "mathematical morphology"
-      notation: "mo ⊕"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊕</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dilation_(morphology)"
     
@@ -2809,7 +2828,8 @@ concepts:
       en: $1 direct product $2
       property: infix
       area: "abstract algebra"
-      notation: "mo ×"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirectProduct.html"
        - "https://en.wikipedia.org/wiki/Direct_product"
@@ -2822,7 +2842,8 @@ concepts:
       en: $1 direct sum $2
       property: infix
       area: "abstract algebra"
-      notation: "mo ⊕"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊕</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirectSum.html"
        - "https://en.wikipedia.org/wiki/Direct_sum"
@@ -2862,7 +2883,8 @@ concepts:
       en: $1 dirichlet convolution $2
       property: infix
       area: "number theory"
-      notation: "mo ∗"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∗</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dirichlet_convolution"
        - "https://www.encyclopediaofmath.org/index.php/Dirichlet_convolution"
@@ -3068,7 +3090,8 @@ concepts:
       en: $1 dot product $2
       property: infix
       area: "linear algebra"
-      notation: "mo ⋅"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⋅</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DotProduct.html"
        - "https://en.wikipedia.org/wiki/Dot_product"
@@ -3080,7 +3103,8 @@ concepts:
       en: $1 double bond $2
       property: infix
       area: "chemistry"
-      notation: "mo ="
+      comments:
+       - "<math><mrow><mi>X</mi><mo>=</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Double_bond"
     
@@ -3377,7 +3401,8 @@ concepts:
       en: $1 equivalence relation $2
       property: infix
       area: "set theory"
-      notation: "mo ~"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>~</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EquivalenceRelation.html"
        - "https://en.wikipedia.org/wiki/Equivalence_relation"
@@ -3718,7 +3743,8 @@ concepts:
       en: $1 exterior product $2
       property: infix
       area: "multilinear algebra"
-      notation: "mo ∧"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∧</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExteriorProduct.html"
        - "https://www.encyclopediaofmath.org/index.php/Exterior_product"
@@ -3887,7 +3913,8 @@ concepts:
       en: $1 field extension $2
       property: infix
       area: "algebra"
-      notation: "mo /"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>/</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FieldExtension.html"
        - "https://en.wikipedia.org/wiki/Field_extension"
@@ -4164,7 +4191,8 @@ concepts:
       en: $1 free product $2
       property: infix
       area: "group theory"
-      notation: "mo *"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>*</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FreeProduct.html"
        - "https://en.wikipedia.org/wiki/Free_product"
@@ -5104,7 +5132,8 @@ concepts:
       en: $1 hit or miss transform $2
       property: infix
       area: "mathematical morphology"
-      notation: "mo ⊙"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊙</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hit-or-miss_transform"
     
@@ -5167,7 +5196,8 @@ concepts:
       en: $1 homomorphic product $2
       property: infix
       area: "graph theory"
-      notation: "mo ⋉"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⋉</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Graph_product"
     
@@ -6230,7 +6260,8 @@ concepts:
       en: $1 kronecker product $2
       property: infix
       area: "matrix theory"
-      notation: "mo ⊗"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊗</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KroneckerProduct.html"
        - "https://en.wikipedia.org/wiki/Khatri-Rao_product"
@@ -6459,7 +6490,8 @@ concepts:
       en: $1 left adjoint $2
       property: infix
       area: "category theory"
-      notation: "mo ⊣"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊣</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Adjoint_functors"
     
@@ -6468,7 +6500,8 @@ concepts:
       en: $1 left composition $2
       property: infix
       area: "algebra"
-      notation: "mo ;"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>;</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Composition_of_relations"
       alias:
@@ -6592,7 +6625,8 @@ concepts:
       en: $1 lexicographic order $2
       property: infix
       area: "discrete mathematics"
-      notation: "mo <"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>&lt;</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Lexicographic_order"
        - "https://mathworld.wolfram.com/LexicographicOrder.html"
@@ -6627,7 +6661,8 @@ concepts:
       en: $1 like charge $2
       property: infix
       area: "physics"
-      notation: "mo ⇈"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⇈</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4719"
     
@@ -7205,7 +7240,8 @@ concepts:
       en: $1 minkowski difference $2
       property: infix
       area: "geometry"
-      notation: "mo -"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>-</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Minkowski_addition"
       alias:
@@ -7216,7 +7252,8 @@ concepts:
       en: $1 minkowski sum $2
       property: infix
       area: "geometry"
-      notation: "mo +"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MinkowskiSum.html"
        - "https://en.wikipedia.org/wiki/Minkowski_addition"
@@ -7697,7 +7734,8 @@ concepts:
       en: $1 nor $2
       property: infix
       area: "logic"
-      notation: "mo ↓"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>↓</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Nor.html"
        - "https://mathworld.wolfram.com/NOR.html"
@@ -7733,7 +7771,8 @@ concepts:
       en: $1 not divisible by $2
       property: infix
       area: "number theory"
-      notation: "mo ∤"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∤</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Divisor"
     
@@ -7870,7 +7909,8 @@ concepts:
       en: $1 opposite charge $2
       property: infix
       area: "physics"
-      notation: "mo ⇅"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⇅</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4657"
     
@@ -7879,7 +7919,8 @@ concepts:
       en: $1 or product $2
       property: infix
       area: "graph theory"
-      notation: "mo *"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>*</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/w/index.php?title=Graph_product"
       alias:
@@ -7909,7 +7950,8 @@ concepts:
       en: $1 orthogonal $2
       property: infix
       area: "geometry,<br/>algebra"
-      notation: "mo ⊥"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊥</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Orthogonal.html"
        - "https://en.1wikipedia.org/wiki/Orthogonal_functions"
@@ -7963,7 +8005,8 @@ concepts:
       en: $1 outer product $2
       property: infix
       area: "linear algebra"
-      notation: "mo ⊗"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊗</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OuterProduct.html"
        - "https://en.wikipedia.org/wiki/Outer_product"
@@ -8021,7 +8064,8 @@ concepts:
       en: $1 parallel $2
       property: infix
       area: "geometry"
-      notation: "mo ∥"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∥</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Parallel.html"
        - "https://en.wikipedia.org/wiki/Parallel_(geometry)"
@@ -8053,7 +8097,8 @@ concepts:
       en: $1 partition $2
       property: infix
       area: "number theory"
-      notation: "mo ⊢"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊢</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Partition.html"
        - "https://mathworld.wolfram.com/FrequencyRepresentation.html"
@@ -8107,7 +8152,8 @@ concepts:
       en: $1 peirce arrow $2
       property: infix
       area: "logic"
-      notation: "mo ↓"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>↓</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Peirce_arrow"
     
@@ -8171,7 +8217,8 @@ concepts:
       en: $1 perpendicular $2
       property: infix
       area: "geometry"
-      notation: "mo ⟂"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⟂</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Perpendicular"
        - "https://www.encyclopediaofmath.org/index.php/Perpendicular"
@@ -8613,7 +8660,8 @@ concepts:
       en: $1 proper subgroup $2
       property: infix
       area: "group theory"
-      notation: "mo <"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>&lt;</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Subgroup"
     
@@ -8686,7 +8734,8 @@ concepts:
       en: $1 pushforward $2
       property: infix
       area: "differential geometry"
-      notation: "mo *"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>*</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://youtu.be/mJ8ZDdA10GY?t=2555"
        - "https://en.wikipedia.org/wiki/Pushforward_(differential)"
@@ -8775,7 +8824,8 @@ concepts:
       en: $1 quotient group $2
       property: infix
       area: "group theory"
-      notation: "mo /"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>/</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/QuotientGroup.html"
        - "https://ncatlab.org/nlab/show/quotient+group"
@@ -8786,7 +8836,8 @@ concepts:
       en: $1 quotient space $2
       property: infix
       area: "topology"
-      notation: "mo /"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>/</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/QuotientSpace.html"
        - "https://en.wikipedia.org/wiki/Quotient_space_(topology)"
@@ -9130,7 +9181,8 @@ concepts:
       en: $1 rewrite rule $2
       property: infix
       area: "logic"
-      notation: "mo →"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Semi-Thue_system"
       alias:
@@ -9282,7 +9334,8 @@ concepts:
       en: $1 right quotient $2
       property: infix
       area: "formal languages"
-      notation: "mo \\"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>\\</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Quotient_of_a_formal_language"
     
@@ -9366,7 +9419,8 @@ concepts:
       en: $1 rooted product of graphs $2
       property: infix
       area: "graph theory"
-      notation: "mo ∘"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∘</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Rooted_product_of_graphs"
     
@@ -9679,7 +9733,8 @@ concepts:
       en: $1 similar $2
       property: infix
       area: "geometry"
-      notation: "mo ~"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>~</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Similar.html"
        - "https://en.wikipedia.org/wiki/Matrix_similarity"
@@ -10171,7 +10226,8 @@ concepts:
       en: $1 strong product $2
       property: infix
       area: "graph theory"
-      notation: "mo ⊠"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊠</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/w/index.php?title=Graph_product"
       alias:
@@ -10219,7 +10275,8 @@ concepts:
       en: $1 subgroup $2
       property: infix
       area: "group theory"
-      notation: "mo ≤"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>≤</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Subgroup.html"
        - "https://en.wikipedia.org/wiki/Subgroup"
@@ -10231,7 +10288,8 @@ concepts:
       en: $1 succeeds $2
       property: infix
       area: "set theory"
-      notation: "mo ≻"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>≻</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Succeeds.html"
        - "https://en.wikipedia.org/wiki/Ordered_set_operators"
@@ -10241,7 +10299,8 @@ concepts:
       en: $1 succeeds or equals $2
       property: infix
       area: "set theory"
-      notation: "mo ≽"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>≽</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Ordered_set_operators"
     
@@ -10271,7 +10330,8 @@ concepts:
       en: $1 sumset $2
       property: infix
       area: "set theory"
-      notation: "mo +"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>+</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Sumset.html"
        - "https://en.wikipedia.org/wiki/Sumset"
@@ -10552,7 +10612,8 @@ concepts:
       en: $1 tensor product $2
       property: infix
       area: "algebra"
-      notation: "mo ⊗"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>⊗</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TensorProduct.html"
        - "https://en.wikipedia.org/wiki/Tensor_product"
@@ -10565,7 +10626,8 @@ concepts:
       en: $1 tensor product of graphs $2
       property: infix
       area: "graph theory"
-      notation: "mo ×"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>×</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tensor_product_of_graphs"
       alias:
@@ -10826,7 +10888,8 @@ concepts:
       en: $1 triple bond $2
       property: infix
       area: "chemistry"
-      notation: "mo ≡"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>≡</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Triple_bond"
     
@@ -11065,7 +11128,8 @@ concepts:
       en: $1 unnatural isomorphism $2
       property: infix
       area: "set theory"
-      notation: "mo ≈"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>≈</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Isomorphism#Relation_with_equality"
     
@@ -11214,7 +11278,8 @@ concepts:
       en: $1 vertical composition $2
       property: infix
       area: "category theory"
-      notation: "mo ∘"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∘</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/vertical+composition"
        - "https://proofwiki.org/wiki/Definition: Vertical_Composition_of_Natural_Transformations"
@@ -11745,7 +11810,8 @@ concepts:
       en: $1 zig zag product $2
       property: infix
       area: "graph theory"
-      notation: "mo ∘"
+      comments:
+       - "<math><mrow><mi>X</mi><mo>∘</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zig-zag_product"
     
