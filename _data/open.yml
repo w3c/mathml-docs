@@ -10,7 +10,7 @@ concepts:
       property: symbol
       area: "category theory"
       comments:
-        - "<math><mi>Ab</mi></math>"
+       - "<math><mi>Ab</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AbelianCategory.html"
        - "https://en.wikipedia.org/wiki/Abelian_category"
@@ -34,7 +34,7 @@ concepts:
       property: prefix
       area: "number theory"
       comments:
-        - "<math><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Abundance.html"
     
@@ -54,7 +54,7 @@ concepts:
       property: function
       area: "computability theory"
       comments:
-        - "<math><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Ackermann_function"
        - "https://www.encyclopediaofmath.org/index.php/Ackermann_function"
@@ -88,7 +88,7 @@ concepts:
       property: symbol
       area: "plasma physics"
       comments:
-        - "<math><mi>μ</mi></math>"
+       - "<math><mi>μ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdiabaticInvariant.html"
        - "https://en.wikipedia.org/wiki/Adiabatic_invariant"
@@ -100,7 +100,7 @@ concepts:
       property: symbol
       area: "plasma physics"
       comments:
-        - "<math><mi>J</mi></math>"
+       - "<math><mi>J</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdiabaticInvariant.html"
        - "https://en.wikipedia.org/wiki/Adiabatic_invariant"
@@ -112,7 +112,7 @@ concepts:
       property: symbol
       area: "plasma physics"
       comments:
-        - "<math><mi>Φ</mi></math>"
+       - "<math><mi>Φ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdiabaticInvariant.html"
        - "https://en.wikipedia.org/wiki/Adiabatic_invariant"
@@ -149,7 +149,7 @@ concepts:
       property: function
       area: "lie algebra"
       comments:
-        - "<math><mrow><mi>Ad</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ad</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AdjointRepresentation.html"
        - "https://en.wikipedia.org/wiki/Adjoint_representation"
@@ -161,7 +161,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>adj</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>adj</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Adjugate_matrix"
     
@@ -171,7 +171,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Aff</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Aff</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AffineGroup.html"
        - "https://en.wikipedia.org/wiki/Affine_group"
@@ -183,7 +183,7 @@ concepts:
       property: function
       area: "affine geometry"
       comments:
-        - "<math><mrow><mi>aff</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>aff</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AffineHull.html"
        - "https://en.wikipedia.org/wiki/Affine_hull"
@@ -195,7 +195,7 @@ concepts:
       property: symbol
       area: "universal algebra?"
       comments:
-        - "<math><mi>𝔸</mi></math>"
+       - "<math><mi>𝔸</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/affine+line"
     
@@ -232,7 +232,7 @@ concepts:
       property: symbol
       area: "set theory"
       comments:
-        - "<math><mi>ℵ</mi></math>"
+       - "<math><mi>ℵ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Aleph.html"
        - "https://ncatlab.org/nlab/show/aleph"
@@ -244,7 +244,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><mi>𝔸</mi></math>"
+       - "<math><mi>𝔸</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Algebraics.html"
     
@@ -274,7 +274,7 @@ concepts:
       property: function
       area: "functions"
       comments:
-        - "<math><mrow><mi>af</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>af</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Alternating_factorial"
     
@@ -359,7 +359,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>J</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>J</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AngerFunction.html"
        - "https://en.wikipedia.org/wiki/Anger_function"
@@ -372,7 +372,7 @@ concepts:
       property: function
       area: "hyperbolic geometry"
       comments:
-        - "<math><mrow><mi>Π</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Π</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AngleofParallelism.html"
        - "https://en.wikipedia.org/wiki/Angle_of_parallelism"
@@ -383,7 +383,7 @@ concepts:
       property: symbol
       area: "classical mechanics"
       comments:
-        - "<math><mi>L</mi></math>"
+       - "<math><mi>L</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Angular_momentum"
        - "https://en.wikipedia.org/wiki/Introduction_to_angular_momentum"
@@ -395,7 +395,7 @@ concepts:
       property: symbol
       area: "classical mechanics"
       comments:
-        - "<math><mi>ω</mi></math>"
+       - "<math><mi>ω</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/AngularVelocity.html"
        - "https://en.wikipedia.org/wiki/Angular_velocity"
@@ -419,7 +419,7 @@ concepts:
       property: function
       area: "ring theory"
       comments:
-        - "<math><mrow><mi>Ann</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ann</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Annihilator.html"
        - "https://en.wikipedia.org/wiki/Annihilator_(ring_theory)"
@@ -431,7 +431,7 @@ concepts:
       property: function
       area: "complex analysis"
       comments:
-        - "<math><mrow><mi>ann</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ann</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Annulus_(mathematics)"
        - "https://ncatlab.org/nlab/show/annulus"
@@ -505,7 +505,7 @@ concepts:
       property: symbol
       area: "geometry"
       comments:
-        - "<math><mi>A</mi></math>"
+       - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Area.html"
        - "https://en.wikipedia.org/wiki/Area"
@@ -517,7 +517,7 @@ concepts:
       property: function
       area: "geometric topology"
       comments:
-        - "<math><mrow><mi>Arf</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Arf</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ArfInvariant.html"
        - "https://en.wikipedia.org/wiki/Arf_invariant"
@@ -529,7 +529,7 @@ concepts:
       property: function
       area: "complex analysis"
       comments:
-        - "<math><mrow><mi>Arg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Arg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Argument_(complex_analysis)"
     
@@ -575,7 +575,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Aut</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Aut</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AutomorphismGroup.html"
        - "https://en.wikipedia.org/wiki/Automorphism"
@@ -586,7 +586,7 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-        - "<math><mrow><mi>∇</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>∇</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BackwardDifference.html"
        - "https://en.wikipedia.org/wiki/Finite_difference"
@@ -917,7 +917,7 @@ concepts:
       property: function
       area: "complex analysis"
       comments:
-        - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BlaschkeProduct.html"
        - "https://en.wikipedia.org/wiki/Blaschke_product"
@@ -929,7 +929,7 @@ concepts:
       property: symbol
       area: "complex analysis"
       comments:
-        - "<math><mi>B</mi></math>"
+       - "<math><mi>B</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/BlochConstant.html"
        - "https://www.encyclopediaofmath.org/index.php/Bloch_constant"
@@ -940,7 +940,7 @@ concepts:
       property: symbol
       area: "abstract algebra"
       comments:
-        - "<math><mi>𝔹</mi></math>"
+       - "<math><mi>𝔹</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Boolean_domain"
        - "https://ncatlab.org/nlab/show/boolean+domain"
@@ -951,7 +951,7 @@ concepts:
       property: symbol
       area: "category theory"
       comments:
-        - "<math><mi>⊥</mi></math>"
+       - "<math><mi>⊥</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/bottom"
        - "https://en.wikipedia.org/wiki/Bottom_type"
@@ -965,7 +965,7 @@ concepts:
       property: symbol
       area: "order theory"
       comments:
-        - "<math><mi>⊥</mi></math>"
+       - "<math><mi>⊥</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Greatest_element_and_least_element"
       alias:
@@ -992,7 +992,7 @@ concepts:
       property: function
       area: "analysis"
       comments:
-        - "<math><mrow><mi>BV</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>BV</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BoundedVariation.html"
        - "https://en.wikipedia.org/wiki/Bounded_variation"
@@ -1014,7 +1014,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Br</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Br</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BrauerGroup.html"
        - "https://en.wikipedia.org/wiki/Brauer_group"
@@ -1027,7 +1027,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><msub><mi>B</mi><mn>4</mn></msub></math>"
+       - "<math><msub><mi>B</mi><mn>4</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BrunsConstant.html"
        - "https://en.wikipedia.org/wiki/Brun%27s_theorem"
@@ -1038,7 +1038,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Burnside_group"
     
@@ -1048,7 +1048,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><mi>C</mi></math>"
+       - "<math><mi>C</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CahensConstant.html"
        - "https://en.wikipedia.org/wiki/Cahen%27s_constant"
@@ -1100,7 +1100,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CarmichaelFunction.html"
        - "https://en.wikipedia.org/wiki/Carmichael_function"
@@ -1124,7 +1124,7 @@ concepts:
       property: symbol
       area: "lie algebra"
       comments:
-        - "<math><mi>Ω</mi></math>"
+       - "<math><mi>Ω</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Casimir_element"
     
@@ -1134,7 +1134,7 @@ concepts:
       property: symbol
       area: "combinatorics"
       comments:
-        - "<math><mi>G</mi></math>"
+       - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CatalansConstant.html"
        - "https://en.wikipedia.org/wiki/Catalan%27s_constant"
@@ -1157,7 +1157,7 @@ concepts:
       property: symbol
       area: "universal algebra"
       comments:
-        - "<math><mi>AlgCat</mi></math>"
+       - "<math><mi>AlgCat</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/algebraic+lattice"
     
@@ -1209,7 +1209,7 @@ concepts:
       property: symbol
       area: "physics"
       comments:
-        - "<math><mi>Ca</mi></math>"
+       - "<math><mi>Ca</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euler_number_(physics)#Cavitation_number"
     
@@ -1240,7 +1240,7 @@ concepts:
       property: function
       area: "algebra"
       comments:
-        - "<math><mrow><mi>Z</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Z</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Center_(group_theory)"
        - "https://en.wikipedia.org/wiki/Center_(algebra)"
@@ -1285,7 +1285,7 @@ concepts:
       property: "indexed function"
       area: "group theory"
       comments:
-        - "<math><mrow><mi>χ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>χ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Character.html"
        - "https://en.wikipedia.org/wiki/Character_(mathematics)"
@@ -1300,7 +1300,7 @@ concepts:
       property: function
       area: "ring theory"
       comments:
-        - "<math><mrow><mi>char</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>char</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Characteristic.html"
        - "https://en.wikipedia.org/wiki/Characteristic_(algebra)"
@@ -1378,7 +1378,7 @@ concepts:
       property: function
       area: "Riemannian geometry"
       comments:
-        - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cheeger_constant"
     
@@ -1388,7 +1388,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cheeger_constant_(graph_theory)"
       alias:
@@ -1423,7 +1423,7 @@ concepts:
       property: function
       area: "geometry"
       comments:
-        - "<math><mrow><mi>crd</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>crd</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Chord_(geometry)"
     
@@ -1501,7 +1501,7 @@ concepts:
       property: function
       area: "universal algebra"
       comments:
-        - "<math><mrow><mi>Cl</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Cl</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Clifford_algebra"
     
@@ -1511,7 +1511,7 @@ concepts:
       property: symbol
       area: "graph theory"
       comments:
-        - "<math><mi>C</mi></math>"
+       - "<math><mi>C</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Clique.html"
        - "https://en.wikipedia.org/wiki/Clique_(graph_theory)"
@@ -1523,7 +1523,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>ω</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ω</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Clique_number"
     
@@ -1577,7 +1577,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>codim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>codim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Codimension.html"
        - "https://en.wikipedia.org/wiki/Codimension"
@@ -1590,7 +1590,7 @@ concepts:
       property: function
       area: "order theory"
       comments:
-        - "<math><mrow><mi>cf</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>cf</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cofinality"
        - "https://ncatlab.org/nlab/show/cofinality"
@@ -1601,7 +1601,7 @@ concepts:
       property: symbol
       area: "order theory"
       comments:
-        - "<math><mi>F</mi></math>"
+       - "<math><mi>F</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CofiniteFilter.html"
        - "https://en.wikipedia.org/wiki/Fr%C3%A9chet_filter"
@@ -1624,7 +1624,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-        - "<math><mrow><mi>coim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>coim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Coimage"
        - "https://ncatlab.org/nlab/show/coimage"
@@ -1635,7 +1635,7 @@ concepts:
       property: function
       area: "category theory"
       comments:
-        - "<math><mrow><mi>coker</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>coker</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cokernel.html"
        - "https://en.wikipedia.org/wiki/Cokernel"
@@ -1818,7 +1818,7 @@ concepts:
       property: function
       area: "numerical analysis"
       comments:
-        - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Condition_number"
        - "https://dlmf.nist.gov/3.2#SS5.p1"
@@ -1851,7 +1851,7 @@ concepts:
       property: function
       area: "algebraic number theory"
       comments:
-        - "<math><mrow><mi>𝔣⁢</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>𝔣⁢</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Conductor_(class_field_theory)"
     
@@ -1912,7 +1912,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Cl</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Cl</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConjugacyClass.html"
        - "https://en.wikipedia.org/wiki/Conjugacy_class"
@@ -1945,7 +1945,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Connectivity.html"
        - "https://en.wikipedia.org/wiki/Connectivity_(graph_theory)"
@@ -1957,7 +1957,7 @@ concepts:
       property: constant
       area: "calculus"
       comments:
-        - "<math><mi>C</mi></math>"
+       - "<math><mi>C</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConstantofIntegration.html"
        - "https://en.wikipedia.org/wiki/Constant_of_integration"
@@ -2010,7 +2010,7 @@ concepts:
       property: constant
       area: "set theory"
       comments:
-        - "<math><mi>𝔠</mi></math>"
+       - "<math><mi>𝔠</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Continuum.html"
        - "https://en.wikipedia.org/wiki/List_of_continuity-related_topics"
@@ -2026,7 +2026,7 @@ concepts:
       property: constant
       area: "logic"
       comments:
-        - "<math><mo>⊥</mo></math>"
+       - "<math><mo>⊥</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Contradiction.html"
        - "https://en.wikipedia.org/wiki/Contradiction"
@@ -2125,7 +2125,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>corr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>corr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Correlation_and_dependence"
     
@@ -2135,7 +2135,7 @@ concepts:
       property: symbol
       area: "statistics"
       comments:
-        - "<math><mi>η</mi></math>"
+       - "<math><mi>η</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/CorrelationRatio.html"
        - "https://en.wikipedia.org/wiki/Correlation_ratio"
@@ -2147,7 +2147,7 @@ concepts:
       property: operator
       area: "special-functions"
       comments:
-        - "<math><mrow><mi>Ci</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ci</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CosineIntegral.html"
        - "https://dlmf.nist.gov/6.2#ii"
@@ -2160,7 +2160,7 @@ concepts:
       property: symbol
       area: "gauge theory"
       comments:
-        - "<math><mi>g</mi></math>"
+       - "<math><mi>g</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Coupling_constant"
       alias:
@@ -2173,7 +2173,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>cov</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>cov</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Covariance.html"
        - "https://en.wikipedia.org/wiki/Covariance_operator"
@@ -2248,7 +2248,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>Cr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Cr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Crossing_number_(graph_theory)"
        - "https://en.wikipedia.org/wiki/Crossing_number_(knot_theory)"
@@ -2329,7 +2329,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Curvature.html"
        - "https://en.wikipedia.org/wiki/Geodesic_curvature"
@@ -2354,7 +2354,7 @@ concepts:
       property: symbol
       area: "genetics"
       comments:
-        - "<math><mi>cyc</mi></math>"
+       - "<math><mi>cyc</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cycle_(gene)"
     
@@ -2401,7 +2401,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DavenportConstant.html"
        - "https://en.wikipedia.org/wiki/Davenport_constant"
@@ -2446,7 +2446,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>η</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>η</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DedekindEtaFunction.html"
        - "https://en.wikipedia.org/wiki/Dedekind_eta_function"
@@ -2458,7 +2458,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dedekind_zeta_function"
     
@@ -2503,7 +2503,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>deg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>deg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
       alias:
@@ -2516,7 +2516,7 @@ concepts:
       property: symbol
       area: "statistics"
       comments:
-        - "<math><mi>ν</mi></math>"
+       - "<math><mi>ν</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DegreeofFreedom.html"
        - "https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)#Notation"
@@ -2527,7 +2527,7 @@ concepts:
       property: function
       area: "topology"
       comments:
-        - "<math><mrow><mi>deg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>deg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_of_a_continuous_mapping"
       alias:
@@ -2539,7 +2539,7 @@ concepts:
       property: function
       area: "polynomials"
       comments:
-        - "<math><mrow><mi>deg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>deg</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Degree_of_a_polynomial"
       alias:
@@ -2578,7 +2578,7 @@ concepts:
       property: function
       area: "category theory"
       comments:
-        - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Derived_category"
        - "https://ncatlab.org/nlab/show/derived+category"
@@ -2590,7 +2590,7 @@ concepts:
       property: symbol
       area: "category theory"
       comments:
-        - "<math><mi>Δ</mi></math>"
+       - "<math><mi>Δ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Diagonal_functor"
        - "https://ncatlab.org/nlab/show/diagonal+functor"
@@ -2601,7 +2601,7 @@ concepts:
       property: function
       area: "set theory"
       comments:
-        - "<math><mrow><mi>Δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Diagonal_intersection"
     
@@ -2611,7 +2611,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>diag</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>diag</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Diagonal_matrix"
     
@@ -2630,7 +2630,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DickmanFunction.html"
        - "https://en.wikipedia.org/wiki/Dickman_function"
@@ -2655,7 +2655,7 @@ concepts:
       property: function
       area: "information theory"
       comments:
-        - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DifferentialEntropy.html"
        - "https://en.wikipedia.org/wiki/Differential_entropy"
@@ -2751,7 +2751,7 @@ concepts:
       property: function
       area: "analysis"
       comments:
-        - "<math><mrow><mi>δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiracDeltaFunction.html"
        - "https://en.wikipedia.org/wiki/Dirac_delta_function"
@@ -2777,7 +2777,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-        - "<math><mrow><mi>δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Dirac_measure"
     
@@ -2787,7 +2787,7 @@ concepts:
       property: function
       area: "differential operators"
       comments:
-        - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiracOperator.html"
        - "https://en.wikipedia.org/wiki/Dirac_operator"
@@ -2850,7 +2850,7 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-        - "<math><mrow><mi>χ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>χ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletCharacter.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_character"
@@ -2873,7 +2873,7 @@ concepts:
       property: symbol
       area: "statistics"
       comments:
-        - "<math><mi>Dir</mi></math>"
+       - "<math><mi>Dir</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletDistribution.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_distribution"
@@ -2885,7 +2885,7 @@ concepts:
       property: function
       area: "analytic number theory"
       comments:
-        - "<math><mrow><mi>η</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>η</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletEtaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%97(x)"
@@ -2908,7 +2908,7 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-        - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletL-Function.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_L-function"
@@ -2921,7 +2921,7 @@ concepts:
       property: function
       area: "commutative algebra"
       comments:
-        - "<math><mrow><mi>ν</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ν</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Discrete_valuation"
        - "https://ncatlab.org/nlab/show/discrete+valuation"
@@ -3017,7 +3017,7 @@ concepts:
       property: indexed
       area: "number theory"
       comments:
-        - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DivisorFunction.html"
        - "https://en.wikipedia.org/wiki/D(n)"
@@ -3032,7 +3032,7 @@ concepts:
       property: function
       area: "set theory"
       comments:
-        - "<math><mrow><mi>dom</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>dom</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Domain_of_a_function"
     
@@ -3042,7 +3042,7 @@ concepts:
       property: symbol
       area: "formal semantics"
       comments:
-        - "<math><mi>𝔻</mi></math>"
+       - "<math><mi>𝔻</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Domain_of_discourse"
       alias:
@@ -3054,7 +3054,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>γ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>γ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DominationNumber.html"
        - "https://en.wikipedia.org/wiki/Dominating_set"
@@ -3124,7 +3124,7 @@ concepts:
       property: prefix
       area: "category theory"
       comments:
-        - "<math><mrow><mi>𝒵</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>𝒵</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Center_(category_theory)"
       alias:
@@ -3190,7 +3190,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>E</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>E</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/E-Function.html"
        - "https://en.wikipedia.org/wiki/E-function"
@@ -3214,7 +3214,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EdgeCoverNumber.html"
        - "https://en.wikipedia.org/wiki/Edge_covering_number"
@@ -3225,7 +3225,7 @@ concepts:
       property: function
       area: "convex analysis"
       comments:
-        - "<math><mrow><mi>dom</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>dom</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Effective_domain"
     
@@ -3235,7 +3235,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>e</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>e</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Antenna_efficiency"
        - "https://en.wikipedia.org/wiki/Efficiency_(statistics)"
@@ -3247,7 +3247,7 @@ concepts:
       property: symbol
       area: "general relativity"
       comments:
-        - "<math><mi>G</mi></math>"
+       - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/EinsteinTensor.html"
        - "https://en.wikipedia.org/wiki/Einstein_tensor"
@@ -3272,7 +3272,7 @@ concepts:
       property: symbol
       area: "category theory"
       comments:
-        - "<math><mi>e</mi></math>"
+       - "<math><mi>e</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/End_(category_theory)"
        - "https://ncatlab.org/nlab/show/end"
@@ -3283,7 +3283,7 @@ concepts:
       property: function
       area: "category theory"
       comments:
-        - "<math><mrow><mi>End</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>End</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Endomorphism.html"
        - "https://en.wikipedia.org/wiki/Endomorphism"
@@ -3296,7 +3296,7 @@ concepts:
       property: symbol
       area: "physics"
       comments:
-        - "<math><mi>E</mi></math>"
+       - "<math><mi>E</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/energy"
     
@@ -3316,7 +3316,7 @@ concepts:
       property: unit
       area: "physics"
       comments:
-        - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Entropy"
        - "https://en.wikipedia.org/wiki/Entropy_(arrow_of_time)"
@@ -3330,7 +3330,7 @@ concepts:
       property: function
       area: "analysis"
       comments:
-        - "<math><mrow><mi>epi</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>epi</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Epigraph_(mathematics)"
     
@@ -3340,7 +3340,7 @@ concepts:
       property: symbol
       area: "ordinal numbers"
       comments:
-        - "<math><mi>ε</mi></math>"
+       - "<math><mi>ε</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Epsilon_numbers_(mathematics)"
     
@@ -3350,7 +3350,7 @@ concepts:
       property: function
       area: "set theory"
       comments:
-        - "<math><mrow><mi>Eq</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Eq</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Equalizer.html"
        - "https://en.wikipedia.org/wiki/Equaliser_(mathematics)"
@@ -3403,7 +3403,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><mi>E</mi></math>"
+       - "<math><mi>E</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Erdos-BorweinConstant.html"
        - "https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Borwein_constant"
@@ -3460,7 +3460,7 @@ concepts:
       property: symbol
       area: "symbols"
       comments:
-        - "<math><mi>℮</mi></math>"
+       - "<math><mi>℮</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Estimation"
       alias:
@@ -3516,7 +3516,7 @@ concepts:
       property: function
       area: "algebraic topology"
       comments:
-        - "<math><mrow><mi>χ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>χ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerCharacteristic.html"
        - "https://en.wikipedia.org/wiki/Euler_characteristic"
@@ -3529,7 +3529,7 @@ concepts:
       property: function
       area: "algebraic topology"
       comments:
-        - "<math><mrow><mi>e</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>e</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euler_class"
        - "https://ncatlab.org/nlab/show/Euler+class"
@@ -3597,7 +3597,7 @@ concepts:
       property: constant
       area: "number theory"
       comments:
-        - "<math><mi>γ</mi></math>"
+       - "<math><mi>γ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Euler-MascheroniConstant.html"
        - "https://en.wikipedia.org/wiki/%CE%93%27(1)"
@@ -3609,7 +3609,7 @@ concepts:
       property: function
       area: "combinatorics"
       comments:
-        - "<math><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerianNumber.html"
        - "https://en.wikipedia.org/wiki/Eulerian_number"
@@ -3672,7 +3672,7 @@ concepts:
       property: 
       area: 
       comments:
-        - "<math><mrow><mi>Ei</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ei</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExponentialIntegral.html"
        - "https://en.wikipedia.org/wiki/Exponential_integral"
@@ -3698,7 +3698,7 @@ concepts:
       property: operator
       area: "differential forms"
       comments:
-        - "<math><mrow><mi>d</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>d</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExteriorDerivative.html"
        - "https://en.wikipedia.org/wiki/Exterior_derivative"
@@ -3709,7 +3709,7 @@ concepts:
       property: function
       area: "multilinear algebra"
       comments:
-        - "<math><mrow><mi>Λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Exterior_algebra"
     
@@ -3768,7 +3768,7 @@ concepts:
       property: function
       area: "complex dynamics"
       comments:
-        - "<math><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Julia_set"
     
@@ -3778,7 +3778,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><mi>F</mi></math>"
+       - "<math><mi>F</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/FareySequence.html"
        - "https://en.wikipedia.org/wiki/Farey_sequence"
@@ -3798,7 +3798,7 @@ concepts:
       property: symbol
       area: "chaos theory"
       comments:
-        - "<math><mi>δ</mi></math>"
+       - "<math><mi>δ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/FeigenbaumConstant.html"
        - "https://en.wikipedia.org/wiki/Feigenbaum_constants"
@@ -3919,7 +3919,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>I</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>I</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FisherInformation.html"
        - "https://en.wikipedia.org/wiki/Fisher_information"
@@ -3932,7 +3932,7 @@ concepts:
       property: symbol
       area: "celestial mechanics"
       comments:
-        - "<math><mi>f</mi></math>"
+       - "<math><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Flattening.html"
        - "https://en.wikipedia.org/wiki/Flattening"
@@ -3957,7 +3957,7 @@ concepts:
       property: function
       area: "quantum mechanics"
       comments:
-        - "<math><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fock_space"
        - "https://ncatlab.org/nlab/show/Fock+space"
@@ -4073,7 +4073,7 @@ concepts:
       property: "indexed symbol"
       area: "combinatorics"
       comments:
-        - "<math><mrow><mi>Fr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Fr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FranelNumber.html"
     
@@ -4094,7 +4094,7 @@ concepts:
       property: operator
       area: "banach spaces"
       comments:
-        - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>D</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FrechetDerivative.html"
        - "https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative"
@@ -4119,7 +4119,7 @@ concepts:
       property: function
       area: "mathematical physics"
       comments:
-        - "<math><mrow><mi>det</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>det</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fredholm_determinant"
        - "https://ncatlab.org/nlab/show/Fredholm+determinant"
@@ -4236,7 +4236,7 @@ concepts:
       property: symbol
       area: "computer vision"
       comments:
-        - "<math><mi>F</mi></math>"
+       - "<math><mi>F</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fundamental_matrix_(computer_vision)"
     
@@ -4246,7 +4246,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-        - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/G-Function.html"
        - "https://en.wikipedia.org/wiki/Meijer_G-function"
@@ -4259,7 +4259,7 @@ concepts:
       property: operator
       area: "integral transforms"
       comments:
-        - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Gabor_transform"
        - "https://en.wikipedia.org/wiki/Gabor%E2%80%93Wigner_transform"
@@ -4271,7 +4271,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>φ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>φ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Gain_graph"
        - "https://en.wikipedia.org/wiki/Gain_group"
@@ -4283,7 +4283,7 @@ concepts:
       property: function
       area: "physics"
       comments:
-        - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GalileanTransformation.html"
        - "https://en.wikipedia.org/wiki/Galilean_transformation"
@@ -4308,7 +4308,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-        - "<math><mi>Gal</mi></math>"
+       - "<math><mi>Gal</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaloisGroup.html"
        - "https://en.wikipedia.org/wiki/Galois_group"
@@ -4321,7 +4321,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-        - "<math><mi>Γ</mi></math>"
+       - "<math><mi>Γ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GammaDistribution.html"
        - "https://en.wikipedia.org/wiki/Gamma_distribution"
@@ -4332,7 +4332,7 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Γ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Γ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GammaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%93(x)"
@@ -4362,7 +4362,7 @@ concepts:
       property: unit
       area: "physics"
       comments:
-        - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Gauss_(unit)"
     
@@ -4372,7 +4372,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-        - "<math><mi>𝒩</mi></math>"
+       - "<math><mi>𝒩</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Normal_distribution"
       alias:
@@ -4386,7 +4386,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>Κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaussianCurvature.html"
        - "https://en.wikipedia.org/wiki/Gaussian_curvature"
@@ -4451,7 +4451,7 @@ concepts:
       property: symbol
       area: "particle physics"
       comments:
-        - "<math><mi>λ</mi></math>"
+       - "<math><mi>λ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Gell-MannMatrix.html"
        - "https://en.wikipedia.org/wiki/Gell-Mann_matrices"
@@ -4532,7 +4532,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>d</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>d</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Distance_(graph_theory)"
        - "https://en.wikipedia.org/wiki/Diameter_(graph_theory)"
@@ -4567,7 +4567,7 @@ concepts:
       property: function
       area: "means"
       comments:
-        - "<math><mrow><mi>GM</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>GM</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeometricMean.html"
        - "https://en.wikipedia.org/wiki/Geometric_mean"
@@ -4599,7 +4599,7 @@ concepts:
       property: constant
       area: "number theory"
       comments:
-        - "<math><mi>A</mi></math>"
+       - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GlaisherConstant.html"
        - "https://en.wikipedia.org/wiki/Glaisher%E2%80%93Kinkelin_constant"
@@ -4667,7 +4667,7 @@ concepts:
       property: symbol
       area: "linear algebra"
       comments:
-        - "<math><mi>G</mi></math>"
+       - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GramMatrix.html"
        - "https://en.wikipedia.org/wiki/Gramian_matrix"
@@ -4682,7 +4682,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>Gr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Gr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Grassmannian.html"
        - "https://en.wikipedia.org/wiki/Grassmannian"
@@ -4694,7 +4694,7 @@ concepts:
       property: function
       area: "mathematical physics"
       comments:
-        - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>G</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GreensFunction.html"
        - "https://en.wikipedia.org/wiki/Green%27s_function_(many-body_theory)"
@@ -4708,7 +4708,7 @@ concepts:
       property: symbol
       area: "computer algebra"
       comments:
-        - "<math><mi>G</mi></math>"
+       - "<math><mi>G</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/GroebnerBasis.html"
        - "https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis"
@@ -4752,7 +4752,7 @@ concepts:
       property: function
       area: "trigonometry"
       comments:
-        - "<math><mrow><mi>gd</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>gd</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GudermannianFunction.html"
        - "https://en.wikipedia.org/wiki/Gudermannian_function"
@@ -4805,7 +4805,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HankelFunction.html"
        - "https://dlmf.nist.gov/10.1"
@@ -4840,7 +4840,7 @@ concepts:
       property: operator
       area: "real analysis"
       comments:
-        - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hardy%E2%80%93Littlewood_maximal_function"
       alias:
@@ -4852,7 +4852,7 @@ concepts:
       property: function
       area: "means"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HarmonicMean.html"
        - "https://en.wikipedia.org/wiki/Harmonic_mean"
@@ -4897,7 +4897,7 @@ concepts:
       property: function
       area: "engineering"
       comments:
-        - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HazardFunction.html"
       alias:
@@ -4909,7 +4909,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/1.16#E13)[https://en.wikipedia.org/wiki/Heaviside_step_function"
        - "https://en.wikipedia.org/wiki/Heaviside_step_function"
@@ -4924,7 +4924,7 @@ concepts:
       property: function
       area: "topological graph theory"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Heawood_number"
     
@@ -4962,7 +4962,7 @@ concepts:
       property: function
       area: "commutative algebra"
       comments:
-        - "<math><mrow><mi>ht</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ht</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Krull_dimension#height"
       alias:
@@ -4976,7 +4976,7 @@ concepts:
       property: symbol
       area: "group theory"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HeisenbergGroup.html"
        - "https://en.wikipedia.org/wiki/Heisenberg_group"
@@ -5024,7 +5024,7 @@ concepts:
       property: function
       area: "means"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HeronianMean.html"
        - "https://en.wikipedia.org/wiki/Heronian_mean"
@@ -5035,7 +5035,7 @@ concepts:
       property: operator
       area: "differential operators"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Hessian.html"
        - "https://en.wikipedia.org/wiki/Hessian_matrix"
@@ -5061,7 +5061,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Hp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Hp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Heun_function"
        - "https://dlmf.nist.gov/31.5#p1"
@@ -5124,7 +5124,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Hol</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Hol</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Holomorph_(mathematics)"
        - "https://ncatlab.org/nlab/show/holomorph"
@@ -5135,7 +5135,7 @@ concepts:
       property: "indexed symbol"
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>Hol</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Hol</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Holonomy.html"
        - "https://en.wikipedia.org/wiki/Holonomy"
@@ -5147,7 +5147,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>HP</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>HP</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HomePrime.html"
        - "https://en.wikipedia.org/wiki/Home_prime"
@@ -5178,7 +5178,7 @@ concepts:
       property: function
       area: "category theory"
       comments:
-        - "<math><mrow><mi>Ho</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ho</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/homotopy+category"
     
@@ -5188,7 +5188,7 @@ concepts:
       property: unit
       area: "imperial unit"
       comments:
-        - "<math><mrow><mi>hp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>hp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Horsepower"
       alias:
@@ -5211,7 +5211,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HurwitzZetaFunction.html"
        - "https://en.wikipedia.org/wiki/Hurwitz_zeta_function"
@@ -5224,7 +5224,7 @@ concepts:
       property: unit
       area: "customary units"
       comments:
-        - "<math><mrow><mi>hvat</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>hvat</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kubni_hvat"
        - "https://en.wikipedia.org/wiki/%C4%8Cetvorni_hvat"
@@ -5248,7 +5248,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Chi</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Chi</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HyperbolicCosineIntegral.html"
        - "https://dlmf.nist.gov/6.2#E16"
@@ -5269,7 +5269,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Shi</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Shi</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HyperbolicSineIntegral.html"
        - "https://dlmf.nist.gov/6.2#E15"
@@ -5363,7 +5363,7 @@ concepts:
       property: symbol
       area: "linear algebra"
       comments:
-        - "<math><mi>I</mi></math>"
+       - "<math><mi>I</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/IdentityMatrix.html"
        - "https://en.wikipedia.org/wiki/Identity_matrix"
@@ -5390,7 +5390,7 @@ concepts:
       property: symbol
       area: "geometry"
       comments:
-        - "<math><mi>I</mi></math>"
+       - "<math><mi>I</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Incenter.html"
        - "https://en.wikipedia.org/wiki/Incircle_and_excircles_of_a_triangle"
@@ -5424,7 +5424,7 @@ concepts:
       property: function
       area: "set theory"
       comments:
-        - "<math><mrow><mi>ι</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ι</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Inclusion_map"
       alias:
@@ -5449,7 +5449,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/IncompleteBetaFunction.html"
        - "https://dlmf.nist.gov/8.17"
@@ -5462,7 +5462,7 @@ concepts:
       property: function
       area: "elliptic functions"
       comments:
-        - "<math><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>F</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EllipticIntegral.html"
        - "https://en.wikipedia.org/wiki/Elliptic_integral"
@@ -5474,7 +5474,7 @@ concepts:
       property: function
       area: "elliptic functions"
       comments:
-        - "<math><mrow><mi>E</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>E</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EllipticIntegral.html"
        - "https://en.wikipedia.org/wiki/Elliptic_integral"
@@ -5486,7 +5486,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Γ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Γ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/IncompleteGammaFunction.html"
        - "https://en.wikipedia.org/wiki/Incomplete_gamma_function"
@@ -5541,7 +5541,7 @@ concepts:
       property: function
       area: "lie algebra"
       comments:
-        - "<math><mrow><mi>ind</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ind</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Index_of_a_Lie_algebra"
     
@@ -5611,7 +5611,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-        - "<math><mrow><mi>Inn</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Inn</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InnerAutomorphism.html"
        - "https://en.wikipedia.org/wiki/Inner_automorphism"
@@ -5810,7 +5810,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>j</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>j</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/j-Invariant.html"
        - "https://ncatlab.org/nlab/show/j-invariant"
@@ -5821,7 +5821,7 @@ concepts:
       property: function
       area: "operator theory"
       comments:
-        - "<math><mrow><mi>J</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>J</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiMatrix.html"
        - "https://en.wikipedia.org/wiki/Jacobi_operator"
@@ -5861,7 +5861,7 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-        - "<math><mrow><mi>ϑ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ϑ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiThetaFunctions.html"
        - "https://en.wikipedia.org/wiki/Jacobi_theta_functions_(notational_variations)"
@@ -5911,7 +5911,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><mi>J</mi></math>"
+       - "<math><mi>J</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobsthalNumber.html"
        - "https://en.wikipedia.org/wiki/Jacobsthal_number"
@@ -5955,7 +5955,7 @@ concepts:
       property: function
       area: "knot theory"
       comments:
-        - "<math><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JonesPolynomial.html"
        - "https://en.wikipedia.org/wiki/Jones_polynomial"
@@ -5979,7 +5979,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-        - "<math><mrow><mi>m</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>m</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JordanMeasure.html"
        - "https://en.wikipedia.org/wiki/Jordan_measure"
@@ -6000,7 +6000,7 @@ concepts:
       property: function
       area: "complex dynamics"
       comments:
-        - "<math><mrow><mi>J</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>J</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JuliaSet.html"
        - "https://en.wikipedia.org/wiki/Julia_set"
@@ -6051,7 +6051,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>ker</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ker</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Kernel.html"
        - "https://en.wikipedia.org/wiki/Kernel_(algebra)"
@@ -6082,7 +6082,7 @@ concepts:
       property: function
       area: "lie algebra"
       comments:
-        - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>B</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KillingForm.html"
        - "https://en.wikipedia.org/wiki/Killing_form"
@@ -6143,7 +6143,7 @@ concepts:
       property: "indexed symbol"
       area: "number theory"
       comments:
-        - "<math><mrow><mi>K</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>K</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KnoedelNumbers.html"
        - "https://en.wikipedia.org/wiki/Kn%C3%B6del_number"
@@ -6154,7 +6154,7 @@ concepts:
       property: function
       area: "algebraic geometry"
       comments:
-        - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>κ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kodaira_dimension"
        - "https://www.encyclopediaofmath.org/index.php/Kodaira_dimension"
@@ -6165,7 +6165,7 @@ concepts:
       property: function
       area: "information theory"
       comments:
-        - "<math><mrow><mi>K</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>K</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KolmogorovComplexity.html"
        - "https://en.wikipedia.org/wiki/Kolmogorov_complexity"
@@ -6185,7 +6185,7 @@ concepts:
       property: function
       area: "knot theory"
       comments:
-        - "<math><mrow><mi>Z</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Z</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KontsevichIntegral.html"
        - "https://en.wikipedia.org/wiki/Kontsevich_invariant"
@@ -6257,7 +6257,7 @@ concepts:
       property: function
       area: "commutative algebra"
       comments:
-        - "<math><mrow><mi>dim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>dim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KrullDimension.html"
        - "https://en.wikipedia.org/wiki/Krull_dimension"
@@ -6305,7 +6305,7 @@ concepts:
       property: symbol
       area: "mathematical optimization"
       comments:
-        - "<math><mi>λ</mi></math>"
+       - "<math><mi>λ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LagrangeMultiplier.html"
        - "https://en.wikipedia.org/wiki/Lagrange_multiplier"
@@ -6333,7 +6333,7 @@ concepts:
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
-        - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LaguerrePolynomial.html"
        - "https://en.wikipedia.org/wiki/Laguerre_polynomials"
@@ -6369,7 +6369,7 @@ concepts:
       property: operator
       area: "integral transforms"
       comments:
-        - "<math><mrow><mi>ℒ⁡</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ℒ⁡</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LaplaceTransform.html"
        - "https://en.wikipedia.org/wiki/Laplace_transform"
@@ -6382,7 +6382,7 @@ concepts:
       property: symbol
       area: "graph theory"
       comments:
-        - "<math><mi>L</mi></math>"
+       - "<math><mi>L</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LaplacianMatrix.html"
        - "https://en.wikipedia.org/wiki/Laplacian_matrix"
@@ -6417,7 +6417,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>lpf</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>lpf</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LeastPrimeFactor.html"
     
@@ -6571,7 +6571,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-        - "<math><mrow><mi>π</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>π</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/L%C3%A9vy%E2%80%93Prokhorov_metric"
        - "https://encyclopediaofmath.org/wiki/L%C3%A9vy-Prokhorov_metric"
@@ -6637,7 +6637,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LineGraph.html"
        - "https://en.wikipedia.org/wiki/Line_graph"
@@ -6664,7 +6664,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>span</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>span</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LinearSpan.html"
        - "https://en.wikipedia.org/wiki/Linear_span"
@@ -6678,7 +6678,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>Lk</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Lk</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Link.html"
     
@@ -6697,7 +6697,7 @@ concepts:
       property: constant
       area: "number theory"
       comments:
-        - "<math><mi>L</mi></math>"
+       - "<math><mi>L</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/LiouvillesConstant.html"
       alias:
@@ -6709,7 +6709,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LiouvilleFunction.html"
        - "https://en.wikipedia.org/wiki/Liouville_function"
@@ -6734,7 +6734,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>li</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>li</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LogarithmicIntegral.html"
        - "https://dlmf.nist.gov/6.2#i"
@@ -6757,7 +6757,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>logit</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>logit</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Logit"
     
@@ -6790,7 +6790,7 @@ concepts:
       property: function
       area: "topology"
       comments:
-        - "<math><mrow><mi>Ω</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ω</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LoopSpace.html"
        - "https://en.wikipedia.org/wiki/Loop_space"
@@ -6865,7 +6865,7 @@ concepts:
       property: function
       area: "stability theory"
       comments:
-        - "<math><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LyapunovFunction.html"
        - "https://en.wikipedia.org/wiki/Lyapunov_function"
@@ -6889,7 +6889,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MahlerMeasure.html"
        - "https://en.wikipedia.org/wiki/Mahler_measure"
@@ -6901,7 +6901,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Λ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MangoldtFunction.html"
        - "https://dlmf.nist.gov/27.2#E14"
@@ -6915,7 +6915,7 @@ concepts:
       property: function
       area: "geometric topology"
       comments:
-        - "<math><mrow><mi>MCG</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>MCG</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Mapping_class_group"
        - "https://ncatlab.org/nlab/show/mapping+class+group"
@@ -7039,7 +7039,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>Δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MaximumDegree.html"
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
@@ -7051,7 +7051,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MeanCurvature.html"
        - "https://en.wikipedia.org/wiki/Mean_curvature"
@@ -7063,7 +7063,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>MSE</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>MSE</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Mean_squared_error"
     
@@ -7073,7 +7073,7 @@ concepts:
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
-        - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Meixner-PollaczekPolynomial.html"
        - "https://en.wikipedia.org/wiki/Meixner%E2%80%93Pollaczek_polynomials"
@@ -7085,7 +7085,7 @@ concepts:
       property: operator
       area: "integral transforms"
       comments:
-        - "<math><mrow><mi>ℳ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ℳ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MellinTransform.html"
        - "https://en.wikipedia.org/wiki/Mellin_transform"
@@ -7098,7 +7098,7 @@ concepts:
       property: function
       area: "geodesy"
       comments:
-        - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Meridian_arc"
        - "https://en.wikipedia.org/wiki/Meridian_arc"
@@ -7109,7 +7109,7 @@ concepts:
       property: function
       area: "geodesy"
       comments:
-        - "<math><mrow><mi>m</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>m</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Meridian.html"
     
@@ -7140,7 +7140,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MertensFunction.html"
        - "https://en.wikipedia.org/wiki/Mertens_function"
@@ -7171,7 +7171,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-        - "<math><mi>A</mi></math>"
+       - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/MillsConstant.html"
        - "https://en.wikipedia.org/wiki/Mills%27_constant"
@@ -7194,7 +7194,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>δ<br/></mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>δ<br/></mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MinimumDegree.html"
        - "https://en.wikipedia.org/wiki/Degree_(graph_theory)"
@@ -7241,7 +7241,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>μ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>μ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MoebiusFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%9C(n)"
@@ -7319,7 +7319,7 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Δ<br/></mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Δ<br/></mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ModularDiscriminant.html"
        - "https://en.wikipedia.org/wiki/Modular_form#The_modular_discriminant"
@@ -7344,7 +7344,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>μ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>μ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Moebius_function"
        - "https://en.wikipedia.org/wiki/M%C3%B6bius_function"
@@ -7366,7 +7366,7 @@ concepts:
       property: symbol
       area: "mechanics"
       comments:
-        - "<math><mi>M</mi></math>"
+       - "<math><mi>M</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Moment.html"
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
@@ -7380,7 +7380,7 @@ concepts:
       property: symbol
       area: "physics"
       comments:
-        - "<math><mi>I</mi></math>"
+       - "<math><mi>I</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/MomentofInertia.html"
        - "https://en.wikipedia.org/wiki/Moment_of_inertia"
@@ -7396,8 +7396,8 @@ concepts:
       property: symbol
       area: "mechanics"
       comments:
-        - "<math><mi>p</mi></math>"
-        - "<math><mi>mip</mi></math>"
+       - "<math><mi>p</mi></math>"
+       - "<math><mi>mip</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Momentum"
        - "https://ncatlab.org/nlab/show/momentum"
@@ -7411,7 +7411,7 @@ concepts:
       property: symbol
       area: "group theory"
       comments:
-        - "<math><mi>M</mi></math>"
+       - "<math><mi>M</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/MonsterGroup.html"
        - "https://en.wikipedia.org/wiki/Monster_group"
@@ -7557,7 +7557,7 @@ concepts:
       property: function
       area: "information theory"
       comments:
-        - "<math><mrow><mi>I</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>I</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MutualInformation.html"
        - "https://en.wikipedia.org/wiki/Mutual_information"
@@ -7594,7 +7594,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-        - "<math><mi>NB</mi></math>"
+       - "<math><mi>NB</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/NegativeBinomialDistribution.html"
        - "https://en.wikipedia.org/wiki/Negative_binomial_distribution"
@@ -7606,7 +7606,7 @@ concepts:
       property: "indexed symbol"
       area: "probability theory"
       comments:
-        - "<math><mrow><mi>NHG</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>NHG</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Negative_hypergeometric_distribution"
        - "https://www.encyclopediaofmath.org/index.php/Negative_hypergeometric_distribution"
@@ -7628,7 +7628,7 @@ concepts:
       property: function
       area: "topology"
       comments:
-        - "<math><mrow><mi>𝒩</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>𝒩</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Neighbourhood_system"
       alias:
@@ -7641,7 +7641,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>NS</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>NS</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Neron-SeveriGroup.html"
        - "https://encyclopediaofmath.org/wiki/N%C3%A9ron-Severi_group"
@@ -7663,7 +7663,7 @@ concepts:
       property: function
       area: "category theory"
       comments:
-        - "<math><mrow><mi>N</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>N</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Nerve.html"
        - "https://en.wikipedia.org/wiki/Nerve_(category_theory)"
@@ -7675,7 +7675,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>q</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>q</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Nome.html"
        - "https://en.wikipedia.org/wiki/Nome_(mathematics)"
@@ -7765,7 +7765,7 @@ concepts:
       property: prefix
       area: "category theory"
       comments:
-        - "<math><mrow><mi>Obj</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Obj</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Object.html"
        - "https://en.wikipedia.org/wiki/Lattice-based_access_control"
@@ -7804,7 +7804,7 @@ concepts:
       property: symbol
       area: "statistics"
       comments:
-        - "<math><mi>OR</mi></math>"
+       - "<math><mi>OR</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Odds_ratio"
     
@@ -7814,7 +7814,7 @@ concepts:
       property: function
       area: "functional analysis"
       comments:
-        - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Onsager%E2%80%93Machlup_function"
        - "https://www.encyclopediaofmath.org/index.php/Onsager-Machlup_function"
@@ -7926,7 +7926,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>O</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>O</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OrthogonalGroup.html"
        - "https://en.wikipedia.org/wiki/Orthogonal_group"
@@ -7940,7 +7940,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-        - "<math><mrow><mi>Out</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Out</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OuterAutomorphismGroup.html"
        - "https://en.wikipedia.org/wiki/Outer_automorphism_group"
@@ -7999,7 +7999,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PadovanSequence.html"
        - "https://en.wikipedia.org/wiki/Padovan_sequence"
@@ -8075,7 +8075,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>p</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>p</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Partition_(number_theory)"
     
@@ -8147,7 +8147,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>perm</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>perm</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Permanent.html"
        - "https://en.wikipedia.org/wiki/Permanent"
@@ -8182,7 +8182,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PerrinNumber.html"
        - "https://en.wikipedia.org/wiki/Perrin_number"
@@ -8206,7 +8206,7 @@ concepts:
       property: symbol
       area: "chemistry"
       comments:
-        - "<math><mi>pH</mi></math>"
+       - "<math><mi>pH</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/PH"
       alias:
@@ -8242,7 +8242,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Pic</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Pic</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PicardGroup.html"
        - "https://en.wikipedia.org/wiki/Picard_group"
@@ -8338,7 +8338,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-        - "<math><mi>Pois</mi></math>"
+       - "<math><mi>Pois</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/PoissonDistribution.html"
        - "https://en.wikipedia.org/wiki/Poisson_distribution"
@@ -8373,7 +8373,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ψ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ψ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PolygammaFunction.html"
        - "https://en.wikipedia.org/wiki/Polygamma_function"
@@ -8505,7 +8505,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>π</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>π</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PrimeCountingFunction.html"
     
@@ -8515,7 +8515,7 @@ concepts:
       property: "indexed function"
       area: "number theory"
       comments:
-        - "<math><mrow><mi>d</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>d</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PrimeDifferenceFunction.html"
     
@@ -8545,7 +8545,7 @@ concepts:
       property: function
       area: "complex analysis"
       comments:
-        - "<math><mrow><mi>Log</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Log</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Complex_logarithm#Principal_value"
     
@@ -8555,7 +8555,7 @@ concepts:
       property: "indexed function"
       area: "probability theory"
       comments:
-        - "<math><mrow><mi>plim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>plim</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability"
       alias:
@@ -8588,7 +8588,7 @@ concepts:
       property: function
       area: "projective geometry"
       comments:
-        - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>P</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Projective_line"
        - "https://ncatlab.org/nlab/show/projective+line"
@@ -8636,7 +8636,7 @@ concepts:
       property: constant
       area: "number theory"
       comments:
-        - "<math><mi>τ</mi></math>"
+       - "<math><mi>τ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Prouhet%E2%80%93Thue%E2%80%93Morse_constant"
     
@@ -8802,7 +8802,7 @@ concepts:
       property: symbol
       area: "complexity theory"
       comments:
-        - "<math><mi>R</mi></math>"
+       - "<math><mi>R</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/R.html"
        - "https://en.wikipedia.org/wiki/R_(complexity)"
@@ -8836,7 +8836,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>rad</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>rad</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Radical.html"
        - "https://en.wikipedia.org/wiki/Radical_of_a_Lie_algebra"
@@ -8877,7 +8877,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>τ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>τ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RamanujansTauFunction.html"
        - "https://en.wikipedia.org/wiki/Ramanujan_tau_function"
@@ -8889,7 +8889,7 @@ concepts:
       property: constant
       area: "special functions"
       comments:
-        - "<math><mi>μ</mi></math>"
+       - "<math><mi>μ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Ramanujan-SoldnerConstant.html"
        - "https://en.wikipedia.org/wiki/Ramanujan%E2%80%93Soldner_constant"
@@ -8913,7 +8913,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RamseyNumber.html"
        - "https://www.encyclopediaofmath.org/index.php/Ramsey_number"
@@ -8982,7 +8982,7 @@ concepts:
       property: function
       area: "convex analysis"
       comments:
-        - "<math><mrow><mi>recc</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>recc</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Recession_cone"
     
@@ -9004,7 +9004,7 @@ concepts:
       property: function
       area: "euclidean geometry"
       comments:
-        - "<math><mrow><mi>r</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>r</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Rectification.html"
        - "https://en.wikipedia.org/wiki/Rectification_(geometry)"
@@ -9016,7 +9016,7 @@ concepts:
       property: function
       area: "topology"
       comments:
-        - "<math><mrow><mi>Σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Suspension_(topology)"
     
@@ -9026,7 +9026,7 @@ concepts:
       property: "indexed function"
       area: "algebraic topology"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Relative_homology"
        - "https://ncatlab.org/nlab/show/relative+homology"
@@ -9038,7 +9038,7 @@ concepts:
       property: "indexed symbol"
       area: "number theory"
       comments:
-        - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Repunit.html"
        - "https://en.wikipedia.org/wiki/Repunit"
@@ -9072,7 +9072,7 @@ concepts:
       property: function
       area: "set theory"
       comments:
-        - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Resolvent_set"
        - "https://www.encyclopediaofmath.org/index.php/Resolvent_set"
@@ -9142,7 +9142,7 @@ concepts:
       property: symbol
       area: "fluid dynamics"
       comments:
-        - "<math><mi>Re</mi></math>"
+       - "<math><mi>Re</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Reynolds_number"
     
@@ -9164,7 +9164,7 @@ concepts:
       property: "indexed symbol"
       area: "riemannian geometry"
       comments:
-        - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RicciTensor.html"
        - "https://www.encyclopediaofmath.org/index.php/Ricci_tensor"
@@ -9205,7 +9205,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>θ⁡</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>θ⁡</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannThetaFunction.html"
        - "https://dlmf.nist.gov/21.2#i"
@@ -9217,7 +9217,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannZetaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%96(x)"
@@ -9233,7 +9233,7 @@ concepts:
       property: "indexed function"
       area: "riemannian geometry"
       comments:
-        - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>R</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Riemann-ChristoffelTensor.html"
        - "https://en.wikipedia.org/wiki/Riemann_curvature_tensor"
@@ -9343,7 +9343,7 @@ concepts:
       property: symbol
       area: "complex numbers"
       comments:
-        - "<math><mi>ω</mi></math>"
+       - "<math><mi>ω</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RootofUnity.html"
        - "https://en.wikipedia.org/wiki/Root_of_unity"
@@ -9376,7 +9376,7 @@ concepts:
       property: symbol
       area: "physics"
       comments:
-        - "<math><mi>Ru</mi></math>"
+       - "<math><mi>Ru</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euler_number_(physics)"
     
@@ -9468,7 +9468,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SchurMultiplier.html"
        - "https://en.wikipedia.org/wiki/Schur_multiplier"
@@ -9526,7 +9526,7 @@ concepts:
       property: symbol
       area: "abstract algebra"
       comments:
-        - "<math><mi>𝕊</mi></math>"
+       - "<math><mi>𝕊</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Sedenion"
        - "https://ncatlab.org/nlab/show/sedenion"
@@ -9568,7 +9568,7 @@ concepts:
       property: symbol
       area: "information theory"
       comments:
-        - "<math><mi>H</mi></math>"
+       - "<math><mi>H</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShannonEntropy.html"
        - "https://en.wikipedia.org/wiki/Entropy_(information_theory)"
@@ -9597,7 +9597,7 @@ concepts:
       property: function
       area: "algebraic geometry"
       comments:
-        - "<math><mrow><mi>Sh</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Sh</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Shimura_variety"
        - "https://ncatlab.org/nlab/show/Shimura+variety"
@@ -9632,7 +9632,7 @@ concepts:
       property: symbol
       area: "combinatorics"
       comments:
-        - "<math><mi>A</mi></math>"
+       - "<math><mi>A</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SidonSequence.html"
        - "https://en.wikipedia.org/wiki/Sidon_sequence"
@@ -9645,7 +9645,7 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-        - "<math><mrow><mi>sgn</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>sgn</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Sign_function"
       alias:
@@ -9657,7 +9657,7 @@ concepts:
       property: function
       area: "combinatorics"
       comments:
-        - "<math><mrow><mi>sign</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>sign</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/signature+of+a+permutation"
       alias:
@@ -9714,7 +9714,7 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-        - "<math><mrow><mi>Si</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Si</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SineIntegral.html"
        - "https://dlmf.nist.gov/6.2#ii"
@@ -9727,7 +9727,7 @@ concepts:
       property: symbol
       area: "statistics"
       comments:
-        - "<math><mi>α</mi></math>"
+       - "<math><mi>α</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Size_(statistics)"
     
@@ -9747,7 +9747,7 @@ concepts:
       property: prefix
       area: "complexity"
       comments:
-        - "<math><mrow><mi>o</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>o</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Big_O_notation"
        - "https://mathworld.wolfram.com/o.html"
@@ -9758,7 +9758,7 @@ concepts:
       property: "indexed symbol"
       area: "number theory"
       comments:
-        - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SmithNumber.html"
        - "https://en.wikipedia.org/wiki/Smith_number"
@@ -9781,7 +9781,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>soc</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>soc</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Socle.html"
        - "https://en.wikipedia.org/wiki/Socle_(mathematics)"
@@ -9794,7 +9794,7 @@ concepts:
       property: symbol
       area: "complexity theory"
       comments:
-        - "<math><mi>Õ</mi></math>"
+       - "<math><mi>Õ</mi></math>"
       urls: 
       alias:
        - Extensions_to_the_Bachmann–Landau_notations
@@ -9805,7 +9805,7 @@ concepts:
       property: symbol
       area: "geometry"
       comments:
-        - "<math><mi>Ω</mi></math>"
+       - "<math><mi>Ω</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SolidAngle.html"
        - "https://en.wikipedia.org/wiki/Solid_angle"
@@ -9817,7 +9817,7 @@ concepts:
       property: unit
       area: "imperial units"
       comments:
-        - "<math><mrow><mi>span</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>span</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(unit)"
     
@@ -9839,7 +9839,7 @@ concepts:
       property: "indexed function"
       area: "group theory"
       comments:
-        - "<math><mrow><mi>SO</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>SO</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpecialOrthogonalGroup.html"
        - "https://ncatlab.org/nlab/show/special+orthogonal+group"
@@ -9850,7 +9850,7 @@ concepts:
       property: function
       area: "lie groups"
       comments:
-        - "<math><mrow><mi>SU</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>SU</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpecialUnitaryGroup.html"
        - "https://en.wikipedia.org/wiki/Special_unitary_group"
@@ -9862,7 +9862,7 @@ concepts:
       property: function
       area: "spectral theory"
       comments:
-        - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ρ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpectralRadius.html"
        - "https://en.wikipedia.org/wiki/Spectral_radius"
@@ -9874,7 +9874,7 @@ concepts:
       property: function
       area: "functional analysis"
       comments:
-        - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_(functional_analysis)"
     
@@ -9884,7 +9884,7 @@ concepts:
       property: symbol
       area: "category theory"
       comments:
-        - "<math><mi>Sp</mi></math>"
+       - "<math><mi>Sp</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/Spectrum"
     
@@ -9912,7 +9912,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Spec</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Spec</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_of_a_ring"
     
@@ -9944,7 +9944,7 @@ concepts:
       property: symbol
       area: "quantum mechanics"
       comments:
-        - "<math><mi>S</mi></math>"
+       - "<math><mi>S</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spin_(physics)"
     
@@ -9954,7 +9954,7 @@ concepts:
       property: symbol
       area: "group theory"
       comments:
-        - "<math><mi>Spin</mi></math>"
+       - "<math><mi>Spin</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpinGroup.html"
        - "https://en.wikipedia.org/wiki/Spin_group"
@@ -9967,7 +9967,7 @@ concepts:
       property: symbol
       area: "quantum mechanics"
       comments:
-        - "<math><mi>s</mi></math>"
+       - "<math><mi>s</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spin_(physics)"
     
@@ -10008,7 +10008,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-        - "<math><mi>σ</mi></math>"
+       - "<math><mi>σ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/StandardDeviation.html"
        - "https://en.wikipedia.org/wiki/Standard_deviation"
@@ -10068,7 +10068,7 @@ concepts:
       property: function
       area: "formal languages"
       comments:
-        - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Star_height"
     
@@ -10078,7 +10078,7 @@ concepts:
       property: function
       area: "k-theory"
       comments:
-        - "<math><mrow><mi>St</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>St</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Group_of_Lie_type"
        - "https://en.wikipedia.org/wiki/Steinberg_group_(K-theory)"
@@ -10101,7 +10101,7 @@ concepts:
       property: function
       area: "algebraic topology"
       comments:
-        - "<math><mrow><mi>w</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>w</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Stiefel-WhitneyClass.html"
        - "https://en.wikipedia.org/wiki/Stiefel%E2%80%93Whitney_class"
@@ -10126,7 +10126,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/StirlingNumberoftheFirstKind.html"
        - "https://en.wikipedia.org/wiki/Stirling_numbers_of_the_first_kind"
@@ -10138,7 +10138,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/StirlingNumberoftheSecondKind.html"
        - "https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind"
@@ -10150,7 +10150,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-        - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Strength_of_a_graph"
       alias:
@@ -10184,7 +10184,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-        - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>H</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/StruveFunction.html"
        - "https://en.wikipedia.org/wiki/Struve_function"
@@ -10198,7 +10198,7 @@ concepts:
       property: function
       area: "field theory"
       comments:
-        - "<math><mrow><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Stufe_(algebra)"
     
@@ -10293,7 +10293,7 @@ concepts:
       property: function
       area: "analysis"
       comments:
-        - "<math><mrow><mi>supp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>supp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Support.html"
        - "https://en.wikipedia.org/wiki/Support_(mathematics)"
@@ -10361,7 +10361,7 @@ concepts:
       property: function
       area: "topology"
       comments:
-        - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Suspension.html"
        - "https://en.wikipedia.org/wiki/Suspension_(topology)"
@@ -10416,7 +10416,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Sp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Sp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SymplecticGroup.html"
        - "https://en.wikipedia.org/wiki/Symplectic_group"
@@ -10441,7 +10441,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TangentBundle.html"
        - "https://en.wikipedia.org/wiki/Tangent_bundle"
@@ -10487,7 +10487,7 @@ concepts:
       property: symbol
       area: "particle physics"
       comments:
-        - "<math><mi>τ</mi></math>"
+       - "<math><mi>τ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tau_(particle)"
     
@@ -10497,7 +10497,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>Ta</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ta</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TaxicabNumber.html"
        - "https://en.wikipedia.org/wiki/Taxicab_number"
@@ -10508,7 +10508,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>Ta</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Ta</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TaylorPolynomial.html"
        - "https://en.wikipedia.org/wiki/Taylor%27s_theorem"
@@ -10520,7 +10520,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TeichmuellerSpace.html"
        - "https://en.wikipedia.org/wiki/Teichm%C3%BCller_space"
@@ -10532,7 +10532,7 @@ concepts:
       property: symbol
       area: "physics"
       comments:
-        - "<math><mi>T</mi></math>"
+       - "<math><mi>T</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Temperature.html"
        - "https://en.wikipedia.org/wiki/Temperature"
@@ -10603,7 +10603,7 @@ concepts:
       property: function
       area: "algebraic topology"
       comments:
-        - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Thom_space"
        - "https://ncatlab.org/nlab/show/Thom+space"
@@ -10615,7 +10615,7 @@ concepts:
       property: symbol
       area: "group theory"
       comments:
-        - "<math><mi>Th</mi></math>"
+       - "<math><mi>Th</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ThompsonGroup.html"
        - "https://en.wikipedia.org/wiki/Thompson_groups"
@@ -10647,7 +10647,7 @@ concepts:
       property: function
       area: "topology"
       comments:
-        - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>h</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TopologicalEntropy.html"
        - "https://en.wikipedia.org/wiki/Topological_entropy"
@@ -10670,7 +10670,7 @@ concepts:
       property: symbol
       area: "mechanics"
       comments:
-        - "<math><mi>τ</mi></math>"
+       - "<math><mi>τ</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torque"
     
@@ -10680,7 +10680,7 @@ concepts:
       property: symbol
       area: "differential geometry"
       comments:
-        - "<math><mi>τ</mi></math>"
+       - "<math><mi>τ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Torsion.html"
        - "https://en.wikipedia.org/wiki/Torsion_of_a_curve"
@@ -10693,7 +10693,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-        - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torsion_(algebra)"
     
@@ -10713,7 +10713,7 @@ concepts:
       property: function
       area: "differential geometry"
       comments:
-        - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>T</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torsion_tensor"
     
@@ -10747,7 +10747,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>tr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>tr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trace_(linear_algebra)"
     
@@ -10815,7 +10815,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>TM</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>TM</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trimean"
       alias:
@@ -10859,7 +10859,7 @@ concepts:
       property: function
       area: "numerical analysis"
       comments:
-        - "<math><mrow><mi>trunc</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>trunc</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Truncation.html"
        - "https://en.wikipedia.org/wiki/Truncation"
@@ -11032,7 +11032,7 @@ concepts:
       property: constant
       area: "geometry"
       comments:
-        - "<math><mi>P</mi></math>"
+       - "<math><mi>P</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/UniversalParabolicConstant.html"
        - "https://en.wikipedia.org/wiki/Universal_parabolic_constant"
@@ -11137,7 +11137,7 @@ concepts:
       property: function
       area: "statistics"
       comments:
-        - "<math><mrow><mi>Var</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Var</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Variance"
       alias:
@@ -11168,7 +11168,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>proj</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>proj</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Vector_projection"
       alias:
@@ -11181,7 +11181,7 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-        - "<math><mrow><mi>vec</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>vec</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Vectorization_(mathematics)"
        - "https://en.wikipedia.org/wiki/Vectorization_(parallel_computing)"
@@ -11234,7 +11234,7 @@ concepts:
       property: symbol
       area: "physics"
       comments:
-        - "<math><mi>V</mi></math>"
+       - "<math><mi>V</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Volume.html"
        - "https://en.wikipedia.org/wiki/Volume_(compression)"
@@ -11260,7 +11260,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-        - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WalshFunction.html"
        - "https://en.wikipedia.org/wiki/Walsh_function"
@@ -11319,7 +11319,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>℘</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>℘</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeierstrassEllipticFunction.html"
        - "https://en.wikipedia.org/wiki/Weierstrass%27s_elliptic_functions"
@@ -11333,7 +11333,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>σ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeierstrassSigmaFunction.html"
        - "https://dlmf.nist.gov/23.1"
@@ -11346,7 +11346,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeierstrassZetaFunction.html"
        - "https://dlmf.nist.gov/23.1"
@@ -11359,7 +11359,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>wt</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>wt</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Weight_(strings)"
        - "https://ncatlab.org/nlab/show/weight"
@@ -11404,7 +11404,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-        - "<math><mrow><mi>Wh</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Wh</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhiteheadGroup.html"
        - "https://en.wikipedia.org/wiki/Whitehead_torsion"
@@ -11427,7 +11427,7 @@ concepts:
       property: function
       area: "geometric topology"
       comments:
-        - "<math><mrow><mi>τ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>τ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhiteheadTorsion.html"
        - "https://en.wikipedia.org/wiki/Whitehead_torsion"
@@ -11495,7 +11495,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WilsonQuotient.html"
        - "https://en.wikipedia.org/wiki/Wilson_quotient"
@@ -11519,7 +11519,7 @@ concepts:
       property: function
       area: "fourier analysis"
       comments:
-        - "<math><mrow><mi>w</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>w</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WindowFunction.html"
        - "https://en.wikipedia.org/wiki/Window_function"
@@ -11573,7 +11573,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ϕ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ϕ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WrightFunction.html"
     
@@ -11583,7 +11583,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-        - "<math><mrow><mi>ω</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ω</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Wright_Omega_function"
       alias:
@@ -11595,7 +11595,7 @@ concepts:
       property: function
       area: "knot theory"
       comments:
-        - "<math><mrow><mi>Wr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Wr</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Writhe.html"
        - "https://en.wikipedia.org/wiki/Writhe"
@@ -11620,7 +11620,7 @@ concepts:
       property: function
       area: "gauge theory"
       comments:
-        - "<math><mrow><mi>ℒ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ℒ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Yang-MillsFunctional.html"
        - "https://www.encyclopediaofmath.org/index.php/Yang-Mills_functional"
@@ -11632,7 +11632,7 @@ concepts:
       property: symbol
       area: "linear algebra"
       comments:
-        - "<math><mi>Z</mi></math>"
+       - "<math><mi>Z</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Z-matrix_(mathematics)"
     
@@ -11651,7 +11651,7 @@ concepts:
       property: function
       area: "combinatorics"
       comments:
-        - "<math><mrow><mi>Z</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>Z</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/z-Transform.html"
        - "https://mathworld.wolfram.com/Z-Transform.html"
@@ -11733,7 +11733,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-        - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><mi>ζ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZetaFunction.html"
        - "https://en.wikipedia.org/wiki/List_of_zeta_functions"
