@@ -1382,7 +1382,7 @@ concepts:
     
     - concept: christoffel-symbol-of-first-kind
       arity: 3
-      en: christoffel symbol of first kind>mrow msub Δ $1 [$2] ($3" of $1, $2, $3
+      en: christoffel symbol of first kind of $1, $2, $3
       property: "indexed symbol"
       area: "Riemannian geometry"
       comments:
