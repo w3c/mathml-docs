@@ -1570,7 +1570,7 @@ concepts:
       arity: 1
       en: closure of $1
       property: "function<br/>msup"
-      area: "abstract algebra,<br/>topology"
+      area: "abstract algebra,, topology"
       notation: "mi cl<br/>mi Cl<br/>msup $1 −"
       urls: 
        - "https://mathworld.wolfram.com/Closure.html"
@@ -1620,7 +1620,7 @@ concepts:
       arity: 1
       en: coherence of $1
       property: "indexed function"
-      area: "signal processing<br/>quantum physics"
+      area: "signal processing, quantum physics"
       notation: "mi C<br/>mi γ"
       urls: 
        - "https://en.wikipedia.org/wiki/Coherence_(signal_processing)"
@@ -1901,7 +1901,7 @@ concepts:
       arity: 2
       en: $1 congruence relation $2
       property: infix
-      area: "algebra<br/>geometry"
+      area: "algebra, geometry"
       notation: "mo ≡<br/>mo ≅"
       urls: 
        - "https://en.wikipedia.org/wiki/Congruence_relation"
@@ -2505,7 +2505,7 @@ concepts:
       arity: 1
       en: degree of $1
       property: prefix<br/>postfix
-      area: "physics<br/>geometry"
+      area: "physics, geometry"
       notation: "mo °"
       urls: 
        - "https://mathworld.wolfram.com/Degree.html"
@@ -2746,7 +2746,7 @@ concepts:
       arity: 1
       en: dimension of $1
       property: "function<br/>fenced"
-      area: "linear algebra<br/>graph theory"
+      area: "linear algebra, graph theory"
       notation: "mi dim<br/>mrow [ $1 ]"
       urls: 
        - "https://mathworld.wolfram.com/Dimension.html"
@@ -3225,7 +3225,7 @@ concepts:
       arity: 0
       en: eccentricity
       property: symbol
-      area: "analytic geometry<br/>graph theory"
+      area: "analytic geometry, graph theory"
       notation: "mi e<br/>mi ϵ"
       urls: 
        - "https://mathworld.wolfram.com/Eccentricity.html"
@@ -7894,7 +7894,7 @@ concepts:
       arity: 1
       en: opposite of $1
       property: msup
-      area: "category theory,<br/>group theory"
+      area: "category theory,, group theory"
       notation: "msup $1 op"
       urls: 
        - "https://en.wikipedia.org/wiki/Opposite_category"
@@ -7949,7 +7949,7 @@ concepts:
       arity: 2
       en: $1 orthogonal $2
       property: infix
-      area: "geometry,<br/>algebra"
+      area: "geometry,, algebra"
       comments:
        - "<math><mrow><mi>X</mi><mo>⊥</mo><mi>Y</mi></mrow></math>"
       urls: 
@@ -8670,7 +8670,8 @@ concepts:
       en: $1 proportional $2
       property: infix
       area: "arithmetic"
-      notation: "mo ∝<br/>mo ~"
+       - "<math><mrow><mi>X</mi><mo>∝</mo><mi>Y</mi></mrow></math>"
+       - "<math><mrow><mi>X</mi><mo>~</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Proportional.html"
        - "https://en.wikipedia.org/wiki/Proportionality_(mathematics)"
@@ -8973,7 +8974,7 @@ concepts:
       arity: 1
       en: rank of $1
       property: function
-      area: "graph theory<br/>linear algebra<br/>"
+      area: "graph theory, linear algebra, "
       notation: "mi r<br/>mi rank<br/>mi rk"
       urls: 
        - "https://mathworld.wolfram.com/Rank.html"
@@ -10368,7 +10369,7 @@ concepts:
       arity: 1
       en: supremum of $1
       property: "function<br/>largeop"
-      area: "order theory<br/>lattice theory"
+      area: "order theory, lattice theory"
       notation: "mi sup<br/>mo ⋁"
       urls: 
        - "https://mathworld.wolfram.com/Supremum.html"
