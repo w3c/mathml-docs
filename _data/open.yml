@@ -8920,7 +8920,7 @@ concepts:
       property: infix
       area: "group theory"
       comments:
-       - "<math><mrow><mi>X</mi><mo>&lt;</mo><mi>Y</mi></mrow></math>"
+       - "<math><mrow><mi>X</mi><mo>&amp;lt;</mo><mi>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Subgroup"
     
