@@ -537,7 +537,8 @@ concepts:
       en: associator of $1, $2, $3
       property: fenced
       area: "algebra"
-      notation: "mrow [$1, $2, $3]"
+      comments:
+       - "<math><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Associator.html"
        - "https://en.wikipedia.org/wiki/Associator"
@@ -812,7 +813,8 @@ concepts:
       en: bijection, $1, of $2 to $3
       property: mixfix
       area: "set theory"
-      notation: "mrow $1 : $2 ⤖ $3"
+      comments:
+       - "<math><mi>f</mi><mo>:</mo><mi>X</mi><mo>⤖</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
     
@@ -1383,7 +1385,8 @@ concepts:
       en: christoffel symbol of first kind>mrow msub Δ $1 [$2] ($3" of $1, $2, $3
       property: "indexed symbol"
       area: "Riemannian geometry"
-      notation: "msub Γ mrow $1 $2 $3"
+      comments:
+       - "<math><msub><mi>&Gamma;</mi><mrow><mi>k</mi><mi>i</mi><mi>j</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChristoffelSymbol.html"
        - "https://en.wikipedia.org/wiki/Christoffel_symbols"
@@ -1391,11 +1394,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Christoffel_symbol"
     
     - concept: christoffel-symbol-of-second-kind
-      arity: 1
-      en: christoffel symbol of second kind of $1
+      arity: 3
+      en: christoffel symbol of second kind of $1 $2 $3
       property: "indexed symbol"
       area: "Riemannian geometry"
-      notation: "msubsup Γ"
+      comments:
+       - "<math><multiscripts><mi>&Gamma;</mi><mrow/><mi>k</mi><mi>i</mi><mrow/><mi>j</mi><mrow/></multiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChristoffelSymbol.html"
        - "https://en.wikipedia.org/wiki/Christoffel_symbols"
@@ -5239,7 +5243,8 @@ concepts:
       en: incidence structure of $1, $2 and $3
       property: fenced
       area: "incidence geometry"
-      notation: "mrow ( $1, $2, $3"
+      comments:
+       - "<math><mo>(</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo>)</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Incidence_structure"
     
@@ -9048,7 +9053,8 @@ concepts:
       en: roof of $1, $2 and $3
       property: mixfix
       area: "category theory"
-      notation: "mrow $1 ←$2 → $3"
+      comments:
+       - "<math><mi>X</mi><mo>&leftarrow;</mo><mi>Y</mi><mo>&rightarrow;</mo><mi>Z</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(category_theory)"
        - "https://ncatlab.org/nlab/show/span"
@@ -9251,7 +9257,8 @@ concepts:
       en: selection
       property: "indexed function"
       area: "relational algebra"
-      notation: "msub σ mrow $1 $2 $3 /mrow"
+      comments:
+       - "<math><msub><mi>&sigma;</mi><mrow><mi>a</mi><mi>&theta;</mi><mi>b</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Selection_(relational_algebra)"
     
@@ -9320,7 +9327,8 @@ concepts:
       en: short exact sequence $1 $2 $3
       property: mixfix
       area: "group theory"
-      notation: "mrow 0 →$1 → $2 → $3 → 0"
+      comments:
+       - "<math><mn>0</mn><mo>&rightarrow;</mo><mi>X</mi><mo>&rightarrow;</mo><mi>Y</mi><mo>&rightarrow;</mo><mi>Z</mi><mo>&rightarrow;</mo><mn>0</mn></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShortExactSequence.html"
        - "https://en.wikipedia.org/wiki/Exact_sequence"
@@ -9626,7 +9634,8 @@ concepts:
       en: spherical coordinate
       property: fenced
       area: "geometry"
-      notation: "mrow ($1, $2, $3"
+      comments:
+       - "<math><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/SphericalCoordinates.html"
        - "https://www.encyclopediaofmath.org/index.php/Spherical_coordinates"
@@ -10029,7 +10038,8 @@ concepts:
       en: surjection  $1 $2 $3
       property: mixfix<br/>infix
       area: "set theory"
-      notation: "mrow $1 : $2 ↠ $3<br/>msup mo ≤ mo * /msup"
+      comments:
+       - "<math><mi>f</mi><mo>:</mo><mi>X</mi><mo>&#x21a0;</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
        - "https://en.wikipedia.org/wiki/Surjective_function"
@@ -10430,7 +10440,8 @@ concepts:
       en: triangle
       property: prefix
       area: "geometry"
-      notation: "mrow △ $1 $2 $3"
+      comments:
+       - "<math><mo>△</mo><mrow><mi>A</mi><mo>&thinsp;</mo><mi>B</mi><mo>&thinsp;</mo><mi>C</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Triangle.html"
        - "https://en.wikipedia.org/wiki/Triangle"
@@ -10496,7 +10507,8 @@ concepts:
       en: triple scalar product of $1, $2 and $3
       property: fenced
       area: "algebra"
-      notation: "mrow [$1, $2, $3]"
+      comments:
+       - "<math><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/TripleScalarProduct.html"
       alias:
@@ -10549,7 +10561,8 @@ concepts:
       en: turan number of $1, $2 and $3
       property: function
       area: "graph theory"
-      notation: "mrow T($1,$2,$3"
+      comments:
+       - "<math><mi>T</mi><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tur%C3%A1n_number"
        - "https://www.encyclopediaofmath.org/index.php/Turan_number"
