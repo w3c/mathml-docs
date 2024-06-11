@@ -5700,7 +5700,7 @@ concepts:
       area: "set theory"
       notation: "$1 [ $2 ]"
       notationc: "msub $1 *"
-       - "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
+      notationb: "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
       notationa: "$1 '' $2"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
