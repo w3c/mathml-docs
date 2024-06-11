@@ -723,7 +723,8 @@ concepts:
       en: bergman space
       property: "indexed function"
       area: "complex analysis"
-      notation: "msup A $1 ($2"
+      comments:
+       - "<math><msup><mi>A</mi><mi>n</mi></msup><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BergmanSpace.html"
        - "https://en.wikipedia.org/wiki/Bergman_space"
@@ -749,7 +750,8 @@ concepts:
       en: bernoulli polynomial $1 $2
       property: "indexed function"
       area: "number theory"
-      notation: "msub B $1 ($2"
+      comments:
+       - "<math><msub><mi>B</mi><mi>n</mi></msub><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BernoulliPolynomial.html"
        - "https://en.wikipedia.org/wiki/Bernoulli_polynomials"
@@ -762,7 +764,8 @@ concepts:
       en: $1 th bessel function of $2
       property: "indexed function"
       area: "special functions"
-      notation: "msub J $1 ($2"
+      comments:
+       - "<math><msub><mi>J</mi><mi>n</mi></msub><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BesselFunction.html"
        - "https://en.wikipedia.org/wiki/Bessel_function"
@@ -774,7 +777,8 @@ concepts:
       en: $1 th bessel function of second kind of $2
       property: "indexed function"
       area: "special functions"
-      notation: "msub Y $1 ($2"
+      comments:
+       - "<math><msub><mi>Y</mi><mi>n</mi></msub><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BesselFunctionoftheSecondKind.html"
        - "https://dlmf.nist.gov/10.2#E3"
@@ -785,7 +789,8 @@ concepts:
       en: $1 th bessel polynomial of $2
       property: "indexed function"
       area: "special functions"
-      notation: "msub y $1 ($2"
+      comments:
+       - "<math><msub><mi>y</mi><mi>n</mi></msub><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BesselPolynomial.html"
        - "https://en.wikipedia.org/wiki/Bessel_polynomials"
