@@ -839,9 +839,10 @@ concepts:
       en: $1 biconditional $2
       property: infix
       area: "logic"
-      notation: "mo ⇔"
-      notationb: "mo ≡"
-      notationa: "mo iff"
+      comments:
+       - "<math><mi>X</mi><mo>⇔</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>≡</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>iff</mo><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Biconditional.html"
        - "https://ncatlab.org/nlab/show/biconditional"
@@ -1778,7 +1779,8 @@ concepts:
       en: $1 comparability $2
       property: infix
       area: "order theory"
-      notation: "munderover = > <"
+      comments:
+       - "<math><mi>X</mi><mo>⪋</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
       alias:
@@ -3235,7 +3237,8 @@ concepts:
       en: $1 double category $2
       property: infix
       area: "category theory"
-      notation: "mover → →"
+      comments:
+       - "<math><mi>X</mi><mo>⇉</mo><mi>Y</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/double+category"
     
@@ -4979,8 +4982,9 @@ concepts:
       en: $1 hadamard product $2
       property: infix
       area: "algebra"
-      notation: "mo ∘"
-      notationa: "mo ⊙"
+      comments:
+       - "<math><mi>X</mi><mo>∘</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊙</mo><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/HadamardProduct.html"
        - "https://en.wikipedia.org/wiki/Hadamard_product_(matrices)"
@@ -5957,8 +5961,8 @@ concepts:
       en: $1 intersection number $2
       property: infix
       area: "algebraic geometry"
-      notation: "mo ⋅"
-      notationa: ""
+      comments:
+       - "<math><mi>X</mi><mo>⋅</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Intersection_number"
     
@@ -6044,8 +6048,9 @@ concepts:
       en: $1 isomorphism $2
       property: infix
       area: "set theory"
-      notation: "mover ↦ ∼"
-      notationa: "mo ≅"
+      comments:
+       - "<math><mi>X</mi><mover><mo>↦</mo><mo>∼</mo></mover><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>≅</mo><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Isomorphism.html"
        - "https://en.wikipedia.org/wiki/Isomorphism"
@@ -11820,8 +11825,9 @@ concepts:
       en: $1 weak convergence $2
       property: infix
       area: "analysis"
-      notation: "mover →w"
-      notationa: "mo ⇀"
+      comments:
+       - <math><mi>X</mi><mover><mo>→</mo><mi>w</mi></mover><mi>Y</mi></math>"
+       - <math><mi>X</mi><mo>⇀</mo><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeakConvergence.html"
        - "https://en.wikipedia.org/wiki/Weak_convergence_(Hilbert_space)"
