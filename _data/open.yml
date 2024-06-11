@@ -2138,7 +2138,8 @@ concepts:
       en: $1 converges
       property: postfix
       area: "computer science"
-      notation: "mo ↓"
+      comments:
+       - "<math><mi>x</mi><mo>↓</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
       alias:
@@ -2509,7 +2510,8 @@ concepts:
       en: dalembert operator of $1
       property: prefix
       area: "partial differential equations"
-      notation: "mo ☐"
+      comments:
+       - "<math><mo>☐</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/D%27Alembert_operator"
        - "https://www.encyclopediaofmath.org/index.php/D'Alembert_operator"
@@ -2553,7 +2555,8 @@ concepts:
       en: decrease of $1
       property: postfix
       area: "physics"
-      notation: "mo ↓"
+      comments:
+       - "<math><mi>x</mi><mo>↓</mo></math>"
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4705"
     
@@ -2624,7 +2627,8 @@ concepts:
       en: degree of $1
       property: prefix, postfix
       area: "physics, geometry"
-      notation: "mo °"
+      comments:
+       - "<math><mi>x</mi><mo>°</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Degree.html"
        - "https://en.wikipedia.org/wiki/Degree_(angle)"
@@ -2695,7 +2699,8 @@ concepts:
       en: dereference of $1
       property: prefix
       area: "programming languages"
-      notation: "mo !"
+      comments:
+       - "<math><mo>!</mo><mi>x</mi></math>"
       urls: 
        - "https://arxiv.org/pdf/1208.5915.pdf"
     
@@ -2758,7 +2763,7 @@ concepts:
       area: "geometry"
       comments:
        - "<math><mi>d</mi><mrow><mi>X</mi></mrow></math>"
-      notationc: "mo ⌀"
+       - "<math><mo>⌀</mo><mi>x</mi></math>"
       notationb: "mi DIA"
       notationa: "mi dia"
       urls: 
@@ -2811,7 +2816,7 @@ concepts:
       area: "calculus"
       comments:
        - "<math><mi>D</mi><mrow><mi>X</mi></mrow></math>"
-      notationb: "mo ∂"
+       - "<math><mo>∂</mo><mi>x</mi></math>"
       notationa: "mfrac d mrow d $1"
       urls: 
        - "https://mathworld.wolfram.com/DifferentialOperator.html"
@@ -3131,7 +3136,8 @@ concepts:
       en: $1 diverges
       property: postfix
       area: "computer science"
-      notation: "mo ↑"
+      comments:
+       - "<math><mi>x</mi><mo>↑</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
       alias:
@@ -3876,7 +3882,8 @@ concepts:
       en: exponential factorial of $1
       property: postfix
       area: "number theory"
-      notation: "mo $"
+      comments:
+       - "<math><mi>x</mi><mo>$</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExponentialFactorial.html"
        - "https://en.wikipedia.org/wiki/Exponential_factorial"
@@ -5394,7 +5401,8 @@ concepts:
       en: hodge star operator of $1
       property: prefix
       area: "differential geometry"
-      notation: "mo ⋆"
+      comments:
+       - "<math><mo>⋆</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hodge_dual"
        - "https://ncatlab.org/nlab/show/Hodge+star+operator"
@@ -5808,7 +5816,8 @@ concepts:
       en: increase of $1
       property: postfix
       area: "physics"
-      notation: "mo ↑"
+      comments:
+       - "<math><mi>x</mi><mo>↑</mo></math>"
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4606"
     
@@ -5864,7 +5873,7 @@ concepts:
       area: "order theory"
       comments:
        - "<math><mi>inf</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "mo ⋀"
+       - "<math><mo>⋀</mo><mi>X</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Infimum.html"
        - "https://en.wikipedia.org/wiki/Infimum_and_supremum"
@@ -5906,7 +5915,8 @@ concepts:
       en: infinitely many concurrently active copies of $1
       property: prefix
       area: "formal languages"
-      notation: "mo !"
+      comments:
+       - "<math><mo>!</mo><mi>x</mi></math>"
       urls: 
        - "https://arxiv.org/pdf/0903.3513.pdf"
     
@@ -7184,7 +7194,8 @@ concepts:
       en: lower closure poset of $1
       property: prefix
       area: "order theory"
-      notation: "mo ↓"
+      comments:
+       - "<math><mo>↓</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Upper_set#Upper_closure_and_lower_closure"
     
@@ -8118,7 +8129,8 @@ concepts:
       en: non oriented angle of $1
       property: prefix
       area: "geometry"
-      notation: "mo ∠"
+      comments:
+       - "<math><mo>∠</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Orientation_(vector_space)"
        - "https://en.wikipedia.org/wiki/Euclidean_space#Angle"
@@ -8750,8 +8762,8 @@ concepts:
        - le-nombre-radiant
     
     - concept: playing-card-suit
-      arity: 1
-      en: playing card suit of $1
+      arity: 0
+      en: playing card suit
       property: unit
       area: "game theory"
       notation: "mo ♣"
@@ -8920,7 +8932,8 @@ concepts:
       en: positivitiy predicate of $1
       property: prefix
       area: "predicative mathematics"
-      notation: "mo ◊"
+      comments:
+       - "<math><mo>◊</mo><mi>x</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/positive+element"
     
@@ -9024,7 +9037,8 @@ concepts:
       en: primorial of $1
       property: postfix
       area: "number theory"
-      notation: "mo #"
+      comments:
+       - "<math><mi>x</mi><mo>#</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Primorial.html"
        - "https://en.wikipedia.org/wiki/Primorial"
@@ -9262,7 +9276,8 @@ concepts:
       en: quadrilateral of $1
       property: prefix
       area: "geometry"
-      notation: "mo ◻"
+      comments:
+       - "<math><mo>◻</mo><mi>x</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Quadrangle.html"
        - "https://en.wikipedia.org/wiki/Quadrilateral"
@@ -9794,10 +9809,11 @@ concepts:
       en: right angle of $1
       property: prefix
       area: "geometry"
-      notation: "mo ∟"
-      notationc: "mo ⊾"
-      notationb: "mo ⦜"
-      notationa: "mo ⦝"
+      comments:
+       - "<math><mo>∟</mo><mi>x</mi></math>"
+       - "<math><mo>⊾</mo><mi>x</mi></math>"
+       - "<math><mo>⦜</mo><mi>x</mi></math>"
+       - "<math><mo>⦝</mo><mi>x</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RightAngle.html"
        - "https://en.wikipedia.org/wiki/Right_angle"
@@ -10119,7 +10135,8 @@ concepts:
       en: set of invertible maps of $1
       property: prefix
       area: "commutative algebra"
-      notation: "mo !"
+      comments:
+       - "<math><mo>!</mo><mi>x</mi></math>"
       urls: 
        - "https://arxiv.org/abs/2009.015866"
     
@@ -10783,7 +10800,8 @@ concepts:
       en: subfactorial of $1
       property: prefix
       area: "combinatorics"
-      notation: "mo !"
+      comments:
+       - "<math><mo>!</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Derangement"
       alias:
@@ -10897,7 +10915,7 @@ concepts:
       area: "order theory, lattice theory"
       comments:
        - "<math><mi>sup</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "mo ⋁"
+       - "<math><mo>⋁</mo><mi>X</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Supremum.html"
       alias:
@@ -11187,7 +11205,8 @@ concepts:
       en: therefore sign of $1
       property: prefix
       area: "logic"
-      notation: "mo ∴"
+      comments:
+       - "<math><mo>∴</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Therefore_sign"
        - "https://en.wikipedia.org/wiki/.%C2%B7."
@@ -11733,7 +11752,8 @@ concepts:
       en: upper closure poset of $1
       property: prefix
       area: "order theory"
-      notation: "mo ↑"
+      comments:
+       - "<math><mo>↑</mo><mi>x</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Upper_set#Upper_closure_and_lower_closure"
     
