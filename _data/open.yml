@@ -420,7 +420,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi>,</mo><mi>D</mi><mo>]</mo></math>"
+       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/AnharmonicRatio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -2299,8 +2299,9 @@ concepts:
       en: $1 covering relation $2
       property: infix
       area: "order theory"
-      notation: "mo ⋖"
-      notationa: "mo <: "
+      comments:
+       - "<math><mi>X</mi><mo>⋖</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>&lt;:</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Partially_ordered_set"
        - "https://en.wikipedia.org/wiki/Covering_relation"
@@ -2326,7 +2327,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi>,</mo><mi>D</mi><mo>]</mo></math>"
+       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cross-Ratio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -2580,11 +2581,12 @@ concepts:
       en: $1 defined as $2
       property: infix
       area: "general"
-      notation: "mo ≜"
-      notationd: "mo ≡"
-      notationc: "mo : ="
-      notationb: "mover = def"
-      notationa: "mo : "
+      comments:
+       - "<math><mi>X</mi><mo>≜</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>≝</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>:=</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mover><mo>=</mo><mi>def</mi></mover><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>:</mo><mi>Y</mi></math>"
       urls: 
        - "https://math.stackexchange.com/questions/522864/what-is-the-symbol-triangleq"
        - "https://drive.google.com/file/d/1z_dcQ6lsOA_0CsH55fwcg4hQF_w22olM/view"
@@ -3140,9 +3142,10 @@ concepts:
       en: $1 divisible by $2
       property: infix
       area: "number theory"
-      notation: "$1 | $2"
-      notationb: "$2 ⋮ $1"
-      notationa: "$2 / $1"
+      comments:
+       - "<math><mi>X</mi><mo>|</mo><mi>Y</mi></math>"
+       - "<math><mi>Y</mi><mo>⋮</mo><mi>X</mi></math>"
+       - "<math><mi>Y</mi><mo>/</mo><mi>X</mi></math>"
       urls: 
        - "https://youtu.be/9dyK_op-Ocw?t=251"
        - "https://en.wikipedia.org/wiki/Divisor"
@@ -3584,9 +3587,10 @@ concepts:
       en: $1 essential extension $2
       property: infix
       area: "abstract algebra"
-      notation: "msub ⊆ e"
-      notationb: "mo ⊴"
-      notationa: "mo ⊂"
+      comments:
+       - "<math><mi>X</mi><msub><mo>⊆</mo><mi>e</mi></msub><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊴</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊂</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Essential_extension"
       alias:
@@ -3790,11 +3794,12 @@ concepts:
       en: $1 exclusive or $2
       property: infix
       area: "logic"
-      notation: "mo ⊻"
-      notationd: "mo ⊕"
-      notationc: "mo ↮"
-      notationb: "mo ≢"
-      notationa: "mi XOR"
+      comments:
+       - "<math><mi>X</mi><mo>⊻</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊕</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>↮</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>≢</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mi>XOR</mi><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExclusiveDisjunction.html"
        - "https://ncatlab.org/nlab/show/exclusive+disjunction"
@@ -3824,7 +3829,6 @@ concepts:
        - "<math><mi>E</mi><mrow><mi>X</mi></mrow></math>"
        - "<math><mi>M</mi><mrow><mi>X</mi></mrow></math>"
       notationb: "msub μ $1"
-      notationa: ""
       urls: 
        - "https://en.wikipedia.org/wiki/Expected_value#Notations"
       alias:
@@ -4780,7 +4784,8 @@ concepts:
       en: $1 geometric product $2
       property: infix
       area: "geometric algebra"
-      notation: "mo invisible times"
+      comments:
+       - "<math><mi>X</mi><mo>&#x2062;</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Geometric_algebra"
     
@@ -5468,8 +5473,9 @@ concepts:
       en: $1 hydrated compound $2
       property: infix
       area: "chemistry"
-      notation: "mo ⋅"
-      notationa: "mo •"
+      comments:
+       - "<math><mi>X</mi><mo>⋅</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>•</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hydrate"
        - "https://en.wikipedia.org/wiki/Cobalt(II)_chloride"
@@ -5595,7 +5601,7 @@ concepts:
       property: function
       area: "category theory"
       notation: "msub 1 $1"
-      notationb: "msubI$1"
+      notationb: "msub I $1"
       notationa: "msub Id $1"
       urls: 
        - "https://ncatlab.org/nlab/show/identity+functor"
@@ -5649,7 +5655,8 @@ concepts:
       en: $1 incidence relation $2
       property: infix
       area: "projective geometry"
-      notation: "mi I"
+      comments:
+       - "<math><mi>X</mi><mi>I</mi><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Incidence_(geometry)"
        - "https://en.wikipedia.org/wiki/Incidence_(epidemiology)"
@@ -5757,7 +5764,8 @@ concepts:
       en: $1 increase tends to? $2
       property: infix
       area: "calculus"
-      notation: "mo ↗"
+      comments:
+       - "<math><mi>X</mi><mo>↗</mo><mi>Y</mi></math>"
       urls: 
        - "https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right"
        - "http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf"
@@ -5767,8 +5775,9 @@ concepts:
       en: $1 independent $2
       property: infix
       area: "probability theory"
-      notation: "mo ⟂"
-      notationa: "mo ⫫"
+      comments:
+       - "<math><mi>X</mi><mo>⟂</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⫫</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Independence_(probability_theory)"
        - "https://en.wikipedia.org/wiki/Independence_(mathematical_logic)"
@@ -9498,8 +9507,9 @@ concepts:
       en: $1 restricted wreath product $2
       property: infix
       area: "group theory"
-      notation: "mo wr"
-      notationa: "msub wr $1"
+      comments:
+       - "<math><mi>X</mi><mi>wr</mi><mi>Y</mi></math>"
+       - "<math><mi>X</mi><msub><mi>wr</mi><mi>&#x03a9;</mi></msub><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/WreathProduct.html"
        - "https://en.wikipedia.org/wiki/Wreath_product"
@@ -10023,7 +10033,7 @@ concepts:
     - concept: shift-operator
       arity: 1
       en: shift operator of $1
-      property: oeprator
+      property: operator
       area: "functional analysis"
       notation: "msup T t"
       urls: 
@@ -10717,8 +10727,9 @@ concepts:
       en: $1 such that $2
       property: infix
       area: "set theory"
-      notation: "$1 | $2"
-      notationa: "$1 : $2"
+      comments:
+       - "<math><mi>X</mi><mo>|</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>:</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Set_(mathematics)#Set-builder_notation"
     
@@ -10738,8 +10749,9 @@ concepts:
       en: $1 superfluous submodule $2
       property: infix
       area: "abstract algebra"
-      notation: "msub ⊆ s"
-      notationa: "mo ≪"
+      comments:
+       - "<math><mi>X</mi><msub><mo>⊆</mo><mi>s</mi></msub><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>≪</mo><mi>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Essential_extension"
       alias:
@@ -10847,9 +10859,10 @@ concepts:
       en: $1 symmetric difference $2
       property: infix
       area: "set theory"
-      notation: "mo △"
-      notationb: "mo ⊕"
-      notationa: "mo ⊖"
+      comments:
+       - "<math><mi>X</mi><mo>△</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊕</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊖</mo><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SymmetricDifference.html"
        - "https://en.wikipedia.org/wiki/Symmetric_difference"
@@ -11101,7 +11114,8 @@ concepts:
       en: $1 to $2
       property: infix
       area: "arithmetic"
-      notation: "mo : "
+      comments:
+       - "<math><mi>X</mi><mo>:</mo><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/One-to-One.html"
     
@@ -11280,7 +11294,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Triangular_number"
     
     - concept: trilinear-coordinates
-      arity: 2
+      arity: 3
       en: $1 trilinear coordinates $2
       property: infix
       area: "geometry"
@@ -11402,7 +11416,8 @@ concepts:
       en: $1 twisted tensor product $2
       property: infix
       area: "topology"
-      notation: "msub ⊗ τ"
+      comments:
+       - "<math><mi>X</mi><msub><mo>⊗</mo><mi>τ</mi></msub><mi>Y</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/twisted+tensor+product"
     
@@ -11424,7 +11439,8 @@ concepts:
       en: $1 typing judgement $2
       property: infix
       area: "type theory"
-      notation: "mo : "
+      comments:
+       - "<math><mi>X</mi><mo>:</mo><mi>Y</mi></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/judgment"
     
@@ -11572,9 +11588,10 @@ concepts:
       en: $1 unrestricted wreath product $2
       property: infix
       area: "group theory"
-      notation: "mo ≀"
-      notationb: "mo Wr"
-      notationa: "msub Wr $1"
+      comments:
+       - "<math><mi>X</mi><mo>≀</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>Wr</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><msub><mo>Wr</mo><mi>&#x03a9;</mi></msub><mi>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/WreathProduct.html"
        - "https://en.wikipedia.org/wiki/Wreath_product"
@@ -11659,8 +11676,9 @@ concepts:
       en: $1 vector concatenation $2
       property: infix
       area: "machine learning"
-      notation: "mo ◦"
-      notationa: "mo ⊕"
+      comments:
+       - "<math><mi>X</mi><mo>◦</mo><mi>Y</mi></math>"
+       - "<math><mi>X</mi><mo>⊕</mo><mi>Y</mi></math>"
       urls: 
        - "https://arxiv.org/pdf/1903.00172v1.pdf"
        - "https://arxiv.org/abs/1901.10879"
@@ -11788,8 +11806,8 @@ concepts:
       en: $1 way below $2
       property: infix
       area: "domain theory"
-      notation: "mo≪"
-      notationa: "mo≫"
+      comments:
+       - "<math><mi>X</mi><mo>≪</mo><mi>Y</mi></math>"
       urls: 
        - "http://mizar.org/fm/1997-6/pdf6-1/waybel_3.pdf"
        - "https://en.wikipedia.org/wiki/Domain_theory"
