@@ -8360,7 +8360,8 @@ concepts:
       en: p core of $1
       property: function
       area: "group theory"
-      notation: "msub O p"
+      comments:
+       - "<math><msub><mi>O</mi><mi>p</mi></msub><mrow><mo>(</mo><mi>G</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Core_(group)"
        - "https://en.wikipedia.org/wiki/P-soluble_group"
@@ -8477,7 +8478,8 @@ concepts:
       en: pauli matrix of $1
       property: "indexed symbol"
       area: "mathematical physics"
-      notation: "msub σ $1"
+      comments:
+       - "<math><msub><mi>σ</mi><mi>G</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/PauliMatrices.html"
        - "https://mathworld.wolfram.com/PauliMatrix.html"
@@ -9647,9 +9649,10 @@ concepts:
       en: riemann sphere of $1
       property: scripted symbol
       area: "projective geometry"
-      notation: "mover ℂ ^"
-      notationb: "mover ℂ ¯"
-      notationa: "msub ℂ ∞"
+      comments:
+       - "<math><mover><mi>ℂ</mi><mo>^</mo></mover></math>"
+       - "<math><mover><mi>ℂ</mi><mo>¯</mo></mover></math>"
+       - "<math><msub><mi>ℂ</mi><mo>∞</mo></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannSphere.html"
        - "https://en.wikipedia.org/wiki/Riemann_sphere"
@@ -9736,7 +9739,8 @@ concepts:
       en: right derivative of $1
       property: operator
       area: "calculus"
-      notation: "msub ∂ +"
+      comments:
+       - "<math><msub><mo>∂</mo><mo>+</mo></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Left_and_right_derivative"
     
@@ -10976,7 +10980,8 @@ concepts:
       en: tangent space of $1
       property: "indexed function"
       area: "topology"
-      notation: "msub T $1"
+      comments:
+       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/TangentSpace.html"
        - "https://en.wikipedia.org/wiki/Tangent_space"
@@ -10999,7 +11004,8 @@ concepts:
       en: tate module of $1
       property: "indexed function"
       area: "group theory"
-      notation: "msub T $1"
+      comments:
+       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tate_module"
        - "https://ncatlab.org/nlab/show/Tate+module"
@@ -11116,7 +11122,8 @@ concepts:
       en: theta function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub θ $1"
+      comments:
+       - "<math><msub><mi>θ</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/ThetaFunction.html"
        - "https://en.wikipedia.org/wiki/Theta_function"
@@ -11233,7 +11240,8 @@ concepts:
       en: torsion subgroup of $1
       property: msub
       area: "group theory"
-      notation: "msub $1 T"
+      comments:
+       - "<math><msub><mi>G</mi><mi>T</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torsion_subgroup"
        - "https://ncatlab.org/nlab/show/torsion+subgroup"
@@ -11326,7 +11334,8 @@ concepts:
       en: triangular number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub T $1"
+      comments:
+       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/TriangularNumber.html"
        - "https://en.wikipedia.org/wiki/Triangular_number"
@@ -11403,7 +11412,8 @@ concepts:
       en: tube domain of $1
       property: msub
       area: "complex analysis"
-      notation: "msub T $1"
+      comments:
+       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tube_domain"
        - "https://www.encyclopediaofmath.org/index.php/Tube_domain"
@@ -11490,7 +11500,8 @@ concepts:
       en: ulam number of $1
       property: "indexed symbol"
       area: "integer sequences"
-      notation: "msub U $1"
+      comments:
+       - "<math><msub><mi>U</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/UlamNumber.html"
        - "https://en.wikipedia.org/wiki/Ulam_number"
@@ -11555,7 +11566,8 @@ concepts:
       en: unitary group of $1
       property: "indexed symbol"
       area: "group theory"
-      notation: "msub U $1"
+      comments:
+       - "<math><msub><mi>U</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/UnitaryGroup.html"
        - "https://en.wikipedia.org/wiki/Unitary_group"
@@ -11709,7 +11721,8 @@ concepts:
       en: vect of $1
       property: "indexed symbol"
       area: "category theory"
-      notation: "msub Vect $1"
+      comments:
+       - "<math><msub><mi>Vect</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/Vect"
     
@@ -11961,7 +11974,8 @@ concepts:
       en: wheel graph of $1
       property: "indexed symbol"
       area: "graph theory"
-      notation: "msub W $1"
+      comments:
+       - "<math><msub><mi>W</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WheelGraph.html"
        - "https://en.wikipedia.org/wiki/Wheel_graph"
@@ -12029,7 +12043,8 @@ concepts:
       en: wiener process of $1
       property: "indexed symbol"
       area: "martingale theory"
-      notation: "msub W $1"
+      comments:
+       - "<math><msub><mi>W</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WienerProcess.html"
        - "https://en.wikipedia.org/wiki/Wiener_process"
