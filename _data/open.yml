@@ -360,7 +360,8 @@ concepts:
       en: analytic manifold
       property: symbol
       area: "topology"
-      notation: "msup C w"
+      comments:
+       - "<math><msup><mi>C</mi><mi>w</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Analytic_manifold"
        - "https://ncatlab.org/nlab/show/analytic+manifold"
@@ -619,8 +620,9 @@ concepts:
       en: baire space
       property: symbol
       area: "set theory"
-      notation: "msup N N"
-      notationa: "msup ω ω"
+      comments:
+       - "<math><msup><mi>N</mi><mi>N</mi></msup></math>"
+       - "<math><msup><mi>ω</mi><mi>ω</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/BaireSpace.html"
        - "https://en.wikipedia.org/wiki/Baire_space"
@@ -886,7 +888,8 @@ concepts:
       en: binary golay code
       property: symbol
       area: "coding theory"
-      notation: "msub G 23"
+      comments:
+       - "<math><msub><mi>G</mi><mn>23</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BinaryGolayCode.html"
        - "https://ncatlab.org/nlab/show/binary+Golay+code"
@@ -922,8 +925,9 @@ concepts:
       en: bit
       property: symbol
       area: "computer science"
-      notation: "mn 0"
-      notationa: "mn 1"
+      comments:
+       - "<math><mn>0</mn></math>"
+       - "<math><mn>1</mn></math>"
       urls: 
        - "https://mathworld.wolfram.com/Bit.html"
        - "https://en.wikipedia.org/wiki/Bit"
@@ -1212,7 +1216,8 @@ concepts:
       en: category of sets
       property: symbol
       area: "category theory"
-      notation: "miSet"
+      comments:
+       - "<math><mi>Set</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Category_of_sets"
        - "https://www.encyclopediaofmath.org/index.php/Category_of_a_set"
@@ -1223,7 +1228,8 @@ concepts:
       en: category of small categories
       property: symbol
       area: "category theory"
-      notation: "miCat"
+      comments:
+       - "<math><mi>Cat</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Category_of_small_categories"
     
@@ -1473,7 +1479,8 @@ concepts:
       en: chi squared distribution
       property: symbol
       area: "probability theory"
-      notation: "msup χ 2"
+      comments:
+       - "<math><msup><mi>χ</mi><mn>2</mn>></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Chi-SquaredDistribution.html"
        - "https://en.wikipedia.org/wiki/Chi-squared_distribution"
@@ -1806,7 +1813,7 @@ concepts:
        - "https://en.wikipedia.org/wiki/Nome_(mathematics)"
     
     - concept: complete-graph
-      arity: 0
+      arity: 1
       en: complete graph
       property: symbol
       area: "graph theory"
@@ -1834,7 +1841,8 @@ concepts:
       en: complex projective space
       property: symbol
       area: "projective geometry"
-      notation: "mrow ℂ⁢ ℙ"
+      comments:
+       - "<math><mi>ℂ⁢</mi><mi>ℙ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/ProjectiveSpace.html"
        - "https://en.wikipedia.org/wiki/Algebraic_geometry_of_projective_spaces"
@@ -2172,10 +2180,11 @@ concepts:
       en: conway group
       property: symbol
       area: "group theory"
-      notation: "msub Co 0"
-      notationc: "msub Co 1"
-      notationb: "msub Co 2"
-      notationa: "msub Co 3"
+      comments:
+       - "<math><msub><mi>Co</mi><mn>0</mn></msub></math>"
+       - "<math><msub><mi>Co</mi><mn>1</mn></msub></math>"
+       - "<math><msub><mi>Co</mi><mn>2</mn></msub></math>"
+       - "<math><msub><mi>Co</mi><mn>3</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConwayGroups.html"
        - "https://en.wikipedia.org/wiki/Conway_group"
@@ -2804,9 +2813,10 @@ concepts:
       en: digamma function
       property: symbol
       area: "special functions"
-      notation: "msub ψ 0"
-      notationb: "msup ψ (0)"
-      notationa: "mi F"
+      comments:
+       - "<math><msub><mi>ψ</mi><mn>0</mn></msup></math>"
+       - "<math><msup><mi>ψ</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></msup></math>"
+       - "<math><mi>F</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DigammaFunction.html"
        - "https://en.wikipedia.org/wiki/Digamma_function"
@@ -2890,10 +2900,11 @@ concepts:
       en: dirac matrix
       property: constant
       area: "mathematical physics"
-      notation: "msup γ 0"
-      notationc: "msup γ 1"
-      notationb: "msup γ 2"
-      notationa: "msup γ 3"
+      comments:
+       - "<math><msup><mi>γ</mi><mn>0</mn></msup></math>"
+       - "<math><msup><mi>γ</mi><mn>1</mn></msup></math>"
+       - "<math><msup><mi>γ</mi><mn>2</mn></msup></math>"
+       - "<math><msup><mi>γ</mi><mn>3</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiracMatrices.html"
        - "https://en.wikipedia.org/wiki/Gamma_matrices"
@@ -3674,7 +3685,8 @@ concepts:
       en: euclidean plane
       property: symbol
       area: "geometry"
-      notation: "msup ℝ 2"
+      comments:
+       - "<math><msup><mi>ℝ</mi><mn>2</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/EuclideanPlane.html"
       alias:
@@ -3978,7 +3990,8 @@ concepts:
       en: feferman schutte ordinal
       property: symbol
       area: "ordinal numbers"
-      notation: "msub Γ 0"
+      comments:
+       - "<math><msub><mi>Γ</mi><mn>0</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Feferman%E2%80%93Sch%C3%BCtte_ordinal"
     
@@ -4305,7 +4318,8 @@ concepts:
       en: frechet topology
       property: constant
       area: "topology"
-      notation: "msub T 1"
+      comments:
+       - "<math><msub><mi>T</mi><mn>1</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions"
       alias:
@@ -4637,7 +4651,8 @@ concepts:
       en: gelfond constant
       property: constant
       area: "transcendental constants"
-      notation: "msup e π"
+      comments:
+       - "<math><msup><mi>e</mi><mi>π</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/GelfondsConstant.html"
        - "https://en.wikipedia.org/wiki/Gelfond%27s_constant"
@@ -4713,7 +4728,7 @@ concepts:
        - power-mean
     
     - concept: genocchi-number
-      arity: 0
+      arity: 1
       en: genocchi number
       property: symbol
       area: "integer sequences"
@@ -4729,7 +4744,8 @@ concepts:
       en: geodesic curvature
       property: symbol
       area: "riemannian geometry"
-      notation: "msub k g"
+      comments:
+       - "<math><msub><mi>k</mi><mi>g</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeodesicCurvature.html"
        - "https://en.wikipedia.org/wiki/Geodesic_curvature"
