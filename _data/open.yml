@@ -12220,7 +12220,7 @@ concepts:
       property: "indexed symbol"
       area: "linear algebra"
       comments:
-       - "<math><msub><mn>0</mn>><mrow><mi>i</mi><mi>j</mi></mrow></msub></math>"
+       - "<math><msub><mn>0</mn><mrow><mi>i</mi><mi>j</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_matrix"
     
