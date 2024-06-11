@@ -4873,7 +4873,8 @@ concepts:
       en: graham number
       property: constant
       area: "ramsey theory"
-      notation: "msub g 64"
+      comments:
+       - "<math><msub><mi>G</mi><mn>64</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/GrahamsNumber.html"
        - "https://en.wikipedia.org/wiki/Graham%27s_number"
@@ -5124,7 +5125,8 @@ concepts:
       en: hausdorff space
       property: constant
       area: "topology"
-      notation: "msub T 2"
+      comments:
+       - "<math><msub><mi>T</mi><mn>2</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions"
       alias:
@@ -6033,7 +6035,8 @@ concepts:
       en: inverse wishart distribution
       property: symbol
       area: "probability theory"
-      notation: "msubsup W p -1"
+      comments:
+       - "<math><msubsup><mi>W</mi><mi>p</mi><mn>−1</mn></msubsup></math>"
       urls: 
        - "https://mathworld.wolfram.com/WishartDistribution.html"
        - "https://en.wikipedia.org/wiki/Wishart_distribution"
@@ -6221,10 +6224,11 @@ concepts:
       en: janko group
       property: symbol
       area: "group theory"
-      notation: "msub J 1"
-      notationc: "msub J 2"
-      notationb: "msub J 3"
-      notationa: "msub J 4"
+      comments:
+       - "<math><msub><mi>J</mi><mn>1</mn></msub></math>"
+       - "<math><msub><mi>J</mi><mn>2</mn></msub></math>"
+       - "<math><msub><mi>J</mi><mn>3</mn></msub></math>"
+       - "<math><msub><mi>J</mi><mn>4</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/JankoGroups.html"
        - "https://en.wikipedia.org/wiki/Janko_group"
@@ -6314,7 +6318,8 @@ concepts:
       en: kaprekar constant
       property: symbol
       area: "number theory"
-      notation: "mn 6174"
+      comments:
+       - "<math><mn>6174</mn></math>"
       urls: 
        - "https://mathworld.wolfram.com/KaprekarConstant.html"
        - "https://en.wikipedia.org/wiki/6174_(number)"
@@ -6486,7 +6491,8 @@ concepts:
       en: kolmogorov space
       property: constant
       area: "topology"
-      notation: "msub T 0"
+      comments:
+       - "<math><msub><mi>T</mi><mn>0</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions"
     
@@ -6634,11 +6640,12 @@ concepts:
       en: lagrange point
       property: symbol
       area: "celestial mechanics"
-      notation: "msub L 1"
-      notationd: "msub L 2"
-      notationc: "msub L 3"
-      notationb: "msub L 4"
-      notationa: "msub L 5"
+      comments:
+       - "<math><msub><mi>L</mi><mn>1</mn></msub></math>"
+       - "<math><msub><mi>L</mi><mn>2</mn></msub></math>"
+       - "<math><msub><mi>L</mi><mn>3</mn></msub></math>"
+       - "<math><msub><mi>L</mi><mn>4</mn></msub></math>"
+       - "<math><msub><mi>L</mi><mn>5</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Lagrange_point"
       alias:
@@ -6772,7 +6779,8 @@ concepts:
       en: leech lattice
       property: symbol
       area: "group theory"
-      notation: "msub Λ 24"
+      comments:
+       - "<math><msub><mo>Λ</mo><mn>24</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LeechLattice.html"
        - "https://en.wikipedia.org/wiki/Leech_lattice"
@@ -7888,7 +7896,7 @@ concepts:
        - multiset-number
     
     - concept: multivariate-gaussian-distribution
-      arity: 0
+      arity: 1
       en: multivariate gaussian distribution
       property: symbol
       area: "probability theory"
@@ -8016,7 +8024,8 @@ concepts:
       en: neron tate height
       property: symbol
       area: "number theory"
-      notation: "mover h ^"
+      comments:
+       - "<math><mover><mi>h</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/N%C3%A9ron%E2%80%93Tate_height"
       alias:
@@ -8106,7 +8115,7 @@ concepts:
        - "https://en.wikipedia.org/wiki/Divisor"
     
     - concept: null-graph
-      arity: 0
+      arity: 1
       en: null graph
       property: symbol
       area: "graph theory"
@@ -8419,7 +8428,7 @@ concepts:
        - "https://ncatlab.org/nlab/show/parallel+morphisms"
     
     - concept: partial-charge
-      arity: 0
+      arity: 1
       en: partial charge
       property: symbol
       area: "chemistry"
@@ -8497,7 +8506,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Peirce_arrow"
     
     - concept: pell-number
-      arity: 0
+      arity: 1
       en: pell number
       property: symbol
       area: "number theory"
@@ -8507,7 +8516,7 @@ concepts:
        - "https://en.wikipedia.org/wiki/Pell_number"
     
     - concept: pell-luca-number
-      arity: 0
+      arity: 1
       en: pell luca number
       property: symbol
       area: "number theory"
@@ -8880,7 +8889,8 @@ concepts:
       en: preregular space
       property: constant
       area: "topology"
-      notation: "msub R 1"
+      comments:
+       - "<math><msub><mi>R</mi><mn>1</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions)s"
     
@@ -9095,7 +9105,8 @@ concepts:
       en: pullback
       property: symbol
       area: "differential geometry"
-      notation: "msup φ *"
+      comments:
+       - "<math><msup><mi>φ</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Pullback_(differential_geometry)"
     
@@ -9115,7 +9126,8 @@ concepts:
       en: pythagoras constant
       property: constant
       area: "geometry"
-      notation: "msqrt 2"
+      comments:
+       - "<math><msqrt><mn>2</mn></msqrt></math>"
       urls: 
        - "https://mathworld.wolfram.com/PythagorassConstant.html"
        - "https://en.wikipedia.org/wiki/Sqrt(2)"
@@ -9149,8 +9161,9 @@ concepts:
       en: qed
       property: symbol
       area: "mathematical symbols"
-      notation: "mo □"
-      notationa: "mo ∎"
+      comments:
+       - "<math><mo>□</mo></math>"
+       - "<math><mo>∎</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tombstone_(typography)"
       alias:
@@ -9950,8 +9963,9 @@ concepts:
       en: schwartz space
       property: symbol
       area: "topology"
-      notation: "mi𝒮"
-      notationa: "mi S"
+      comments:
+       - "<math><mi>𝒮</mi></math>"
+       - "<math><mi>S</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/SchwartzSpace.html"
        - "https://en.wikipedia.org/wiki/Schwartz_space"
@@ -10093,7 +10107,8 @@ concepts:
       en: short rate
       property: symbol
       area: "mathematical finance"
-      notation: "msub r t"
+      comments:
+       - "<math><msub><mi>r</mi><mi>t</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Short_rate"
        - "https://en.wikipedia.org/wiki/Short-rate_model"
@@ -10142,7 +10157,8 @@ concepts:
       en: silver ratio
       property: constant
       area: "number theory"
-      notation: "msub δ S"
+      comments:
+       - "<math><msub><mi>δ</mi><mi>S</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/SilverRatio.html"
        - "https://en.wikipedia.org/wiki/Silver_ratio"
@@ -10465,8 +10481,9 @@ concepts:
       en: stable distribution
       property: symbol
       area: "probability theory"
-      notation: "msub S 1"
-      notationa: "msub S 2"
+      comments:
+       - "<math><msub><mi>S</mi><mn>1</mn></msub></math>"
+       - "<math><msub><mi>S</mi><mn>2</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/StableDistribution.html"
        - "https://en.wikipedia.org/wiki/Stable_distribution"
@@ -10911,7 +10928,7 @@ concepts:
       en: symmetric space
       property: constant
       area: "topology"
-      notation: "msub R 0"
+       - "<math><msub><mi>R</mi><mn>0</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions)s"
     
@@ -10969,7 +10986,7 @@ concepts:
       en: tate algebra
       property: symbol
       area: "analytic geometry"
-      notation: "msub T n"
+       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tate_algebra"
        - "https://ncatlab.org/nlab/show/Tate+algebra"
@@ -11447,9 +11464,9 @@ concepts:
       en: tychonoff space
       property: symbol
       area: "topology"
-      notation: "msub T 3"
-      notationb: "msub T π"
-      notationa: "msub T 3½"
+       - "<math><msub><mi>T</mi><mn>3</mn></msub></math>"
+       - "<math><msub><mi>T</mi><mn>π</mn></msub></math>"
+       - "<math><msub><mi>T</mi><mn>3½</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/TychonoffSpace.html"
        - "https://en.wikipedia.org/wiki/Tychonoff_space"
@@ -11573,9 +11590,10 @@ concepts:
       en: universal set
       property: symbol
       area: "set theory"
-      notation: "miV"
-      notationb: "miU"
-      notationa: "miξ"
+      comments:
+       - "<math><mi>V</mi></math>"
+       - "<math><mi>U</mi></math>"
+       - "<math><mi>ξ</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/UniversalSet.html"
        - "https://en.wikipedia.org/wiki/Universal_set"
@@ -11792,7 +11810,8 @@ concepts:
       en: volume element
       property: symbol
       area: "measure theory"
-      notation: "mrow d V"
+      comments:
+       - "<math><mi>d</mi><mi>V</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/VolumeElement.html"
        - "https://en.wikipedia.org/wiki/Volume_element"
