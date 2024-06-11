@@ -734,7 +734,8 @@ concepts:
       en: bernoulli number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub B $1"
+      comments:
+       - "<math><msub><mi>B</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BernoulliNumber.html"
        - "https://en.wikipedia.org/wiki/Bernoulli_number"
@@ -829,7 +830,8 @@ concepts:
       en: betti number of $1
       property: "indexed symbol"
       area: "graph theory"
-      notation: "msub b $1"
+      comments:
+       - "<math><msub><mi>b</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BettiNumber.html"
        - "https://en.wikipedia.org/wiki/Betti_number"
@@ -1195,7 +1197,8 @@ concepts:
       en: catalan number of $1
       property: "indexed symbol"
       area: "combinatorics"
-      notation: "msub C $1"
+      comments:
+       - "<math><msub><mi>C</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CatalanNumber.html"
        - "https://en.wikipedia.org/wiki/Catalan_number"
@@ -1310,7 +1313,8 @@ concepts:
       en: centralizer of $1
       property: function
       area: "group theory"
-      notation: "msub C $1"
+      comments:
+       - "<math><msub><mi>C</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Centralizer.html"
        - "https://en.wikipedia.org/wiki/Centralizer_and_normalizer"
@@ -1372,7 +1376,8 @@ concepts:
       en: characteristic function of $1
       property: "indexed function, function"
       area: "probability theory"
-      notation: "msub 𝟏 $1"
+      comments:
+       - "<math><msub><mi>𝟏</mi><mi>x</mi></msub></math>"
       notationa: "mrow 𝟏 { $1 }"
       urls: 
        - "https://mathworld.wolfram.com/CharacteristicFunction.html"
@@ -1401,7 +1406,8 @@ concepts:
       en: charlier polynomial of $1
       property: function
       area: "special functions"
-      notation: "msub C $1"
+      comments:
+       - "<math><msub><mi>C</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CharlierPolynomial.html"
        - "https://en.wikipedia.org/wiki/Charlier_polynomials"
@@ -1527,9 +1533,10 @@ concepts:
       en: chromatic polynomial of $1
       property: function
       area: "graph theory"
-      notation: "msub P $1"
-      notationb: "msub π $1"
-      notationa: "msub χ $1"
+      comments:
+       - "<math><msub><mi>P</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>π</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>χ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChromaticPolynomial.html"
        - "https://en.wikipedia.org/wiki/Chromatic_polynomial"
@@ -1775,7 +1782,8 @@ concepts:
       en: companion lehmer number of $1
       property: "indexed function"
       area: "number theory"
-      notation: "msub V $1"
+      comments:
+       - "<math><msub><mi>V</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LehmerNumber.html"
        - "https://mathworld.wolfram.com/LehmersNumber.html"
@@ -1817,7 +1825,8 @@ concepts:
       en: complete graph
       property: symbol
       area: "graph theory"
-      notation: "msub K $1"
+      comments:
+       - "<math><msub><mi>K</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CompleteGraph.html"
        - "https://en.wikipedia.org/wiki/Complete_graph"
@@ -2286,7 +2295,8 @@ concepts:
       en: covariant derivative of $1
       property: "indexed operator"
       area: "differential geometry"
-      notation: "msub ∇ $1"
+      comments:
+       - "<math><msub><mi>∇</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CovariantDerivative.html"
        - "https://en.wikipedia.org/wiki/Covariant_derivative"
@@ -2362,7 +2372,8 @@ concepts:
       en: cullen number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub C $1"
+      comments:
+       - "<math><msub><mi>C</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CullenNumber.html"
        - "https://en.wikipedia.org/wiki/Cullen_number"
@@ -2372,7 +2383,8 @@ concepts:
       en: cumulant of $1
       property: "indexed symbol"
       area: "probability theory"
-      notation: "msub κ $1"
+      comments:
+       - "<math><msub><mi>κ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cumulant.html"
        - "https://en.wikipedia.org/wiki/Cumulant"
@@ -2385,7 +2397,8 @@ concepts:
       en: cumulative distribution function of $1
       property: "indexed symbol"
       area: "probability theory"
-      notation: "msub F $1"
+      comments:
+       - "<math><msub><mi>F</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CumulativeDistributionFunction.html"
        - "https://en.wikipedia.org/wiki/Cumulative_distribution_function"
@@ -2484,7 +2497,8 @@ concepts:
       en: cyclotomic polynomial of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub Φ $1"
+      comments:
+       - "<math><msub><mi>Φ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/CyclotomicPolynomial.html"
        - "https://en.wikipedia.org/wiki/Cyclotomic_polynomial"
@@ -2769,7 +2783,8 @@ concepts:
       en: different ideal of $1
       property: function
       area: "algebraic number theory"
-      notation: "msub δ $1"
+      comments:
+       - "<math><msub><mi>δ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Different_ideal"
       alias:
@@ -2826,9 +2841,10 @@ concepts:
       en: dihedral group
       property: symbol
       area: "group theory"
-      notation: "msub D $1"
-      notationb: "msub Dih $1"
-      notationa: "msub D 2$1"
+      comments:
+       - "<math><msub><mi>D</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Dih</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>D2</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/DihedralGroup.html"
        - "https://en.wikipedia.org/wiki/Dihedral_group"
@@ -3662,7 +3678,8 @@ concepts:
       en: euclid number $1
       property: symbol
       area: "number theory"
-      notation: "msub E $1"
+      comments:
+       - "<math><msub><mi>E</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/EuclidNumber.html"
        - "https://en.wikipedia.org/wiki/Euclid_number"
@@ -3674,7 +3691,7 @@ concepts:
       area: "geometry"
       comments:
        - "<math><mi>d</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "msub d $1"
+       - "<math><msub><mi>d</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Euclidean_distance"
       alias:
@@ -3759,7 +3776,8 @@ concepts:
       en: euler polynomial of $1
       property: function
       area: "special-functions"
-      notation: "msub E $1"
+      comments:
+       - "<math><msub><mi>E</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerPolynomial.html"
        - "https://dlmf.nist.gov/24.1#P2"
@@ -3843,7 +3861,7 @@ concepts:
       comments:
        - "<math><mi>E</mi><mrow><mi>X</mi></mrow></math>"
        - "<math><mi>M</mi><mrow><mi>X</mi></mrow></math>"
-      notationb: "msub μ $1"
+       - "<math><msub><mi>μ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Expected_value#Notations"
       alias:
@@ -3930,7 +3948,8 @@ concepts:
       en: f distribution of $1
       property: "indexed symbol"
       area: "probability theory"
-      notation: "msub F $1"
+      comments:
+       - "<math><msub><mi>F</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/F-Distribution.html"
        - "https://www.encyclopediaofmath.org/index.php/F-distribution"
@@ -4011,7 +4030,8 @@ concepts:
       en: fermat number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub F $1"
+      comments:
+       - "<math><msub><mi>F</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FermatNumber.html"
        - "https://en.wikipedia.org/wiki/Fermat_number"
@@ -4021,7 +4041,8 @@ concepts:
       en: fermat quotient of $1
       property: function
       area: "number theory"
-      notation: "msub q $1"
+      comments:
+       - "<math><msub><mi>q</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FermatQuotient.html"
        - "https://en.wikipedia.org/wiki/Fermat_quotient"
@@ -4052,7 +4073,8 @@ concepts:
       en: fibonacci number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub F $1"
+      comments:
+       - "<math><msub><mi>F</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FibonacciNumber.html"
        - "https://en.wikipedia.org/wiki/Fibonacci_number"
@@ -4065,7 +4087,8 @@ concepts:
       en: fibonacci polynomial of $1
       property: "indexed function"
       area: "polynomials"
-      notation: "msub F $1"
+      comments:
+       - "<math><msub><mi>F</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FibonacciPolynomial.html"
        - "https://en.wikipedia.org/wiki/Fibonacci_polynomials"
@@ -4076,7 +4099,8 @@ concepts:
       en: fibre product of $1
       property: indexed infix
       area: "category theory"
-      notation: "msub × $1"
+      comments:
+       - "<math><msub><mi>×</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Pullback_(category_theory)"
        - "https://www.encyclopediaofmath.org/index.php/Fibre_product"
@@ -4718,7 +4742,8 @@ concepts:
       en: generalized mean of $1
       property: function
       area: "means"
-      notation: "msub M $1"
+      comments:
+       - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeneralizedMean.html"
        - "https://en.wikipedia.org/wiki/Generalized_mean"
@@ -4732,7 +4757,8 @@ concepts:
       en: genocchi number
       property: symbol
       area: "integer sequences"
-      notation: "msub G $1"
+      comments:
+       - "<math><msub><mi>G</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/GenocchiNumber.html"
        - "https://en.wikipedia.org/wiki/Genocchi_number"
@@ -5016,7 +5042,8 @@ concepts:
       en: hahn polynomial of $1
       property: function
       area: "orthogonal polynomials"
-      notation: "msub q $1"
+      comments:
+       - "<math><msub><mi>q</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/HahnPolynomial.html"
        - "https://en.wikipedia.org/wiki/Hahn_polynomials"
@@ -5174,7 +5201,8 @@ concepts:
       en: hecke operator of $1
       property: operator
       area: "modular forms"
-      notation: "msub T $1"
+      comments:
+       - "<math><msub><mi>T</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/HeckeOperator.html"
        - "https://en.wikipedia.org/wiki/Hecke_operator"
@@ -5195,7 +5223,8 @@ concepts:
       en: height of abelian group of $1
       property: function
       area: "group theory"
-      notation: "msub h $1"
+      comments:
+       - "<math><msub><mi>h</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Height_(abelian_group)"
     
@@ -5409,7 +5438,8 @@ concepts:
       en: homology group of $1
       property: function
       area: "homology theory"
-      notation: "msub H $1"
+      comments:
+       - "<math><msub><mi>H</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/HomologyGroup.html"
        - "https://en.wikipedia.org/wiki/Singular_homology"
@@ -5606,8 +5636,8 @@ concepts:
       area: "algebra"
       comments:
        - "<math><mi>id</mi><mrow><mi>X</mi></mrow></math>"
-      notationb: "msub id $1"
-      notationa: "msub I $1"
+       - "<math><msub><mi>id</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>I</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/IdentityFunction.html"
        - "https://en.wikipedia.org/wiki/Identity_function"
@@ -5622,9 +5652,10 @@ concepts:
       en: identity functor of $1
       property: function
       area: "category theory"
-      notation: "msub 1 $1"
-      notationb: "msub I $1"
-      notationa: "msub Id $1"
+      comments:
+       - "<math><msub><mi>1</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>I</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Id</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/identity+functor"
        - "https://en.wikipedia.org/wiki/Functor"
@@ -6026,7 +6057,8 @@ concepts:
       en: inverse tangent integral of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub Ti $1"
+      comments:
+       - "<math><msub><mi>Ti</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polylogarithm"
     
@@ -6297,7 +6329,8 @@ concepts:
       en: jordan totient function of $1
       property: function
       area: "number theory"
-      notation: "msub J $1"
+      comments:
+       - "<math><msub><mi>J</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Jordan%27s_totient_function"
     
@@ -6514,7 +6547,8 @@ concepts:
       en: krawtchouk polynomial of $1
       property: function
       area: "orthogonal polynomials"
-      notation: "msub K $1"
+      comments:
+       - "<math><msub><mi>K</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/KrawtchoukPolynomial.html"
        - "https://en.wikipedia.org/wiki/Kravchuk_polynomials"
@@ -6757,7 +6791,8 @@ concepts:
       en: lebesgue constant of $1
       property: indexed constant
       area: "fourier series"
-      notation: "msub L $1"
+      comments:
+       - "<math><msub><mi>L</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LebesgueConstants.html"
        - "https://en.wikipedia.org/wiki/Lebesgue_constant_(interpolation)"
@@ -6822,7 +6857,8 @@ concepts:
       en: legendre chi function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub χ $1"
+      comments:
+       - "<math><msub><mi>χ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Legendre_chi_function"
        - "https://mathworld.wolfram.com/LegendresChi-Function.html"
@@ -6832,7 +6868,8 @@ concepts:
       en: legendre polynomial of $1
       property: function
       area: "orthogonal polynomials"
-      notation: "msub P $1"
+      comments:
+       - "<math><msub><mi>P</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LegendrePolynomial.html"
        - "https://en.wikipedia.org/wiki/Legendre_polynomials"
@@ -6859,7 +6896,8 @@ concepts:
       en: lehmer mean of $1
       property: "indexed function"
       area: "means"
-      notation: "msub L $1"
+      comments:
+       - "<math><msub><mi>L</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LehmerMean.html"
        - "https://en.wikipedia.org/wiki/Lehmer_mean"
@@ -6869,7 +6907,8 @@ concepts:
       en: lehmer number of $1
       property: "indexed function"
       area: "number theory"
-      notation: "msub U $1"
+      comments:
+       - "<math><msub><mi>U</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LehmerNumber.html"
        - "https://mathworld.wolfram.com/LehmersNumber.html"
@@ -6880,7 +6919,8 @@ concepts:
       en: level of $1
       property: function
       area: "scales of measurement"
-      notation: "msub L $1"
+      comments:
+       - "<math><msub><mi>L</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Level_(logarithmic_quantity)"
        - "https://en.wikipedia.org/wiki/Categorical_variable"
@@ -6942,7 +6982,8 @@ concepts:
       en: lie derivative of $1
       property: "indexed operator"
       area: "lie algebra"
-      notation: "msub ℒ $1"
+      comments:
+       - "<math><msub><mi>ℒ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LieDerivative.html"
        - "https://en.wikipedia.org/wiki/Lie_derivative"
@@ -7187,7 +7228,8 @@ concepts:
       en: lucas number of $1
       property: "indexed symbol"
       area: "integer sequences"
-      notation: "msub L $1"
+      comments:
+       - "<math><msub><mi>L</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LucasNumber.html"
        - "https://en.wikipedia.org/wiki/Lucas_number"
@@ -7198,8 +7240,9 @@ concepts:
       en: lucas sequence of $1
       property: "indexed function"
       area: "integer sequences"
-      notation: "msub U $1"
-      notationa: "msub V $1"
+      comments:
+       - "<math><msub><mi>U</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>V</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LucasSequence.html"
        - "https://en.wikipedia.org/wiki/Lucas_sequence"
@@ -7270,7 +7313,8 @@ concepts:
       en: mapping cone of $1
       property: "indexed symbol"
       area: "homotopy theory"
-      notation: "msub C $1"
+      comments:
+       - "<math><msub><mi>C</mi><mi>x</mi></msub></math>"
       notationa: "mrow C $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Mapping_cone_(topology)"
@@ -7284,9 +7328,10 @@ concepts:
       en: matching polynomial of $1
       property: "indexed function"
       area: "graph theory"
-      notation: "msub m $1"
-      notationb: "msub M $1"
-      notationa: "msub μ $1"
+      comments:
+       - "<math><msub><mi>m</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>μ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Matching_polynomial"
     
@@ -7295,8 +7340,9 @@ concepts:
       en: mathieu function of first kind of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub ce $1"
-      notationa: "msub se $1"
+      comments:
+       - "<math><msub><mi>ce</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>se</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/MathieuFunction.html"
        - "https://en.wikipedia.org/wiki/Mathieu_function"
@@ -7319,8 +7365,9 @@ concepts:
       en: mathieu function of second kind of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub fe $1"
-      notationa: "msub ge $1"
+      comments:
+       - "<math><msub><mi>fe</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>ge</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/MathieuFunction.html"
        - "https://en.wikipedia.org/wiki/Mathieu_function"
@@ -7384,7 +7431,8 @@ concepts:
       en: matrix ring of $1
       property: function
       area: "abstract algebra"
-      notation: "msub M $1"
+      comments:
+       - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Matrix_ring"
        - "https://www.encyclopediaofmath.org/index.php/Matrix_ring"
@@ -7474,7 +7522,8 @@ concepts:
       en: mersenne number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub M $1"
+      comments:
+       - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/MersenneNumber.html"
        - "https://www.encyclopediaofmath.org/index.php/Mersenne_number"
@@ -7484,7 +7533,8 @@ concepts:
       en: mersenne prime of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub M $1"
+      comments:
+       - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/MersennePrime.html"
        - "https://en.wikipedia.org/wiki/Mersenne_number"
@@ -7588,7 +7638,8 @@ concepts:
       en: mittag leffler function of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub E $1"
+      comments:
+       - "<math><msub><mi>E</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Mittag-LefflerFunction.html"
        - "https://en.wikipedia.org/wiki/Mittag-Leffler_function"
@@ -7614,7 +7665,8 @@ concepts:
       en: modified bessel function of first kind of $1
       property: function
       area: "special functions"
-      notation: "msub I $1"
+      comments:
+       - "<math><msub><mi>I</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://dlmf.nist.gov/10#PT3"
        - "https://dlmf.nist.gov/10.25#E2"
@@ -7625,7 +7677,8 @@ concepts:
       en: modified bessel function of second kind of $1
       property: function
       area: "special functions"
-      notation: "msub K $1"
+      comments:
+       - "<math><msub><mi>K</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://dlmf.nist.gov/10#PT3"
        - "https://dlmf.nist.gov/10.25#E2"
@@ -7636,11 +7689,12 @@ concepts:
       en: modified mathieu function of $1
       property: function
       area: "special functions"
-      notation: "msub Ce $1"
-      notationd: "msub Se $1"
-      notationc: "msub Me $1"
-      notationb: "msub Fe $1"
-      notationa: "msub Ge $1"
+      comments:
+       - "<math><msub><mi>Ce</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Se</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Me</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Fe</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Ge</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://dlmf.nist.gov/28#PT4"
        - "https://dlmf.nist.gov/28.20#E3"
@@ -7673,7 +7727,8 @@ concepts:
       en: modified struve function of $1
       property: function
       area: "special functions"
-      notation: "msub L $1"
+      comments:
+       - "<math><msub><mi>L</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/ModifiedStruveFunction.html"
        - "https://dlmf.nist.gov/11.2#E2"
@@ -7721,7 +7776,8 @@ concepts:
       en: moment of function $1 $2
       property: "msub, mixfix"
       area: "mathematics"
-      notation: "msub μ $1"
+      comments:
+       - "<math><msub><mi>μ</mi><mi>x</mi></msub></math>"
       notationa: "mrow E [ msup $1 $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
@@ -7815,7 +7871,8 @@ concepts:
       en: motzkin number of $1
       property: "indexed symbol"
       area: "combinatorial analysis"
-      notation: "msub M $1"
+      comments:
+       - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
       notationa: "mi M"
       urls: 
        - "https://mathworld.wolfram.com/MotzkinNumber.html"
@@ -7858,8 +7915,9 @@ concepts:
       en: multiplicative order of $1
       property: "indexed function"
       area: "modular arithmetic"
-      notation: "msub O $1"
-      notationa: "msub ord $1"
+      comments:
+       - "<math><msub><mi>O</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>ord</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/MultiplicativeOrder.html"
        - "https://en.wikipedia.org/wiki/Multiplicative_order"
@@ -7900,7 +7958,8 @@ concepts:
       en: multivariate gaussian distribution
       property: symbol
       area: "probability theory"
-      notation: "msub 𝒩 $1"
+      comments:
+       - "<math><msub><mi>𝒩</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Multivariate_normal_distribution"
       alias:
@@ -8098,7 +8157,8 @@ concepts:
       en: normalizer of $1
       property: function
       area: "group theory"
-      notation: "msub N $1"
+      comments:
+       - "<math><msub><mi>N</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Normalizer.html"
        - "https://en.wikipedia.org/wiki/Centralizer_and_normalizer"
@@ -8491,7 +8551,8 @@ concepts:
       en: peclet number of $1
       property: "indexed symbol"
       area: "fluid dynamics"
-      notation: "msub Pe $1"
+      comments:
+       - "<math><msub><mi>Pe</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/P%C3%A9clet_number"
        - "https://www.encyclopediaofmath.org/index.php/Peclet_number"
@@ -8512,7 +8573,8 @@ concepts:
       en: pell number
       property: symbol
       area: "number theory"
-      notation: "msub P $1"
+      comments:
+       - "<math><msub><mi>P</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/PellNumber.html"
        - "https://en.wikipedia.org/wiki/Pell_number"
@@ -8522,7 +8584,8 @@ concepts:
       en: pell luca number
       property: symbol
       area: "number theory"
-      notation: "msub Q $1"
+      comments:
+       - "<math><msub><mi>Q</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Pell-LucasNumber.html"
        - "https://en.wikipedia.org/wiki/Pell_number"
@@ -8808,7 +8871,8 @@ concepts:
       en: polylogarithm of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub Li $1"
+      comments:
+       - "<math><msub><mi>Li</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Polylogarithm.html"
        - "https://en.wikipedia.org/wiki/Polylogarithm"
@@ -8831,7 +8895,8 @@ concepts:
       en: pontryagin class of $1
       property: "indexed symbol"
       area: "differential topology"
-      notation: "msub p $1"
+      comments:
+       - "<math><msub><mi>p</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/PontryaginClass.html"
        - "https://en.wikipedia.org/wiki/Pontryagin_class"
@@ -9250,7 +9315,8 @@ concepts:
       en: racah polynomial of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub R $1"
+      comments:
+       - "<math><msub><mi>R</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/RacahPolynomial.html"
        - "https://en.wikipedia.org/wiki/Racah_polynomials"
@@ -9306,7 +9372,8 @@ concepts:
       en: ramanujan sum of $1
       property: "indexed function"
       area: "number theory"
-      notation: "msub c $1"
+      comments:
+       - "<math><msub><mi>c</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/RamanujansSum.html"
        - "https://dlmf.nist.gov/27.10#E4"
@@ -9343,7 +9410,8 @@ concepts:
       en: ramification index of $1
       property: msub
       area: "algebraic number theory"
-      notation: "msub e $1"
+      comments:
+       - "<math><msub><mi>e</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/RamificationIndex.html"
        - "https://en.wikipedia.org/wiki/Ramification_(mathematics)#In_algebraic_number_theory"
@@ -9942,7 +10010,8 @@ concepts:
       en: schroder number of $1
       property: "indexed symbol"
       area: "combinatorics"
-      notation: "msub S $1"
+      comments:
+       - "<math><msub><mi>S</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/SchroederNumber.html"
        - "https://en.wikipedia.org/wiki/Schr%C3%B6der_number"
@@ -10233,7 +10302,8 @@ concepts:
       en: skewes number of $1
       property: "indexed symbol"
       area: "number theory"
-      notation: "msub Sk $1"
+      comments:
+       - "<math><msub><mi>Sk</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/SkewesNumber.html"
        - "https://en.wikipedia.org/wiki/Skewes%27_number"
@@ -10323,7 +10393,8 @@ concepts:
       en: special linear group of $1
       property: "indexed function"
       area: "group theory"
-      notation: "msub SL $1"
+      comments:
+       - "<math><msub><mi>SL</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/SpecialLinearGroup.html"
        - "https://en.wikipedia.org/wiki/Special_linear_group"
@@ -10390,7 +10461,8 @@ concepts:
       en: spectrum of matrix of $1
       property: msub
       area: "linear algebra"
-      notation: "msub σ $1"
+      comments:
+       - "<math><msub><mi>σ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_of_a_matrix"
     
@@ -10545,7 +10617,8 @@ concepts:
       en: stanley reisner ideal of $1
       property: msub
       area: "commutative algebra"
-      notation: "msub I $1"
+      comments:
+       - "<math><msub><mi>I</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Stanley%E2%80%93Reisner_ring"
        - "https://www.encyclopediaofmath.org/index.php/Stanley-Reisner_ring"
@@ -10615,7 +10688,8 @@ concepts:
       en: stieltjes wigert polynomial of $1
       property: "indexed function"
       area: "special functions"
-      notation: "msub S $1"
+      comments:
+       - "<math><msub><mi>S</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Stieltjes-WigertPolynomial.html"
        - "https://en.wikipedia.org/wiki/Stieltjes%E2%80%93Wigert_polynomials"
@@ -10915,9 +10989,10 @@ concepts:
       en: symmetric group of $1
       property: "msub, function, postfix"
       area: "group theory"
-      notation: "msub S $1"
-      notationf: "msub 𝔖 $1"
-      notatione: "msub Σ $1"
+      comments:
+       - "<math><msub><mi>S</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>𝔖</mi><mi>x</mi></msub></math>"
+       - "<math><msub><mi>Σ</mi><mi>x</mi></msub></math>"
       notationd: "mrow Σ ( $1 )"
       notationc: "mrow Sym ( $1 )"
       notationb: "mrow $1 !"
@@ -10956,7 +11031,8 @@ concepts:
       en: szego polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
-      notation: "msub ϕ $1"
+      comments:
+       - "<math><msub><mi>ϕ</mi><mi>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Szeg%C5%91_polynomial"
        - "https://www.encyclopediaofmath.org/index.php/Szego_polynomial"
