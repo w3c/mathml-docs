@@ -940,7 +940,8 @@ concepts:
       en: bipolar set of $1
       property: msup
       area: "functional analysis"
-      notation: "msup $1 °°"
+      comments:
+       - "<math><msup><mi>X</mi><mo>°°</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
        - "https://en.wikipedia.org/wiki/Polar_set_(potential_theory)"
@@ -1648,7 +1649,7 @@ concepts:
       comments:
        - "<math><mi>cl</mi><mrow><mi>X</mi></mrow></math>"
        - "<math><mi>Cl</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "msup $1 −"
+       - "<math><msup><mi>X</mi><mo>−</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Closure.html"
        - "https://en.wikipedia.org/wiki/Congruence_closure"
@@ -1765,7 +1766,8 @@ concepts:
       en: commutator subgroup of $1
       property: msup, fenced
       area: "abstract algebra"
-      notation: "msup $1 '"
+      comments:
+       - "<math><msup><mi>X</mi><mo>'</mo></msup></math>"
       notationb: "msup $1 (1)"
       notationa: "mrow [ $1, $1 ]"
       urls: 
@@ -1838,7 +1840,8 @@ concepts:
       en: complex conjugate of $1
       property: msup
       area: "complex analysis"
-      notation: "msup $1 *"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
       notationa: "mover $1 ¯"
       urls: 
        - "https://mathworld.wolfram.com/ComplexConjugate.html"
@@ -1864,8 +1867,9 @@ concepts:
       en: complexification of $1
       property: msup
       area: "complex manifolds"
-      notation: "msup $1 ℂ"
-      notationa: "msup $1 C"
+      comments:
+       - "<math><msup><mi>X</mi><mi>ℂ</mi></msup></math>"
+       - "<math><msup><mi>X</mi><mi>C</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Complexification"
        - "https://ncatlab.org/nlab/show/complexification"
@@ -2021,8 +2025,9 @@ concepts:
       en: conjugate transpose of $1
       property: msup
       area: "linear algebra"
-      notation: "msup $1 H"
-      notationa: "msup $1 *"
+      comments:
+       - "<math><msup><mi>X</mi><mi>H</mi></msup></math>"
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConjugateTranspose.html"
        - "https://en.wikipedia.org/wiki/Conjugate_transpose"
@@ -2150,7 +2155,8 @@ concepts:
       en: converse of $1
       property: msup
       area: "relational algebra"
-      notation: "msup $1 ˘"
+      comments:
+       - "<math><msup><mi>X</mi><mo>˘</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Relation_algebra"
       alias:
@@ -2161,9 +2167,10 @@ concepts:
       en: converse graph of $1
       property: msup
       area: "graph theory"
-      notation: "msup $1 '"
-      notationb: "msup $1 T"
-      notationa: "msup $1 R"
+      comments:
+       - "<math><msup><mi>X</mi><mo>'</mo></msup></math>"
+       - "<math><msup><mi>X</mi><mi>T</mi></msup></math>"
+       - "<math><msup><mi>X</mi><mi>R</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Transpose_graph"
       alias:
@@ -3319,7 +3326,8 @@ concepts:
       en: dual basis of $1
       property: msup
       area: "linear algebra"
-      notation: "msup $1 *"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/DualBasis.html"
        - "https://en.wikipedia.org/wiki/Dual_basis"
@@ -3334,7 +3342,8 @@ concepts:
       en: dual bundle of $1
       property: msup
       area: "vector bundles"
-      notation: "msup $1 *"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/DualBundle.html"
        - "https://en.wikipedia.org/wiki/Dual_bundle"
@@ -3347,7 +3356,8 @@ concepts:
       en: dual space of $1
       property: msup
       area: "linear algebra"
-      notation: "msup $1 *"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
       notationb: "msup $1 $1"
       notationa: "msup $1 '"
       urls: 
@@ -3911,7 +3921,7 @@ concepts:
       area: "topology"
       comments:
        - "<math><mi>ext</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "msup $1 e"
+       - "<math><msup><mi>X</mi><mi>e</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Exterior.html"
        - "https://en.wikipedia.org/wiki/Exterior_(topology)"
@@ -4398,7 +4408,8 @@ concepts:
       en: free monoid of $1
       property: msup
       area: "abstract algebra"
-      notation: "msup $1 *"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Free_monoid"
        - "https://en.wikipedia.org/wiki/Monoid_factorisation"
@@ -4995,8 +5006,9 @@ concepts:
       en: group of units of $1
       property: msup, function
       area: "ring theory"
-      notation: "msup $1 *"
-      notationb: "msup $1 ×"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
+       - "<math><msup><mi>X</mi><mo>×</mo></msup></math>"
       notationa: "mi U"
       urls: 
        - "https://ncatlab.org/nlab/show/group+of+units"
@@ -5688,7 +5700,7 @@ concepts:
       area: "set theory"
       notation: "$1 [ $2 ]"
       notationc: "msub $1 *"
-      notationb: "msup $1 →"
+       - "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
       notationa: "$1 '' $2"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
@@ -5996,8 +6008,9 @@ concepts:
       en: interior of $1
       property: msup
       area: "topology"
-      notation: "msup $1 o"
-      notationa: "msup $1 ∘"
+      comments:
+       - "<math><msup><mi>X</mi><mo>o</mo></msup></math>"
+       - "<math><msup><mi>X</mi><mo>∘</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Interior.html"
        - "https://en.wikipedia.org/wiki/Interior_(topology)"
@@ -6099,7 +6112,8 @@ concepts:
       en: isogonal conjugate of $1
       property: msup
       area: "geometry"
-      notation: "msup $1 -1"
+      comments:
+       - "<math><msup><mi>X</mi><mn>-1</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/IsogonalConjugate.html"
        - "https://en.wikipedia.org/wiki/Isogonal_conjugate"
@@ -7859,7 +7873,8 @@ concepts:
       en: moore penrose inverse of $1
       property: msup
       area: "linear algebra"
-      notation: "msup $1 +"
+      comments:
+       - "<math><msup><mi>X</mi><mo>+</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse"
       alias:
@@ -7909,7 +7924,8 @@ concepts:
       en: multiplicative inverse of $1
       property: msup, mixfix
       area: "abstract algebra"
-      notation: "msup $1 -1"
+      comments:
+       - "<math><msup><mi>X</mi><mn>-1</mn></msup></math>"
       notationa: "mrow 1 / $1"
       urls: 
        - "https://mathworld.wolfram.com/Inverse.html"
@@ -8308,7 +8324,8 @@ concepts:
       en: opposite of $1
       property: msup
       area: "category theory,, group theory"
-      notation: "msup $1 op"
+      comments:
+       - "<math><msup><mi>X</mi><mi>op</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Opposite_category"
        - "https://ncatlab.org/nlab/show/opposite+category"
@@ -8356,7 +8373,8 @@ concepts:
       en: orthocomplement of $1
       property: msup
       area: "lattice theory"
-      notation: "msup $1 ⊥"
+      comments:
+       - "<math><msup><mi>X</mi><mo>⊥</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Complemented_lattice"
     
@@ -8837,7 +8855,8 @@ concepts:
       en: polar set of $1
       property: msup
       area: "functional analysis"
-      notation: "msup $1 °"
+      comments:
+       - "<math><msup><mi>X</mi><mo>°</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
        - "https://en.wikipedia.org/wiki/Polar_set_(potential_theory)"
@@ -8920,7 +8939,8 @@ concepts:
       en: positive part of $1
       property: msup, msub
       area: "elementary mathematics"
-      notation: "msup $1 +"
+      comments:
+       - "<math><msup><mi>X</mi><mo>+</mo></msup></math>"
       notationa: "msub $1 +"
       urls: 
        - "https://mathworld.wolfram.com/PositiveElement.html"
@@ -9500,7 +9520,8 @@ concepts:
       en: real polar of $1
       property: msup
       area: "functional analysis"
-      notation: "msup $1 r"
+      comments:
+       - "<math><msup><mi>X</mi><mi>r</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
        - "https://en.wikipedia.org/wiki/Polar_set_(potential_theory)"
@@ -9521,8 +9542,9 @@ concepts:
       en: reciprocal polynomial of $1
       property: msup
       area: "algebra"
-      notation: "msup $1 *"
-      notationa: "msup $1 R"
+      comments:
+       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
+       - "<math><msup><mi>X</mi><mi>R</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/ReciprocalPolynomial.html"
        - "https://en.wikipedia.org/wiki/Reciprocal_polynomial"
@@ -10847,7 +10869,8 @@ concepts:
       en: successor of $1
       property: "function, msup"
       area: "number theory"
-      notation: "msup $1 +"
+      comments:
+       - "<math><msup><mi>X</mi><mo>+</mo></msup></math>"
       notationb: "mi s"
       notationa: "mi S"
       urls: 
@@ -11390,7 +11413,8 @@ concepts:
       en: transitive closure of $1
       property: msup
       area: "set theory"
-      notation: "msup $1 +"
+      comments:
+       - "<math><msup><mi>X</mi><mo>+</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/TransitiveClosure.html"
        - "https://en.wikipedia.org/wiki/Transitive_closure"
