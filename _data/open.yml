@@ -10928,6 +10928,7 @@ concepts:
       en: symmetric space
       property: constant
       area: "topology"
+      comments:
        - "<math><msub><mi>R</mi><mn>0</mn></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions)s"
@@ -10986,6 +10987,7 @@ concepts:
       en: tate algebra
       property: symbol
       area: "analytic geometry"
+      comments:
        - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tate_algebra"
@@ -11464,6 +11466,7 @@ concepts:
       en: tychonoff space
       property: symbol
       area: "topology"
+      comments:
        - "<math><msub><mi>T</mi><mn>3</mn></msub></math>"
        - "<math><msub><mi>T</mi><mn>π</mn></msub></math>"
        - "<math><msub><mi>T</mi><mn>3½</mn></msub></math>"
