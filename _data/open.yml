@@ -1121,7 +1121,8 @@ concepts:
       en: canonical commutation relation
       property: fenced
       area: "quantum mechanics"
-      notation: "mrow [ $1 , $2 ]"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Canonical_commutation_relation"
     
@@ -1143,7 +1144,7 @@ concepts:
       area: "set theory"
       notation: "mrow | mo #"
       notationb: "mi card"
-      notationa: "mi n"
+      notationa: "<math><mi>n</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cardinality.html"
        - "https://en.wikipedia.org/wiki/Cardinality"
@@ -1633,7 +1634,8 @@ concepts:
       en: closed interval
       property: fenced
       area: "calculus"
-      notation: "mrow [ $1, $2 ]"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ClosedInterval.html"
        - "https://dlmf.nist.gov/front/introduction#Sx4.p1.t1.r29"
@@ -1752,7 +1754,8 @@ concepts:
       en: comma category $1 $2
       property: mixfix
       area: "category theory"
-      notation: "mrow ( $1 ↓ $2"
+      comments:
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>↓</mo><mi>y</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Comma_category"
     
@@ -5048,7 +5051,7 @@ concepts:
       comments:
        - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
        - "<math><msup><mi>X</mi><mo>×</mo></msup></math>"
-      notationa: "mi U"
+      notationa: "<math><mi>U</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/group+of+units"
        - "https://ncatlab.org/nlab/show/group+of+units"
@@ -5420,7 +5423,8 @@ concepts:
       en: hilbert symbol
       property: fenced
       area: "quadratic forms"
-      notation: "mrow ( $1, $2"
+      comments:
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HilbertSymbol.html"
        - "https://en.wikipedia.org/wiki/Hilbert_symbol"
@@ -5901,9 +5905,10 @@ concepts:
       en: index of subgroup
       property: fenced
       area: "group theory"
-      notation: "mrow [ $1 : $2 ]"
-      notationb: "mrow ( $1 : $2 )"
-      notationa: "mrow |$1 : $2 |"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>:</mo><mi>y</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>:</mo><mi>y</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow><mo>|</mo><mi>x</mi><mo>:</mo><mi>y</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Index_of_a_subgroup"
     
@@ -6013,7 +6018,7 @@ concepts:
       property: infix, fenced
       area: "linear algebra"
       notation: "mo ⋅"
-      notationa: "mrow [ $1, $2 ]"
+      notationa: "<math><mrow><mo>[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InnerProduct.html"
        - "https://en.wikipedia.org/wiki/Dot_product"
@@ -6238,7 +6243,8 @@ concepts:
       en: jacobi symbol
       property: mixfix$1 $2
       area: "number theory"
-      notation: "mrow ( $1 | $2"
+      comments:
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>|</mo><mi>y</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiSymbol.html"
        - "https://en.wikipedia.org/wiki/Jacobi_symbol"
@@ -6623,7 +6629,8 @@ concepts:
       en: kripke frame
       property: fenced
       area: "modal logic"
-      notation: "mrow ⟨ $1, $2 ⟩"
+      comments:
+       - "<math><mrow><mo>⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/Kripke+frame"
     
@@ -6658,7 +6665,8 @@ concepts:
       en: kronecker symbol
       property: fenced, fenced stacked
       area: "number theory"
-      notation: "mrow ( $1 | $2 )"
+      comments:
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>|</mo><mi>y</mi><mo>)</mo></mrow></math>"
       notationa: "( mfrac $1 $2 )"
       urls: 
        - "https://mathworld.wolfram.com/KroneckerSymbol.html"
@@ -6785,7 +6793,7 @@ concepts:
       area: "differential operators"
       notation: "msup ∇ 2"
       notationb: "mrow ∇ · ∇"
-      notationa: "mi Δ"
+      notationa: "<math><mi>Δ</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Laplace_operator"
        - "https://ncatlab.org/nlab/show/Laplace+operator"
@@ -7058,7 +7066,8 @@ concepts:
       en: lie superbracket
       property: fenced
       area: "lie algebra"
-      notation: "mrow [ $1 , $2 ]"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Lie_superalgebra"
       alias:
@@ -7939,7 +7948,7 @@ concepts:
       area: "combinatorial analysis"
       comments:
        - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
-      notationa: "mi M"
+      notationa: "<math><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MotzkinNumber.html"
        - "https://en.wikipedia.org/wiki/Motzkin_number"
@@ -8344,8 +8353,9 @@ concepts:
       en: open interval
       property: fenced
       area: "algebra"
-      notation: "mrow ( $1, $2 )"
-      notationa: "mrow ] $1 , $2 ["
+      comments:
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow><mo>]</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>[</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OpenInterval.html"
        - "https://dlmf.nist.gov/front/introduction#Sx4.p1.t1.r28"
@@ -8551,7 +8561,7 @@ concepts:
       property: embellished infix
       area: "category theory"
       notation: "<munderover>"
-      notationd: "<mrow/>"
+      notationd: "<math><mrow/>"
       notationc: "<munder><mo>⟶</mo> $1</munder>"
       notationb: "<mover><mo>⟶</mo> $2</mover>"
       notationa: "</munderover>"
@@ -8871,7 +8881,8 @@ concepts:
       en: poisson bracket
       property: fenced
       area: "classical mechanics"
-      notation: "mrow { $1, $2 }"
+      comments:
+       - "<math><mrow><mo>{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>}</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PoissonBracket.html"
        - "https://en.wikipedia.org/wiki/Poisson_bracket"
@@ -9237,7 +9248,8 @@ concepts:
       en: pseudo inner product
       property: fenced
       area: "lie algebra"
-      notation: "mrow ( $1, $2"
+      comments:
+       - "<math><mrow><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://youtu.be/mJ8ZDdA10GY?t=870"
     
@@ -9430,9 +9442,10 @@ concepts:
       en: radius vector
       property: symbol
       area: "geometry"
-      notation: "mix"
-      notationb: "mir"
-      notationa: "mis"
+      comments:
+       - "<math><mi>x</mi></math>"
+      notationb: "<math><mi>r</mi></math>"
+      notationa: "<math><mi>s</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RadiusVector.html"
        - "https://en.wikipedia.org/wiki/Position_(vector)"
@@ -10011,7 +10024,8 @@ concepts:
       en: s set theory
       property: constant
       area: "set theory"
-      notation: "miS"
+      comments:
+       - "<math><mi>S</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/S_(set_theory)"
     
@@ -10020,7 +10034,7 @@ concepts:
       en: s5 modal logic
       property: constant
       area: "logic"
-      notation: "miS5"
+      notation: "mi S5"
       urls: 
        - "https://en.wikipedia.org/wiki/S5_(modal_logic)"
     
@@ -10127,7 +10141,8 @@ concepts:
       en: schwarzian derivative $1 $2
       property: fenced, mixfix
       area: "complex analysis"
-      notation: "mrow { $1, $2 }"
+      comments:
+       - "<math><mrow><mo>{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>}</mo></mrow></math>"
       notationa: "mrow ( S $1 ) ($2"
       urls: 
        - "https://mathworld.wolfram.com/SchwarzianDerivative.html"
@@ -10911,8 +10926,8 @@ concepts:
       area: "number theory"
       comments:
        - "<math><msup><mi>X</mi><mo>+</mo></msup></math>"
-      notationb: "mi s"
-      notationa: "mi S"
+      notationb: "<math><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+      notationa: "<math><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Proclus"
        - "https://en.wikipedia.org/wiki/Successor_cardinal"
@@ -11670,7 +11685,8 @@ concepts:
       en: ultrapower $1 $2
       property: mixfix
       area: "abstract algebra"
-      notation: "mrow ∏ $1 / $2"
+      comments:
+       - "<math><mrow><mo>∏</mo><mi>x</mi><mo>/</mo><mi>y</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Ultrapower.html"
        - "https://en.wikipedia.org/wiki/Ultraproduct"
@@ -11928,7 +11944,8 @@ concepts:
       en: versor of $1
       property: function
       area: "quaternions"
-      notation: "miU"
+      comments:
+       - "<math><mi>U</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Versor_(physics)"
        - "https://en.wikipedia.org/wiki/Versor"
@@ -12157,7 +12174,8 @@ concepts:
       en: whitehead bracket $1 $2
       property: fenced
       area: "lie algebra"
-      notation: "mrow [ $1, $2 ]"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Whitehead_product"
        - "https://ncatlab.org/nlab/show/Whitehead+product"
