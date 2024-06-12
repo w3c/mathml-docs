@@ -1759,7 +1759,8 @@ concepts:
       en: commutator
       property: fenced
       area: "abstract algebra"
-      notation: "mrow [ $1, $2 ]"
+      comments:
+       - "<math><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Commutator.html"
        - "https://en.wikipedia.org/wiki/Commutator"
@@ -1813,7 +1814,8 @@ concepts:
       en: complement of interval
       property: fenced
       area: "order theory"
-      notation: "mrow ] $1, $2 ["
+      comments:
+       - "<math><mo>]</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>[</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Interval_(mathematics)"
     
@@ -3014,9 +3016,10 @@ concepts:
       en: directional derivative of $1
       property: "function, mixfix"
       area: "differential calculus"
-      notation: "msub ∇ v"
-      notationb: "msub D v"
-      notationa: "mrow v ⋅ ∇ $1"
+      comments:
+       - "<math><msup><mi>∇</mi><mi>v</mi></msup><mi>f</mi></math>"
+       - "<math><msup><mi>D</mi><mi>v</mi></msup><mi>f</mi></math>"
+       - "<math><mrow><mi>v</mi><mo>⋅</mo><mi>∇</mi></mrow><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirectionalDerivative.html"
        - "https://en.wikipedia.org/wiki/Directional_derivative"
@@ -3075,7 +3078,8 @@ concepts:
       en: dirichlet kernel of $1
       property: function
       area: "mathematical analysis"
-      notation: "msub D n"
+      comments:
+       - "<math><msup><mi>D</mi><mi>n</mi></msup><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletKernel.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_kernel"
@@ -3121,12 +3125,26 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Discriminant"
     
     - concept: disjoint-union
-      arity: 1
+      arity: 2
       en: disjoint union of $1
       property: indexed
       area: "set theory"
-      notation: "msup ∪ *"
-      notationa: "mo ⊔"
+      comments:
+       - "<math><msub><mo>&#x2a06;</mo><mrow><mi>i</mi><mo>&#x2208;</mo><mi>A</mi></mrow></msub><msup><mi>A</mi><mi>i</mi></msup></math>"
+      urls: 
+       - "https://mathworld.wolfram.com/DisjointUnion.html"
+       - "https://en.wikipedia.org/wiki/Disjoint_union"
+       - "https://en.wikipedia.org/wiki/Tagged_union"
+       - "https://en.wikipedia.org/wiki/Disjoint_union_(topology)"
+       - "https://ncatlab.org/nlab/show/disjoint+union"
+
+    - concept: disjoint-union
+      arity: 2
+      en: disjoint union of $1
+      property: infix
+      area: "set theory"
+      comments:
+       - "<math><mi>A</mi><msup><mi></mi><mo>*</mo></msup><mi>B</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DisjointUnion.html"
        - "https://en.wikipedia.org/wiki/Disjoint_union"
@@ -3139,7 +3157,8 @@ concepts:
       en: distance
       property: fenced
       area: "geometry"
-      notation: "|$1 $2|"
+      comments:
+       - "<math><mo>|</mo><mi>X</mi><mo>&#x2009;</mo><mi>Y</mi><mo>|</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Distance"
     
@@ -3161,8 +3180,8 @@ concepts:
       property: "function, mixfix"
       area: "vector calculus"
       comments:
-       - "<math><mi>div</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "mrow ∇ ⋅ $1"
+       - "<math><mi>div</mi><mi>f</mi></math>"
+       - "<math><mi>∇</mi><mo>⋅</mo><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Divergence.html"
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
@@ -3362,9 +3381,8 @@ concepts:
       property: msup
       area: "linear algebra"
       comments:
-       - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
-      notationb: "msup $1 $1"
-      notationa: "msup $1 '"
+       - "<math><msup><mi>V</mi><mo>*</mo></msup></math>"
+       - "<math><msup><mi>V</mi><mo>&#x2032;</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/DualSpace.html"
        - "https://en.wikipedia.org/wiki/Dual_space"
@@ -3377,9 +3395,10 @@ concepts:
       en: duodecimal of $1
       property: unit
       area: "arithmetic"
-      notation: "msub $1 z"
-      notationb: "msub $1 12"
-      notationa: "mi doz"
+      comments:
+       - "<math><msub><mi>n</mi><mi>z</mi></msub></math>"
+       - "<math><msub><mi>n</mi><mn>12</mn></msub></math>"
+       - "<math><msub><mi>n</mi><mi>doz</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Duodecimal.html"
        - "https://en.wikipedia.org/wiki/Duodecimal#Base_notation"
@@ -3573,7 +3592,8 @@ concepts:
       en: equivalence class of $1
       property: fenced
       area: "set theory"
-      notation: "mrow [ $1 ]"
+      comments:
+       - "<math><mo>[</mo><mi>X</mi><mo>]</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/EquivalenceClass.html"
        - "https://en.wikipedia.org/wiki/Equivalence_class"
@@ -3601,7 +3621,8 @@ concepts:
       en: equivariant cohomology $1 $2
       property: function
       area: "algebraic topology"
-      notation: "msubsup H $1 $2"
+      comments:
+       - "<math><msubsup><mi>H</mi><mi>G</mi><mo>*</mo></msubsup><mrow><mo>(</mo><mi>X</mi><mo>;</mo><mo>&#x039b;</mo><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Equivariant_cohomology"
        - "https://ncatlab.org/nlab/show/equivariant+cohomology"
@@ -3653,10 +3674,11 @@ concepts:
       en: essential infimum of $1
       property: function
       area: "measure theory"
-      notation: "mi ess inf"
+      comments:
+       - "<math><mi>ess inf</mi><mi>x</mi></math>"
       urls: 
-       - "https://mathworld.wolfram.com/EssentialSupremum.html"
-       - "https://en.wikipedia.org/wiki/Essential_supremum_and_essential_infimum"
+       - "https://mathworld.wolfram.com/essentialsupremum.html"
+       - "https://en.wikipedia.org/wiki/essential_supremum_and_essential_infimum"
        - "https://ncatlab.org/nlab/show/essential+supremum"
     
     - concept: essential-supremum
@@ -3664,7 +3686,8 @@ concepts:
       en: essential supremum of $1
       property: function
       area: "measure theory"
-      notation: "mi ess sup"
+      comments:
+       - "<math><mi>ess sup</mi><mi>x</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/EssentialSupremum.html"
        - "https://en.wikipedia.org/wiki/Essential_supremum_and_essential_infimum"
@@ -3688,7 +3711,8 @@ concepts:
       en: etale cohomology of $1
       property: function
       area: "algebraic topology"
-      notation: "msubsup H et •"
+      comments:
+       - "<math><msubsup><mi>H</mi><mi>et</mi><mo>*</mo></msubsup><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/%C3%89tale_cohomology"
        - "https://ncatlab.org/nlab/show/etale+cohomology"
@@ -3868,7 +3892,8 @@ concepts:
       en: expectation value of $1
       property: fenced
       area: "quantum physics"
-      notation: "mrow ⟨ $1 ⟩"
+      comments:
+       - "<math><mo>⟨</mo><mi>X</mi><mo>⟩</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExpectationValue.html"
        - "https://en.wikipedia.org/wiki/Expectation_value_(quantum_mechanics)"
@@ -4195,10 +4220,11 @@ concepts:
       en: floor of $1
       property: fenced, function
       area: "number theory"
-      notation: "⌊ $1 ⌋"
-      notationc: "〚 $1 〛"
-      notationb: "[ $1 ]"
-      notationa: "floor ($1"
+      comments:
+       - "<math><mo>⌊</mo><mi>X</mi><mo>⌋</mo></math>"
+       - "<math><mo>&#x27e6;</mo><mi>X</mi><mo>&#x27e7;</mo></math>"
+       - "<math><mo>[</mo><mi>X</mi><mo>]</mo></math>"
+       - "<math><mi>floor</mi><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://youtu.be/RxNs4SwP6lk"
        - "https://youtu.be/RxNs4SwP6lk"
@@ -4232,7 +4258,8 @@ concepts:
       en: fourier cosine transform of $1
       property: operator
       area: "functional analysis"
-      notation: "msub ℱ c"
+      comments:
+       - "<math><msub><mi>ℱ</mi><mi>c</mi></msub><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/FourierCosineTransform.html"
        - "https://dlmf.nist.gov/1.14#E9"
@@ -4243,7 +4270,8 @@ concepts:
       en: fourier sine transform of $1
       property: operator
       area: "functional analysis"
-      notation: "msub ℱ s"
+      comments:
+       - "<math><msub><mi>ℱ</mi><mi>s</mi></msub><mi>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/FourierSineTransform.html"
        - "https://dlmf.nist.gov/1.14#E10"
@@ -4254,7 +4282,8 @@ concepts:
       en: fourier transform of $1
       property: mover
       area: "fourier analysis"
-      notation: "mover $1 ^"
+      comments:
+       - "<math><mover><mi>f</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://mathworld.wolfram.com/FourierTransform.html"
        - "https://en.wikipedia.org/wiki/%E2%84%B1"
@@ -4313,8 +4342,8 @@ concepts:
       area: "arithmetic"
       comments:
        - "<math><mi>frac</mi><mrow><mi>X</mi></mrow></math>"
-      notationb: "mrow ⟦ $1 ⟧"
-      notationa: "mrow { $1 }"
+       - "<math><mo>&#x27e6;</mo><mi>x</mi><mo>&#x27e7;</mo></math>"
+       - "<math><mo>{</mo><mi>x</mi><mo>}</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/FractionalPart.html"
        - "https://en.wikipedia.org/wiki/Fractional_part"
@@ -4389,7 +4418,8 @@ concepts:
       en: free algebra $1 $2
       property: mixfix
       area: "ring theory"
-      notation: "mrow $1⟨$2⟩"
+      comments:
+       - "<math><mi>R</mi><mo>⟨</mo><mi>X</mi><mo>⟩</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/FreeAlgebra.html"
        - "https://en.wikipedia.org/wiki/Free_algebra"
@@ -4468,7 +4498,8 @@ concepts:
       en: frolicher nijenhuis bracket
       property: fenced
       area: "differntial geometry"
-      notation: "mrow [ $1 , $2 ]"
+      comments:
+       - "<math><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>]</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fr%C3%B6licher%E2%80%93Nijenhuis_bracket"
        - "https://encyclopediaofmath.org/wiki/Fr%C3%B6licher-Nijenhuis_bracket"
@@ -4490,8 +4521,9 @@ concepts:
       en: functor category
       property: msup, fenced
       area: "category theory"
-      notation: "msup $1 $2"
-      notationa: "mrow [$1, $2]"
+      comments:
+       - "<math><msup><mi>f</mi><mi>g</mi><msup></math>"
+       - "<math><mo>[</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo>]</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Functor_category"
        - "https://ncatlab.org/nlab/show/functor+category"
@@ -6911,8 +6943,9 @@ concepts:
       en: legendre symbol
       property: fenced, fenced stacked
       area: "number theory"
-      notation: "mrow ( $1 | $2 )"
-      notationa: "mrow ( mfrac $1 $2 )"
+      comments:
+       - "<math><mo>(</mo><mi>a</mi><mo>|</mo><mi>p</mi><mo>)</mo></math>"
+       - "<math><mo>(</mo><mfrac><mi>a</mi><mi>p</mi></mfrac><mo>)</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/LegendreSymbol.html"
        - "https://en.wikipedia.org/wiki/Legendre_symbol"
