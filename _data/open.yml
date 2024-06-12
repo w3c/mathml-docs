@@ -1292,10 +1292,11 @@ concepts:
       en: ceiling of $1
       property: fenced, function
       area: "number theory"
-      notation: "⌈ $1 ⌉"
-      notationc: "〛 $1 〚"
-      notationb: "] $1 ["
-      notationa: "ceil ($1"
+      comments:
+       - "<math><mo>⌈</mo><mi>X</mi><mo>Y</mo></math>"
+       - "<math><mo>&#x27e7;</mo><mi>X</mi><mo>&#x27e6;</mo></math>"
+       - "<math><mo>]</mo><mi>X</mi><mo>[</mo></math>"
+       - "<math><mi>ceil</mi><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions"
        - "https://youtu.be/RxNs4SwP6lk"
@@ -1344,7 +1345,7 @@ concepts:
       area: "number theory"
       comments:
        - "<math><mi>C</mi></math>"
-      notationa: "msub C 10"
+       - "<math><msup><mi>C</mi><mn>10</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChampernowneConstant.html"
        - "https://en.wikipedia.org/wiki/Champernowne_constant"
@@ -1383,8 +1384,8 @@ concepts:
       property: "indexed function, function"
       area: "probability theory"
       comments:
-       - "<math><msub><mi>𝟏</mi><mi>x</mi></msub></math>"
-      notationa: "mrow 𝟏 { $1 }"
+       - "<math><msub><mi>𝟏</mi><mi>X</mi></msub></math>"
+       - "<math><mn>1</mn><mrow><mo>{</mo><mi>X</mi><mo>}</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CharacteristicFunction.html"
        - "https://en.wikipedia.org/wiki/Characteristic_function_(probability_theory)"
@@ -1492,7 +1493,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-       - "<math><msup><mi>χ</mi><mn>2</mn>></msup></math>"
+       - "<math><msup><mi>χ</mi><mn>2</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Chi-SquaredDistribution.html"
        - "https://en.wikipedia.org/wiki/Chi-squared_distribution"
@@ -1565,7 +1566,9 @@ concepts:
       en: clausen function of $1
       property: function
       area: "special functions"
-      notation: "msub Cl 2"
+      comments:
+       - "<math><msub><mi>Cl</mi><mn>2</mn></msub><mrow><mo>(</mo><mi>&#x03c6;</mi><mo>)</mo></mrow></math>"
+       notation: "msub Cl 2"
       urls: 
        - "https://en.wikipedia.org/wiki/Clausen_function"
     
