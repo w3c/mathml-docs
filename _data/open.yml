@@ -958,7 +958,8 @@ concepts:
       en: biquaternion of $1
       property: mtable
       area: "ring theory"
-      notation: "mtable 2x2"
+      comments:
+       - "<math><mrow><mo>(</mo><mtable rowspacing='4pt' columnspacing='1em'><mtr><mtd><mi>u</mi><mo>+</mo><mi>h</mi><mi>v</mi></mtd><mtd><mi>w</mi><mo>+</mo><mi>h</mi><mi>x</mi></mtd></mtr><mtr><mtd><mo>−</mo><mi>w</mi><mo>+</mo><mi>h</mi><mi>x</mi></mtd><mtd><mi>u</mi><mo>−</mo><mi>h</mi><mi>v</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Biquaternion#Linear_representation"
     
@@ -1283,7 +1284,8 @@ concepts:
       en: cayley table of $1
       property: mtable
       area: "group theory"
-      notation: "mtable"
+      comments:
+       - "<math><mtable><mtr><mtd><mo>×</mo></mtd><mtd><mn>1</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>−1</mn></mtd><mtd><mn>−1</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable>"
       urls: 
        - "https://mathworld.wolfram.com/CayleyTable.html"
        - "https://en.wikipedia.org/wiki/Cayley_table"
