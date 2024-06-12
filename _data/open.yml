@@ -1293,7 +1293,7 @@ concepts:
       property: fenced, function
       area: "number theory"
       comments:
-       - "<math><mo>⌈</mo><mi>X</mi><mo>Y</mo></math>"
+       - "<math><mo>⌈</mo><mi>X</mi><mo>⌉</mo></math>"
        - "<math><mo>&#x27e7;</mo><mi>X</mi><mo>&#x27e6;</mo></math>"
        - "<math><mo>]</mo><mi>X</mi><mo>[</mo></math>"
        - "<math><mi>ceil</mi><mrow><mo>(</mo><mi>X</mi><mo>)</mo></mrow></math>"
