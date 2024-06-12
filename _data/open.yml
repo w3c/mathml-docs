@@ -1568,7 +1568,6 @@ concepts:
       area: "special functions"
       comments:
        - "<math><msub><mi>Cl</mi><mn>2</mn></msub><mrow><mo>(</mo><mi>&#x03c6;</mi><mo>)</mo></mrow></math>"
-       notation: "msub Cl 2"
       urls: 
        - "https://en.wikipedia.org/wiki/Clausen_function"
     
