@@ -658,7 +658,7 @@ concepts:
       en: baumslag solitar group
       property: function
       area: "group theory"
-      notation: "mrow BS ( $1, $2"
+      notation: "mrow BS ( $1, $2 )"
       urls: 
        - "https://en.wikipedia.org/wiki/Baumslag%E2%80%93Solitar_group"
        - "https://www.encyclopediaofmath.org/index.php/Baumslag-Solitar_group"
@@ -1921,7 +1921,8 @@ concepts:
       en: concentration of $1
       property: fenced
       area: "chemistry"
-      notation: "mrow [ $1 ]"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/04._Reactions_in_Aqueous_Solution/4.5%3A_Concentration_of_Solutions"
     
@@ -2459,7 +2460,7 @@ concepts:
       property: fenced
       area: "differential topology"
       notation: "mrow [[ $1 ]]"
-      notationa: "mrow [ $1 ]"
+      notationa: "<math><mrow><mo>[</mo><mi>x</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Current.html"
        - "https://en.wikipedia.org/wiki/Current_(mathematics)"
@@ -2906,7 +2907,7 @@ concepts:
       area: "linear algebra, graph theory"
       comments:
        - "<math><mi>dim</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "mrow [ $1 ]"
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Dimension.html"
        - "https://en.wikipedia.org/wiki/Dimension_(mathematics_and_physics)"
@@ -5052,7 +5053,7 @@ concepts:
       comments:
        - "<math><msup><mi>X</mi><mo>*</mo></msup></math>"
        - "<math><msup><mi>X</mi><mo>×</mo></msup></math>"
-      notationa: "<math><mi>U</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mi>U</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/group+of+units"
        - "https://ncatlab.org/nlab/show/group+of+units"
@@ -5657,7 +5658,7 @@ concepts:
       area: "multilinear algebra"
       comments:
        - "<math><mi>det</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "mrow | $1 |"
+       - "<math><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Hyperdeterminant.html"
        - "https://en.wikipedia.org/wiki/Hyperdeterminant"
@@ -6434,7 +6435,8 @@ concepts:
       en: kauffman bracket of $1
       property: fenced
       area: "knot theory"
-      notation: "mrow ⟨ $1 ⟩"
+      comments:
+       - "<math><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bracket_polynomial"
       alias:
@@ -7488,7 +7490,7 @@ concepts:
       property: mtable, fenced
       area: "algebra"
       notation: "mtable"
-      notationb: "mrow [ $1 ]"
+      notationb: "<math><mrow><mo>[</mo><mi>x</mi><mo>]</mo></mrow></math>"
       notationa: "mrow ( $1"
       urls: 
        - "https://mathworld.wolfram.com/Matrix.html"
@@ -7949,7 +7951,7 @@ concepts:
       area: "combinatorial analysis"
       comments:
        - "<math><msub><mi>M</mi><mi>x</mi></msub></math>"
-      notationa: "<math><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MotzkinNumber.html"
        - "https://en.wikipedia.org/wiki/Motzkin_number"
@@ -8221,7 +8223,8 @@ concepts:
       en: norm of $1
       property: fenced
       area: "linear algebra"
-      notation: "mrow ‖ $1 ‖"
+      comments:
+       - "<math><mrow><mo>‖</mo><mi>x</mi><mo>‖</mo></mrow></math>"
       notationa: "mrow | $1"
       urls: 
        - "https://mathworld.wolfram.com/Norm.html"
@@ -8270,7 +8273,8 @@ concepts:
       en: numerical part of $1
       property: fenced
       area: "SI units"
-      notation: "mrow { $1 }"
+      comments:
+       - "<math><mrow><mo>{</mo><mi>x</mi><mo>}</mo></mrow></math>"
       urls: 
        - "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values"
     
@@ -8415,7 +8419,7 @@ concepts:
       area: "group theory"
       comments:
        - "<math><mi>ord</mi><mrow><mi>X</mi></mrow></math>"
-      notationa: "mrow | $1 |"
+       - "<math><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Order_(group_theory))"
     
@@ -9445,8 +9449,8 @@ concepts:
       area: "geometry"
       comments:
        - "<math><mi>x</mi></math>"
-      notationb: "<math><mi>r</mi></math>"
-      notationa: "<math><mi>s</mi></math>"
+       - "<math><mi>r</mi></math>"
+       - "<math><mi>s</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/RadiusVector.html"
        - "https://en.wikipedia.org/wiki/Position_(vector)"
@@ -10927,8 +10931,8 @@ concepts:
       area: "number theory"
       comments:
        - "<math><msup><mi>X</mi><mo>+</mo></msup></math>"
-      notationb: "<math><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
-      notationa: "<math><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mi>s</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Proclus"
        - "https://en.wikipedia.org/wiki/Successor_cardinal"
@@ -11448,7 +11452,8 @@ concepts:
       en: total variation of $1
       property: fenced
       area: "measure theory"
-      notation: "mrow |$1 |"
+      comments:
+       - "<math><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TotalVariation.html"
        - "https://en.wikipedia.org/wiki/Total_variation"
@@ -11721,7 +11726,8 @@ concepts:
       en: unit part of $1
       property: fenced
       area: "SI units"
-      notation: "mrow [ $1 ]"
+      comments:
+       - "<math><mrow><mo>[</mo><mi>x</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values"
        - "https://physics.stackexchange.com/questions/77690/square-bracket-notation-for-dimensions-and-units-usage-and-conventions"
@@ -12139,7 +12145,8 @@ concepts:
       en: weighted mean of $1
       property: fenced
       area: "special functions"
-      notation: "mrow ⟨ $1 ⟩"
+      comments:
+       - "<math><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeightedMean.html"
        - "https://en.wikipedia.org/wiki/Weighted_arithmetic_mean"
