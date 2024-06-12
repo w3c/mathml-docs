@@ -632,10 +632,11 @@ concepts:
     
     - concept: barrel
       arity: 1
-      en: barrel of $1
+      en: $1 barrels
       property: unit
       area: "imperial units"
-      notation: "mi bbl"
+      comments:
+       - "<math><mi>x</mi><mo>&#x2009;</mo><mi>bbl</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/Barrel.html"
        - "https://en.wikipedia.org/wiki/Barrelled_space"
@@ -1331,11 +1332,11 @@ concepts:
     
     - concept: chain
       arity: 1
-      en: chain of $1
+      en: $1 chains
       property: unit
       area: "imperial units"
       comments:
-       - "<math><mi>chain</mi><mrow><mi>X</mi></mrow></math>"
+       - "<math><mi>x</mi><mo>&#x2009;</mo><mi>chain</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Chain_(unit)"
     
@@ -5530,11 +5531,11 @@ concepts:
     
     - concept: horsepower-mechanical
       arity: 1
-      en: horsepower mechanical of $1
+      en: $1 horsepower
       property: unit
       area: "imperial unit"
       comments:
-       - "<math><mrow><mi>hp</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mi>x</mi><mo>&#x2009;</mo><mi>hp</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Horsepower"
       alias:
@@ -10474,7 +10475,7 @@ concepts:
     
     - concept: span
       arity: 1
-      en: span of $1
+      en: $1 span
       property: unit
       area: "imperial units"
       comments:
