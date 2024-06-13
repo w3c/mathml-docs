@@ -3134,7 +3134,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Discriminant"
     
     - concept: disjoint-union
-      arity: 2
+      arity: 1
       en: disjoint union of $1
       property: indexed
       area: "set theory"
@@ -3149,7 +3149,7 @@ concepts:
 
     - concept: disjoint-union
       arity: 2
-      en: disjoint union of $1
+      en: disjoint union of $1 and $2
       property: infix
       area: "set theory"
       comments:
