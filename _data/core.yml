@@ -247,7 +247,8 @@ concepts:
       arity: 1
       property: postfix
       en: inverse of $1
-      comment: "`inverse` can be used for function inverses, matrix inverses, etc."
+      comments:
+      - "`inverse` can be used for function inverses, matrix inverses, etc."
 
     - concept: domain
       arity: 1
@@ -276,7 +277,7 @@ concepts:
       arity: 2
       property: function
       en: $1 and $2
-      comment:
+      comments:
       - "$1 is a positive integer and $2 is a fraction with positive numerical components.
         The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
 
@@ -290,7 +291,7 @@ concepts:
       arity: 2
       property: infix
       en: $1 evaluated-at $2
-      comment:
+      comments:
       - "Two common notations are
         <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
         and
@@ -394,7 +395,8 @@ concepts:
       arity: 2
       property: function
       en: "polar coordinate of $1 comma $2"
-      comment: "The first argument is the radius, the second argument is the angle"
+      comments:
+      - "The first argument is the radius, the second argument is the angle"
 
 
     - concept: floor
@@ -411,7 +413,8 @@ concepts:
       arity: 1
       property: function
       en: rounded-value of $1
-      comment: "This sometimes uses the notation
+      comments:
+      - "This sometimes uses the notation
         <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
         or
         <math><mo>[</mo><mi>x</mi><mo>]</mo></math>"
@@ -428,13 +431,15 @@ concepts:
       arity: 1
       property: ???
       en: "integral over $1"
-      comment: "integral sign is not an argument"
+      comments:
+      - "integral sign is not an argument"
 
     - concept: definite-integral
       arity: 2
       property: ???
       en: "integral from $1 to $2"
-      comment: "integral sign is not an argument"
+      comments:
+      - "integral sign is not an argument"
     
 
     - concept: derivative
@@ -443,7 +448,7 @@ concepts:
       en:
       - "(verbose) the $3 derivative of $1 with respect to $2"
       - "(terse) d <$3 if $3 != 1> $1 by d $2 <$3 if $3 != 1>"
-      comment:
+      comments:
       - "the terse reading only makes sense for Leibniz notation such as 
           <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
           or
@@ -472,7 +477,7 @@ concepts:
       property: ???
       en:
       - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
-      comment:
+      comments:
       - |
         ```
         <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
@@ -491,7 +496,7 @@ concepts:
       arity: 1
       property: prefix
       en: "limit as $1"
-      comment:
+      comments:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
       - "Example: <math>
@@ -520,19 +525,22 @@ concepts:
       arity: 2
       property: infix
       en: "$1 tends to $2"
-      comment: "see \"limit\" example"
+      comments:
+      - "see \"limit\" example"
     
     - concept: tends-to-from-above
       arity: 2
       property: infix
       en: "$1 tends to from above $2"
-      comment: "see \"limit\" example"
+      comments:
+      - "see \"limit\" example"
     
     - concept: tends-to-from-below
       arity: 2
       property: infix
       en: "$1 tends to from below $2"
-      comment: "see \"limit\" example"
+      comments:
+      - "see \"limit\" example"
 
   ## ====================== 4.4.5 Sets ============================
   - title: Sets
@@ -541,7 +549,8 @@ concepts:
       arity: 1
       property: function
       en: "set of $1"
-      comment: |
+      comments:
+      - |
                the argument to `set` is typically an `mrow`. For example:
 
                ```
@@ -566,7 +575,7 @@ concepts:
       arity: 2
       property: function
       en: "set difference of $1 and $2"
-      comment:
+      comments:
       - "This can be spoken in many ways. See other entry for infix speech."
       - "There are several notations that are used and their order of appearance differs:
         <math><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
@@ -575,7 +584,7 @@ concepts:
       arity: 2
       property: infix
       en: "\"$1 minus $2\" or \"$2 subtracted from $1\""
-      comment:
+      comments:
       - "This can be spoken in many ways. See other entry for functional speech."
       - "See functional form for some notational usages."
 
@@ -583,7 +592,7 @@ concepts:
       arity: 1
       property: function
       en: "complement of $1"
-      comment:
+      comments:
       - "This can be spoken in many ways. See other entry for functional speech."
       - "Two notations used for complement are: 
         <math><msup><mi>A</mi><mi>C</mi></msup></math>, <math><msup><mi>A</mi><mo>'</mo></msup></math>"
@@ -591,14 +600,15 @@ concepts:
     - concept: empty-set
       arity: 0
       en: "empty set"
-      comment:
+      comments:
       - "Three notations used for empty set are: { }, ∅, and ∅"
 
 
     - concept: cardinality
       arity: 1
       property: function
-      comment: "often used with matchfix single vertical bars"
+      comments:
+      - "often used with matchfix single vertical bars"
 
     - concept: list
       arity: "*"
@@ -615,37 +625,43 @@ concepts:
       arity: 1
       property: function
       en: "sum of $1"
-      comment: usually on `<mrow>`
+      comments:
+      - usually on `<mrow>`
 
     - concept: sum
       arity: 2
       property: function
       en: "sum over $1 of $2"
-      comment: usually on `<munder>` or `<msub>`
+      comments:
+      - usually on `<munder>` or `<msub>`
 
     - concept: sum
       arity: 3
       property: function
       en: "sum from $1 to $2 of $3"
-      comment: usually on `<munderover>` or `<msubsup>`
+      comments:
+      - usually on `<munderover>` or `<msubsup>`
 
     - concept: product
       arity: 1
       property: function
       en: "product of $1"
-      comment: usually on `<mrow>`
+      comments:
+      - usually on `<mrow>`
         
     - concept: product
       arity: 2
       property: function
       en: "product over $1 of $2"
-      comment: usually on `<munder>` or `<msub>`
+      comments:
+      - usually on `<munder>` or `<msub>`
 
     - concept: product
       arity: 3
       property: function
       en: "product from $1 to $2 of $3"
-      comment: usually on `<munderover>` or `<msubsup>`
+      comments:
+      - usually on `<munderover>` or `<msubsup>`
 
 
     ## ====================== 4.4.7 elementary classical functions ======================
@@ -656,7 +672,8 @@ concepts:
       property: function
       en: "sine $1"
       fr: "sinus $1"
-      comment: used as 'sin', 'sen'
+      comments:
+      - used as 'sin', 'sen'
 
     - concept: cosine
       arity: 1
@@ -671,7 +688,8 @@ concepts:
       en:
       - "(verbose) tangent $1"
       - "(terse) tan $1"
-      comment: used as 'tan', 'tg'
+      comments:
+      - used as 'tan', 'tg'
 
     - concept: secant
       arity: 1
@@ -679,7 +697,8 @@ concepts:
       en:
       - "(verbose) secant $1"
       - "(terse) seech $1"
-      comment: used as 'sec'
+      comments:
+      - used as 'sec'
 
     - concept: cosecant
       arity: 1
@@ -687,7 +706,8 @@ concepts:
       en:
       - "(verbose) cosecant $1"
       - "(terse) co-seech $1"
-      comment: used as 'csc'
+      comments:
+      - used as 'csc'
 
     - concept: cotangent
       arity: 1
@@ -695,7 +715,8 @@ concepts:
       en:
       - "(verbose) cotangent $1"
       - "(terse) co-tan $1"
-      comment: used as 'cot'
+      comments:
+      - used as 'cot'
 
 
     ## inverse trig functions
@@ -704,7 +725,7 @@ concepts:
       property: function
       en:
       - "(verbose) arcsine $1"
-      comment:
+      comments:
       - "used as 'arcsin', 'arc sin'"
       - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
 
@@ -713,41 +734,46 @@ concepts:
       property: function
       en:
       - "(verbose) arccosine $1"
-      comment: "used as 'arccos', 'arc cos'"
+      comments:
+      - "used as 'arccos', 'arc cos'"
 
     - concept: arctangent
       arity: 1
       property: function
       en:
       - "(verbose) arctangent $1"
-      comment: "used as 'arctan', 'arc tan'"
+      comments:
+      - "used as 'arctan', 'arc tan'"
 
     - concept: arcsecant
       arity: 1
       property: function
       en:
       - "(verbose) arcsecant $1"
-      comment: "used as 'arcsec', 'arc sec'"
+      comments:
+      - "used as 'arcsec', 'arc sec'"
 
     - concept: arccosecant
       arity: 1
       property: function
       en:
       - "(verbose) arc-cosecant $1"
-      comment: "used as 'arccos', 'arc cos'"
+      comments:
+      - "used as 'arccos', 'arc cos'"
 
     - concept: arccotangent
       arity: 1
       property: function
       en:
       - "(verbose) arc-cotangent $1"
-      comment: "used as 'arccos', 'arc cos'"
+      comments:
+      - "used as 'arccos', 'arc cos'"
 
     ## hyperbolic trig functions
     - concept: hyperbolic-sine
       arity: 1
       property: function
-      comment:
+      comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'sinh'"
       en:
@@ -759,7 +785,7 @@ concepts:
     - concept: hyperbolic-cosine
       arity: 1
       property: function
-      comment:
+      comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'cosh'"
       en:
@@ -771,7 +797,7 @@ concepts:
     - concept: hyperbolic-tangent
       arity: 1
       property: function
-      comment:
+      comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'tanh'"
       en:
@@ -781,7 +807,7 @@ concepts:
     - concept: hyperbolic-secant
       arity: 1
       property: function
-      comment:
+      comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'sech'"
       en:
@@ -791,7 +817,7 @@ concepts:
     - concept: hyperbolic-cosecant
       arity: 1
       property: function
-      comment:
+      comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'cosech'"
       en:
@@ -802,7 +828,7 @@ concepts:
     - concept: hyperbolic-cotangent
       arity: 1
       property: function
-      comment:
+      comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'coth'"
       en:
@@ -815,7 +841,8 @@ concepts:
     - concept: arc-hyperbolic-sine
       arity: 1
       property: function
-      comment: "used as 'asinh'"
+      comments:
+      - "used as 'asinh'"
       en:
         - "short form 'arc shine $1'"
       fr:
@@ -825,7 +852,8 @@ concepts:
     - concept: arc-hyperbolic-cosine
       arity: 1
       property: function
-      comment: "used as 'acosh'"
+      comments:
+      - "used as 'acosh'"
       en:
         - "short form 'arc cosh $1'"
       fr:
@@ -835,7 +863,8 @@ concepts:
     - concept: arc-hyperbolic-tangent
       arity: 1
       property: function
-      comment: "used as 'atanh'"
+      comments:
+      - "used as 'atanh'"
       en:
         - "short form American 'arc tanch $1'"
         - "short form British 'arc than $1'"
@@ -843,7 +872,8 @@ concepts:
     - concept: arc-hyperbolic-secant
       arity: 1
       property: function
-      comment: "used as 'asech'"
+      comments:
+      - "used as 'asech'"
       en:
         - "short form American 'arc sech $1'"
         - "short form British 'arc shek $1'"
@@ -851,7 +881,8 @@ concepts:
     - concept: arc-hyperbolic-cosecant
       arity: 1
       property: function
-      comment: "used as 'acsch'"
+      comments:
+      - "used as 'acsch'"
       en:
         - "short form American 'arc cosech $1'"
         - "short form British 'arc coshek $1'"
@@ -860,7 +891,8 @@ concepts:
     - concept: arc-hyperbolic-cotangent
       arity: 1
       property: function
-      comment: "used as 'acoth'"
+      comments:
+      - "used as 'acoth'"
       en:
         - "short form American 'arc coth $1'"
         - "short form British 'arc coath $1'"
@@ -900,7 +932,8 @@ concepts:
       arity: 1
       property: function
       en: "mean of $1"
-      comment: "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
+      comments:
+      - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
 
     - concept: standard-deviation
       arity: 1
@@ -928,7 +961,8 @@ concepts:
       arity: 2
       property: function
       en: "probability of $1 given $2"
-      comment: |
+      comments:
+      - |
                 The intent should be on the `mrow` that includes the "P"
       
                  ```
@@ -956,43 +990,49 @@ concepts:
     - concept: matrix
       arity: 1
       property: function
-      comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
+      comments:
+      - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
 
     - concept: determinant
       arity: 1
       property: function
-      comment: when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
+      comments:
+      - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
 
     - concept: adjugate
       arity: 1
       property: function
-      comment: "sometimes used when computing an inverse matrix"
+      comments:
+      - "sometimes used when computing an inverse matrix"
 
     - concept: magnitude
       arity: 1
       property: function
-      comment: "often used with matchfix single or double vertical bars"
+      comments:
+      - "often used with matchfix single or double vertical bars"
 
     - concept: norm
       arity: 1
       property: function
-      comment: "often used with matchfix double vertical bars"
+      comments:
+      - "often used with matchfix double vertical bars"
 
     - concept: span
       arity: 1
       property: function
-      comment: "often used with matchfix angle brackets"
+      comments:
+      - "often used with matchfix angle brackets"
 
     - concept: unit-vector
       arity: 1
       property: prefix
-      comment:
+      comments:
       - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
       en: "unit vector x"
 
     - concept: identity-matrix
       arity: 0
-      comment:
+      comments:
       - "This is typically represented as 'I' or bold-faced '𝐈'"
       en: "identity matrix"
 
@@ -1014,7 +1054,8 @@ concepts:
       property: infix
       default: false
       en: "$1 by $2"
-      comment: "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
+      comments:
+      - "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
                 A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
 
 
@@ -1077,7 +1118,8 @@ concepts:
         arity: 0
         en: "golden ratio"
         fr: "d"
-        comment: "Often denoted as φ"
+        comments:
+        - "Often denoted as φ"
 
 
 
@@ -1090,7 +1132,7 @@ concepts:
         property: prefix
         en:
         - "line segment $1 $2"
-        comment:
+        comments:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
 
       - concept: directed-line-segment
@@ -1098,7 +1140,7 @@ concepts:
         property: prefix
         en:
         - "directed line segment $1 $2"
-        comment:
+        comments:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
 
       - concept: line
@@ -1106,7 +1148,7 @@ concepts:
         property: prefix
         en:
         - "line $1 $2"
-        comment:
+        comments:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
 
       - concept: ray
@@ -1114,7 +1156,7 @@ concepts:
         property: prefix
         en:
         - "ray $1 $2"
-        comment:
+        comments:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
 
       - concept: arc
@@ -1122,7 +1164,7 @@ concepts:
         property: prefix
         en:
         - "arc $1 $2"
-        comment:
+        comments:
         - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
 
       - concept: length
@@ -1130,7 +1172,7 @@ concepts:
         property: function
         en:
         - "length of $1"
-        comment:
+        comments:
         - "It may be necessary to 'nest' the intent as shown here for the example:
           <math><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
@@ -1150,7 +1192,7 @@ concepts:
         property: function
         en:
         - "area of $1"
-        comment:
+        comments:
         - "There are many notations. Here's one: 
             <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
         - "The markup for this is:"
@@ -1173,7 +1215,7 @@ concepts:
         property: ???
         en:
         - "point $1 with coordinates $2 and $3"
-        comment:
+        comments:
         - "Example: P(1,2)"
 
       - concept: volume
@@ -1181,7 +1223,7 @@ concepts:
         property: function
         en:
         - "volume of $1"
-        comment:
+        comments:
         - "See comments for `length` and `volume` for examples of how this might be marked up"
 
   - title: Fill in the blank
@@ -1190,7 +1232,7 @@ concepts:
         arity: 0
         en:
         - "blank"
-        comment:
+        comments:
         - "blanks can be represented in many ways in MathML. Some examples:"
         - "`<mi intent='blank'>__</mi>`"
         - "`<mi intent='blank'>?</mi>`"
@@ -1204,7 +1246,7 @@ concepts:
         arity: 2
         property: infix
         en: $1 $2
-        comment:
+        comments:
         - "separates hours and minutes and is typically silent"
         - "Example: 2:31"
 
@@ -1215,7 +1257,7 @@ concepts:
         arity: 1
         property: function
         en: "fenced-group of $1"
-        comment:
+        comments:
         - "this includes parens, brackets, and braces"
 
       - concept: ordered-pair
@@ -1227,14 +1269,14 @@ concepts:
         arity: 2
         property: infix
         en: "$1 indexed by $2"
-        comment:
+        comments:
         - "this is typically a subscript and might also be spoken as '$1 sub $2'"
 
       - concept: highlight
         arity: 1
         property: postfix
         en: "$1 highlighted"
-        comment:
+        comments:
         - "this typically would be used inside of a larger expression and not on its own"
         - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
 
@@ -1247,7 +1289,7 @@ concepts:
         arity: 2
         property: infix
         en: "$1 per $2"
-        comment:
+        comments:
         - "Typically used with units"
         - "Used with `mfrac` or `/`"
 
@@ -1255,21 +1297,21 @@ concepts:
         arity: 2
         property: function
         en: "translation by $1 comma $2"
-        comment:
+        comments:
         - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
         
       - concept: constraint
         arity: 2
         property: infix
         en: "fraction 2 over x minus 1 with constraint x not equal to 1"
-        comment:
+        comments:
         - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
         
       - concept: binomial-coefficient
         arity: 2
         property: infix
         en: "$1 choose $2"
-        comment:
+        comments:
         - "There are many notations used for the binomial coefficient. Here are some of them: 
           <math><mrow intent='binomial-coefficent($power, $term)'>
             <mo>(</mo>
@@ -1299,7 +1341,7 @@ concepts:
         arity: 2
         property: function
         en: "$2 permutation of $1"
-        comment:
+        comments:
         - "There are many notations for this: some of them are 
             <math>
               <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
@@ -1328,7 +1370,7 @@ concepts:
         arity: "*"
         property: function
         en: "permutation cycle of $1 $2 ..."
-        comment:
+        comments:
         - "A common notation for a permutation cycle is <math><mo>(</mo>
                 <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
                 <mo>)</mo></math>"
@@ -1349,7 +1391,7 @@ concepts:
         arity: 2
         property: infix
         en: "$1 with annotation $2"
-        comment:
+        comments:
         - "used with `mover` or `munder`"
  
    
@@ -1359,14 +1401,14 @@ concepts:
         arity: 1
         property: function
         en: "fenced-group of $1"
-        comment:
+        comments:
         - "this includes parens, brackets, and braces"
 
       - concept: annotation
         arity: 2
         property: function
         en: "$1 which is $2"
-        comment:
+        comments:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
 
@@ -1374,7 +1416,7 @@ concepts:
         arity: 1
         property: function
         en: "grouped $1 end-grouped"
-        comment:
+        comments:
         - "used with `mover` or `munder`"
         - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
 
@@ -1382,7 +1424,7 @@ concepts:
         arity: 1
         property: function
         en: "repeating decimal $1"
-        comment:
+        comments:
         - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
         - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
         - "This right hand side of this might be might be marked up as:"

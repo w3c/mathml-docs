@@ -166,7 +166,7 @@ if c.link
 {% endif %}
 </td>
 {%- endfor -%}
-{%- if forloop.first-%}<td style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comment -%}
+{%- if forloop.first-%}<td style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>{%- endif -%}
@@ -190,7 +190,7 @@ if c.link
 {% endif %}
 </td>
 {%- endfor -%}
-<td style="width:auto">{%- for com in c.comment -%}
+<td style="width:auto">{%- for com in c.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</td>
