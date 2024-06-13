@@ -421,7 +421,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo>]</mo></math>"
+       - "<math><mo>(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>;</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo>)</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/AnharmonicRatio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
