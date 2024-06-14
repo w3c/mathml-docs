@@ -2372,7 +2372,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='cross-ratio($a1,$a2,$a3,$a4)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='cross-ratio($a1,$a2,$a3,$a4)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cross-Ratio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
