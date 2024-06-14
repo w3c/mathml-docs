@@ -10,8 +10,8 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
-     [arg]:hover { background-color: #add8e6;}
-     [arg]:hover::after {vertical-align: sub; font-size: 0.7em; }
+     [arg]:hover {display:inline;background-color: #add8e6;}
+     [arg]:hover::after {display:inline;vertical-align: sub; font-size: 0.7em; }
      [arg="a1"]:hover::after { content: " $1" ; }
      [arg="a2"]:hover::after { content: " $2" ; }
      [arg="a3"]:hover::after { content: " $3" ; }
