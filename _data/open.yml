@@ -11530,7 +11530,7 @@ concepts:
       property: infix
       area: "geometry"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>:</mo><mi arg='a2'>y</mi><mo>:</mo><mi arg='a3'>z</mi></,ath>"
+       - "<math><mi arg='a1'>x</mi><mo>:</mo><mi arg='a2'>y</mi><mo>:</mo><mi arg='a3'>z</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trilinear_coordinates"
     
