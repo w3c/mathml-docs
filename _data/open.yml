@@ -4131,11 +4131,11 @@ concepts:
     
     - concept: fibonacci-number
       arity: 1
-      en: fibonacci number of $1
+      en: $1 th fibonacci number
       property: "indexed symbol"
       area: "number theory"
       comments:
-       - "<math><msub intent='fibonacci-number($a1)'><mi>F</mi><mi arg='a1'>x</mi></msub></math>"
+       - "<math><msub intent='fibonacci-number($a1)'><mi>F</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FibonacciNumber.html"
        - "https://en.wikipedia.org/wiki/Fibonacci_number"
@@ -4188,7 +4188,8 @@ concepts:
       en: field of sets
       property: fenced
       area: "boolean algebra"
-      notation: "⟨$1, $2⟩"
+      comments:
+       - "<math><mrow intent='field-of-sets($a1,$a2)'><mo>(</mo><mi arg='a1'>X</mi><mo>,</mo><mi arg='a2'>F</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Field_of_sets"
        - "https://www.encyclopediaofmath.org/index.php/Field_of_sets"
