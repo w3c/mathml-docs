@@ -11042,7 +11042,7 @@ concepts:
       property: mixfix, infix
       area: "set theory"
       comments:
-       - "<math><mi arg="a1">f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>&#x21a0;</mo><mi arg='a3'>Y</mi></math>"
+       - "<math><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>&#x21a0;</mo><mi arg='a3'>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
        - "https://en.wikipedia.org/wiki/Surjective_function"
@@ -11513,11 +11513,11 @@ concepts:
     
     - concept: triangular-number
       arity: 1
-      en: triangular number of $1
+      en: triangular number $1
       property: "indexed symbol"
       area: "number theory"
       comments:
-       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>T</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/TriangularNumber.html"
        - "https://en.wikipedia.org/wiki/Triangular_number"
