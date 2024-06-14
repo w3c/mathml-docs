@@ -1285,7 +1285,7 @@ concepts:
       property: mtable
       area: "group theory"
       comments:
-       - "<math><mtable><mtr><mtd><mo>×</mo></mtd><mtd><mn>1</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>−1</mn></mtd><mtd><mn>−1</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable>"
+       - "<math><mrow intent='cayley-table($a1)'><mtable arg='a1'><mtr><mtd><mo>×</mo></mtd><mtd><mn>1</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>−1</mn></mtd></mtr><mtr><mtd><mn>−1</mn></mtd><mtd><mn>−1</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CayleyTable.html"
        - "https://en.wikipedia.org/wiki/Cayley_table"
@@ -1532,7 +1532,7 @@ concepts:
       property: "indexed symbol"
       area: "Riemannian geometry"
       comments:
-       - "<math><mmultiscripts><mi>&Gamma;</mi><mrow/><mi arg='a3'>k</mi><mi arg='a1'>i</mi><mrow/><mi arg='a2'>j</mi><mrow/></mmultiscripts></math>"
+       - "<math><mmultiscripts intent='christoffel-symbol-of-second-kind($a1,$a2,$a3)'><mi>&Gamma;</mi><mrow/><mi arg='a3'>k</mi><mi arg='a1'>i</mi><mrow/><mi arg='a2'>j</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChristoffelSymbol.html"
        - "https://en.wikipedia.org/wiki/Christoffel_symbols"
@@ -2148,7 +2148,7 @@ concepts:
       property: constant
       area: "logic"
       comments:
-       - "<math><mo>⊥</mo></math>"
+       - "<math><mo intent='contradiction'>⊥</mo></math>"
       urls: 
        - "https://mathworld.wolfram.com/Contradiction.html"
        - "https://en.wikipedia.org/wiki/Contradiction"
@@ -2583,13 +2583,13 @@ concepts:
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4705"
     
-    - concept: decrease-tends-to?
+    - concept: decrease-tends-to
       arity: 2
-      en: $1 decrease tends to? $2
+      en: $1 decrease tends to $2
       property: infix
       area: "calculus"
       comments:
-       - "<math><mrow><mi arg='a1'>X</mi><mo>↘</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='decrease-tends-to($a1,$a2)''><mi arg='a1'>X</mi><mo>↘</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right"
        - "http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf"
@@ -4292,7 +4292,7 @@ concepts:
       property: mover
       area: "fourier analysis"
       comments:
-       - "<math><mover><mi>f</mi><mo>^</mo></mover></math>"
+       - "<math><mover intent='fourier-transform($a1)'><mi arg='a1'>f</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://mathworld.wolfram.com/FourierTransform.html"
        - "https://en.wikipedia.org/wiki/%E2%84%B1"
@@ -5747,7 +5747,7 @@ concepts:
       area: "set theory"
       notation: "$1 [ $2 ]"
       notationc: "msub $1 *"
-      notationb: "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
+      notationb: "<msup><mi>X</mi><mo>→</mo></msup>"
       notationa: "$1 '' $2"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
@@ -5880,13 +5880,13 @@ concepts:
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4606"
     
-    - concept: increase-tends-to?
+    - concept: increase-tends-to
       arity: 2
-      en: $1 increase tends to? $2
+      en: $1 increase tends to $2
       property: infix
       area: "calculus"
       comments:
-       - "<math><mrow><mi arg='a1'>X</mi><mo>↗</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='increase-tends-to($a1,$a2)'><mi arg='a1'>X</mi><mo>↗</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right"
        - "http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf"
@@ -6139,7 +6139,7 @@ concepts:
       property: symbol
       area: "probability theory"
       comments:
-       - "<math><msubsup><mi>W</mi><mi>p</mi><mn>−1</mn></msubsup></math>"
+       - "<math><msubsup intent='inverse-wishart-distribution'><mi>W</mi><mi>p</mi><mn>−1</mn></msubsup></math>"
       urls: 
        - "https://mathworld.wolfram.com/WishartDistribution.html"
        - "https://en.wikipedia.org/wiki/Wishart_distribution"
@@ -6724,7 +6724,7 @@ concepts:
       property: indexed fenced
       area: "classical mechanics"
       comments:
-       - "<math><msub><mrow><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>]</mo></mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msub></math>"
+       - "<math><msub intent='lagrange-bracket($1,$2,$3,$4)'><mrow><mo>[</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>]</mo></mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/LagrangeBracket.html"
        - "https://en.wikipedia.org/wiki/Lagrange_bracket"
@@ -7009,7 +7009,7 @@ concepts:
       property: "indexed symbol"
       area: "combinatorics"
       comments:
-       - "<math><msub><mi>&#x03f5;</mi><mrow><mi arg='a1'>i</mi><mi arg='a2'>j</mi><mi arg='a3'>k</mi></mrow></msub></math>"
+       - "<math><msub intent='levi-civita-symbol($1,$2,$3)'><mi>&#x03f5;</mi><mrow><mi arg='a1'>i</mi><mi arg='a2'>j</mi><mi arg='a3'>k</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Levi-CivitaSymbol.html"
        - "https://en.wikipedia.org/wiki/Levi-Civita_symbol"
@@ -7851,12 +7851,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/M%C3%B6bius_function"
     
     - concept: moment-of-function
-      arity: 2
-      en: moment of function $1 $2
+      arity: 
+      en: $1 th moment 
       property: "msub, mixfix"
       area: "mathematics"
       comments:
-       - "<math><msub><mi>μ</mi><mi arg='a1'>x</mi></msub></math>"
+       - "<math><mrow intent='moment-of-function($a1)'><msub><mi>μ</mi><mi arg='a1'>n</mi></msub></math></math>"
       notationa: "mrow E [ msup $1 $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
@@ -8165,7 +8165,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-       - "<math><mover><mi>h</mi><mo>^</mo></mover></math>"
+       - "<math><mover intent='neron-tate-height'><mi>h</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/N%C3%A9ron%E2%80%93Tate_height"
       alias:
@@ -8521,7 +8521,7 @@ concepts:
       property: mixfix
       area: "numerical analysis"
       comments:
-       - "<math><msub><mrow><mo>[</mo><mi arg='a1'>X</mi><mo>/</mo><mi arg='a2'>Y</mi><mo>]</mo></mrow><mi>f</mi></msub></math>"
+       - "<math><msub intent='pade-approximant($a1,$a2,$a3)'><mrow><mo>[</mo><mi arg='a1'>X</mi><mo>/</mo><mi arg='a2'>Y</mi><mo>]</mo></mrow><mi>f</mi></msub></math>"
       urls: 
        - "https://dlmf.nist.gov/3.11#SS4.p1"
        - "https://mathworld.wolfram.com/PadeApproximant.html"
@@ -8568,7 +8568,7 @@ concepts:
       property: embellished infix
       area: "category theory"
       notation: "<munderover>"
-      notationd: "<math><mrow/>"
+      notationd: "<mrow/>"
       notationc: "<munder><mo>⟶</mo> $1</munder>"
       notationb: "<mover><mo>⟶</mo> $2</mover>"
       notationa: "</munderover>"
@@ -9287,7 +9287,7 @@ concepts:
       property: constant
       area: "geometry"
       comments:
-       - "<math><msqrt><mn>2</mn></msqrt></math>"
+       - "<math><msqrt intent='pythagoras-constant'><mn>2</mn></msqrt></math>"
       urls: 
        - "https://mathworld.wolfram.com/PythagorassConstant.html"
        - "https://en.wikipedia.org/wiki/Sqrt(2)"
@@ -9322,8 +9322,8 @@ concepts:
       property: symbol
       area: "mathematical symbols"
       comments:
-       - "<math><mo>□</mo></math>"
-       - "<math><mo>∎</mo></math>"
+       - "<math><mo intent='qed'>□</mo></math>"
+       - "<math><mo intent='qed'>∎</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tombstone_(typography)"
       alias:
@@ -9450,7 +9450,7 @@ concepts:
       property: symbol
       area: "geometry"
       comments:
-       - "<math><mi arg='a1'>x</mi></math>"
+       - "<math><mi intent='radius-vector'>x</mi></math>"
        - "<math><mi intent='radius-vector'>r</mi></math>"
        - "<math><mi intent='radius-vector'>s</mi></math>"
       urls: 
@@ -9810,14 +9810,14 @@ concepts:
     
     
     - concept: riemann-sphere
-      arity: 1
-      en: riemann sphere of $1
+      arity: 0
+      en: riemann sphere
       property: scripted symbol
       area: "projective geometry"
       comments:
-       - "<math><mover><mi>ℂ</mi><mo>^</mo></mover></math>"
-       - "<math><mover><mi>ℂ</mi><mo>¯</mo></mover></math>"
-       - "<math><msub intent='riemann-sphere($a1)'><mi>ℂ</mi><mo>∞</mo></msub></math>"
+       - "<math><mover intent='riemann-sphere'><mi>ℂ</mi><mo>^</mo></mover></math>"
+       - "<math><mover intent='riemann-sphere'><mi>ℂ</mi><mo>¯</mo></mover></math>"
+       - "<math><msub intent='riemann-sphere'><mi>ℂ</mi><mo>∞</mo></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannSphere.html"
        - "https://en.wikipedia.org/wiki/Riemann_sphere"
@@ -9953,7 +9953,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-       - "<math><mi mathvariant='normal'>i</mi></math>"
+       - "<math><mi intent='roman-numeral' mathvariant='normal'>i</mi></math>"
        - "<math><mi intent='roman-numeral'>ii</mi></math>"
        - "<math><mi intent='roman-numeral'>iii</mi></math>"
        - "<math><mi intent='roman-numeral'>iv</mi></math>"
@@ -10197,7 +10197,7 @@ concepts:
       property: "indexed function"
       area: "relational algebra"
       comments:
-       - "<math><msub><mi>&sigma;</mi><mrow><mi arg='a1'>a</mi><mi arg='a2'>&theta;</mi><mi arg='a3'>b</mi></mrow></msub></math>"
+       - "<math><msub intent='selection($a1,$a2,$a3)'><mi>&sigma;</mi><mrow><mi arg='a1'>a</mi><mi arg='a2'>&theta;</mi><mi arg='a3'>b</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Selection_(relational_algebra)"
     
@@ -12331,7 +12331,7 @@ concepts:
       property: fenced
       area: "ring theory"
       comments:
-       - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='witt-vector($a1)'><mi>W</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Witt_vector"
        - "https://www.encyclopediaofmath.org/index.php/Witt_vector"
@@ -12468,7 +12468,7 @@ concepts:
       property: "indexed symbol"
       area: "linear algebra"
       comments:
-       - "<math><msub><mn>0</mn><mrow><mi arg='a1'>i</mi><mi arg='a2'>j</mi></mrow></msub></math>"
+       - "<math><msub intent='zero-matrix($a1,$a2)'><mn>0</mn><mrow><mi arg='a1'>i</mi><mi arg='a2'>j</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_matrix"
     
