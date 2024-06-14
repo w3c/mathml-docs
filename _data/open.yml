@@ -421,7 +421,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='anharmonic-ratio($a1,$a2,$a3,$a4)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AnharmonicRatio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -1998,7 +1998,7 @@ concepts:
       property: mixfix
       area: "geometry"
       comments:
-       - "<math><mrow><mo>(</mo><msub><mi arg='a1'>a</mi><mi arg='a2'>b</mi></msub><mo>,</mo><msub><mi arg='a3'>c</mi><mi arg='a4'>d</mi></msub><mo>)</mo></mrow></math>"     
+       - "<math><mrow intent='configuration($a1,$a2,$a3,$a4)'><mo>(</mo><msub><mi arg='a1'>a</mi><mi arg='a2'>b</mi></msub><mo>,</mo><msub><mi arg='a3'>c</mi><mi arg='a4'>d</mi></msub><mo>)</mo></mrow></math>"     
       urls: 
        - "https://mathworld.wolfram.com/Configuration.html"
        - "https://en.wikipedia.org/wiki/Configuration_(geometry)"
@@ -2372,7 +2372,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='cross-ratio($a1,$a2,$a3,$a4)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cross-Ratio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -10648,7 +10648,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow><mo>&squ;</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi><mo>&thinsp;</mo><mi arg='a4'>D</mi></mrow></mrow></math>"
+       - "<math><mrow intent='square($a1,$a2,$a3,$a4)'><mo>&squ;</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi><mo>&thinsp;</mo><mi arg='a4'>D</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Square.html"
        - "https://en.wikipedia.org/wiki/Square"
