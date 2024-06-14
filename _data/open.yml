@@ -2857,7 +2857,7 @@ concepts:
       property: symbol
       area: "special functions"
       comments:
-       - "<math><msub><mi>ψ</mi><mn>0</mn></msup></math>"
+       - "<math><msub><mi>ψ</mi><mn>0</mn></msub></math>"
        - "<math><msup><mi>ψ</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></msup></math>"
        - "<math><mi>F</mi></math>"
       urls: 
@@ -4531,7 +4531,7 @@ concepts:
       property: msup, fenced
       area: "category theory"
       comments:
-       - "<math><msup><mi>f</mi><mi>g</mi><msup></math>"
+       - "<math><msup><mi>f</mi><mi>g</mi></msup></math>"
        - "<math><mo>[</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo>]</mo></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Functor_category"
