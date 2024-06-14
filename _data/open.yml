@@ -5681,7 +5681,7 @@ concepts:
       property: "indexed symbol"
       area: "topology"
       comments:
-       - "<math><msup intent='ypertorus($a1)'><mi>T</mi><mi arg='a1'>n</mi></msup></math>"
+       - "<math><msup intent='hypertorus($a1)'><mi>T</mi><mi arg='a1'>n</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torus#n-dimensional_torus"
       alias:
@@ -6255,7 +6255,7 @@ concepts:
     - concept: jacobi-symbol
       arity: 2
       en: jacobi symbol
-      property: mixfix$1 $2
+      property: mixfix
       area: "number theory"
       comments:
        - "<math><mrow intent='jacobi-symbol($a1,$a2)'><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></math>"
