@@ -675,7 +675,7 @@ concepts:
     
     - concept: beatty-sequence
       arity: 1
-      en: beatty sequence of $1
+      en: $1 th beatty sequence
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -686,7 +686,7 @@ concepts:
     
     - concept: bell-number
       arity: 1
-      en: bell number of $1
+      en: $1 th bell number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -721,7 +721,7 @@ concepts:
     
     - concept: bergman-space
       arity: 2
-      en: bergman space
+      en: $1 th bergman space of $2
       property: "indexed function"
       area: "complex analysis"
       comments:
@@ -733,7 +733,7 @@ concepts:
     
     - concept: bernoulli-number
       arity: 1
-      en: bernoulli number of $1
+      en: $1 th bernoulli number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -833,7 +833,7 @@ concepts:
     
     - concept: betti-number
       arity: 1
-      en: betti number of $1
+      en: $1 th betti number
       property: "indexed symbol"
       area: "graph theory"
       comments:
@@ -1203,7 +1203,7 @@ concepts:
     
     - concept: catalan-number
       arity: 1
-      en: catalan number of $1
+      en: $1 th catalan number
       property: "indexed symbol"
       area: "combinatorics"
       comments:
@@ -2393,7 +2393,7 @@ concepts:
     
     - concept: cullen-number
       arity: 1
-      en: cullen number of $1
+      en: #1th cullen number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -2518,7 +2518,7 @@ concepts:
     
     - concept: cyclotomic-polynomial
       arity: 1
-      en: cyclotomic polynomial of $1
+      en: $1 th cyclotomic polynomial
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -4088,7 +4088,7 @@ concepts:
     
     - concept: fermat-number
       arity: 1
-      en: fermat number of $1
+      en: #1th fermat number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -4369,7 +4369,7 @@ concepts:
     
     - concept: franel-number
       arity: 1
-      en: franel number of $1
+      en: $1 th franel number
       property: "indexed symbol"
       area: "combinatorics"
       comments:
