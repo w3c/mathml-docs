@@ -12064,8 +12064,8 @@ concepts:
       property: infix
       area: "analysis"
       comments:
-       - <math><mi arg='a1'>X</mi><mover><mo>→</mo><mi>w</mi></mover><mi arg='a2'>Y</mi></math>"
-       - <math><mi arg='a1'>X</mi><mo>⇀</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mi arg='a1'>X</mi><mover><mo>→</mo><mi>w</mi></mover><mi arg='a2'>Y</mi></math>"
+       - "<math><mi arg='a1'>X</mi><mo>⇀</mo><mi arg='a2'>Y</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeakConvergence.html"
        - "https://en.wikipedia.org/wiki/Weak_convergence_(Hilbert_space)"
