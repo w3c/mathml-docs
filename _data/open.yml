@@ -11042,7 +11042,7 @@ concepts:
       property: mixfix, infix
       area: "set theory"
       comments:
-       - "<math><mi>f</mi><mo>:</mo><mi arg='a1'>X</mi><mo>&#x21a0;</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mi arg="a1">f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>&#x21a0;</mo><mi arg='a3'>Y</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
        - "https://en.wikipedia.org/wiki/Surjective_function"
@@ -11526,10 +11526,11 @@ concepts:
     
     - concept: trilinear-coordinates
       arity: 3
-      en: $1 trilinear coordinates $2
+      en: trilinear coordinates $1, $2, $3
       property: infix
       area: "geometry"
-      notation: "mrow $1 : $2 : $3"
+      comments:
+       - "<math><mi arg='a1'>x</mi><mo>:</mo><mi arg='a2'>y</mi><mo>:</mo><mi arg='a3'>z</mi></,ath>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trilinear_coordinates"
     
