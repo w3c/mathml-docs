@@ -12463,7 +12463,7 @@ concepts:
        - "https://ncatlab.org/nlab/show/zero+ideal"
     
     - concept: zero-matrix
-      arity: 1
+      arity: 2
       en: $1 $2 zero matrix
       property: "indexed symbol"
       area: "linear algebra"
