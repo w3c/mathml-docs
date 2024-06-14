@@ -887,7 +887,7 @@ concepts:
       property: mixfix
       area: "set theory"
       comments:
-       - "<math><mrow intent='bijection($a1,$a2,$a3)'><mi>f</mi><mo>:</mo><mi arg='a1'>X</mi><mo>⤖</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='bijection($a1,$a2,$a3)'><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>⤖</mo><mi arg='a3'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
     
