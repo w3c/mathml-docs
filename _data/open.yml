@@ -3634,7 +3634,7 @@ concepts:
       property: function
       area: "algebraic topology"
       comments:
-       - "<math><mrow intent='equivariant-cohomology($a1,$a2)'><msubsup><mi>H</mi><mi>G</mi><mo>*</mo></msubsup><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>;</mo><mo>&#x039b;</mo><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='equivariant-cohomology($a1,$a2)'><msubsup><mi>H</mi><mi>G</mi><mo>*</mo></msubsup><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>;</mo><mo arg='a2'>&#x039b;</mo><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Equivariant_cohomology"
        - "https://ncatlab.org/nlab/show/equivariant+cohomology"
@@ -4015,10 +4015,12 @@ concepts:
     
     - concept: faber-polynomial
       arity: 1
-      en: faber polynomial of $1
+      en: $1 th faber polynomial
       property: function
       area: "polynomials"
       notation: "msub P m"
+      comments:
+       - "<math><msub intent='faber-polynomial($a1)'><mi mathvariant='normal'>P</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FaberPolynomial.html"
        - "https://en.wikipedia.org/wiki/Faber_polynomials"
