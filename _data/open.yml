@@ -5636,11 +5636,12 @@ concepts:
        - "https://dlmf.nist.gov/6.2#E15"
     
     - concept: hyperbolic-space
-      arity: 0
+      arity: 1
       en: hyperbolic space
       property: symbol
       area: "non-euclidean geometry"
-      notation: "msupH$1"
+      comments:
+       - "<math><msup intent='hyperbolic-space($1)'><mi mathvariant='normal'>H</mi><mi arg='a1'>n</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/HyperbolicSpace.html"
        - "https://en.wikipedia.org/wiki/Hyperbolic_space"
@@ -5650,7 +5651,8 @@ concepts:
       en: hyperbolic umbilic canonical integral function of $1
       property: function
       area: "special functions"
-      notation: "mrow Ψ sup (E"
+      comments:
+       - "<math><mrow intent='hyperbolic-umbilic-canonical-integral-function($a1)'><msup><mo>Ψ</mo><mrow><mo>(</mo><mi mathvariant='normal'>E</mi></mrow></msup><mi arg='a1'>z</mi></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/36.2#E11"
        - "https://dlmf.nist.gov/36.3#i"
