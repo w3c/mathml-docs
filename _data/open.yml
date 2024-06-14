@@ -2893,6 +2893,8 @@ concepts:
       property: function
       area: "special functions"
       notation: "msub Li 2"
+      comments:
+       - "<math><mrow intent='dilogarithm($a1)'><msub><mi>L</mi><mn>2</mn></msub><mi arg='a1'>z</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Dilogarithm.html"
        - "https://en.wikipedia.org/wiki/Spence%27s_function"
@@ -2983,7 +2985,8 @@ concepts:
       en: direct limit of $1
       property: prefix
       area: "category theory"
-      notation: "munder lim →"
+      comments:
+       - "<math><mrow intent='direct-limit($a1)'><munder><mi>lim</mi><mo>→</mo></munder><mi>A</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirectLimit.html"
        - "https://en.wikipedia.org/wiki/Direct_limit"
