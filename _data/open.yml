@@ -5622,7 +5622,8 @@ concepts:
       en: hyperbolic plane
       property: symbol
       area: "non-euclidean geometry"
-      notation: "msup ℍ 2"
+      comments:
+       - "<math><msup intent='hyperbolic-plane'><mi>ℍ</mi><mn>2</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/HyperbolicPlane.html"
        - "https://ncatlab.org/nlab/show/hyperbolic+plane"
@@ -5676,10 +5677,11 @@ concepts:
     
     - concept: hypertorus
       arity: 1
-      en: hypertorus of $1
+      en: $1 th hypertorus
       property: "indexed symbol"
       area: "topology"
-      notation: "msupT$1"
+      comments:
+       - "<math><msup intent='ypertorus($a1)'><mi>T</mi><mi arg='a1'>n</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torus#n-dimensional_torus"
       alias:
