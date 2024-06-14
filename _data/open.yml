@@ -1134,7 +1134,7 @@ concepts:
       property: infix
       area: "algebraic topology"
       comments:
-       - "<math><mrow intent='cap-product($a1,$a2)'><mi arg='a1'>X</mi><mo>⌣</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='cap-product($a1,$a2)'><mi arg='a1'>X</mi><mo>⌢</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Cap_product"
        - "https://ncatlab.org/nlab/show/cap+product"
