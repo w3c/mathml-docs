@@ -20,7 +20,7 @@ a.self {color: black; font-weight:500}
 math:not(:has(*[intent])) {
     color: red;
     }
-}</style>
+</style>
 
 <style id="langcss">
 {% for language in site.data.languages offset:1-%}
