@@ -76,7 +76,7 @@ concepts:
       property: prefix
       area: "abstract algebra"
       comments:
-       - "<math><mo>-</mo><mi>n</mi></math>"
+       - "<math><mo>-</mo><mi arg='a1'>n</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Additive_inverse"
       alias:
@@ -690,7 +690,7 @@ concepts:
       property: "indexed symbol"
       area: "number theory"
       comments:
-       - "<math><msub><mi>B</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>B</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/BellNumber.html"
        - "https://en.wikipedia.org/wiki/Bell_number"
@@ -725,7 +725,7 @@ concepts:
       property: "indexed function"
       area: "complex analysis"
       comments:
-       - "<math><msup><mi>A</mi><mi>n</mi></msup><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><msup><mi>A</mi><mi arg='a1'>n</mi></msup><mrow><mo>(</mo><mi arg='a2'>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BergmanSpace.html"
        - "https://en.wikipedia.org/wiki/Bergman_space"
@@ -752,7 +752,7 @@ concepts:
       property: "indexed function"
       area: "number theory"
       comments:
-       - "<math><msub><mi>B</mi><mi>n</mi></msub><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><msub><mi>B</mi><mi arg='a1'>n</mi></msub><mrow><mo>(</mo><mi arg='a2'>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BernoulliPolynomial.html"
        - "https://en.wikipedia.org/wiki/Bernoulli_polynomials"
@@ -766,7 +766,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><msub><mi>J</mi><mi>n</mi></msub><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><msub><mi>J</mi><mi arg='a1'>n</mi></msub><mrow><mo>(</mo><mi arg='a2'>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BesselFunction.html"
        - "https://en.wikipedia.org/wiki/Bessel_function"
@@ -779,7 +779,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><msub><mi arg='a2'>Y</mi><mi>n</mi></msub><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><msub><mi>Y</mi><mi arg='a1'>n</mi></msub><mrow><mo>(</mo><mi arg='a2'>X</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BesselFunctionoftheSecondKind.html"
        - "https://dlmf.nist.gov/10.2#E3"
@@ -791,7 +791,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><msub><mi arg='a2'>y</mi><mi>n</mi></msub><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><msub><mi>y</mi><mi arg='a1'>n</mi></msub><mrow><mo>(</mo><mi arg='a2'>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BesselPolynomial.html"
        - "https://en.wikipedia.org/wiki/Bessel_polynomials"
@@ -3088,7 +3088,7 @@ concepts:
       property: function
       area: "mathematical analysis"
       comments:
-       - "<math><msup><mi>D</mi><mi>n</mi></msup><mi>f</mi></math>"
+       - "<math><msup><mi>D</mi><mi>n</mi></msup><mi arg='a1'>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirichletKernel.html"
        - "https://en.wikipedia.org/wiki/Dirichlet_kernel"
@@ -3405,9 +3405,9 @@ concepts:
       property: unit
       area: "arithmetic"
       comments:
-       - "<math><msub><mi>n</mi><mi>z</mi></msub></math>"
-       - "<math><msub><mi>n</mi><mn>12</mn></msub></math>"
-       - "<math><msub><mi>n</mi><mi>doz</mi></msub></math>"
+       - "<math><msub><mi arg='a1'>n</mi><mi>z</mi></msub></math>"
+       - "<math><msub><mi arg='a1'>n</mi><mn>12</mn></msub></math>"
+       - "<math><msub><mi arg='a1'>n</mi><mi>doz</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Duodecimal.html"
        - "https://en.wikipedia.org/wiki/Duodecimal#Base_notation"
@@ -4257,7 +4257,7 @@ concepts:
       property: operator
       area: "numerical analysis"
       comments:
-       - "<math><msubsup><mi>&Delta;</mi><mi arg='a1'>x</mi><mi>n</mi></msubsup><mrow><mi>f</mi><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+       - "<math><msubsup><mi>&Delta;</mi><mi arg='a2'>x</mi><mi arg='a1'>n</mi></msubsup><mrow><mi arg='a3'>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ForwardDifference.html)"
        - "https://dlmf.nist.gov/18.1#EGx1"
@@ -4519,7 +4519,7 @@ concepts:
       property: mixfix
       area: "number theory"
       comments:
-       - "<math><mrow><mi>f</mi><mo>≡</mo><mi>g</mi></mrow><mrow><mo>(</mo><mi>mod</mi><mi>n</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow><mi arg='a1'>f</mi><mo>≡</mo><mi arg='a2'>g</mi></mrow><mrow><mo>(</mo><mi>mod</mi><mi arg='a3'>n</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FunctionalCongruence.html"
       alias:
@@ -11160,7 +11160,7 @@ concepts:
       property: "indexed function"
       area: "topology"
       comments:
-       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>T</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/TangentSpace.html"
        - "https://en.wikipedia.org/wiki/Tangent_space"
@@ -11184,7 +11184,7 @@ concepts:
       property: "indexed function"
       area: "group theory"
       comments:
-       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>T</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tate_module"
        - "https://ncatlab.org/nlab/show/Tate+module"
@@ -11303,7 +11303,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><msub><mi>θ</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>θ</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/ThetaFunction.html"
        - "https://en.wikipedia.org/wiki/Theta_function"
@@ -11596,7 +11596,7 @@ concepts:
       property: msub
       area: "complex analysis"
       comments:
-       - "<math><msub><mi>T</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>T</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tube_domain"
        - "https://www.encyclopediaofmath.org/index.php/Tube_domain"
@@ -11680,11 +11680,11 @@ concepts:
     
     - concept: ulam-number
       arity: 1
-      en: ulam number of $1
+      en: $1 th ulam number
       property: "indexed symbol"
       area: "integer sequences"
       comments:
-       - "<math><msub><mi>U</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>U</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/UlamNumber.html"
        - "https://en.wikipedia.org/wiki/Ulam_number"
@@ -11748,11 +11748,11 @@ concepts:
     
     - concept: unitary-group
       arity: 1
-      en: unitary group of $1
+      en: $1 th unitary group
       property: "indexed symbol"
       area: "group theory"
       comments:
-       - "<math><msub><mi>U</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>U</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/UnitaryGroup.html"
        - "https://en.wikipedia.org/wiki/Unitary_group"
@@ -11908,7 +11908,7 @@ concepts:
       property: "indexed symbol"
       area: "category theory"
       comments:
-       - "<math><msub><mi>Vect</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>Vect</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/Vect"
     
@@ -12163,7 +12163,7 @@ concepts:
       property: "indexed symbol"
       area: "graph theory"
       comments:
-       - "<math><msub><mi>W</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>W</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WheelGraph.html"
        - "https://en.wikipedia.org/wiki/Wheel_graph"
@@ -12233,7 +12233,7 @@ concepts:
       property: "indexed symbol"
       area: "martingale theory"
       comments:
-       - "<math><msub><mi>W</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>W</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WienerProcess.html"
        - "https://en.wikipedia.org/wiki/Wiener_process"
@@ -12253,11 +12253,11 @@ concepts:
     
     - concept: wilson-polynomial
       arity: 1
-      en: wilson polynomial of $1
+      en: $1 th wilson polynomial 
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
-       - "<math><msub><mi>W</mi><mi>n</mi></msub></math>"
+       - "<math><msub><mi>W</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/WilsonPolynomial.html"
        - "https://en.wikipedia.org/wiki/Wilson_polynomials"
