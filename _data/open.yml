@@ -2589,7 +2589,7 @@ concepts:
       property: infix
       area: "calculus"
       comments:
-       - "<math><mrow intent='decrease-tends-to($a1,$a2)''><mi arg='a1'>X</mi><mo>↘</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='decrease-tends-to($a1,$a2)'><mi arg='a1'>X</mi><mo>↘</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right"
        - "http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf"
