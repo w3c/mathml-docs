@@ -66,7 +66,7 @@ concepts:
       property: postfix. prefix
       area: "calendar units"
       comments:
-       - "<math><mrow intent='ad($a1)'><mi>AD</mi><mo>&#x2009;</mo><mn>2024</mn></mrow></math>"
+       - "<math><mrow intent='ad($a1)'><mi>AD</mi><mo>&#x2009;</mo><mn arg='a1'>2024</mn></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Anno_Domini"
     
@@ -76,7 +76,7 @@ concepts:
       property: prefix
       area: "abstract algebra"
       comments:
-       - "<math><mrow intent='additive-inverse($a1)'><mo>-</mo><mi arg='a1'>n</mi></math>"
+       - "<math><mrow intent='additive-inverse($a1)'><mo>-</mo><mi arg='a1'>n</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Additive_inverse"
       alias:
@@ -346,7 +346,7 @@ concepts:
       property: indexed infix
       area: "group theory"
       comments:
-       - "<math><mi arg='a1'>A</mi><msub><mo>⁎</mo><mi arg='a3'>C</mi></msub><mi arg='a2'>B</mi></math>"
+       - "<math><mrow intent='amalgamated-product($a1,$a2,$a3)'><mi arg='a1'>A</mi><msub><mo>⁎</mo><mi arg='a3'>C</mi></msub><mi arg='a2'>B</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/828828/amalgamated-product"
        - "https://en.wikipedia.org/wiki/Free_product"
@@ -421,7 +421,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>)</mo></math>"
+       - "<math><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AnharmonicRatio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -493,8 +493,8 @@ concepts:
       property: unit
       area: "SI-mentioned units"
       comments:
-       - "<math><mrow intent='arcminute($a1)'><mi>arcmin</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='arcminute($a1)'><mi>amin</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='arcminute($a1)'><mi>arcmin</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='arcminute($a1)'><mi>amin</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "mo ′"
       urls: 
        - "https://mathworld.wolfram.com/Arcminute.html"
@@ -511,8 +511,8 @@ concepts:
       property: unit
       area: "SI-mentioned units"
       comments:
-       - "<math><mrow intent='arcsecond($a1)'><mi>arcsec</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='arcsecond($a1)'><mi>asec</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='arcsecond($a1)'><mi>arcsec</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='arcsecond($a1)'><mi>asec</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "mo ′′"
       urls: 
        - "https://mathworld.wolfram.com/Arcminute.html"
@@ -560,8 +560,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='arithmetic-geometric-mean($a1)'><mi>agm</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='arithmetic-geometric-mean($a1)'><mi>AGM</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='arithmetic-geometric-mean($a1)'><mi>agm</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='arithmetic-geometric-mean($a1)'><mi>AGM</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Arithmetic-GeometricMean.html"
        - "https://en.wikipedia.org/wiki/Arithmetic%E2%80%93geometric_mean"
@@ -585,7 +585,7 @@ concepts:
       property: fenced
       area: "algebra"
       comments:
-       - "<math><mrow intent='associator($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>]</mo></math>"
+       - "<math><mrow intent='associator($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Associator.html"
        - "https://en.wikipedia.org/wiki/Associator"
@@ -636,7 +636,7 @@ concepts:
       property: unit
       area: "imperial units"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>bbl</mi></math>"
+       - "<math><mrow intent='barrel($a1)'><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>bbl</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Barrel.html"
        - "https://en.wikipedia.org/wiki/Barrelled_space"
@@ -669,7 +669,7 @@ concepts:
       property: postfix
       area: "calendar units"
       comments:
-       - "<math><mn>2024</mn><mo>&#x2009;</mo><mi>BC</mi></math>"      
+       - "<math><mrow intent='bc($a1)'><mn>2024</mn><mo>&#x2009;</mo><mi>BC</mi></mrow></math>"      
       urls: 
        - "https://en.wikipedia.org/wiki/Anno_Domini"
     
@@ -804,10 +804,10 @@ concepts:
       property: function
       area: "probability theory"
       comments:
-       - "<math><mrow intent='beta-distribution($a1)'><mi>B</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='beta-distribution($a1)'><mi>Beta</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='beta-distribution($a1)'><mi>𝓑𝓮</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='beta-distribution($a1)'><mi>β</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='beta-distribution($a1)'><mi>B</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='beta-distribution($a1)'><mi>Beta</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='beta-distribution($a1)'><mi>𝓑𝓮</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='beta-distribution($a1)'><mi>β</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BetaDistribution.html"
        - "https://en.wikipedia.org/wiki/Beta_distribution"
@@ -818,8 +818,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='beta-function($a1)'><mi>B</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='beta-function($a1)'><mi>β</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='beta-function($a1)'><mi>B</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='beta-function($a1)'><mi>β</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BetaFunction.html"
        - "https://en.wikipedia.org/wiki/%CE%92(x,_y)"
@@ -850,9 +850,9 @@ concepts:
       property: infix
       area: "logic"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⇔</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>≡</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>iff</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='biconditional($a1,$a2)'><mi arg='a1'>X</mi><mo>⇔</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='biconditional($a1,$a2)'><mi arg='a1'>X</mi><mo>≡</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='biconditional($a1,$a2)'><mi arg='a1'>X</mi><mo>iff</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Biconditional.html"
        - "https://ncatlab.org/nlab/show/biconditional"
@@ -866,7 +866,7 @@ concepts:
       property: prefix
       area: "complexity"
       comments:
-       - "<math><mrow><mi>O</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='big-O($a1)'><mi>O</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: ""
       urls: 
        - "https://en.wikipedia.org/wiki/Big_O_notation"
@@ -887,7 +887,7 @@ concepts:
       property: mixfix
       area: "set theory"
       comments:
-       - "<math><mrow intent='bijection($a1,$a2,$a3)'><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>⤖</mo><mi arg='a3'>Y</mi></math>"
+       - "<math><mrow intent='bijection($a1,$a2,$a3)'><mi>f</mi><mo>:</mo><mi arg='a1'>X</mi><mo>⤖</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
     
@@ -934,8 +934,8 @@ concepts:
       property: symbol
       area: "computer science"
       comments:
-       - "<math><mn>0</mn></math>"
-       - "<math><mn>1</mn></math>"
+       - "<math><mrow><mn>0</mn></mrow></math>"
+       - "<math><mrow><mn>1</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Bit.html"
        - "https://en.wikipedia.org/wiki/Bit"
@@ -1030,9 +1030,9 @@ concepts:
       property: function
       area: "topology"
       comments:
-       - "<math><mrow intent='boundary($a1)'><mi>bd</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='boundary($a1)'><mi>fr</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='boundary($a1)'><mi>∂</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='boundary($a1)'><mi>bd</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='boundary($a1)'><mi>fr</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='boundary($a1)'><mi>∂</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Boundary.html"
        - "https://en.wikipedia.org/wiki/Boundary_(topology)"
@@ -1146,7 +1146,7 @@ concepts:
       area: "set theory"
       notation: "mrow | mo #"
       notationb: "mi card"
-      notationa: "<math><mrow intent='cardinality($a1)'><mi>n</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+      notationa: "<math><mrow intent='cardinality($a1)'><mi>n</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cardinality.html"
        - "https://en.wikipedia.org/wiki/Cardinality"
@@ -1251,7 +1251,7 @@ concepts:
       property: function
       area: "analysis"
       comments:
-       - "<math><mrow intent='cauchy-principal-value($a1)'><mi>p.v.</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='cauchy-principal-value($a1)'><mi>p.v.</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CauchyPrincipalValue.html"
        - "https://en.wikipedia.org/wiki/Cauchy_principal_value"
@@ -1297,10 +1297,10 @@ concepts:
       property: fenced, function
       area: "number theory"
       comments:
-       - "<math><mrow intent='ceiling($a1)'><mo>⌈</mo><mi arg='a1'>X</mi><mo>⌉</mo></math>"
-       - "<math><mrow intent='ceiling($a1)'><mo>&#x27e7;</mo><mi arg='a1'>X</mi><mo>&#x27e6;</mo></math>"
-       - "<math><mrow intent='ceiling($a1)'><mo>]</mo><mi arg='a1'>X</mi><mo>[</mo></math>"
-       - "<math><mrow intent='ceiling($a1)'><mi>ceil</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='ceiling($a1)'><mo>⌈</mo><mi arg='a1'>X</mi><mo>⌉</mo></mrow></math>"
+       - "<math><mrow intent='ceiling($a1)'><mo>&#x27e7;</mo><mi arg='a1'>X</mi><mo>&#x27e6;</mo></mrow></math>"
+       - "<math><mrow intent='ceiling($a1)'><mo>]</mo><mi arg='a1'>X</mi><mo>[</mo></mrow></math>"
+       - "<math><mrow intent='ceiling($a1)'><mi>ceil</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Floor_and_ceiling_functions"
        - "https://youtu.be/RxNs4SwP6lk"
@@ -1338,7 +1338,7 @@ concepts:
       property: unit
       area: "imperial units"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>chain</mi></math>"
+       - "<math><mrow intent='chain($a1)'><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>chain</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Chain_(unit)"
     
@@ -1389,7 +1389,7 @@ concepts:
       area: "probability theory"
       comments:
        - "<math><msub intent='characteristic-function($a1)'><mi>𝟏</mi><mi arg='a1'>X</mi></msub></math>"
-       - "<math><mn>1</mn><mrow><mo>{</mo><mi arg='a1'>X</mi><mo>}</mo></mrow></math>"
+       - "<math><mrow intent='characteristic-function($a1)'><mn>1</mn><mrow><mo>{</mo><mi arg='a1'>X</mi><mo>}</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CharacteristicFunction.html"
        - "https://en.wikipedia.org/wiki/Characteristic_function_(probability_theory)"
@@ -1431,9 +1431,9 @@ concepts:
       property: function
       area: "number theory"
       comments:
-       - "<math><mrow intent='chebyshev-polynomial-of-first-kind($a1)'><mi>θ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='chebyshev-polynomial-of-first-kind($a1)'><mi>ϑ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='chebyshev-polynomial-of-first-kind($a1)'><mi>T</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='chebyshev-polynomial-of-first-kind($a1)'><mi>θ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='chebyshev-polynomial-of-first-kind($a1)'><mi>ϑ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='chebyshev-polynomial-of-first-kind($a1)'><mi>T</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChebyshevPolynomialoftheFirstKind.html"
        - "https://en.wikipedia.org/wiki/Chebyshev_polynomials"
@@ -1447,8 +1447,8 @@ concepts:
       property: function
       area: "number theory"
       comments:
-       - "<math><mrow intent='chebyshev-polynomial-of-second-kind($a1)'><mi>ψ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='chebyshev-polynomial-of-second-kind($a1)'><mi>U</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='chebyshev-polynomial-of-second-kind($a1)'><mi>ψ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='chebyshev-polynomial-of-second-kind($a1)'><mi>U</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChebyshevPolynomialoftheSecondKind.html"
        - "https://en.wikipedia.org/wiki/Chebyshev_polynomials"
@@ -1558,8 +1558,8 @@ concepts:
       property: function
       area: "group theory"
       comments:
-       - "<math><mrow intent='classifying-space($a1)'><mi>B</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='classifying-space($a1)'><mi>ℬ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='classifying-space($a1)'><mi>B</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='classifying-space($a1)'><mi>ℬ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Classifying_space"
        - "https://ncatlab.org/nlab/show/classifying+space"
@@ -1659,8 +1659,8 @@ concepts:
       property: "function, msup"
       area: "abstract algebra,, topology"
       comments:
-       - "<math><mrow intent='closure($a1)'><mi>cl</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='closure($a1)'><mi>Cl</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='closure($a1)'><mi>cl</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='closure($a1)'><mi>Cl</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><msup intent='closure($a1)'><mi arg='a1'>X</mi><mo>−</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Closure.html"
@@ -1712,8 +1712,8 @@ concepts:
       property: "indexed function"
       area: "signal processing, quantum physics"
       comments:
-       - "<math><mrow intent='coherence($a1)'><mi>C</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='coherence($a1)'><mi>γ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='coherence($a1)'><mi>C</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='coherence($a1)'><mi>γ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Coherence_(signal_processing)"
        - "https://en.wikipedia.org/wiki/Coherence_(physics)"
@@ -1768,7 +1768,7 @@ concepts:
       property: fenced
       area: "abstract algebra"
       comments:
-       - "<math><mrow intent='commutator($a1,$a2)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>]</mo></math>"
+       - "<math><mrow intent='commutator($a1,$a2)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Commutator.html"
        - "https://en.wikipedia.org/wiki/Commutator"
@@ -1811,7 +1811,7 @@ concepts:
       property: infix
       area: "order theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⪋</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='comparability($a1,$a2)'><mi arg='a1'>X</mi><mo>⪋</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
       alias:
@@ -1823,7 +1823,7 @@ concepts:
       property: fenced
       area: "order theory"
       comments:
-       - "<math><mrow intent='complement-of-interval($a1,$a2)'><mo>]</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>[</mo></math>"
+       - "<math><mrow intent='complement-of-interval($a1,$a2)'><mo>]</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>[</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Interval_(mathematics)"
     
@@ -1998,7 +1998,7 @@ concepts:
       property: mixfix
       area: "geometry"
       comments:
-       - "<math><mrow><mo>(</mo><msub><mi arg='a1'>a</mi><mi arg='a2'>b</mi></msub><mo>,</mo><msub><mi arg='a3'>c</mi><mi arg='a4'>d</mi></msub><mo>)</mo></math>"     
+       - "<math><mrow><mo>(</mo><msub><mi arg='a1'>a</mi><mi arg='a2'>b</mi></msub><mo>,</mo><msub><mi arg='a3'>c</mi><mi arg='a4'>d</mi></msub><mo>)</mo></mrow></math>"     
       urls: 
        - "https://mathworld.wolfram.com/Configuration.html"
        - "https://en.wikipedia.org/wiki/Configuration_(geometry)"
@@ -2148,7 +2148,7 @@ concepts:
       property: constant
       area: "logic"
       comments:
-       - "<math><mrow><mo>⊥</mo></math>"
+       - "<math><mrow><mo>⊥</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Contradiction.html"
        - "https://en.wikipedia.org/wiki/Contradiction"
@@ -2160,7 +2160,7 @@ concepts:
       property: postfix
       area: "computer science"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>↓</mo></math>"
+       - "<math><mrow intent='converge($a1)'><mi arg='a1'>x</mi><mo>↓</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
       alias:
@@ -2345,8 +2345,8 @@ concepts:
       property: infix
       area: "order theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⋖</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>&lt;:</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='covering-relation($a1,$a2)'><mi arg='a1'>X</mi><mo>⋖</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='covering-relation($a1,$a2)'><mi arg='a1'>X</mi><mo>&lt;:</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Partially_ordered_set"
        - "https://en.wikipedia.org/wiki/Covering_relation"
@@ -2372,7 +2372,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>]</mo></math>"
+       - "<math><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>;</mo><mi arg='a3'>C</mi><mo>,</mo><mi arg='a4'>D</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cross-Ratio.html"
        - "https://en.wikipedia.org/wiki/Cross-ratio"
@@ -2447,8 +2447,8 @@ concepts:
       property: function
       area: "vector calculus"
       comments:
-       - "<math><mrow intent='curl($a1)'><mi>curl</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='curl($a1)'><mi>rot</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='curl($a1)'><mi>curl</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='curl($a1)'><mi>rot</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "mrow ∇ × $1"
       urls: 
        - "https://mathworld.wolfram.com/Curl.html"
@@ -2534,7 +2534,7 @@ concepts:
       property: prefix
       area: "partial differential equations"
       comments:
-       - "<math><mrow intent='dalembert-operator($a1)'><mo>☐</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='dalembert-operator($a1)'><mo>☐</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/D%27Alembert_operator"
        - "https://www.encyclopediaofmath.org/index.php/D'Alembert_operator"
@@ -2561,8 +2561,8 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-       - "<math><mrow intent='dawson-function($a1)'><mi>F</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='dawson-function($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='dawson-function($a1)'><mi>F</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='dawson-function($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationb: "mi sub D -"
       notationa: "mi sub D +"
       urls: 
@@ -2579,7 +2579,7 @@ concepts:
       property: postfix
       area: "physics"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>↓</mo></math>"
+       - "<math><mrow intent='decrease($a1)'><mi arg='a1'>x</mi><mo>↓</mo></mrow></math>"
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4705"
     
@@ -2622,8 +2622,8 @@ concepts:
       property: function
       area: "logic"
       comments:
-       - "<math><mrow intent='deductive-closure($a1)'><mi>Ded</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='deductive-closure($a1)'><mi>Th</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='deductive-closure($a1)'><mi>Ded</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='deductive-closure($a1)'><mi>Th</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Deductive_closure"
     
@@ -2633,11 +2633,11 @@ concepts:
       property: infix
       area: "general"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>≜</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>≝</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>:=</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mover><mo>=</mo><mi>def</mi></mover><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='defined-as($a1,$a2)'><mi arg='a1'>X</mi><mo>≜</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='defined-as($a1,$a2)'><mi arg='a1'>X</mi><mo>≝</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='defined-as($a1,$a2)'><mi arg='a1'>X</mi><mo>:=</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='defined-as($a1,$a2)'><mi arg='a1'>X</mi><mover><mo>=</mo><mi>def</mi></mover><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='defined-as($a1,$a2)'><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/522864/what-is-the-symbol-triangleq"
        - "https://drive.google.com/file/d/1z_dcQ6lsOA_0CsH55fwcg4hQF_w22olM/view"
@@ -2651,7 +2651,7 @@ concepts:
       property: prefix, postfix
       area: "physics, geometry"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>°</mo></math>"
+       - "<math><mrow intent='degree($a1)'><mi arg='a1'>x</mi><mo>°</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Degree.html"
        - "https://en.wikipedia.org/wiki/Degree_(angle)"
@@ -2723,7 +2723,7 @@ concepts:
       property: prefix
       area: "programming languages"
       comments:
-       - "<math><mrow intent='dereference($a1)'><mo>!</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='dereference($a1)'><mo>!</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://arxiv.org/pdf/1208.5915.pdf"
     
@@ -2785,8 +2785,8 @@ concepts:
       property: symbol, prefix unit
       area: "geometry"
       comments:
-       - "<math><mrow intent='diameter($a1)'><mi>d</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='diameter($a1)'><mo>⌀</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='diameter($a1)'><mi>d</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='diameter($a1)'><mo>⌀</mo><mi arg='a1'>x</mi></mrow></math>"
       notationb: "mi DIA"
       notationa: "mi dia"
       urls: 
@@ -2838,8 +2838,8 @@ concepts:
       property: prefix
       area: "calculus"
       comments:
-       - "<math><mrow intent='differential-operator($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='differential-operator($a1)'><mo>∂</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='differential-operator($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='differential-operator($a1)'><mo>∂</mo><mi arg='a1'>x</mi></mrow></math>"
       notationa: "mfrac d mrow d $1"
       urls: 
        - "https://mathworld.wolfram.com/DifferentialOperator.html"
@@ -2908,7 +2908,7 @@ concepts:
       property: "function, fenced"
       area: "linear algebra, graph theory"
       comments:
-       - "<math><mrow intent='dimension($a1)'><mi>dim</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='dimension($a1)'><mi>dim</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><mrow intent='dimension($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Dimension.html"
@@ -3124,9 +3124,9 @@ concepts:
       property: function
       area: "polynomials"
       comments:
-       - "<math><mrow intent='discriminant($a1)'><mi>Disc</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='discriminant($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='discriminant($a1)'><mi>Δ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='discriminant($a1)'><mi>Disc</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='discriminant($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='discriminant($a1)'><mi>Δ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Discriminant.html"
        - "https://en.wikipedia.org/wiki/Discriminant"
@@ -3153,7 +3153,7 @@ concepts:
       property: infix
       area: "set theory"
       comments:
-       - "<math><mi arg='a1'>A</mi><msup><mi></mi><mo>*</mo></msup><mi arg='a2'>B</mi></math>"
+       - "<math><mrow intent='disjoint-union($a1,$a2)'><mi arg='a1'>A</mi><msup><mi></mi><mo>*</mo></msup><mi arg='a2'>B</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DisjointUnion.html"
        - "https://en.wikipedia.org/wiki/Disjoint_union"
@@ -3167,7 +3167,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='distance($a1,$a2)'><mo>|</mo><mi arg='a1'>X</mi><mo>&#x2009;</mo><mi arg='a2'>Y</mi><mo>|</mo></math>"
+       - "<math><mrow intent='distance($a1,$a2)'><mo>|</mo><mi arg='a1'>X</mi><mo>&#x2009;</mo><mi arg='a2'>Y</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Distance"
     
@@ -3177,7 +3177,7 @@ concepts:
       property: postfix
       area: "computer science"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>↑</mo></math>"
+       - "<math><mrow intent='diverge($a1)'><mi arg='a1'>x</mi><mo>↑</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
       alias:
@@ -3189,8 +3189,8 @@ concepts:
       property: "function, mixfix"
       area: "vector calculus"
       comments:
-       - "<math><mrow intent='divergence($a1)'><mi>div</mi><mi>f</mi></math>"
-       - "<math><mrow intent='divergence($a1)'><mi>∇</mi><mo>⋅</mo><mi>f</mi></math>"
+       - "<math><mrow intent='divergence($a1)'><mi>div</mi><mi>f</mi></mrow></math>"
+       - "<math><mrow intent='divergence($a1)'><mi>∇</mi><mo>⋅</mo><mi>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Divergence.html"
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
@@ -3218,9 +3218,9 @@ concepts:
       property: infix
       area: "number theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>|</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a2'>Y</mi><mo>⋮</mo><mi arg='a1'>X</mi></math>"
-       - "<math><mi arg='a2'>Y</mi><mo>/</mo><mi arg='a1'>X</mi></math>"
+       - "<math><mrow intent='divisible-by($a1,$a2)'><mi arg='a1'>X</mi><mo>|</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='divisible-by($a1,$a2)'><mi arg='a2'>Y</mi><mo>⋮</mo><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='divisible-by($a1,$a2)'><mi arg='a2'>Y</mi><mo>/</mo><mi arg='a1'>X</mi></mrow></math>"
       urls: 
        - "https://youtu.be/9dyK_op-Ocw?t=251"
        - "https://en.wikipedia.org/wiki/Divisor"
@@ -3311,7 +3311,7 @@ concepts:
       property: infix
       area: "category theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⇉</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='double-category($a1,$a2)'><mi arg='a1'>X</mi><mo>⇉</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/double+category"
     
@@ -3321,7 +3321,7 @@ concepts:
       property: postfix
       area: "combinatorics"
       comments:
-       - "<math><mn>10</mn><mo>&#x203c;</mo></math>"
+       - "<math><mrow intent='double-factorial($a1)'><mn>10</mn><mo>&#x203c;</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DoubleFactorial.html"
        - "https://en.wikipedia.org/wiki/Double_factorial"
@@ -3492,9 +3492,9 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='elliptic-function($a1)'><mi>cn</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='elliptic-function($a1)'><mi>sn</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='elliptic-function($a1)'><mi>dn</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='elliptic-function($a1)'><mi>cn</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='elliptic-function($a1)'><mi>sn</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='elliptic-function($a1)'><mi>dn</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EllipticFunction.html"
        - "https://en.wikipedia.org/wiki/Elliptic_function"
@@ -3602,7 +3602,7 @@ concepts:
       property: fenced
       area: "set theory"
       comments:
-       - "<math><mrow intent='equivalence-class($a1)'><mo>[</mo><mi arg='a1'>X</mi><mo>]</mo></math>"
+       - "<math><mrow intent='equivalence-class($a1)'><mo>[</mo><mi arg='a1'>X</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EquivalenceClass.html"
        - "https://en.wikipedia.org/wiki/Equivalence_class"
@@ -3654,9 +3654,9 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='error-function($a1)'><mi>erf</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='error-function($a1)'><mi>erfc</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='error-function($a1)'><mi>w</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='error-function($a1)'><mi>erf</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='error-function($a1)'><mi>erfc</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='error-function($a1)'><mi>w</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ErrorFunction.html"
        - "https://en.wikipedia.org/wiki/Error_function"
@@ -3669,9 +3669,9 @@ concepts:
       property: infix
       area: "abstract algebra"
       comments:
-       - "<math><mi arg='a1'>X</mi><msub><mo>⊆</mo><mi>e</mi></msub><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊴</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊂</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='essential-extension($a1,$a2)'><mi arg='a1'>X</mi><msub><mo>⊆</mo><mi>e</mi></msub><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='essential-extension($a1,$a2)'><mi arg='a1'>X</mi><mo>⊴</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='essential-extension($a1,$a2)'><mi arg='a1'>X</mi><mo>⊂</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Essential_extension"
       alias:
@@ -3684,7 +3684,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-       - "<math><mrow intent='essential-infimum($a1)'><mi>ess inf</mi><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='essential-infimum($a1)'><mi>ess inf</mi><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/essentialsupremum.html"
        - "https://en.wikipedia.org/wiki/essential_supremum_and_essential_infimum"
@@ -3696,7 +3696,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-       - "<math><mrow intent='essential-supremum($a1)'><mi>ess sup</mi><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='essential-supremum($a1)'><mi>ess sup</mi><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EssentialSupremum.html"
        - "https://en.wikipedia.org/wiki/Essential_supremum_and_essential_infimum"
@@ -3844,8 +3844,8 @@ concepts:
       property: function
       area: "number theory"
       comments:
-       - "<math><mrow intent='euler-totient-function($a1)'><mi>φ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='euler-totient-function($a1)'><mi>ϕ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='euler-totient-function($a1)'><mi>φ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='euler-totient-function($a1)'><mi>ϕ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/EulerTotientFunction.html"
        - "https://en.wikipedia.org/wiki/Euler%27s_totient_function"
@@ -3882,11 +3882,11 @@ concepts:
       property: infix
       area: "logic"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⊻</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊕</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>↮</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>≢</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mi>XOR</mi><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='exclusive-or($a1,$a2)'><mi arg='a1'>X</mi><mo>⊻</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='exclusive-or($a1,$a2)'><mi arg='a1'>X</mi><mo>⊕</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='exclusive-or($a1,$a2)'><mi arg='a1'>X</mi><mo>↮</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='exclusive-or($a1,$a2)'><mi arg='a1'>X</mi><mo>≢</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='exclusive-or($a1,$a2)'><mi arg='a1'>X</mi><mi>XOR</mi><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExclusiveDisjunction.html"
        - "https://ncatlab.org/nlab/show/exclusive+disjunction"
@@ -3902,7 +3902,7 @@ concepts:
       property: fenced
       area: "quantum physics"
       comments:
-       - "<math><mrow intent='expectation-value($a1)'><mo>⟨</mo><mi arg='a1'>X</mi><mo>⟩</mo></math>"
+       - "<math><mrow intent='expectation-value($a1)'><mo>⟨</mo><mi arg='a1'>X</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExpectationValue.html"
        - "https://en.wikipedia.org/wiki/Expectation_value_(quantum_mechanics)"
@@ -3914,8 +3914,8 @@ concepts:
       property: function
       area: "probability theory"
       comments:
-       - "<math><mrow intent='expected-value($a1)'><mi>E</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='expected-value($a1)'><mi>M</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='expected-value($a1)'><mi>E</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='expected-value($a1)'><mi>M</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><msub intent='expected-value($a1)'><mi>μ</mi><mi arg='a1'>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Expected_value#Notations"
@@ -3932,7 +3932,7 @@ concepts:
       property: postfix
       area: "number theory"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>$</mo></math>"
+       - "<math><mrow intent='exponential-factorial($a1)'><mi arg='a1'>x</mi><mo>$</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ExponentialFactorial.html"
        - "https://en.wikipedia.org/wiki/Exponential_factorial"
@@ -3959,7 +3959,7 @@ concepts:
       property: "function, msup"
       area: "topology"
       comments:
-       - "<math><mrow intent='exterior($a1)'><mi>ext</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='exterior($a1)'><mi>ext</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><msup intent='exterior($a1)'><mi arg='a1'>X</mi><mi>e</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Exterior.html"
@@ -4230,10 +4230,10 @@ concepts:
       property: fenced, function
       area: "number theory"
       comments:
-       - "<math><mrow intent='floor($a1)'><mo>⌊</mo><mi arg='a1'>X</mi><mo>⌋</mo></math>"
-       - "<math><mrow intent='floor($a1)'><mo>&#x27e6;</mo><mi arg='a1'>X</mi><mo>&#x27e7;</mo></math>"
-       - "<math><mrow intent='floor($a1)'><mo>[</mo><mi arg='a1'>X</mi><mo>]</mo></math>"
-       - "<math><mrow intent='floor($a1)'><mi>floor</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='floor($a1)'><mo>⌊</mo><mi arg='a1'>X</mi><mo>⌋</mo></mrow></math>"
+       - "<math><mrow intent='floor($a1)'><mo>&#x27e6;</mo><mi arg='a1'>X</mi><mo>&#x27e7;</mo></mrow></math>"
+       - "<math><mrow intent='floor($a1)'><mo>[</mo><mi arg='a1'>X</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='floor($a1)'><mi>floor</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://youtu.be/RxNs4SwP6lk"
        - "https://youtu.be/RxNs4SwP6lk"
@@ -4350,9 +4350,9 @@ concepts:
       property: "function, fenced"
       area: "arithmetic"
       comments:
-       - "<math><mrow intent='fractional-part($a1)'><mi>frac</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='fractional-part($a1)'><mo>&#x27e6;</mo><mi arg='a1'>x</mi><mo>&#x27e7;</mo></math>"
-       - "<math><mrow intent='fractional-part($a1)'><mo>{</mo><mi arg='a1'>x</mi><mo>}</mo></math>"
+       - "<math><mrow intent='fractional-part($a1)'><mi>frac</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='fractional-part($a1)'><mo>&#x27e6;</mo><mi arg='a1'>x</mi><mo>&#x27e7;</mo></mrow></math>"
+       - "<math><mrow intent='fractional-part($a1)'><mo>{</mo><mi arg='a1'>x</mi><mo>}</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FractionalPart.html"
        - "https://en.wikipedia.org/wiki/Fractional_part"
@@ -4377,8 +4377,8 @@ concepts:
       property: function
       area: "group theory"
       comments:
-       - "<math><mrow intent='frattini-subgroup($a1)'><mi>φ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='frattini-subgroup($a1)'><mi>ϕ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='frattini-subgroup($a1)'><mi>φ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='frattini-subgroup($a1)'><mi>ϕ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FrattiniSubgroup.html"
        - "https://en.wikipedia.org/wiki/Frattini_subgroup"
@@ -4428,7 +4428,7 @@ concepts:
       property: mixfix
       area: "ring theory"
       comments:
-       - "<math><mrow intent='free-algebra($a1,$a2)'><mi>R</mi><mo>⟨</mo><mi arg='a1'>X</mi><mo>⟩</mo></math>"
+       - "<math><mrow intent='free-algebra($a1,$a2)'><mi>R</mi><mo>⟨</mo><mi arg='a1'>X</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FreeAlgebra.html"
        - "https://en.wikipedia.org/wiki/Free_algebra"
@@ -4477,9 +4477,9 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-       - "<math><mrow intent='fresnel-integral($a1)'><mi>ℱ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='fresnel-integral($a1)'><mi>C</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='fresnel-integral($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='fresnel-integral($a1)'><mi>ℱ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='fresnel-integral($a1)'><mi>C</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='fresnel-integral($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FresnelIntegrals.html"
        - "https://en.wikipedia.org/wiki/Fresnel_integral"
@@ -4508,7 +4508,7 @@ concepts:
       property: fenced
       area: "differntial geometry"
       comments:
-       - "<math><mrow intent='frolicher-nijenhuis-bracket($a1,$a2)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>]</mo></math>"
+       - "<math><mrow intent='frolicher-nijenhuis-bracket($a1,$a2)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fr%C3%B6licher%E2%80%93Nijenhuis_bracket"
        - "https://encyclopediaofmath.org/wiki/Fr%C3%B6licher-Nijenhuis_bracket"
@@ -4532,7 +4532,7 @@ concepts:
       area: "category theory"
       comments:
        - "<math><msup intent='functor-category($a1,$a2)'><mi arg='a1'>f</mi><mi arg='a1'>g</mi></msup></math>"
-       - "<math><mrow intent='functor-category($a1,$a2)'><mo>[</mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a1'>g</mi><mo>]</mo></math>"
+       - "<math><mrow intent='functor-category($a1,$a2)'><mo>[</mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a1'>g</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Functor_category"
        - "https://ncatlab.org/nlab/show/functor+category"
@@ -4617,7 +4617,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-       - "<math><mrow intent='galois-group($a1)'><mi>Gal</mi></math>"
+       - "<math><mrow intent='galois-group($a1)'><mi>Gal</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaloisGroup.html"
        - "https://en.wikipedia.org/wiki/Galois_group"
@@ -4730,7 +4730,7 @@ concepts:
       property: fenced
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='gelfand-triple($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></math>"
+       - "<math><mrow intent='gelfand-triple($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Rigged_Hilbert_space#Formal_definition_(Gelfand_triple)"
     
@@ -4773,8 +4773,8 @@ concepts:
       property: function
       area: "group theory"
       comments:
-       - "<math><mrow intent='general-linear-group($a1)'><mi>GL</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='general-linear-group($a1)'><mi>Aut</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='general-linear-group($a1)'><mi>GL</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='general-linear-group($a1)'><mi>Aut</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeneralLinearGroup.html"
        - "https://en.wikipedia.org/wiki/General_linear_group"
@@ -4894,7 +4894,7 @@ concepts:
       property: infix
       area: "geometric algebra"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>&#x2062;</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='geometric-product($a1,$a2)'><mi arg='a1'>X</mi><mo>&#x2062;</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Geometric_algebra"
     
@@ -4975,8 +4975,8 @@ concepts:
       property: function
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='gram-determinant($a1)'><mi>G</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='gram-determinant($a1)'><mi>Γ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='gram-determinant($a1)'><mi>G</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='gram-determinant($a1)'><mi>Γ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GramDeterminant.html"
        - "https://www.encyclopediaofmath.org/index.php/Gram_determinant"
@@ -5055,7 +5055,7 @@ concepts:
       comments:
        - "<math><msup intent='group-of-units($a1)'><mi arg='a1'>X</mi><mo>*</mo></msup></math>"
        - "<math><msup intent='group-of-units($a1)'><mi arg='a1'>X</mi><mo>×</mo></msup></math>"
-       - "<math><mrow intent='group-of-units($a1)'><mi>U</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='group-of-units($a1)'><mi>U</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/group+of+units"
        - "https://ncatlab.org/nlab/show/group+of+units"
@@ -5091,8 +5091,8 @@ concepts:
       property: infix
       area: "algebra"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>∘</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊙</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='hadamard-product($a1,$a2)'><mi arg='a1'>X</mi><mo>∘</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='hadamard-product($a1,$a2)'><mi arg='a1'>X</mi><mo>⊙</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HadamardProduct.html"
        - "https://en.wikipedia.org/wiki/Hadamard_product_(matrices)"
@@ -5120,7 +5120,7 @@ concepts:
       property: operator
       area: "quantum mechanics"
       comments:
-       - "<math><mrow intent='hamiltonian($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='hamiltonian($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationc: "mover H ˇ"
       notationb: "mover H ^"
       notationa: "mrow < H >"
@@ -5278,8 +5278,8 @@ concepts:
       property: function
       area: "algebra"
       comments:
-       - "<math><mrow intent='height-function($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='height-function($a1)'><mi>h</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='height-function($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='height-function($a1)'><mi>h</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Height_of_a_polynomial"
     
@@ -5325,8 +5325,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='hermite-polynomial($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='hermite-polynomial($a1)'><mi>He</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='hermite-polynomial($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='hermite-polynomial($a1)'><mi>He</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/HermitePolynomial.html"
        - "https://en.wikipedia.org/wiki/Hermite_polynomials"
@@ -5389,8 +5389,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='heun-function($a1)'><mi>Hf</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='heun-function($a1)'><mi>H⁢ℓ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='heun-function($a1)'><mi>Hf</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='heun-function($a1)'><mi>H⁢ℓ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Heun_function"
        - "https://dlmf.nist.gov/31.1"
@@ -5415,7 +5415,7 @@ concepts:
       property: unit
       area: "arithmetic"
       comments:
-       - "<math><mrow intent='hexadecimal($a1)'><mi>hex</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='hexadecimal($a1)'><mi>hex</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationb: "msub $1 hex"
       notationa: "msub $1 16"
       urls: 
@@ -5461,7 +5461,7 @@ concepts:
       property: prefix
       area: "differential geometry"
       comments:
-       - "<math><mrow intent='hodge-star-operator($a1)'><mo>⋆</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='hodge-star-operator($a1)'><mo>⋆</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hodge_dual"
        - "https://ncatlab.org/nlab/show/Hodge+star+operator"
@@ -5538,7 +5538,7 @@ concepts:
       property: unit
       area: "imperial unit"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>hp</mi></math>"
+       - "<math><mrow intent='horsepower-mechanical($a1)'><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>hp</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Horsepower"
       alias:
@@ -5550,12 +5550,12 @@ concepts:
       property: unit
       area: "metric unit"
       comments:
-       - "<math><mrow intent='horsepower-metric($a1)'><mi>PS</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='horsepower-metric($a1)'><mi>cv</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='horsepower-metric($a1)'><mi>hk</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='horsepower-metric($a1)'><mi>pk</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='horsepower-metric($a1)'><mi>ks</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='horsepower-metric($a1)'><mi>ch</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='horsepower-metric($a1)'><mi>PS</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='horsepower-metric($a1)'><mi>cv</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='horsepower-metric($a1)'><mi>hk</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='horsepower-metric($a1)'><mi>pk</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='horsepower-metric($a1)'><mi>ks</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='horsepower-metric($a1)'><mi>ch</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Metric_horsepower"
       alias:
@@ -5593,8 +5593,8 @@ concepts:
       property: infix
       area: "chemistry"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⋅</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>•</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='hydrated-compound($a1,$a2)'><mi arg='a1'>X</mi><mo>⋅</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='hydrated-compound($a1,$a2)'><mi arg='a1'>X</mi><mo>•</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hydrate"
        - "https://en.wikipedia.org/wiki/Cobalt(II)_chloride"
@@ -5659,7 +5659,7 @@ concepts:
       property: "function, fenced"
       area: "multilinear algebra"
       comments:
-       - "<math><mrow intent='hyperdeterminant($a1)'><mi>det</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='hyperdeterminant($a1)'><mi>det</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><mrow intent='hyperdeterminant($a1)'><mo>|</mo><mi arg='a1'>x</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Hyperdeterminant.html"
@@ -5702,7 +5702,7 @@ concepts:
       property: function
       area: "algebra"
       comments:
-       - "<math><mrow intent='identity-function($a1)'><mi>id</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='identity-function($a1)'><mi>id</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><msub intent='identity-function($a1)'><mi>id</mi><mi arg='a1'>x</mi></msub></math>"
        - "<math><msub intent='identity-function($a1)'><mi>I</mi><mi arg='a1'>x</mi></msub></math>"
       urls: 
@@ -5776,7 +5776,7 @@ concepts:
       property: infix
       area: "projective geometry"
       comments:
-       - "<math><mi arg='a1'>X</mi><mi>I</mi><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='incidence-relation($a1,$a2)'><mi arg='a1'>X</mi><mi>I</mi><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Incidence_(geometry)"
        - "https://en.wikipedia.org/wiki/Incidence_(epidemiology)"
@@ -5788,7 +5788,7 @@ concepts:
       property: fenced
       area: "incidence geometry"
       comments:
-       - "<math><mrow intent='incidence-structure($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>P</mi><mo>,</mo><mi arg='a2'>L</mi><mo>,</mo><mi arg='a3'>I</mi><mo>)</mo></math>"
+       - "<math><mrow intent='incidence-structure($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>P</mi><mo>,</mo><mi arg='a2'>L</mi><mo>,</mo><mi arg='a3'>I</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Incidence_structure"
     
@@ -5876,7 +5876,7 @@ concepts:
       property: postfix
       area: "physics"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>↑</mo></math>"
+       - "<math><mrow intent='increase($a1)'><mi arg='a1'>x</mi><mo>↑</mo></mrow></math>"
       urls: 
        - "https://youtu.be/HZ7a9YkF204?t=4606"
     
@@ -5886,7 +5886,7 @@ concepts:
       property: infix
       area: "calculus"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>↗</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow><mi arg='a1'>X</mi><mo>↗</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right"
        - "http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf"
@@ -5897,8 +5897,8 @@ concepts:
       property: infix
       area: "probability theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⟂</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⫫</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='independent($a1,$a2)'><mi arg='a1'>X</mi><mo>⟂</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='independent($a1,$a2)'><mi arg='a1'>X</mi><mo>⫫</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Independence_(probability_theory)"
        - "https://en.wikipedia.org/wiki/Independence_(mathematical_logic)"
@@ -5932,8 +5932,8 @@ concepts:
       property: "function, largeop"
       area: "order theory"
       comments:
-       - "<math><mrow intent='infimum($a1)'><mi>inf</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='infimum($a1)'><mo>⋀</mo><mi arg='a1'>X</mi></math>"
+       - "<math><mrow intent='infimum($a1)'><mi>inf</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='infimum($a1)'><mo>⋀</mo><mi arg='a1'>X</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Infimum.html"
        - "https://en.wikipedia.org/wiki/Infimum_and_supremum"
@@ -5976,7 +5976,7 @@ concepts:
       property: prefix
       area: "formal languages"
       comments:
-       - "<math><mrow intent='infinitely-many-concurrently-active-copies($a1)'><mo>!</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='infinitely-many-concurrently-active-copies($a1)'><mo>!</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://arxiv.org/pdf/0903.3513.pdf"
     
@@ -5986,7 +5986,7 @@ concepts:
       property: mixfix, 
       area: "set theory"
       comments:
-       - "<math><mrow intent='injection($a1,$a2,$a3)'><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>↣</mo><mi arg='a3'>Y</mi></math>"
+       - "<math><mrow intent='injection($a1,$a2,$a3)'><mi>f</mi><mo>:</mo><mi arg='a1'>X</mi><mo>↣</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
     
@@ -6045,7 +6045,7 @@ concepts:
       property: "function, fenced"
       area: "number theory"
       comments:
-       - "<math><mrow intent='integer-part($a1)'><mi>int</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='integer-part($a1)'><mi>int</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "[ $1 ]"
       urls: 
        - "https://mathworld.wolfram.com/IntegerPart.html"
@@ -6082,7 +6082,7 @@ concepts:
       property: infix
       area: "algebraic geometry"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>⋅</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='intersection-number($a1,$a2)'><mi arg='a1'>X</mi><mo>⋅</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Intersection_number"
     
@@ -6172,8 +6172,8 @@ concepts:
       property: infix
       area: "set theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mover><mo>↦</mo><mo>∼</mo></mover><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>≅</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='isomorphism($a1,$a2)'><mi arg='a1'>X</mi><mover><mo>↦</mo><mo>∼</mo></mover><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='isomorphism($a1,$a2)'><mi arg='a1'>X</mi><mo>≅</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Isomorphism.html"
        - "https://en.wikipedia.org/wiki/Isomorphism"
@@ -6284,12 +6284,12 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>sn</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>cn</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>dn</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>sd</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>cd</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>sc</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>sn</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>cn</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>dn</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>sd</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>cd</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='jacobian-elliptic-function($a1)'><mi>sc</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/22.2"
        - "https://dlmf.nist.gov/22.2#E5"
@@ -6305,8 +6305,8 @@ concepts:
       property: function
       area: "ring theory"
       comments:
-       - "<math><mrow intent='jacobson-radical($a1)'><mi>J</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='jacobson-radical($a1)'><mi>rad</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='jacobson-radical($a1)'><mi>J</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='jacobson-radical($a1)'><mi>rad</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobsonRadical.html"
        - "https://en.wikipedia.org/wiki/Jacobson_radical"
@@ -6425,7 +6425,7 @@ concepts:
       property: symbol
       area: "number theory"
       comments:
-       - "<math><mn>6174</mn></math>"
+       - "<math><mrow><mn>6174</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KaprekarConstant.html"
        - "https://en.wikipedia.org/wiki/6174_(number)"
@@ -6543,8 +6543,8 @@ concepts:
       property: function
       area: "analytic number theory"
       comments:
-       - "<math><mrow intent='kloosterman-sum($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='kloosterman-sum($a1)'><mi>K</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='kloosterman-sum($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='kloosterman-sum($a1)'><mi>K</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KloostermansSum.html"
        - "https://en.wikipedia.org/wiki/Kloosterman_sum"
@@ -6707,7 +6707,7 @@ concepts:
       property: function
       area: "mathematical statistics"
       comments:
-       - "<math><mrow intent='kullback-leibler-distance($a1)'><mi>KL</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='kullback-leibler-distance($a1)'><mi>KL</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "msub D KL"
       urls: 
        - "http://users.monash.edu/~lloyd/tildeMML/KL/"
@@ -6798,7 +6798,7 @@ concepts:
       area: "differential operators"
       notation: "msup ∇ 2"
       notationb: "mrow ∇ · ∇"
-      notationa: "<math><mrow intent='laplace-operator($a1)'><mi>Δ</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+      notationa: "<math><mrow intent='laplace-operator($a1)'><mi>Δ</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Laplace_operator"
        - "https://ncatlab.org/nlab/show/Laplace+operator"
@@ -6959,8 +6959,8 @@ concepts:
       property: fenced, fenced stacked
       area: "number theory"
       comments:
-       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mi arg='a1'>a</mi><mo>|</mo><mi>p</mi><mo>)</mo></math>"
-       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mfrac><mi arg='a1'>a</mi><mi>p</mi></mfrac><mo>)</mo></math>"
+       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mi arg='a1'>a</mi><mo>|</mo><mi>p</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mfrac><mi arg='a1'>a</mi><mi>p</mi></mfrac><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LegendreSymbol.html"
        - "https://en.wikipedia.org/wiki/Legendre_symbol"
@@ -7145,9 +7145,9 @@ concepts:
       property: unit
       area: "units"
       comments:
-       - "<math><mrow intent='gunter-link($a1)'><mi>l.</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='gunter-link($a1)'><mi>li.</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='gunter-link($a1)'><mi>lnk.</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='gunter-link($a1)'><mi>l.</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='gunter-link($a1)'><mi>li.</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='gunter-link($a1)'><mi>lnk.</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Link_(unit)"
     
@@ -7263,7 +7263,7 @@ concepts:
       property: prefix
       area: "order theory"
       comments:
-       - "<math><mrow intent='lower-closure-poset($a1)'><mo>↓</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='lower-closure-poset($a1)'><mo>↓</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Upper_set#Upper_closure_and_lower_closure"
     
@@ -7295,7 +7295,7 @@ concepts:
       property: function
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='lower-shadow($a1)'><mi>𝜕</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='lower-shadow($a1)'><mi>𝜕</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "msub 𝜕 -"
       urls: 
        - "http://qk206.user.srcf.net/notes/combinatorics.pdf"
@@ -7668,8 +7668,8 @@ concepts:
       property: function
       area: "probability theory"
       comments:
-       - "<math><mrow intent='mills-ratio($a1)'><mi>m</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='mills-ratio($a1)'><mi>M</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='mills-ratio($a1)'><mi>m</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='mills-ratio($a1)'><mi>M</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MillsRatio.html"
        - "https://en.wikipedia.org/wiki/Mills_ratio"
@@ -7953,7 +7953,7 @@ concepts:
       area: "combinatorial analysis"
       comments:
        - "<math><msub intent='motzkin-number($a1)'><mi>M</mi><mi arg='a1'>x</mi></msub></math>"
-       - "<math><mrow intent='motzkin-number($a1)'><mi>M</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='motzkin-number($a1)'><mi>M</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MotzkinNumber.html"
        - "https://en.wikipedia.org/wiki/Motzkin_number"
@@ -8200,7 +8200,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow intent='non-oriented-angle($a1)'><mo>∠</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='non-oriented-angle($a1)'><mo>∠</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Orientation_(vector_space)"
        - "https://en.wikipedia.org/wiki/Euclidean_space#Angle"
@@ -8298,7 +8298,7 @@ concepts:
       property: fenced
       area: "euclidean solid geometry"
       comments:
-       - "<math><mrow intent='octant($a1,$a2,$a3)'><mo>(</mo><mi>±</mi><mo>,</mo><mi>±</mi><mo>,</mo><mi>±</mi><mo>)</mo></math>"
+       - "<math><mrow intent='octant($a1,$a2,$a3)'><mo>(</mo><mi>±</mi><mo>,</mo><mi>±</mi><mo>,</mo><mi>±</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Octant.html"
        - "https://en.wikipedia.org/wiki/Octant_(plane_geometry)"
@@ -8420,7 +8420,7 @@ concepts:
       property: "function, fenced"
       area: "group theory"
       comments:
-       - "<math><mrow intent='order-of-group($a1)'><mi>ord</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='order-of-group($a1)'><mi>ord</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
        - "<math><mrow intent='order-of-group($a1)'><mo>|</mo><mi arg='a1'>x</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Order_(group_theory))"
@@ -8544,7 +8544,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='paraboloidal-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></math>"
+       - "<math><mrow intent='paraboloidal-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ParaboloidalCoordinates.html"
        - "https://en.wikipedia.org/wiki/Paraboloidal_coordinates"
@@ -8742,8 +8742,8 @@ concepts:
       property: function
       area: "multilinear algebra"
       comments:
-       - "<math><mrow intent='pfaffian($a1)'><mi>Pf</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='pfaffian($a1)'><mi>pf</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='pfaffian($a1)'><mi>Pf</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='pfaffian($a1)'><mi>pf</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Pfaffian.html"
        - "https://en.wikipedia.org/wiki/Pfaffian"
@@ -8770,8 +8770,8 @@ concepts:
       property: function
       area: "physics"
       comments:
-       - "<math><mrow intent='phase($a1)'><mi>ϕ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='phase($a1)'><mi>ph</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='phase($a1)'><mi>ϕ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='phase($a1)'><mi>ph</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Phase.html"
        - "https://en.wikipedia.org/wiki/Phase_(waves)"
@@ -9011,7 +9011,7 @@ concepts:
       property: prefix
       area: "predicative mathematics"
       comments:
-       - "<math><mrow intent='positivitiy-predicate($a1)'><mo>◊</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='positivitiy-predicate($a1)'><mo>◊</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/positive+element"
     
@@ -9032,10 +9032,10 @@ concepts:
       property: "function, msup"
       area: "set theory"
       comments:
-       - "<math><mrow intent='power-set($a1)'><mi>P</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='power-set($a1)'><mi>𝒫</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='power-set($a1)'><mi>ℙ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='power-set($a1)'><mi>℘</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>P</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>𝒫</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>ℙ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>℘</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "msup 2 $1"
       urls: 
        - "https://mathworld.wolfram.com/PowerSet.html"
@@ -9104,8 +9104,8 @@ concepts:
       property: "indexed function"
       area: "number theory"
       comments:
-       - "<math><mrow intent='prime-gap($a1)'><mi>G</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='prime-gap($a1)'><mi>g</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='prime-gap($a1)'><mi>G</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='prime-gap($a1)'><mi>g</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PrimeGaps.html"
        - "https://en.wikipedia.org/wiki/Prime_gap"
@@ -9116,7 +9116,7 @@ concepts:
       property: postfix
       area: "number theory"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>#</mo></math>"
+       - "<math><mrow intent='primorial($a1)'><mi arg='a1'>x</mi><mo>#</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Primorial.html"
        - "https://en.wikipedia.org/wiki/Primorial"
@@ -9302,7 +9302,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='pythagorean-triple($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></math>"
+       - "<math><mrow intent='pythagorean-triple($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PythagoreanTriple.html"
        - "https://en.wikipedia.org/wiki/Pythagorean_triple"
@@ -9322,8 +9322,8 @@ concepts:
       property: symbol
       area: "mathematical symbols"
       comments:
-       - "<math><mrow><mo>□</mo></math>"
-       - "<math><mrow><mo>∎</mo></math>"
+       - "<math><mrow><mo>□</mo></mrow></math>"
+       - "<math><mrow><mo>∎</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tombstone_(typography)"
       alias:
@@ -9356,7 +9356,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow intent='quadrilateral($a1)'><mo>◻</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='quadrilateral($a1)'><mo>◻</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Quadrangle.html"
        - "https://en.wikipedia.org/wiki/Quadrilateral"
@@ -9422,8 +9422,8 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='radial-mathieu-function($a1)'><mi>Mc</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='radial-mathieu-function($a1)'><mi>Ms</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='radial-mathieu-function($a1)'><mi>Mc</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='radial-mathieu-function($a1)'><mi>Ms</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/28.20#iv"
        - "https://dlmf.nist.gov/28.20#E15"
@@ -9450,7 +9450,7 @@ concepts:
       property: symbol
       area: "geometry"
       comments:
-       - "<math><mi arg='a1'>x</mi></math>"
+       - "<math><mrow><mi arg='a1'>x</mi></mrow></math>"
        - "<math><mi intent='radius-vector'>r</mi></math>"
        - "<math><mi intent='radius-vector'>s</mi></math>"
       urls: 
@@ -9528,9 +9528,9 @@ concepts:
       property: function
       area: "graph theory, linear algebra, "
       comments:
-       - "<math><mrow intent='rank($a1)'><mi>r</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='rank($a1)'><mi>rank</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='rank($a1)'><mi>rk</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='rank($a1)'><mi>r</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='rank($a1)'><mi>rank</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='rank($a1)'><mi>rk</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Rank.html"
        - "https://en.wikipedia.org/wiki/Rank_(graph_theory)"
@@ -9556,9 +9556,9 @@ concepts:
       property: function
       area: "complex analysis"
       comments:
-       - "<math><mrow intent='real-part($a1)'><mi>ℜ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='real-part($a1)'><mi>Re</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='real-part($a1)'><mi>ℛℯ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='real-part($a1)'><mi>ℜ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='real-part($a1)'><mi>Re</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='real-part($a1)'><mi>ℛℯ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RealPart.html"
        - "https://dlmf.nist.gov/1.9#E2"
@@ -9663,8 +9663,8 @@ concepts:
       property: function
       area: "complex analysis"
       comments:
-       - "<math><mrow intent='residue($a1)'><mi>Res</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='residue($a1)'><mi>res</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='residue($a1)'><mi>Res</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='residue($a1)'><mi>res</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Residue.html"
        - "https://en.wikipedia.org/wiki/Residue_(complex_analysis)"
@@ -9736,8 +9736,8 @@ concepts:
       property: function
       area: "polynomials"
       comments:
-       - "<math><mrow intent='resultant($a1)'><mi>res</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='resultant($a1)'><mi>Res</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='resultant($a1)'><mi>res</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='resultant($a1)'><mi>Res</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Resultant.html"
        - "https://en.wikipedia.org/wiki/Resultant"
@@ -9892,10 +9892,10 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow intent='right-angle($a1)'><mo>∟</mo><mi arg='a1'>x</mi></math>"
-       - "<math><mrow intent='right-angle($a1)'><mo>⊾</mo><mi arg='a1'>x</mi></math>"
-       - "<math><mrow intent='right-angle($a1)'><mo>⦜</mo><mi arg='a1'>x</mi></math>"
-       - "<math><mrow intent='right-angle($a1)'><mo>⦝</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='right-angle($a1)'><mo>∟</mo><mi arg='a1'>x</mi></mrow></math>"
+       - "<math><mrow intent='right-angle($a1)'><mo>⊾</mo><mi arg='a1'>x</mi></mrow></math>"
+       - "<math><mrow intent='right-angle($a1)'><mo>⦜</mo><mi arg='a1'>x</mi></mrow></math>"
+       - "<math><mrow intent='right-angle($a1)'><mo>⦝</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RightAngle.html"
        - "https://en.wikipedia.org/wiki/Right_angle"
@@ -9962,7 +9962,7 @@ concepts:
        - "<math><mi intent='roman-numeral'>vii</mi></math>"
        - "<math><mi intent='roman-numeral'>viii</mi></math>"
        - "<math><mi intent='roman-numeral'>ix</mi></math>"
-       - "<math><mi arg='a1'>x</mi></math>"
+       - "<math><mrow><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RomanNumerals.html"
        - "https://en.wikipedia.org/wiki/Roman_numerals"
@@ -9974,7 +9974,7 @@ concepts:
       property: mixfix
       area: "category theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>&leftarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi>Z</mi></math>"
+       - "<math><mrow intent='roof($a1,$a2,$a3)'><mi arg='a1'>X</mi><mo>&leftarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi>Z</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(category_theory)"
        - "https://ncatlab.org/nlab/show/span"
@@ -10079,8 +10079,8 @@ concepts:
       property: mixfix, fenced
       area: "vector algebra"
       comments:
-       - "<math><mi arg='a1'>A</mi><mo>&middot;</mo><mrow><mo>(</mo><mi arg='a2'>B</mi><mo>&middot;</mo><mi arg='a3'>C</mi><mo>)</mo></mrow></math>"
-       - "<math><mrow intent='scalar-triple-product($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>,</mo><mi arg='a3'>C</mi><mo>]</mo></math>"
+       - "<math><mrow intent='scalar-triple-product($a1,$a2,$a3)'><mi arg='a1'>A</mi><mo>&middot;</mo><mrow><mo>(</mo><mi arg='a2'>B</mi><mo>&middot;</mo><mi arg='a3'>C</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='scalar-triple-product($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>,</mo><mi arg='a3'>C</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ScalarTripleProduct.html"
        - "https://en.wikipedia.org/wiki/Triple_product"
@@ -10173,8 +10173,8 @@ concepts:
       property: function
       area: "riemannian geometry"
       comments:
-       - "<math><mrow intent='sectional-curvature($a1)'><mi>K</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='sectional-curvature($a1)'><mi>κ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='sectional-curvature($a1)'><mi>K</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='sectional-curvature($a1)'><mi>κ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SectionalCurvature.html"
        - "https://en.wikipedia.org/wiki/Sectional_curvature"
@@ -10220,7 +10220,7 @@ concepts:
       property: prefix
       area: "commutative algebra"
       comments:
-       - "<math><mrow intent='set-of-invertible-maps($a1)'><mo>!</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='set-of-invertible-maps($a1)'><mo>!</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://arxiv.org/abs/2009.015866"
     
@@ -10271,7 +10271,7 @@ concepts:
       property: mixfix
       area: "group theory"
       comments:
-       - "<math><mn>0</mn><mo>&rightarrow;</mo><mi arg='a1'>X</mi><mo>&rightarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi>Z</mi><mo>&rightarrow;</mo><mn>0</mn></math>"
+       - "<math><mrow intent='short-exact-sequence($a1,$a2,$a3)'><mn>0</mn><mo>&rightarrow;</mo><mi arg='a1'>X</mi><mo>&rightarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi>Z</mi><mo>&rightarrow;</mo><mn>0</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShortExactSequence.html"
        - "https://en.wikipedia.org/wiki/Exact_sequence"
@@ -10368,8 +10368,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='sinc-function($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='sinc-function($a1)'><mi>sinc</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='sinc-function($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='sinc-function($a1)'><mi>sinc</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SincFunction.html"
        - "https://en.wikipedia.org/wiki/Sinc_function"
@@ -10604,7 +10604,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='spherical-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></math>"
+       - "<math><mrow intent='spherical-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SphericalCoordinates.html"
        - "https://www.encyclopediaofmath.org/index.php/Spherical_coordinates"
@@ -10648,7 +10648,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow><mo>&squ;</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi><mo>&thinsp;</mo><mi arg='a4'>D</mi></mrow></math>"
+       - "<math><mrow><mo>&squ;</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi><mo>&thinsp;</mo><mi arg='a4'>D</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Square.html"
        - "https://en.wikipedia.org/wiki/Square"
@@ -10885,7 +10885,7 @@ concepts:
       property: prefix
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='subfactorial($a1)'><mo>!</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='subfactorial($a1)'><mo>!</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Derangement"
       alias:
@@ -10933,8 +10933,8 @@ concepts:
       area: "number theory"
       comments:
        - "<math><msup intent='successor($a1)'><mi arg='a1'>X</mi><mo>+</mo></msup></math>"
-       - "<math><mrow intent='successor($a1)'><mi>s</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
-       - "<math><mrow intent='successor($a1)'><mi>S</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='successor($a1)'><mi>s</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='successor($a1)'><mi>S</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Proclus"
        - "https://en.wikipedia.org/wiki/Successor_cardinal"
@@ -10947,8 +10947,8 @@ concepts:
       property: infix
       area: "set theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>|</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='such-that($a1,$a2)'><mi arg='a1'>X</mi><mo>|</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='such-that($a1,$a2)'><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Set_(mathematics)#Set-builder_notation"
     
@@ -10969,8 +10969,8 @@ concepts:
       property: infix
       area: "abstract algebra"
       comments:
-       - "<math><mi arg='a1'>X</mi><msub><mo>⊆</mo><mi>s</mi></msub><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>≪</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='superfluous-submodule($a1,$a2)'><mi arg='a1'>X</mi><msub><mo>⊆</mo><mi>s</mi></msub><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='superfluous-submodule($a1,$a2)'><mi arg='a1'>X</mi><mo>≪</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Essential_extension"
       alias:
@@ -10999,8 +10999,8 @@ concepts:
       property: "function, largeop"
       area: "order theory, lattice theory"
       comments:
-       - "<math><mrow intent='supremum($a1)'><mi>sup</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='supremum($a1)'><mo>⋁</mo><mi arg='a1'>X</mi></math>"
+       - "<math><mrow intent='supremum($a1)'><mi>sup</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='supremum($a1)'><mo>⋁</mo><mi arg='a1'>X</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Supremum.html"
       alias:
@@ -11042,7 +11042,7 @@ concepts:
       property: mixfix, infix
       area: "set theory"
       comments:
-       - "<math><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>&#x21a0;</mo><mi arg='a3'>Y</mi></math>"
+       - "<math><mrow intent='surjection($a1,$a2,$a3)'><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>&#x21a0;</mo><mi arg='a3'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
        - "https://en.wikipedia.org/wiki/Surjective_function"
@@ -11066,8 +11066,8 @@ concepts:
       property: function
       area: "algebra"
       comments:
-       - "<math><mrow intent='symmetric-algebra($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='symmetric-algebra($a1)'><mi>Sym</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='symmetric-algebra($a1)'><mi>S</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='symmetric-algebra($a1)'><mi>Sym</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Symmetric_algebra"
        - "https://ncatlab.org/nlab/show/symmetric+algebra"
@@ -11079,9 +11079,9 @@ concepts:
       property: infix
       area: "set theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>△</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊕</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊖</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='symmetric-difference($a1,$a2)'><mi arg='a1'>X</mi><mo>△</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='symmetric-difference($a1,$a2)'><mi arg='a1'>X</mi><mo>⊕</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='symmetric-difference($a1,$a2)'><mi arg='a1'>X</mi><mo>⊖</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SymmetricDifference.html"
        - "https://en.wikipedia.org/wiki/Symmetric_difference"
@@ -11253,7 +11253,7 @@ concepts:
       property: function
       area: "multilinear algebra"
       comments:
-       - "<math><mrow intent='tensor-algebra($a1)'><mi>T</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='tensor-algebra($a1)'><mi>T</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationa: "msup T •"
       urls: 
        - "https://en.wikipedia.org/wiki/Tensor_algebra"
@@ -11291,7 +11291,7 @@ concepts:
       property: prefix
       area: "logic"
       comments:
-       - "<math><mrow intent='therefore-sign($a1)'><mo>∴</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='therefore-sign($a1)'><mo>∴</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Therefore_sign"
        - "https://en.wikipedia.org/wiki/.%C2%B7."
@@ -11342,7 +11342,7 @@ concepts:
       property: infix
       area: "arithmetic"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='to($a1,$a2)'><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/One-to-One.html"
     
@@ -11352,8 +11352,8 @@ concepts:
       property: function
       area: "characteristic classes"
       comments:
-       - "<math><mrow intent='todd-class($a1)'><mi>td</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='todd-class($a1)'><mi>Td</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='todd-class($a1)'><mi>td</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='todd-class($a1)'><mi>Td</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Todd_class"
        - "https://ncatlab.org/nlab/show/Todd+class"
@@ -11489,7 +11489,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow intent='triangle($a1,$a2,$a3)'><mo>△</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi></mrow></math>"
+       - "<math><mrow intent='triangle($a1,$a2,$a3)'><mo>△</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Triangle.html"
        - "https://en.wikipedia.org/wiki/Triangle"
@@ -11502,8 +11502,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='triangle-function($a1)'><mi>Λ</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='triangle-function($a1)'><mi>tri</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='triangle-function($a1)'><mi>Λ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='triangle-function($a1)'><mi>tri</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TriangleFunction.html"
        - "https://en.wikipedia.org/wiki/Triangular_function"
@@ -11530,7 +11530,7 @@ concepts:
       property: infix
       area: "geometry"
       comments:
-       - "<math><mi arg='a1'>x</mi><mo>:</mo><mi arg='a2'>y</mi><mo>:</mo><mi arg='a3'>z</mi></math>"
+       - "<math><mrow intent='trilinear-coordinates($a1,$a2,$a3)'><mi arg='a1'>x</mi><mo>:</mo><mi arg='a2'>y</mi><mo>:</mo><mi arg='a3'>z</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Trilinear_coordinates"
     
@@ -11562,7 +11562,7 @@ concepts:
       property: fenced
       area: "algebra"
       comments:
-       - "<math><mrow intent='triple-scalar-product($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>]</mo></math>"
+       - "<math><mrow intent='triple-scalar-product($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TripleScalarProduct.html"
       alias:
@@ -11621,7 +11621,7 @@ concepts:
       property: function
       area: "graph theory"
       comments:
-       - "<math><mrow intent='turan-number($a1,$a2,$a3)'><mi>T</mi><mrow><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='turan-number($a1,$a2,$a3)'><mi>T</mi><mrow><mo>(</mo><mi arg='a1'>a</mi><mo>,</mo><mi arg='a2'>b</mi><mo>,</mo><mi arg='a3'>c</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tur%C3%A1n_number"
        - "https://www.encyclopediaofmath.org/index.php/Turan_number"
@@ -11633,10 +11633,10 @@ concepts:
       property: unit
       area: "geometry"
       comments:
-       - "<math><mrow intent='turn($a1)'><mi>cyc</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='turn($a1)'><mi>rev</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='turn($a1)'><mi>tr</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
-       - "<math><mrow intent='turn($a1)'><mi>pla</mi><mrow><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='turn($a1)'><mi>cyc</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='turn($a1)'><mi>rev</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='turn($a1)'><mi>tr</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='turn($a1)'><mi>pla</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Turn_(geometry)"
       alias:
@@ -11650,7 +11650,7 @@ concepts:
       property: infix
       area: "topology"
       comments:
-       - "<math><mi arg='a1'>X</mi><msub><mo>⊗</mo><mi>τ</mi></msub><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='twisted-tensor-product($a1,$a2)'><mi arg='a1'>X</mi><msub><mo>⊗</mo><mi>τ</mi></msub><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/twisted+tensor+product"
     
@@ -11674,7 +11674,7 @@ concepts:
       property: infix
       area: "type theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='typing-judgement($a1,$a2)'><mi arg='a1'>X</mi><mo>:</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/judgment"
     
@@ -11828,9 +11828,9 @@ concepts:
       property: infix
       area: "group theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>≀</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>Wr</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><msub><mo>Wr</mo><mi>&#x03a9;</mi></msub><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='unrestricted-wreath-product($a1,$a2)'><mi arg='a1'>X</mi><mo>≀</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='unrestricted-wreath-product($a1,$a2)'><mi arg='a1'>X</mi><mo>Wr</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='unrestricted-wreath-product($a1,$a2)'><mi arg='a1'>X</mi><msub><mo>Wr</mo><mi>&#x03a9;</mi></msub><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WreathProduct.html"
        - "https://en.wikipedia.org/wiki/Wreath_product"
@@ -11843,7 +11843,7 @@ concepts:
       property: prefix
       area: "order theory"
       comments:
-       - "<math><mrow intent='upper-closure-poset($a1)'><mo>↑</mo><mi arg='a1'>x</mi></math>"
+       - "<math><mrow intent='upper-closure-poset($a1)'><mo>↑</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Upper_set#Upper_closure_and_lower_closure"
     
@@ -11918,8 +11918,8 @@ concepts:
       property: infix
       area: "machine learning"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>◦</mo><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⊕</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='vector-concatenation($a1,$a2)'><mi arg='a1'>X</mi><mo>◦</mo><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='vector-concatenation($a1,$a2)'><mi arg='a1'>X</mi><mo>⊕</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://arxiv.org/pdf/1903.00172v1.pdf"
        - "https://arxiv.org/abs/1901.10879"
@@ -11955,7 +11955,7 @@ concepts:
       property: function
       area: "quaternions"
       comments:
-       - "<math><mrow intent='versor($a1)'><mi>U</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='versor($a1)'><mi>U</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Versor_(physics)"
        - "https://en.wikipedia.org/wiki/Versor"
@@ -12050,7 +12050,7 @@ concepts:
       property: infix
       area: "domain theory"
       comments:
-       - "<math><mi arg='a1'>X</mi><mo>≪</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='way-below($a1,$a2)'><mi arg='a1'>X</mi><mo>≪</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "http://mizar.org/fm/1997-6/pdf6-1/waybel_3.pdf"
        - "https://en.wikipedia.org/wiki/Domain_theory"
@@ -12064,8 +12064,8 @@ concepts:
       property: infix
       area: "analysis"
       comments:
-       - "<math><mi arg='a1'>X</mi><mover><mo>→</mo><mi>w</mi></mover><mi arg='a2'>Y</mi></math>"
-       - "<math><mi arg='a1'>X</mi><mo>⇀</mo><mi arg='a2'>Y</mi></math>"
+       - "<math><mrow intent='weak-convergence($a1,$a2)'><mi arg='a1'>X</mi><mover><mo>→</mo><mi>w</mi></mover><mi arg='a2'>Y</mi></mrow></math>"
+       - "<math><mrow intent='weak-convergence($a1,$a2)'><mi arg='a1'>X</mi><mo>⇀</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeakConvergence.html"
        - "https://en.wikipedia.org/wiki/Weak_convergence_(Hilbert_space)"
@@ -12331,7 +12331,7 @@ concepts:
       property: fenced
       area: "ring theory"
       comments:
-       - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow><mi>W</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Witt_vector"
        - "https://www.encyclopediaofmath.org/index.php/Witt_vector"
@@ -12457,7 +12457,7 @@ concepts:
       property: symbol
       area: "ring theory"
       comments:
-       - "<math><mrow><mo>{</mo><mn>0</mn><mo>}</mo></math>"
+       - "<math><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZeroIdeal.html"
        - "https://ncatlab.org/nlab/show/zero+ideal"
@@ -12488,7 +12488,7 @@ concepts:
       property: symbol
       area: "algebra"
       comments:
-       - "<math><mrow><mo>{</mo><mn>0</mn><mo>}</mo></math>"
+       - "<math><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_object_(algebra)"
        - "https://ncatlab.org/nlab/show/zero+object"
@@ -12499,8 +12499,8 @@ concepts:
       property: symbol
       area: "ring theory"
       comments:
-       - "<math><mrow><mo>{</mo><mn>0</mn><mo>}</mo></math>"
-       - "<math><mn>0</mn></math>"
+       - "<math><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></math>"
+       - "<math><mrow><mn>0</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZeroRing.html"
        - "https://en.wikipedia.org/wiki/Zero_ring"
@@ -12511,7 +12511,7 @@ concepts:
       property: constant
       area: "linear algebra"
       comments:
-       - "<math><mn>0</mn></math>"
+       - "<math><mrow><mn>0</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZeroVector.html"
     
