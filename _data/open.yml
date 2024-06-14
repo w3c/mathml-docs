@@ -11695,7 +11695,7 @@ concepts:
       property: mixfix
       area: "abstract algebra"
       comments:
-       - "<math><mrow><mo>∏</mo><mi arg='a1'>x</mi><mo>/</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow><mo>∏</mo><mi arg='a1'>x</mi><mo>/</mo><mi arg='a2'>y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Ultrapower.html"
        - "https://en.wikipedia.org/wiki/Ultraproduct"
