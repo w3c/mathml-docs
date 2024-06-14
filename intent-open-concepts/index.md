@@ -17,7 +17,10 @@ a.self {color: black; font-weight:500}
      [arg="a2"]:hover::after { content: " $2" ; }
      [arg="a3"]:hover::after { content: " $3" ; }
      [arg="a4"]:hover::after { content: " $4" ; }
-</style>
+math:not(:has(*[intent])) {
+    color: red;
+    }
+}</style>
 
 <style id="langcss">
 {% for language in site.data.languages offset:1-%}
