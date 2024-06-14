@@ -2865,14 +2865,14 @@ concepts:
        - "https://en.wikipedia.org/wiki/Digamma_function"
     
     - concept: dihedral-group
-      arity: 0
-      en: dihedral group
+      arity: 1
+      en: $1 th dihedral group
       property: symbol
       area: "group theory"
       comments:
-       - "<math><msub intent='dihedral-group'><mi>D</mi><mi arg='a1'>x</mi></msub></math>"
-       - "<math><msub intent='dihedral-group'><mi>Dih</mi><mi arg='a1'>x</mi></msub></math>"
-       - "<math><msub intent='dihedral-group'><mi>D2</mi><mi arg='a1'>x</mi></msub></math>"
+       - "<math><msub intent='dihedral-group'><mi>D</mi><mi arg='a1'>n</mi></msub></math>"
+       - "<math><msub intent='dihedral-group'><mi>Dih</mi><mi arg='a1'>n</mi></msub></math>"
+       - "<math><msub intent='dihedral-group'><mi>D</mi><mrow><mn>2</mn><mi arg='a1'>n</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/DihedralGroup.html"
        - "https://en.wikipedia.org/wiki/Dihedral_group"
