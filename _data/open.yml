@@ -11375,7 +11375,7 @@ concepts:
     
     - concept: surjection
       arity: 3
-      en: surjection  $1 $2 $3
+      en: surjection  $1, from $2 to $3
       property: mixfix, infix
       area: "set theory"
       comments:
