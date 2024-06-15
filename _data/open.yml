@@ -4410,8 +4410,7 @@ concepts:
       property: operator
       area: "fractional caclulus"
       comments:
-       - "<math><mrow intent='fractional-derivative($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup D $1"
+       - "<math><msup intent='fractional-derivative($a1)'><mi>D</mi><mi arg='a1'>f</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/FractionalDerivative.html"
        - "https://dlmf.nist.gov/1.15#E51"
@@ -4422,8 +4421,7 @@ concepts:
       property: operator
       area: "fractional caclulus"
       comments:
-       - "<math><mrow intent='fractional-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup I $1"
+       - "<math><msup intent='fractional-integral($a1)'><mi>I</mi><mi arg='a1'>f</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/FractionalIntegral.html"
        - "https://dlmf.nist.gov/1.15#E47"
@@ -5259,8 +5257,7 @@ concepts:
       property: "indexed symbol"
       area: "complex analysis"
       comments:
-       - "<math><mrow intent='hardy-class($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup H $1"
+       - "<math><msup intent='hardy-class($a1)'><mi>H</mi><mi arg='a1'>x</mi></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hardy_space"
        - "https://www.encyclopediaofmath.org/index.php/Hardy_classes"
@@ -5312,8 +5309,7 @@ concepts:
       property: "indexed function"
       area: "metric geometry"
       comments:
-       - "<math><mrow intent='hausdorff-measure($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup H $1"
+       - "<math><msup intent='hausdorff-measure($a1)'><mi>H</mi><mi arg='a1'>d</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/HausdorffMeasure.html"
        - "https://en.wikipedia.org/wiki/Hausdorff_measure"
@@ -6970,10 +6966,9 @@ concepts:
       property: "embellished operator"
       area: "differential operators"
       comments:
-       - "<math><mrow intent='laplace-operator($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup ∇ 2"
-      notationb: "mrow ∇ · ∇"
-      notationa: "<math><mrow intent='laplace-operator($a1)'><mi>Δ</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='laplace-operator($a1)'><msup>m<mo>∇</mo><mn>2</mn></msup><mi arg='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='laplace-operator($a1)'><mo>∇</mo><mo>·</mo><mo>∇</mo><mi arg='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='laplace-operator($a1)'><mi>Δ</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Laplace_operator"
        - "https://ncatlab.org/nlab/show/Laplace+operator"
@@ -9291,10 +9286,11 @@ concepts:
       property: "function, msup"
       area: "set theory"
       comments:
-       - "<math><mrow intent='power-set($a1)'><mi>P</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
-       - "<math><mrow intent='power-set($a1)'><mi>𝒫</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
-       - "<math><mrow intent='power-set($a1)'><mi>ℙ</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
-       - "<math><mrow intent='power-set($a1)'><mi>℘</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>P</mi><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>𝒫</mi><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>ℙ</mi><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='power-set($a1)'><mi>℘</mi><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><msup intent='power-set($a1)'><mn>2</mn><mi arg='a1'>X</mi></msup></math>"
       notationa: "msup 2 $1"
       urls: 
        - "https://mathworld.wolfram.com/PowerSet.html"
@@ -11578,7 +11574,7 @@ concepts:
       area: "multilinear algebra"
       comments:
        - "<math><mrow intent='tensor-algebra($a1)'><mi>T</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
-      notationa: "msup T •"
+       - "<math><mrow intent='tensor-algebra($a1)'><msup><mi>T</mi><mo>•</mo></msup><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Tensor_algebra"
     
@@ -11897,13 +11893,12 @@ concepts:
        - scalar-triple-product
     
     - concept: triple-torus
-      arity: 1
-      en: triple torus of $1
+      arity: 0
+      en: triple torus
       property: "indexed symbol"
       area: "topology"
       comments:
-       - "<math><mrow intent='triple-torus($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup 𝕋 3"
+       - "<math><msup intent='triple-torus($a1)'><mi>𝕋</mi><mn>3</mn></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/TripleTorus.html"
        - "https://en.wikipedia.org/wiki/Three-torus"
@@ -12218,7 +12213,7 @@ concepts:
       area: "complex analysis"
       comments:
        - "<math><mi intent='upper-half-plane'>ℍ</mi></math>"
-      notationa: "msup ℍ +"
+       - "<math><msup intent='upper-half-plane'><mi>ℍ</mi><mo>+</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/UpperHalf-Plane.html"
        - "https://en.wikipedia.org/wiki/Upper_half-plane"
