@@ -720,7 +720,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Bell_numbers"
     
     - concept: bell-polynomial
-      arity: n
+      arity: "*"
       en: $1 th bell polynomial of $2, $3, ...
       property: "indexed function"
       area: "polynomials"
@@ -12700,7 +12700,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Witt_vector"
     
     - concept: witt-vector
-      arity: n
+      arity: "*"
       en: witt vector of $1
       property: fenced
       area: "ring theory"
