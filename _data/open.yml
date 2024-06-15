@@ -4664,7 +4664,8 @@ concepts:
       en: gateaux derivative of $1 at $2 ; £3
       property: mixfix
       area: "differential calculus"
-      notation: "mrow d$1($2; $3"
+      comments:
+      - "<math><mrow intent='gateaux-derivative($a1,$a2,$a3)'><mi>d</mi><mi arg='a1'>F</mi><mrow><mo>(</mo><mi arg='a2'>u</mi><mo>;</mo><mi arg='a3'>ψ)</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GateauxDerivative.html"
        - "https://en.wikipedia.org/wiki/G%C3%A2teaux_derivative"
@@ -11720,10 +11721,11 @@ concepts:
     
     - concept: ultraproduct
       arity: 3
-      en: ultraproduct of $1, $2 and $3
+      en: ultraproduct of $1, $2 modulo $3
       property: mixfix
       area: "abstract algebra"
-      notation: "mrow ∏ msub $1 $2 /msub / $3"
+      comments:
+      - "<math><mrow intent='ultraproduct($a1,$a2,$a3)'><msub><mo>∏</mo><mrow><mi>i</mi><mo>∈</mo><mi arg='a2'>I</mi></mrow></msub><mi arg='a1'>M</mi><mo>/</mo><mi arg='a3'>𝒰</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Ultraproduct.html"
        - "https://en.wikipedia.org/wiki/Ultraproduct"
