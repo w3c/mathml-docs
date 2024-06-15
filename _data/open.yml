@@ -142,9 +142,8 @@ concepts:
       property: "function/msub"
       area: "lie algebra"
       comments:
-       - "<math><mrow intent='adjoint-action($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mi ad $1"
-      notationa: "msub ad $1"
+       - "<math><mrow intent='adjoint-action($a1)'><mi>ad</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='adjoint-action($a1)'><mi>ad</mi><mi arg='a1'>f</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Adjoint_representation_of_a_Lie_algebra"
        - "https://en.wikipedia.org/wiki/Adjoint_representation"
@@ -584,13 +583,12 @@ concepts:
        - "https://dlmf.nist.gov/19.8#SS1.p1"
     
     - concept: associated-legendre-polynomial
-      arity: 1
-      en: associated legendre polynomial of $1
+      arity: 2
+      en: associated legendre polynomial of degree $1 and order $m
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='associated-legendre-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup P l m"
+       - "<math><mrow><msubsup intent='associated-legendre-polynomial($a1,m2)'><mi>P</mi><mi arg='a1'>ℓ</mi><mi arg='a2'>m</mi></msubsup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AssociatedLegendrePolynomial.html"
        - "https://en.wikipedia.org/wiki/Associated_Legendre_polynomials"
