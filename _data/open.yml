@@ -6079,9 +6079,8 @@ concepts:
       property: indexed
       area: "limits"
       comments:
-       - "<math><mrow intent='infimum-limit($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mi lim inf"
-      notationa: "munder lim ¯"
+       - "<math><mrow intent='infimum-limit($a1)'><mi>lim inf</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='infimum-limit($a1)'><munder><mi>lim</mi><mo>_</mo></munder><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InfimumLimit.html"
        - "https://en.wikipedia.org/wiki/Limit_superior_and_limit_inferior"
@@ -6160,9 +6159,8 @@ concepts:
       property: infix, fenced
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='inner-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ⋅"
-      notationa: "<math><mrow intent='inner-product($a1,$a2)'><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='inner-product($a1,$a2)'><mo>(</mo><mi arg='a1'>x</mi><mo>⋅</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='inner-product($a1,$a2)'><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InnerProduct.html"
        - "https://en.wikipedia.org/wiki/Dot_product"
@@ -6340,8 +6338,7 @@ concepts:
       property: msub
       area: "group theory"
       comments:
-       - "<math><mrow intent='isotropy-group($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub $1 $2"
+       - "<math><msub intent='isotropy-group($a1,$a2)'><mi arg='a1'>G</mi><mi arg='a2'>x</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/IsotropyGroup.html"
        - "https://www.encyclopediaofmath.org/index.php/Isotropy_group"
@@ -10294,8 +10291,7 @@ concepts:
       property: msub
       area: "means"
       comments:
-       - "<math><mrow intent='root-mean-square($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub $1 RMS"
+       - "<math><msub intent='root-mean-square($a1)'><mi arg='a1'>G</mi><mi>RMS</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Root-Mean-Square.html"
       alias:
@@ -11011,8 +11007,7 @@ concepts:
       property: "indexed symbol"
       area: "multilinear algebra"
       comments:
-       - "<math><mrow intent='standard-flattening($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub 𝒜 ($1"
+       - "<math><msub intent='standard-flattening($a1)'><mi>𝐀</mi><mrow><mo>[</mo><mi arg='a1'>m</mi><mo>]</mo></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Matricization"
       alias:
@@ -11339,9 +11334,8 @@ concepts:
       property: indexed
       area: "limits"
       comments:
-       - "<math><mrow intent='supremum-limit($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mi lim sup"
-      notationa: "mover lim ¯"
+       - "<math><mrow intent='supremum-limit($a1)'><mi>lim sup</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='supremum-limit($a1)'><mover><mi>lim</mi><mo>¯</mo></mover><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SupremumLimit.html"
        - "https://en.wikipedia.org/wiki/Limit_superior_and_limit_inferior"
@@ -12433,8 +12427,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='weber-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub E ν"
+       - "<math><mrow intent='weber-function($a1)'><msub><mi>𝐄</mi><mi arg='a1'>ν</mi></msub><mrow><mo>(</mo><mi arg='a2'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WeberFunctions.html"
        - "https://dlmf.nist.gov/11.10#E2"
