@@ -10995,7 +10995,7 @@ concepts:
       property: msub
       area: "sheaf theory"
       comments:
-       - "<math><msub intent='stalk($a1,$a2)'><mi arg='a1'>ℱ</mi><mi arg='a2'>x</mi></msub></mrow></math>"
+       - "<math><msub intent='stalk($a1,$a2)'><mi arg='a1'>ℱ</mi><mi arg='a2'>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Stalk_(sheaf)"
     
