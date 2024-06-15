@@ -268,9 +268,8 @@ concepts:
       property: mover/msup
       area: "algebra"
       comments:
-       - "<math><mrow intent='algebraic-closure($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover ¯"
-      notationa: "msup alg"
+       - "<math><mover intent='algebraic-closure($a1)'><mi arg='a1'>A</mi><mo>¯</mo></mover></math>"
+       - "<math><msup intent='algebraic-closure($a1)'><mi arg='a1'>A</mi><mi>alg</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/AlgebraicClosure.html"
        - "https://en.wikipedia.org/wiki/Algebraic_closure"
@@ -12762,9 +12761,8 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-       - "<math><mrow intent='wronskian($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow 𝒲 { $1, $2 }"
-      notationa: "mi W"
+       - "<math><mrow intent='wronskian($a1,$a2)'><mi>𝒲</mi><mrow><mo></mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a2'>g</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='wronskian($a1,$a2)'><mi>W</mi><mrow><mo></mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a2'>g</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Wronskian.html"
        - "https://en.wikipedia.org/wiki/Wronskian"
@@ -12819,13 +12817,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Z-transform"
     
     - concept: zernike-polynomial
-      arity: 1
-      en: zernike polynomial of $1
+      arity: 4
+      en: $1 $2 zernike polynomial of $3, $4
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
-       - "<math><mrow intent='zernike-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup Z"
+       - "<math><mrow intent='zernike-polynomial($a1,$a2,$a3,$a4)'><msubsup><mi>Z</mi><mi arg='a1'>n</mi><mi arg='a2'>m</mi></msubsup><mrow><mo>(</mo><mi arg='a3'>ρ</mi><mo>,</mo><mi arg='a4'>φ</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ZernikePolynomial.html"
        - "https://en.wikipedia.org/wiki/Zernike_polynomials"
@@ -12853,12 +12850,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/Zero_matrix"
     
     - concept: zero-morphism
-      arity: 1
-      en: zero morphism of $1
+      arity: 2
+      en: zero morphism $1 $2
       property: "indexed symbol"
       area: "category theory"
       comments:
-       - "<math><mrow intent='zero-morphism($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='zero-morphism($a1)'><mn>0</mn><mrow><mi arg='a1'>A</mi><mi arg='a2'>B</mi></mrow></msub></math>"
       notation: "msub mn 0 mrow X,Y"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_morphism"
