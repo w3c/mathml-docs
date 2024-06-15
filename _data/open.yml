@@ -8076,7 +8076,7 @@ concepts:
       property: "msub, mixfix"
       area: "mathematics"
       comments:
-       - "<math><mrow intent='moment-of-function($a1)'><msub><mi>μ</mi><mi arg='a1'>n</mi></msub></math></math>"
+       - "<math><mrow intent='moment-of-function($a1)'><msub><mi>μ</mi><mi arg='a1'>n</mi></msub></mrow></math>"
       notationa: "mrow E [ msup $1 $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
