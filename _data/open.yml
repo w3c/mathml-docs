@@ -320,6 +320,8 @@ concepts:
       en: $1 alternative denial $2
       property: infix, prefix
       area: "propositional calculus"
+      comments:
+       - "<math><mrow intent='alternative-denial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo | "
       notationb: "mo ↑"
       notationa: "mrow D $1 $2"
@@ -647,6 +649,8 @@ concepts:
       en: bateman function
       property: function
       area: "special functions"
+      comments:
+       - "<math><mrow intent='bateman-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow msub k $1 ( $2"
       urls: 
        - "https://mathworld.wolfram.com/BatemanFunction.html"
@@ -658,6 +662,8 @@ concepts:
       en: baumslag solitar group
       property: function
       area: "group theory"
+      comments:
+       - "<math><mrow intent='baumslag-solitar-group($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow BS ( $1, $2 )"
       urls: 
        - "https://en.wikipedia.org/wiki/Baumslag%E2%80%93Solitar_group"
@@ -1114,6 +1120,8 @@ concepts:
       en: calderon toeplitz operator $1 $2
       property: "indexed symbol"
       area: "operator theory"
+      comments:
+       - "<math><mrow intent='calderon-toeplitz-operator($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub T mrow $1, $2"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Calderon-Toeplitz_operator"
@@ -1625,6 +1633,8 @@ concepts:
       en: closed ball $1 $2
       property: mixfix
       area: "topology"
+      comments:
+       - "<math><mrow intent='closed-ball($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow msub B $1 /msub [ $2 ]"
       urls: 
        - "https://mathworld.wolfram.com/OpenBall.html"
@@ -1648,6 +1658,8 @@ concepts:
       en: closed neighbourhood
       property: "indexed function, function"
       area: "graph theory"
+      comments:
+       - "<math><mrow intent='closed-neighbourhood($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub N $1 [ $2 ]"
       notationa: "mrow N [ $1 ]"
       urls: 
@@ -1913,6 +1925,8 @@ concepts:
       en: compound interest
       property: msup
       area: "finance"
+      comments:
+       - "<math><mrow intent='compound-interest($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 ($2"
       urls: 
        - "https://mathworld.wolfram.com/CompoundInterest.html"
@@ -1945,6 +1959,8 @@ concepts:
       en: conditional expectation $1 $2
       property: mixfix
       area: "probability theory"
+      comments:
+       - "<math><mrow intent='conditional-expectation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow E ( $1 | $2 )"
       urls: 
        - "https://en.wikipedia.org/wiki/Conditional_expectation"
@@ -1955,6 +1971,8 @@ concepts:
       en: conditional probability $1 $2
       property: mixfix
       area: "probability theory"
+      comments:
+       - "<math><mrow intent='conditional-probability($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow P ( $1 | $2 )"
       urls: 
        - "https://mathworld.wolfram.com/ConditionalProbability.html"
@@ -1986,6 +2004,8 @@ concepts:
       en: contrast function $1 $2
       property: mixfix
       area: "statistics"
+      comments:
+       - "<math><mrow intent='contrast-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "D ( $1 | $2)"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(statistics)"
@@ -2009,6 +2029,8 @@ concepts:
       en: $1 congruence relation $2
       property: infix
       area: "algebra, geometry"
+      comments:
+       - "<math><mrow intent='congruence-relation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ≡"
       notationa: "mo ≅"
       urls: 
@@ -4031,6 +4053,8 @@ concepts:
       en: falling factorial $1 $2
       property: mixfix
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='falling-factorial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 mover $2 ¯"
       notationb: "msup $1 munder $2 ¯"
       notationa: "msub mrow ( $1 ) /mrow $2"
@@ -4446,6 +4470,8 @@ concepts:
       en: free module $1 $2
       property: mixfix, msup
       area: "module theory"
+      comments:
+       - "<math><mrow intent='free-module($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1 { $2 }"
       notationa: "msup $1 ($2"
       urls: 
@@ -4726,6 +4752,8 @@ concepts:
       en: gegenbauer polynomial
       property: "indexed function"
       area: "orthogonal polynomials"
+      comments:
+       - "<math><mrow intent='gegenbauer-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup C $1 ($2"
       urls: 
        - "https://mathworld.wolfram.com/GegenbauerPolynomial.html"
@@ -4913,6 +4941,8 @@ concepts:
       en: germ of $1 at $2
       property: mixfix
       area: "topology"
+      comments:
+       - "<math><mrow intent='germ($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow [ # 1 ] _ $2"
       urls: 
        - "https://en.wikipedia.org/wiki/Germ_(mathematics)"
@@ -5049,6 +5079,8 @@ concepts:
       en: group algebra $1 $2
       property: mixfix
       area: "ring theory"
+      comments:
+       - "<math><mrow intent='group-algebra($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1[$2]"
       notationa: "mrow $1$2"
       urls: 
@@ -5075,6 +5107,8 @@ concepts:
       en: group ring $1 $2
       property: mixfix, infix
       area: "ring theory"
+      comments:
+       - "<math><mrow intent='group-ring($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1 [ $2 ]"
       notationa: "mrow $1 $2"
       urls: 
@@ -5759,6 +5793,8 @@ concepts:
       en: image $1 $2
       property: mixfix
       area: "set theory"
+      comments:
+       - "<math><mrow intent='image($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "$1 [ $2 ]"
       notationc: "msub $1 *"
       notationb: "<msup><mi>X</mi><mo>→</mo></msup>"
@@ -5825,6 +5861,8 @@ concepts:
       en: $1 incomparability $2
       property: infix
       area: "order theory"
+      comments:
+       - "<math><mrow intent='incomparability($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "menclose notation='updiagonalstrike' munderover = > <"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
@@ -6035,6 +6073,8 @@ concepts:
       en: $1 inner product $2
       property: infix, fenced
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='inner-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ⋅"
       notationa: "<math><mrow intent='inner-product($a1,$a2)'><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>]</mo></mrow></math>"
       urls: 
@@ -6049,6 +6089,8 @@ concepts:
       en: instantaneous activity $1 $2
       property: mixfix
       area: "chemistry"
+      comments:
+       - "<math><mrow intent='instantaneous-activity($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mrow { $1 } /mrow $2"
       urls: 
        - "https://en.wikipedia.org/wiki/Reaction_quotient"
@@ -6105,6 +6147,8 @@ concepts:
       en: inverse image $1 $2
       property: mixfix
       area: "set theory"
+      comments:
+       - "<math><mrow intent='inverse-image($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow msup $1 -1 /msup [ $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Image_(mathematics)"
@@ -6130,6 +6174,8 @@ concepts:
       en: inverse moment of function $1 $2
       property: "msub, mixfix"
       area: "mathematics"
+      comments:
+       - "<math><mrow intent='inverse-moment-of-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub μ mrow - $1 /mrow"
       notationa: "mrow E [ msup $1 mrow - $2 /mrow ]"
       urls: 
@@ -6164,6 +6210,8 @@ concepts:
       en: ionic charge
       property: msup
       area: "chemistry"
+      comments:
+       - "<math><mrow intent='ionic-charge($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 $2"
       notationa: ""
       urls: 
@@ -6201,6 +6249,8 @@ concepts:
       en: isotropy group
       property: msub
       area: "group theory"
+      comments:
+       - "<math><mrow intent='isotropy-group($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub $1 $2"
       urls: 
        - "https://mathworld.wolfram.com/IsotropyGroup.html"
@@ -6285,6 +6335,8 @@ concepts:
       en: jacobi zeta function
       property: function
       area: "special-functions"
+      comments:
+       - "<math><mrow intent='jacobi-zeta-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow Z⁡ ( $1 |  $2 )"
       urls: 
        - "https://mathworld.wolfram.com/JacobiZetaFunction.html"
@@ -6392,6 +6444,8 @@ concepts:
       en: jordan block
       property: "indexed symbol"
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='jordan-block($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub J mrow $1, $2"
       urls: 
        - "https://mathworld.wolfram.com/JordanBlock.html"
@@ -6568,6 +6622,8 @@ concepts:
       en: kneser graph
       property: "indexed symbol"
       area: "graph theory"
+      comments:
+       - "<math><mrow intent='kneser-graph($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow K ( $1, $2 )"
       notationa: "msub mi KG /mi $1, $2"
       urls: 
@@ -6658,6 +6714,8 @@ concepts:
       en: kronecker delta
       property: "indexed function"
       area: "special functions"
+      comments:
+       - "<math><mrow intent='kronecker-delta($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub δ mrow $1 $2 mrow"
       urls: 
        - "https://mathworld.wolfram.com/KroneckerDelta.html"
@@ -7047,6 +7105,8 @@ concepts:
       en: $1 lexicographic product $2
       property: infix, mixfix
       area: "graph theory"
+      comments:
+       - "<math><mrow intent='lexicographic-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∙"
       notationa: "$1 [ $2 ]"
       urls: 
@@ -7194,6 +7254,8 @@ concepts:
       en: localization $1 $2
       property: mixfix
       area: "module theory"
+      comments:
+       - "<math><mrow intent='localization($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 -1 /msup $2"
       urls: 
        - "https://mathworld.wolfram.com/Localization.html"
@@ -7219,6 +7281,8 @@ concepts:
       en: logarithmic moment of function $1 $2
       property: "mixfix"
       area: "mathematics"
+      comments:
+       - "<math><mrow intent='logarithmic-moment-of-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "E [ msup ln $1 /msup ( $2 ) ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
@@ -7240,6 +7304,8 @@ concepts:
       en: lommel function
       property: "indexed function"
       area: "special functions"
+      comments:
+       - "<math><mrow intent='lommel-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub S mrow $1,$2 /mrow"
       notationa: "msub s mrow $1, $2 /mrow"
       urls: 
@@ -7844,6 +7910,8 @@ concepts:
       en: $1 modulo $2
       property: infix, mixfix
       area: "modular arithmetic"
+      comments:
+       - "<math><mrow intent='modulo($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo mod"
       notationa: "mrow $1 ( mod $2"
       urls: 
@@ -8034,6 +8102,8 @@ concepts:
       en: multichoose
       property: fenced-stacked
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='multichoose($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ( mfrac $1 $2"
       urls: 
        - "https://mathworld.wolfram.com/Multiset.html"
@@ -8043,6 +8113,8 @@ concepts:
       en: multiset coefficient
       property: fenced-stacked
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='multiset-coefficient($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ( ( mfrac $1 $2 )"
       urls: 
        - "https://en.wikipedia.org/wiki/Multiset"
@@ -8067,6 +8139,8 @@ concepts:
       en: mutation
       property: msup
       area: "abstract algebra"
+      comments:
+       - "<math><mrow intent='mutation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 $2"
       urls: 
        - "https://mathworld.wolfram.com/Mutation.html"
@@ -8094,6 +8168,8 @@ concepts:
       en: narayana number
       property: function
       area: "combinatorial analysis"
+      comments:
+       - "<math><mrow intent='narayana-number($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow N ($1, $2"
       urls: 
        - "https://mathworld.wolfram.com/NarayanaNumber.html"
@@ -8143,6 +8219,8 @@ concepts:
       en: neighbourhood
       property: "indexed function, function"
       area: "graph theory"
+      comments:
+       - "<math><mrow intent='neighbourhood($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub N $1 ( $2 )"
       notationa: "mrow N ( $1"
       urls: 
@@ -8363,6 +8441,8 @@ concepts:
       en: open ball $1 $2
       property: mixfix
       area: "topology"
+      comments:
+       - "<math><mrow intent='open-ball($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow msub B $1 /msub ( $2"
       urls: 
        - "https://mathworld.wolfram.com/OpenBall.html"
@@ -8387,6 +8467,8 @@ concepts:
       en: open real interval
       property: fenced
       area: "algebra"
+      comments:
+       - "<math><mrow intent='open-real-interval($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ($1 . . $2)"
       urls: 
        - "https://proofwiki.org/wiki/Definition: Real_Interval/Open"
@@ -8582,6 +8664,8 @@ concepts:
       en: parallel morphism
       property: embellished infix
       area: "category theory"
+      comments:
+       - "<math><mrow intent='parallel-morphism($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "<munderover>"
       notationd: "<mrow/>"
       notationc: "<munder><mo>⟶</mo> $1</munder>"
@@ -8871,6 +8955,8 @@ concepts:
       en: plethysm $1 $2
       property: mixfix
       area: "algebra"
+      comments:
+       - "<math><mrow intent='plethysm($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow { $1 } ⊗ { $2 }"
       urls: 
        - "https://mathworld.wolfram.com/Plethysm.html"
@@ -8882,6 +8968,8 @@ concepts:
       en: plucker coordinate
       property: fenced
       area: "geometry"
+      comments:
+       - "<math><mrow intent='plucker-coordinate($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ( $1 : $2 : ... : $n"
       urls: 
        - "https://mathworld.wolfram.com/PlueckerCoordinates.html"
@@ -8965,6 +9053,8 @@ concepts:
       en: polynomial ring $1 $2
       property: mixfix
       area: "ring theory"
+      comments:
+       - "<math><mrow intent='polynomial-ring($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1 [ $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Polynomial_ring#Definition_(univariate_case)"
@@ -9175,6 +9265,8 @@ concepts:
       en: product measure
       property: function
       area: "measure theory"
+      comments:
+       - "<math><mrow intent='product-measure($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1 × $2"
       urls: 
        - "https://mathworld.wolfram.com/ProductMeasure.html"
@@ -9259,6 +9351,8 @@ concepts:
       en: pseudovector $1 $2
       property: mixfix
       area: "vector calculus"
+      comments:
+       - "<math><mrow intent='pseudovector($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow (det $1) ($1 $2"
       urls: 
        - "https://mathworld.wolfram.com/Pseudovector.html"
@@ -9362,6 +9456,8 @@ concepts:
       en: quadratic variation
       property: indexed fenced
       area: "stochastic processes"
+      comments:
+       - "<math><mrow intent='quadratic-variation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mrow [ $1 ] /mrow $2"
       urls: 
        - "https://en.wikipedia.org/wiki/Quadratic_variation"
@@ -9691,6 +9787,8 @@ concepts:
       en: resolvent
       property: "indexed function"
       area: "galois theory"
+      comments:
+       - "<math><mrow intent='resolvent($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup R $1 ($2"
       urls: 
        - "https://mathworld.wolfram.com/Resolvent.html"
@@ -9713,6 +9811,8 @@ concepts:
       en: restricted quantifier $1 $2
       property: mixfix
       area: "formal logic"
+      comments:
+       - "<math><mrow intent='restricted-quantifier($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mrow ( Ǝ $1 ) /mrow $2"
       notationa: "msub mrow ( ∀ $1 ) /mrow $2"
       urls: 
@@ -9738,6 +9838,8 @@ concepts:
       en: restriction
       property: indexed postfix
       area: "elementary mathematics"
+      comments:
+       - "<math><mrow intent='restriction($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "$1 mo msub ↾ $2 /mo"
       notationa: "$1 mo msub | $2 /mo"
       urls: 
@@ -9941,6 +10043,8 @@ concepts:
       en: ring of formal power series $1 $2
       property: mixfix
       area: "ring theory"
+      comments:
+       - "<math><mrow intent='ring-of-formal-power-series($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1 [[ $2 ]]"
       urls: 
        - "https://en.wikipedia.org/wiki/Formal_power_series#The_ring_of_formal_power_series"
@@ -9950,6 +10054,8 @@ concepts:
       en: rising factorial $1 $2
       property: mixfix
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='rising-factorial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 mover $2 ¯"
       notationa: "msup $1 mrow ( $2 ) /mrow"
       urls: 
@@ -10453,6 +10559,8 @@ concepts:
       en: sobolev space
       property: "indexed symbol"
       area: "fourier analysis"
+      comments:
+       - "<math><mrow intent='sobolev-space($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup W $1 $2"
       urls: 
        - "https://mathworld.wolfram.com/SobolevSpace.html"
@@ -10608,6 +10716,8 @@ concepts:
       en: spherical bessel function of third kind
       property: "indexed function"
       area: "special functions"
+      comments:
+       - "<math><mrow intent='spherical-bessel-function-of-third-kind($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup h $1 (1)"
       notationa: "msubsup h $2 (2"
       urls: 
@@ -10688,6 +10798,8 @@ concepts:
       en: stalk of $1 at $2
       property: msub
       area: "sheaf theory"
+      comments:
+       - "<math><mrow intent='stalk($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub $1 $2"
       urls: 
        - "https://en.wikipedia.org/wiki/Stalk_(sheaf)"
@@ -10722,6 +10834,8 @@ concepts:
       en: stanley reisner ring $1 $2
       property: mixfix
       area: "commutative algebra"
+      comments:
+       - "<math><mrow intent='stanley-reisner-ring($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow $1 [ $2 ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Stanley%E2%80%93Reisner_ring"
@@ -10782,6 +10896,8 @@ concepts:
       en: stiefel manifold $1 $2
       property: mixfix
       area: "differential geometry"
+      comments:
+       - "<math><mrow intent='stiefel-manifold($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow msub V $1 /msub ( $2"
       urls: 
        - "https://mathworld.wolfram.com/StiefelManifold.html"
@@ -10855,6 +10971,8 @@ concepts:
       en: $1 string concatenation $2
       property: infix
       area: "computer science"
+      comments:
+       - "<math><mrow intent='string-concatenation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo"
       urls: 
        - "https://mathworld.wolfram.com/Concatenation.html"
@@ -11459,6 +11577,8 @@ concepts:
       en: total derivative $1 with respect to $2
       property: mixfix
       area: "differential calculus"
+      comments:
+       - "<math><mrow intent='total-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow d msub $1 $2 /msub"
       urls: 
        - "https://mathworld.wolfram.com/TotalDerivative.html"
@@ -11624,6 +11744,8 @@ concepts:
       en: turan graph $1 $2
       property: "function, indexed function"
       area: "graph theory"
+      comments:
+       - "<math><mrow intent='turan-graph($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mi T"
       notationc: "mi D"
       notationb: "msub T $1"
@@ -12055,6 +12177,8 @@ concepts:
       en: wavelet transform $1 $2
       property: "embellished function"
       area: "functional analysis"
+      comments:
+       - "<math><mrow intent='wavelet-transform($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow [ msub W $1 /msub $2 ]"
       urls: 
        - "https://mathworld.wolfram.com/WaveletTransform.html"
@@ -12157,6 +12281,8 @@ concepts:
       en: weighted lehmer mean $1 $2
       property: "indexed function"
       area: "means"
+      comments:
+       - "<math><mrow intent='weighted-lehmer-mean($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub L mrow $1 , $2 /mrow"
       urls: 
        - "https://mathworld.wolfram.com/LehmerMean.html"
@@ -12228,6 +12354,8 @@ concepts:
       en: whittaker function $1 $2
       property: "indexed function"
       area: "special functions"
+      comments:
+       - "<math><mrow intent='whittaker-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub M mrow $1, $2 /mrow"
       notationa: "msub W mrow $1, $2 /mrow"
       urls: 
@@ -12407,6 +12535,8 @@ concepts:
       en: wronskian of $1, $2
       property: operator
       area: "special functions"
+      comments:
+       - "<math><mrow intent='wronskian($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow 𝒲 { $1, $2 }"
       notationa: "mi W"
       urls: 
