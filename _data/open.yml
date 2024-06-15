@@ -1986,8 +1986,7 @@ concepts:
       property: mixfix
       area: "probability theory"
       comments:
-       - "<math><mrow intent='conditional-expectation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow E ( $1 | $2 )"
+       - "<math><mrow intent='conditional-expectation($a1,$a2)'><mi>E</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Conditional_expectation"
        - "https://ncatlab.org/nlab/show/conditional+expectation"
@@ -1998,8 +1997,7 @@ concepts:
       property: mixfix
       area: "probability theory"
       comments:
-       - "<math><mrow intent='conditional-probability($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow P ( $1 | $2 )"
+       - "<math><mrow intent='conditional-probability($a1,$a2)'><mi>P</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ConditionalProbability.html"
        - "https://en.wikipedia.org/wiki/Conditional_probability"
@@ -2031,8 +2029,7 @@ concepts:
       property: mixfix
       area: "statistics"
       comments:
-       - "<math><mrow intent='contrast-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "D ( $1 | $2)"
+       - "<math><mrow intent='contrast-function($a1,$a2)'><mi>D</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Divergence_(statistics)"
       alias:
