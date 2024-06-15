@@ -10519,9 +10519,8 @@ concepts:
       property: fenced
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='seminorm($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ‖ $1 ‖"
-      notationa: "mo | $1"
+       - "<math><mrow intent='seminorm($a1)'><mo>‖</mo><mi arg='a1'>X</mi><mo>‖</mo></mrow></math>"
+       - "<math><mrow intent='seminorm($a1)'><mo>|</mo><mi arg='a1'>X</mi><mo>|</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Seminorm.html"
        - "https://en.wikipedia.org/wiki/Norm_(mathematics)"
@@ -10587,7 +10586,7 @@ concepts:
       property: mixfix
       area: "group theory"
       comments:
-       - "<math><mrow intent='short-exact-sequence($a1,$a2,$a3)'><mn>0</mn><mo>&rightarrow;</mo><mi arg='a1'>X</mi><mo>&rightarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi>Z</mi><mo>&rightarrow;</mo><mn>0</mn></mrow></math>"
+       - "<math><mrow intent='short-exact-sequence($a1,$a2,$a3)'><mn>0</mn><mo>&rightarrow;</mo><mi arg='a1'>X</mi><mo>&rightarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi arg='a3'>Z</mi><mo>&rightarrow;</mo><mn>0</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShortExactSequence.html"
        - "https://en.wikipedia.org/wiki/Exact_sequence"
@@ -10996,8 +10995,7 @@ concepts:
       property: msub
       area: "sheaf theory"
       comments:
-       - "<math><mrow intent='stalk($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub $1 $2"
+       - "<math><msub intent='stalk($a1,$a2)'><mi arg='a1'>ℱ</mi><mi arg='a2'>x</mi></msub></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Stalk_(sheaf)"
     
