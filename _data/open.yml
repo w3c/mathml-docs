@@ -22,6 +22,8 @@ concepts:
       en: abelian integral of $1
       property: indexed
       area: "complex analysis"
+      comments:
+       - "<math><mrow intent='abelian-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/AbelianIntegral.html"
@@ -43,6 +45,8 @@ concepts:
       en: abundancy of $1
       property: mixfix
       area: "number theory"
+      comments:
+       - "<math><mrow intent='abundancy($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "sigma (n) / n"
       urls: 
        - "https://mathworld.wolfram.com/Abundancy.html"
@@ -125,6 +129,8 @@ concepts:
       en: adjoint of $1
       property: 
       area: 
+      comments:
+       - "<math><mrow intent='adjoint($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: 
       urls: 
        - "https://mathworld.wolfram.com/Adjoint.html"
@@ -136,6 +142,8 @@ concepts:
       en: adjoint action of $1
       property: "function/msub"
       area: "lie algebra"
+      comments:
+       - "<math><mrow intent='adjoint-action($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mi ad $1"
       notationa: "msub ad $1"
       urls: 
@@ -260,6 +268,8 @@ concepts:
       en: algebraic closure of $1
       property: mover/msup
       area: "algebra"
+      comments:
+       - "<math><mrow intent='algebraic-closure($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover ¯"
       notationa: "msup alg"
       urls: 
@@ -272,6 +282,8 @@ concepts:
       en: almost surely of $1
       property: 
       area: "probability theory"
+      comments:
+       - "<math><mrow intent='almost-surely($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtext a.s."
       urls: 
        - "https://en.wikipedia.org/wiki/Almost_surely"
@@ -337,6 +349,8 @@ concepts:
       en: amalgam of $1
       property: fenced, 5-tuple
       area: "model theory"
+      comments:
+       - "<math><mrow intent='amalgam($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow (A,f,B,g,C)"
       urls: 
        - "https://en.wikipedia.org/wiki/Amalgamation_property"
@@ -458,6 +472,8 @@ concepts:
       en: antiparticle of $1
       property: mover
       area: "particle physics"
+      comments:
+       - "<math><mrow intent='antiparticle($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover $1 ¯"
       urls: 
        - "https://en.wikipedia.org/wiki/Antimatter"
@@ -575,6 +591,8 @@ concepts:
       en: associated legendre polynomial of $1
       property: function
       area: "special functions"
+      comments:
+       - "<math><mrow intent='associated-legendre-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup P l m"
       urls: 
        - "https://mathworld.wolfram.com/AssociatedLegendrePolynomial.html"
@@ -719,6 +737,8 @@ concepts:
       en: berezin integral of $1
       property: indexed
       area: "mathematical physics"
+      comments:
+       - "<math><mrow intent='berezin-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://en.wikipedia.org/wiki/Berezin_integral"
@@ -883,6 +903,8 @@ concepts:
       en: bigeometric integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='bigeometric-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo Π"
       urls: 
        - "https://en.wikipedia.org/wiki/Product_integral"
@@ -913,6 +935,8 @@ concepts:
       en: binomial coefficient of $1
       property: "indexed function"
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='binomial-coefficient($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup C"
       urls: 
        - "https://mathworld.wolfram.com/BinomialCoefficient.html"
@@ -928,6 +952,8 @@ concepts:
       en: binomial distribution of $1
       property: function
       area: "probability theory"
+      comments:
+       - "<math><mrow intent='binomial-distribution($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow B(n,p"
       urls: 
        - "https://mathworld.wolfram.com/BinomialDistribution.html"
@@ -1152,6 +1178,8 @@ concepts:
       en: cardinality of $1
       property: many
       area: "set theory"
+      comments:
+       - "<math><mrow intent='cardinality($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow | mo #"
       notationb: "mi card"
       notationa: "<math><mrow intent='cardinality($a1)'><mi>n</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
@@ -1759,6 +1787,8 @@ concepts:
       en: column vector of $1
       property: mtable
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='column-vector($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtable"
       urls: 
        - "https://mathworld.wolfram.com/ColumnVector.html"
@@ -1844,6 +1874,8 @@ concepts:
       en: complementary nome of $1
       property: function
       area: "special functions"
+      comments:
+       - "<math><mrow intent='complementary-nome($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub q 1"
       urls: 
        - "https://mathworld.wolfram.com/Nome.html"
@@ -2124,6 +2156,8 @@ concepts:
       en: contingency table of $1
       property: mtable
       area: "statistics"
+      comments:
+       - "<math><mrow intent='contingency-table($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtable"
       urls: 
        - "https://mathworld.wolfram.com/ContingencyTable.html"
@@ -2136,6 +2170,8 @@ concepts:
       en: continued fraction of $1
       property: mixfix
       area: "number theory"
+      comments:
+       - "<math><mrow intent='continued-fraction($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mfrac"
       urls: 
        - "https://mathworld.wolfram.com/ContinuedFraction.html"
@@ -2266,6 +2302,8 @@ concepts:
       en: coproduct of $1
       property: indexed
       area: "topology, category theory"
+      comments:
+       - "<math><mrow intent='coproduct($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∐"
       urls: 
        - "https://mathworld.wolfram.com/Coproduct.html"
@@ -2483,6 +2521,8 @@ concepts:
       en: current of $1
       property: fenced
       area: "differential topology"
+      comments:
+       - "<math><mrow intent='current($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow [[ $1 ]]"
       notationa: "<math><mrow intent='current($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>]</mo></mrow></math>"
       urls: 
@@ -2509,6 +2549,8 @@ concepts:
       en: cycle of $1
       property: fenced
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='cycle($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ( $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Permutation#Cycle_notation"
@@ -2530,6 +2572,8 @@ concepts:
       en: cyclotomic field of $1
       property: embellished symbol
       area: "number theory"
+      comments:
+       - "<math><mrow intent='cyclotomic-field($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow Q( ζ )"
       notationa: "mrow Q( msub ζ $1"
       urls: 
@@ -2754,6 +2798,8 @@ concepts:
       en: derivation tree of $1
       property: mfrac
       area: "logic"
+      comments:
+       - "<math><mrow intent='derivation-tree($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mfrac"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Derivation_tree"
@@ -2914,6 +2960,8 @@ concepts:
       en: dilogarithm of $1
       property: function
       area: "special functions"
+      comments:
+       - "<math><mrow intent='dilogarithm($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub Li 2"
       comments:
        - "<math><mrow intent='dilogarithm($a1)'><msub><mi>L</mi><mn>2</mn></msub><mi arg='a1'>z</mi></mrow></math>"
@@ -3229,6 +3277,8 @@ concepts:
       en: divided difference of $1
       property: "fenced, mixfix"
       area: "special functions"
+      comments:
+       - "<math><mrow intent='divided-difference($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow [ $1, ... $n ]"
       notationb: "mrow #f [$1, ..., $n ]"
       notationa: "mrow D [ $1, ... $n ] #f"
@@ -4040,6 +4090,8 @@ concepts:
       en: $1 th faber polynomial
       property: function
       area: "polynomials"
+      comments:
+       - "<math><mrow intent='faber-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub P m"
       comments:
        - "<math><msub intent='faber-polynomial($a1)'><mi mathvariant='normal'>P</mi><mi arg='a1'>n</mi></msub></math>"
@@ -4137,6 +4189,8 @@ concepts:
       en: fermi dirac distribution of $1
       property: function
       area: "quantum statistics"
+      comments:
+       - "<math><mrow intent='fermi-dirac-distribution($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover n ¯"
       urls: 
        - "https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_distribution"
@@ -4149,6 +4203,8 @@ concepts:
       en: feynman slash of $1
       property: menclose
       area: "quantum field theory"
+      comments:
+       - "<math><mrow intent='feynman-slash($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "menclose notation=updiagonalstrike $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Feynman_slash_notation"
@@ -4337,6 +4393,8 @@ concepts:
       en: fox derivative of $1
       property: mfrac
       area: "geometric topology"
+      comments:
+       - "<math><mrow intent='fox-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mfrac ∂..."
       urls: 
        - "https://mathworld.wolfram.com/FoxDerivative.html"
@@ -4348,6 +4406,8 @@ concepts:
       en: fox wright function of $1
       property: mmultiscripts
       area: "special functions"
+      comments:
+       - "<math><mrow intent='fox-wright-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mmultiscripts Ψ q none mprescripts p none"
       urls: 
        - "https://en.wikipedia.org/wiki/Fox%E2%80%93Wright_function"
@@ -4359,6 +4419,8 @@ concepts:
       en: fractional derivative of $1
       property: operator
       area: "fractional caclulus"
+      comments:
+       - "<math><mrow intent='fractional-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup D $1"
       urls: 
        - "https://mathworld.wolfram.com/FractionalDerivative.html"
@@ -4369,6 +4431,8 @@ concepts:
       en: fractional integral of $1
       property: operator
       area: "fractional caclulus"
+      comments:
+       - "<math><mrow intent='fractional-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup I $1"
       urls: 
        - "https://mathworld.wolfram.com/FractionalIntegral.html"
@@ -4527,6 +4591,8 @@ concepts:
       en: frobenius norm of $1
       property: indexed fenced
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='frobenius-norm($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mrow | $1 F"
       urls: 
        - "https://mathworld.wolfram.com/FrobeniusNorm.html"
@@ -4634,6 +4700,8 @@ concepts:
       en: galois field of $1
       property: function
       area: "finite fields"
+      comments:
+       - "<math><mrow intent='galois-field($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow GF ($1)"
       notationb: "msub F $1"
       notationa: "msub 𝔽 $1"
@@ -4825,6 +4893,8 @@ concepts:
       en: generalized hypergeometric function of $1
       property: mmultiscripts
       area: "special functions"
+      comments:
+       - "<math><mrow intent='generalized-hypergeometric-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mmultiscripts F q none mprescripts p none"
       urls: 
        - "https://mathworld.wolfram.com/GeneralizedHypergeometricFunction.html"
@@ -4899,6 +4969,8 @@ concepts:
       en: geometric genus of $1
       property: function
       area: "algebraic geometry"
+      comments:
+       - "<math><mrow intent='geometric-genus($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub p g"
       urls: 
        - "https://mathworld.wolfram.com/GeometricGenus.html"
@@ -4910,6 +4982,8 @@ concepts:
       en: geometric integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='geometric-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo Π"
       urls: 
        - "https://en.wikipedia.org/wiki/Product_integral"
@@ -4968,6 +5042,8 @@ concepts:
       en: global dimension of $1
       property: function
       area: "ring theory"
+      comments:
+       - "<math><mrow intent='global-dimension($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mi gl dim"
       urls: 
        - "https://en.wikipedia.org/wiki/Global_dimension"
@@ -5192,6 +5268,8 @@ concepts:
       en: hardy class of $1
       property: "indexed symbol"
       area: "complex analysis"
+      comments:
+       - "<math><mrow intent='hardy-class($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup H $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Hardy_space"
@@ -5204,6 +5282,8 @@ concepts:
       en: hardy space of $1
       property: mixfix
       area: "complex analysis"
+      comments:
+       - "<math><mrow intent='hardy-space($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup H p ($1"
       urls: 
        - "https://mathworld.wolfram.com/HardySpace.html"
@@ -5241,6 +5321,8 @@ concepts:
       en: hausdorff measure of $1
       property: "indexed function"
       area: "metric geometry"
+      comments:
+       - "<math><mrow intent='hausdorff-measure($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup H $1"
       urls: 
        - "https://mathworld.wolfram.com/HausdorffMeasure.html"
@@ -5251,6 +5333,8 @@ concepts:
       en: hausdorff metric of $1
       property: function
       area: "metric geometry"
+      comments:
+       - "<math><mrow intent='hausdorff-metric($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub d H"
       urls: 
        - "https://en.wikipedia.org/wiki/Hausdorff_distance"
@@ -5383,6 +5467,8 @@ concepts:
       en: hermitian adjoint of $1
       property: msup
       area: "functional analysis"
+      comments:
+       - "<math><mrow intent='hermitian-adjoint($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup †,"
       notationa: "msup *"
       urls: 
@@ -5395,6 +5481,8 @@ concepts:
       en: hermitian conjugate of $1
       property: msup
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='hermitian-conjugate($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup H"
       urls: 
        - "https://mathworld.wolfram.com/HermitianConjugate.html"
@@ -5482,6 +5570,8 @@ concepts:
       en: hilbert schmidt norm of $1
       property: fenced
       area: "matrix norms"
+      comments:
+       - "<math><mrow intent='hilbert-schmidt-norm($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mrow | $1 | HS"
       urls: 
        - "https://mathworld.wolfram.com/Hilbert-SchmidtNorm.html"
@@ -5998,6 +6088,8 @@ concepts:
       en: infimum limit of $1
       property: indexed
       area: "limits"
+      comments:
+       - "<math><mrow intent='infimum-limit($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mi lim inf"
       notationa: "munder lim ¯"
       urls: 
@@ -6016,6 +6108,8 @@ concepts:
       en: infinite product of $1
       property: indexed
       area: "mathematical analysis"
+      comments:
+       - "<math><mrow intent='infinite-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "munderover Π $1∞"
       urls: 
        - "https://mathworld.wolfram.com/InfiniteProduct.html"
@@ -6062,6 +6156,8 @@ concepts:
       en: inner jordan measure of $1
       property: function
       area: "measure theory"
+      comments:
+       - "<math><mrow intent='inner-jordan-measure($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub m *"
       urls: 
        - "https://mathworld.wolfram.com/JordanMeasure.html"
@@ -6126,6 +6222,8 @@ concepts:
       en: interior product of $1
       property: "infix, indexed function"
       area: "differential forms"
+      comments:
+       - "<math><mrow intent='interior-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ⨼"
       notationa: "msub ι $1"
       urls: 
@@ -6161,6 +6259,8 @@ concepts:
       en: inverse limit of $1
       property: prefix
       area: "category theory"
+      comments:
+       - "<math><mrow intent='inverse-limit($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "munder lim ←"
       urls: 
        - "https://mathworld.wolfram.com/InverseLimit.html"
@@ -6297,6 +6397,8 @@ concepts:
       en: jacobi polynomial of $1
       property: function
       area: "orthogonal polynomials"
+      comments:
+       - "<math><mrow intent='jacobi-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup P"
       urls: 
        - "https://mathworld.wolfram.com/JacobiPolynomial.html"
@@ -6409,6 +6511,8 @@ concepts:
       en: jet of $1
       property: function
       area: "differential geometry"
+      comments:
+       - "<math><mrow intent='jet($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup J"
       urls: 
        - "https://en.wikipedia.org/wiki/Jet_(mathematics)"
@@ -6419,6 +6523,8 @@ concepts:
       en: join of $1
       property: indexed
       area: "measure theory"
+      comments:
+       - "<math><mrow intent='join($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ⋁"
       urls: 
        - "https://mathworld.wolfram.com/Join.html"
@@ -6517,6 +6623,8 @@ concepts:
       en: kelvin function of $1
       property: function
       area: "special functions"
+      comments:
+       - "<math><mrow intent='kelvin-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub ber ν⁡"
       notationa: "msub bei ν⁡"
       urls: 
@@ -6580,6 +6688,8 @@ concepts:
       en: kleene star of $1
       property: msup
       area: "formal languages"
+      comments:
+       - "<math><mrow intent='kleene-star($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup *"
       urls: 
        - "https://en.wikipedia.org/wiki/Kleene_star"
@@ -6589,6 +6699,8 @@ concepts:
       en: kleene plus of $1
       property: msup
       area: "formal languages"
+      comments:
+       - "<math><mrow intent='kleene-plus($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup +"
       urls: 
        - "https://en.wikipedia.org/wiki/Kleene_star"
@@ -6769,6 +6881,8 @@ concepts:
       en: kulkarni nomizu product of $1
       property: embellished infix
       area: "differential geometry"
+      comments:
+       - "<math><mrow intent='kulkarni-nomizu-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∧ /mo mspace=negative.../mspace mo ◯ /mo"
       urls: 
        - "https://en.wikipedia.org/wiki/Kulkarni%E2%80%93Nomizu_product"
@@ -6868,6 +6982,8 @@ concepts:
       en: laplace operator of $1
       property: "embellished operator"
       area: "differential operators"
+      comments:
+       - "<math><mrow intent='laplace-operator($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup ∇ 2"
       notationb: "mrow ∇ · ∇"
       notationa: "<math><mrow intent='laplace-operator($a1)'><mi>Δ</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
@@ -6905,6 +7021,8 @@ concepts:
       en: latin rectangle of $1
       property: mtable
       area: "combinatorial mathematics"
+      comments:
+       - "<math><mrow intent='latin-rectangle($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtable"
       urls: 
        - "https://mathworld.wolfram.com/LatinRectangle.html"
@@ -6916,6 +7034,8 @@ concepts:
       en: latin square of $1
       property: mtable
       area: "combinatorial mathematics"
+      comments:
+       - "<math><mrow intent='latin-square($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtable"
       urls: 
        - "https://mathworld.wolfram.com/LatinSquare.html"
@@ -6952,6 +7072,8 @@ concepts:
       en: lebesgue integral of $1
       property: indexed
       area: "measure theory"
+      comments:
+       - "<math><mrow intent='lebesgue-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/LebesgueIntegral.html"
@@ -6996,6 +7118,8 @@ concepts:
       en: left derivative of $1
       property: operator
       area: "calculus"
+      comments:
+       - "<math><mrow intent='left-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub ∂ –"
       urls: 
        - "https://en.wikipedia.org/wiki/Left_and_right_derivative"
@@ -7178,6 +7302,8 @@ concepts:
       en: line integral of $1
       property: indexed
       area: "analysis"
+      comments:
+       - "<math><mrow intent='line-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/LineIntegral.html"
@@ -7320,6 +7446,8 @@ concepts:
       en: long division of $1
       property: mfrac
       area: "arithmetic"
+      comments:
+       - "<math><mrow intent='long-division($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mfrac?"
       urls: 
        - "https://mathworld.wolfram.com/LongDivision.html"
@@ -7352,6 +7480,8 @@ concepts:
       en: lower darboux integral of $1
       property: indexed
       area: "real analysis"
+      comments:
+       - "<math><mrow intent='lower-darboux-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "munder ¯"
       urls: 
        - "https://mathworld.wolfram.com/DarbouxIntegral.html"
@@ -7363,6 +7493,8 @@ concepts:
       en: lower dini derivative of $1
       property: decorated function
       area: "analysis"
+      comments:
+       - "<math><mrow intent='lower-dini-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup $1 - '"
       urls: 
        - "https://mathworld.wolfram.com/DiniDerivative.html"
@@ -7425,6 +7557,8 @@ concepts:
       en: macdonald polynomial of $1
       property: function
       area: "orthogonal polynomials"
+      comments:
+       - "<math><mrow intent='macdonald-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub P λ"
       urls: 
        - "https://en.wikipedia.org/wiki/Macdonald_polynomials"
@@ -7549,6 +7683,8 @@ concepts:
       en: mathieu group of $1
       property: "indexed symbol"
       area: "group theory"
+      comments:
+       - "<math><mrow intent='mathieu-group($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub M 11"
       notationd: "msub M 12"
       notationc: "msub M 22"
@@ -7571,6 +7707,8 @@ concepts:
       en: matrix of $1
       property: mtable, fenced
       area: "algebra"
+      comments:
+       - "<math><mrow intent='matrix($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtable"
       notationb: "<math><mrow intent='matrix($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>]</mo></mrow></math>"
       notationa: "mrow ( $1"
@@ -7873,6 +8011,8 @@ concepts:
       en: modified spherical bessel function of $1
       property: function
       area: "special functions"
+      comments:
+       - "<math><mrow intent='modified-spherical-bessel-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup i $1 (1)"
       notationb: "msubsup i $1 (2)"
       notationa: "msub k $1"
@@ -8022,6 +8162,8 @@ concepts:
       en: moore smith sequence of $1
       property: fenced
       area: "topology"
+      comments:
+       - "<math><mrow intent='moore-smith-sequence($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ( $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Moore%E2%80%93Smith_limit"
@@ -8048,6 +8190,8 @@ concepts:
       en: multiple integral of $1
       property: indexed
       area: "multivariable calculus"
+      comments:
+       - "<math><mrow intent='multiple-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫ ⋯ ∫"
       notationa: "mo ∫"
       urls: 
@@ -8091,6 +8235,8 @@ concepts:
       en: multiplier algebra of $1
       property: function
       area: "functional analysis"
+      comments:
+       - "<math><mrow intent='multiplier-algebra($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow M($1"
       urls: 
        - "https://mathworld.wolfram.com/MultiplierAlgebra.html"
@@ -8181,6 +8327,8 @@ concepts:
       en: narrow denjoy integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='narrow-denjoy-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/DenjoyIntegral.html"
@@ -8355,6 +8503,8 @@ concepts:
       en: null graph
       property: symbol
       area: "graph theory"
+      comments:
+       - "<math><mrow intent='null-graph($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mover K ¯ /mover $1"
       urls: 
        - "https://mathworld.wolfram.com/NullGraph.html"
@@ -8581,6 +8731,8 @@ concepts:
       en: outer jordan measure of $1
       property: function
       area: "measure theory"
+      comments:
+       - "<math><mrow intent='outer-jordan-measure($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup m *"
       urls: 
        - "https://mathworld.wolfram.com/JordanMeasure.html"
@@ -8679,6 +8831,8 @@ concepts:
       en: partial charge
       property: symbol
       area: "chemistry"
+      comments:
+       - "<math><mrow intent='partial-charge($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup δ $1"
       notationa: "mrow δ $1"
       urls: 
@@ -8781,6 +8935,8 @@ concepts:
       en: periodic continued fraction of $1
       property: mfrac
       area: "mathematical analysis"
+      comments:
+       - "<math><mrow intent='periodic-continued-fraction($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mfrac with ellipses"
       urls: 
        - "https://mathworld.wolfram.com/PeriodicContinuedFraction.html"
@@ -8803,6 +8959,8 @@ concepts:
       en: permutation of $1
       property: fenced, mtable, mixfix
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='permutation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ($1, ... $n)"
       notationb: "mtable"
       notationa: "mrow (312)(54)(8)(976"
@@ -8981,6 +9139,8 @@ concepts:
       en: pointwise convergent of $1
       property: postfix
       area: "convergence"
+      comments:
+       - "<math><mrow intent='pointwise-convergent($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtext pointwise"
       urls: 
        - "https://mathworld.wolfram.com/PointwiseConvergence.html"
@@ -9029,6 +9189,8 @@ concepts:
       en: pollaczek polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
+      comments:
+       - "<math><mrow intent='pollaczek-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup P n (λ"
       urls: 
        - "https://mathworld.wolfram.com/PollaczekPolynomial.html"
@@ -9080,6 +9242,8 @@ concepts:
       en: pontrjagin dual of $1
       property: mover
       area: "harmonic analysis"
+      comments:
+       - "<math><mrow intent='pontrjagin-dual($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover $1 ^"
       urls: 
        - "https://ncatlab.org/nlab/show/Pontrjagin+dual"
@@ -9126,6 +9290,8 @@ concepts:
       en: post canonical system of $1
       property: fenced
       area: "formal languages"
+      comments:
+       - "<math><mrow intent='post-canonical-system($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow (A,I,R"
       urls: 
        - "https://en.wikipedia.org/wiki/Post_canonical_system"
@@ -9254,6 +9420,8 @@ concepts:
       en: product integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='product-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∏"
       urls: 
        - "https://en.wikipedia.org/wiki/Continuous_product"
@@ -9340,6 +9508,8 @@ concepts:
       en: prufer group of $1
       property: mixfix
       area: "group theory"
+      comments:
+       - "<math><mrow intent='prufer-group($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow Z ( msup $1 ∞ /msup"
       urls: 
        - "https://en.wikipedia.org/wiki/Pr%C3%BCfer_group"
@@ -9422,6 +9592,8 @@ concepts:
       en: q binomial coefficient of $1
       property: fenced-stacked
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='q-binomial-coefficient($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mrow [ stacked mfrac ] q"
       urls: 
        - "https://mathworld.wolfram.com/q-BinomialCoefficient.html"
@@ -9445,6 +9617,8 @@ concepts:
       en: quadratic differential of $1
       property: mixfix
       area: "complex manifolds"
+      comments:
+       - "<math><mrow intent='quadratic-differential($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow d $1 ⊗ d $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Quadratic_differential"
@@ -9656,6 +9830,8 @@ concepts:
       en: real bipolar of $1
       property: msup
       area: "functional analysis"
+      comments:
+       - "<math><mrow intent='real-bipolar($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 r r"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
@@ -9681,6 +9857,8 @@ concepts:
       en: real prepolar of $1
       property: prescript
       area: "functional analysis"
+      comments:
+       - "<math><mrow intent='real-prepolar($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup <mrow/> r /msup $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
@@ -9917,6 +10095,8 @@ concepts:
       en: riemann integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='riemann-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/RiemannIntegral.html"
@@ -9993,6 +10173,8 @@ concepts:
       en: riemann stieltje integral of $1
       property: indexed
       area: "measure theory"
+      comments:
+       - "<math><mrow intent='riemann-stieltje-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/Riemann-StieltjesIntegral.html"
@@ -10121,6 +10303,8 @@ concepts:
       en: root mean square of $1
       property: msub
       area: "means"
+      comments:
+       - "<math><mrow intent='root-mean-square($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub $1 RMS"
       urls: 
        - "https://mathworld.wolfram.com/Root-Mean-Square.html"
@@ -10187,6 +10371,8 @@ concepts:
       en: sample variance of $1
       property: embellished symbol
       area: "probability theory"
+      comments:
+       - "<math><mrow intent='sample-variance($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub m 2"
       notationc: "msup s 2"
       notationb: "msubsup s $1 2"
@@ -10213,6 +10399,8 @@ concepts:
       en: scaled riemann theta function of $1
       property: mover
       area: "special functions"
+      comments:
+       - "<math><mrow intent='scaled-riemann-theta-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover θ⁡ ^"
       urls: 
        - "https://dlmf.nist.gov/21.2#i"
@@ -10223,6 +10411,8 @@ concepts:
       en: schlaefli symbol of $1
       property: fenced
       area: "geometry"
+      comments:
+       - "<math><mrow intent='schlaefli-symbol($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow { $1 , ..., $n }"
       urls: 
        - "https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol"
@@ -10285,6 +10475,8 @@ concepts:
       en: second carmichael function of $1
       property: function
       area: "number theory"
+      comments:
+       - "<math><mrow intent='second-carmichael-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup λ '"
       urls: 
        - "https://mathworld.wolfram.com/CarmichaelFunction.html"
@@ -10329,6 +10521,8 @@ concepts:
       en: seminorm of $1
       property: fenced
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='seminorm($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ‖ $1 ‖"
       notationa: "mo | $1"
       urls: 
@@ -10367,6 +10561,8 @@ concepts:
       en: shift operator of $1
       property: operator
       area: "functional analysis"
+      comments:
+       - "<math><mrow intent='shift-operator($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup T t"
       urls: 
        - "https://mathworld.wolfram.com/ShiftOperator.html"
@@ -10478,6 +10674,8 @@ concepts:
       en: simplex of $1
       property: "indexed symbol"
       area: "geometry"
+      comments:
+       - "<math><mrow intent='simplex($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup Δ $1"
       urls: 
        - "https://mathworld.wolfram.com/Simplex.html"
@@ -10697,6 +10895,8 @@ concepts:
       en: spectrum of algebra of $1
       property: mover
       area: "algebra"
+      comments:
+       - "<math><mrow intent='spectrum-of-algebra($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover ˆ"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_of_a_C*-algebra"
@@ -10822,6 +11022,8 @@ concepts:
       en: standard flattening of $1
       property: "indexed symbol"
       area: "multilinear algebra"
+      comments:
+       - "<math><mrow intent='standard-flattening($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub 𝒜 ($1"
       urls: 
        - "https://en.wikipedia.org/wiki/Matricization"
@@ -11148,6 +11350,8 @@ concepts:
       en: supremum limit of $1
       property: indexed
       area: "limits"
+      comments:
+       - "<math><mrow intent='supremum-limit($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mi lim sup"
       notationa: "mover lim ¯"
       urls: 
@@ -11166,6 +11370,8 @@ concepts:
       en: surface integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='surface-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∫"
       urls: 
        - "https://mathworld.wolfram.com/SurfaceIntegral.html"
@@ -11512,6 +11718,8 @@ concepts:
       en: toroidal coordinate of $1
       property: fenced
       area: "geometry"
+      comments:
+       - "<math><mrow intent='toroidal-coordinate($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mrow ( σ , τ , ϕ"
       urls: 
        - "https://mathworld.wolfram.com/ToroidalCoordinates.html"
@@ -11711,6 +11919,8 @@ concepts:
       en: triple torus of $1
       property: "indexed symbol"
       area: "topology"
+      comments:
+       - "<math><mrow intent='triple-torus($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup 𝕋 3"
       urls: 
        - "https://mathworld.wolfram.com/TripleTorus.html"
@@ -11858,6 +12068,8 @@ concepts:
       en: uniformly convergent of $1
       property: infix, indexed, postfix
       area: "convergence"
+      comments:
+       - "<math><mrow intent='uniformly-convergent($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ⇉"
       notationc: "mover ⟶ unif."
       notationb: "mo unif lim"
@@ -11881,6 +12093,8 @@ concepts:
       en: unit vector of $1
       property: mover
       area: "linear algebra"
+      comments:
+       - "<math><mrow intent='unit-vector($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover $1 ^"
       urls: 
        - "https://mathworld.wolfram.com/UnitVector.html"
@@ -11947,6 +12161,8 @@ concepts:
       en: unique existential of $1
       property: prefix
       area: "logic"
+      comments:
+       - "<math><mrow intent='unique-existential($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo ∃ !"
       notationa: "msub ∃ mrow =1 /mrow"
       urls: 
@@ -11993,6 +12209,8 @@ concepts:
       en: upper darboux integral of $1
       property: indexed
       area: "real analysis"
+      comments:
+       - "<math><mrow intent='upper-darboux-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mover ¯"
       urls: 
        - "https://en.wikipedia.org/wiki/Darboux_integral"
@@ -12003,6 +12221,8 @@ concepts:
       en: upper dini derivative of $1
       property: decorated function
       area: "analysis"
+      comments:
+       - "<math><mrow intent='upper-dini-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup $1 + '"
       urls: 
        - "https://mathworld.wolfram.com/DiniDerivative.html"
@@ -12027,6 +12247,8 @@ concepts:
       en: upper shadow of $1
       property: function
       area: "combinatorics"
+      comments:
+       - "<math><mrow intent='upper-shadow($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup 𝜕 +"
       urls: 
        - "http://qk206.user.srcf.net/notes/combinatorics.pdf"
@@ -12107,6 +12329,8 @@ concepts:
       en: vertical of $1
       property: 
       area: 
+      comments:
+       - "<math><mrow intent='vertical($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: 
       urls: 
        - "https://mathworld.wolfram.com/Vertical.html"
@@ -12129,6 +12353,8 @@ concepts:
       en: volterra integral of $1
       property: indexed
       area: "calculus"
+      comments:
+       - "<math><mrow intent='volterra-integral($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mo Π"
       urls: 
        - "https://en.wikipedia.org/wiki/Product_integral"
@@ -12218,6 +12444,8 @@ concepts:
       en: weber function of $1
       property: "indexed function"
       area: "special functions"
+      comments:
+       - "<math><mrow intent='weber-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub E ν"
       urls: 
        - "https://mathworld.wolfram.com/WeberFunctions.html"
@@ -12573,6 +12801,8 @@ concepts:
       en: z matrix molecule of $1
       property: mtable
       area: "chemistry"
+      comments:
+       - "<math><mrow intent='z-matrix-molecule($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "mtable"
       urls: 
        - "https://en.wikipedia.org/wiki/Z-matrix_(chemistry)"
@@ -12595,6 +12825,8 @@ concepts:
       en: zernike polynomial of $1
       property: "indexed function"
       area: "orthogonal polynomials"
+      comments:
+       - "<math><mrow intent='zernike-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup Z"
       urls: 
        - "https://mathworld.wolfram.com/ZernikePolynomial.html"
@@ -12627,6 +12859,8 @@ concepts:
       en: zero morphism of $1
       property: "indexed symbol"
       area: "category theory"
+      comments:
+       - "<math><mrow intent='zero-morphism($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub mn 0 mrow X,Y"
       urls: 
        - "https://en.wikipedia.org/wiki/Zero_morphism"
@@ -12687,3 +12921,4 @@ concepts:
        - "<math><mrow intent='zig-zag-product($a1,$a2)'><mi arg='a1'>X</mi><mo>∘</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zig-zag_product"
+ 
