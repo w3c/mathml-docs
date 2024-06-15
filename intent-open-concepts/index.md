@@ -17,6 +17,11 @@ a.self {color: black; font-weight:500}
      [arg="a2"]:hover::after { content: " $2" ; }
      [arg="a3"]:hover::after { content: " $3" ; }
      [arg="a4"]:hover::after { content: " $4" ; }
+     [arg="a5"]:hover::after { content: " $5" ; }
+     [arg="a6"]:hover::after { content: " $6" ; }
+     [arg="a7"]:hover::after { content: " $7" ; }
+     [arg="a8"]:hover::after { content: " $8" ; }
+     [arg="a9"]:hover::after { content: " $9" ; }
 math:not(:has(*[intent])) {
     color: red;
     }
