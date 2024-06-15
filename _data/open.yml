@@ -4199,7 +4199,8 @@ concepts:
       en: first isogonic center
       property: symbol
       area: "geometry"
-      notation: "mrow X(13"
+      comments:
+       - "<math><mrow intent='first-isogonic-center'><mi mathvariant='normal'>X</mi><mo>(</mo><mn>13</mn><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fermat_point"
     
@@ -4712,7 +4713,8 @@ concepts:
       en: gaussian integers
       property: constant
       area: "number theory"
-      notation: "mrow ℤ [i]"
+      comments:
+       - "<math><mrow intent='gaussian-integers'><mi>ℤ</mi><mo>[</mo><mi>i</mi>><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaussianInteger.html"
        - "https://en.wikipedia.org/wiki/Gaussian_integer"
@@ -4756,7 +4758,8 @@ concepts:
       en: gelfond schneider constant
       property: constant
       area: "transcendental constants"
-      notation: "msup 2 msqrt 2"
+      comments:
+       - "<math><msup intent='gelfond-schneider-constant'><mn>2</mn><msqrt><mn>2</mn></msqrt></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Gelfond-SchneiderConstant.html"
        - "https://en.wikipedia.org/wiki/Gelfond%E2%80%93Schneider_constant"
@@ -7650,11 +7653,12 @@ concepts:
        - "https://ncatlab.org/nlab/show/meson"
     
     - concept: metaplectic-group
-      arity: 0
+      arity: 1
       en: metaplectic group
       property: symbol
       area: "group theory"
-      notation: "msub Mp 2n"
+      comments:
+       - "<math><mrow intent='metaplectic-group($a1)'><msub><mi>Mp</mi><mrow><mn>2</mn><mi>n</mi></mrow></msub><mrow><mo>(</mo><mi arg='a1'>R</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MetaplecticGroup.html"
        - "https://en.wikipedia.org/wiki/Metaplectic_group"
@@ -8847,14 +8851,15 @@ concepts:
        - le-nombre-radiant
     
     - concept: playing-card-suit
-      arity: 0
+      arity: 1
       en: playing card suit
       property: unit
       area: "game theory"
-      notation: "mo ♣"
-      notationc: "mo ♠"
-      notationb: "mo ♦"
-      notationa: "mo ♥"
+      comments:
+       - "<math><mrow intent='playing-card-suit($a1)'><mo arg='a1'>♣</mo></mrow></math>"
+       - "<math><mrow intent='playing-card-suit($a1)'><mo arg='a1'>♠</mo></mrow></math>"
+       - "<math><mrow intent='playing-card-suit($a1)'><mo arg='a1'>♦</mo></mrow></math>"
+       - "<math><mrow intent='playing-card-suit($a1)'><mo arg='a1'>♥</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Playing_card_suit"
        - "https://en.wikipedia.org/wiki/Poker_probability"
@@ -10051,7 +10056,8 @@ concepts:
       en: s5 modal logic
       property: constant
       area: "logic"
-      notation: "mi S5"
+      comments:
+       - "<math><mi intent='s5-modal-logic'>S5</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/S5_(modal_logic)"
     
@@ -10737,13 +10743,14 @@ concepts:
       alias:
        - face-ideal
     
-    - concept: star
+    - concept: star-game
       arity: 0
       en: star
       property: constant
       area: "combinatorial game theory"
-      notation: "mo ∗"
-      notationa: "mrow { 0 | 0 }"
+      comments:
+       - "<math><mo intent='star-game'>∗</mo></math>"
+       - "<math><mrow intent='star-game'><mo>{</mo><mn>0</mn><mo>|</mo><mn>0</mn><mo>}</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Star_(game_theory)"
     
@@ -12232,7 +12239,8 @@ concepts:
       en: wiener algebra
       property: symbol
       area: "Fourier analysis"
-      notation: "mrowA(T"
+      comments:
+      - "<math><mrow intent='wiener-algebra'><mi>A</mi><mrow><mo>(</mo><mi>T</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WienerAlgebra.html"
        - "https://en.wikipedia.org/wiki/Wiener_algebra"
