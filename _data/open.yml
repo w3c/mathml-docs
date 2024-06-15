@@ -2791,13 +2791,12 @@ concepts:
        - "https://arxiv.org/pdf/1208.5915.pdf"
     
     - concept: derivation-tree
-      arity: 1
-      en: derivation tree of $1
+      arity: 2
+      en: derivation  $1, $2
       property: mfrac
       area: "logic"
       comments:
-       - "<math><mrow intent='derivation-tree($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mfrac"
+       - "<math><mfrac intent='derivation-tree($a1,$a2)'><mrow arg='a1'><mi>P</mi><mi>Q</mi></mrow><mi arg='a2'>R</mi></mfrac></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Derivation_tree"
     
