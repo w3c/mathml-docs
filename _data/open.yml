@@ -348,7 +348,7 @@ concepts:
       property: fenced, 5-tuple
       area: "model theory"
       comments:
-       - "<math><mrow intent='amalgam($a1,$a2,$a2,$a3,$a4,$a5)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>f</mi><mo>,</mo><mi arg='a3'>B</mi><mo>,</mo><mi arg='a4'>g</mi><mo>,</mo><mi arg='a5'>C</mi>><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='amalgam($a1,$a2,$a2,$a3,$a4,$a5)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>f</mi><mo>,</mo><mi arg='a3'>B</mi><mo>,</mo><mi arg='a4'>g</mi><mo>,</mo><mi arg='a5'>C</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Amalgamation_property"
        - "https://ncatlab.org/nlab/show/amalgamation+property"
@@ -4806,7 +4806,7 @@ concepts:
       property: constant
       area: "number theory"
       comments:
-       - "<math><mrow intent='gaussian-integers'><mi>ℤ</mi><mo>[</mo><mi>i</mi>><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='gaussian-integers'><mi>ℤ</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaussianInteger.html"
        - "https://en.wikipedia.org/wiki/Gaussian_integer"
