@@ -1778,13 +1778,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Cokernel"
     
     - concept: column-vector
-      arity: 1
-      en: column vector of $1
+      arity: "*"
+      en: column vector of $1 $2 ...
       property: mtable
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='column-vector($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtable"
+       - "<math><mrow intent='column-vector($a1,a2,a3)'><mo>(</mo><mtable><mtr><mtd><mi arg='a1'>x</mi></mtd></mtr><mtr><mtd><mi arg='a2'>y</mi></mtd></mtr><mtr><mtd><mi arg='a3'>z</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ColumnVector.html"
        - "https://en.wikipedia.org/wiki/Column_vector"
