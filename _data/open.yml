@@ -12551,9 +12551,20 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='whittaker-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub M mrow $1, $2 /mrow"
-      notationa: "msub W mrow $1, $2 /mrow"
+       - "<math><mrow><msub intent='whittaker-function($a1,$a2)'><mi>M</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi>z</mi></mrow></mrow></math>"
+      urls: 
+       - "https://mathworld.wolfram.com/WhittakerFunction.html"
+       - "https://en.wikipedia.org/wiki/Whittaker_function"
+       - "https://dlmf.nist.gov/13#PT3"
+       - "https://www.encyclopediaofmath.org/index.php/Whittaker_functions"
+
+    - concept: whittaker-function
+      arity: 3
+      en: whittaker function $1 $2 of $3
+      property: "indexed function"
+      area: "special functions"
+      comments:
+       - "<math><mrow intent='whittaker-function($a1,$a2,$a3)'><msub><mi>M</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi arg='a3'>z</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhittakerFunction.html"
        - "https://en.wikipedia.org/wiki/Whittaker_function"
