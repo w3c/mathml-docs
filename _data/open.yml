@@ -10723,8 +10723,7 @@ concepts:
       property: "indexed symbol"
       area: "fourier analysis"
       comments:
-       - "<math><mrow intent='sobolev-space($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup W $1 $2"
+       - "<math><mrow intent='sobolev-space($a1,$a2)'><msup><mi>W</mi><mrow><mi arg='a1'>k</mi><mi arg='a2'>p</mi></mrow></msup></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SobolevSpace.html"
        - "https://en.wikipedia.org/wiki/Sobolev_space"
@@ -11000,8 +10999,7 @@ concepts:
       property: mixfix
       area: "commutative algebra"
       comments:
-       - "<math><mrow intent='stanley-reisner-ring($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1 [ $2 ]"
+       - "<math><mrow intent='stanley-reisner-ring($a1,$a2)'><mi arg='a1'>k</mi><mrow><mo>[</mo><mi arg='a2'>Δ</mi><mo>]</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Stanley%E2%80%93Reisner_ring"
        - "https://www.encyclopediaofmath.org/index.php/Stanley-Reisner_ring"
