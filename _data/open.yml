@@ -11678,7 +11678,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='toroidal-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>σ</mi><mo>,</mo><mi arg='a2'>τ</mi><mo>,</mo><mi arg='a3'>ϕ"</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='toroidal-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>σ</mi><mo>,</mo><mi arg='a2'>τ</mi><mo>,</mo><mi arg='a3'>ϕ</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ToroidalCoordinates.html"
        - "https://en.wikipedia.org/wiki/Toroidal_coordinates"
