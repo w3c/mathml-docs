@@ -10380,7 +10380,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='schlaefli-symbol($a1,$a2,$a3)'><mo>{</mo><mi arg='a1'>p</mi><mo>,</mo><mi arg='a2'>r</mi><mo>,</mo><mi arg='a3'>r</mi><mo>}</mo></mrow></math>"
+       - "<math><mrow intent='schlaefli-symbol($a1,$a2,$a3)'><mo>{</mo><mi arg='a1'>p</mi><mo>,</mo><mi arg='a2'>q</mi><mo>,</mo><mi arg='a3'>r</mi><mo>}</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol"
     
