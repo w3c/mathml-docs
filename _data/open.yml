@@ -12551,8 +12551,8 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow><msub intent='whittaker-function($a1,$a2)'><mi>M</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi>z</mi></mrow></mrow></math>"
-       - "<math><mrow><msub intent='whittaker-function($a1,$a2)'><mi>W</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi>z</mi></mrow></mrow></math>"
+       - "<math><mrow><msub intent='whittaker-function($a1,$a2)'><mi>M</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><msub intent='whittaker-function($a1,$a2)'><mi>W</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhittakerFunction.html"
        - "https://en.wikipedia.org/wiki/Whittaker_function"
@@ -12565,8 +12565,8 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='whittaker-function($a1,$a2,$a3)'><msub><mi>M</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi arg='a3'>z</mi></mrow></mrow></math>"
-       - "<math><mrow intent='whittaker-function($a1,$a2,$a3)'><msub><mi>W</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi arg='a3'>z</mi></mrow></mrow></math>"
+       - "<math><mrow intent='whittaker-function($a1,$a2,$a3)'><msub><mi>M</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi arg='a3'>z</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='whittaker-function($a1,$a2,$a3)'><msub><mi>W</mi><mrow><mi arg='a1'>κ</mi><mo>,</mo><mi arg='a2'>μ</mi></mrow></msub><mrow><mo>(</mo><mi arg='a3'>z</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WhittakerFunction.html"
        - "https://en.wikipedia.org/wiki/Whittaker_function"
