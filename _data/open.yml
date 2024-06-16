@@ -2892,12 +2892,13 @@ concepts:
     
     - concept: differential-operator
       arity: 1
-      en: differential operator of $1
+      en: differential operator with respect to $1
       property: prefix
       area: "calculus"
       comments:
-       - "<math><mrow intent='differential-operator($a1)'><mi>D</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
-       - "<math><mrow intent='differential-operator($a1)'><mo>∂</mo><mi arg='a1'>x</mi></mrow></math>"
+       - "<math><msub intent='differential-operator($a1)'><mi>D</mi><mi arg='a1'>x</mi></msub></math>"
+       - "<math><msub intent='differential-operator($a1)'><mo>∂</mo><mi arg='a1'>x</mi></msub></math>"
+       - "<math><mfrac intent='differential-operator($a1)'><mi>d</mi><mrow><mi>d</mi><mi arg='a1'>x</mi></mrow></mfrac></math>"
       notationa: "mfrac d mrow d $1"
       urls: 
        - "https://mathworld.wolfram.com/DifferentialOperator.html"
@@ -4384,8 +4385,7 @@ concepts:
       property: mfrac
       area: "geometric topology"
       comments:
-       - "<math><mrow intent='fox-derivative($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mfrac ∂..."
+      - "<math><mfrac intent='fox-derivative(($a1)'><mi>∂</mi><mrow><mi>∂</mi><msub arg='a1'><mi>g</mi><mi>i</mi></msub></mrow></mfrac></math>"
       urls: 
        - "https://mathworld.wolfram.com/FoxDerivative.html"
        - "https://en.wikipedia.org/wiki/Fox_derivative"
@@ -6839,7 +6839,7 @@ concepts:
       area: "number theory"
       comments:
        - "<math><mrow intent='kronecker-symbol($a1,$a2)'><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></math>"
-      notationa: "( mfrac $1 $2 )"
+       - "<math><mrow intent='kronecker-symbol($a1,$a2)'><mo>(</mo><mfrac><mi arg='a1'>x</mi><mi arg='a2'>y</mi></mfrac><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KroneckerSymbol.html"
        - "https://en.wikipedia.org/wiki/Kronecker_symbol"
@@ -8231,8 +8231,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='multichoose($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ( mfrac $1 $2"
+       - "<math><mrow intent='multichoose($a1,$a2)'><mo mathvariant='bold'>(</mo><mfrac linethickness="0pt"><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo mathvariant='bold'>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Multiset.html"
     
@@ -8242,8 +8241,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='multiset-coefficient($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ( ( mfrac $1 $2 )"
+       - "<math><mrow intent='multiset-coefficient($a1,$a2)'><mo>⦅</mo><mfrac linethickness="0pt"><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo>⦆</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Multiset"
       alias:
@@ -9571,13 +9569,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/Pythagorean_triple"
     
     - concept: q-binomial-coefficient
-      arity: 1
-      en: q binomial coefficient of $1
+      arity: 3
+      en: $3 q binomial coefficient of $1, $2
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='q-binomial-coefficient($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub mrow [ stacked mfrac ] q"
+       - "<math><msub intent='q-binomial-coefficient($a1,$a2,$a3)'><mrow><mo>[</mo><mfrac linethickness="0pt"><mi arg='a1'>n</mi><mi arg='a2'>m</mi></mfrac><mo>]</mo></mrow><mi arg='a3'>q</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/q-BinomialCoefficient.html"
     
