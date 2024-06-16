@@ -663,8 +663,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='bateman-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow msub k $1 ( $2"
+       - "<math><mrow intent='bateman-function($a1,$a2)'><msub><mi>k</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi arg='a2'>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BatemanFunction.html"
        - "https://en.wikipedia.org/wiki/Bateman_function"
@@ -1657,8 +1656,7 @@ concepts:
       property: mixfix
       area: "topology"
       comments:
-       - "<math><mrow intent='closed-ball($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow msub B $1 /msub [ $2 ]"
+       - "<math><mrow intent='closed-ball($a1,$a2)'><msub><mi>B</mi><mi arg='a1'>r</mi></msub><mrow><mo>[</mo><mi arg='a2'>p</mi><mo>]</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OpenBall.html"
        - "https://en.wikipedia.org/wiki/Ball_(mathematics)"
@@ -8567,8 +8565,7 @@ concepts:
       property: mixfix
       area: "topology"
       comments:
-       - "<math><mrow intent='open-ball($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow msub B $1 /msub ( $2"
+       - "<math><mrow intent='open-ball($a1,$a2)'><msub><mi>B</mi><mi arg='a1'>r</mi></msub><mrow><mo>(</mo><mi arg='a2'>p</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/OpenBall.html"
        - "https://en.wikipedia.org/wiki/Ball_(mathematics)"
@@ -9992,9 +9989,8 @@ concepts:
       property: indexed postfix
       area: "elementary mathematics"
       comments:
-       - "<math><mrow intent='restriction($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "$1 mo msub ↾ $2 /mo"
-      notationa: "$1 mo msub | $2 /mo"
+        - "<math><mrow intent='restriction($a1,$a2)'><mi arg='a1'>f</mi><msub><mo>↾</mo><mi arg='a2'>A</mi></msub></mrow></math>"
+        - "<math><mrow intent='restriction($a1,$a2)'><mi arg='a1'>f</mi><msub><mo>|</mo><mi arg='a2'>A</mi></msub></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Restricted_representation"
        - "https://en.wikipedia.org/wiki/Restriction_(mathematics)"
