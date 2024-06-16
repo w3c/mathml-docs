@@ -584,7 +584,7 @@ concepts:
     
     - concept: associated-legendre-polynomial
       arity: 2
-      en: associated legendre polynomial of degree $1 and order $m
+      en: associated legendre polynomial of degree $1 and order $2
       property: function
       area: "special functions"
       comments:
