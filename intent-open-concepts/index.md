@@ -1,6 +1,17 @@
 ---
 title: Open Concept List
 ---
+<script>
+  function showmath (){
+      const ml =document.querySelectorAll("math");
+      for(const m of ml) {
+	  const md =  document.createElement("div");
+	  md.className="mmlshow";
+	  md.textContent=m.outerHTML.replaceAll("><",">\n<");
+	  m.parentNode.replaceChild(md, m);
+      }
+  }
+</script>
 <style>
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
@@ -25,6 +36,7 @@ a.self {color: black; font-weight:500}
 math:not(:has(*[intent])) {
     color: red;
     }
+div.mmlshow {display:inline-block;padding:1em;margin:.5em;border-radius:1em;font-family:monospace;background-color:#EEE;white-space:pre;}
 </style>
 
 <style id="langcss">
@@ -60,6 +72,7 @@ order might not be clear from the standard notation, the speech hint
 or comments should make clear what is the intended order of arguments.
 
 
+
 ----
 
 ### Sources
@@ -69,6 +82,10 @@ Additional contributions are welcome:
 
 ----
 
+<p><button onclick="showmath()">Show MathML Source</button></p>
+
+
+----
 
 <details>
 <summary>Available Template Languages</summary>
