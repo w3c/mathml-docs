@@ -675,8 +675,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-       - "<math><mrow intent='baumslag-solitar-group($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow BS ( $1, $2 )"
+       - "<math><mrow intent='baumslag-solitar-group($a1,$a2)'><mi>BS</mi><mrow><mo>(</mo><mi arg='a1'>m</mi><mo>,</mo><mi arg='a2'>n</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Baumslag%E2%80%93Solitar_group"
        - "https://www.encyclopediaofmath.org/index.php/Baumslag-Solitar_group"
@@ -942,13 +941,12 @@ concepts:
        - combination
     
     - concept: binomial-distribution
-      arity: 1
-      en: binomial distribution of $1
+      arity: 2
+      en: binomial distribution $1 $2
       property: function
       area: "probability theory"
       comments:
-       - "<math><mrow intent='binomial-distribution($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow B(n,p"
+       - "<math><mrow intent='binomial-distribution($a1,$a2)'><mi>B</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>,</mo><mi arg='a2'>p</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/BinomialDistribution.html"
        - "https://en.wikipedia.org/wiki/Binomial_distribution"
@@ -1816,6 +1814,8 @@ concepts:
       area: "abstract algebra"
       comments:
        - "<math><msup intent='commutator-subgroup($a1)'><mi arg='a1'>X</mi><mo>'</mo></msup></math>"
+       - "<math><msup intent='commutator-subgroup($a1)'><mi arg='a1'>X</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msup></math>"
+       - "<math><mrow intent='commutator-subgroup($a1)'><mo>[</mo><mi arg='a1'>X</mi><mo>,</mo><mi>X</mi><mo>]</mo></mrow></math>"
       notationb: "msup $1 (1)"
       notationa: "mrow [ $1, $1 ]"
       urls: 
@@ -2511,9 +2511,8 @@ concepts:
       property: fenced
       area: "differential topology"
       comments:
-       - "<math><mrow intent='current($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow [[ $1 ]]"
-      notationa: "<math><mrow intent='current($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='current($a1)'><mo>[</mo><mi arg='a1'>M</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='current($a1)'><mo>⟦</mo><mi arg='a1'>M</mi><mo>⟧</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Current.html"
        - "https://en.wikipedia.org/wiki/Current_(mathematics)"
@@ -8181,8 +8180,8 @@ concepts:
       property: msup, mixfix
       area: "abstract algebra"
       comments:
-       - "<math><msup intent='multiplicative-inverse($a1)'><mi arg='a1'>X</mi><mn>-1</mn></msup></math>"
-      notationa: "mrow 1 / $1"
+       - "<math><msup intent='multiplicative-inverse($a1)'><mi arg='a1'>x</mi><mn>-1</mn></msup></math>"
+       - "<math><mrow intent='multiplicative-inverse($a1)'><mn>1</mn><mo>/</mo><mi arg='a1'>x</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Inverse.html"
        - "https://en.wikipedia.org/wiki/Inverse_function"
@@ -11674,13 +11673,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Topological_entropy"
     
     - concept: toroidal-coordinate
-      arity: 1
-      en: toroidal coordinate of $1
+      arity: 3
+      en: toroidal coordinates $1 $2 $3
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='toroidal-coordinate($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ( σ , τ , ϕ"
+       - "<math><mrow intent='toroidal-coordinate($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>σ</mi><mo>,</mo><mi arg='a2'>τ</mi><mo>,</mo><mi arg='a3'>ϕ"</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ToroidalCoordinates.html"
        - "https://en.wikipedia.org/wiki/Toroidal_coordinates"
