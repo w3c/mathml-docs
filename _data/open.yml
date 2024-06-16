@@ -2952,9 +2952,6 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='dilogarithm($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub Li 2"
-      comments:
        - "<math><mrow intent='dilogarithm($a1)'><msub><mi>L</mi><mn>2</mn></msub><mi arg='a1'>z</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Dilogarithm.html"
@@ -4083,8 +4080,6 @@ concepts:
       area: "polynomials"
       comments:
        - "<math><mrow intent='faber-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub P m"
-      comments:
        - "<math><msub intent='faber-polynomial($a1)'><mi mathvariant='normal'>P</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FaberPolynomial.html"
@@ -8231,7 +8226,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='multichoose($a1,$a2)'><mo mathvariant='bold'>(</mo><mfrac linethickness="0pt"><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo mathvariant='bold'>)</mo></mrow></math>"
+       - "<math><mrow intent='multichoose($a1,$a2)'><mo mathvariant='bold'>(</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo mathvariant='bold'>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Multiset.html"
     
@@ -8241,7 +8236,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='multiset-coefficient($a1,$a2)'><mo>⦅</mo><mfrac linethickness="0pt"><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo>⦆</mo></mrow></math>"
+       - "<math><mrow intent='multiset-coefficient($a1,$a2)'><mo>⦅</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo>⦆</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Multiset"
       alias:
@@ -9574,7 +9569,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><msub intent='q-binomial-coefficient($a1,$a2,$a3)'><mrow><mo>[</mo><mfrac linethickness="0pt"><mi arg='a1'>n</mi><mi arg='a2'>m</mi></mfrac><mo>]</mo></mrow><mi arg='a3'>q</mi></msub></math>"
+       - "<math><msub intent='q-binomial-coefficient($a1,$a2,$a3)'><mrow><mo>[</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>m</mi></mfrac><mo>]</mo></mrow><mi arg='a3'>q</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/q-BinomialCoefficient.html"
     
