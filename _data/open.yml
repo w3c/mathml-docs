@@ -4089,10 +4089,8 @@ concepts:
       property: mixfix
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='falling-factorial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup $1 mover $2 ¯"
-      notationb: "msup $1 munder $2 ¯"
-      notationa: "msub mrow ( $1 ) /mrow $2"
+        - "<math><msub intent='falling-factorial($a1,$a2)'><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow><mi arg='a2'>n</mi></msub></math>"
+        - "<math><msup intent='falling-factorial($a1,$a2)'><mi arg='a1'>x</mi><munder><mi arg='a2'>n</mi><mo>_</mo></munder></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Falling_and_rising_factorials"
        - "https://mathworld.wolfram.com/FallingFactorial.html"
@@ -10202,13 +10200,12 @@ concepts:
     
     - concept: rising-factorial
       arity: 2
-      en: rising factorial $1 $2
+      en: #2 th rising factorial of  $1
       property: mixfix
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='rising-factorial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup $1 mover $2 ¯"
-      notationa: "msup $1 mrow ( $2 ) /mrow"
+        - "<math><msup intent='rising-factorial($a1,$a2)'><mi arg='a1'>x</mi><mrow><mo>(</mo><mi arg='a2'>n</mi><mo>)</mo></mrow></msup></math>"
+        - "<math><msup intent='rising-factorial($a1,$a2)'><mi arg='a1'>x</mi><mover><mi arg='a2'>n</mi><mo>¯</mo></mover></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Falling_and_rising_factorials"
        - "https://mathworld.wolfram.com/RisingFactorial.html"
