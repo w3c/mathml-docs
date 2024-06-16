@@ -688,7 +688,7 @@ concepts:
       property: postfix
       area: "calendar units"
       comments:
-       - "<math><mrow intent='bc($a1)'><mn ad='a1'>2024</mn><mo>&#x2009;</mo><mi>BC</mi></mrow></math>"      
+       - "<math><mrow intent='bc($a1)'><mn arg='a1'>2024</mn><mo>&#x2009;</mo><mi>BC</mi></mrow></math>"      
       urls: 
        - "https://en.wikipedia.org/wiki/Anno_Domini"
     
@@ -3046,7 +3046,7 @@ concepts:
       property: prefix
       area: "category theory"
       comments:
-       - "<math><mrow intent='direct-limit($a1)'><munder><mi>lim</mi><mo>→</mo></munder><mi ad='a1'>A</mi></mrow></math>"
+       - "<math><mrow intent='direct-limit($a1)'><munder><mi>lim</mi><mo>→</mo></munder><mi arg='a1'>A</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirectLimit.html"
        - "https://en.wikipedia.org/wiki/Direct_limit"
@@ -3089,9 +3089,9 @@ concepts:
       property: "function, mixfix"
       area: "differential calculus"
       comments:
-       - "<math><msup intent='directional-derivative($a1)'><mi>∇</mi><mi>v</mi></msup><mi ad='a1'>f</mi></math>"
-       - "<math><msup intent='directional-derivative($a1)'><mi>D</mi><mi>v</mi></msup><mi ad='a1'>f</mi></math>"
-       - "<math><mrow intent='directional-derivative($a1)'><mi>v</mi><mo>⋅</mo><mi>∇</mi></mrow><mi ad='a1'>f</mi></math>"
+       - "<math><msup intent='directional-derivative($a1)'><mi>∇</mi><mi>v</mi></msup><mi arg='a1'>f</mi></math>"
+       - "<math><msup intent='directional-derivative($a1)'><mi>D</mi><mi>v</mi></msup><mi arg='a1'>f</mi></math>"
+       - "<math><mrow intent='directional-derivative($a1)'><mi>v</mi><mo>⋅</mo><mi>∇</mi></mrow><mi arg='a1'>f</mi></math>"
       urls: 
        - "https://mathworld.wolfram.com/DirectionalDerivative.html"
        - "https://en.wikipedia.org/wiki/Directional_derivative"
@@ -3252,8 +3252,8 @@ concepts:
       property: "function, mixfix"
       area: "vector calculus"
       comments:
-       - "<math><mrow intent='divergence($a1)'><mi>div</mi><mi ad='a1'>f</mi></mrow></math>"
-       - "<math><mrow intent='divergence($a1)'><mi>∇</mi><mo>⋅</mo><mi ad='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='divergence($a1)'><mi>div</mi><mi arg='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='divergence($a1)'><mi>∇</mi><mo>⋅</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Divergence.html"
        - "https://en.wikipedia.org/wiki/Divergence_(computer_science)"
@@ -3386,7 +3386,7 @@ concepts:
       property: postfix
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='double-factorial($a1)'><mn ad='a1'>10</mn><mo>&#x203c;</mo></mrow></math>"
+       - "<math><mrow intent='double-factorial($a1)'><mn arg='a1'>10</mn><mo>&#x203c;</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DoubleFactorial.html"
        - "https://en.wikipedia.org/wiki/Double_factorial"
@@ -3455,8 +3455,8 @@ concepts:
       property: msup
       area: "linear algebra"
       comments:
-       - "<math><msup intent='dual-space($a1)'><mi ad='a1'>V</mi><mo>*</mo></msup></math>"
-       - "<math><msup intent='dual-space($a1)'><mi ad='a1'>V</mi><mo>&#x2032;</mo></msup></math>"
+       - "<math><msup intent='dual-space($a1)'><mi arg='a1'>V</mi><mo>*</mo></msup></math>"
+       - "<math><msup intent='dual-space($a1)'><mi arg='a1'>V</mi><mo>&#x2032;</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/DualSpace.html"
        - "https://en.wikipedia.org/wiki/Dual_space"
@@ -4345,7 +4345,7 @@ concepts:
       property: operator
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='fourier-cosine-transform($a1)'><msub><mi>ℱ</mi><mi arg='a3'>c</mi></msub><mi ad='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='fourier-cosine-transform($a1)'><msub><mi>ℱ</mi><mi arg='a3'>c</mi></msub><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FourierCosineTransform.html"
        - "https://dlmf.nist.gov/1.14#E9"
@@ -4357,7 +4357,7 @@ concepts:
       property: operator
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='fourier-sine-transform($a1)'><msub><mi>ℱ</mi><mi>s</mi></msub><mi ad='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='fourier-sine-transform($a1)'><msub><mi>ℱ</mi><mi>s</mi></msub><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FourierSineTransform.html"
        - "https://dlmf.nist.gov/1.14#E10"
@@ -4511,7 +4511,7 @@ concepts:
       property: mixfix
       area: "ring theory"
       comments:
-       - "<math><mrow intent='free-algebra($a1,$a2)'><mi ad='a1'>R</mi><mo>⟨</mo><mi arg='a2'>X</mi><mo>⟩</mo></mrow></math>"
+       - "<math><mrow intent='free-algebra($a1,$a2)'><mi arg='a1'>R</mi><mo>⟨</mo><mi arg='a2'>X</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FreeAlgebra.html"
        - "https://en.wikipedia.org/wiki/Free_algebra"
@@ -4706,7 +4706,7 @@ concepts:
       property: function
       area: "abstract algebra"
       comments:
-       - "<math><mrow intent='galois-group($a1)'><mi>Gal</mi><mi ad='a1'>G</mi></mrow></math>"
+       - "<math><mrow intent='galois-group($a1)'><mi>Gal</mi><mi arg='a1'>G</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaloisGroup.html"
        - "https://en.wikipedia.org/wiki/Galois_group"
@@ -6117,7 +6117,7 @@ concepts:
       property: mixfix, 
       area: "set theory"
       comments:
-       - "<math><mrow intent='injection($a1,$a2,$a3)'><mi ad='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>↣</mo><mi arg='a3'>Y</mi></mrow></math>"
+       - "<math><mrow intent='injection($a1,$a2,$a3)'><mi arg='a1'>f</mi><mo>:</mo><mi arg='a2'>X</mi><mo>↣</mo><mi arg='a3'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Bijection#Definition"
     
@@ -7137,8 +7137,8 @@ concepts:
       property: fenced, fenced stacked
       area: "number theory"
       comments:
-       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mi arg='a1'>a</mi><mo>|</mo><mi ad='a2'>p</mi><mo>)</mo></mrow></math>"
-       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mfrac><mi arg='a1'>a</mi><mi ad='a2'>p</mi></mfrac><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mi arg='a1'>a</mi><mo>|</mo><mi arg='a2'>p</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='legendre-symbol($a1,$a2)'><mo>(</mo><mfrac><mi arg='a1'>a</mi><mi arg='a2'>p</mi></mfrac><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LegendreSymbol.html"
        - "https://en.wikipedia.org/wiki/Legendre_symbol"
@@ -8523,7 +8523,7 @@ concepts:
       property: fenced
       area: "euclidean solid geometry"
       comments:
-       - "<math><mrow intent='octant($a1,$a2,$a3)'><mo>(</mo><mi ad='a1'>±</mi><mo>,</mo><mi ad='a2'>±</mi><mo>,</mo><mi ad='a3'>±</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='octant($a1,$a2,$a3)'><mo>(</mo><mi arg='a1'>±</mi><mo>,</mo><mi arg='a2'>±</mi><mo>,</mo><mi arg='a3'>±</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Octant.html"
        - "https://en.wikipedia.org/wiki/Octant_(plane_geometry)"
@@ -8739,7 +8739,7 @@ concepts:
       property: function
       area: "group theory"
       comments:
-       - "<math><mrow intent='p-core($a1)'><msub><mi>O</mi><mi>p</mi></msub><mrow><mo>(</mo><mi ad='a1'>G</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='p-core($a1)'><msub><mi>O</mi><mi>p</mi></msub><mrow><mo>(</mo><mi arg='a1'>G</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Core_(group)"
        - "https://en.wikipedia.org/wiki/P-soluble_group"
@@ -8752,7 +8752,7 @@ concepts:
       property: mixfix
       area: "numerical analysis"
       comments:
-       - "<math><msub intent='pade-approximant($a1,$a2,$a3)'><mrow><mo>[</mo><mi arg='a1'>X</mi><mo>/</mo><mi arg='a2'>Y</mi><mo>]</mo></mrow><mi ad='a3'>f</mi></msub></math>"
+       - "<math><msub intent='pade-approximant($a1,$a2,$a3)'><mrow><mo>[</mo><mi arg='a1'>X</mi><mo>/</mo><mi arg='a2'>Y</mi><mo>]</mo></mrow><mi arg='a3'>f</mi></msub></math>"
       urls: 
        - "https://dlmf.nist.gov/3.11#SS4.p1"
        - "https://mathworld.wolfram.com/PadeApproximant.html"
@@ -8861,7 +8861,7 @@ concepts:
       property: "indexed symbol"
       area: "mathematical physics"
       comments:
-       - "<math><msub intent='pauli-matrix($a1)'><mi>σ</mi><mi ad='a1'>G</mi></msub></math>"
+       - "<math><msub intent='pauli-matrix($a1)'><mi>σ</mi><mi arg='a1'>G</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/PauliMatrices.html"
        - "https://mathworld.wolfram.com/PauliMatrix.html"
@@ -10189,7 +10189,7 @@ concepts:
       property: operator
       area: "calculus"
       comments:
-       - "<math><msub intent='right-derivative($a1)'><mo>∂</mo><mo>+</mo></msub><mi ad='a1'>f</mi></math>"
+       - "<math><msub intent='right-derivative($a1)'><mo>∂</mo><mo>+</mo></msub><mi arg='a1'>f</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Left_and_right_derivative"
     
@@ -10261,7 +10261,7 @@ concepts:
       property: mixfix
       area: "category theory"
       comments:
-       - "<math><mrow intent='roof($a1,$a2,$a3)'><mi arg='a1'>X</mi><mo>&leftarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi ad='a3'>Z</mi></mrow></math>"
+       - "<math><mrow intent='roof($a1,$a2,$a3)'><mi arg='a1'>X</mi><mo>&leftarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi arg='a3'>Z</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(category_theory)"
        - "https://ncatlab.org/nlab/show/span"
@@ -11743,7 +11743,7 @@ concepts:
       property: msub
       area: "group theory"
       comments:
-       - "<math><msub intent='torsion-subgroup($a1)'><mi ad='a1'>G</mi><mi>T</mi></msub></math>"
+       - "<math><msub intent='torsion-subgroup($a1)'><mi arg='a1'>G</mi><mi>T</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Torsion_subgroup"
        - "https://ncatlab.org/nlab/show/torsion+subgroup"
@@ -12597,7 +12597,7 @@ concepts:
       property: "indexed symbol"
       area: "mathematical physics"
       comments:
-       - "<math><mrow intent='wiener-sausage($a1,$a2)'><msub><mi>W</mi><mi ad='a1'>&delta;</mi></msub><mrow><mo>(</mo><mi ad='a2'>t</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='wiener-sausage($a1,$a2)'><msub><mi>W</mi><mi arg='a1'>&delta;</mi></msub><mrow><mo>(</mo><mi arg='a2'>t</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WienerSausage.html"
        - "https://en.wikipedia.org/wiki/Wiener_sausage"
