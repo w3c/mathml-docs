@@ -10197,8 +10197,7 @@ concepts:
       property: mixfix
       area: "ring theory"
       comments:
-       - "<math><mrow intent='ring-of-formal-power-series($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1 [[ $2 ]]"
+       - "<math><mrow intent='ring-of-formal-power-series($a1,$a2)'><mi arg='a1'>R</mi><mrow><mo>⟦</mo><mi arg='a2'>x</mi><mo>⟧</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Formal_power_series#The_ring_of_formal_power_series"
     
@@ -10350,7 +10349,7 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/SampleVariance.html"
        - "https://www.encyclopediaofmath.org/index.php/Sample_variance"
-       - "https://en.wikipedia.org/wiki/Variance#Sample_variance"
+       - "https://en.wikipedia.org/wiki/Variance#Sample_variance	"
     
     - concept: scalar-triple-product
       arity: 3
@@ -10377,13 +10376,12 @@ concepts:
        - "https://dlmf.nist.gov/21.2#E1"
     
     - concept: schlaefli-symbol
-      arity: 1
-      en: schlaefli symbol of $1
+      arity: "*"	
+      en: schlaefli symbol of $1, ...
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='schlaefli-symbol($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow { $1 , ..., $n }"
+       - "<math><mrow intent='schlaefli-symbol($a1,$a2,$a3)'><mo>{</mo><mi arg='a1'>p</mi><mo>,</mo><mi arg='a2'>r</mi><mo>,</mo><mi arg='a3'>r</mi><mo>}</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol"
     
@@ -10446,8 +10444,7 @@ concepts:
       property: function
       area: "number theory"
       comments:
-       - "<math><mrow intent='second-carmichael-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup λ '"
+       - "<math><mrow intent='second-carmichael-function($a1)'><msup><mi>λ</mi><mo>′</mo></msup><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/CarmichaelFunction.html"
        - "https://en.wikipedia.org/wiki/Carmichael_function"
@@ -10531,8 +10528,7 @@ concepts:
       property: operator
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='shift-operator($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup T t"
+       - "<math><mrow intent='shift-operator($a1)'><msup><mi>T</mi><mo>t</mo></msup><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShiftOperator.html"
        - "https://en.wikipedia.org/wiki/Shift_operator"
