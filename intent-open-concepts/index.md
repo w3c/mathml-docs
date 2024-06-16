@@ -7,7 +7,7 @@ title: Open Concept List
       for(const m of ml) {
 	  const md =  document.createElement("div");
 	  md.className="mmlshow";
-	  md.textContent=m.outerHTML.replaceAll("><",">\n<");
+	  md.textContent=m.outerHTML.replaceAll("<mrow></mrow>","<mrow/>").replaceAll("><",">\n<");
 	  m.parentNode.replaceChild(md, m);
       }
   }
