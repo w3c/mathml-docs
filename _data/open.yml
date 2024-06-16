@@ -1550,7 +1550,7 @@ concepts:
       property: "indexed symbol"
       area: "Riemannian geometry"
       comments:
-       - "<math><mrow intent='christoffel-symbol-of-first-kind($a1,$a2,$a3)'><msub><mi>&Gamma;</mi><mrow><mi arg='a3'>k</mi><mi arg='a1'>i</mi><mi arg='a2'>j</mi></mrow></msub></mrow></math>"
+       - "<math><mrow intent='christoffel-symbol-of-first-kind($a1,$a2,$a3)'><msub><mi>&#x0393;</mi><mrow><mi arg='a3'>k</mi><mi arg='a1'>i</mi><mi arg='a2'>j</mi></mrow></msub></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChristoffelSymbol.html"
        - "https://en.wikipedia.org/wiki/Christoffel_symbols"
@@ -1563,7 +1563,7 @@ concepts:
       property: "indexed symbol"
       area: "Riemannian geometry"
       comments:
-       - "<math><mmultiscripts intent='christoffel-symbol-of-second-kind($a1,$a2,$a3)'><mi>&Gamma;</mi><mrow/><mi arg='a3'>k</mi><mi arg='a1'>i</mi><mrow/><mi arg='a2'>j</mi><mrow/></mmultiscripts></math>"
+       - "<math><mmultiscripts intent='christoffel-symbol-of-second-kind($a1,$a2,$a3)'><mi>&#x0393;</mi><mrow/><mi arg='a3'>k</mi><mi arg='a1'>i</mi><mrow/><mi arg='a2'>j</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/ChristoffelSymbol.html"
        - "https://en.wikipedia.org/wiki/Christoffel_symbols"
@@ -4330,7 +4330,7 @@ concepts:
       property: operator
       area: "numerical analysis"
       comments:
-       - "<math><mrow intent='forward-difference($a1,$a2,$a3)'><msubsup><mi>&Delta;</mi><mi arg='a2'>x</mi><mi arg='a1'>n</mi></msubsup><mrow><mi arg='a3'>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='forward-difference($a1,$a2,$a3)'><msubsup><mi>&#x0394;</mi><mi arg='a2'>x</mi><mi arg='a1'>n</mi></msubsup><mrow><mi arg='a3'>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ForwardDifference.html)"
        - "https://dlmf.nist.gov/18.1#EGx1"
@@ -5226,7 +5226,7 @@ concepts:
        - "<math><mrow intent='hamiltonian($a1)'><mi>H</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
       notationc: "mover H ˇ"
       notationb: "mover H ^"
-      notationa: "mrow < H >"
+      notationa: "mrow &lt; H &gt;"
       urls: 
        - "https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics)"
        - "https://en.wikipedia.org/wiki/Hamiltonian_vector_field"
@@ -5934,7 +5934,7 @@ concepts:
       area: "order theory"
       comments:
        - "<math><mrow intent='incomparability($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "menclose notation='updiagonalstrike' munderover = > <"
+      notation: "menclose notation='updiagonalstrike' munderover = &gt; &lt;"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
       alias:
@@ -10253,7 +10253,7 @@ concepts:
       property: mixfix
       area: "category theory"
       comments:
-       - "<math><mrow intent='roof($a1,$a2,$a3)'><mi arg='a1'>X</mi><mo>&leftarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi arg='a3'>Z</mi></mrow></math>"
+       - "<math><mrow intent='roof($a1,$a2,$a3)'><mi arg='a1'>X</mi><mo>←</mo><mi arg='a2'>Y</mi><mo>→</mo><mi arg='a3'>Z</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Span_(category_theory)"
        - "https://ncatlab.org/nlab/show/span"
@@ -10362,7 +10362,7 @@ concepts:
       property: mixfix, fenced
       area: "vector algebra"
       comments:
-       - "<math><mrow intent='scalar-triple-product($a1,$a2,$a3)'><mi arg='a1'>A</mi><mo>&middot;</mo><mrow><mo>(</mo><mi arg='a2'>B</mi><mo>&middot;</mo><mi arg='a3'>C</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='scalar-triple-product($a1,$a2,$a3)'><mi arg='a1'>A</mi><mo>·</mo><mrow><mo>(</mo><mi arg='a2'>B</mi><mo>·</mo><mi arg='a3'>C</mi><mo>)</mo></mrow></mrow></math>"
        - "<math><mrow intent='scalar-triple-product($a1,$a2,$a3)'><mo>[</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>B</mi><mo>,</mo><mi arg='a3'>C</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ScalarTripleProduct.html"
@@ -10486,7 +10486,7 @@ concepts:
       property: "indexed function"
       area: "relational algebra"
       comments:
-       - "<math><msub intent='selection($a1,$a2,$a3)'><mi>&sigma;</mi><mrow><mi arg='a1'>a</mi><mi arg='a2'>&theta;</mi><mi arg='a3'>b</mi></mrow></msub></math>"
+       - "<math><msub intent='selection($a1,$a2,$a3)'><mi>&#x03c3;</mi><mrow><mi arg='a1'>a</mi><mi arg='a2'>&#x03b8;</mi><mi arg='a3'>b</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Selection_(relational_algebra)"
     
@@ -10563,7 +10563,7 @@ concepts:
       property: mixfix
       area: "group theory"
       comments:
-       - "<math><mrow intent='short-exact-sequence($a1,$a2,$a3)'><mn>0</mn><mo>&rightarrow;</mo><mi arg='a1'>X</mi><mo>&rightarrow;</mo><mi arg='a2'>Y</mi><mo>&rightarrow;</mo><mi arg='a3'>Z</mi><mo>&rightarrow;</mo><mn>0</mn></mrow></math>"
+       - "<math><mrow intent='short-exact-sequence($a1,$a2,$a3)'><mn>0</mn><mo>→</mo><mi arg='a1'>X</mi><mo>→</mo><mi arg='a2'>Y</mi><mo>→</mo><mi arg='a3'>Z</mi><mo>→</mo><mn>0</mn></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ShortExactSequence.html"
        - "https://en.wikipedia.org/wiki/Exact_sequence"
@@ -10948,7 +10948,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow intent='square($a1,$a2,$a3,$a4)'><mo>&squ;</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi><mo>&thinsp;</mo><mi arg='a4'>D</mi></mrow></mrow></math>"
+       - "<math><mrow intent='square($a1,$a2,$a3,$a4)'><mo>□</mo><mrow><mi arg='a1'>A</mi><mo>&#x2009;</mo><mi arg='a2'>B</mi><mo>&#x2009;</mo><mi arg='a3'>C</mi><mo>&#x2009;</mo><mi arg='a4'>D</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Square.html"
        - "https://en.wikipedia.org/wiki/Square"
@@ -11805,7 +11805,7 @@ concepts:
       property: prefix
       area: "geometry"
       comments:
-       - "<math><mrow intent='triangle($a1,$a2,$a3)'><mo>△</mo><mrow><mi arg='a1'>A</mi><mo>&thinsp;</mo><mi arg='a2'>B</mi><mo>&thinsp;</mo><mi arg='a3'>C</mi></mrow></mrow></math>"
+       - "<math><mrow intent='triangle($a1,$a2,$a3)'><mo>△</mo><mrow><mi arg='a1'>A</mi><mo>&#x2009;</mo><mi arg='a2'>B</mi><mo>&#x2009;</mo><mi arg='a3'>C</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Triangle.html"
        - "https://en.wikipedia.org/wiki/Triangle"
@@ -12601,7 +12601,7 @@ concepts:
       property: "indexed symbol"
       area: "mathematical physics"
       comments:
-       - "<math><mrow intent='wiener-sausage($a1,$a2)'><msub><mi>W</mi><mi arg='a1'>&delta;</mi></msub><mrow><mo>(</mo><mi arg='a2'>t</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='wiener-sausage($a1,$a2)'><msub><mi>W</mi><mi arg='a1'>&#x03b4;</mi></msub><mrow><mo>(</mo><mi arg='a2'>t</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/WienerSausage.html"
        - "https://en.wikipedia.org/wiki/Wiener_sausage"
@@ -12899,3 +12899,4 @@ concepts:
        - "<math><mrow intent='zig-zag-product($a1,$a2)'><mi arg='a1'>X</mi><mo>∘</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Zig-zag_product"
+
