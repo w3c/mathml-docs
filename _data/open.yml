@@ -12478,7 +12478,7 @@ concepts:
       property: "indexed function"
       area: "means"
       comments:
-       - "<math><mrow intent='weighted-lehmer-mean($a1,$a2,$a3)'><msub><mi>L</mi><mi>p</mi></msub><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>,</mo><mi arg='a3'>z</mi><mo>)</mo></mrow></mrow></math>
+       - "<math><mrow intent='weighted-lehmer-mean($a1,$a2,$a3)'><msub><mi>L</mi><mi>p</mi></msub><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>,</mo><mi arg='a3'>z</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LehmerMean.html"
        - "https://en.wikipedia.org/wiki/Lehmer_mean"
