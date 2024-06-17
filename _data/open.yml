@@ -5757,7 +5757,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='hyperbolic-umbilic-canonical-integral-function($a1)'><msup><mo>Ψ</mo><mrow><mo>(</mo><mi mathvariant='normal'>E</mi></mrow></msup><mi arg='a1'>z</mi></mrow></math>"
+       - "<math><mrow intent='hyperbolic-umbilic-canonical-integral-function($a1)'><msup><mo>Ψ</mo><mrow><mo>(</mo><mi mathvariant='normal'>E</mi><mo>)</mo></mrow></msup><mi arg='a1'>z</mi></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/36.2#E11"
        - "https://dlmf.nist.gov/36.3#i"
