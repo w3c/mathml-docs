@@ -1605,11 +1605,12 @@ concepts:
     
     - concept: clebsch-gordan-coefficient
       arity: 8
-      en: clebsch gordan coefficient
+      en: clebsch gordan coefficient $1 $2 $3 $4 $5 $6 $7 $8
       property: fenced
       area: "special functions"
-      notation: "mrow ( $1 $2 $3 $4 | $5 $6 $7 $8 )"
-      notationa: "mrow ⟨ $1 $2 $3 $4 |  $5 $6 $7 $8 ⟩"
+      comments:
+       - "<math><mrow intent='clebsch-gordan-coefficient($a1,$a2,$a3,$a4,$a5,$a6,$a7,$a8)'><mo>(</mo><msub arg='a1'><mi>j</mi><mn>1</mn></msub><msub arg='a2'><mi>j</mi><mn>2</mn></msub><msub arg='a3'><mi>m</mi><mn>1</mn></msub><msub arg='a4'><mi>m</mi><mn>2</mn></msub><mo>|</mo><msub arg='a5'><mi>j</mi><mn>1</mn></msub><msub arg='a6'><mi>j</mi><mn>2</mn></msub><mi arg='a7'>j</mi><mi arg='a8'>m</mi><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='clebsch-gordan-coefficient($a1,$a2,$a3,$a4,$a5,$a6,$a7,$a8)'><mo>⟨</mo><msub arg='a1'><mi>j</mi><mn>1</mn></msub><msub arg='a2'><mi>j</mi><mn>2</mn></msub><msub arg='a3'><mi>m</mi><mn>1</mn></msub><msub arg='a4'><mi>m</mi><mn>2</mn></msub><mo>|</mo><msub arg='a5'><mi>j</mi><mn>1</mn></msub><msub arg='a6'><mi>j</mi><mn>2</mn></msub><mi arg='a7'>j</mi><mi arg='a8'>m</mi><mo>⟩</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Clebsch-GordanCoefficient.html"
        - "https://en.wikipedia.org/wiki/Clebsch%E2%80%93Gordan_coefficients"
