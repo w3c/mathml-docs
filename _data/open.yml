@@ -6129,8 +6129,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-       - "<math><mrow intent='inner-jordan-measure($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub m *"
+       - "<math><mrow intent='inner-jordan-measure($a1)'><msub><mi>m</mi><mo>*</mo></msub><mrow><mo>(</mo><mi arg='a1'>N</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JordanMeasure.html"
        - "https://en.wikipedia.org/wiki/Jordan_measure"
@@ -8695,8 +8694,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-       - "<math><mrow intent='outer-jordan-measure($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup m *"
+       - "<math><mrow intent='outer-jordan-measure($a1)'><msup><mi>m</mi><mo>*</mo></msup><mrow><mo>(</mo><mi arg='a1'>N</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JordanMeasure.html"
        - "https://en.wikipedia.org/wiki/Jordan_measure"
