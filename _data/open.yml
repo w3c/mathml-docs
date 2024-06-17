@@ -2146,8 +2146,7 @@ concepts:
       property: mtable
       area: "statistics"
       comments:
-       - "<math><mrow intent='contingency-table($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtable"
+       - "<math><mrow intent='contingency-table($a1)'><mtable arg='a1'><mtr><mtd><mtext>...</mtext></mtd></mtr><mtr><mtd><mtext>...</mtext></mtd></mtr></mtable></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ContingencyTable.html"
        - "https://en.wikipedia.org/wiki/Contingency_table"
@@ -6990,12 +6989,12 @@ concepts:
     
     - concept: latin-rectangle
       arity: 1
-      en: latin rectangle of $1
+      en: latin rectangle $1
       property: mtable
       area: "combinatorial mathematics"
       comments:
-       - "<math><mrow intent='latin-rectangle($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtable"
+       - "<math><mrow intent='latin-rectangle($a1)'><mtable arg='a1'><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr><mtr><mtd><mn>4</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow></math>"
+
       urls: 
        - "https://mathworld.wolfram.com/LatinRectangle.html"
        - "https://en.wikipedia.org/wiki/Latin_rectangle"
@@ -7003,12 +7002,11 @@ concepts:
     
     - concept: latin-square
       arity: 1
-      en: latin square of $1
+      en: latin square $1
       property: mtable
       area: "combinatorial mathematics"
       comments:
-       - "<math><mrow intent='latin-square($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtable"
+       - "<math><mrow intent='latin-square($a1)'><mtable arg='a1'><mtr><mtd><mi>A</mi></mtd><mtd><mi>B</mi></mtd><mtd><mi>C</mi></mtd></mtr><mtr><mtd><mi>C</mi></mtd><mtd><mi>A</mi></mtd><mtd><mi>B</mi></mtd></mtr><mtr><mtd><mi>B</mi></mtd><mtd><mi>C</mi></mtd><mtd><mi>A</mi></mtd></mtr></mtable></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LatinSquare.html"
        - "https://en.wikipedia.org/wiki/Latin_square"
@@ -7680,10 +7678,8 @@ concepts:
       property: mtable, fenced
       area: "algebra"
       comments:
-       - "<math><mrow intent='matrix($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtable"
-      notationb: "<math><mrow intent='matrix($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>]</mo></mrow></math>"
-      notationa: "mrow ( $1"
+       - "<math><mrow intent='matrix($a1)'><mo>(</mo><mtable arg='a1'><mtr><mtd><mtext>...</mtext></mtd></mtr><mtr><mtd><mtext>...</mtext></mtd></mtr></mtable><mo>)</mo></mrow></math>"
+       - "<math><mrow intent='matrix($a1)'><mo>[</mo><mtable arg='a1'><mtr><mtd><mtext>...</mtext></mtd></mtr><mtr><mtd><mtext>...</mtext></mtd></mtr></mtable><mo>]</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Matrix.html"
        - "https://mathworld.wolfram.com/SquareBracket.html"
@@ -12766,8 +12762,7 @@ concepts:
       property: mtable
       area: "chemistry"
       comments:
-       - "<math><mrow intent='z-matrix-molecule($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtable"
+       - "<math><mrow intent='z-matrix-molecule($a1)'><mtable arg='a1'><mtr><mtd><mtext>...</mtext></mtd></mtr><mtr><mtd><mtext>...</mtext></mtd></mtr></mtable></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Z-matrix_(chemistry)"
     
