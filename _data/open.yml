@@ -8217,7 +8217,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='multichoose($a1,$a2)'><mo mathvariant='bold'>(</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>n</mi></mfrac><mo mathvariant='bold'>)</mo></mrow></math>"
+       - "<math><mrow intent='multichoose($a1,$a2)'><mo mathvariant='bold'>(</mo><mfrac linethickness='0pt'><mi arg='a1'>m</mi><mi arg='a2'>n</mi></mfrac><mo mathvariant='bold'>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Multiset.html"
     
