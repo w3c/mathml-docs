@@ -7674,7 +7674,7 @@ concepts:
     
     - concept: matrix
       arity: 1
-      en: matrix of $1
+      en: matrix $1
       property: mtable, fenced
       area: "algebra"
       comments:
