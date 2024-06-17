@@ -9139,12 +9139,11 @@ concepts:
     
     - concept: pollaczek-polynomial
       arity: 1
-      en: pollaczek polynomial of $1
+      en: #1 th pollaczek polynomial
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
-       - "<math><mrow intent='pollaczek-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup P n (λ"
+       - "<math><msubsup intent='pollaczek-polynomial($a1)'><mi>P</mi><mi arg='a1'>n</mi><mrow><mo>(</mo><mi>λ</mi><mo>)</mo></mrow></msubsup></math>"
       urls: 
        - "https://mathworld.wolfram.com/PollaczekPolynomial.html"
        - "https://en.wikipedia.org/wiki/Meixner%E2%80%93Pollaczek_polynomials"
