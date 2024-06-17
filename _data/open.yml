@@ -1950,7 +1950,7 @@ concepts:
       property: msup
       area: "finance"
       comments:
-       - "<math><mrow intent='compound-interest($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='compound-interest($a1,$a2)'><mi style='color:red'>!!?</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msup $1 ($2"
       urls: 
        - "https://mathworld.wolfram.com/CompoundInterest.html"
@@ -2051,9 +2051,8 @@ concepts:
       property: infix
       area: "algebra, geometry"
       comments:
-       - "<math><mrow intent='congruence-relation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ≡"
-      notationa: "mo ≅"
+       - "<math><mrow intent='congruence-relation($a1,$a2)'><mi arg='a1'>x</mi><mo>≡</mo><mi arg='a2'>y</mi></mrow></math>"
+       - "<math><mrow intent='congruence-relation($a1,$a2)'><mi arg='a1'>x</mi><mo>≅</mo><mi arg='a2'>y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Congruence_relation"
        - "https://mathworld.wolfram.com/Congruence.html"
@@ -2286,13 +2285,12 @@ concepts:
        - mutually-prime
     
     - concept: coproduct
-      arity: 1
-      en: coproduct of $1
+      arity: 2
+      en: coproduct of $1 and $2
       property: indexed
       area: "topology, category theory"
       comments:
-       - "<math><mrow intent='coproduct($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∐"
+       - "<math><mrow intent='coproduct($a1,$a2)'><mi arg='a1'>X</mi><mo>⊔</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Coproduct.html"
        - "https://en.wikipedia.org/wiki/Disjoint_union_(topology)"
@@ -8782,12 +8780,7 @@ concepts:
       property: embellished infix
       area: "category theory"
       comments:
-       - "<math><mrow intent='parallel-morphism($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "<munderover>"
-      notationd: "<mrow/>"
-      notationc: "<munder><mo>⟶</mo> $1</munder>"
-      notationb: "<mover><mo>⟶</mo> $2</mover>"
-      notationa: "</munderover>"
+       - "<math><mrow intent='parallel-morphism($a1,$a2)'><mi arg='a1'>x</mi><mo>⇉</mo><mi arg='a2'>y</mi></mrow></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/parallel+morphisms"
     
@@ -8797,9 +8790,8 @@ concepts:
       property: symbol
       area: "chemistry"
       comments:
-       - "<math><mrow intent='partial-charge($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup δ $1"
-      notationa: "mrow δ $1"
+       - "<math><mrow intent='partial-charge($a1)'><mi>δ</mi><mo arg='a1'>+</mo></mrow></math>"
+       - "<math><msup intent='partial-charge($a1)'><mi>δ</mi><mo arg='a1'>+</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Partial_charge"
        - "https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/08._Basic_Concepts_of_Chemical_Bonding/8.S%3A_Basic_Concepts_of_Chemical_Bonding_(Summary)"
@@ -9079,8 +9071,7 @@ concepts:
       property: mixfix
       area: "algebra"
       comments:
-       - "<math><mrow intent='plethysm($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow { $1 } ⊗ { $2 }"
+       - "<math><mrow intent='plethysm($a1,$a2)'><mrow><mo>{</mo><mi arg='a1'>λ</mi><mo>}</mo></mrow><mo>⊗</mo><mrow><mo>{</mo><mi arg='a2'>μ</mi><mo>}</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Plethysm.html"
        - "https://en.wikipedia.org/wiki/Plethysm"
@@ -9101,12 +9092,11 @@ concepts:
     
     - concept: pointwise-convergent
       arity: 1
-      en: pointwise convergent of $1
+      en: $1 converges pointwise
       property: postfix
       area: "convergence"
       comments:
-       - "<math><mrow intent='pointwise-convergent($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtext pointwise"
+       - "<math><mrow intent='pointwise-convergent($a1)'><mi arg='a1'>f</mi><mi>pointwise</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PointwiseConvergence.html"
        - "https://en.wikipedia.org/wiki/Pointwise_convergence"
@@ -9181,8 +9171,7 @@ concepts:
       property: mixfix
       area: "ring theory"
       comments:
-       - "<math><mrow intent='polynomial-ring($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1 [ $2 ]"
+       - "<math><mrow intent='polynomial-ring($a1,$a2)'><mi arg='a1'>R</mi><mrow><mo>[</mo><mi arg='a2'>x</mi><mo>]</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polynomial_ring#Definition_(univariate_case)"
       alias:
