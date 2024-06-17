@@ -6955,7 +6955,7 @@ concepts:
       property: "embellished operator"
       area: "differential operators"
       comments:
-       - "<math><mrow intent='laplace-operator($a1)'><msup>m<mo>∇</mo><mn>2</mn></msup><mi arg='a1'>f</mi></mrow></math>"
+       - "<math><mrow intent='laplace-operator($a1)'><msup><mo>∇</mo><mn>2</mn></msup><mi arg='a1'>f</mi></mrow></math>"
        - "<math><mrow intent='laplace-operator($a1)'><mo>∇</mo><mo>·</mo><mo>∇</mo><mi arg='a1'>f</mi></mrow></math>"
        - "<math><mrow intent='laplace-operator($a1)'><mi>Δ</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
@@ -8217,7 +8217,7 @@ concepts:
       property: fenced-stacked
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='multichoose($a1,$a2)'><mo mathvariant='bold'>(</mo><mfrac linethickness='0pt'><mi arg='a1'>m</mi><mi arg='a2'>n</mi></mfrac><mo mathvariant='bold'>)</mo></mrow></math>"
+       - "<math><mrow intent='multichoose($a1,$a2)'><mo style='font-weight:bold'>(</mo><mfrac linethickness='0pt'><mi arg='a1'>m</mi><mi arg='a2'>n</mi></mfrac><mo style='font-weight:bold'>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Multiset.html"
     
