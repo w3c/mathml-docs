@@ -1,6 +1,17 @@
 ---
 title: Open Concept List
 ---
+<script>
+  function showmath (){
+      const ml =document.querySelectorAll("math");
+      for(const m of ml) {
+	  const md =  document.createElement("div");
+	  md.className="mmlshow";
+	  md.textContent=m.outerHTML.replaceAll("<mrow></mrow>","<mrow/>").replaceAll("><",">\n<");
+	  m.parentNode.replaceChild(md, m);
+      }
+  }
+</script>
 <style>
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
@@ -10,6 +21,22 @@ span.cb {margin-right: 2em; white-space:nowrap}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
+     [arg] { background-color: #ddfafa;}
+     [arg]:hover {display:inline;background-color: #add8e6;}
+     [arg]:hover::after {display:inline;vertical-align: sub; font-size: 0.7em; }
+     [arg="a1"]:hover::after { content: " $1" ; }
+     [arg="a2"]:hover::after { content: " $2" ; }
+     [arg="a3"]:hover::after { content: " $3" ; }
+     [arg="a4"]:hover::after { content: " $4" ; }
+     [arg="a5"]:hover::after { content: " $5" ; }
+     [arg="a6"]:hover::after { content: " $6" ; }
+     [arg="a7"]:hover::after { content: " $7" ; }
+     [arg="a8"]:hover::after { content: " $8" ; }
+     [arg="a9"]:hover::after { content: " $9" ; }
+math:not(:has(*[intent])) {
+    color: red;
+    }
+div.mmlshow {display:inline-block;padding:1em;margin:.5em;border-radius:1em;font-family:monospace;background-color:#EEE;white-space:pre;}
 </style>
 
 <style id="langcss">
@@ -45,6 +72,7 @@ order might not be clear from the standard notation, the speech hint
 or comments should make clear what is the intended order of arguments.
 
 
+
 ----
 
 ### Sources
@@ -54,6 +82,10 @@ Additional contributions are welcome:
 
 ----
 
+<p><button onclick="showmath()">Show MathML Source</button></p>
+
+
+----
 
 <details>
 <summary>Available Template Languages</summary>
