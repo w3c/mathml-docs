@@ -12656,8 +12656,8 @@ concepts:
       property: operator
       area: "special functions"
       comments:
-       - "<math><mrow intent='wronskian($a1,$a2)'><mi>𝒲</mi><mrow><mo></mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a2'>g</mi><mo>)</mo></mrow></mrow></math>"
-       - "<math><mrow intent='wronskian($a1,$a2)'><mi>W</mi><mrow><mo></mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a2'>g</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='wronskian($a1,$a2)'><mi>𝒲</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a2'>g</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='wronskian($a1,$a2)'><mi>W</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>,</mo><mi arg='a2'>g</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Wronskian.html"
        - "https://en.wikipedia.org/wiki/Wronskian"
