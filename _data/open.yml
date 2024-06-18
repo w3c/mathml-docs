@@ -6615,8 +6615,7 @@ concepts:
       property: msup
       area: "formal languages"
       comments:
-       - "<math><mrow intent='kleene-star($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup *"
+       - "<math><msup intent='kleene-star($a1)'><mi arg='a1'>x</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kleene_star"
     
@@ -6626,8 +6625,7 @@ concepts:
       property: msup
       area: "formal languages"
       comments:
-       - "<math><mrow intent='kleene-plus($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup +"
+       - "<math><msup intent='kleene-plus($a1)'><mi arg='a1'>x</mi><mo>+</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kleene_star"
     
@@ -7604,16 +7602,15 @@ concepts:
     
     - concept: mathieu-group
       arity: 1
-      en: mathieu group of $1
+      en: mathieu group $1
       property: "indexed symbol"
       area: "group theory"
       comments:
-       - "<math><mrow intent='mathieu-group($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub M 11"
-      notationd: "msub M 12"
-      notationc: "msub M 22"
-      notationb: "msub M 23"
-      notationa: "msub M 24"
+       - "<math><msub intent='mathieu-group($a1)'><mi>M</mi><mn arg='a1'>11</mn></msub></math>"
+       - "<math><msub intent='mathieu-group($a1)'><mi>M</mi><mn arg='a1'>12</mn></msub></math>"
+       - "<math><msub intent='mathieu-group($a1)'><mi>M</mi><mn arg='a1'>22</mn></msub></math>"
+       - "<math><msub intent='mathieu-group($a1)'><mi>M</mi><mn arg='a1'>23</mn></msub></math>"
+       - "<math><msub intent='mathieu-group($a1)'><mi>M</mi><mn arg='a1'>24</mn></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/MathieuGroups.html"
        - "https://en.wikipedia.org/wiki/Multiply_transitive_group"
@@ -7973,9 +7970,7 @@ concepts:
       property: infix, mixfix
       area: "modular arithmetic"
       comments:
-       - "<math><mrow intent='modulo($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo mod"
-      notationa: "mrow $1 ( mod $2"
+       - "<math><mrow intent='modulo($a1,$a2)'><mi arg='a1'>x</mi><mrow><mo>(</mo>><mi>mod</mi><mi arg='a2'>p</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Modulo.html"
        - "https://en.wikipedia.org/wiki/Modulo_(jargon)"
@@ -8158,8 +8153,7 @@ concepts:
       property: function
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='multiplier-algebra($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow M($1"
+       - "<math><mrow intent='multiplier-algebra($a1)'><mi style='color:red'>M</mi><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MultiplierAlgebra.html"
        - "https://en.wikipedia.org/wiki/Multiplier_algebra"
