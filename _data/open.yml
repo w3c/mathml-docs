@@ -9075,8 +9075,7 @@ concepts:
       property: fenced
       area: "geometry"
       comments:
-       - "<math><mrow intent='plucker-coordinate($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ( $1 : $2 : ... : $n"
+       - "<math><mrow intent='plucker-coordinate($a1,$a2)'><mo>(</mo><mi arg='a1'>𝐝</mi><mo>:</mo><mi arg='a2'>𝐦</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PlueckerCoordinates.html"
        - "https://en.wikipedia.org/wiki/Pl%C3%BCcker_coordinates"
