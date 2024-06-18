@@ -692,7 +692,7 @@ concepts:
     
     - concept: beatty-sequence
       arity: 1
-      en: $1 _th_ beatty sequence
+      en: $1<i>th</i> beatty sequence
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -703,7 +703,7 @@ concepts:
     
     - concept: bell-number
       arity: 1
-      en: $1 _th_ bell number
+      en: $1<i>th</i> bell number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -716,7 +716,7 @@ concepts:
     
     - concept: bell-polynomial
       arity: "*"
-      en: $1 _th_ bell polynomial of $2, $3, ...
+      en: $1<i>th</i> bell polynomial of $2, $3, ...
       property: "indexed function"
       area: "polynomials"
       notation: "mrow msub B $1 ($2, ... $n"
@@ -740,7 +740,7 @@ concepts:
     
     - concept: bergman-space
       arity: 2
-      en: $1 _th_ bergman space of $2
+      en: $1<i>th</i> bergman space of $2
       property: "indexed function"
       area: "complex analysis"
       comments:
@@ -752,7 +752,7 @@ concepts:
     
     - concept: bernoulli-number
       arity: 1
-      en: $1 _th_ bernoulli number
+      en: $1<i>th</i> bernoulli number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -781,7 +781,7 @@ concepts:
     
     - concept: bessel-function
       arity: 2
-      en: $1 _th_ bessel function of $2
+      en: $1<i>th</i> bessel function of $2
       property: "indexed function"
       area: "special functions"
       comments:
@@ -794,7 +794,7 @@ concepts:
     
     - concept: bessel-function-of-second-kind
       arity: 2
-      en: $1 _th_ bessel function of second kind of $2
+      en: $1<i>th</i> bessel function of second kind of $2
       property: "indexed function"
       area: "special functions"
       comments:
@@ -806,7 +806,7 @@ concepts:
     
     - concept: bessel-polynomial
       arity: 2
-      en: $1 _th_ bessel polynomial of $2
+      en: $1<i>th</i> bessel polynomial of $2
       property: "indexed function"
       area: "special functions"
       comments:
@@ -852,7 +852,7 @@ concepts:
     
     - concept: betti-number
       arity: 1
-      en: $1 _th_ betti number
+      en: $1<i>th</i> betti number
       property: "indexed symbol"
       area: "graph theory"
       comments:
@@ -1231,7 +1231,7 @@ concepts:
     
     - concept: catalan-number
       arity: 1
-      en: $1 _th_ catalan number
+      en: $1<i>th</i> catalan number
       property: "indexed symbol"
       area: "combinatorics"
       comments:
@@ -2439,7 +2439,7 @@ concepts:
     
     - concept: cullen-number
       arity: 1
-      en: $1 _th_ cullen number
+      en: $1<i>th</i> cullen number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -2567,7 +2567,7 @@ concepts:
     
     - concept: cyclotomic-polynomial
       arity: 1
-      en: $1 _th_ cyclotomic polynomial
+      en: $1<i>th</i> cyclotomic polynomial
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -2917,7 +2917,7 @@ concepts:
     
     - concept: dihedral-group
       arity: 1
-      en: $1 _th_ dihedral group
+      en: $1<i>th</i> dihedral group
       property: symbol
       area: "group theory"
       comments:
@@ -4067,7 +4067,7 @@ concepts:
     
     - concept: faber-polynomial
       arity: 1
-      en: $1 _th_ faber polynomial
+      en: $1<i>th</i> faber polynomial
       property: function
       area: "polynomials"
       comments:
@@ -4139,7 +4139,7 @@ concepts:
     
     - concept: fermat-number
       arity: 1
-      en: $1 _th_ fermat number
+      en: $1<i>th</i> fermat number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -4183,7 +4183,7 @@ concepts:
     
     - concept: fibonacci-number
       arity: 1
-      en: $1 _th_ fibonacci number
+      en: $1<i>th</i> fibonacci number
       property: "indexed symbol"
       area: "number theory"
       comments:
@@ -4312,7 +4312,7 @@ concepts:
     
     - concept: forward-difference
       arity: 3
-      en: $1 _th_ forward difference of $3 over $2
+      en: $1<i>th</i> forward difference of $3 over $2
       property: operator
       area: "numerical analysis"
       comments:
@@ -4427,7 +4427,7 @@ concepts:
     
     - concept: franel-number
       arity: 1
-      en: $1 _th_ franel number
+      en: $1<i>th</i> franel number
       property: "indexed symbol"
       area: "combinatorics"
       comments:
@@ -5772,7 +5772,7 @@ concepts:
     
     - concept: hypertorus
       arity: 1
-      en: $1 _th_ hypertorus
+      en: $1<i>th</i> hypertorus
       property: "indexed symbol"
       area: "topology"
       comments:
@@ -8034,7 +8034,7 @@ concepts:
     
     - concept: moment-of-function
       arity: 
-      en: $1 _th_ moment 
+      en: $1<i>th</i> moment 
       property: "msub, mixfix"
       area: "mathematics"
       comments:
@@ -9132,7 +9132,7 @@ concepts:
     
     - concept: pollaczek-polynomial
       arity: 1
-      en: $1 _th_ pollaczek polynomial
+      en: $1<i>th</i> pollaczek polynomial
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
@@ -10175,7 +10175,7 @@ concepts:
     
     - concept: rising-factorial
       arity: 2
-      en: #2 _th_ rising factorial of  $1
+      en: #2<i>th</i> rising factorial of  $1
       property: mixfix
       area: "combinatorics"
       comments:
@@ -11959,7 +11959,7 @@ concepts:
     
     - concept: ulam-number
       arity: 1
-      en: $1 _th_ ulam number
+      en: $1<i>th</i> ulam number
       property: "indexed symbol"
       area: "integer sequences"
       comments:
@@ -12032,7 +12032,7 @@ concepts:
     
     - concept: unitary-group
       arity: 1
-      en: $1 _th_ unitary group
+      en: $1<i>th</i> unitary group
       property: "indexed symbol"
       area: "group theory"
       comments:
@@ -12569,7 +12569,7 @@ concepts:
     
     - concept: wilson-polynomial
       arity: 1
-      en: $1 _th_ wilson polynomial 
+      en: $1<i>th</i> wilson polynomial 
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
