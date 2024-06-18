@@ -6374,8 +6374,7 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-       - "<math><mrow intent='jacobi-zeta-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow Z⁡ ( $1 |  $2 )"
+       - "<math><mrow intent='jacobi-zeta-function($a1,$a2)'><mi style='color:red'>Z</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>k</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiZetaFunction.html"
        - "https://en.wikipedia.org/wiki/Jacobi_zeta_function"
@@ -6443,13 +6442,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/Janko_group"
     
     - concept: jet
-      arity: 1
-      en: jet of $1
+      arity: 3
+      en: $1 jet of $3 at $2
       property: function
       area: "differential geometry"
       comments:
-       - "<math><mrow intent='jet($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup J"
+       - "<math><mrow intent='jet($a1,$a2,$a3)'><msubsup><mi>J</mi><mi arg='a3'>x</mi><mi arg='a1'>k</mi></msubsup><mi arg='a3'>f</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Jet_(mathematics)"
        - "https://www.encyclopediaofmath.org/index.php/Jet"
@@ -6487,8 +6485,7 @@ concepts:
       property: "indexed symbol"
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='jordan-block($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub J mrow $1, $2"
+       - "<math><msub intent='jordan-block($a1,$a2)'><mi>J</mi><mrow><mi arg='a1'>a</mi><mi arg='a2'>b</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/JordanBlock.html"
        - "https://en.wikipedia.org/wiki/Jordan_matrix"
