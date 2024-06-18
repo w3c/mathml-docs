@@ -129,8 +129,9 @@ concepts:
       property: 
       area: 
       comments:
-       - "<math><mrow intent='adjoint($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: 
+       - "<math><mrow intent='adjoint($a1)'><msup><mi arg='a1'>G</mi><mo>′</mo></msup></mrow></math>"
+       - "<math><mrow intent='adjoint($a1)'><msup><mi arg='a1'>G</mi><mo>†</mo></msup></mrow></math>"
+       - "<math><mrow intent='adjoint($a1)'><msub><mi>Ad</mi><mi arg='a1'>g</mi></msub></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Adjoint.html"
        - "https://en.wikipedia.org/wiki/Adjoint"
@@ -280,8 +281,7 @@ concepts:
       property: 
       area: "probability theory"
       comments:
-       - "<math><mrow intent='almost-surely($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mtext a.s."
+       - "<math><mrow intent='almost-surely($a1)'><mi arg='a1'>E</mi><mi>m.s.</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Almost_surely"
     
@@ -330,10 +330,9 @@ concepts:
       property: infix, prefix
       area: "propositional calculus"
       comments:
-       - "<math><mrow intent='alternative-denial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo | "
-      notationb: "mo ↑"
-      notationa: "mrow D $1 $2"
+       - "<math><mrow intent='alternative-denial($a1,$a2)'><mi arg='a1'>p</mi><mo>|</mo><mi arg='a2'>q</mi></mrow></math>"
+       - "<math><mrow intent='alternative-denial($a1,$a2)'><mi arg='a1'>p</mi><mo>↑</mo><mi arg='a2'>q</mi></mrow></math>"
+       - "<math><mrow intent='alternative-denial($a1,$a2)'><mi>D</mi><mi arg='a1'>p</mi><mi arg='a2'>q</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/AlternativeDenial.html"
        - "https://en.wikipedia.org/wiki/Sheffer_stroke"
@@ -469,8 +468,7 @@ concepts:
       property: mover
       area: "particle physics"
       comments:
-       - "<math><mrow intent='antiparticle($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover $1 ¯"
+       - "<math><mover intent='antiparticle($a1)'><mi arg='a1'>p</mi><mo>¯</mo></mover></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Antimatter"
        - "https://en.wikipedia.org/wiki/Antiparticle"
@@ -1136,8 +1134,7 @@ concepts:
       property: "indexed symbol"
       area: "operator theory"
       comments:
-       - "<math><mrow intent='calderon-toeplitz-operator($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub T mrow $1, $2"
+       - "<math><mrow intent='calderon-toeplitz-operator($a1,$a2)'><msub><mi>T</mi><mrow><mi arg='a1'>b</mi><mi arg='a2'>ψ</mi></mrow></msub></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Calderon-Toeplitz_operator"
     
@@ -1168,10 +1165,8 @@ concepts:
       property: many
       area: "set theory"
       comments:
-       - "<math><mrow intent='cardinality($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow | mo #"
-      notationb: "mi card"
-      notationa: "<math><mrow intent='cardinality($a1)'><mi>n</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='cardinality($a1)'><mo>#</mo><mi arg='a1'>X</mi></mrow></math>"
+       - "<math><mrow intent='cardinality($a1)'><mi>card</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Cardinality.html"
        - "https://en.wikipedia.org/wiki/Cardinality"
