@@ -3242,15 +3242,15 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Divergence"
     
     - concept: divided-difference
-      arity: 1
-      en: divided difference of $1
+      arity: "*"
+      en: divided difference of $1 ..
       property: "fenced, mixfix"
       area: "special functions"
       comments:
-       - "<math><mrow intent='divided-difference($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow [ $1, ... $n ]"
-      notationb: "mrow #f [$1, ..., $n ]"
-      notationa: "mrow D [ $1, ... $n ] #f"
+       - "<math><mrow intent='divided-difference($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>,</mo><mi arg='a3'>z</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='divided-difference($a1)'><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>,</mo><mi arg='a3'>z</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='divided-difference($a1)'><mi>f</mi><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>,</mo><mi arg='a3'>z</mi><mo>]</mo></mrow></math>"
+       - "<math><mrow intent='divided-difference($a1)'><mi>D</mi><mo>[</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>,</mo><mi arg='a3'>z</mi><mo>]</mo><mi>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DividedDifference.html"
        - "https://en.wikipedia.org/wiki/Divided_differences"
@@ -4488,13 +4488,12 @@ concepts:
     
     - concept: free-module
       arity: 2
-      en: free module $1 $2
+      en: $1 free module on $2
       property: mixfix, msup
       area: "module theory"
       comments:
-       - "<math><mrow intent='free-module($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1 { $2 }"
-      notationa: "msup $1 ($2"
+       - "<math><mrow intent='free-module($a1,$a2)'><mi arg='a1'>R</mi><mrow><mo>{</mo><mi arg='a2'>E</mi><mo>}</mo></mrow></mrow></math>"
+       - "<math><msup intent='free-module($a1,$a2)'><mi arg='a1'>R</mi><mrow><mo>(</mo><mi arg='a2'>E</mi><mo>)</mo></mrow></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/FreeModule.html"
        - "https://en.wikipedia.org/wiki/Free_module"
@@ -4549,8 +4548,7 @@ concepts:
       property: indexed fenced
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='frobenius-norm($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub mrow | $1 F"
+       - "<math><msub intent='frobenius-norm($a1)'><mrow><mo>‖</mo><mi arg='a1'>A</mi><mo>‖</mo></mrow><mi>F</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FrobeniusNorm.html"
        - "https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm"
@@ -4658,10 +4656,9 @@ concepts:
       property: function
       area: "finite fields"
       comments:
-       - "<math><mrow intent='galois-field($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow GF ($1)"
-      notationb: "msub F $1"
-      notationa: "msub 𝔽 $1"
+       - "<math><mrow intent='galois-field($a1)'><mi>GF</mi><mrow><mo>(</mo><mi arg='a1'>p</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='galois-field($a1)'><mi>F</mi><mi arg='a1'>p</mi></msub></math>"
+       - "<math><msub intent='galois-field($a1)'><mi>𝔽</mi><mi arg='a1'>p</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/GaloisField.html"
        - "https://en.wikipedia.org/wiki/Finite_field"
@@ -4778,7 +4775,7 @@ concepts:
       property: "indexed function"
       area: "orthogonal polynomials"
       comments:
-       - "<math><mrow intent='gegenbauer-polynomial($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='gegenbauer-polynomial($a1,$a2)'><msubsup><mi>C</mi><mi arg='a1'>n</mi><mrow><mo>(</mo><mi arg='a2'>α</mi><mo>)</mo></mrow></msubsup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup C $1 ($2"
       urls: 
        - "https://mathworld.wolfram.com/GegenbauerPolynomial.html"
@@ -6197,8 +6194,7 @@ concepts:
       property: prefix
       area: "category theory"
       comments:
-       - "<math><mrow intent='inverse-limit($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "munder lim ←"
+       - "<math><mrow intent='inverse-limit($a1)'><munder><mi>lim</mi><mo>←</mo></munder><mrow><mo>(</mo><msub arg='a1'><mi>A</mi><mi>i</mi></msub><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InverseLimit.html"
        - "https://en.wikipedia.org/wiki/Inverse_limit"
