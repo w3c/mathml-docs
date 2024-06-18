@@ -41,11 +41,11 @@ concepts:
     
     - concept: abundancy
       arity: 1
-      en: abundancy of $1
+      en: abundancy index  of $1
       property: mixfix
       area: "number theory"
       comments:
-       - "<math><mrow intent='abundancy($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='abundancy($a1)'><mi>σ</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>)</mo></mrow><mo>/</mo><mi>n</mi></mrow></math>"
       notation: "sigma (n) / n"
       urls: 
        - "https://mathworld.wolfram.com/Abundancy.html"
@@ -731,8 +731,7 @@ concepts:
       property: indexed
       area: "mathematical physics"
       comments:
-       - "<math><mrow intent='berezin-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='berezin-integral($a1)'><mo>∫</mo><mrow><mi arg='a1'>f</mi></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Berezin_integral"
        - "https://en.wikipedia.org/wiki/Grassmann_integral"
@@ -886,7 +885,6 @@ concepts:
       area: "complexity"
       comments:
        - "<math><mrow intent='big-O($a1)'><mi>O</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>"
-      notationa: ""
       urls: 
        - "https://en.wikipedia.org/wiki/Big_O_notation"
        - "https://mathworld.wolfram.com/O.html"
@@ -897,8 +895,7 @@ concepts:
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='bigeometric-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo Π"
+       - "<math><mrow intent='bigeometric-integral($a1)'><mo>∫</mo><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Product_integral"
     
@@ -924,13 +921,13 @@ concepts:
        - "https://ncatlab.org/nlab/show/binary+Golay+code"
     
     - concept: binomial-coefficient
-      arity: 1
-      en: binomial coefficient of $1
+      arity: 2
+      en: binomial coefficient $1 choose $2
       property: "indexed function"
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='binomial-coefficient($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup C"
+       - "<math><mrow intent='binomial-coefficient($a1)'><mo>(</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>k</mi></mfrac><mo>)</mo></mrow></math>"
+       - "<math><mmultiscripts><mi>C</mi><mi arg='a2'>k</mi><mrow/><mprescripts/><mi arg='a1'>n</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/BinomialCoefficient.html"
        - "https://en.wikipedia.org/wiki/Binomial_coefficient"
