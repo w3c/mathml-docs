@@ -5276,13 +5276,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/Hausdorff_measure"
     
     - concept: hausdorff-metric
-      arity: 1
-      en: hausdorff metric of $1
+      arity: 2
+      en: hausdorff distance $1 $2
       property: function
       area: "metric geometry"
       comments:
-       - "<math><mrow intent='hausdorff-metric($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub d H"
+       - "<math><mrow intent='hausdorff-metric($a1)'><msub><mi>d</mi><mi>H</mi></msub><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>,</mo><mi arg='a2'>Y</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hausdorff_distance"
        - "https://ncatlab.org/nlab/show/Hausdorff+metric"
@@ -5415,9 +5414,8 @@ concepts:
       property: msup
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='hermitian-adjoint($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup †,"
-      notationa: "msup *"
+       - "<math><msup intent='hermitian-adjoint($a1)'><mi arg='a1'>A</mi><mo>†</mo></msup></math>"
+       - "<math><msup intent='hermitian-adjoint($a1)'><mi arg='a1'>A</mi><mo>*</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Hermitian_adjoint"
       alias:
@@ -5429,8 +5427,7 @@ concepts:
       property: msup
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='hermitian-conjugate($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup H"
+       - "<math><msup intent='hermitian-conjugate($a1)'><mi arg='a1'>A</mi><mi>H</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/HermitianConjugate.html"
        - "https://en.wikipedia.org/wiki/Conjugate_transpose"
@@ -5518,7 +5515,7 @@ concepts:
       property: fenced
       area: "matrix norms"
       comments:
-       - "<math><mrow intent='hilbert-schmidt-norm($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='hilbert-schmidt-norm($a1)'><mrow><mo>|</mo><mi arg='a1'>X</mi><mo>|</mo></mrow><mi>HS</mi></msub></math>"
       notation: "msub mrow | $1 | HS"
       urls: 
        - "https://mathworld.wolfram.com/Hilbert-SchmidtNorm.html"
@@ -5895,12 +5892,11 @@ concepts:
     
     - concept: incomparability
       arity: 2
-      en: $1 incomparability $2
+      en: $1 incomparable to $2
       property: infix
       area: "order theory"
       comments:
-       - "<math><mrow intent='incomparability($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "menclose notation='updiagonalstrike' munderover = &gt; &lt;"
+       - "<math><mrow intent='incomparability($a1,$a2)'><mi arg='a1'>X</mi><mo>⪋̸</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Comparability"
       alias:
