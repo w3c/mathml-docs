@@ -6454,8 +6454,7 @@ concepts:
       property: indexed
       area: "measure theory"
       comments:
-       - "<math><mrow intent='join($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ⋁"
+       - "<math><mrow intent='join($a1)'><msub><mo>⋁</mo><mrow><mi>α</mi><mo>∈</mo><mi>𝒜</mi></mrow></msub><mrow arg='a1'><mi>Σ</mi><mi>α</mi></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Join.html"
        - "https://en.wikipedia.org/wiki/Join_(sigma_algebra)"
@@ -9731,8 +9730,7 @@ concepts:
       property: msup
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='real-bipolar($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup $1 r r"
+       - "<math><msup intent='real-bipolar($a1)'><mi arg='a1'>A</mi><mo>∘</mo></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
        - "https://en.wikipedia.org/wiki/Polar_set_(potential_theory)"
@@ -12042,14 +12040,12 @@ concepts:
        - universe
     
     - concept: unique-existential
-      arity: 1
-      en: unique existential of $1
+      arity: 3
+      en: There exists unique $1
       property: prefix
       area: "logic"
       comments:
-       - "<math><mrow intent='unique-existential($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∃ !"
-      notationa: "msub ∃ mrow =1 /mrow"
+       - "<math><mrow intent='unique-existential($a1)'><mo>∃!</mo><mi arg='a1'>n</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Uniqueness_quantification"
        - "https://arxiv.org/pdf/1902.03852.pdf"
