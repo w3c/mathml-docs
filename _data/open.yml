@@ -4177,8 +4177,7 @@ concepts:
       property: menclose
       area: "quantum field theory"
       comments:
-       - "<math><mrow intent='feynman-slash($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "menclose notation=updiagonalstrike $1"
+       - "<math><menclose  notation='updiagonalstrike' intent='feynman-slash($a1)'><mi arg='a1'>A</mi></menclose></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Feynman_slash_notation"
     
