@@ -4846,13 +4846,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/General_linear_group"
     
     - concept: generalized-hypergeometric-function
-      arity: 1
-      en: generalized hypergeometric function of $1
+      arity: 2
+      en: generalized hypergeometric function $1 $2
       property: mmultiscripts
       area: "special functions"
       comments:
-       - "<math><mrow intent='generalized-hypergeometric-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mmultiscripts F q none mprescripts p none"
+       - "<math><mmultiscripts intent='fox-wright-function($a1,$a2)'><mi>F</mi><mi arg='a2'>q</mi><mrow/><mprescripts/><mi arg='a1'>p</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeneralizedHypergeometricFunction.html"
        - "https://en.wikipedia.org/wiki/Generalized_hypergeometric_function"
@@ -4927,8 +4926,7 @@ concepts:
       property: function
       area: "algebraic geometry"
       comments:
-       - "<math><mrow intent='geometric-genus($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub p g"
+       - "<math><msub intent='geometric-genus($a1)'><mi arg='a1'>p</mi><mi>g</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/GeometricGenus.html"
        - "https://en.wikipedia.org/wiki/Geometric_genus"
