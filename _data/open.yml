@@ -6294,6 +6294,7 @@ concepts:
       en: iverson bracket of $1
       property: fenced
       area: "set theory"
+       - "<math><mrow intent='iverson-bracket($a1)'><mo>[</mo><mi arg='a1'>P</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Iverson_bracket"
     
@@ -8229,8 +8230,7 @@ concepts:
       property: function
       area: "combinatorial analysis"
       comments:
-       - "<math><mrow intent='narayana-number($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow N ($1, $2"
+       - "<math><mrow intent='narayana-number($a1,$a2)'><mi>N</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>,</mo><mi arg='a2'>k</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/NarayanaNumber.html"
        - "https://en.wikipedia.org/wiki/Narayana_number"
@@ -9144,8 +9144,7 @@ concepts:
       property: mover
       area: "harmonic analysis"
       comments:
-       - "<math><mrow intent='pontrjagin-dual($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover $1 ^"
+       - "<math><mover intent='pontrjagin-dual($a1)'><mi arg='a1'>G</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://ncatlab.org/nlab/show/Pontrjagin+dual"
        - "https://en.wikipedia.org/wiki/Pontryagin_duality#Definition"
@@ -9336,8 +9335,7 @@ concepts:
       property: function
       area: "measure theory"
       comments:
-       - "<math><mrow intent='product-measure($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1 × $2"
+       - "<math><mrow intent='product-measure($a1,$a2)'><mi arg='a1'>x</mi><mo>×</mo><mi arg='a2'>y</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ProductMeasure.html"
        - "https://en.wikipedia.org/wiki/Product_measure"
