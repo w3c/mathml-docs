@@ -4367,7 +4367,7 @@ concepts:
       property: mmultiscripts
       area: "special functions"
       comments:
-       - "<math><mrow intent='fox-wright-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mmultiscripts intent='fox-wright-function($a1)'><mi>Ψ</mi><mi arg='a2'>q</mi><mrow/><mprescripts/><mi arg='a1'>p</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fox%E2%80%93Wright_function"
       alias:
