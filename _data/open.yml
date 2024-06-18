@@ -8764,7 +8764,8 @@ concepts:
       en: "partition $1 sup $2, $2 sup $3, ..."
       property: mixfix
       area: "number theory"
-      notation: "mrow ( msup $1 $2 /msup msup $3 $4 /msup ..."
+      comments:
+       - "<math><mrow intent='partition-frequency-representation($a1,$a2)'><mo>(</mo><msup arg='a1'><mn>1</mn><mi>a</mi></msup><msup arg='a2'><mn>2</mn><mi>b</mi></msup><msup arg='a3'><mn>3</mn><mi>c</mi></msup><mo>)</mo></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/FrequencyRepresentation.html"
     
