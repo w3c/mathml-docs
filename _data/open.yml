@@ -6244,9 +6244,7 @@ concepts:
       property: msup
       area: "chemistry"
       comments:
-       - "<math><mrow intent='ionic-charge($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup $1 $2"
-      notationa: ""
+       - "<math><msup intent='ionic-charge($a1,$a2)'><mi arg='a1'>Fe</mi><mrow arg='a2'><mn>2</mn></mrow></msup></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Ion#Chemistry"
     
@@ -6549,13 +6547,12 @@ concepts:
     
     - concept: kelvin-function
       arity: 1
-      en: kelvin function of $1
+      en: $1<i>th</i> order kelvin function 
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='kelvin-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub ber ν⁡"
-      notationa: "msub bei ν⁡"
+       - "<math><mrow><msub intent='kelvin-function($a1)'><mi style='color:red'>ber</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><msub intent='kelvin-function($a1)'><mi style='color:red'>bei</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KelvinFunctions.html"
        - "https://en.wikipedia.org/wiki/Kelvin_functions"
