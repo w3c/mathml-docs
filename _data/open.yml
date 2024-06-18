@@ -4933,13 +4933,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Geometric_genus"
     
     - concept: geometric-integral
-      arity: 1
-      en: geometric integral of $1
+      arity: 2
+      en: geometric integral over $1 $2
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='geometric-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo Π"
+       - "<math><mrow intent='geometric-integral($a1,$2)'><munderover><mo>Π</mo><mi arg='a1'>a</mi><mi arg='a2'>b</mi></munderover></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Product_integral"
     
@@ -4971,8 +4970,7 @@ concepts:
       property: mixfix
       area: "topology"
       comments:
-       - "<math><mrow intent='germ($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow [ # 1 ] _ $2"
+       - "<math><msub intent='germ($a1,$a2)'><mrow><mo>[</mo><mi arg='a1'>S</mi><mo>]</mo></mrow><mi arg='a2'>x</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Germ_(mathematics)"
        - "https://ncatlab.org/nlab/show/germ"
@@ -4998,8 +4996,7 @@ concepts:
       property: function
       area: "ring theory"
       comments:
-       - "<math><mrow intent='global-dimension($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mi gl dim"
+       - "<math><mrow intent='global-dimension($a1)'><mi>gl dim</mi><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Global_dimension"
       alias:
@@ -5107,13 +5104,12 @@ concepts:
     
     - concept: group-algebra
       arity: 2
-      en: group algebra $1 $2
+      en: group algebra $2 over $1
       property: mixfix
       area: "ring theory"
       comments:
-       - "<math><mrow intent='group-algebra($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1[$2]"
-      notationa: "mrow $1$2"
+       - "<math><mrow intent='group-algebra($a1,$a2)'><mi arg='a1'>R</mi><mrow><mo>[</mo><mi arg='a2'>G</mi><mo>]</mo></mrow></mrow></math>"
+       - "<math><mrow intent='group-algebra($a1,$a2)'><mi arg='a1'>R</mi><mi arg='a2'>G</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GroupAlgebra.html"
        - "https://en.wikipedia.org/wiki/Group_algebra"
@@ -5135,13 +5131,12 @@ concepts:
     
     - concept: group-ring
       arity: 2
-      en: group ring $1 $2
+      en: group ring $2 over $1
       property: mixfix, infix
       area: "ring theory"
       comments:
-       - "<math><mrow intent='group-ring($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow $1 [ $2 ]"
-      notationa: "mrow $1 $2"
+       - "<math><mrow intent='group-ring($a1,$a2)'><mi arg='a1'>R</mi><mrow><mo>[</mo><mi arg='a2'>G</mi><mo>]</mo></mrow></mrow></math>"
+       - "<math><mrow intent='group-ring($a1,$a2)'><mi arg='a1'>R</mi><mi arg='a2'>G</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/GroupRing.html"
        - "https://en.wikipedia.org/wiki/Group_ring"
@@ -5237,8 +5232,7 @@ concepts:
       property: mixfix
       area: "complex analysis"
       comments:
-       - "<math><mrow intent='hardy-space($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup H p ($1"
+       - "<math><msup intent='hardy-space($a1)'><mi>H</mi><mi arg='a1'>p</mi></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/HardySpace.html"
        - "https://en.wikipedia.org/wiki/Hardy_space"
