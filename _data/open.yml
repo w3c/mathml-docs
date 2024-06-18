@@ -1667,13 +1667,11 @@ concepts:
     
     - concept: closed-neighbourhood
       arity: 2
-      en: closed neighbourhood
+      en: closed neighbourhood of $2 in $1
       property: "indexed function, function"
       area: "graph theory"
       comments:
-       - "<math><mrow intent='closed-neighbourhood($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub N $1 [ $2 ]"
-      notationa: "mrow N [ $1 ]"
+       - "<math><mrow intent='closed-neighbourhood($a1,$a2)'><msub><mi>N</mi><mi arg='a2'>v</mi></msub><mrow><mo>[</mo><mi arg='a1'>G</mi><mo>]</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory)"
     
