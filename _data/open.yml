@@ -4071,7 +4071,6 @@ concepts:
       property: function
       area: "polynomials"
       comments:
-       - "<math><mrow intent='faber-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
        - "<math><msub intent='faber-polynomial($a1)'><mi mathvariant='normal'>P</mi><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/FaberPolynomial.html"
@@ -4166,11 +4165,9 @@ concepts:
       property: function
       area: "quantum statistics"
       comments:
-       - "<math><mrow intent='fermi-dirac-distribution($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover n ¯"
+       - "<math><msub intent='fermi-dirac-distribution($a1)'><mover><mi>n</mi><mo>¯</mo></mover><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_distribution"
-       - "https://en.wikipedia.org/wiki/Fermi%E2%80%93Dirac_distribution>s"
       alias:
        - f-d-distribution
     
