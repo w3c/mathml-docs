@@ -924,8 +924,8 @@ concepts:
       property: "indexed function"
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='binomial-coefficient($a1)'><mo>(</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>k</mi></mfrac><mo>)</mo></mrow></math>"
-       - "<math><mmultiscripts intent='binomial-coefficient($a1)'><mi>C</mi><mi arg='a2'>k</mi><mrow/><mprescripts/><mrow/><mi arg='a1'>n</mi></mmultiscripts></math>"
+       - "<math><mrow intent='binomial-coefficient($a1,$a2)'><mo>(</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>k</mi></mfrac><mo>)</mo></mrow></math>"
+       - "<math><mmultiscripts intent='binomial-coefficient($a1,$a2)'><mi>C</mi><mi arg='a2'>k</mi><mrow/><mprescripts/><mrow/><mi arg='a1'>n</mi></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/BinomialCoefficient.html"
        - "https://en.wikipedia.org/wiki/Binomial_coefficient"
@@ -1858,8 +1858,7 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='complementary-nome($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub q 1"
+       - "<math><mrow intent='complementary-nome($a1)'><msub><mi>q</mi><mn>1</mn></msub><mrow><mo>(</mo><mi arg='a1'>k</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Nome.html"
        - "https://en.wikipedia.org/wiki/Nome_(mathematics)"
@@ -4369,7 +4368,6 @@ concepts:
       area: "special functions"
       comments:
        - "<math><mrow intent='fox-wright-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mmultiscripts Ψ q none mprescripts p none"
       urls: 
        - "https://en.wikipedia.org/wiki/Fox%E2%80%93Wright_function"
       alias:
