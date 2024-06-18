@@ -927,7 +927,7 @@ concepts:
       area: "combinatorics"
       comments:
        - "<math><mrow intent='binomial-coefficient($a1)'><mo>(</mo><mfrac linethickness='0pt'><mi arg='a1'>n</mi><mi arg='a2'>k</mi></mfrac><mo>)</mo></mrow></math>"
-       - "<math><mmultiscripts><mi>C</mi><mi arg='a2'>k</mi><mrow/><mprescripts/><mi arg='a1'>n</mi><mrow/></mmultiscripts></math>"
+       - "<math><mmultiscripts intent='binomial-coefficient($a1)'><mi>C</mi><mi arg='a2'>k</mi><mrow/><mprescripts/><mrow/><mi arg='a1'>n</mi></mmultiscripts></math>"
       urls: 
        - "https://mathworld.wolfram.com/BinomialCoefficient.html"
        - "https://en.wikipedia.org/wiki/Binomial_coefficient"
