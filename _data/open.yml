@@ -1945,14 +1945,13 @@ concepts:
     
     
     
-    - concept: compound-interest
-      arity: 2
-      en: compound interest
+    - concept: compound-interest-nominal-rate
+      arity: 1
+      en: nominal rate
       property: msup
       area: "finance"
       comments:
-       - "<math><mrow intent='compound-interest($a1,$a2)'><mi style='color:red'>!!?</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup $1 ($2"
+       - "<math><msup intent='compound-interest($a1)'><mi>i</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>)</mo></mrow></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/CompoundInterest.html"
        - "https://en.wikipedia.org/wiki/Compound_interest"
