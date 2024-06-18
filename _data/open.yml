@@ -6552,8 +6552,8 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow><msub intent='kelvin-function($a1)'><mi style='color:red'>ber</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
-       - "<math><mrow><msub intent='kelvin-function($a1)'><mi style='color:red'>bei</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><msub intent='kelvin-function($a1)'><mi>ber</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow><msub intent='kelvin-function($a1)'><mi>bei</mi><mi arg='a1'>v</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/KelvinFunctions.html"
        - "https://en.wikipedia.org/wiki/Kelvin_functions"
@@ -6752,8 +6752,7 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='kronecker-delta($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub δ mrow $1 $2 mrow"
+       - "<math><msub intent='kronecker-delta($a1,$a2)'><mi>δ</mi><mrow><mi arg='a1'>i</mi><mi arg='a2'>j</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/KroneckerDelta.html"
        - "https://en.wikipedia.org/wiki/Kronecker_delta"
