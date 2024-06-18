@@ -4362,12 +4362,12 @@ concepts:
        - "https://ncatlab.org/nlab/show/Fox+derivative"
     
     - concept: fox-wright-function
-      arity: 1
-      en: fox wright function of $1
+      arity: 2
+      en: fox wright function  $1 $2
       property: mmultiscripts
       area: "special functions"
       comments:
-       - "<math><mmultiscripts intent='fox-wright-function($a1)'><mi>Ψ</mi><mi arg='a2'>q</mi><mrow/><mprescripts/><mi arg='a1'>p</mi><mrow/></mmultiscripts></math>"
+       - "<math><mmultiscripts intent='fox-wright-function($a1,$a2)'><mi>Ψ</mi><mi arg='a2'>q</mi><mrow/><mprescripts/><mi arg='a1'>p</mi><mrow/></mmultiscripts></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Fox%E2%80%93Wright_function"
       alias:
