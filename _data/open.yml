@@ -6051,8 +6051,7 @@ concepts:
       property: indexed
       area: "mathematical analysis"
       comments:
-       - "<math><mrow intent='infinite-product($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "munderover Π $1∞"
+       - "<math><mrow intent='infinite-product($a1)'><munderover><mo>Π</mo><mn>1</mn><mo>∞</mo></munderover><msub arg='a1'><mi>a</mi><mi>n</mi></msub></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InfiniteProduct.html"
        - "https://en.wikipedia.org/wiki/Infinite_product"
@@ -6122,12 +6121,11 @@ concepts:
     
     - concept: instantaneous-activity
       arity: 2
-      en: instantaneous activity $1 $2
+      en: instantaneous activity of $1 at $2
       property: mixfix
       area: "chemistry"
       comments:
-       - "<math><mrow intent='instantaneous-activity($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub mrow { $1 } /mrow $2"
+       - "<math><msub intent='instantaneous-activity($a1,$a2)'><mrow><mo>{</mo><mi arg='a1'>X</mi><mo>}</mo></mrow><mi arg='a2'>t</mi></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Reaction_quotient"
     
@@ -6158,14 +6156,13 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Interior"
     
     - concept: interior-product
-      arity: 1
-      en: interior product of $1
+      arity: 2
+      en: interior product of $1 $2
       property: "infix, indexed function"
       area: "differential forms"
       comments:
-       - "<math><mrow intent='interior-product($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ⨼"
-      notationa: "msub ι $1"
+       - "<math><mrow intent='interior-product($a1)'><mi arg='a1'>X</mi><mo>⨼</mo><mi arg='a2'>ω</mi></mrow></math>"
+       - "<math><mrow intent='interior-product($a1)'><msub><mi>ι</mi><mi arg='a1'>X</mi></msub><mi arg='a2'>ω</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/InteriorProduct.html"
        - "https://en.wikipedia.org/wiki/Interior_product"
