@@ -6294,6 +6294,7 @@ concepts:
       en: iverson bracket of $1
       property: fenced
       area: "set theory"
+      comments:
        - "<math><mrow intent='iverson-bracket($a1)'><mo>[</mo><mi arg='a1'>P</mi><mo>]</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Iverson_bracket"
