@@ -9488,8 +9488,8 @@ concepts:
       property: mixfix
       area: "complex manifolds"
       comments:
-       - "<math><mrow intent='quadratic-differential($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow d $1 ⊗ d $1"
+       - "<math><mrow intent='quadratic-differential($a1)'><mi arg='a1'>f</mi><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow><mrow><mi>d</mi><mi>z</mi></mrow><mo>⊗</mo><mrow><mi>d</mi><mi>z</mi></mrow></mrow></math>"
+      notation: "mrow d $1 d $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Quadratic_differential"
        - "https://ncatlab.org/nlab/show/quadratic+differential"
@@ -9497,11 +9497,11 @@ concepts:
     
     - concept: quadratic-variation
       arity: 2
-      en: quadratic variation
+      en: quadratic variation $1 $2
       property: indexed fenced
       area: "stochastic processes"
       comments:
-       - "<math><mrow intent='quadratic-variation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='quadratic-variation($a1,$a2)'><mrow><mo>[</mo><mi arg='a1'>X</mi><mo>]</mo></mrow><mi arg='a2'>t</mi></msub></math>"
       notation: "msub mrow [ $1 ] /mrow $2"
       urls: 
        - "https://en.wikipedia.org/wiki/Quadratic_variation"
