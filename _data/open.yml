@@ -6197,13 +6197,11 @@ concepts:
     
     - concept: inverse-moment-of-function
       arity: 2
-      en: inverse moment of function $1 $2
+      en: $2<i>th</i> inverse moment of function $1
       property: "msub, mixfix"
       area: "mathematics"
       comments:
-       - "<math><mrow intent='inverse-moment-of-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub μ mrow - $1 /mrow"
-      notationa: "mrow E [ msup $1 mrow - $2 /mrow ]"
+       - "<math><mrow intent='inverse-moment-of-function($a1,$a2)'><mi>E</mi><mrow><mo>[</mo><msup><mi arg='a1'>X</mi><mrow><mo>−</mo><mi arg='a2'>n</mi></mrow></msup><mo>]</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
       alias:
