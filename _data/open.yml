@@ -2052,7 +2052,6 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Congruence"
       alias:
        - congruence
-       - 
        - congruent
     
     - concept: conjugacy-class
@@ -2143,12 +2142,11 @@ concepts:
     
     - concept: continued-fraction
       arity: 1
-      en: continued fraction of $1
+      en: continued fraction $1
       property: mixfix
       area: "number theory"
       comments:
-       - "<math><mrow intent='continued-fraction($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mfrac"
+       - "<math><mrow intent='periodic-continued-fraction($a1)'><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mfrac arg='a1'><mn>1</mn><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo>⋱</mo></mrow></mfrac></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ContinuedFraction.html"
        - "https://en.wikipedia.org/wiki/Continued_fraction"
@@ -2157,7 +2155,6 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Continued_fraction"
       alias:
        - anthyphairetic-ratio
-       - 
        - chain-fraction
     
     - concept: continuum
@@ -5166,7 +5163,6 @@ concepts:
       alias:
        - elementwise-product
        - entrywise-product
-       - 
        - schur-product
     
     - concept: hahn-polynomial
@@ -5319,7 +5315,6 @@ concepts:
        - "https://en.wikipedia.org/wiki/Heaviside_step_function"
       alias:
        - heaviside-step-function
-       - 
        - unit-step-function
     
     - concept: heawood-number
@@ -5518,7 +5513,6 @@ concepts:
        - "https://mathworld.wolfram.com/Hilbert-SchmidtNorm.html"
        - "https://en.wikipedia.org/wiki/Hilbert%E2%80%93Schmidt_operator"
       alias:
-       - 
     
     - concept: hit-or-miss-transform
       arity: 2
@@ -6785,8 +6779,6 @@ concepts:
        - "https://mathworld.wolfram.com/KroneckerSymbol.html"
        - "https://en.wikipedia.org/wiki/Kronecker_symbol"
        - "https://www.encyclopediaofmath.org/index.php/Kronecker_symbol"
-      alias:
-       - 
     
     - concept: krull-dimension
       arity: 1
@@ -7082,8 +7074,6 @@ concepts:
        - "https://mathworld.wolfram.com/LegendreSymbol.html"
        - "https://en.wikipedia.org/wiki/Legendre_symbol"
        - "https://dlmf.nist.gov/27.9"
-      alias:
-       - 
     
     - concept: lehmer-mean
       arity: 1
