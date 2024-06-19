@@ -2517,12 +2517,11 @@ concepts:
     
     - concept: cycle
       arity: 1
-      en: cycle of $1
+      en: cycle $1
       property: fenced
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='cycle($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ( $1"
+       - "<math><mrow intent='cycle($a1)'><mrow arg='a1'><mrow><mo>(</mo><mn>1</mn><mn>2</mn><mn>6</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>3</mn><mn>5</mn><mo>)</mo></mrow></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Permutation#Cycle_notation"
        - "https://en.wikipedia.org/wiki/Transposition_(mathematics)"
@@ -6319,12 +6318,12 @@ concepts:
        - jacobi-operator
     
     - concept: jacobi-polynomial
-      arity: 1
-      en: jacobi polynomial of $1
+      arity: 2
+      en: $1<i>th</i>jacobi polynomial of $2
       property: function
       area: "orthogonal polynomials"
       comments:
-       - "<math><mrow intent='jacobi-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='jacobi-polynomial($a1,$2)'><msubsup><mi>P</mi><mi arg='a1'>n</mi><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow></msubsup><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msubsup P"
       urls: 
        - "https://mathworld.wolfram.com/JacobiPolynomial.html"
