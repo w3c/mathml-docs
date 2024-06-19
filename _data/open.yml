@@ -8078,8 +8078,7 @@ concepts:
       property: fenced
       area: "topology"
       comments:
-       - "<math><mrow intent='moore-smith-sequence($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ( $1"
+       - "<math><msub intent='moore-smith-sequence($a1)'><mrow><mo>(</mo><msub><mi arg='a1'>x</mi><mi>a</mi></msub><mo>)</mo></mrow><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow></msub></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Moore%E2%80%93Smith_limit"
        - "https://en.wikipedia.org/wiki/Net_(mathematics)"
