@@ -7280,12 +7280,11 @@ concepts:
     
     - concept: localization
       arity: 2
-      en: localization $1 $2
+      en: localization of $2 by $1
       property: mixfix
       area: "module theory"
       comments:
-       - "<math><mrow intent='localization($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup $1 -1 /msup $2"
+       - "<math><mrow intent='localization($a1,$a2)'><msup><mi arg='a1'>S</mi><mn>−1</mn></msup><mi arg='a2'>R</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Localization.html"
        - "https://en.wikipedia.org/wiki/Localization_(algebra)"
@@ -7461,8 +7460,7 @@ concepts:
       property: function
       area: "orthogonal polynomials"
       comments:
-       - "<math><mrow intent='macdonald-polynomial($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub P λ"
+       - "<math><mrow intent='macdonald-polynomial($a1)'><msub><mi>P</mi><mi>λ</mi></msub><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>;</mo><mi>t</mi><mo>,</mo><mi>q</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Macdonald_polynomials"
        - "https://ncatlab.org/nlab/show/Macdonald+polynomial"
