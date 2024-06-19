@@ -5828,7 +5828,7 @@ concepts:
        - "<math><mrow intent='image($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
       notation: "$1 [ $2 ]"
       notationc: "msub $1 *"
-      notationb: "<msup><mi>X</mi><mo>→</mo></msup>"
+      notationb: "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
       notationa: "$1 '' $2"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
@@ -7968,7 +7968,7 @@ concepts:
       property: infix, mixfix
       area: "modular arithmetic"
       comments:
-       - "<math><mrow intent='modulo($a1,$a2)'><mi arg='a1'>x</mi><mrow><mo>(</mo>><mi>mod</mi><mi arg='a2'>p</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='modulo($a1,$a2)'><mi arg='a1'>x</mi><mrow><mspace width="1em"/><mo>(</mo><mi>mod</mi><mi arg='a2'>p</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Modulo.html"
        - "https://en.wikipedia.org/wiki/Modulo_(jargon)"
@@ -9751,7 +9751,7 @@ concepts:
       area: "functional analysis"
       comments:
        - "<math><mrow intent='real-prepolar($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup <mrow/> r /msup $1"
+      notation: "msup mrow/> r /msup $1"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
        - "https://en.wikipedia.org/wiki/Polar_set_(potential_theory)"
