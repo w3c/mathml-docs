@@ -6995,8 +6995,7 @@ concepts:
       property: indexed
       area: "measure theory"
       comments:
-       - "<math><mrow intent='lebesgue-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='lebesgue-integral($a1)'><mo>∫</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LebesgueIntegral.html"
        - "https://www.encyclopediaofmath.org/index.php/Lebesgue_integral"
@@ -7225,8 +7224,7 @@ concepts:
       property: indexed
       area: "analysis"
       comments:
-       - "<math><mrow intent='line-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='line-integral($a1)'><mo>∫</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LineIntegral.html"
        - "https://en.wikipedia.org/wiki/Line_integral"
@@ -7403,7 +7401,7 @@ concepts:
       property: indexed
       area: "real analysis"
       comments:
-       - "<math><mrow intent='lower-darboux-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='lower-darboux-integral($a1)'><munder><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mo>_</mo></munder><mi arg='a1'>f</mi></mrow></math>"
       notation: "munder ¯"
       urls: 
        - "https://mathworld.wolfram.com/DarbouxIntegral.html"
@@ -8108,9 +8106,7 @@ concepts:
       property: indexed
       area: "multivariable calculus"
       comments:
-       - "<math><mrow intent='multiple-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫ ⋯ ∫"
-      notationa: "mo ∫"
+       - "<math><mrow intent='multiple-integral($a1)'><mrow><mo>∫</mo><mo>⋯</mo><mo>∫</mo></mrow><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MultipleIntegral.html"
        - "https://en.wikipedia.org/wiki/%E2%88%AB%E2%88%ABf(x,y)dxdy"
@@ -8241,8 +8237,7 @@ concepts:
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='narrow-denjoy-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='narrow-denjoy-integral($a1)'><mo>∫</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DenjoyIntegral.html"
        - "https://en.wikipedia.org/wiki/Henstock%E2%80%93Kurzweil_integral"
@@ -9322,8 +9317,7 @@ concepts:
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='product-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∏"
+       - "<math><mrow intent='product-integral($a1)'><mo>∏</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Continuous_product"
        - "https://en.wikipedia.org/wiki/Product_integral"
@@ -9993,15 +9987,12 @@ concepts:
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='riemann-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='riemann-integral($a1)'><mo>∫</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/RiemannIntegral.html"
        - "https://en.wikipedia.org/wiki/Lebesgue_integrability_condition"
        - "https://en.wikipedia.org/wiki/Riemann_integral"
        - "https://www.encyclopediaofmath.org/index.php/Riemann_integral"
-    
-    # good
     
     
     - concept: riemann-sphere
@@ -10071,8 +10062,7 @@ concepts:
       property: indexed
       area: "measure theory"
       comments:
-       - "<math><mrow intent='riemann-stieltje-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='riemann-stieltje-integral($a1)'><mo>∫</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Riemann-StieltjesIntegral.html"
        - "https://en.wikipedia.org/wiki/%E2%88%AB_f_d%CE%B1"
@@ -11256,8 +11246,7 @@ concepts:
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='surface-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∫"
+       - "<math><mrow intent='surface-integral($a1)'><msub><mo>∬</mo><mi>S</mi></msub><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SurfaceIntegral.html"
        - "https://en.wikipedia.org/wiki/Surface_integral"
@@ -12091,8 +12080,7 @@ concepts:
       property: indexed
       area: "real analysis"
       comments:
-       - "<math><mrow intent='upper-darboux-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover ¯"
+       - "<math><mrow intent='upper-darboux-integral($a1)'><mover><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mo>¯</mo></mover><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Darboux_integral"
        - "https://www.encyclopediaofmath.org/index.php/Darboux_integral"
@@ -12235,8 +12223,7 @@ concepts:
       property: indexed
       area: "calculus"
       comments:
-       - "<math><mrow intent='volterra-integral($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo Π"
+       - "<math><mrow intent='volterra-integral($a1)'><mo>Π</mo><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Product_integral"
     
