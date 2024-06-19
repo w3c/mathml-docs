@@ -9727,8 +9727,7 @@ concepts:
       property: prescript
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='real-prepolar($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup mrow/> r /msup $1"
+       - "<math><mmultiscripts intent='real-prepolar($a1)'><mi arg='a1'>B</mi><mprescripts/><mrow/><mo>∘</mo></mmultiscripts></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Polar_set"
        - "https://en.wikipedia.org/wiki/Polar_set_(potential_theory)"
