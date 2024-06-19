@@ -8195,7 +8195,7 @@ concepts:
       property: msup
       area: "abstract algebra"
       comments:
-       - "<math><mrow intent='mutation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='mutation($a1,$a2)'><mi arg='a1'>A</mi><mi arg='a2'>y</mi></msub></math>"
       notation: "msup $1 $2"
       urls: 
        - "https://mathworld.wolfram.com/Mutation.html"
