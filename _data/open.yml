@@ -6647,13 +6647,12 @@ concepts:
     
     - concept: kneser-graph
       arity: 2
-      en: kneser graph
+      en: kneser graph $1 $2
       property: "indexed symbol"
       area: "graph theory"
       comments:
-       - "<math><mrow intent='kneser-graph($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow K ( $1, $2 )"
-      notationa: "msub mi KG /mi $1, $2"
+       - "<math><mrow intent='kneser-graph($a1,$a2)'><mi>K</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>,</mo><mi arg='a2'>k</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msub intent='kneser-graph($a1,$a2)'><mi>KG</mi><mrow><mi arg='a1'>n</mi><mo>,</mo><mi arg='a2'>k</mi></mrow></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/KneserGraph.html"
        - "https://en.wikipedia.org/wiki/Kneser_graph"
