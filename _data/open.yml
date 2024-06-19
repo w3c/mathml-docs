@@ -7028,8 +7028,7 @@ concepts:
       property: operator
       area: "calculus"
       comments:
-       - "<math><mrow intent='left-derivative($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub ∂ –"
+       - "<math><msub intent='left-derivative($a1)'><mo>∂</mo><mo>−</mo></msub><mi arg='a1'>f</mi></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Left_and_right_derivative"
     
@@ -7137,9 +7136,7 @@ concepts:
       property: infix, mixfix
       area: "graph theory"
       comments:
-       - "<math><mrow intent='lexicographic-product($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∙"
-      notationa: "$1 [ $2 ]"
+       - "<math><mrow intent='lexicographic-product($a1,$a2)'><mi arg='a1'>G</mi><mo>∙</mo><mi arg='a2'>H</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Lexicographic_product_of_graphs"
       alias:
