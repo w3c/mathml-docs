@@ -8271,11 +8271,11 @@ concepts:
     
     - concept: neighbourhood
       arity: 2
-      en: neighbourhood
+      en: neighbourhood of $2 in $1
       property: "indexed function, function"
       area: "graph theory"
       comments:
-       - "<math><mrow intent='neighbourhood($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='neighbourhood($a1,$a2)'><msub><mi>N</mi><mi arg='a2'>v</mi></msub><mrow><mo>(</mo><mi arg='a1'>G</mi><mo>)</mo></mrow></mrow></math>"
       notation: "msub N $1 ( $2 )"
       notationa: "mrow N ( $1"
       urls: 
@@ -8407,12 +8407,11 @@ concepts:
     
     - concept: null-graph
       arity: 1
-      en: null graph
+      en: null graph of order $1
       property: symbol
       area: "graph theory"
       comments:
-       - "<math><mrow intent='null-graph($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub mover K ¯ /mover $1"
+       - "<math><msub intent='null-graph($a1)'><mover><mi>K</mi><mo>¯</mo></mover><mi arg='a1'>n</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/NullGraph.html"
        - "https://en.wikipedia.org/wiki/Null_graph"
@@ -8520,12 +8519,11 @@ concepts:
     
     - concept: open-real-interval
       arity: 2
-      en: open real interval
+      en: open real interval $1 to $2
       property: fenced
       area: "algebra"
       comments:
-       - "<math><mrow intent='open-real-interval($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ($1 . . $2)"
+       - "<math><mrow intent='open-real-interval($a1,$a2)'><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://proofwiki.org/wiki/Definition: Real_Interval/Open"
     
@@ -8832,12 +8830,11 @@ concepts:
     
     - concept: periodic-continued-fraction
       arity: 1
-      en: periodic continued fraction of $1
+      en: periodic continued fraction $1
       property: mfrac
       area: "mathematical analysis"
       comments:
-       - "<math><mrow intent='periodic-continued-fraction($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mfrac with ellipses"
+       - "<math><mrow intent='periodic-continued-fraction($a1)'><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mfrac arg='a1'><mn>1</mn><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mo>⋱</mo></mrow></mfrac></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/PeriodicContinuedFraction.html"
        - "https://en.wikipedia.org/wiki/Periodic_continued_fraction"
