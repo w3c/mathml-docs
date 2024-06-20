@@ -10217,7 +10217,7 @@ concepts:
       property: embellished symbol
       area: "probability theory"
       comments:
-       - "<math><mrow intent='sample-variance($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><msubsup intent='sample-variance($a1)'><mi>S</mi><mi arg='a1'>y</mi><mn>2</mn></msubsup></math>"
       notation: "msub m 2"
       notationc: "msup s 2"
       notationb: "msubsup s $1 2"
@@ -10225,7 +10225,7 @@ concepts:
       urls: 
        - "https://mathworld.wolfram.com/SampleVariance.html"
        - "https://www.encyclopediaofmath.org/index.php/Sample_variance"
-       - "https://en.wikipedia.org/wiki/Variance#Sample_variance	"
+       - "https://en.wikipedia.org/wiki/Variance#Sample_variance"
     
     - concept: scalar-triple-product
       arity: 3
