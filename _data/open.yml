@@ -11780,11 +11780,7 @@ concepts:
       property: "function, indexed function"
       area: "graph theory"
       comments:
-       - "<math><mrow intent='turan-graph($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mi T"
-      notationc: "mi D"
-      notationb: "msub T $1"
-      notationa: "msub T $1,$2"
+       - "<math><mrow intent='turan-graph($a1,$a2)'><mi>T</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>,</mo><mi arg='a2'>r</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TuranGraph.html"
        - "https://en.wikipedia.org/wiki/Tur%C3%A1n_graph"
