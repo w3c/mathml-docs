@@ -10218,10 +10218,6 @@ concepts:
       area: "probability theory"
       comments:
        - "<math><msubsup intent='sample-variance($a1)'><mi>S</mi><mi arg='a1'>y</mi><mn>2</mn></msubsup></math>"
-      notation: "msub m 2"
-      notationc: "msup s 2"
-      notationb: "msubsup s $1 2"
-      notationa: "msubsup σ $1 2"
       urls: 
        - "https://mathworld.wolfram.com/SampleVariance.html"
        - "https://www.encyclopediaofmath.org/index.php/Sample_variance"
