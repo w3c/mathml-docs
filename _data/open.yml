@@ -11004,8 +11004,8 @@ concepts:
       property: infix
       area: "computer science"
       comments:
-       - "<math><mrow intent='string-concatenation($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo"
+       - "<math><mrow intent='string-concatenation($a1,$a2)'><mi arg='a1'>ABC</mi><mo>*</mo><mi arg='a2'>XYZ</mi></mrow></math>"
+       - "<math><mrow intent='string-concatenation($a1,$a2)'><mi arg='a1'>ABC</mi><mo>⁢</mo><mi arg='a2'>XYZ</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Concatenation.html"
        - "https://en.wikipedia.org/wiki/Concatenation_(mathematics)"
