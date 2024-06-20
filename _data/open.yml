@@ -10241,8 +10241,7 @@ concepts:
       property: mover
       area: "special functions"
       comments:
-       - "<math><mrow intent='scaled-riemann-theta-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover θ⁡ ^"
+       - "<math><mrow intent='scaled-riemann-theta-function($a1)'><mover><mi>θ</mi><mo>^</mo></mover><mrow><mo>(</mo><mi arg='a1'>𝐳</mi><mo>|</mo><mi>𝛀</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://dlmf.nist.gov/21.2#i"
        - "https://dlmf.nist.gov/21.2#E1"
