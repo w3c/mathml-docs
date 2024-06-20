@@ -12138,12 +12138,12 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Versor"
     
     - concept: vertical
-      arity: 1
-      en: vertical of $1
+      arity: 0
+      en: vertical
       property: 
       area: 
       comments:
-       - "<math><mrow intent='vertical($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mi>vertical</mi></math>"
       notation: 
       urls: 
        - "https://mathworld.wolfram.com/Vertical.html"
