@@ -5820,7 +5820,7 @@ concepts:
       comments:
        - "<math><mrow intent='image($a1)'><mi>Image</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
        - "<math><mrow intent='image($a1)'><mi arg='a1'>f</mi><mrow><mo>(</mo><mi>D</mi><mo>)</mo></mrow></mrow></math>"
-      - "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
+       - "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
        - "https://en.wikipedia.org/wiki/Image_(mathematics)"
