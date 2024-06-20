@@ -11609,12 +11609,11 @@ concepts:
     
     - concept: total-derivative
       arity: 2
-      en: total derivative $1 with respect to $2
+      en: total derivative of $1 at $2
       property: mixfix
       area: "differential calculus"
       comments:
-       - "<math><mrow intent='total-derivative($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow d msub $1 $2 /msub"
+       - "<math><mrow intent='total-derivative($a1,$a2)'><msub><mi>D</mi><mi arg='a2'>a</mi></msub><mi arg='a1'>f</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/TotalDerivative.html"
        - "https://en.wikipedia.org/wiki/Total_derivative"
