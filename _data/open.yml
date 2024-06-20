@@ -5820,7 +5820,7 @@ concepts:
       comments:
        - "<math><mrow intent='image($a1)'><mi>Image</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
        - "<math><mrow intent='image($a1)'><mi arg='a1'>f</mi><mrow><mo>(</mo><mi>D</mi><mo>)</mo></mrow></mrow></math>"
-       - "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
+       - "<math><msup intent='image($a1)'><mi>X</mi><mo>→</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
        - "https://en.wikipedia.org/wiki/Image_(mathematics)"
@@ -6358,7 +6358,7 @@ concepts:
       property: function
       area: "special-functions"
       comments:
-       - "<math><mrow intent='jacobi-zeta-function($a1,$a2)'><mi'>Z</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>k</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='jacobi-zeta-function($a1,$a2)'><mi>Z</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>|</mo><mi arg='a2'>k</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/JacobiZetaFunction.html"
        - "https://en.wikipedia.org/wiki/Jacobi_zeta_function"
@@ -8120,7 +8120,7 @@ concepts:
       property: function
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='multiplier-algebra($a1)'><mi'>M</mi><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='multiplier-algebra($a1)'><mi>M</mi><mrow><mo>(</mo><mi arg='a1'>A</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/MultiplierAlgebra.html"
        - "https://en.wikipedia.org/wiki/Multiplier_algebra"
@@ -12143,7 +12143,7 @@ concepts:
       property: 
       area: 
       comments:
-       - "<math><mi>vertical</mi></math>"
+       - "<math><mi intent='vertical'>vertical</mi></math>"
       notation: 
       urls: 
        - "https://mathworld.wolfram.com/Vertical.html"
