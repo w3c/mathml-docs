@@ -8825,7 +8825,7 @@ concepts:
     
     - concept: permutation
       arity: 1
-      en: permutation of $1
+      en: permutation $1
       property: fenced, mtable, mixfix
       area: "combinatorics"
       comments:
@@ -9376,13 +9376,12 @@ concepts:
        - quasicyclic-group
     
     - concept: pseudovector
-      arity: 2
-      en: pseudovector $1 $2
+      arity: 1
+      en: pseudovector $1
       property: mixfix
       area: "vector calculus"
       comments:
-       - "<math><mrow intent='pseudovector($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow (det $1) ($1 $2"
+       - "<math><mrow intent='pseudovector($a1)'><mi arg='a1'>v</mi></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Pseudovector.html"
        - "https://en.wikipedia.org/wiki/Pseudovector"
@@ -9817,13 +9816,12 @@ concepts:
        - "https://dlmf.nist.gov/1.10#SS3.p5"
     
     - concept: resolvent
-      arity: 2
+      arity: 1
       en: resolvent
       property: "indexed function"
       area: "galois theory"
       comments:
-       - "<math><mrow intent='resolvent($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup R $1 ($2"
+       - "<math><msub intent='resolvent($a1)'><mi>R</mi><mi arg='a1'>G</mi></msub></math>"
       urls: 
        - "https://mathworld.wolfram.com/Resolvent.html"
        - "https://en.wikipedia.org/wiki/Resolvent_(Galois_theory)"
@@ -9846,9 +9844,8 @@ concepts:
       property: mixfix
       area: "formal logic"
       comments:
-       - "<math><mrow intent='restricted-quantifier($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub mrow ( Ǝ $1 ) /mrow $2"
-      notationa: "msub mrow ( ∀ $1 ) /mrow $2"
+       - "<math><mrow intent='restricted-quantifier($a1,$a2)'><msub><mrow><mo>(</mo><mo>∀</mo><mi arg='a1'>x</mi><mo>)</mo></mrow><mi arg='a2'>R</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='restricted-quantifier($a1,$a2)'><msub><mrow><mo>(</mo><mo>∃</mo><mi arg='a1'>x</mi><mo>)</mo></mrow><mi arg='a2'>R</mi></msub><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://www.encyclopediaofmath.org/index.php/Restricted_quantifier"
        - "https://human.libretexts.org/Bookshelves/Philosophy/Book%3A_A_Modern_Formal_Logic_Primer_(Teller)/Volume_II%3A_Predicate_Logic/4%3A_Transcription/4.1%3A_Restricted_Quantifiers"
