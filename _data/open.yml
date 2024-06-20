@@ -10751,9 +10751,8 @@ concepts:
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='spherical-bessel-function-of-third-kind($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup h $1 (1)"
-      notationa: "msubsup h $2 (2"
+       - "<math><mrow intent='spherical-bessel-function($a1)'><msubsup><mi>h</mi><mi>n</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mrow><mo>(</mo><mi arg='a1'>z</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='spherical-bessel-function($a1)'><msubsup><mi>h</mi><mi>n</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mrow><mo>(</mo><mi arg='a1'>z</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/SphericalBesselFunctionoftheThirdKind.html"
        - "https://dlmf.nist.gov/10.47#E5"
