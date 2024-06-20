@@ -5813,16 +5813,14 @@ concepts:
        - unit-matrix
     
     - concept: image
-      arity: 2
-      en: image $1 $2
+      arity: 1
+      en: image $1
       property: mixfix
       area: "set theory"
       comments:
-       - "<math><mrow intent='image($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "$1 [ $2 ]"
-      notationc: "msub $1 *"
-      notationb: "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
-      notationa: "$1 '' $2"
+       - "<math><mrow intent='image($a1)'><mi>Image</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='image($a1)'><mi arg='a1'>f</mi><mrow><mo>(</mo><mi>D</mi><mo>)</mo></mrow></mrow></math>"
+      - "<math><msup><mi>X</mi><mo>→</mo></msup></math>"
       urls: 
        - "https://mathworld.wolfram.com/Image.html"
        - "https://en.wikipedia.org/wiki/Image_(mathematics)"
@@ -6173,8 +6171,7 @@ concepts:
       property: mixfix
       area: "set theory"
       comments:
-       - "<math><mrow intent='inverse-image($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow msup $1 -1 /msup [ $2 ]"
+       - "<math><mrow intent='inverse-image($a1,$a2)'><msup><mi arg='a1'>f</mi><mn>−1</mn></msup><mrow><mo>[</mo><mi arg='a2'>X</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Image_(mathematics)"
        - "https://ncatlab.org/nlab/show/inverse+image"
@@ -6789,13 +6786,12 @@ concepts:
        - "https://en.wikipedia.org/wiki/Height_(ring_theory)"
     
     - concept: kulkarni-nomizu-product
-      arity: 1
-      en: kulkarni nomizu product of $1
+      arity: 2
+      en: kulkarni nomizu product of $1 and $2
       property: embellished infix
       area: "differential geometry"
       comments:
-       - "<math><mrow intent='kulkarni-nomizu-product($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ∧ /mo mspace=negative.../mspace mo ◯ /mo"
+       - "<math><mrow intent='kulkarni-nomizu-product($a1)'><mi arg='a1'>h</mi><menclose notation='circle'><mo>∧</mo></menclose><mi arg='a2'>k</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Kulkarni%E2%80%93Nomizu_product"
     
@@ -7306,11 +7302,11 @@ concepts:
     
     - concept: logarithmic-moment-of-function
       arity: 2
-      en: logarithmic moment of function $1 $2
+      en: $1<i>th</i> logarithmic moment of $2
       property: "mixfix"
       area: "mathematics"
       comments:
-       - "<math><mrow intent='logarithmic-moment-of-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='logarithmic-moment-of-function($a1,$a2)'><mi>E</mi><mrow><mo>[</mo><msup><mi>ln</mi><mi arg='a1'>n</mi></msup><mrow><mo>(</mo><mi arg='a2'>X</mi><mo>)</mo></mrow><mo>]</mo></mrow></mrow></math>"
       notation: "E [ msup ln $1 /msup ( $2 ) ]"
       urls: 
        - "https://en.wikipedia.org/wiki/Moment_(mathematics)"
@@ -7329,13 +7325,11 @@ concepts:
     
     - concept: lommel-function
       arity: 2
-      en: lommel function
+      en: $1 ,$2 lommel function
       property: "indexed function"
       area: "special functions"
       comments:
-       - "<math><mrow intent='lommel-function($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msub S mrow $1,$2 /mrow"
-      notationa: "msub s mrow $1, $2 /mrow"
+       - "<math><mrow intent='lommel-function($a1,$a2)'><msub><mi>s</mi><mrow><mo>(</mo><mi arg='a1'>u</mi><mi arg='a2'>v</mi></mrow></msub><mrow><mo>(</mo><mi>z</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/LommelFunction.html"
        - "https://en.wikipedia.org/wiki/Lommel_function"
@@ -7345,12 +7339,11 @@ concepts:
     
     - concept: long-division
       arity: 1
-      en: long division of $1
+      en: long division of $1 by $2
       property: mfrac
       area: "arithmetic"
       comments:
-       - "<math><mrow intent='long-division($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mfrac?"
+       - "long division display layout"
       urls: 
        - "https://mathworld.wolfram.com/LongDivision.html"
        - "https://en.wikipedia.org/wiki/Long_division"
@@ -7396,8 +7389,7 @@ concepts:
       property: decorated function
       area: "analysis"
       comments:
-       - "<math><mrow intent='lower-dini-derivative($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup $1 - '"
+       - "<math><mrow intent='lower-dini-derivative($a1)'><msub><msup><mi arg='a1'>f</mi><mo>′</mo></msup><mo>-</mo></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiniDerivative.html"
        - "https://en.wikipedia.org/wiki/Dini_derivative"
@@ -12067,8 +12059,7 @@ concepts:
       property: decorated function
       area: "analysis"
       comments:
-       - "<math><mrow intent='upper-dini-derivative($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup $1 + '"
+       - "<math><mrow intent='upper-dini-derivative($a1)'><msub><msup><mi arg='a1'>f</mi><mo>′</mo></msup><mo>+</mo></msub><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/DiniDerivative.html"
        - "https://en.wikipedia.org/wiki/Dini_derivative"
@@ -12093,8 +12084,7 @@ concepts:
       property: function
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='upper-shadow($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup 𝜕 +"
+       - "<math><mrow intent='upper-shadow($a1)'><msup><mi>𝜕</mi><mo>+</mo></msup><mi arg='a1'>A</mi></mrow></math>"
       urls: 
        - "http://qk206.user.srcf.net/notes/combinatorics.pdf"
     
