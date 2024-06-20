@@ -11885,16 +11885,14 @@ concepts:
        - "https://ncatlab.org/nlab/show/ultraproduct"
     
     - concept: uniformly-convergent
-      arity: 1
-      en: uniformly convergent of $1
+      arity: 2
+      en: $1 uniformly convergs to $2
       property: infix, indexed, postfix
       area: "convergence"
       comments:
-       - "<math><mrow intent='uniformly-convergent($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mo ⇉"
-      notationc: "mover ⟶ unif."
-      notationb: "mo unif lim"
-      notationa: "mtext uniformly"
+       - "<math><mrow intent='uniformly-convergent($a1,$2)'><mi arg='a1'>f</mi><mo>⇉</mo><mi arg='a2'>g</mi></mrow></math>"
+       - "<math><mrow intent='uniformly-convergent($a1,$2)'><mi arg='a1'>f</mi><mover><mo>⟶</mo><mi>unif</mi></mover><mi arg='a2'>g</mi></mrow></math>"
+       - "<math><mrow intent='uniformly-convergent($a1,$2)'><mi>unif lim</mi><mi arg='a1'>f</mi><mo>=</mo><mi arg='a2'>g</mi></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Uniform_convergence"
     
