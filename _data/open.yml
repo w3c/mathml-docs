@@ -10925,11 +10925,11 @@ concepts:
     
     - concept: stiefel-manifold
       arity: 2
-      en: stiefel manifold $1 $2
+      en: $1<i>th</i> stiefel manifold over $2
       property: mixfix
       area: "differential geometry"
       comments:
-       - "<math><mrow intent='stiefel-manifold($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='stiefel-manifold($a1,$a2)'><msub><mi>V</mi><mi arg='a1'>k</mi></msub><mrow><mo>(</mo><msup arg='a2'><mi>ℝ</mi><mi>n</mi></msup><mo>)</mo></mrow></mrow></math>"
       notation: "mrow msub V $1 /msub ( $2"
       urls: 
        - "https://mathworld.wolfram.com/StiefelManifold.html"
