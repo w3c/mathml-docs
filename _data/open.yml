@@ -12216,7 +12216,7 @@ concepts:
       property: "embellished function"
       area: "functional analysis"
       comments:
-       - "<math><mrow intent='wavelet-transform($a1,$a2)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>,</mo><mi arg='a2'>y</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='wavelet-transform($a1,$a2)'><msub><mi>W</mi><mi arg='a1'>ψ</mi></msub><mi arg='a2'>y</mi></mrow></math>"
       notation: "mrow [ msub W $1 /msub $2 ]"
       urls: 
        - "https://mathworld.wolfram.com/WaveletTransform.html"
