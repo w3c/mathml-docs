@@ -9150,13 +9150,12 @@ concepts:
        - "https://ncatlab.org/nlab/show/positive+element"
     
     - concept: post-canonical-system
-      arity: 1
-      en: post canonical system of $1
+      arity: 3
+      en: post canonical system  $1 $2 $3
       property: fenced
       area: "formal languages"
       comments:
-       - "<math><mrow intent='post-canonical-system($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow (A,I,R"
+       - "<math><mrow intent='post-canonical-system($a1)'><mo>(</mo><mi arg='a1'>A</mi><mo>,</mo><mi arg='a2'>I</mi><mo>,</mo><mi arg='a3'>R</mi><mo>)</mo></mrow></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Post_canonical_system"
        - "https://en.wikipedia.org/wiki/Tag_system"
@@ -9372,7 +9371,7 @@ concepts:
       property: mixfix
       area: "group theory"
       comments:
-       - "<math><mrow intent='prufer-group($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='prufer-group($a1)'><mi>𝐙</mi><mrow><mo>(</mo><msup><mi arg='a1'>p</mi><mo>∞</mo></msup><mo>)</mo></mrow></mrow></math>"
       notation: "mrow Z ( msup $1 ∞ /msup"
       urls: 
        - "https://en.wikipedia.org/wiki/Pr%C3%BCfer_group"
