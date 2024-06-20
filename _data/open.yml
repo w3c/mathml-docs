@@ -7902,10 +7902,9 @@ concepts:
       property: function
       area: "special functions"
       comments:
-       - "<math><mrow intent='modified-spherical-bessel-function($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msubsup i $1 (1)"
-      notationb: "msubsup i $1 (2)"
-      notationa: "msub k $1"
+       - "<math><mrow intent='modified-spherical-bessel-function($a1)'><msubsup><mi>i</mi><mi>n</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msubsup><mrow><mo>(</mo><mi arg='a1'>z</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='modified-spherical-bessel-function($a1)'><msubsup><mi>i</mi><mi>n</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msubsup><mrow><mo>(</mo><mi arg='a1'>z</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='modified-spherical-bessel-function($a1)'><msub><mi>k</mi><mi>n</mi></msub><mrow><mo>(</mo><mi arg='a1'>z</mi><mo>)</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/ModifiedSphericalBesselFunction.html"
        - "https://dlmf.nist.gov/10.47#E7"
@@ -8830,10 +8829,8 @@ concepts:
       property: fenced, mtable, mixfix
       area: "combinatorics"
       comments:
-       - "<math><mrow intent='permutation($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mrow ($1, ... $n)"
-      notationb: "mtable"
-      notationa: "mrow (312)(54)(8)(976"
+       - "<math><mrow intent='permutation($a1)'><mtable arg='a1'><mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>4</mn></mtd><mtd><mn>5</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mrow></math>"
+       - "<math><mrow intent='permutation($a1)'><mrow arg='a1'><mrow><mo>(</mo><mn>1</mn><mn>2</mn><mn>4</mn><mo>)</mo></mrow><mrow><mo>(</mo><mn>3</mn><mn>5</mn><mo>)</mo></mrow></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Permutation.html"
        - "https://en.wikipedia.org/wiki/Permutation"
