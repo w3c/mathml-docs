@@ -10507,12 +10507,12 @@ concepts:
     
     - concept: simplex
       arity: 1
-      en: simplex of $1
+      en: $1 simplex 
       property: "indexed symbol"
       area: "geometry"
       comments:
-       - "<math><mrow intent='simplex($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "msup Δ $1"
+       - "<math><msup intent='simplex($a1)'><mo>Δ</mo><mi arg='a1'>n</mi></msup></math>"
+       - "<math><mrow intent='simplex($a1)'><mo>Δ</mo><mrow><mo>[</mo><mi arg='a1'>n</mi><mo>]</mo></mrow></mrow></math>"
       urls: 
        - "https://mathworld.wolfram.com/Simplex.html"
        - "https://en.wikipedia.org/wiki/Simplex"
