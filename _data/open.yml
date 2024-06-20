@@ -11913,8 +11913,7 @@ concepts:
       property: mover
       area: "linear algebra"
       comments:
-       - "<math><mrow intent='unit-vector($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover $1 ^"
+       - "<math><mover intent='unit-vector($a1)'><mi arg='a1'>v</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://mathworld.wolfram.com/UnitVector.html"
        - "https://en.wikipedia.org/wiki/Unit_vector"
