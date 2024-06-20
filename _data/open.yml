@@ -10731,8 +10731,7 @@ concepts:
       property: mover
       area: "algebra"
       comments:
-       - "<math><mrow intent='spectrum-of-algebra($a1)'><mi style='color:red'>!!F</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
-      notation: "mover ˆ"
+       - "<math><mover intent='spectrum-of-algebra($a1)'><mi arg='a1'>A</mi><mo>^</mo></mover></math>"
       urls: 
        - "https://en.wikipedia.org/wiki/Spectrum_of_a_C*-algebra"
     
