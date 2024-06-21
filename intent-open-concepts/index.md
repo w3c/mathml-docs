@@ -154,6 +154,7 @@ Additional contributions are welcome:
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
+{%- if c.comments and c.mathml -%}<br>{%- endif -%}
 {%- for mml in c.mathml -%}
 {{mml}}
 {%- unless forloop.last -%}<br>{% endunless -%}
@@ -188,7 +189,7 @@ arXiv
 </a><br/>
 {% endfor %}
 {%-endif -%}
-</td>{%-endif -%}
+</td>{%- endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
@@ -214,6 +215,7 @@ arXiv
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
+{%- if c.comments and c.mathml -%}<br>{%- endif -%}
 {%- for mml in c.mathml -%}
 {{mml}}
 {%- unless forloop.last -%}<br>{% endunless -%}
@@ -257,6 +259,12 @@ arXiv
 <hr>
 {%- endfor -%}
 
+### Key
+
+| Entry | Meaning |
+| ---- | ---- |
+| `*` | property default if no  fixity`:` property given |
+| _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
 
 ----
 

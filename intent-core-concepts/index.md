@@ -1,6 +1,17 @@
 ---
 title: Core Concept List
 ---
+<script>
+  function showmath (){
+      const ml =document.querySelectorAll("math");
+      for(const m of ml) {
+	  const md =  document.createElement("div");
+	  md.className="mmlshow";
+	  md.textContent=m.outerHTML.replace(/(<[^<>/]+)><\/[a-z]+>/g,"$1/>").replaceAll("><",">\n<");
+	  m.parentNode.replaceChild(md, m);
+      }
+  }
+</script>
 <style>
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
@@ -107,6 +118,12 @@ if c.link
 
 ## Core Concept Templates
 
+
+<p><button onclick="showmath()">Show MathML Source</button></p>
+
+
+----
+
 <details>
 <summary>Available Template Languages</summary>
 <p id="langchoice" class="langs">
@@ -166,10 +183,18 @@ if c.link
 {% endif %}
 </td>
 {%- endfor -%}
-{%- if forloop.first-%}<td style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comments -%}
+{%- if forloop.first-%}
+<td style="width:auto" rowspan="{{c.conditions.size}}">
+{%- for com in c.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}</td>{%- endif -%}
+{% endfor %}
+{%- if c.comments and c.mathml -%}<br>{%- endif -%}
+{%- for mml in c.mathml -%}
+{{mml}}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
+</td>{%- endif -%}
 </tr>
 {%- endfor -%}
 {%- else -%}
@@ -190,10 +215,17 @@ if c.link
 {% endif %}
 </td>
 {%- endfor -%}
-<td style="width:auto">{%- for com in c.comments -%}
+<td style="width:auto">
+{%- for com in c.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}</td>
+{% endfor %}
+{%- if c.comments and c.mathml -%}<br>{%- endif -%}
+{%- for mml in c.mathml -%}
+{{mml}}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
+</td>
 </tr>
 {%- endif -%}
 {%- endfor -%}
