@@ -148,12 +148,17 @@ Additional contributions are welcome:
 {% endif %}
 </td>
 {%- endfor -%}
-{%- if forloop.first-%}<td style="width:auto" rowspan="{{c.conditions.size}}">{%- for com in c.comments -%}
+{%- if forloop.first-%}
+<td style="width:auto" rowspan="{{c.conditions.size}}">
+{%- for com in c.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
-{%- if c.alias -%}
-{%- if c.comments -%}<br>{%- endif -%}
+{%- for mml in c.mathml -%}
+{{mml}}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
+{%- if c.comments or c.mathml -%}<br>{%- endif -%}
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}<br>{% endunless -%}{%- endfor -%}
 {%-endif -%}
 </td>{%- endif -%}
@@ -203,12 +208,17 @@ arXiv
 {% endif %}
 </td>
 {%- endfor -%}
-<td style="width:auto">{%- for com in c.comments -%}
+<td style="width:auto">
+{%- for com in c.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
+{%- for mml in c.mathml -%}
+{{mml}}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
 {%- if c.alias -%}
-{%- if c.comments -%}<br>{%- endif -%}
+{%- if c.comments or c.mathml -%}<br>{%- endif -%}
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}, {% endunless -%}{%- endfor -%}
 {%-endif -%}
 </td>
