@@ -158,6 +158,7 @@ Additional contributions are welcome:
 {{mml}}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
+{%- if c.alias -%}
 {%- if c.comments or c.mathml -%}<br>{%- endif -%}
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}<br>{% endunless -%}{%- endfor -%}
 {%-endif -%}
