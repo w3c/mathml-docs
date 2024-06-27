@@ -27,7 +27,7 @@ title: Open Concept List
   }
 </script>
 <style>
-#b2 {display: hidden}
+#b2 {display: none}
 
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
