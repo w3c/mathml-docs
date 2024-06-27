@@ -2,8 +2,12 @@
 title: Core Concept List
 ---
 <script>
-  function showmath (){
+  function showmathml (){
       const ml =document.querySelectorAll("math");
+      const b1 = document.getElementById('b1');
+      const b2 = document.getElementById('b2');
+      b1.style.display="none";
+      b2.style.display="inline-block";
       for(const m of ml) {
 	  const md =  document.createElement("div");
 	  md.className="mmlshow";
@@ -11,8 +15,20 @@ title: Core Concept List
 	  m.parentNode.replaceChild(md, m);
       }
   }
+  function displaymath (){
+      const ml =document.querySelectorAll("div.mmlshow");
+      b1.style.display="inline-block";
+      b2.style.display="none";
+      for(const m of ml) {
+	  const md =  document.createElement("math");
+	  md.innerHTML=m.textContent.replace(/<[/]?math>/,"");
+	  m.parentNode.replaceChild(md, m);
+      }
+  }
 </script>
 <style>
+#b2 {display: none}
+
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
@@ -119,7 +135,12 @@ if c.link
 ## Core Concept Templates
 
 
-<p><button onclick="showmath()">Show MathML Source</button></p>
+
+<p>
+<button id="b1" type="button" onclick="showmathml()">Show MathML Source</button>
+<button id="b2" type="button" onclick="displaymath()">Display typeset math</button>
+</p>
+
 
 
 ----
