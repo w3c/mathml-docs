@@ -48,9 +48,6 @@ div.mmlshow {display:inline-block;padding:1em;margin:.5em;border-radius:1em;font
 
 # Open Concept List
  
-This open list sketch has been extracted from the google spreadsheet
-and is not exactly in the format of the [core list](../core) but
-hopefully close enough to be useful.
 
 Entries in this list have no direct effect on the behavior of an
 `intent` processor, however implementers are encouraged to record here
