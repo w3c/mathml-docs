@@ -2,12 +2,20 @@
 title: Open Concept List
 ---
 <script>
-  function showmath (){
+  function showmathml (){
       const ml =document.querySelectorAll("math");
       for(const m of ml) {
 	  const md =  document.createElement("div");
 	  md.className="mmlshow";
 	  md.textContent=m.outerHTML.replace(/(<[^<>/]+)><\/[a-z]+>/g,"$1/>").replaceAll("><",">\n<");
+	  m.parentNode.replaceChild(md, m);
+      }
+  }
+  function displaymath (){
+      const ml =document.querySelectorAll("div.mmlshow");
+      for(const m of ml) {
+	  const md =  document.createElement("math");
+	  md.innerHTML=m.textContent;
 	  m.parentNode.replaceChild(md, m);
       }
   }
@@ -79,7 +87,10 @@ Additional contributions are welcome:
 
 ----
 
-<p><button onclick="showmath()">Show MathML Source</button></p>
+<p>
+<button type="button" onclick="showmathml()">Show MathMLl Source</button>
+<button type="button" onclick="displaymath()">Display typeset math</button>
+</p>
 
 
 ----
