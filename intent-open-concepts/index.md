@@ -20,7 +20,7 @@ title: Open Concept List
       b1.style.display="inline-block";
       b2.style.display="none";
       for(const m of ml) {
-	  const md =  document.createElement("math");
+	  const md = document.createElementNS("http://www.w3.org/1998/Math/MathML","math");
 	  md.innerHTML=m.textContent.replace(/<[/]?math>/,"");
 	  m.parentNode.replaceChild(md, m);
       }
