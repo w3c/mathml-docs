@@ -21,7 +21,7 @@ title: Open Concept List
       b2.style.display="none";
       for(const m of ml) {
 	  const md =  document.createElement("math");
-	  md.outerHTML=m.textContent;
+	  md.innerHTML=m.textContent.replace(/<[/]?math>/,"");
 	  m.parentNode.replaceChild(md, m);
       }
   }
