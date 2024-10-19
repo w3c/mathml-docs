@@ -394,10 +394,33 @@ concepts:
     - concept: polar-coordinate
       arity: 2
       property: function
-      en: "polar coordinate of $1 comma $2"
-      comments:
-      - "The first argument is the radius, the second argument is the angle"
+      en: "polar coordinate $1 comma $2"
+      comment:
+      - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
+      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
+    - concept: spherical-coordinate
+      arity: 3
+      property: function
+      en: "spherical coordinate $1 comma $2, comma $3"
+      comment:
+      - "The first argument is the radius, the second argument is the angle."
+      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+
+    - concept: cartesian-coordinate
+      arity: 2*
+      property: function
+      en: "cartesian coordinate $1 comma $2."
+      comment:
+      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+
+    - concept: coordinate
+      arity: 2*
+      property: function
+      en: "coordinate $1 comma $2"
+      comment:
+      - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
+      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
     - concept: floor
       arity: 1
@@ -473,7 +496,7 @@ concepts:
 
 
     - concept: partial-derivative
-      arity: 3 or more
+      arity: 3*
       property: ???
       en:
       - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
@@ -1210,13 +1233,13 @@ concepts:
           </mrow>
           ```
         - "It may be necessary to 'nest' the intent as shown in the `length` intent"
-      - concept: point-at
-        arity: "3"
+      - concept: point
+        arity: "1*"
         property: ???
         en:
-        - "point $1 with coordinates $2 and $3"
-        comments:
-        - "Example: P(1,2)"
+        - "point $1 comma $2 comma $3"
+        comment:
+        - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
 
       - concept: volume
         arity: 1
