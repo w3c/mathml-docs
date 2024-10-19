@@ -1,5 +1,4 @@
 
-
 - property: function
   type: fixity
   applicability: intent function head
@@ -52,10 +51,23 @@
       en: "x y"
 
 
+- property: array
+  type: table
+  applicability: mtable
+  effect: "the table should read the rows and columns with the default order row-first unless `array:by-column` is specified.
+    If `by-columns` is used, column first order is used." 
+  examples:
+    - intent: ":array:by-columns"
+      mathml: |
+         <mtable arg='m' intent=':array:by-column'>
+          <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+          <mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr>
+         </mtable>
+      en: "the 2 by 2 array; column 1; a; row 2; c; column 2; b; row 2; d"
+
 - property: matrix
   type: table
   applicability: mtable
-  effect: the table should be read in a style suitable for matrices
   effect: the table should be read in a style suitable for matrices
   examples:
     - intent: ":matrix"
