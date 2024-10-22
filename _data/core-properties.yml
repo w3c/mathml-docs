@@ -55,9 +55,9 @@
   type: inference
   applicability: all presentation elements
   effect: >
-    "assistive technology should not infer any semantics and just speak the elements with a literal interpretation.
-     This includes speaking leaf content literally.
-     If `intent` is present on a child element, it overrides this property."
+    Assistive technology should not infer any semantics and just speak the elements with a literal interpretation.
+    This includes speaking leaf content literally.
+    If `intent` is present on a child element, it overrides this property.
   examples:
     - intent: "<msup> <mi>x</mi><mn>2</mn> </msup>"
       en: "x superscript 2 end superscript"
