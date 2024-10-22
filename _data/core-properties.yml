@@ -59,8 +59,14 @@
     This includes speaking leaf content literally.
     If `intent` is present on a child element, it overrides this property.
   examples:
-    - intent: "<msup> <mi>x</mi><mn>2</mn> </msup>"
-      en: "x superscript 2 end superscript"
+    - intent:
+      mathml: |
+        <mrow intent=':structure'>
+          <msup intent='power($base, $exp)'> <mi arg='base'>x</mi><mn arg='exp'>2</mn> </msup>
+          <mtext> is literally </mtext>
+          <msup> <mi>x</mi><mn>2</mn> </msup>
+        </mrow>
+      en: "x squared is literally x superscript 2 end superscript"
 
 
 - property: array
