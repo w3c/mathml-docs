@@ -51,6 +51,18 @@
       en: "x y"
 
 
+- property: structure
+  type: inference
+  applicability: all presentation elements
+  effect: >
+    "assistive technology should not infer any semantics and just speak the elements with a literal interpretation.
+     This includes speaking leaf content literally.
+     If `intent` is present on a child element, it overrides this property."
+  examples:
+    - intent: "<msup> <mi>x</mi><mn>2</mn> </msup>"
+      en: "x superscript 2 end superscript"
+
+
 - property: array
   type: table
   applicability: mtable
@@ -86,7 +98,7 @@
   type: table
   applicability: mrow(mtable)
   effect: the table should be read in a style suitable for a piecewise definition 
-  examples:
+  examples:kyalakan pema
     - intent: ":piecewise"
       mathml: |
         <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
