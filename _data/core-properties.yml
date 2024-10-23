@@ -52,7 +52,7 @@
 
 
 
-- property: structure
+- property: literal
   type: inference
   applicability: all presentation elements
   effect: >
@@ -62,7 +62,7 @@
   examples:
     - intent:
       mathml: |
-        <mrow intent=':structure'>
+        <mrow intent=':literal'>
           <msup intent='power($base, $exp)'> <mi arg='base'>x</mi><mn arg='exp'>2</mn> </msup>
           <mtext> is literally </mtext>
           <msup> <mi>x</mi><mn>2</mn> </msup>
