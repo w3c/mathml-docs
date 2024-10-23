@@ -51,6 +51,25 @@
       en: "x y"
 
 
+
+- property: structure
+  type: inference
+  applicability: all presentation elements
+  effect: >
+    Assistive technology should not infer any semantics and just speak the elements with a literal interpretation.
+    This includes speaking leaf content literally (e.g., `|` is spoken as "vertical bar").
+    If `intent` is present on a child element, it overrides this property.
+  examples:
+    - intent:
+      mathml: |
+        <mrow intent=':structure'>
+          <msup intent='power($base, $exp)'> <mi arg='base'>x</mi><mn arg='exp'>2</mn> </msup>
+          <mtext> is literally </mtext>
+          <msup> <mi>x</mi><mn>2</mn> </msup>
+        </mrow>
+      en: "x squared is literally x superscript 2 end superscript"
+
+
 - property: array
   type: table
   applicability: mtable
