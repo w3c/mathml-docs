@@ -312,12 +312,12 @@ concepts:
       fr: reste de la divsion de $1 par $2
 
     - concept: max
-      arity: "*"
+      arity: ">=0"
       property: function
       en: "max of $1, $2, ..."
 
     - concept: min
-      arity: "*"
+      arity: ">=0"
       property: function
       en: "min of $1, $2, ..."
 
@@ -350,13 +350,13 @@ concepts:
           en: "$2<i>th</i> root of $1"
 
     - concept: greatest-common-divsor
-      arity: "*"
+      arity: ">=0"
       property: function
       en: greatest common divisor of $1, $2, ...
       fr: plus grand commun diviseur de $1, $2, ...
 
     - concept: least-common-multiple
-      arity: "*"
+      arity: ">=0"
       property: function
       en: lest common multiple of  $1, $2, ...
       fr: plus grand commun diviseur de $1, $2, ...
@@ -496,7 +496,7 @@ concepts:
 
 
     - concept: partial-derivative
-      arity: 3*
+      arity: ">=3"
       property: ???
       en:
       - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
@@ -634,11 +634,11 @@ concepts:
       - "often used with matchfix single vertical bars"
 
     - concept: list
-      arity: "*"
+      arity: ">=0"
       en: "list of $1, ..."
 
     - concept: tuple
-      arity: "*"
+      arity: ">=0"
       en: "tuple of $1, ..."
 
     ## ====================== 4.4.6 sequence and series ============================
@@ -1073,7 +1073,7 @@ concepts:
       fr: "transposée de $1"
 
     - concept: dimensional-product
-      arity: "*"
+      arity: ">=0"
       property: infix
       default: false
       en: "$1 by $2"
@@ -1304,7 +1304,7 @@ concepts:
         - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
 
       - concept: least-common-denominator
-        arity: "*"
+        arity: ">=0"
         property: function
         en: "least common denominator of $*"
 
@@ -1390,7 +1390,7 @@ concepts:
           ```
 
       - concept: permutation-cycle
-        arity: "*"
+        arity: ">=0"
         property: function
         en: "permutation cycle of $1 $2 ..."
         comments:

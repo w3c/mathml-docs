@@ -188,7 +188,7 @@ if c.link
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity | replace ">=", "⩾"}}</td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
@@ -220,7 +220,7 @@ if c.link
 {%- endfor -%}
 {%- else -%}
 <tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}">
-<td><a class="self" href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
+<td><a class="self" href="#{{c.concept}}{{c.arity | replace ">=", "⩾"}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
