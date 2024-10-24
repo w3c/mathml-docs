@@ -185,8 +185,8 @@ if c.link
 {%- for c in section.intents -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
-{%- assign arityu = c.arity | replace: ">=", "geq" | replace: "?", "Q" -%}
-{%- assign propertyu = c.property | replace: "*", "S" | replace: "?", "Q" -%}
+{%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
+{%- assign propertyu = c.property | replace: "?", "Q" -%}
 {%- if c.conditions %}
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
