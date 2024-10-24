@@ -408,14 +408,14 @@ concepts:
       - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
     - concept: cartesian-coordinate
-      arity: 2*
+      arity: ">=2"
       property: function
       en: "cartesian coordinate $1 comma $2."
       comment:
       - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
     - concept: coordinate
-      arity: 2*
+      arity: ">=2"
       property: function
       en: "coordinate $1 comma $2"
       comment:
@@ -1234,7 +1234,7 @@ concepts:
           ```
         - "It may be necessary to 'nest' the intent as shown in the `length` intent"
       - concept: point
-        arity: "1*"
+        arity: ">=1"
         property: ???
         en:
         - "point $1 comma $2 comma $3"
