@@ -187,9 +187,9 @@ if c.link
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- if c.conditions %}
 {%- for cond in c.conditions -%}
-<tr {% if forloop.first %}id="{{c.concept}}{{c.arityr}}{{c.property}}"{% endif %} class="row{{ clss }}">
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{c.arityr}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arityr}}</td>{%- endif -%}
+<tr {% if forloop.first %}id="{{c.concept}}{{arityr}}{{c.property}}"{% endif %} class="row{{ clss }}">
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityr}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}</td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
@@ -220,9 +220,9 @@ if c.link
 </tr>
 {%- endfor -%}
 {%- else -%}
-<tr id="{{c.concept}}{{c.arityr}}{{c.property}}" class="row{{ clss }}">
-<td><a class="self" href="#{{c.concept}}{{c.arityr}}{{c.property}}">{{c.concept}}</a></td>
-<td>{{c.arityr}}</td>
+<tr id="{{c.concept}}{{arityr}}{{c.property}}" class="row{{ clss }}">
+<td><a class="self" href="#{{c.concept}}{{arityr}}{{c.property}}">{{c.concept}}</a></td>
+<td>{{arityr}}</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
