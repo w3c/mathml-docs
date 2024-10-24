@@ -184,7 +184,7 @@ if c.link
 <tbody>
 {%- for c in section.intents -%}
 {%- assign clss = forloop.index| modulo:2 -%}
-{%- assign arityr = c.arity | replace ">=", "⩾" -%}
+{%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- if c.conditions %}
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{c.arityr}}{{c.property}}"{% endif %} class="row{{ clss }}">
