@@ -713,7 +713,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Bell_numbers"
     
     - concept: bell-polynomial
-      arity: "*"
+      arity: ">=0"
       en: $1<i>th</i> bell polynomial of $2, $3, ...
       property: "indexed function"
       area: "polynomials"
@@ -1765,7 +1765,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Cokernel"
     
     - concept: column-vector
-      arity: "*"
+      arity: ">=0"
       en: column vector of $1 $2 ...
       property: mtable
       area: "linear algebra"
@@ -3238,7 +3238,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Divergence"
     
     - concept: divided-difference
-      arity: "*"
+      arity: ">=0"
       en: divided difference of $1 ..
       property: "fenced, mixfix"
       area: "special functions"
@@ -8724,7 +8724,7 @@ concepts:
        - "https://en.wikipedia.org/wiki/List_of_partition_topics"
     
     - concept: partition-frequency-representation
-      arity: "*"
+      arity: ">=0"
       en: "partition $1 sup $2, $2 sup $3, ..."
       property: mixfix
       area: "number theory"
@@ -10247,7 +10247,7 @@ concepts:
        - "https://dlmf.nist.gov/21.2#E1"
     
     - concept: schlaefli-symbol
-      arity: "*"	
+      arity: ">=0"	
       en: schlaefli symbol of $1, ...
       property: fenced
       area: "geometry"
@@ -12316,7 +12316,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Weight"
     
     - concept: weighted-lehmer-mean
-      arity: "*"
+      arity: ">=0"
       en: weighted lehmer mean of $1 $2 ...
       property: "indexed function"
       area: "means"
@@ -12525,7 +12525,7 @@ concepts:
        - "https://www.encyclopediaofmath.org/index.php/Witt_vector"
     
     - concept: witt-vector
-      arity: "*"
+      arity: ">=0"
       en: witt vector of $1
       property: fenced
       area: "ring theory"
