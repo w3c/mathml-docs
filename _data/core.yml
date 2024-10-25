@@ -1234,10 +1234,10 @@ concepts:
           ```
         - "It may be necessary to 'nest' the intent as shown in the `length` intent"
       - concept: point
-        arity: ">=2"
+        arity: ">=1"
         property: ???
         en:
-        - "point $1 comma $2 ..."
+        - "point $1 [comma $2 ...]"
         comment:
         - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
 
