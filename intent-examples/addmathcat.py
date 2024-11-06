@@ -2,7 +2,7 @@ import re
 import os
 import sys
 import hashlib
-import libmathcat
+import libmathcat_py as libmathcat      # type: ignore
 
 if (len(sys.argv) != 2):
   raise Exception("no argument")
