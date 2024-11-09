@@ -1965,7 +1965,7 @@
      <math display='block'>
       <mrow intent='$m'>
        <mo>{</mo>
-       <mtable arg='m' intent=':equations'>
+       <mtable arg='m' intent=':system-of-equations'>
         <mtr>
          <mtd>
 	  <mi>x</mi>
@@ -1992,6 +1992,52 @@
     <td>braced system of equations</td>
    </tr>
 
+   <tr>
+    <td>
+     <math display='block'>
+      <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+      <mo>=</mo>
+      <mrow>
+       <mo>{</mo>
+       <mtable columnalign="right left" columnspacing="0" rowspacing=".2em">
+	<mtr>
+	 <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&#x2265;</mo><mn>0</mn></mtd>
+	</mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+      <mo>=</mo>
+      <mrow>
+       <mo intent=":silent">{</mo>
+       <mtable intent=":piecewise" columnalign="right left" columnspacing="0" rowspacing=".2em">
+	<mtr>
+	 <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&#x2265;</mo><mn>0</mn></mtd>
+	</mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>f(x)=\begin{cases}...</td>
+    <td>piecewise function definition</td>
+   </tr>
    <tr>
     <td>
      <math display='block'>
@@ -2027,7 +2073,7 @@
     </td>
     <td>
      <math display='block'>
-      <mtable intent=':equations'>
+      <mtable intent=':system-of-equations'>
        <mtr>
 	<mtd columnalign='right'>
 	 <mn>2</mn>
@@ -2127,7 +2173,7 @@
       </mtable>
      </math>
      <math display='block'>
-      <mtable intent=':equations'>
+      <mtable intent=':system-of-equations'>
        <mtr>
 	<mtd columnalign='right'>
 	 <mi>a</mi>
