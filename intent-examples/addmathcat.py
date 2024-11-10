@@ -92,11 +92,11 @@ for mmltd in mmltds:
   i=i+1
   if(i % 3 == 2):
     print("<tr>")
-    print("<td n=2>")
+    print("<td>")
     print(mmltd)
     print("</td>")
   if(i % 3 == 2   or i % 3 == 0):
-    print("<td n=30>")
+    print("<td>")
     mmls=re.split(r'(<math\b.*?</math>)',str(mmltd), flags=re.DOTALL)
     j=0
     for mml in mmls:
