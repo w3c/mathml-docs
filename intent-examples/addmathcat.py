@@ -92,7 +92,7 @@ for mmltd in mmltds:
   i=i+1
   if(i % 3 == 2):
     print("<tr>")
-    print("<td>")
+    print('<td class="pad">')
     print(mmltd)
     print("</td>")
   if(i % 3 == 2   or i % 3 == 0):
@@ -117,4 +117,4 @@ for mmltd in mmltds:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
                selflink,
                mmltd)
-    print (mmltd,end="")
+    print (mmltd.replace('<td','<td class="pad"'),end="")
