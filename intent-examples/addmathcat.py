@@ -110,7 +110,7 @@ for mmltd in mmltds:
       ApplyMathCAT(1,mml,True)
       mml=re.sub(r"<math intent=':common'",r"<math intent=':literal'",mml)
       ApplyMathCAT(1,mml,True)
-      mml=re.sub(r"<math intent=':literal'",r"<math intent=':chemistry'",mml)
+      mml=re.sub(r"<math intent=':literal'",r"<math intent=':chemical-formula'",mml)
       ApplyMathCAT(1,mml,True)
 #      print("</td>")
     print("</td>")
