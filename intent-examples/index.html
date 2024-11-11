@@ -6,6 +6,7 @@
   <style>
    pre b {background-color: rgb(255 255 255 / 0.4)}
    pre:target{background-color:yellow}
+   td pre {width: 35em; white-space:pre-wrap}
    th[colspan] {font-size:120%;font-weight:bold;
    background-color:white;
    padding-top:.5em}
@@ -24,11 +25,11 @@
   </style>
  </head>
  <body>
-  <h1>Intent Examples</h1><h2>MathCAT Version: 0.6.6</h2>
+  <h1>Intent Examples</h1><h2>MathCAT Version: 0.6.7</h2>
 
   <p><a href='../'>MathML Documents Index</a></p>
 
-  <table>
+  <table width="main">
    <colgroup>
     <col style='background-color:#FFE;min-width:12em'/>
     <col style='background-color:#EEE;font-family: monospace;'/>
@@ -3087,7 +3088,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the determinant of the 2 by 2 determinant; row 1; eigh, b; row 2; c, d; end determinant end determinant</div>
+    <div class="mathcat">the determinant of the 2 by 2 matrix; row 1; eigh, b; row 2; c, d; end matrix end determinant</div>
 <pre id='id-0-07d5bf6d4bb17eb690c44022b3d7a8d2'><a class='self' href='#id-0-07d5bf6d4bb17eb690c44022b3d7a8d2'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$M'</b>>
@@ -4188,155 +4189,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[with:
-      variables: [name: ClearSpeak_Fractions=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_Fractions=&apos;Auto&apos;, &apos;EndFrac&apos;, $ClearSpeak_Fractions)"],[name: ClearSpeak_AbsoluteValue=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_AbsoluteValue=&apos;Auto&apos;, &apos;AbsEnd&apos;, $ClearSpeak_AbsoluteValue)"],[name: ClearSpeak_Roots=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_Roots=&apos;Auto&apos;, &apos;RootEnd&apos;, $ClearSpeak_Roots)"],[name: ClearSpeak_Matrix=x: "IfThenElse($Verbosity=&apos;Verbose&apos; and $ClearSpeak_Matrix=&apos;Auto&apos;, &apos;EndMatrix&apos;, $ClearSpeak_Matrix)"],
-      replace: [test: [  if: &apos;x: "$MathRate = 100"&apos; then:[x: "*"] else:[rate: 987654321.5[x: "*"]]]
-]]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;equation data-intent-property=&apos;:prefix:&apos;>
-    &lt;mtr arg=&apos;e1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-      &lt;mtd columnalign=&apos;right&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-        &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>a&lt;/mi>
-      &lt;/mtd>
-      &lt;mtd columnalign=&apos;center&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-        &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>=&lt;/mo>
-      &lt;/mtd>
-      &lt;_ data-intent-property=&apos;:silent:&apos;>
-        &lt;mrow arg=&apos;lhs&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-          &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>b&lt;/mi>
-          &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-          &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>c&lt;/mi>
-          &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>-&lt;/mo>
-          &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>d&lt;/mi>
-        &lt;/mrow>
-      &lt;/_>
-    &lt;/mtr>
-    &lt;mtr arg=&apos;e1x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-      &lt;mi>_&lt;/mi>
-      &lt;mi>_&lt;/mi>
-      &lt;mtd arg=&apos;rhs&apos; columnalign=&apos;left&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-        &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-          &lt;mo form=&apos;infix&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-          &lt;mi data-maybe-chemistry=&apos;0&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>e&lt;/mi>
-          &lt;chemical-formula-operator data-chem-formula-op=&apos;1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>-&lt;/chemical-formula-operator>
-          &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>f&lt;/mi>
-        &lt;/mrow>
-      &lt;/mtd>
-    &lt;/mtr>
-  &lt;/equation>
- &lt;/math>
-The patterns are in \\?\Rules\Languages\en\SharedRules\default.yaml.
-
-caused by: replacing inside &apos;with&apos;
-caused by: attempting replacement pattern: "prefix-intent" for "*".
-Replacement
-
-  - x: "translate(name(.), &apos;-_&apos;, &apos;  &apos;)"
-  - x: "*"
-  - pause: 150
-
-...due to matching the following MathML with the pattern
-x: "contains(@data-intent-property, &apos;:prefix:&apos;) and count(*)>0"
- &lt;equation data-intent-property=&apos;:prefix:&apos;>
-  &lt;mtr arg=&apos;e1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mtd columnalign=&apos;right&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-      &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>a&lt;/mi>
-    &lt;/mtd>
-    &lt;mtd columnalign=&apos;center&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-      &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>=&lt;/mo>
-    &lt;/mtd>
-    &lt;_ data-intent-property=&apos;:silent:&apos;>
-      &lt;mrow arg=&apos;lhs&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-        &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>b&lt;/mi>
-        &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-        &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>c&lt;/mi>
-        &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>-&lt;/mo>
-        &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>d&lt;/mi>
-      &lt;/mrow>
-    &lt;/_>
-  &lt;/mtr>
-  &lt;mtr arg=&apos;e1x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mi>_&lt;/mi>
-    &lt;mi>_&lt;/mi>
-    &lt;mtd arg=&apos;rhs&apos; columnalign=&apos;left&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-      &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-        &lt;mo form=&apos;infix&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-        &lt;mi data-maybe-chemistry=&apos;0&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>e&lt;/mi>
-        &lt;chemical-formula-operator data-chem-formula-op=&apos;1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>-&lt;/chemical-formula-operator>
-        &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>f&lt;/mi>
-      &lt;/mrow>
-    &lt;/mtd>
-  &lt;/mtr>
- &lt;/equation>
-The patterns are in \\?\Rules\Languages\en\SharedRules\default.yaml.
-
-caused by: attempting replacement pattern: "default" for "mtr".
-Replacement
-
-  - t: "row"
-  - x: "count(preceding-sibling::*)+1"
-  - test: [  if: &apos;x: ".[self::m:mlabeledtr]"&apos; then:
-  - t: "with label"
-  - x: "*[1]/*"
-  - pause: 150
-]
-
-  - pause: 300
-  - test: [  if: &apos;x: ".[self::m:mlabeledtr]"&apos; then:[x: "*[position()>1]"] else:[x: "*"]]
-
-
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mtr arg=&apos;e1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mtd columnalign=&apos;right&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>a&lt;/mi>
-  &lt;/mtd>
-  &lt;mtd columnalign=&apos;center&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>=&lt;/mo>
-  &lt;/mtd>
-  &lt;_ data-intent-property=&apos;:silent:&apos;>
-    &lt;mrow arg=&apos;lhs&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-      &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>b&lt;/mi>
-      &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-      &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>c&lt;/mi>
-      &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>-&lt;/mo>
-      &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>d&lt;/mi>
-    &lt;/mrow>
-  &lt;/_>
- &lt;/mtr>
-The patterns are in \\?\Rules\Languages\en\SharedRules\default.yaml.
-
-caused by: attempting replacement pattern: "default" for "mtd".
-Replacement
-
-  - test: [  if: &apos;x: "not($IsColumnSilent)"&apos; then:
-  - t: "column"
-  - x: "count(preceding-sibling::*)+1"
-  - pause: 300
-]
-
-  - x: "*"
-  - test: [  if: &apos;x: "count(following-sibling::*) > 0"&apos; then:[pause: 150]]
-test: [  if: &apos;x: "count(../following-sibling::*) > 0"&apos; then:[pause: 300] else:[pause: 600]]
-
-
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mtd columnalign=&apos;right&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>a&lt;/mi>
- &lt;/mtd>
-The patterns are in \\?\Rules\Languages\en\SharedRules\default.yaml.
-
-caused by: Failure in conditional test
-caused by: unknown variable  "IsColumnSilent"
-
-
-'>problem with SetMathML</span></div>
+    <div class="mathcat">equation row 1; <br/>column 1; eigh, <br/>column 2; is equal to, b plus c minus d row 2;     <br/>column 3; plus e minus f;</div>
 <pre id='id-0-fe8f375cafba0d5aed5b5d0208a7d452'><a class='self' href='#id-0-fe8f375cafba0d5aed5b5d0208a7d452'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mtable <b>intent=':system-of-equations'</b>>
@@ -6260,7 +6113,7 @@ caused by: unknown variable  "IsColumnSilent"
 &lt;/math>
 </pre>
 
-    <div class="mathcat">1.5 km</div>
+    <div class="mathcat">1.5 kilometres</div>
 </td>
 
     <td class="pad">\qty{1.5}{\kilogram}</td>
@@ -6300,7 +6153,7 @@ caused by: unknown variable  "IsColumnSilent"
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2   omega</div>
+    <div class="mathcat">2  ohms</div>
 </td>
 
     <td class="pad">\qty{2}{\ohm}</td>
@@ -6818,7 +6671,7 @@ caused by: unknown variable  "IsColumnSilent"
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -6834,7 +6687,7 @@ The patterns are in \\?\Rules\intent.yaml.
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "default" for "mfrac".
 Replacement
-[intent: name: fraction,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[intent: name: fraction,  attrs=&apos;&apos;>
       children: 
   - x: "*[1]"
   - x: "*[2]"
@@ -6913,7 +6766,7 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -6998,7 +6851,7 @@ caused by: intent arg &apos;$a&apos; not found
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -7071,7 +6924,7 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -7135,7 +6988,7 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -7223,7 +7076,7 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -7246,10 +7099,10 @@ The patterns are in \\?\Rules\intent.yaml.
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "default" for "*".
 Replacement
-[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent: xpath-name: x: "name(.)",  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent: xpath-name: x: "name(.)",  attrs=&apos;&apos;>
       children: [x: "*"]]]
-test: [  if: &apos;x: "text()"&apos; then:[intent: xpath-name: x: "name(.)",  id=&apos;x: "&apos;Auto&apos;"&apos;>
-      children: [x: "text()"]] else:[intent: xpath-name: x: "name(.)",  id=&apos;x: "&apos;Auto&apos;"&apos;>
+test: [  if: &apos;x: "text()"&apos; then:[intent: xpath-name: x: "name(.)",  attrs=&apos;&apos;>
+      children: [x: "text()"]] else:[intent: xpath-name: x: "name(.)",  attrs=&apos;&apos;>
       children: 
 ]]
 ]
@@ -7326,7 +7179,7 @@ caused by: Illegal &apos;intent&apos; syntax: found None
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -7397,7 +7250,7 @@ caused by: Error in intent value: extra unparsed intent &apos;this&apos; in inte
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
 ...due to matching the following MathML with the pattern
@@ -7471,51 +7324,7 @@ caused by: Error in intent value: extra unparsed intent &apos;this about $x&apos
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  id=&apos;x: "&apos;Auto&apos;"&apos;>
-      children: [x: "*"]] else:[t: " "]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mo intent=&apos;🐇&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>🐇&lt;/mo>
-    &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
-  &lt;/mrow>
- &lt;/math>
-The patterns are in \\?\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "default" for "*".
-Replacement
-[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent: xpath-name: x: "name(.)",  id=&apos;x: "&apos;Auto&apos;"&apos;>
-      children: [x: "*"]]]
-test: [  if: &apos;x: "text()"&apos; then:[intent: xpath-name: x: "name(.)",  id=&apos;x: "&apos;Auto&apos;"&apos;>
-      children: [x: "text()"]] else:[intent: xpath-name: x: "name(.)",  id=&apos;x: "&apos;Auto&apos;"&apos;>
-      children: 
-]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mrow id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mo intent=&apos;🐇&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>🐇&lt;/mo>
-  &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
- &lt;/mrow>
-The patterns are in \\?\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "intent-exists" for "!*".
-Replacement
-[x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
- &lt;mo intent=&apos;🐇&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>🐇&lt;/mo>
-The patterns are in \\?\Rules\intent.yaml.
-
-caused by: Illegal &apos;intent&apos; syntax: 🐇
-'>🐇   x</span></div>
+    <div class="mathcat">🐇   x</div>
 </td>
 
      <td class="pad">🐇 X</td>
