@@ -4,6 +4,8 @@ import sys
 import hashlib
 import libmathcat_py as libmathcat      # type: ignore
 
+sys.stdout.reconfigure(encoding="utf-8", newline='\n')
+
 if (len(sys.argv) != 2):
   raise Exception("no argument")
 
