@@ -154,9 +154,10 @@ presentation.
 <tbody>
 {%- for c in site.data.core.concepts[3].intents | where: "concept", "sum" -%}
 <tr>
-<td>sum</td>
+<td>sum</td><td>a: {{c.arity}}}</td><td>p: {{c.property}}</td>
 </tr>
 {%- endfor -%}
+</tbody>
 </table>
 
 
