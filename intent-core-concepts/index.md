@@ -251,13 +251,6 @@ if c.link
 
 
 
-<p>
-<button id="b1" type="button" onclick="showmathml()">Show MathML Source</button>
-<button id="b2" type="button" onclick="displaymath()">Display typeset math</button>
-</p>
-
-
-
 ----
 
 <details>
