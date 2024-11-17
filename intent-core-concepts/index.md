@@ -152,7 +152,8 @@ presentation.
 </tr>
 </thead>
 <tbody>
-{%- for c in site.data.core.concepts[3].intents | where: "concept", "sum" -%}
+{%- for c in site.data.core.concepts[3].intents -%}
+{%- if c.concept == "sum" -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
 {%- assign propertyu = c.property | replace: "?", "Q" -%}
@@ -185,6 +186,7 @@ presentation.
 {% endfor %}
 </td>
 </tr>
+%- endif -%}
 {%- endfor -%}
 </tbody>
 </table>
