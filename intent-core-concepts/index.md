@@ -135,12 +135,66 @@ if c.link
 ## Core Concept Default Large Operatorss
 
 Speech templates for "large" operators follow a similar pattern
-and are often strongly associated with particur characters.
+and are often strongly associated with particular characters.
 They are collected here to give a more convenient and compact
 presentation.
 
-<p>
+<table style="width:100%">
+<thead>
+<tr class="row0">
+<th>Concept</th>
+<th>Arity</th>
+<th>Property</th>
+{%- for language in site.data.languages -%}
+<th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
+{%- endfor -%}
+<th style="width:auto">Comments</th>
+</tr>
+</thead>
+<tbody>
+{%- for c in site.data.core.concepts.intents -%}
+{%- if c.concept == "sum" %-}
+{%- assign arityr = c.arity | replace: ">=", "⩾" -%}
+{%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
+{%- assign propertyu = c.property | replace: "?", "Q" -%}
+<tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
+<td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
+<td>{{arityr}}</td>
+<td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
+{%- for language in site.data.languages -%}
+<td class="{{language.language-code}}">
+{%- if c[language.language-code] -%}
+{%- for l in c[language.language-code] -%}
+{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
+{%- else -%}
+{%- for l in c.en -%}
+{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %} 
+{% endif %}
+</td>
+{%- endfor -%}
+<td style="width:auto">
+{%- for com in c.comments -%}
+{{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
+{%- if c.comments and c.mathml -%}<br>{%- endif -%}
+{%- for mml in c.mathml -%}
+{{mml}}
+{%- unless forloop.last -%}<br>{% endunless -%}
+{% endfor %}
+</td>
+</tr>
+{%- endif -%}
+{%- endfor -}
 
+
+
+
+<dl>
+<dt id="largeoplist"><b>Operators</b></dt>
+<dd>
 {%- for c in site.data.core.largeop -%}
 <a
 {%
@@ -159,7 +213,8 @@ if c.link
 )
 {% unless forloop.last -%}, {% endunless -%}
 {%- endfor %}
-</p>
+</dd>
+</dl>
 
 
 
