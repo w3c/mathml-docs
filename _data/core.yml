@@ -210,6 +210,16 @@ defaultfixity:
          characters: [⁢U+2062]
 
 
+largeop:
+  - concept: sum
+    characters: [∑,⅀]  
+  - concept: product
+    characters: [∏,⨉]
+  - concept: union
+    characters: [⋃]
+  - concept: intersection
+    characters: [⋂]
+
 concepts:
 
   ## From chapter 4 of MathML3

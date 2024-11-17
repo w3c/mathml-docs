@@ -132,6 +132,39 @@ if c.link
 
 ----
 
+## Core Concept Default Large Operatorss
+
+Speech templates for "large" operators follow a similar pattern
+and are often strongly associated with particur characters.
+They are collected here to give a more convenient and compact
+presentation.
+
+<p>
+
+{%- for c in site.data.core.largeop -%}
+<a
+{%
+if c.link
+-%}
+ href="#{{c.link}}" class="link"
+{%- else -%}
+ href="#{{c.concept}}" class="self"
+{%- endif -%}
+>{{c.concept}}</a> 
+(
+{%- for ch in c.characters -%}
+{{ch}}
+{%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}
+)
+{% unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
+</p>
+
+
+
+----
+
 ## Core Concept Templates
 
 
