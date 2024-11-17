@@ -186,7 +186,7 @@ presentation.
 {% endfor %}
 </td>
 </tr>
-%- endif -%}
+{%- endif -%}
 {%- endfor -%}
 </tbody>
 </table>
