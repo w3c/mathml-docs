@@ -159,7 +159,7 @@ presentation.
 {%- assign propertyu = c.property | replace: "?", "Q" -%}
 <tr>
 <td>{{c.concept}}</td>
-<td>{{c.arityu}}}</td>
+<td>{{c.arityu}}</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">

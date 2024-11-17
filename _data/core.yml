@@ -219,6 +219,12 @@ largeop:
     characters: [⋃]
   - concept: intersection
     characters: [⋂]
+  - concept: integral
+    characters: [∫]
+  - concept: double-integral
+    characters: [∬]
+  - concept: contour-integral
+    characters: [∮]
 
 concepts:
 
