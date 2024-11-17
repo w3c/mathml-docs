@@ -132,7 +132,7 @@ if c.link
 
 ----
 
-## Core Concept Default Large Operatorss
+## Default Large Operator Concepts
 
 Speech templates for "large" operators follow a similar pattern
 and are often strongly associated with particular characters.
