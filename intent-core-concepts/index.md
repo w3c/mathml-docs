@@ -32,14 +32,31 @@ title: Core Concept List
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
+.markdown-body table {font-size:85%}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
+     [arg] { background-color: #ddfafa;}
+     [arg]:hover {display:inline;background-color: #add8e6;}
+     [arg]:hover::after {display:inline;vertical-align: sub; font-size: 0.7em; }
+     [arg="a1"]:hover::after { content: " $1" ; }
+     [arg="a2"]:hover::after { content: " $2" ; }
+     [arg="a3"]:hover::after { content: " $3" ; }
+     [arg="a4"]:hover::after { content: " $4" ; }
+     [arg="a5"]:hover::after { content: " $5" ; }
+     [arg="a6"]:hover::after { content: " $6" ; }
+     [arg="a7"]:hover::after { content: " $7" ; }
+     [arg="a8"]:hover::after { content: " $8" ; }
+     [arg="a9"]:hover::after { content: " $9" ; }
+math:not(:has(*[intent])) {
+    color: red;
+    }
+div.mmlshow {display:inline-block;padding:1em;margin:.5em;border-radius:1em;font-family:monospace;background-color:#EEE;white-space:pre;}
 </style>
 
 <style id="langcss">
-{% for language in site.data.languages offset:2-%}
+{% for language in site.data.languages offset:1-%}
   {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
 {%- endfor -%}
  {display:none}
@@ -84,6 +101,14 @@ Any concept that does not have a speech template in the specifed language will s
 
 Localised texts can be added to the YAML file:
 [core.yml](https://github.com/w3c/mathml-docs/blob/main/_data/core.yml)
+
+----
+
+<p>
+<button id="b1" type="button" onclick="showmathml()">Show MathML Source</button>
+<button id="b2" type="button" onclick="displaymath()">Display typeset math</button>
+</p>
+
 
 ----
 
@@ -245,7 +270,7 @@ if c.link
  <input
 	onchange="updatelang(this)"
 	type="checkbox"
-	{% if lang == "en" or lang == "fr" %} checked {% endif %}
+	{% if lang == "en" or lang == "Xfr" %} checked {% endif %}
       id="cb-{{lang}}"
       name="language"
       value="{{lang}}" />
