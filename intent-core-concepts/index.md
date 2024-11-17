@@ -153,39 +153,10 @@ presentation.
 </thead>
 <tbody>
 {%- for c in site.data.core.concepts[3].intents | where: "concept", "sum" -%}
-{%- assign arityr = c.arity | replace: ">=", "⩾" -%}
-{%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
-{%- assign propertyu = c.property | replace: "?", "Q" -%}
-<tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
-<td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
-<td>{{arityr}}</td>
-<td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
-{%- for language in site.data.languages -%}
-<td class="{{language.language-code}}">
-{%- if c[language.language-code] -%}
-{%- for l in c[language.language-code] -%}
-{{l}} {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}
-{%- else -%}
-{%- for l in c.en -%}
-{{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %} 
-{% endif %}
-</td>
-{%- endfor -%}
-<td style="width:auto">
-{%- for com in c.comments -%}
-{{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
-{%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}
-{%- if c.comments and c.mathml -%}<br>{%- endif -%}
-{%- for mml in c.mathml -%}
-{{mml}}
-{%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}
-</td>
+<tr>
+<td>sum</td>
 </tr>
-{%- endfor -}
+{%- endfor -%}
 </table>
 
 
