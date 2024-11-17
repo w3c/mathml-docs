@@ -674,7 +674,7 @@ concepts:
       property: function
       en: "sum over $1 of $2"
       mathml:
-       - "<math><mrow intent='sum($a1,$a2)'><munder><mo>∑</mo><mrow arg='$a1'><mi>i</mi><mo>∈</mo><mi>X</mi></mrow></munder><mrow arg='a2'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='sum($a1,$a2)'><munder><mo>∑</mo><mrow arg='a1'><mi>i</mi><mo>∈</mo><mi>X</mi></mrow></munder><mrow arg='a2'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
       comments:
       - usually on `<munder>` or `<msub>`
 
@@ -683,7 +683,7 @@ concepts:
       property: function
       en: "sum from $1 to $2 of $3"
       mathml:
-       - "<math><mrow intent='sum($a1,$a2,$a3)'><munderover><mo>∑</mo><mrow arg='$a1'><mi>i</mi><mo>=</mo><mi>a</mi></mrow><mi arg='a2'>b</mi></munderover><mrow arg='a3'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='sum($a1,$a2,$a3)'><munderover><mo>∑</mo><mrow arg='a1'><mi>i</mi><mo>=</mo><mi>a</mi></mrow><mi arg='a2'>b</mi></munderover><mrow arg='a3'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
       comments:
       - usually on `<munderover>` or `<msubsup>`
 
