@@ -665,7 +665,7 @@ concepts:
       property: function
       en: "sum of $1"
       mathml:
-       - "<math><mrow intent='sum($a1)'><mo>∑</mo><mrow arg='$a1'><mrow arg='a1'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
+       - "<math><mrow intent='sum($a1)'><mo>∑</mo><mrow arg='a1'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
       comments:
       - usually on `<mrow>`
 
