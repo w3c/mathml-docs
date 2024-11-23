@@ -219,12 +219,27 @@ largeop:
     characters: [⋃]
   - concept: intersection
     characters: [⋂]
+  - concept: logical-and
+    characters: [⋀]
+  - concept: logical-or
+    characters: [⋁]
   - concept: integral
     characters: [∫]
   - concept: double-integral
     characters: [∬]
+  - concept: triple-integral
+    characters: [∭]
   - concept: contour-integral
     characters: [∮]
+  - concept: surface-integral
+    characters: [∯]
+  - concept: clockwise-integral
+    characters: [∱]
+  - concept: clockwise-contor-integral
+    characters: [∲]
+  - concept: anticlockwise-contor-integral
+    characters: [∳]
+
 
 concepts:
 
@@ -467,16 +482,16 @@ concepts:
   - title: calculus
     intents:
     - concept: definite-integral
-      arity: 1
-      property: ???
-      en: "integral over $1"
+      arity: 2
+      property: largeop
+      en: "integral over $1 of $2"
       comments:
       - "integral sign is not an argument"
 
     - concept: definite-integral
-      arity: 2
-      property: ???
-      en: "integral from $1 to $2"
+      arity: 3
+      property: largeop
+      en: "integral from $1 to $2 of $3"
       comments:
       - "integral sign is not an argument"
     
@@ -662,7 +677,7 @@ concepts:
     intents:
     - concept: sum
       arity: 1
-      property: function
+      property: largeop
       en: "sum of $1"
       mathml:
        - "<math display='block'><mrow intent='sum($a1)'><mo>∑</mo><mrow arg='a1'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
@@ -689,7 +704,7 @@ concepts:
 
     - concept: product
       arity: 1
-      property: function
+      property: largeop
       en: "product of $1"
       comments:
       - usually on `<mrow>`
