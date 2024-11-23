@@ -126,7 +126,7 @@ but do have default fixity properties other than `function`.
 
 {%- for fix in site.data.core.defaultfixity -%}
 
-<dt id="{{fix.fixity}}"><b>{{fix.fixity}}</b>
+<dt id="{{fix.fixity}}"><b><a href="core-properties#{{fix.fixity}}">{{fix.fixity}}</a></b>
 {%- for c in fix.concepts -%}
 <span id="{{c.concept}}"></span> 
 {%- endfor %}
@@ -220,7 +220,7 @@ presentation.
 
 
 <dl>
-<dt id="largeoplist"><b>Operators</b></dt>
+<dt id="largeoplist"><a href="core-properties#largeop"><b>largeop</b></dt>
 <dd>
 {%- for c in site.data.core.largeop -%}
 <a
