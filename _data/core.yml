@@ -235,9 +235,9 @@ largeop:
     characters: [∯]
   - concept: clockwise-integral
     characters: [∱]
-  - concept: clockwise-contor-integral
+  - concept: clockwise-contour-integral
     characters: [∲]
-  - concept: anticlockwise-contor-integral
+  - concept: anticlockwise-contour-integral
     characters: [∳]
 
 
