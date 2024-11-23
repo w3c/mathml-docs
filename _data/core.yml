@@ -686,7 +686,7 @@ concepts:
 
     - concept: sum
       arity: 2
-      property: function
+      property: largeop
       en: "sum over $1 of $2"
       mathml:
        - "<math display='block'><mrow intent='sum($a1,$a2)'><munder><mo>∑</mo><mrow arg='a1'><mi>i</mi><mo>∈</mo><mi>X</mi></mrow></munder><mrow arg='a2'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
@@ -695,7 +695,7 @@ concepts:
 
     - concept: sum
       arity: 3
-      property: function
+      property: largeop
       en: "sum from $1 to $2 of $3"
       mathml:
        - "<math display='block'><mrow intent='sum($a1,$a2,$a3)'><munderover><mo>∑</mo><mrow arg='a1'><mi>i</mi><mo>=</mo><mi>a</mi></mrow><mi arg='a2'>b</mi></munderover><mrow arg='a3'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
@@ -711,14 +711,14 @@ concepts:
         
     - concept: product
       arity: 2
-      property: function
+      property: largeop
       en: "product over $1 of $2"
       comments:
       - usually on `<munder>` or `<msub>`
 
     - concept: product
       arity: 3
-      property: function
+      property: largeop
       en: "product from $1 to $2 of $3"
       comments:
       - usually on `<munderover>` or `<msubsup>`
