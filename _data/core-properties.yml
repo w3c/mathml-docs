@@ -282,7 +282,7 @@
 	- sixteen
     - mathml: "<mrow intent=':roman-numeral'>
           <menclose notation='top'><menclose notation='top'><mn>VI</mn></menclose></menclose>
-          <menclose notation='top'><mi>XL</mi></menclose>
+          <menclose notation='top'><mn>XL</mn></menclose>
           <mn>DXXI</mn>
         </mrow>"
       en:
