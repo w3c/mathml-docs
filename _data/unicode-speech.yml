@@ -1,5 +1,9 @@
 ---
 -
+    - char: +
+    - u: "002B"
+    - t: plus
+-
     - char: ¡
     - u: "00A1"
     - t: inverted exclamation mark
@@ -8014,7 +8018,7 @@
 -
     - char: ＋
     - u: "FF0B"
-    - t: equals sign
+    - t: full width plus
 -
     - char: ＜
     - u: "FF1C"
