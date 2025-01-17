@@ -12,7 +12,7 @@ We recommend the [Sanitzer API](https://wicg.github.io/sanitizer-api/) to saniti
 MathML-core considers the following elements and attributes of MathML-core as safe and not needing sanitization:
 
 Safe "as-is" Elements of MathML-core:
-`math, merror, mfrac, mi, mmultiscripts, mn, mo, mover, mpadded, mprescripts, mroot,  mrow, ms, mspace, msqrt, mstyle, msub, msubsup, msup, mtable, mtd, mtext, mtr, munder, munderover, semantics`
+`math, merror, mfrac, mi, mmultiscripts, mn, mo, mover, mpadded, mphantom, mprescripts, mroot,  mrow, ms, mspace, msqrt, mstyle, msub, msubsup, msup, mtable, mtd, mtext, mtr, munder, munderover, semantics`
 
 Attributes of MathML-core:
 `dir, displaystyle, mathbackground, mathcolor, mathsize, scriptlevel, encoding, display, linethickness, intent and arg`; on `mo` elements: `form, fence, separator, lspace, rspace, stretchy, symmetric, maxsize, minsize, largeop, movablelimits`; on `mpadded` elements: `width, height, depth, lspace, voffset`, on `mspace` elements: `width, height, depth`, on `munderover` elements `accent` and `accentunder`; on `mtd` elements `columnspan` and `rowspan`.
@@ -22,5 +22,4 @@ Moreover, the following attributes have their syntax and semantics specified in 
 The elements of MathML-core which need treatment by the sanitizers are the following:
 - `annotation` and `annotation-xml` if their `encoding` attribute is not considered of a safe type (e.g. if the encoding is `text/plain` then it could be kept). Sanitization should remove these elements.
 - `maction` should be replaced by its first child element.
-- `mphantom` should be removed.
 
