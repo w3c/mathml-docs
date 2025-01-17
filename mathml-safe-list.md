@@ -5,7 +5,6 @@ MathML-core considers all elements and attributes of MathML-core (as listed in [
 
 We recommend the [Sanitzer API](https://wicg.github.io/sanitizer-api/) to sanitize MathML by keeping all elements and attributes except the follwing:
 - any common attribute with HTML attributes for which need a sanitzation as done in HTML,
-- the `mphantom` element which should be removed,
 - the `maction`  elements which should, ideally, be replaced by its first child element, and
 - any `annotation` or `annotation-xml` element whose `encoding` attribute is of a media-type that is is either absent or is not among the trusted types or if it contains an `href` attribute, which should be removed.
 
