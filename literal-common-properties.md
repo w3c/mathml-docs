@@ -9,7 +9,7 @@ title: "literal and common core properties: details"
 
 <nav id="toc" markdown="1">
 
-# Table of Contents
+## Table of Contents
 {:.no_toc}
 
 * toc
