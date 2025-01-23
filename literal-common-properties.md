@@ -2,6 +2,8 @@
 title: "literal and common core properties: details"
 ---
 
+# literal and common core properties: details
+
 [Core properties](intent-core-properties)
 
 ------
