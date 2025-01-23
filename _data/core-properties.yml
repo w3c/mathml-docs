@@ -55,7 +55,7 @@
 - property: literal
   type: inference
   applicability: all presentation elements
-  effect: >
+  effect: |
     Assistive technology should not infer any semantics and just speak the elements with a literal interpretation.
     This includes speaking leaf content literally (e.g., `|` is spoken as "vertical bar").
     If `intent` is present on a child element, it overrides this property.
@@ -65,7 +65,7 @@
 - property: common
   type: inference
   applicability: all presentation elements
-  effect: >
+  effect: |
     Assistive technology should use the specified `common` defaults.
 
     See [common property](../literal-common-properties#common-property)
