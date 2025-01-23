@@ -1,7 +1,10 @@
 ---
-title: "_literal_ and _common_ core properties: details"
-layout: wgnote
+title: "literal and common core properties: details"
 ---
+
+[Core properties](intent-core-properties)
+
+------
 
 
 <nav id="toc" markdown="1">
