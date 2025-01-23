@@ -2,11 +2,11 @@
 title: "literal and common core properties: details"
 ---
 
-# literal and common core properties: details
-
 [Core properties](intent-core-properties)
 
 ------
+
+# literal and common core properties: details
 
 
 <nav id="toc" markdown="1">
