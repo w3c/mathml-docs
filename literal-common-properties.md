@@ -19,30 +19,41 @@ title: "literal and common core properties: details"
 
 </nav>
 
-## Defaults
+## Example Defaults
 
-The `:literal` and `:common` core properties establish a set of defaults for speaking every MathML element that MathML intent generators can assume and that AT should implement. That does not mean that the exact words are specified, only that AT chooses words that convey the default meaning. For example: `msup` is spoken as "super" or "superscript" or some similar words if that element or some ancestor includes the `:literal` property. The exact words may depend upon both the audience and the children of node. In particular, for someone who is blind, it may be important to indicate the start and end of fractions, roots, etc.
+The `:literal` and `:common` core properties establish a set of defaults for speaking every MathML element that MathML intent generators can assume and that AT should implement. That does not mean that the exact words are specified, only that AT chooses words that convey the default meaning. For example: `msup` is spoken as "super" or "superscript" or some similar words and not "power" if that element or some ancestor includes the `:literal` property.
+
+The exact words may depend upon both the audience and the children of node. Some examples for $x^2$ if msup or some ancestor has the `:literal` property:
+
+* "x super 2"
+* "x superscript 2 end superscript"
+* "superscripted expression with base x and script 2" followed by a long pause or tone
+
+For someone who is blind, it may be important to indicate the start and end of fractions, roots, etc., but for someone with dyslexia, the extra words might be "verbal noise."
+
 
 ## `literal` property
 
 The default meanings and special cases for all the MathML elements are:
+
 
 * leaf tags speak their contents. Exceptions are:
   * `ms` speaks its open/close deliminators in addition to its contents.
   * `mglyph` speaks the alt text
   * `mspace`, `malginmark`, `maligngroup`, and `none` are either silent or generate pauses
   * `msline`, indicates that it is a line
-  * [trig function names](#trig) might be expanded
+
 * `mrow` -- speaks the children
 * `mfrac` -- _arg1_ "over" _arg2_
 * `msqrt` -- "root" _arg_
-* `mroot` -- "root with" _index_ "and contents" _contents_
+* `mroot` -- "root" _index_ "of" _contents_
 * `merror` -- indicates there is an error and speaks the contents
 * `mfenced` -- should speak the same as the equivalent `mrow` notation
 * `menclose` -- should indicate the notation attributes along with the contents. For example, "box around _arg_" or "line under _arg_"
 * `msup` -- _arg1_ "superscript" _arg2_. The exceptions are when the superscript is a [pseudo-script character](https://w3c.github.io/mathml/#chars_pseudo-scripts), in which case "superscript" is _not_ spoken (e.g, $x^\prime$ is spoken "x prime"). See below for a list of pseudo-script characters.
 * `msub` -- _arg1_ "subscript" _arg2_.
-* `msubsup` -- _arg1_ "subscript" _arg2_"superscript" _arg3_. As with `msup`, exceptions are made when the superscript is a [pseudo-script character](https://w3c.github.io/mathml/#chars_pseudo-scripts).
+* `msubsup` -- _arg1_ "subscript" _arg2_"and superscript" _arg3_. As with `msup`, exceptions are made when the superscript is a [pseudo-script character](https://w3c.github.io/mathml/#chars_pseudo-scripts).
+
 * `mover` -- _arg1_ "with" _arg2_ "above". When _arg2_ is bar, hat, caret, tilde, dot (1-4 of them), acute, or grave, the speech is abbreviated to _arg1_ _arg2_ as in "x bar".
 * `munder` -- _arg1_ "with" _arg2_ "below". When _arg2_ is bar, the speech is abbreviated to _arg1_ _arg2_ as in "x underbar"
 * `munderover` -- _arg1_ "with" _arg2_ "below and" _arg3_ "above. When _arg3_ is one of the special cases for `mover`, then the speech is abbreviated to _arg1_ _arg3_ "with" _arg2_ "below" as in "x bar with cup below"
