@@ -1,12 +1,17 @@
 ---
-title: "_literal_ and _common_ core properties: details"
-layout: wgnote
+title: "literal and common core properties: details"
 ---
+
+[Core properties](intent-core-properties)
+
+------
+
+# literal and common core properties: details
 
 
 <nav id="toc" markdown="1">
 
-# Table of Contents
+## Table of Contents
 {:.no_toc}
 
 * toc
@@ -26,15 +31,18 @@ The exact words may depend upon both the audience and the children of node. Some
 
 For someone who is blind, it may be important to indicate the start and end of fractions, roots, etc., but for someone with dyslexia, the extra words might be "verbal noise."
 
+
 ## `literal` property
 
 The default meanings and special cases for all the MathML elements are:
 
-* leaf tags speak their contents including "sin" being read as "sin", not "sine". Exceptions are:
+
+* leaf tags speak their contents. Exceptions are:
   * `ms` speaks its open/close deliminators in addition to its contents.
   * `mglyph` speaks the alt text
   * `mspace`, `malginmark`, `maligngroup`, and `none` are either silent or generate pauses
   * `msline`, indicates that it is a line
+
 * `mrow` -- speaks the children
 * `mfrac` -- _arg1_ "over" _arg2_
 * `msqrt` -- "root" _arg_
@@ -45,6 +53,7 @@ The default meanings and special cases for all the MathML elements are:
 * `msup` -- _arg1_ "superscript" _arg2_. The exceptions are when the superscript is a [pseudo-script character](https://w3c.github.io/mathml/#chars_pseudo-scripts), in which case "superscript" is _not_ spoken (e.g, $x^\prime$ is spoken "x prime"). See below for a list of pseudo-script characters.
 * `msub` -- _arg1_ "subscript" _arg2_.
 * `msubsup` -- _arg1_ "subscript" _arg2_"and superscript" _arg3_. As with `msup`, exceptions are made when the superscript is a [pseudo-script character](https://w3c.github.io/mathml/#chars_pseudo-scripts).
+
 * `mover` -- _arg1_ "with" _arg2_ "above". When _arg2_ is bar, hat, caret, tilde, dot (1-4 of them), acute, or grave, the speech is abbreviated to _arg1_ _arg2_ as in "x bar".
 * `munder` -- _arg1_ "with" _arg2_ "below". When _arg2_ is bar, the speech is abbreviated to _arg1_ _arg2_ as in "x underbar"
 * `munderover` -- _arg1_ "with" _arg2_ "below and" _arg3_ "above. When _arg3_ is one of the special cases for `mover`, then the speech is abbreviated to _arg1_ _arg3_ "with" _arg2_ "below" as in "x bar with cup below"

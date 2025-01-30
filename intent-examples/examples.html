@@ -6,6 +6,7 @@
   <style>
    pre b {background-color: rgb(255 255 255 / 0.4)}
    pre:target{background-color:yellow}
+   td pre {white-space:pre-wrap}
    th[colspan] {font-size:120%;font-weight:bold;
    background-color:white;
    padding-top:.5em}
@@ -13,6 +14,7 @@
    tbody th {width:2em;}
    math{font-size:120%;margin:.2em;}
    tr>td  {border:solid thin black;vertical-align:top;}
+   td.pad {padding-top:1em;}
    div.mathcat{
    background-color:white;padding:.2em;
    margin:-.2em .1em 1em .1em;
@@ -27,7 +29,7 @@
 
   <p><a href='../'>MathML Documents Index</a></p>
 
-  <table>
+  <table width="100%">
    <colgroup>
     <col style='background-color:#FFE;min-width:12em'/>
     <!--Xcol style='background-color:#EEE;font-family: monospace;'/X-->
@@ -131,7 +133,20 @@
     <td>-3</td>
     <td>mrow mo -3</td>
    </tr>
-
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>X</mn><mo>,</mo><mn>XVI</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn intent=':roman-numeral'>X</mn><mo>,</mo><mn intent=':roman-numeral'>XVI</mn>
+     </math>
+    </td>
+    <td>\text{X},\text{XVI}</td>
+    <td>Roman Numerals</td>
+   </tr>
    <tr>
     <th colspan='6'>Super and Sub Scripts</th>
    </tr>
@@ -1887,6 +1902,22 @@
        <mo>]</mo>
       </mrow>
      </math>
+     <math display='block'>
+      <mrow intent='$m'>
+       <mo>[</mo>
+       <mtable arg='m' intent=':array'>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
     </td>
     <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
     <td>bmatrix</td>
@@ -1965,7 +1996,7 @@
      <math display='block'>
       <mrow intent='$m'>
        <mo>{</mo>
-       <mtable arg='m' intent=':equations'>
+       <mtable arg='m' intent=':system-of-equations'>
         <mtr>
          <mtd>
 	  <mi>x</mi>
@@ -1992,6 +2023,52 @@
     <td>braced system of equations</td>
    </tr>
 
+   <tr>
+    <td>
+     <math display='block'>
+      <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+      <mo>=</mo>
+      <mrow>
+       <mo>{</mo>
+       <mtable columnalign="right left" columnspacing="0" rowspacing=".2em">
+	<mtr>
+	 <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&#x2265;</mo><mn>0</mn></mtd>
+	</mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+      <mo>=</mo>
+      <mrow>
+       <mo intent=":silent">{</mo>
+       <mtable intent=":piecewise" columnalign="right left" columnspacing="0" rowspacing=".2em">
+	<mtr>
+	 <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>x</mi></mtd>
+	 <mtd><mtext>&#160;if&#160;</mtext></mtd>
+	 <mtd><mi>x</mi><mo>&#x2265;</mo><mn>0</mn></mtd>
+	</mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
+    <td>f(x)=\begin{cases}...</td>
+    <td>piecewise function definition</td>
+   </tr>
    <tr>
     <td>
      <math display='block'>
@@ -2027,7 +2104,7 @@
     </td>
     <td>
      <math display='block'>
-      <mtable intent=':equations'>
+      <mtable intent=':system-of-equations'>
        <mtr>
 	<mtd columnalign='right'>
 	 <mn>2</mn>
@@ -2127,7 +2204,7 @@
       </mtable>
      </math>
      <math display='block'>
-      <mtable intent=':equations'>
+      <mtable intent=':system-of-equations'>
        <mtr>
 	<mtd columnalign='right'>
 	 <mi>a</mi>
@@ -2307,6 +2384,74 @@
     <td>aligned derivation</td>
    </tr>
 
+   <tr>
+    <td>
+     <math display="block">
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+	<mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr>
+	<mtr><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+	<mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr>
+	<mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+	<mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr>
+	<mtr><mtd><mn>3</mn></mtd><mtd><mn>7</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+	<mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr>
+	<mtr><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+      <mo intent="matrix_product">&#x2062;</mo>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+	<mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr>
+	<mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+	<mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr>
+	<mtr><mtd><mn>3</mn></mtd><mtd><mn>7</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     \begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}
+     \begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}
+     =
+     \begin{pmatrix}1&amp;3\\3&amp;7\end{pmatrix}
+    </td>
+    <td>m*m=m</td>
+   </tr>
    
    <tr>
     <th colspan='6'>Calculus</th>
@@ -3139,6 +3284,38 @@
 
 
 
+   <tr>
+    <th colspan='6'>Units</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>1.5</mn><mi>km</mi>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn>1.5</mn><mi intent=':unit'>km</mi>
+     </math>
+    </td>
+    <td>\qty{1.5}{\kilogram}</td>
+    <td>Km units</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>2</mn><mi mathvariant='normal'>Ω</mi>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn>2</mn><mi intent=':unit' mathvariant='normal'>Ω</mi>
+     </math>
+    </td>
+    <td>\qty{2}{\ohm}</td>
+    <td>Ohm units</td>
+   </tr>
+   
    <tr>
     <th colspan='6'>Chemistry</th>
    </tr>

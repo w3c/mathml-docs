@@ -2,7 +2,9 @@ import re
 import os
 import sys
 import hashlib
-import libmathcat
+import libmathcat_py as libmathcat      # type: ignore
+
+sys.stdout.reconfigure(encoding="utf-8", newline='\n')
 
 if (len(sys.argv) != 2):
   raise Exception("no argument")
@@ -92,7 +94,7 @@ for mmltd in mmltds:
   i=i+1
   if(i % 3 == 2):
     print("<tr>")
-    print("<td>")
+    print('<td class="pad">')
     print(mmltd)
     print("</td>")
   if(i % 3 == 2   or i % 3 == 0):
@@ -110,12 +112,11 @@ for mmltd in mmltds:
       ApplyMathCAT(1,mml,True)
       mml=re.sub(r"<math intent=':common'",r"<math intent=':literal'",mml)
       ApplyMathCAT(1,mml,True)
-      mml=re.sub(r"<math intent=':literal'",r"<math intent=':chemistry'",mml)
-      ApplyMathCAT(1,mml,True)
-#      print("</td>")
+#      mml=re.sub(r"<math intent=':literal'",r"<math intent=':chemical-formula'",mml)
+#      ApplyMathCAT(1,mml,True)
     print("</td>")
   else:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
                selflink,
                mmltd)
-    print (mmltd,end="")
+    print (mmltd.replace('<td','<td class="pad"'),end="")

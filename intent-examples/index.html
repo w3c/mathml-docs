@@ -6,6 +6,7 @@
   <style>
    pre b {background-color: rgb(255 255 255 / 0.4)}
    pre:target{background-color:yellow}
+   td pre {white-space:pre-wrap}
    th[colspan] {font-size:120%;font-weight:bold;
    background-color:white;
    padding-top:.5em}
@@ -13,6 +14,7 @@
    tbody th {width:2em;}
    math{font-size:120%;margin:.2em;}
    tr>td  {border:solid thin black;vertical-align:top;}
+   td.pad {padding-top:1em;}
    div.mathcat{
    background-color:white;padding:.2em;
    margin:-.2em .1em 1em .1em;
@@ -23,11 +25,11 @@
   </style>
  </head>
  <body>
-  <h1>Intent Examples</h1><h2>MathCAT Version: 0.2.6</h2>
+  <h1>Intent Examples</h1><h2>MathCAT Version: 0.6.8-rc.2</h2>
 
   <p><a href='../'>MathML Documents Index</a></p>
 
-  <table>
+  <table width="100%">
    <colgroup>
     <col style='background-color:#FFE;min-width:12em'/>
     <col style='background-color:#EEE;font-family: monospace;'/>
@@ -46,7 +48,7 @@
     <th colspan='6' id="IDNumbers"><a class="self" href="#IDNumbers">Numbers</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mn>1,234</mn>
@@ -70,13 +72,8 @@
 </pre>
 
     <div class="mathcat">1234 plus 1234</div>
-<pre id='id-2-bc48d8fd49b7ccbf29fc01b50b4525c9'><a class='self' href='#id-2-bc48d8fd49b7ccbf29fc01b50b4525c9'>&#xa7;</a>
+<pre id='id-2-1db12e16701ae0eaf79ed08c8b5f1dc9'><a class='self' href='#id-2-1db12e16701ae0eaf79ed08c8b5f1dc9'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">1234 plus 1234</div>
-<pre id='id-2-891f46eaf67f551c0ec0355311115697'><a class='self' href='#id-2-891f46eaf67f551c0ec0355311115697'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">1234 plus 1234</div>
@@ -102,11 +99,11 @@
     <div class="mathcat">1234 plus 1234</div>
 </td>
 
-    <td>1,234+1{,}234</td>
-    <td id="IDdecimalcomma"><a class="self" href="#IDdecimalcomma">decimal comma</a></td>
+    <td class="pad">1,234+1{,}234</td>
+    <td class="pad" id="IDdecimalcomma"><a class="self" href="#IDdecimalcomma">decimal comma</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mn>1,234</mn>
@@ -134,13 +131,8 @@
 </pre>
 
     <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
-<pre id='id-2-c8f942ee797029657ca254f8fe209ca6'><a class='self' href='#id-2-c8f942ee797029657ca254f8fe209ca6'>&#xa7;</a>
+<pre id='id-2-0ec1b28bc0a73b4277fe4f32fe3b7f9f'><a class='self' href='#id-2-0ec1b28bc0a73b4277fe4f32fe3b7f9f'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
-<pre id='id-2-0a056d8416724694b50ca8dc506d6845'><a class='self' href='#id-2-0a056d8416724694b50ca8dc506d6845'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
@@ -170,11 +162,11 @@
     <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
 </td>
 
-    <td>1,234; 1,234; 1,234,000</td>
-    <td id="IDgroupingcomma"><a class="self" href="#IDgroupingcomma">grouping comma</a></td>
+    <td class="pad">1,234; 1,234; 1,234,000</td>
+    <td class="pad" id="IDgroupingcomma"><a class="self" href="#IDgroupingcomma">grouping comma</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mn>−3</mn>
@@ -194,16 +186,11 @@
 </pre>
 
     <div class="mathcat">negative 3</div>
-<pre id='id-2-6cc80318d419a20b45e9cace22731ca6'><a class='self' href='#id-2-6cc80318d419a20b45e9cace22731ca6'>&#xa7;</a>
+<pre id='id-2-7886dd67986e579e9d69ebeead0cf739'><a class='self' href='#id-2-7886dd67986e579e9d69ebeead0cf739'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">minus 3</div>
-<pre id='id-2-505e5408bf19ff7bc71d8e1bd9aadbc6'><a class='self' href='#id-2-505e5408bf19ff7bc71d8e1bd9aadbc6'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">negative 3</div>
 </td>
 <td>
 <pre id='id-0-b4cd647b24bb566ad1afdf1dc47ef97c'><a class='self' href='#id-0-b4cd647b24bb566ad1afdf1dc47ef97c'>&#xa7;</a>
@@ -215,11 +202,11 @@
     <div class="mathcat">minus 3</div>
 </td>
 
-    <td>-3</td>
-    <td id="IDmn-3"><a class="self" href="#IDmn-3">mn -3</a></td>
+    <td class="pad">-3</td>
+    <td class="pad" id="IDmn-3"><a class="self" href="#IDmn-3">mn -3</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -245,16 +232,11 @@
 </pre>
 
     <div class="mathcat">negative 3</div>
-<pre id='id-2-4e8b9f796192d34a53627718e16170fc'><a class='self' href='#id-2-4e8b9f796192d34a53627718e16170fc'>&#xa7;</a>
+<pre id='id-2-35cf29c39b72a8dfc5742f7834231b8d'><a class='self' href='#id-2-35cf29c39b72a8dfc5742f7834231b8d'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">minus 3</div>
-<pre id='id-2-56695a254835a0c75fca9ba18cacc9a2'><a class='self' href='#id-2-56695a254835a0c75fca9ba18cacc9a2'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">negative 3</div>
 </td>
 <td>
 <pre id='id-0-6884954c638246cbb17e3bfba7447dac'><a class='self' href='#id-0-6884954c638246cbb17e3bfba7447dac'>&#xa7;</a>
@@ -269,15 +251,54 @@
     <div class="mathcat">minus 3</div>
 </td>
 
-    <td>-3</td>
-    <td id="IDmrowmo-3"><a class="self" href="#IDmrowmo-3">mrow mo -3</a></td>
+    <td class="pad">-3</td>
+    <td class="pad" id="IDmrowmo-3"><a class="self" href="#IDmrowmo-3">mrow mo -3</a></td>
  </tr>
+   <tr>
+<td class="pad">
 
+     <math display='block'>
+      <mn>X</mn><mo>,</mo><mn>XVI</mn>
+     </math>
+    
+</td>
+<td>
+<pre id='id-1-639b0692de31aae1e316b0bec089777a'><a class='self' href='#id-1-639b0692de31aae1e316b0bec089777a'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mn>X&lt;/mn>&lt;mo>,&lt;/mo>&lt;mn>XVI&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">10 comma, 16</div>
+<pre id='id-2-b9b9abd4310e8587811ae535fe17494a'><a class='self' href='#id-2-b9b9abd4310e8587811ae535fe17494a'>&#xa7;</a>
+&lt;math <b>intent=':common'</b> display='block'>
+</pre>
+
+    <div class="mathcat">10 comma, 16</div>
+<pre id='id-2-f57dc81e48f141e80e2a0fa34276e218'><a class='self' href='#id-2-f57dc81e48f141e80e2a0fa34276e218'>&#xa7;</a>
+&lt;math <b>intent=':literal'</b> display='block'>
+</pre>
+
+    <div class="mathcat">x comma, XVI</div>
+</td>
+<td>
+<pre id='id-0-9eeede7a51439026c3a2b620d1e6e724'><a class='self' href='#id-0-9eeede7a51439026c3a2b620d1e6e724'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mn <b>intent=':roman-numeral'</b>>X&lt;/mn>&lt;mo>,&lt;/mo>&lt;mn <b>intent=':roman-numeral'</b>>XVI&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">10 comma, 16</div>
+</td>
+
+    <td class="pad">\text{X},\text{XVI}</td>
+    <td class="pad" id="IDRomanNumerals"><a class="self" href="#IDRomanNumerals">Roman Numerals</a></td>
+ </tr>
    <tr>
     <th colspan='6' id="IDSuperandSubScripts"><a class="self" href="#IDSuperandSubScripts">Super and Sub Scripts</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -303,16 +324,11 @@
 </pre>
 
     <div class="mathcat">x squared</div>
-<pre id='id-2-55df68a1c048222354aba343f7db97e6'><a class='self' href='#id-2-55df68a1c048222354aba343f7db97e6'>&#xa7;</a>
+<pre id='id-2-b5bf10a53222225c69893fce1baec690'><a class='self' href='#id-2-b5bf10a53222225c69893fce1baec690'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x super 2</div>
-<pre id='id-2-cd361e96167475f6c2ff093c1c7dce2b'><a class='self' href='#id-2-cd361e96167475f6c2ff093c1c7dce2b'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x squared</div>
+    <div class="mathcat">x super 2 end super</div>
 </td>
 <td>
 <pre id='id-0-02ad988c2e32a3256136933d3904ee13'><a class='self' href='#id-0-02ad988c2e32a3256136933d3904ee13'>&#xa7;</a>
@@ -327,11 +343,11 @@
     <div class="mathcat">x squared</div>
 </td>
 
-    <td>x^2</td>
-    <td id="IDsquared"><a class="self" href="#IDsquared">squared</a></td>
+    <td class="pad">x^2</td>
+    <td class="pad" id="IDsquared"><a class="self" href="#IDsquared">squared</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -357,16 +373,11 @@
 </pre>
 
     <div class="mathcat">x cubed</div>
-<pre id='id-2-d0793a14a221ec536c41c4ab285bcc3a'><a class='self' href='#id-2-d0793a14a221ec536c41c4ab285bcc3a'>&#xa7;</a>
+<pre id='id-2-0f53e677a1f651a0bcac5736a9b9a8df'><a class='self' href='#id-2-0f53e677a1f651a0bcac5736a9b9a8df'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x super 3</div>
-<pre id='id-2-589f156248800d15cca3f2c628c195da'><a class='self' href='#id-2-589f156248800d15cca3f2c628c195da'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x cubed</div>
+    <div class="mathcat">x super 3 end super</div>
 </td>
 <td>
 <pre id='id-0-fe0470f3254e18ddd8917d0291ee5027'><a class='self' href='#id-0-fe0470f3254e18ddd8917d0291ee5027'>&#xa7;</a>
@@ -381,12 +392,12 @@
     <div class="mathcat">x cubed</div>
 </td>
 
-    <td>x^3</td>
-    <td id="IDcubed"><a class="self" href="#IDcubed">cubed</a></td>
+    <td class="pad">x^3</td>
+    <td class="pad" id="IDcubed"><a class="self" href="#IDcubed">cubed</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -412,16 +423,11 @@
 </pre>
 
     <div class="mathcat">h squared</div>
-<pre id='id-2-23147f5f23f26c6eae925b529f428005'><a class='self' href='#id-2-23147f5f23f26c6eae925b529f428005'>&#xa7;</a>
+<pre id='id-2-ee4f81e9792c3a97f514705323b1454b'><a class='self' href='#id-2-ee4f81e9792c3a97f514705323b1454b'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">h super 2</div>
-<pre id='id-2-2bb604dda2990a2ffbb7cd0258f88542'><a class='self' href='#id-2-2bb604dda2990a2ffbb7cd0258f88542'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">h squared</div>
+    <div class="mathcat">h super 2 end super</div>
 </td>
 <td>
 <pre id='id-0-1a591ccfab457d69e5f7268e899fc47b'><a class='self' href='#id-0-1a591ccfab457d69e5f7268e899fc47b'>&#xa7;</a>
@@ -446,12 +452,12 @@
     <div class="mathcat">h 2</div>
 </td>
 
-    <td>\mathrm{H}^2</td>
-    <td id="ID2ndCohomology"><a class="self" href="#ID2ndCohomology">2nd Cohomology</a></td>
+    <td class="pad">\mathrm{H}^2</td>
+    <td class="pad" id="ID2ndCohomology"><a class="self" href="#ID2ndCohomology">2nd Cohomology</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -477,16 +483,11 @@
 </pre>
 
     <div class="mathcat">R 2</div>
-<pre id='id-2-ea4b34b2914d22c5d2a3d8a18e0f8d40'><a class='self' href='#id-2-ea4b34b2914d22c5d2a3d8a18e0f8d40'>&#xa7;</a>
+<pre id='id-2-04e19d6f02a614faf64c682bd7ed9731'><a class='self' href='#id-2-04e19d6f02a614faf64c682bd7ed9731'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">double-struck   r super 2</div>
-<pre id='id-2-1133a198ff36c0ed3e009405fd3f3b32'><a class='self' href='#id-2-1133a198ff36c0ed3e009405fd3f3b32'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">R 2</div>
+    <div class="mathcat">double-struck   r super 2 end super</div>
 </td>
 <td>
 <pre id='id-0-60b618105705aa3cc700a4eacf1a8a52'><a class='self' href='#id-0-60b618105705aa3cc700a4eacf1a8a52'>&#xa7;</a>
@@ -511,12 +512,12 @@
     <div class="mathcat">R 2</div>
 </td>
 
-    <td>\mathbb{R}^2</td>
-    <td id="IDR2"><a class="self" href="#IDR2">R 2</a></td>
+    <td class="pad">\mathbb{R}^2</td>
+    <td class="pad" id="IDR2"><a class="self" href="#IDR2">R 2</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -542,16 +543,11 @@
 </pre>
 
     <div class="mathcat">x to the n-th</div>
-<pre id='id-2-2db2fde08beda2a5946d1c68df75f5ca'><a class='self' href='#id-2-2db2fde08beda2a5946d1c68df75f5ca'>&#xa7;</a>
+<pre id='id-2-4fec7ffa5e6064a49ecaeaf589063927'><a class='self' href='#id-2-4fec7ffa5e6064a49ecaeaf589063927'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x super n</div>
-<pre id='id-2-d590f7085ee5ab390437225fb68c37bf'><a class='self' href='#id-2-d590f7085ee5ab390437225fb68c37bf'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x to the n-th</div>
+    <div class="mathcat">x super n end super</div>
 </td>
 <td>
 <pre id='id-0-3a746dd38e59675c3f958d5d03bedaf8'><a class='self' href='#id-0-3a746dd38e59675c3f958d5d03bedaf8'>&#xa7;</a>
@@ -566,12 +562,12 @@
     <div class="mathcat">x to the n-th</div>
 </td>
 
-    <td>x^n</td>
-    <td id="IDxtonth"><a class="self" href="#IDxtonth">x to nth</a></td>
+    <td class="pad">x^n</td>
+    <td class="pad" id="IDxtonth"><a class="self" href="#IDxtonth">x to nth</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -597,16 +593,11 @@
 </pre>
 
     <div class="mathcat">x dagger,</div>
-<pre id='id-2-239130eee13c6cc15bed8c426ff68861'><a class='self' href='#id-2-239130eee13c6cc15bed8c426ff68861'>&#xa7;</a>
+<pre id='id-2-216e9a80f7546722b5467c99b89f1eda'><a class='self' href='#id-2-216e9a80f7546722b5467c99b89f1eda'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">x dagger</div>
-<pre id='id-2-d35812685bb8811a8dc96a67db2e167a'><a class='self' href='#id-2-d35812685bb8811a8dc96a67db2e167a'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x dagger,</div>
 </td>
 <td>
 <pre id='id-0-cd0b093dca507a5fa7fa4336a366b865'><a class='self' href='#id-0-cd0b093dca507a5fa7fa4336a366b865'>&#xa7;</a>
@@ -621,12 +612,12 @@
     <div class="mathcat">x dagger</div>
 </td>
 
-    <td>x^\dagger</td>
-    <td id="IDdagger"><a class="self" href="#IDdagger">dagger</a></td>
+    <td class="pad">x^\dagger</td>
+    <td class="pad" id="IDdagger"><a class="self" href="#IDdagger">dagger</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -652,16 +643,11 @@
 </pre>
 
     <div class="mathcat">x transpose</div>
-<pre id='id-2-e340c7516da99da50d9a5e304a5d11ee'><a class='self' href='#id-2-e340c7516da99da50d9a5e304a5d11ee'>&#xa7;</a>
+<pre id='id-2-1882f9821222173508eac612d13064d5'><a class='self' href='#id-2-1882f9821222173508eac612d13064d5'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x super   t</div>
-<pre id='id-2-a7a47b1c3a8217c234a92ceae954c613'><a class='self' href='#id-2-a7a47b1c3a8217c234a92ceae954c613'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x transpose</div>
+    <div class="mathcat">x super   t end super</div>
 </td>
 <td>
 <pre id='id-0-2707a45b0912ee26d09fac948e60122c'><a class='self' href='#id-0-2707a45b0912ee26d09fac948e60122c'>&#xa7;</a>
@@ -738,12 +724,12 @@
     <div class="mathcat">transpose of, x</div>
 </td>
 
-    <td>x^{\mathrm{T}}</td>
-    <td id="IDxtranspose"><a class="self" href="#IDxtranspose">x transpose</a></td>
+    <td class="pad">x^{\mathrm{T}}</td>
+    <td class="pad" id="IDxtranspose"><a class="self" href="#IDxtranspose">x transpose</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mmultiscripts>
@@ -773,13 +759,8 @@
 </pre>
 
     <div class="mathcat">x pre superscript   t,</div>
-<pre id='id-2-9cec90c4ed01b241fca50d98ebb37a9d'><a class='self' href='#id-2-9cec90c4ed01b241fca50d98ebb37a9d'>&#xa7;</a>
+<pre id='id-2-3f1fd8d61fa2ad32e404bb1b382fe519'><a class='self' href='#id-2-3f1fd8d61fa2ad32e404bb1b382fe519'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x pre superscript   t,</div>
-<pre id='id-2-350f713a7410b07dd406ffed656f6dca'><a class='self' href='#id-2-350f713a7410b07dd406ffed656f6dca'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x pre superscript   t,</div>
@@ -843,12 +824,12 @@
     <div class="mathcat">transpose  of x</div>
 </td>
 
-    <td>{}^{\mathrm{T}}x</td>
-    <td id="IDxtransposepre-sup"><a class="self" href="#IDxtransposepre-sup">x transpose pre-sup</a></td>
+    <td class="pad">{}^{\mathrm{T}}x</td>
+    <td class="pad" id="IDxtransposepre-sup"><a class="self" href="#IDxtransposepre-sup">x transpose pre-sup</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msubsup>
@@ -876,22 +857,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x sub i j to the   t-th</div>
+    <div class="mathcat">x sub i j end subscript, to the   t-th</div>
 <pre id='id-2-e805a5c4bb36dd7e9c33c837fc40344d'><a class='self' href='#id-2-e805a5c4bb36dd7e9c33c837fc40344d'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x sub i j to the   t-th</div>
-<pre id='id-2-b9df303b3f725580c5782c0af684e8d2'><a class='self' href='#id-2-b9df303b3f725580c5782c0af684e8d2'>&#xa7;</a>
+    <div class="mathcat">x sub i j end subscript, to the   t-th</div>
+<pre id='id-2-99ca0517613a4b824988e70eaefd2b62'><a class='self' href='#id-2-99ca0517613a4b824988e70eaefd2b62'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x sub i j super   t</div>
-<pre id='id-2-6c5184208325f6ffbac893e16e5089a5'><a class='self' href='#id-2-6c5184208325f6ffbac893e16e5089a5'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x sub i j to the   t-th</div>
+    <div class="mathcat">x sub i j super   t end super</div>
 </td>
 <td>
 <pre id='id-0-1277e0e3b79ddf8b85a8794b17d73044'><a class='self' href='#id-0-1277e0e3b79ddf8b85a8794b17d73044'>&#xa7;</a>
@@ -921,7 +897,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x sub i j to the transpose</div>
+    <div class="mathcat">x sub i j end subscript, to the transpose</div>
 <pre id='id-0-4dc5e6b2ea853d5abb0821f3494a7950'><a class='self' href='#id-0-4dc5e6b2ea853d5abb0821f3494a7950'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup <b>intent='transpose(sub:infix($base, $sub))'</b>>
@@ -938,12 +914,12 @@
     <div class="mathcat">, x sub i j, transpose</div>
 </td>
 
-    <td>x_{ij}^{\mathrm{T}}</td>
-    <td id="IDxsubtranspose"><a class="self" href="#IDxsubtranspose">x sub  transpose</a></td>
+    <td class="pad">x_{ij}^{\mathrm{T}}</td>
+    <td class="pad" id="IDxsubtranspose"><a class="self" href="#IDxsubtranspose">x sub  transpose</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msup>
@@ -969,16 +945,11 @@
 </pre>
 
     <div class="mathcat">4 to the th</div>
-<pre id='id-2-514ce546ff4959b0f325a882dc91ba81'><a class='self' href='#id-2-514ce546ff4959b0f325a882dc91ba81'>&#xa7;</a>
+<pre id='id-2-2e4cf08a7a4ddd8b4c7323d92ddad6ab'><a class='self' href='#id-2-2e4cf08a7a4ddd8b4c7323d92ddad6ab'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">4 super th end super</div>
-<pre id='id-2-4039c08feea3ebae755aa7287356a979'><a class='self' href='#id-2-4039c08feea3ebae755aa7287356a979'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">4 to the th</div>
 </td>
 <td>
 <pre id='id-0-46c68ed58b1a0a09e5f46e3e0165db67'><a class='self' href='#id-0-46c68ed58b1a0a09e5f46e3e0165db67'>&#xa7;</a>
@@ -1013,12 +984,12 @@
     <div class="mathcat">4th</div>
 </td>
 
-    <td>4{\mathrm{th}</td>
-    <td id="IDordinal4th"><a class="self" href="#IDordinal4th">ordinal 4th</a></td>
+    <td class="pad">4{\mathrm{th}</td>
+    <td class="pad" id="IDordinal4th"><a class="self" href="#IDordinal4th">ordinal 4th</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1086,22 +1057,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of;   r, left white square bracket,   x right white square bracket</div>
+    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; is an element of;   r, left white square bracket,   x right white square bracket</div>
 <pre id='id-2-59897e2a15362e46d1621f7158b739e5'><a class='self' href='#id-2-59897e2a15362e46d1621f7158b739e5'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of;   r, left white square bracket,   x right white square bracket</div>
-<pre id='id-2-3e270348df570da15e54f821ccbb3594'><a class='self' href='#id-2-3e270348df570da15e54f821ccbb3594'>&#xa7;</a>
+    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; is an element of;   r, left white square bracket,   x right white square bracket</div>
+<pre id='id-2-29c1f7f0277172697c78c993b7e8ccef'><a class='self' href='#id-2-29c1f7f0277172697c78c993b7e8ccef'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">eigh is equal to; sum with n is equal to 0 below and infinity above; eigh sub n   x super n; an element of;   r, left white square bracket,   x right white square bracket</div>
-<pre id='id-2-a7ede2a95c2bbe8afb52ea61bcf7df07'><a class='self' href='#id-2-a7ede2a95c2bbe8afb52ea61bcf7df07'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of;   r, left white square bracket,   x right white square bracket</div>
+    <div class="mathcat">eigh is equal to; sum with n is equal to 0 below and infinity above; eigh sub n   x super n end super; is an element of;   r, left white square bracket,   x right white square bracket</div>
 </td>
 <td>
 <pre id='id-0-589d0d22d546a00254597ae3631907f2'><a class='self' href='#id-0-589d0d22d546a00254597ae3631907f2'>&#xa7;</a>
@@ -1137,7 +1103,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of, power series of,   r comma   x</div>
+    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; is an element of, power series of,   r comma   x</div>
 <pre id='id-0-bdeaacaf804837ec94bcb9b61d55682e'><a class='self' href='#id-0-bdeaacaf804837ec94bcb9b61d55682e'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -1172,15 +1138,15 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">eigh is equal to; the sum from 0 to infinity of; eigh sub n   x  to the n; an element of,   r  power series  over   x</div>
+    <div class="mathcat">eigh is equal to; the sum from 0 to infinity of; eigh sub n   x  to the n; is an element of,   r  power series  over   x</div>
 </td>
 
-    <td>A=\sum_0^\infty a_n X^n \in R\lBrack X \rBrack</td>
-    <td id="IDformalpowerseries"><a class="self" href="#IDformalpowerseries">formal power series</a></td>
+    <td class="pad">A=\sum_0^\infty a_n X^n \in R\lBrack X \rBrack</td>
+    <td class="pad" id="IDformalpowerseries"><a class="self" href="#IDformalpowerseries">formal power series</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1236,16 +1202,11 @@
 </pre>
 
     <div class="mathcat">sine squared of theta, plus cosine squared of theta; is equal to 1</div>
-<pre id='id-2-7e9cf2c3d2a005b7503767196f5460d4'><a class='self' href='#id-2-7e9cf2c3d2a005b7503767196f5460d4'>&#xa7;</a>
+<pre id='id-2-4b2c3968ba5cc037c6520192f00bebee'><a class='self' href='#id-2-4b2c3968ba5cc037c6520192f00bebee'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">sine super 2 of theta, plus cosine super 2 of theta; is equal to 1</div>
-<pre id='id-2-4490ef69d28c630375cc0f73cf124d2c'><a class='self' href='#id-2-4490ef69d28c630375cc0f73cf124d2c'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">sine squared of theta, plus cosine squared of theta; is equal to 1</div>
+    <div class="mathcat">sine super 2 end super of theta, plus, cosine super 2 end super of theta; is equal to 1</div>
 </td>
 <td>
 <pre id='id-0-6c259889c22899732a27c5147b38a798'><a class='self' href='#id-0-6c259889c22899732a27c5147b38a798'>&#xa7;</a>
@@ -1275,8 +1236,8 @@
     <div class="mathcat">sine squared theta, plus cosine squared theta; is equal to 1</div>
 </td>
 
-    <td>\sin^2\theta + \cos^2\theta=1</td>
-    <td id="IDsinsquaredpluscossquared"><a class="self" href="#IDsinsquaredpluscossquared">sin squared plus cos squared</a></td>
+    <td class="pad">\sin^2\theta + \cos^2\theta=1</td>
+    <td class="pad" id="IDsinsquaredpluscossquared"><a class="self" href="#IDsinsquaredpluscossquared">sin squared plus cos squared</a></td>
  </tr>
    
    <tr>
@@ -1284,7 +1245,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1318,16 +1279,11 @@
 </pre>
 
     <div class="mathcat">n choose k</div>
-<pre id='id-2-33b71ea21d690c70550824371acb571c'><a class='self' href='#id-2-33b71ea21d690c70550824371acb571c'>&#xa7;</a>
+<pre id='id-2-28fa5331018021354020bf600c110cd5'><a class='self' href='#id-2-28fa5331018021354020bf600c110cd5'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">open paren n over k, close paren</div>
-<pre id='id-2-527db2a4c343e2671b47e6f5398f11b2'><a class='self' href='#id-2-527db2a4c343e2671b47e6f5398f11b2'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">n choose k</div>
 </td>
 <td>
 <pre id='id-0-29b2d901622640e8233b07bbbfa8bd29'><a class='self' href='#id-0-29b2d901622640e8233b07bbbfa8bd29'>&#xa7;</a>
@@ -1360,11 +1316,11 @@
     <div class="mathcat">, n binomial k,</div>
 </td>
 
-    <td>\binom{n}{k}</td>
-    <td id="IDbinomnk"><a class="self" href="#IDbinomnk">binom n k</a></td>
+    <td class="pad">\binom{n}{k}</td>
+    <td class="pad" id="IDbinomnk"><a class="self" href="#IDbinomnk">binom n k</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mmultiscripts>
@@ -1392,19 +1348,14 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">c pre superscript n, subscript k</div>
+    <div class="mathcat">n choose k</div>
 <pre id='id-2-8eb40a79ed79ba26040fba13f13ffec8'><a class='self' href='#id-2-8eb40a79ed79ba26040fba13f13ffec8'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">c pre superscript n, subscript k</div>
-<pre id='id-2-bc70c1bfee5083a34dc23bc29038b964'><a class='self' href='#id-2-bc70c1bfee5083a34dc23bc29038b964'>&#xa7;</a>
+    <div class="mathcat">n choose k</div>
+<pre id='id-2-7146a9ba030524cb3f5603fd05281fea'><a class='self' href='#id-2-7146a9ba030524cb3f5603fd05281fea'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">c pre superscript n, subscript k</div>
-<pre id='id-2-2a8021284d4d11e9e6eec5442495ad03'><a class='self' href='#id-2-2a8021284d4d11e9e6eec5442495ad03'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">c pre superscript n, subscript k</div>
@@ -1440,11 +1391,11 @@
     <div class="mathcat">, n binomial k,</div>
 </td>
 
-    <td>{}^n C_k</td>
-    <td id="IDbinomsupnCsubk"><a class="self" href="#IDbinomsupnCsubk"> binom sup n C sub k</a></td>
+    <td class="pad">{}^n C_k</td>
+    <td class="pad" id="IDbinomsupnCsubk"><a class="self" href="#IDbinomsupnCsubk"> binom sup n C sub k</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msubsup>
@@ -1466,22 +1417,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">c sub k to the n-th</div>
+    <div class="mathcat">c sub k, to the n-th</div>
 <pre id='id-2-cfe9a1ad7d23e6ff8c9a09cca639d97c'><a class='self' href='#id-2-cfe9a1ad7d23e6ff8c9a09cca639d97c'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">c sub k to the n-th</div>
-<pre id='id-2-b376576c89cb3c9daf92febc9deacdb6'><a class='self' href='#id-2-b376576c89cb3c9daf92febc9deacdb6'>&#xa7;</a>
+    <div class="mathcat">c sub k, to the n-th</div>
+<pre id='id-2-02362e11bfccb577e001d0c9526a7a91'><a class='self' href='#id-2-02362e11bfccb577e001d0c9526a7a91'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">c sub k super n</div>
-<pre id='id-2-7e33c7603e36f5bf81ae103d09037c26'><a class='self' href='#id-2-7e33c7603e36f5bf81ae103d09037c26'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">c sub k to the n-th</div>
+    <div class="mathcat">c sub k super n end super</div>
 </td>
 <td>
 <pre id='id-0-77b48a7cbfcaee1c9050eb373cf80ded'><a class='self' href='#id-0-77b48a7cbfcaee1c9050eb373cf80ded'>&#xa7;</a>
@@ -1508,11 +1454,11 @@
     <div class="mathcat">, n binomial k,</div>
 </td>
 
-    <td>C^n_k</td>
-    <td id="IDbinomCsupnsubk"><a class="self" href="#IDbinomCsupnsubk"> binom C sup n sub k</a></td>
+    <td class="pad">C^n_k</td>
+    <td class="pad" id="IDbinomCsupnsubk"><a class="self" href="#IDbinomCsupnsubk"> binom C sup n sub k</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1540,22 +1486,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">c of, open paren n comma k, close paren</div>
+    <div class="mathcat">c of, open paren n comma, k, close paren</div>
 <pre id='id-2-41f03f621f805ec8dddab3a7dcbffd64'><a class='self' href='#id-2-41f03f621f805ec8dddab3a7dcbffd64'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">c of, open paren n comma k, close paren</div>
-<pre id='id-2-b75cd3a5f66e2e23673ac4b803edbeff'><a class='self' href='#id-2-b75cd3a5f66e2e23673ac4b803edbeff'>&#xa7;</a>
+    <div class="mathcat">c of, open paren n comma, k, close paren</div>
+<pre id='id-2-ec66c42f953e768fe141c5660c42a56e'><a class='self' href='#id-2-ec66c42f953e768fe141c5660c42a56e'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">c, open paren n comma k, close paren</div>
-<pre id='id-2-26224fa20c0e5afafdb7d458b2d01cf1'><a class='self' href='#id-2-26224fa20c0e5afafdb7d458b2d01cf1'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">c of, open paren n comma k, close paren</div>
+    <div class="mathcat">c, open paren n comma, k, close paren</div>
 </td>
 <td>
 <pre id='id-0-fc08276f860d410f5abfeead06576806'><a class='self' href='#id-0-fc08276f860d410f5abfeead06576806'>&#xa7;</a>
@@ -1588,11 +1529,11 @@
     <div class="mathcat">, n binomial k,</div>
 </td>
 
-    <td>C(n,k)</td>
-    <td id="IDbinomCnk"><a class="self" href="#IDbinomCnk"> binom C n k</a></td>
+    <td class="pad">C(n,k)</td>
+    <td class="pad" id="IDbinomCnk"><a class="self" href="#IDbinomCnk"> binom C n k</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mmultiscripts>
@@ -1626,16 +1567,11 @@
 </pre>
 
     <div class="mathcat">k permutations of n</div>
-<pre id='id-2-c43624c7ba12569d89af4808141bf8f1'><a class='self' href='#id-2-c43624c7ba12569d89af4808141bf8f1'>&#xa7;</a>
+<pre id='id-2-05dcef702153d204d42b688556d9f128'><a class='self' href='#id-2-05dcef702153d204d42b688556d9f128'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">p pre superscript n, subscript k</div>
-<pre id='id-2-933ebf5f46c7ca41e86e7444bb1fbd67'><a class='self' href='#id-2-933ebf5f46c7ca41e86e7444bb1fbd67'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">k permutations of n</div>
 </td>
 <td>
 <pre id='id-0-3716f4793653bd61581dbebc1b085ec7'><a class='self' href='#id-0-3716f4793653bd61581dbebc1b085ec7'>&#xa7;</a>
@@ -1685,11 +1621,11 @@
     <div class="mathcat">permutation  of k  from n,</div>
 </td>
 
-    <td>{}^n P_k</td>
-    <td id="IDpermutationssupnPsubk"><a class="self" href="#IDpermutationssupnPsubk"> permutations sup n P sub k</a></td>
+    <td class="pad">{}^n P_k</td>
+    <td class="pad" id="IDpermutationssupnPsubk"><a class="self" href="#IDpermutationssupnPsubk"> permutations sup n P sub k</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msubsup>
@@ -1717,16 +1653,11 @@
 </pre>
 
     <div class="mathcat">k permutations of n</div>
-<pre id='id-2-4bdbc5745c0f3110152e6b2a2d3f6d01'><a class='self' href='#id-2-4bdbc5745c0f3110152e6b2a2d3f6d01'>&#xa7;</a>
+<pre id='id-2-c29808fa1aca092f9c309cc3ec4c74b2'><a class='self' href='#id-2-c29808fa1aca092f9c309cc3ec4c74b2'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">p sub k super n</div>
-<pre id='id-2-ad028f685ba4fd03af20ef6776ae826d'><a class='self' href='#id-2-ad028f685ba4fd03af20ef6776ae826d'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">k permutations of n</div>
+    <div class="mathcat">p sub k super n end super</div>
 </td>
 <td>
 <pre id='id-0-0f4c881ea228eb401346b05c82c7c2ae'><a class='self' href='#id-0-0f4c881ea228eb401346b05c82c7c2ae'>&#xa7;</a>
@@ -1740,7 +1671,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">P of, n comma k</div>
+    <div class="mathcat">p of, n comma k</div>
 <pre id='id-0-f26a0037ca89d800701b56ec95eb921d'><a class='self' href='#id-0-f26a0037ca89d800701b56ec95eb921d'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup
@@ -1779,11 +1710,11 @@
     <div class="mathcat">permutation  of k  from n,</div>
 </td>
 
-    <td>P^n_k</td>
-    <td id="IDpermutationsPsupnsubk"><a class="self" href="#IDpermutationsPsupnsubk"> permutations P sup n sub k</a></td>
+    <td class="pad">P^n_k</td>
+    <td class="pad" id="IDpermutationsPsupnsubk"><a class="self" href="#IDpermutationsPsupnsubk"> permutations P sup n sub k</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1811,22 +1742,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">p of, open paren n comma k, close paren</div>
+    <div class="mathcat">p of, open paren n comma, k, close paren</div>
 <pre id='id-2-f27436b39d68a104cddcce8b5b040359'><a class='self' href='#id-2-f27436b39d68a104cddcce8b5b040359'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">p of, open paren n comma k, close paren</div>
-<pre id='id-2-2c0b9552044a4683662f71a1f6301997'><a class='self' href='#id-2-2c0b9552044a4683662f71a1f6301997'>&#xa7;</a>
+    <div class="mathcat">p of, open paren n comma, k, close paren</div>
+<pre id='id-2-dd66df6b4b8ec1f96fe695109ab68673'><a class='self' href='#id-2-dd66df6b4b8ec1f96fe695109ab68673'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">p, open paren n comma k, close paren</div>
-<pre id='id-2-aa25eada5f984a7e75d7ebad6fd3b3b3'><a class='self' href='#id-2-aa25eada5f984a7e75d7ebad6fd3b3b3'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">p of, open paren n comma k, close paren</div>
+    <div class="mathcat">p, open paren n comma, k, close paren</div>
 </td>
 <td>
 <pre id='id-0-4dbb6dd476d9234ed87e7859d3c885aa'><a class='self' href='#id-0-4dbb6dd476d9234ed87e7859d3c885aa'>&#xa7;</a>
@@ -1876,8 +1802,8 @@
     <div class="mathcat">permutation  of k  from n,</div>
 </td>
 
-    <td>P(n,k)</td>
-    <td id="IDpermutationsPnk"><a class="self" href="#IDpermutationsPnk"> permutations P n k</a></td>
+    <td class="pad">P(n,k)</td>
+    <td class="pad" id="IDpermutationsPnk"><a class="self" href="#IDpermutationsPnk"> permutations P n k</a></td>
  </tr>
 
     
@@ -1885,7 +1811,7 @@
     <th colspan='6' id="IDInfix"><a class="self" href="#IDInfix">Infix</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1913,13 +1839,8 @@
 </pre>
 
     <div class="mathcat">x is a subset of y</div>
-<pre id='id-2-ed82f5dbb256d75f865bbc3e70ca19e2'><a class='self' href='#id-2-ed82f5dbb256d75f865bbc3e70ca19e2'>&#xa7;</a>
+<pre id='id-2-06652f6e4dd4bc49e2880225fdc4c882'><a class='self' href='#id-2-06652f6e4dd4bc49e2880225fdc4c882'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x is a subset of y</div>
-<pre id='id-2-2687be24bc19e645e658f1d049cb74f4'><a class='self' href='#id-2-2687be24bc19e645e658f1d049cb74f4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x is a subset of y</div>
@@ -1949,12 +1870,12 @@
     <div class="mathcat">, x  is a subset of y,</div>
 </td>
 
-    <td>x \subset y</td>
-    <td id="IDsubset"><a class="self" href="#IDsubset">subset</a></td>
+    <td class="pad">x \subset y</td>
+    <td class="pad" id="IDsubset"><a class="self" href="#IDsubset">subset</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -1982,13 +1903,8 @@
 </pre>
 
     <div class="mathcat">x parallel y</div>
-<pre id='id-2-772617e78ce7dde2f4ef32ee70031c26'><a class='self' href='#id-2-772617e78ce7dde2f4ef32ee70031c26'>&#xa7;</a>
+<pre id='id-2-9bdd8eca9e13343210d6845f6d0a01b7'><a class='self' href='#id-2-9bdd8eca9e13343210d6845f6d0a01b7'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x parallel y</div>
-<pre id='id-2-5d85db5816dccde98e8aecc0dda84330'><a class='self' href='#id-2-5d85db5816dccde98e8aecc0dda84330'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x parallel y</div>
@@ -2040,8 +1956,8 @@
     <div class="mathcat">x  is parallel  to y</div>
 </td>
 
-    <td>x \parallel y</td>
-    <td id="IDparallel"><a class="self" href="#IDparallel"> parallel </a></td>
+    <td class="pad">x \parallel y</td>
+    <td class="pad" id="IDparallel"><a class="self" href="#IDparallel"> parallel </a></td>
  </tr>
 
   
@@ -2049,7 +1965,7 @@
     <th colspan='6' id="IDFunctions"><a class="self" href="#IDFunctions">Functions</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2083,22 +1999,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">eigh of, open paren n comma m, close paren</div>
+    <div class="mathcat">eigh of, open paren n comma, m, close paren</div>
 <pre id='id-2-4594227e3b1fd5594189f1333db9a6e3'><a class='self' href='#id-2-4594227e3b1fd5594189f1333db9a6e3'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">eigh of, open paren n comma m, close paren</div>
-<pre id='id-2-0d814129b1b0cbaef2d125e965c48998'><a class='self' href='#id-2-0d814129b1b0cbaef2d125e965c48998'>&#xa7;</a>
+    <div class="mathcat">eigh of, open paren n comma, m, close paren</div>
+<pre id='id-2-66f5ed7a0597919ad8916773754dd5ee'><a class='self' href='#id-2-66f5ed7a0597919ad8916773754dd5ee'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">eigh of, open paren n comma m, close paren</div>
-<pre id='id-2-8c4a5d1eb341f3fd4b63dd1b50e7382a'><a class='self' href='#id-2-8c4a5d1eb341f3fd4b63dd1b50e7382a'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">eigh of, open paren n comma m, close paren</div>
+    <div class="mathcat">eigh of, open paren n comma, m, close paren</div>
 </td>
 <td>
 <pre id='id-0-a92c8ca043208fdafe08a979499843cf'><a class='self' href='#id-0-a92c8ca043208fdafe08a979499843cf'>&#xa7;</a>
@@ -2134,7 +2045,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">Ackerman of, open paren n comma m, close paren</div>
+    <div class="mathcat">Ackerman of, open paren n comma, m, close paren</div>
 <pre id='id-0-6b0457c1bef2234ef847ec05c344db86'><a class='self' href='#id-0-6b0457c1bef2234ef847ec05c344db86'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow>
@@ -2151,11 +2062,11 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">eigh of, open paren n comma m, close paren</div>
+    <div class="mathcat">eigh of, open paren n comma, m, close paren</div>
 </td>
 
-    <td>A(m,n)</td>
-    <td id="IDAckermanorA"><a class="self" href="#IDAckermanorA">Ackerman or A</a></td>
+    <td class="pad">A(m,n)</td>
+    <td class="pad" id="IDAckermanorA"><a class="self" href="#IDAckermanorA">Ackerman or A</a></td>
  </tr>
       
 
@@ -2164,7 +2075,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2212,16 +2123,11 @@
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
-<pre id='id-2-a01811210ad3eba5221c36d7d4b9a94b'><a class='self' href='#id-2-a01811210ad3eba5221c36d7d4b9a94b'>&#xa7;</a>
+<pre id='id-2-da0afaa04f64a7eaaa1d71895e0360cc'><a class='self' href='#id-2-da0afaa04f64a7eaaa1d71895e0360cc'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime; open paren x close paren</div>
-<pre id='id-2-b8ebb9ef14f45b10775c454faa223be4'><a class='self' href='#id-2-b8ebb9ef14f45b10775c454faa223be4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
 </td>
 <td>
 <pre id='id-0-175ca5113cd4437872820c9f1fb78bab'><a class='self' href='#id-0-175ca5113cd4437872820c9f1fb78bab'>&#xa7;</a>
@@ -2247,12 +2153,12 @@
     <div class="mathcat">first derivative of; g function composition h, applied to x</div>
 </td>
 
-    <td>(g∘h)′(x)</td>
-    <td id="IDlowg∘h′x"><a class="self" href="#IDlowg∘h′x">low (g∘h)′(x)</a></td>
+    <td class="pad">(g∘h)′(x)</td>
+    <td class="pad" id="IDlowg∘h′x"><a class="self" href="#IDlowg∘h′x">low (g∘h)′(x)</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2292,16 +2198,11 @@
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
-<pre id='id-2-c18ab5e2fc777f407514530e3c6eb3f4'><a class='self' href='#id-2-c18ab5e2fc777f407514530e3c6eb3f4'>&#xa7;</a>
+<pre id='id-2-fdadbb43433aa86dc6057b72aa875f1a'><a class='self' href='#id-2-fdadbb43433aa86dc6057b72aa875f1a'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime; open paren x close paren</div>
-<pre id='id-2-26e612c416fd6914c3094887a1fcb1b5'><a class='self' href='#id-2-26e612c416fd6914c3094887a1fcb1b5'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
 </td>
 <td>
 <pre id='id-0-7d478bafd6d9042ed06c7956a7f6734a'><a class='self' href='#id-0-7d478bafd6d9042ed06c7956a7f6734a'>&#xa7;</a>
@@ -2323,12 +2224,12 @@
     <div class="mathcat">first derivative of; g function composition h, applied to x</div>
 </td>
 
-    <td>(g∘h)′(x)</td>
-    <td id="IDhighg∘h′x"><a class="self" href="#IDhighg∘h′x">high (g∘h)′(x)</a></td>
+    <td class="pad">(g∘h)′(x)</td>
+    <td class="pad" id="IDhighg∘h′x"><a class="self" href="#IDhighg∘h′x">high (g∘h)′(x)</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2376,16 +2277,11 @@
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
-<pre id='id-2-a01811210ad3eba5221c36d7d4b9a94b'><a class='self' href='#id-2-a01811210ad3eba5221c36d7d4b9a94b'>&#xa7;</a>
+<pre id='id-2-da0afaa04f64a7eaaa1d71895e0360cc'><a class='self' href='#id-2-da0afaa04f64a7eaaa1d71895e0360cc'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime; open paren x close paren</div>
-<pre id='id-2-b8ebb9ef14f45b10775c454faa223be4'><a class='self' href='#id-2-b8ebb9ef14f45b10775c454faa223be4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
 </td>
 <td>
 <pre id='id-0-6a4884d8fd347484aafe5e684f72e6d9'><a class='self' href='#id-0-6a4884d8fd347484aafe5e684f72e6d9'>&#xa7;</a>
@@ -2411,13 +2307,13 @@
     <div class="mathcat">apply of, apply of, first derivative comma; function composition apply g apply h, comma x</div>
 </td>
 
-    <td>(g∘h)′(x)</td>
-    <td id="IDapplyg∘h′x"><a class="self" href="#IDapplyg∘h′x">apply (g∘h)′(x)</a></td>
+    <td class="pad">(g∘h)′(x)</td>
+    <td class="pad" id="IDapplyg∘h′x"><a class="self" href="#IDapplyg∘h′x">apply (g∘h)′(x)</a></td>
  </tr>
 
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2467,16 +2363,11 @@
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime, of x</div>
-<pre id='id-2-e45fd2349e0219ad7621e3f7ed5957a7'><a class='self' href='#id-2-e45fd2349e0219ad7621e3f7ed5957a7'>&#xa7;</a>
+<pre id='id-2-d05f2764171ee1987e23e4633a9e31d4'><a class='self' href='#id-2-d05f2764171ee1987e23e4633a9e31d4'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">open paren, g composed with h, close paren prime of open paren x close paren</div>
-<pre id='id-2-969b442dce5f539525b1da765c7adcdc'><a class='self' href='#id-2-969b442dce5f539525b1da765c7adcdc'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">open paren, g composed with h, close paren prime, of x</div>
 </td>
 <td>
 <pre id='id-0-c2b20191dd349e0670f569b56619d179'><a class='self' href='#id-0-c2b20191dd349e0670f569b56619d179'>&#xa7;</a>
@@ -2503,14 +2394,14 @@
     <div class="mathcat">first derivative of, open paren, g composed with h, close paren of x</div>
 </td>
 
-    <td>(g∘h)′(x)</td>
-    <td id="IDleafg∘h′x"><a class="self" href="#IDleafg∘h′x">leaf (g∘h)′(x)</a></td>
+    <td class="pad">(g∘h)′(x)</td>
+    <td class="pad" id="IDleafg∘h′x"><a class="self" href="#IDleafg∘h′x">leaf (g∘h)′(x)</a></td>
  </tr>
 
 
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2552,16 +2443,11 @@
 </pre>
 
     <div class="mathcat">f star, of p</div>
-<pre id='id-2-cf3e439458f4f9d6ca2252888f3c80e2'><a class='self' href='#id-2-cf3e439458f4f9d6ca2252888f3c80e2'>&#xa7;</a>
+<pre id='id-2-69cdb61a7e6f5df60a4c11eb3592e9f5'><a class='self' href='#id-2-69cdb61a7e6f5df60a4c11eb3592e9f5'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">f star of open paren p close paren</div>
-<pre id='id-2-bda9ffbff771b33bab714f89127fbbca'><a class='self' href='#id-2-bda9ffbff771b33bab714f89127fbbca'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">f star, of p</div>
 </td>
 <td>
 <pre id='id-0-1a5e46e4b131e9d9971f0dfdd01ba643'><a class='self' href='#id-0-1a5e46e4b131e9d9971f0dfdd01ba643'>&#xa7;</a>
@@ -2620,8 +2506,8 @@
     <div class="mathcat">f convex conjugate, of p</div>
 </td>
 
-    <td>f^*(p)</td>
-    <td id="IDhofconvexconjugate"><a class="self" href="#IDhofconvexconjugate">hof convex conjugate</a></td>
+    <td class="pad">f^*(p)</td>
+    <td class="pad" id="IDhofconvexconjugate"><a class="self" href="#IDhofconvexconjugate">hof convex conjugate</a></td>
  </tr>
     
    <tr> 
@@ -2629,7 +2515,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2655,13 +2541,8 @@
 </pre>
 
     <div class="mathcat">🐇   x</div>
-<pre id='id-2-a6d18774581c16e063e62f06a99781d4'><a class='self' href='#id-2-a6d18774581c16e063e62f06a99781d4'>&#xa7;</a>
+<pre id='id-2-a99ba6994b29234c297bedd3761465e3'><a class='self' href='#id-2-a99ba6994b29234c297bedd3761465e3'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">🐇   x</div>
-<pre id='id-2-dee0d440a9ea3a067c05559f8b593fb4'><a class='self' href='#id-2-dee0d440a9ea3a067c05559f8b593fb4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">🐇   x</div>
@@ -2699,12 +2580,12 @@
     <div class="mathcat">x</div>
 </td>
 
-    <td>&#x1F407;  X</td>
-    <td id="IDintentonprefixmo"><a class="self" href="#IDintentonprefixmo">intent on prefix mo</a></td>
+    <td class="pad">&#x1F407;  X</td>
+    <td class="pad" id="IDintentonprefixmo"><a class="self" href="#IDintentonprefixmo">intent on prefix mo</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2730,13 +2611,8 @@
 </pre>
 
     <div class="mathcat">🐇   x</div>
-<pre id='id-2-a6d18774581c16e063e62f06a99781d4'><a class='self' href='#id-2-a6d18774581c16e063e62f06a99781d4'>&#xa7;</a>
+<pre id='id-2-a99ba6994b29234c297bedd3761465e3'><a class='self' href='#id-2-a99ba6994b29234c297bedd3761465e3'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">🐇   x</div>
-<pre id='id-2-dee0d440a9ea3a067c05559f8b593fb4'><a class='self' href='#id-2-dee0d440a9ea3a067c05559f8b593fb4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">🐇   x</div>
@@ -2795,12 +2671,12 @@
     <div class="mathcat">rabbit function applied to   x</div>
 </td>
 
-    <td>&#x1F407;  X</td>
-    <td id="IDintentonmrowofprefixmo"><a class="self" href="#IDintentonmrowofprefixmo">intent on mrow of prefix mo</a></td>
+    <td class="pad">&#x1F407;  X</td>
+    <td class="pad" id="IDintentonmrowofprefixmo"><a class="self" href="#IDintentonmrowofprefixmo">intent on mrow of prefix mo</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2828,13 +2704,8 @@
 </pre>
 
     <div class="mathcat">x cross product y</div>
-<pre id='id-2-0c0912758b4947ee16133609b4bd528e'><a class='self' href='#id-2-0c0912758b4947ee16133609b4bd528e'>&#xa7;</a>
+<pre id='id-2-a43bc22980d304e4bd07f7e0a5470e55'><a class='self' href='#id-2-a43bc22980d304e4bd07f7e0a5470e55'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x cross product y</div>
-<pre id='id-2-26cca3e744c461ab1fbfb51be2b09d8e'><a class='self' href='#id-2-26cca3e744c461ab1fbfb51be2b09d8e'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x cross product y</div>
@@ -2863,7 +2734,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">cross product of, x comma y</div>
+    <div class="mathcat">cross product</div>
 <pre id='id-0-4e8ad023b272c0be0cdc387bf288bd24'><a class='self' href='#id-0-4e8ad023b272c0be0cdc387bf288bd24'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$prod:infix($x,$y)'</b>>
@@ -2875,7 +2746,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">, x cross product y,</div>
+    <div class="mathcat">cross product</div>
 <pre id='id-0-1cfc05899388a6ecffa3afb1bcec9316'><a class='self' href='#id-0-1cfc05899388a6ecffa3afb1bcec9316'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$prod:function($x,$y)'</b>>
@@ -2887,7 +2758,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">cross product of, x comma y</div>
+    <div class="mathcat">cross product</div>
 <pre id='id-0-53b1bd23917181ba5182178764a82c27'><a class='self' href='#id-0-53b1bd23917181ba5182178764a82c27'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$prod:silent(
@@ -2900,16 +2771,16 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">vector product  of x  with y</div>
+    <div class="mathcat">cross product</div>
 </td>
 
-    <td>x \vectimes y</td>
-    <td id="IDvectimeshints"><a class="self" href="#IDvectimeshints">vectimes hints</a></td>
+    <td class="pad">x \vectimes y</td>
+    <td class="pad" id="IDvectimeshints"><a class="self" href="#IDvectimeshints">vectimes hints</a></td>
  </tr>
 
    
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -2937,13 +2808,8 @@
 </pre>
 
     <div class="mathcat">x squared plus y</div>
-<pre id='id-2-048feb1ac6e4f893c92d6b9d5c67af63'><a class='self' href='#id-2-048feb1ac6e4f893c92d6b9d5c67af63'>&#xa7;</a>
+<pre id='id-2-66ac16efef615d62ec1a5819053860fb'><a class='self' href='#id-2-66ac16efef615d62ec1a5819053860fb'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x squared plus y</div>
-<pre id='id-2-11ade2872c51617622bd9f5f0f49478e'><a class='self' href='#id-2-11ade2872c51617622bd9f5f0f49478e'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x squared plus y</div>
@@ -2973,8 +2839,8 @@
     <div class="mathcat">x foo y</div>
 </td>
 
-    <td>x \boxplus y</td>
-    <td id="IDxfoo/boxplusy"><a class="self" href="#IDxfoo/boxplusy">x  foo/boxplus y</a></td>
+    <td class="pad">x \boxplus y</td>
+    <td class="pad" id="IDxfoo/boxplusy"><a class="self" href="#IDxfoo/boxplusy">x  foo/boxplus y</a></td>
  </tr>
 
    <tr>
@@ -2982,7 +2848,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3010,16 +2876,11 @@
 </pre>
 
     <div class="mathcat">the absolute value of x,</div>
-<pre id='id-2-871ed5ca252d8234d40d5a3cb7907740'><a class='self' href='#id-2-871ed5ca252d8234d40d5a3cb7907740'>&#xa7;</a>
+<pre id='id-2-02c417d345babc4049813d98ea836346'><a class='self' href='#id-2-02c417d345babc4049813d98ea836346'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">vertical line x vertical line</div>
-<pre id='id-2-39bcccb2bdcb6b1ab4792f148cdebe86'><a class='self' href='#id-2-39bcccb2bdcb6b1ab4792f148cdebe86'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the absolute value of x,</div>
 </td>
 <td>
 <pre id='id-0-f9ed3357eeee4b9d6c9d1cccf148f471'><a class='self' href='#id-0-f9ed3357eeee4b9d6c9d1cccf148f471'>&#xa7;</a>
@@ -3035,12 +2896,12 @@
     <div class="mathcat">the absolute value of x,</div>
 </td>
 
-    <td>\lvert x\rvert</td>
-    <td id="IDvertxabs"><a class="self" href="#IDvertxabs">vert x abs</a></td>
+    <td class="pad">\lvert x\rvert</td>
+    <td class="pad" id="IDvertxabs"><a class="self" href="#IDvertxabs">vert x abs</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msub>
@@ -3074,16 +2935,11 @@
 </pre>
 
     <div class="mathcat">the absolute value of x, sub 2</div>
-<pre id='id-2-9eb3878343459f5c66b37c2f13d95648'><a class='self' href='#id-2-9eb3878343459f5c66b37c2f13d95648'>&#xa7;</a>
+<pre id='id-2-e67f31d95bc00376cdd8f78016e08e9f'><a class='self' href='#id-2-e67f31d95bc00376cdd8f78016e08e9f'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">vertical line x vertical line sub 2</div>
-<pre id='id-2-690d49118b521b74dd811ae94f23bf4d'><a class='self' href='#id-2-690d49118b521b74dd811ae94f23bf4d'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the absolute value of x, sub 2</div>
 </td>
 <td>
 <pre id='id-0-0afb544d3785eee992d32f7308dd185d'><a class='self' href='#id-0-0afb544d3785eee992d32f7308dd185d'>&#xa7;</a>
@@ -3102,12 +2958,12 @@
     <div class="mathcat">l2 norm of, x</div>
 </td>
 
-    <td>\lvert x\rvert_2</td>
-    <td id="IDl2normx"><a class="self" href="#IDl2normx">l2 norm x</a></td>
+    <td class="pad">\lvert x\rvert_2</td>
+    <td class="pad" id="IDl2normx"><a class="self" href="#IDl2normx">l2 norm x</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3135,16 +2991,11 @@
 </pre>
 
     <div class="mathcat">the determinant of   m</div>
-<pre id='id-2-84163d44315bb32b017548d8d157670c'><a class='self' href='#id-2-84163d44315bb32b017548d8d157670c'>&#xa7;</a>
+<pre id='id-2-e83e05ab8d432e549c4e0c7949946d38'><a class='self' href='#id-2-e83e05ab8d432e549c4e0c7949946d38'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">vertical line   m vertical line</div>
-<pre id='id-2-32ee7e341e09605195bc74ebe8e5dbd6'><a class='self' href='#id-2-32ee7e341e09605195bc74ebe8e5dbd6'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the determinant of   m</div>
 </td>
 <td>
 <pre id='id-0-084467a3aaf207bdc03d25343d3e942a'><a class='self' href='#id-0-084467a3aaf207bdc03d25343d3e942a'>&#xa7;</a>
@@ -3160,12 +3011,12 @@
     <div class="mathcat">the determinant of   m</div>
 </td>
 
-    <td>\lvert M\rvert</td>
-    <td id="IDvertMdeterminant"><a class="self" href="#IDvertMdeterminant">vert M determinant</a></td>
+    <td class="pad">\lvert M\rvert</td>
+    <td class="pad" id="IDvertMdeterminant"><a class="self" href="#IDvertMdeterminant">vert M determinant</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3205,22 +3056,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end determinant</div>
+    <div class="mathcat">the 2 by 2 determinant; row 1; eigh, b; row 2; c, d; end determinant</div>
 <pre id='id-2-7ecde0e0015cb23d97f34cbefb4086d0'><a class='self' href='#id-2-7ecde0e0015cb23d97f34cbefb4086d0'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end determinant</div>
-<pre id='id-2-17f6fe5360c4a5b3a45215dda6f0d8c2'><a class='self' href='#id-2-17f6fe5360c4a5b3a45215dda6f0d8c2'>&#xa7;</a>
+    <div class="mathcat">the 2 by 2 determinant; row 1; eigh, b; row 2; c, d; end determinant</div>
+<pre id='id-2-8659dad74cb2235f0ffef45dbc3c2218'><a class='self' href='#id-2-8659dad74cb2235f0ffef45dbc3c2218'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">vertical line; table with 2 rows and 2 columns; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; vertical line</div>
-<pre id='id-2-07483d00e0625cadfeb739c1daf4002b'><a class='self' href='#id-2-07483d00e0625cadfeb739c1daf4002b'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end determinant</div>
+    <div class="mathcat">vertical line; table with 2 rows and 2 columns; row 1; <br/>column 1; eigh, <br/>column 2; b; row 2; <br/>column 1; c, <br/>column 2; d; vertical line</div>
 </td>
 <td>
 <pre id='id-0-42f452b821276f28a9e7fabfcf9f5c28'><a class='self' href='#id-0-42f452b821276f28a9e7fabfcf9f5c28'>&#xa7;</a>
@@ -3242,7 +3088,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the determinant of the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end matrix end determinant</div>
+    <div class="mathcat">the determinant of the 2 by 2 matrix; row 1; eigh, b; row 2; c, d; end matrix end determinant</div>
 <pre id='id-0-07d5bf6d4bb17eb690c44022b3d7a8d2'><a class='self' href='#id-0-07d5bf6d4bb17eb690c44022b3d7a8d2'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$M'</b>>
@@ -3262,15 +3108,15 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 determinant; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d; end determinant</div>
+    <div class="mathcat">the 2 by 2 determinant; row 1; eigh, b; row 2; c, d; end determinant</div>
 </td>
 
-    <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
-    <td id="IDvertabcddeterminant"><a class="self" href="#IDvertabcddeterminant">vert abcd determinant</a></td>
+    <td class="pad">\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
+    <td class="pad" id="IDvertabcddeterminant"><a class="self" href="#IDvertabcddeterminant">vert abcd determinant</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3298,16 +3144,11 @@
 </pre>
 
     <div class="mathcat">magnitude of, x</div>
-<pre id='id-2-e91251005537e0202c1f0432a7b01a27'><a class='self' href='#id-2-e91251005537e0202c1f0432a7b01a27'>&#xa7;</a>
+<pre id='id-2-6ecc72dd8b2a4caeaf4858f1db8476e3'><a class='self' href='#id-2-6ecc72dd8b2a4caeaf4858f1db8476e3'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">double vertical line x double vertical line</div>
-<pre id='id-2-0606850805c927daf3e1c94e464d4ab8'><a class='self' href='#id-2-0606850805c927daf3e1c94e464d4ab8'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">magnitude of, x</div>
 </td>
 <td>
 <pre id='id-0-f42af00c7de4c526fdf17953ca0544c8'><a class='self' href='#id-0-f42af00c7de4c526fdf17953ca0544c8'>&#xa7;</a>
@@ -3323,12 +3164,12 @@
     <div class="mathcat">magnitude of, x</div>
 </td>
 
-    <td>\lVert x\rVert</td>
-    <td id="IDVertxmagnitude"><a class="self" href="#IDVertxmagnitude">Vert x magnitude</a></td>
+    <td class="pad">\lVert x\rVert</td>
+    <td class="pad" id="IDVertxmagnitude"><a class="self" href="#IDVertxmagnitude">Vert x magnitude</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3354,22 +3195,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">close bracket, x comma y open bracket</div>
+    <div class="mathcat">close bracket, x comma; y open bracket</div>
 <pre id='id-2-78de48554b4dc7981e8aa9c4b89c5925'><a class='self' href='#id-2-78de48554b4dc7981e8aa9c4b89c5925'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">close bracket, x comma y open bracket</div>
-<pre id='id-2-626902e2338259cfd2ea232ab7cd89f0'><a class='self' href='#id-2-626902e2338259cfd2ea232ab7cd89f0'>&#xa7;</a>
+    <div class="mathcat">close bracket, x comma; y open bracket</div>
+<pre id='id-2-334c0da6e3c494c2ba4d7fc747850ba8'><a class='self' href='#id-2-334c0da6e3c494c2ba4d7fc747850ba8'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">close bracket, x comma y open bracket</div>
-<pre id='id-2-6d7ffe05ee90d89bcb21f9d1db1f2a81'><a class='self' href='#id-2-6d7ffe05ee90d89bcb21f9d1db1f2a81'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">close bracket, x comma y open bracket</div>
+    <div class="mathcat">close bracket, x comma; y open bracket</div>
 </td>
 <td>
 <pre id='id-0-951165e80acc1d5d0ad84238e4a86344'><a class='self' href='#id-0-951165e80acc1d5d0ad84238e4a86344'>&#xa7;</a>
@@ -3387,12 +3223,12 @@
     <div class="mathcat">the open interval from x to y</div>
 </td>
 
-    <td>\mathopen] x,y\mathclose[\rVert</td>
-    <td id="IDopen-openinvertedbracket"><a class="self" href="#IDopen-openinvertedbracket">open-open inverted bracket</a></td>
+    <td class="pad">\mathopen] x,y\mathclose[\rVert</td>
+    <td class="pad" id="IDopen-openinvertedbracket"><a class="self" href="#IDopen-openinvertedbracket">open-open inverted bracket</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3418,22 +3254,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">open paren x comma y, close paren</div>
+    <div class="mathcat">open paren x comma, y, close paren</div>
 <pre id='id-2-9f1d3a3cfc8a47e639167f3c17346cbc'><a class='self' href='#id-2-9f1d3a3cfc8a47e639167f3c17346cbc'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open paren x comma y, close paren</div>
-<pre id='id-2-d1557f62f722daa7cf89c01640d2047d'><a class='self' href='#id-2-d1557f62f722daa7cf89c01640d2047d'>&#xa7;</a>
+    <div class="mathcat">open paren x comma, y, close paren</div>
+<pre id='id-2-ef8175feb8088c01a9e195b3f2d0eced'><a class='self' href='#id-2-ef8175feb8088c01a9e195b3f2d0eced'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open paren x comma y, close paren</div>
-<pre id='id-2-45815370e5a295266b70094ab4636102'><a class='self' href='#id-2-45815370e5a295266b70094ab4636102'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">open paren x comma y, close paren</div>
+    <div class="mathcat">open paren x comma, y, close paren</div>
 </td>
 <td>
 <pre id='id-0-18841687c369334d3964c5efbac3294c'><a class='self' href='#id-0-18841687c369334d3964c5efbac3294c'>&#xa7;</a>
@@ -3451,11 +3282,11 @@
     <div class="mathcat">the open interval from x to y</div>
 </td>
 
-    <td>(x,y)</td>
-    <td id="IDopen-open"><a class="self" href="#IDopen-open">open-open</a></td>
+    <td class="pad">(x,y)</td>
+    <td class="pad" id="IDopen-open"><a class="self" href="#IDopen-open">open-open</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3487,16 +3318,11 @@
 </pre>
 
     <div class="mathcat">the open closed interval from x to y</div>
-<pre id='id-2-ca1010078d03ef69bf87708189d45563'><a class='self' href='#id-2-ca1010078d03ef69bf87708189d45563'>&#xa7;</a>
+<pre id='id-2-db057b4b13fe711ac8cb27708b67772e'><a class='self' href='#id-2-db057b4b13fe711ac8cb27708b67772e'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open paren x comma y, close bracket</div>
-<pre id='id-2-42912b8c87b03e652380b972f8cfd9b7'><a class='self' href='#id-2-42912b8c87b03e652380b972f8cfd9b7'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the open closed interval from x to y</div>
+    <div class="mathcat">open paren x comma, y, close bracket</div>
 </td>
 <td>
 <pre id='id-0-40dd4e466608b4569802710840c8bfa3'><a class='self' href='#id-0-40dd4e466608b4569802710840c8bfa3'>&#xa7;</a>
@@ -3514,11 +3340,11 @@
     <div class="mathcat">the open closed interval from x to y</div>
 </td>
 
-    <td>(x,y]</td>
-    <td id="IDopen-closed"><a class="self" href="#IDopen-closed">open-closed</a></td>
+    <td class="pad">(x,y]</td>
+    <td class="pad" id="IDopen-closed"><a class="self" href="#IDopen-closed">open-closed</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3550,16 +3376,11 @@
 </pre>
 
     <div class="mathcat">the closed open interval from x to y</div>
-<pre id='id-2-51f2ab85318fd777b42002db48d1f9eb'><a class='self' href='#id-2-51f2ab85318fd777b42002db48d1f9eb'>&#xa7;</a>
+<pre id='id-2-2776eb2f2cf4fc91a1e1ee0d19504cce'><a class='self' href='#id-2-2776eb2f2cf4fc91a1e1ee0d19504cce'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open bracket x comma y, close paren</div>
-<pre id='id-2-e62f20b5d7b3ce3aad0fdf416e0aec87'><a class='self' href='#id-2-e62f20b5d7b3ce3aad0fdf416e0aec87'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the closed open interval from x to y</div>
+    <div class="mathcat">open bracket, x comma, y, close paren</div>
 </td>
 <td>
 <pre id='id-0-b1afeaecb6dd3286e4b906a7e934dba9'><a class='self' href='#id-0-b1afeaecb6dd3286e4b906a7e934dba9'>&#xa7;</a>
@@ -3577,11 +3398,11 @@
     <div class="mathcat">the closed open interval from x to y</div>
 </td>
 
-    <td>[x,y)</td>
-    <td id="IDclosed-open"><a class="self" href="#IDclosed-open">closed-open</a></td>
+    <td class="pad">[x,y)</td>
+    <td class="pad" id="IDclosed-open"><a class="self" href="#IDclosed-open">closed-open</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3613,16 +3434,11 @@
 </pre>
 
     <div class="mathcat">the closed interval from x to y</div>
-<pre id='id-2-6cb5599359cd8dc07b47aa953171e57e'><a class='self' href='#id-2-6cb5599359cd8dc07b47aa953171e57e'>&#xa7;</a>
+<pre id='id-2-1944eb7151ac254580976379d5af6c39'><a class='self' href='#id-2-1944eb7151ac254580976379d5af6c39'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open bracket x comma y, close bracket</div>
-<pre id='id-2-08738f536d9d25e8d9f9f71b2364a02d'><a class='self' href='#id-2-08738f536d9d25e8d9f9f71b2364a02d'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the closed interval from x to y</div>
+    <div class="mathcat">open bracket, x comma, y, close bracket</div>
 </td>
 <td>
 <pre id='id-0-a30dc8d43d861228bb6c248b9a2f2a97'><a class='self' href='#id-0-a30dc8d43d861228bb6c248b9a2f2a97'>&#xa7;</a>
@@ -3653,11 +3469,11 @@
     <div class="mathcat">closed interval x y,</div>
 </td>
 
-    <td>[x,y]</td>
-    <td id="IDclosed-closed"><a class="self" href="#IDclosed-closed">closed-closed</a></td>
+    <td class="pad">[x,y]</td>
+    <td class="pad" id="IDclosed-closed"><a class="self" href="#IDclosed-closed">closed-closed</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3697,13 +3513,8 @@
 </pre>
 
     <div class="mathcat">open paren, x y c d, close paren</div>
-<pre id='id-2-ebcf790ee616c35c61bd4f0b5aeeeef9'><a class='self' href='#id-2-ebcf790ee616c35c61bd4f0b5aeeeef9'>&#xa7;</a>
+<pre id='id-2-9ccee30fdf7b8489f07b8433a3f6f54f'><a class='self' href='#id-2-9ccee30fdf7b8489f07b8433a3f6f54f'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">open paren, x y c d, close paren</div>
-<pre id='id-2-bddcba8dcee36813d7690c21d4fba703'><a class='self' href='#id-2-bddcba8dcee36813d7690c21d4fba703'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">open paren, x y c d, close paren</div>
@@ -3779,15 +3590,15 @@
     <div class="mathcat">cycle x y c d,</div>
 </td>
 
-    <td>(a\,b\,c\,d)</td>
-    <td id="IDcyclethinspace"><a class="self" href="#IDcyclethinspace">cycle thin space</a></td>
+    <td class="pad">(a\,b\,c\,d)</td>
+    <td class="pad" id="IDcyclethinspace"><a class="self" href="#IDcyclethinspace">cycle thin space</a></td>
  </tr>
 
    <tr>
     <th colspan='6' id="IDTables"><a class="self" href="#IDTables">Tables</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3827,22 +3638,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+    <div class="mathcat">the 2 by 2 matrix; row 1; eigh, b; row 2; x, y; end matrix</div>
 <pre id='id-2-68331e76a98c912fbe8fdc09c15f5d92'><a class='self' href='#id-2-68331e76a98c912fbe8fdc09c15f5d92'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
-<pre id='id-2-ad902dbe0ac83a025aaa4cbd806cc650'><a class='self' href='#id-2-ad902dbe0ac83a025aaa4cbd806cc650'>&#xa7;</a>
+    <div class="mathcat">the 2 by 2 matrix; row 1; eigh, b; row 2; x, y; end matrix</div>
+<pre id='id-2-ca0fc30a704bfe42d8c860d761e39239'><a class='self' href='#id-2-ca0fc30a704bfe42d8c860d761e39239'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open bracket; table with 2 rows and 2 columns; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; close bracket</div>
-<pre id='id-2-5a8a828c5176eca9be7988560b781d95'><a class='self' href='#id-2-5a8a828c5176eca9be7988560b781d95'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+    <div class="mathcat">open bracket; table with 2 rows and 2 columns; row 1; <br/>column 1; eigh, <br/>column 2; b; row 2; <br/>column 1; x, <br/>column 2; y; close bracket</div>
 </td>
 <td>
 <pre id='id-0-59cada63c210300c874cbe6b0553ad50'><a class='self' href='#id-0-59cada63c210300c874cbe6b0553ad50'>&#xa7;</a>
@@ -3864,15 +3670,35 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+    <div class="mathcat">the 2 by 2 matrix; row 1; eigh, b; row 2; x, y; end matrix</div>
+<pre id='id-0-a2c7e4ad7047e767411f9e5511f06f02'><a class='self' href='#id-0-a2c7e4ad7047e767411f9e5511f06f02'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mrow <b>intent='$m'</b>>
+  &lt;mo>[&lt;/mo>
+  &lt;mtable <b>arg='m'</b> <b>intent=':array'</b>>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">array of, row 1; <br/>column 1; eigh, <br/>column 2; b; comma, row 2; <br/>column 1; x, <br/>column 2; y;</div>
 </td>
 
-    <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
-    <td id="IDbmatrix"><a class="self" href="#IDbmatrix">bmatrix</a></td>
+    <td class="pad">\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+    <td class="pad" id="IDbmatrix"><a class="self" href="#IDbmatrix">bmatrix</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -3912,22 +3738,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+    <div class="mathcat">the 2 by 2 matrix; row 1; eigh, b; row 2; x, y; end matrix</div>
 <pre id='id-2-2733139b565c67d8b6caa984f85f8d79'><a class='self' href='#id-2-2733139b565c67d8b6caa984f85f8d79'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
-<pre id='id-2-a45321d8953d7936c10452591d86ce4a'><a class='self' href='#id-2-a45321d8953d7936c10452591d86ce4a'>&#xa7;</a>
+    <div class="mathcat">the 2 by 2 matrix; row 1; eigh, b; row 2; x, y; end matrix</div>
+<pre id='id-2-ec6c30b47b76171e3d59f8a8d9144cb8'><a class='self' href='#id-2-ec6c30b47b76171e3d59f8a8d9144cb8'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open paren; table with 2 rows and 2 columns; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; close paren</div>
-<pre id='id-2-68c217bfcae145f96735d65c348800a3'><a class='self' href='#id-2-68c217bfcae145f96735d65c348800a3'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+    <div class="mathcat">open paren; table with 2 rows and 2 columns; row 1; <br/>column 1; eigh, <br/>column 2; b; row 2; <br/>column 1; x, <br/>column 2; y; close paren</div>
 </td>
 <td>
 <pre id='id-0-40e3a86e91d392b3bc5b43381ba09421'><a class='self' href='#id-0-40e3a86e91d392b3bc5b43381ba09421'>&#xa7;</a>
@@ -3949,15 +3770,15 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y; end matrix</div>
+    <div class="mathcat">the 2 by 2 matrix; row 1; eigh, b; row 2; x, y; end matrix</div>
 </td>
 
-    <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
-    <td id="IDpmatrix"><a class="self" href="#IDpmatrix">pmatrix</a></td>
+    <td class="pad">\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
+    <td class="pad" id="IDpmatrix"><a class="self" href="#IDpmatrix">pmatrix</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -4015,29 +3836,24 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to, 2; <br/>case 2; x minus y, is equal to, 0;</div>
+    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to 2; <br/>case 2; x minus y, is equal to 0;</div>
 <pre id='id-2-99f2251aac612198ce556edf44f7391c'><a class='self' href='#id-2-99f2251aac612198ce556edf44f7391c'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to, 2; <br/>case 2; x minus y, is equal to, 0;</div>
-<pre id='id-2-72bb9f542b411b7e3a460843fdb24705'><a class='self' href='#id-2-72bb9f542b411b7e3a460843fdb24705'>&#xa7;</a>
+    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to 2; <br/>case 2; x minus y, is equal to 0;</div>
+<pre id='id-2-72ecc9bb82ba97a406adb9edd3b4b47e'><a class='self' href='#id-2-72ecc9bb82ba97a406adb9edd3b4b47e'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">open brace; table with 2 rows and 3 columns; <br/>column 1; x plus y; <br/>column 2; is equal to; <br/>column 3; 2; <br/>column 1; x minus y; <br/>column 2; is equal to; <br/>column 3; 0;</div>
-<pre id='id-2-83a6ab69d304bf1851db09daeb04408a'><a class='self' href='#id-2-83a6ab69d304bf1851db09daeb04408a'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to, 2; <br/>case 2; x minus y, is equal to, 0;</div>
+    <div class="mathcat">open brace; table with 2 rows and 3 columns; row 1; <br/>column 1; x plus y, <br/>column 2; is equal to, <br/>column 3; 2; row 2; <br/>column 1; x minus y, <br/>column 2; is equal to, <br/>column 3; 0;</div>
 </td>
 <td>
-<pre id='id-0-3c31b433b077d391ce8c045b7b9a4400'><a class='self' href='#id-0-3c31b433b077d391ce8c045b7b9a4400'>&#xa7;</a>
+<pre id='id-0-f8d9b909735a35214663452484c309f0'><a class='self' href='#id-0-f8d9b909735a35214663452484c309f0'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='$m'</b>>
   &lt;mo>{&lt;/mo>
-  &lt;mtable <b>arg='m'</b> <b>intent=':equations'</b>>
+  &lt;mtable <b>arg='m'</b> <b>intent=':system-of-equations'</b>>
    &lt;mtr>
     &lt;mtd>
      &lt;mi>x&lt;/mi>
@@ -4061,15 +3877,103 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 equations, <br/>equation 1; x plus y, is equal to, 2; <br/>equation 2; x minus y, is equal to, 0;</div>
+    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to 2; <br/>case 2; x minus y, is equal to 0;</div>
 </td>
 
-    <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
-    <td id="IDbracedsystemofequations"><a class="self" href="#IDbracedsystemofequations">braced system of equations</a></td>
+    <td class="pad">\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
+    <td class="pad" id="IDbracedsystemofequations"><a class="self" href="#IDbracedsystemofequations">braced system of equations</a></td>
  </tr>
 
    <tr>
+<td class="pad">
+
+     <math display='block'>
+      <mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo>
+      <mo>=</mo>
+      <mrow>
+       <mo>{</mo>
+       <mtable columnalign="right left" columnspacing="0" rowspacing=".2em">
+        <mtr>
+         <mtd><mo>&#x2212;</mo><mi>x</mi></mtd>
+         <mtd><mtext>&#160;if&#160;</mtext></mtd>
+         <mtd><mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+         <mtd><mtext>&#160;if&#160;</mtext></mtd>
+         <mtd><mi>x</mi><mo>&#x2265;</mo><mn>0</mn></mtd>
+        </mtr>
+       </mtable>
+      </mrow>
+     </math>
+    
+</td>
 <td>
+<pre id='id-1-b7752e6ed7ebf6761e78c579d0c55185'><a class='self' href='#id-1-b7752e6ed7ebf6761e78c579d0c55185'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mi>f&lt;/mi>&lt;mo stretchy="false">(&lt;/mo>&lt;mi>x&lt;/mi>&lt;mo stretchy="false">)&lt;/mo>
+ &lt;mo>=&lt;/mo>
+ &lt;mrow>
+  &lt;mo>{&lt;/mo>
+  &lt;mtable columnalign="right left" columnspacing="0" rowspacing=".2em">
+   &lt;mtr>
+    &lt;mtd>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mtext>&amp;#160;if&amp;#160;&lt;/mtext>&lt;/mtd>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;lt;&lt;/mo>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mtext>&amp;#160;if&amp;#160;&lt;/mtext>&lt;/mtd>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2265;&lt;/mo>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">f of x is equal to; 2 cases, <br/>case 1; negative x  if  x is less than 0; <br/>case 2; x  if , x is greater than or equal to 0;</div>
+<pre id='id-2-1b8c8944b9253021871cc631314cd76e'><a class='self' href='#id-2-1b8c8944b9253021871cc631314cd76e'>&#xa7;</a>
+&lt;math <b>intent=':common'</b> display='block'>
+</pre>
+
+    <div class="mathcat">f of x is equal to; 2 cases, <br/>case 1; negative x  if  x is less than 0; <br/>case 2; x  if , x is greater than or equal to 0;</div>
+<pre id='id-2-05aaba246a45803007af246b32568fc9'><a class='self' href='#id-2-05aaba246a45803007af246b32568fc9'>&#xa7;</a>
+&lt;math <b>intent=':literal'</b> display='block'>
+</pre>
+
+    <div class="mathcat">f open paren x close paren; is equal to; open brace; table with 2 rows and 3 columns; row 1; <br/>column 1; minus x, <br/>column 2;  if , <br/>column 3; x is less than 0; row 2; <br/>column 1; x, <br/>column 2;  if , <br/>column 3; x is greater than or equal to 0;</div>
+</td>
+<td>
+<pre id='id-0-5efdc8a1602ce99430154b741e4c3fec'><a class='self' href='#id-0-5efdc8a1602ce99430154b741e4c3fec'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mi>f&lt;/mi>&lt;mo stretchy="false">(&lt;/mo>&lt;mi>x&lt;/mi>&lt;mo stretchy="false">)&lt;/mo>
+ &lt;mo>=&lt;/mo>
+ &lt;mrow>
+  &lt;mo intent=":silent">{&lt;/mo>
+  &lt;mtable intent=":piecewise" columnalign="right left" columnspacing="0" rowspacing=".2em">
+   &lt;mtr>
+    &lt;mtd>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mtext>&amp;#160;if&amp;#160;&lt;/mtext>&lt;/mtd>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;lt;&lt;/mo>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mtext>&amp;#160;if&amp;#160;&lt;/mtext>&lt;/mtd>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2265;&lt;/mo>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">f of x is equal to; 2 cases, <br/>case 1; negative x  if  x is less than 0; <br/>case 2; x  if  x is greater than or equal to 0;</div>
+</td>
+
+    <td class="pad">f(x)=\begin{cases}...</td>
+    <td class="pad" id="IDpiecewisefunctiondefinition"><a class="self" href="#IDpiecewisefunctiondefinition">piecewise function definition</a></td>
+ </tr>
+   <tr>
+<td class="pad">
 
      <math display='block'>
       <mtable>
@@ -4137,27 +4041,22 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 equations, <br/>equation 1; 2 x, is equal to, 1; <br/>equation 2; y, is greater than, x minus 3;</div>
+    <div class="mathcat">2 equations, <br/>equation 1; 2 x is equal to 1; <br/>equation 2; y is greater than, x minus 3;</div>
 <pre id='id-2-29c5cb8551d1bf54cf7204417a5bdf97'><a class='self' href='#id-2-29c5cb8551d1bf54cf7204417a5bdf97'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">2 equations, <br/>equation 1; 2 x, is equal to, 1; <br/>equation 2; y, is greater than, x minus 3;</div>
-<pre id='id-2-92af8f1a91c72ec9a46bb1484d1087c5'><a class='self' href='#id-2-92af8f1a91c72ec9a46bb1484d1087c5'>&#xa7;</a>
+    <div class="mathcat">2 equations, <br/>equation 1; 2 x is equal to 1; <br/>equation 2; y is greater than, x minus 3;</div>
+<pre id='id-2-08ded3ddd00ffe990648b900991e1305'><a class='self' href='#id-2-08ded3ddd00ffe990648b900991e1305'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">table with 2 rows and 3 columns; <br/>column 1; 2 x; <br/>column 2; is equal to; <br/>column 3; 1; <br/>column 1; y; <br/>column 2; is greater than; <br/>column 3; x minus 3;</div>
-<pre id='id-2-a1263425a43bc63978b1aa8564c66437'><a class='self' href='#id-2-a1263425a43bc63978b1aa8564c66437'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">2 equations, <br/>equation 1; 2 x, is equal to, 1; <br/>equation 2; y, is greater than, x minus 3;</div>
+    <div class="mathcat">table with 2 rows and 3 columns; row 1; <br/>column 1; 2 x, <br/>column 2; is equal to, <br/>column 3; 1; row 2; <br/>column 1; y, <br/>column 2; is greater than, <br/>column 3; x minus 3;</div>
 </td>
 <td>
-<pre id='id-0-dff2490ee4c13900c19dff5a5c50b931'><a class='self' href='#id-0-dff2490ee4c13900c19dff5a5c50b931'>&#xa7;</a>
+<pre id='id-0-34f18cf999cd8a7d05e035ab7c3ca389'><a class='self' href='#id-0-34f18cf999cd8a7d05e035ab7c3ca389'>&#xa7;</a>
 &lt;math display='block'>
- &lt;mtable <b>intent=':equations'</b>>
+ &lt;mtable <b>intent=':system-of-equations'</b>>
   &lt;mtr>
    &lt;mtd columnalign='right'>
     &lt;mn>2&lt;/mn>
@@ -4188,16 +4087,16 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 equations, <br/>equation 1; 2 x, is equal to, 1; <br/>equation 2; y, is greater than, x minus 3;</div>
+    <div class="mathcat">2 equations, <br/>equation 1; 2 x is equal to 1; <br/>equation 2; y is greater than, x minus 3;</div>
 </td>
 
-    <td>\begin{align}...</td>
-    <td id="IDalign1"><a class="self" href="#IDalign1">align 1</a></td>
+    <td class="pad">\begin{align}...</td>
+    <td class="pad" id="IDalign1"><a class="self" href="#IDalign1">align 1</a></td>
  </tr>
 
  
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mtable>
@@ -4263,22 +4162,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">1 equation; eigh, is equal to, b plus c minus d; plus e minus f;</div>
+    <div class="mathcat">2 equations, <br/>equation 1; eigh is equal to, b plus c minus d; <br/>equation 2; plus e minus f;</div>
 <pre id='id-2-b94ebeb8dcae6ab4af7fa54251375d9f'><a class='self' href='#id-2-b94ebeb8dcae6ab4af7fa54251375d9f'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">1 equation; eigh, is equal to, b plus c minus d; plus e minus f;</div>
-<pre id='id-2-3f2dea5b3d4622d90c3db6fa446e7f0c'><a class='self' href='#id-2-3f2dea5b3d4622d90c3db6fa446e7f0c'>&#xa7;</a>
+    <div class="mathcat">2 equations, <br/>equation 1; eigh is equal to, b plus c minus d; <br/>equation 2; plus e minus f;</div>
+<pre id='id-2-610382a5af3458b6b7cd29a914ec659a'><a class='self' href='#id-2-610382a5af3458b6b7cd29a914ec659a'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">table with 2 rows and 3 columns; <br/>column 1; eigh; <br/>column 2; is equal to; <br/>column 3; b plus c minus d; <br/>column 1; empty; <br/>column 2; empty; <br/>column 3; plus e minus f;</div>
-<pre id='id-2-c02617be5b925939f9e52ecd91a22635'><a class='self' href='#id-2-c02617be5b925939f9e52ecd91a22635'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">1 equation; eigh, is equal to, b plus c minus d; plus e minus f;</div>
+    <div class="mathcat">table with 2 rows and 3 columns; row 1; <br/>column 1; eigh, <br/>column 2; is equal to, <br/>column 3; b plus c minus d; row 2; <br/>column 1; empty, <br/>column 2; empty, <br/>column 3; plus e minus f;</div>
 </td>
 <td>
 <pre id='id-0-77c472c05ef269691bd0221fc866fc5d'><a class='self' href='#id-0-77c472c05ef269691bd0221fc866fc5d'>&#xa7;</a>
@@ -4315,10 +4209,10 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">equation <br/>column 1; eigh; <br/>column 2; is equal to; b plus c minus d     <br/>column 3; plus e minus f;</div>
-<pre id='id-0-ae2c2b6aaf7db0e5486d520af54b2a39'><a class='self' href='#id-0-ae2c2b6aaf7db0e5486d520af54b2a39'>&#xa7;</a>
+    <div class="mathcat">equation row 1; <br/>column 1; eigh, <br/>column 2; is equal to, b plus c minus d row 2;     <br/>column 3; plus e minus f;</div>
+<pre id='id-0-fe8f375cafba0d5aed5b5d0208a7d452'><a class='self' href='#id-0-fe8f375cafba0d5aed5b5d0208a7d452'>&#xa7;</a>
 &lt;math display='block'>
- &lt;mtable <b>intent=':equations'</b>>
+ &lt;mtable <b>intent=':system-of-equations'</b>>
   &lt;mtr>
    &lt;mtd columnalign='right'>
     &lt;mi>a&lt;/mi>
@@ -4348,17 +4242,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">1 equation; eigh, is equal to, b plus c minus d; plus e minus f;</div>
+    <div class="mathcat">2 equations, <br/>equation 1; eigh is equal to, b plus c minus d; <br/>equation 2; plus e minus f;</div>
 </td>
 
-    <td>\begin{aligned}... wrapped</td>
-    <td id="IDalignmentwithwrappedline"><a class="self" href="#IDalignmentwithwrappedline"> alignment with wrapped line</a></td>
+    <td class="pad">\begin{aligned}... wrapped</td>
+    <td class="pad" id="IDalignmentwithwrappedline"><a class="self" href="#IDalignmentwithwrappedline"> alignment with wrapped line</a></td>
  </tr>
 
    
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -4502,22 +4396,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">1 equation; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; less than or slanted equal to, 2 eigh b, plus b squared; is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
+    <div class="mathcat">3 equations, <br/>equation 1; open paren eigh plus b, close paren squared; is equal to; eigh squared plus 2 eigh b, plus b squared; <br/>equation 2; less than or slanted equal to; 2 eigh b, plus b squared; <br/>equation 3; is equal to; b times, open paren, 2 eigh plus b, close paren;</div>
 <pre id='id-2-2f10b83c82195a9541a468cff54f757d'><a class='self' href='#id-2-2f10b83c82195a9541a468cff54f757d'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">1 equation; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; less than or slanted equal to, 2 eigh b, plus b squared; is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
-<pre id='id-2-27cf4514a13800994f34e6637d4c289b'><a class='self' href='#id-2-27cf4514a13800994f34e6637d4c289b'>&#xa7;</a>
+    <div class="mathcat">3 equations, <br/>equation 1; open paren eigh plus b, close paren squared; is equal to; eigh squared plus 2 eigh b, plus b squared; <br/>equation 2; less than or slanted equal to; 2 eigh b, plus b squared; <br/>equation 3; is equal to; b times, open paren, 2 eigh plus b, close paren;</div>
+<pre id='id-2-edf6064264e31a5ab3632072a58479b8'><a class='self' href='#id-2-edf6064264e31a5ab3632072a58479b8'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">table with 3 rows and 3 columns; <br/>column 1; open paren eigh plus b, close paren super 2; <br/>column 2; is equal to; <br/>column 3; eigh super 2 plus 2 eigh b, plus b super 2; <br/>column 1; empty; <br/>column 2; less than or slanted equal to; <br/>column 3; 2 eigh b, plus b super 2; <br/>column 1; empty; <br/>column 2; is equal to; <br/>column 3; b, open paren, 2 eigh plus b, close paren;</div>
-<pre id='id-2-d179a80559d885e29b7fe6ae50fc1129'><a class='self' href='#id-2-d179a80559d885e29b7fe6ae50fc1129'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">1 equation; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; less than or slanted equal to, 2 eigh b, plus b squared; is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
+    <div class="mathcat">table with 3 rows and 3 columns; row 1; <br/>column 1; open paren eigh plus b, close paren super 2 end super, <br/>column 2; is equal to, <br/>column 3; eigh super 2 end super, plus 2 eigh b, plus b super 2 end super; row 2; <br/>column 1; empty, <br/>column 2; less than or slanted equal to, <br/>column 3; 2 eigh b, plus b super 2 end super; row 3; <br/>column 1; empty, <br/>column 2; is equal to, <br/>column 3; b, open paren, 2 eigh plus b, close paren;</div>
 </td>
 <td>
 <pre id='id-0-0b585d8ae1a3372e8af93d2cdcf2de29'><a class='self' href='#id-0-0b585d8ae1a3372e8af93d2cdcf2de29'>&#xa7;</a>
@@ -4591,20 +4480,138 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">derivation of, 1 line; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; empty, less than or slanted equal to, 2 eigh b, plus b squared; empty, is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
+    <div class="mathcat">derivation of, 3 lines, <br/>line 1; open paren eigh plus b, close paren squared, is equal to, eigh squared plus 2 eigh b, plus b squared; <br/>line 2; less than or slanted equal to, 2 eigh b, plus b squared; <br/>line 3; is equal to, b times, open paren, 2 eigh plus b, close paren;</div>
 </td>
 
-    <td>\begin{align}...</td>
-    <td id="IDalignedderivation"><a class="self" href="#IDalignedderivation">aligned derivation</a></td>
+    <td class="pad">\begin{align}...</td>
+    <td class="pad" id="IDalignedderivation"><a class="self" href="#IDalignedderivation">aligned derivation</a></td>
  </tr>
 
+   <tr>
+<td class="pad">
+
+     <math display="block">
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+        <mtr><mtd><mn>1</mn></mtd><mtd><mn>2</mn></mtd></mtr>
+        <mtr><mtd><mn>3</mn></mtd><mtd><mn>4</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+        <mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr>
+        <mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+      <mo>=</mo>
+      <mrow>
+       <mo>(</mo>
+       <mtable>
+        <mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr>
+        <mtr><mtd><mn>3</mn></mtd><mtd><mn>7</mn></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre id='id-1-28ef655fa0165bb26147da05d0eed0bb'><a class='self' href='#id-1-28ef655fa0165bb26147da05d0eed0bb'>&#xa7;</a>
+&lt;math display="block">
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mn>3&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>4&lt;/mn>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mo>=&lt;/mo>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>3&lt;/mn>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mn>3&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>7&lt;/mn>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">the 2 by 2 matrix; row 1; 1, 2; row 2; 3, 4; end matrix; times, the 2 by 2 matrix; row 1; 1, 1; row 2; 0, 1; end matrix; is equal to; the 2 by 2 matrix; row 1; 1, 3; row 2; 3, 7; end matrix</div>
+<pre id='id-2-bcd0767b6495235eac0abf791c605a50'><a class='self' href='#id-2-bcd0767b6495235eac0abf791c605a50'>&#xa7;</a>
+&lt;math <b>intent=':common'</b> display="block">
+</pre>
+
+    <div class="mathcat">the 2 by 2 matrix; row 1; 1, 2; row 2; 3, 4; end matrix; times, the 2 by 2 matrix; row 1; 1, 1; row 2; 0, 1; end matrix; is equal to; the 2 by 2 matrix; row 1; 1, 3; row 2; 3, 7; end matrix</div>
+<pre id='id-2-08e42c7525e4f91cecad87b08f2644c0'><a class='self' href='#id-2-08e42c7525e4f91cecad87b08f2644c0'>&#xa7;</a>
+&lt;math <b>intent=':literal'</b> display="block">
+</pre>
+
+    <div class="mathcat">open paren; table with 2 rows and 2 columns; row 1; <br/>column 1; 1, <br/>column 2; 2; row 2; <br/>column 1; 3, <br/>column 2; 4; close paren; times; open paren; table with 2 rows and 2 columns; row 1; <br/>column 1; 1, <br/>column 2; 1; row 2; <br/>column 1; 0, <br/>column 2; 1; close paren; is equal to; open paren; table with 2 rows and 2 columns; row 1; <br/>column 1; 1, <br/>column 2; 3; row 2; <br/>column 1; 3, <br/>column 2; 7; close paren</div>
+</td>
+<td>
+<pre id='id-0-56e303410f36a2dec123cfb48e7bbdeb'><a class='self' href='#id-0-56e303410f36a2dec123cfb48e7bbdeb'>&#xa7;</a>
+&lt;math display="block">
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mn>3&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>4&lt;/mn>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mo intent="matrix_product">&amp;#x2062;&lt;/mo>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mo>=&lt;/mo>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mn>1&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>3&lt;/mn>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mn>3&lt;/mn>&lt;/mtd>&lt;mtd>&lt;mn>7&lt;/mn>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">the 2 by 2 matrix; row 1; 1, 2; row 2; 3, 4; end matrix; matrix product; the 2 by 2 matrix; row 1; 1, 1; row 2; 0, 1; end matrix; is equal to; the 2 by 2 matrix; row 1; 1, 3; row 2; 3, 7; end matrix</div>
+</td>
+
+    <td class="pad">
+     \begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}
+     \begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix}
+     =
+     \begin{pmatrix}1&amp;3\\3&amp;7\end{pmatrix}
+    </td>
+    <td class="pad" id="IDm*m=m"><a class="self" href="#IDm*m=m">m*m=m</a></td>
+ </tr>
    
    <tr>
     <th colspan='6' id="IDCalculus"><a class="self" href="#IDCalculus">Calculus</a></th>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mover>
@@ -4630,16 +4637,11 @@
 </pre>
 
     <div class="mathcat">x dot,</div>
-<pre id='id-2-f79262b0b264e8a1e409789fe464ea32'><a class='self' href='#id-2-f79262b0b264e8a1e409789fe464ea32'>&#xa7;</a>
+<pre id='id-2-7474c514d0f1bca3138942d5e0145d20'><a class='self' href='#id-2-7474c514d0f1bca3138942d5e0145d20'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">x dot</div>
-<pre id='id-2-b27dbb5074e0550bd169f69ffcab1b30'><a class='self' href='#id-2-b27dbb5074e0550bd169f69ffcab1b30'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x dot,</div>
 </td>
 <td>
 <pre id='id-0-39d12e94ac6b03d176f58c0d48996c75'><a class='self' href='#id-0-39d12e94ac6b03d176f58c0d48996c75'>&#xa7;</a>
@@ -4674,11 +4676,11 @@
     <div class="mathcat">, x dot</div>
 </td>
 
-    <td>\dot{x}</td>
-    <td id="IDdotx"><a class="self" href="#IDdotx">dot x</a></td>
+    <td class="pad">\dot{x}</td>
+    <td class="pad" id="IDdotx"><a class="self" href="#IDdotx">dot x</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mover>
@@ -4704,16 +4706,11 @@
 </pre>
 
     <div class="mathcat">x double dot,</div>
-<pre id='id-2-14229fc64ea66264ce8e73cae64478ba'><a class='self' href='#id-2-14229fc64ea66264ce8e73cae64478ba'>&#xa7;</a>
+<pre id='id-2-e05be09211a7a2638569d83b9d8c6411'><a class='self' href='#id-2-e05be09211a7a2638569d83b9d8c6411'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">x double dot</div>
-<pre id='id-2-ef8bd8a27b433581d2b6ad8a3d361533'><a class='self' href='#id-2-ef8bd8a27b433581d2b6ad8a3d361533'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x double dot,</div>
 </td>
 <td>
 <pre id='id-0-d64d35df40e77a119d445ef5629fe5ff'><a class='self' href='#id-0-d64d35df40e77a119d445ef5629fe5ff'>&#xa7;</a>
@@ -4748,12 +4745,12 @@
     <div class="mathcat">, x dot dot</div>
 </td>
 
-    <td>\ddot{x}</td>
-    <td id="IDddotx"><a class="self" href="#IDddotx">ddot x</a></td>
+    <td class="pad">\ddot{x}</td>
+    <td class="pad" id="IDddotx"><a class="self" href="#IDddotx">ddot x</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -4779,16 +4776,11 @@
 </pre>
 
     <div class="mathcat">fraction, d x, over, d t, end fraction;</div>
-<pre id='id-2-939b04860c35cd6a2ca99621efb0a509'><a class='self' href='#id-2-939b04860c35cd6a2ca99621efb0a509'>&#xa7;</a>
+<pre id='id-2-be6c4b07ec065eaa0f84c91ba65944f9'><a class='self' href='#id-2-be6c4b07ec065eaa0f84c91ba65944f9'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">start, d x, over, d t, end over;</div>
-<pre id='id-2-ab7f6acdd0fee65e981294c537a731ed'><a class='self' href='#id-2-ab7f6acdd0fee65e981294c537a731ed'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">fraction, d x, over, d t, end fraction;</div>
 </td>
 <td>
 <pre id='id-0-51622a958cb8b5fd5390bb84c9f5486c'><a class='self' href='#id-0-51622a958cb8b5fd5390bb84c9f5486c'>&#xa7;</a>
@@ -4825,12 +4817,12 @@
     <div class="mathcat">d x  by  d t</div>
 </td>
 
-    <td>\frac{dx}{dt}</td>
-    <td id="IDdxbydt"><a class="self" href="#IDdxbydt">dx by dt</a></td>
+    <td class="pad">\frac{dx}{dt}</td>
+    <td class="pad" id="IDdxbydt"><a class="self" href="#IDdxbydt">dx by dt</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -4874,16 +4866,11 @@
 </pre>
 
     <div class="mathcat">fraction, d over, d t, end fraction; f of t</div>
-<pre id='id-2-861482abf78981181ebff9dd267327e9'><a class='self' href='#id-2-861482abf78981181ebff9dd267327e9'>&#xa7;</a>
+<pre id='id-2-d1ae3ece83ee240e3ccddc34c27d52cb'><a class='self' href='#id-2-d1ae3ece83ee240e3ccddc34c27d52cb'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">start, d over, d t, end over; f of open paren t close paren</div>
-<pre id='id-2-43f74b95621cff1a004b2bfc2c6f79a3'><a class='self' href='#id-2-43f74b95621cff1a004b2bfc2c6f79a3'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">fraction, d over, d t, end fraction; f of t</div>
 </td>
 <td>
 <pre id='id-0-9f95208a0a8ba7e5860051ced0ee22df'><a class='self' href='#id-0-9f95208a0a8ba7e5860051ced0ee22df'>&#xa7;</a>
@@ -4927,12 +4914,12 @@
     <div class="mathcat">derivative  of f of t  with respect to t,</div>
 </td>
 
-    <td>\frac{d}{dt}f(t)</td>
-    <td id="IDdbydtfoft"><a class="self" href="#IDdbydtfoft">d by dt f of t</a></td>
+    <td class="pad">\frac{d}{dt}f(t)</td>
+    <td class="pad" id="IDdbydtfoft"><a class="self" href="#IDdbydtfoft">d by dt f of t</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -4980,16 +4967,11 @@
 </pre>
 
     <div class="mathcat">fraction, d squared x, over, d t squared, end fraction;</div>
-<pre id='id-2-9af3f46a93e34d006626e7fd5486da13'><a class='self' href='#id-2-9af3f46a93e34d006626e7fd5486da13'>&#xa7;</a>
+<pre id='id-2-c37abcbf80fd0fa2f6b230d112665553'><a class='self' href='#id-2-c37abcbf80fd0fa2f6b230d112665553'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">start, d super 2 x, over, d t super 2, end over;</div>
-<pre id='id-2-ed1a3bddbec8f5ba8c99344b5347777f'><a class='self' href='#id-2-ed1a3bddbec8f5ba8c99344b5347777f'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">fraction, d squared x, over, d t squared, end fraction;</div>
+    <div class="mathcat">start, d super 2 end super x, over, d t super 2 end super, end over;</div>
 </td>
 <td>
 <pre id='id-0-9c5eec168db60555e1bf894552dc35b8'><a class='self' href='#id-0-9c5eec168db60555e1bf894552dc35b8'>&#xa7;</a>
@@ -5059,12 +5041,12 @@
     <div class="mathcat">d  2 x  by  d t  squared</div>
 </td>
 
-    <td>\frac{d^2x}{dt^2}</td>
-    <td id="IDdx2bydt2"><a class="self" href="#IDdx2bydt2">dx2 by dt2</a></td>
+    <td class="pad">\frac{d^2x}{dt^2}</td>
+    <td class="pad" id="IDdx2bydt2"><a class="self" href="#IDdx2bydt2">dx2 by dt2</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -5118,16 +5100,11 @@
 </pre>
 
     <div class="mathcat">fraction, partial derivative squared f, over, partial derivative x, partial derivative y, end fraction;</div>
-<pre id='id-2-4524b97e4561f652203f2107900a5f90'><a class='self' href='#id-2-4524b97e4561f652203f2107900a5f90'>&#xa7;</a>
+<pre id='id-2-a76f834e518758cbb4d3ec3fb89bc1f8'><a class='self' href='#id-2-a76f834e518758cbb4d3ec3fb89bc1f8'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">start, partial derivative super 2 f, over, partial derivative x, partial derivative y, end over;</div>
-<pre id='id-2-f8858c9f055bc4715e610f5b9a5f9e7f'><a class='self' href='#id-2-f8858c9f055bc4715e610f5b9a5f9e7f'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">fraction, partial derivative squared f, over, partial derivative x, partial derivative y, end fraction;</div>
+    <div class="mathcat">start, partial derivative super 2 end super f, over, partial derivative x, partial derivative y, end over;</div>
 </td>
 <td>
 <pre id='id-0-e147bc4202faa415783a9ee0542fda3c'><a class='self' href='#id-0-e147bc4202faa415783a9ee0542fda3c'>&#xa7;</a>
@@ -5182,12 +5159,12 @@
     <div class="mathcat">partial second derivative  of f  with respect to x  and y,</div>
 </td>
 
-    <td>\frac{\partial^2 f}{\partial x \partial y}</td>
-    <td id="IDpartialdfbydxdy"><a class="self" href="#IDpartialdfbydxdy">partial df by dx dy</a></td>
+    <td class="pad">\frac{\partial^2 f}{\partial x \partial y}</td>
+    <td class="pad" id="IDpartialdfbydxdy"><a class="self" href="#IDpartialdfbydxdy">partial df by dx dy</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mo>&#x222B;</mo>
@@ -5229,16 +5206,11 @@
 </pre>
 
     <div class="mathcat">the integral of f of x d x</div>
-<pre id='id-2-5ccc5217de78d34817de33cf546ac023'><a class='self' href='#id-2-5ccc5217de78d34817de33cf546ac023'>&#xa7;</a>
+<pre id='id-2-5e1d8f4afdd4d3601ddf61c2b7a12808'><a class='self' href='#id-2-5e1d8f4afdd4d3601ddf61c2b7a12808'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">the integral of f of open paren x close paren; d x</div>
-<pre id='id-2-86e9c422f0b132ebe45ba5354551ae8b'><a class='self' href='#id-2-86e9c422f0b132ebe45ba5354551ae8b'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the integral of f of x d x</div>
 </td>
 <td>
 <pre id='id-0-091870152a451765138b38f4a0457136'><a class='self' href='#id-0-091870152a451765138b38f4a0457136'>&#xa7;</a>
@@ -5261,12 +5233,12 @@
     <div class="mathcat">the integral of f of x d x</div>
 </td>
 
-    <td>\int f(x) dx</td>
-    <td id="IDintfxdx"><a class="self" href="#IDintfxdx">int f(x) dx</a></td>
+    <td class="pad">\int f(x) dx</td>
+    <td class="pad" id="IDintfxdx"><a class="self" href="#IDintfxdx">int f(x) dx</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -5304,16 +5276,11 @@
 </pre>
 
     <div class="mathcat">the integral from 0 to 1 of, x squared d x</div>
-<pre id='id-2-25812f80d56825bc83467d7e3b1e235b'><a class='self' href='#id-2-25812f80d56825bc83467d7e3b1e235b'>&#xa7;</a>
+<pre id='id-2-92b7076c3e33dfc43e2e56bb165f6c09'><a class='self' href='#id-2-92b7076c3e33dfc43e2e56bb165f6c09'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">integral sub 0 super 1, x super 2 d x</div>
-<pre id='id-2-b66e2cebc6c6b355edf35d959a80a718'><a class='self' href='#id-2-b66e2cebc6c6b355edf35d959a80a718'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the integral from 0 to 1 of, x squared d x</div>
+    <div class="mathcat">integral sub 0 super 1 end super; x super 2 end super d x</div>
 </td>
 <td>
 <pre id='id-0-05433277f3761cb0780a5e07b7001ce6'><a class='self' href='#id-0-05433277f3761cb0780a5e07b7001ce6'>&#xa7;</a>
@@ -5334,11 +5301,11 @@
     <div class="mathcat">the integral from 0 to 1 of, x squared d x</div>
 </td>
 
-    <td>\int_0^1 x^2 dx</td>   
-    <td id="IDdefint0to1xsquared"><a class="self" href="#IDdefint0to1xsquared">defint 0 to 1 x squared</a></td>
+    <td class="pad">\int_0^1 x^2 dx</td>   
+    <td class="pad" id="IDdefint0to1xsquared"><a class="self" href="#IDdefint0to1xsquared">defint 0 to 1 x squared</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block' mathbackground='yellow'>
       <mrow>
@@ -5378,16 +5345,11 @@
 </pre>
 
     <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
-<pre id='id-2-04ee4cd877af52ca18c2118bb5025e94'><a class='self' href='#id-2-04ee4cd877af52ca18c2118bb5025e94'>&#xa7;</a>
+<pre id='id-2-4dd8fb52535eac758fd85442222c8e4f'><a class='self' href='#id-2-4dd8fb52535eac758fd85442222c8e4f'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block' mathbackground='yellow'>
 </pre>
 
-    <div class="mathcat">open bracket 2 x close bracket sub 0 super 1</div>
-<pre id='id-2-e0cdb088cbb8c1746cd7aa05f27e5fa5'><a class='self' href='#id-2-e0cdb088cbb8c1746cd7aa05f27e5fa5'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block' mathbackground='yellow'>
-</pre>
-
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">open bracket 2 x close bracket sub 0 super 1 end super</div>
 </td>
 <td>
 <pre id='id-0-e14b9a0a4dcee3797c8f5b1b20e1b016'><a class='self' href='#id-0-e14b9a0a4dcee3797c8f5b1b20e1b016'>&#xa7;</a>
@@ -5409,11 +5371,11 @@
     <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
 </td>
 
-    <td>[2x]_0^1</td>
-    <td id="IDevaluate2xat1and0bracket"><a class="self" href="#IDevaluate2xat1and0bracket">evaluate 2x at 1 and 0 bracket</a></td>
+    <td class="pad">[2x]_0^1</td>
+    <td class="pad" id="IDevaluate2xat1and0bracket"><a class="self" href="#IDevaluate2xat1and0bracket">evaluate 2x at 1 and 0 bracket</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block' mathbackground='yellow'>
       <msubsup>
@@ -5453,16 +5415,11 @@
 </pre>
 
     <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
-<pre id='id-2-7a393c9dd9b4c467334c94dbff5f19c3'><a class='self' href='#id-2-7a393c9dd9b4c467334c94dbff5f19c3'>&#xa7;</a>
+<pre id='id-2-bae28490bd1e10ecc3c173fc9806ead1'><a class='self' href='#id-2-bae28490bd1e10ecc3c173fc9806ead1'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block' mathbackground='yellow'>
 </pre>
 
-    <div class="mathcat">open bracket 2 x close bracket sub 0 super 1</div>
-<pre id='id-2-e1c3f37a3f026764d2dbff0f273914ea'><a class='self' href='#id-2-e1c3f37a3f026764d2dbff0f273914ea'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block' mathbackground='yellow'>
-</pre>
-
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">open bracket 2 x close bracket sub 0 super 1 end super</div>
 </td>
 <td>
 <pre id='id-0-66d1c8662e0e6eb33f97e1705ccc530a'><a class='self' href='#id-0-66d1c8662e0e6eb33f97e1705ccc530a'>&#xa7;</a>
@@ -5484,11 +5441,11 @@
     <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
 </td>
 
-    <td>[2x]_0^1</td>
-    <td id="IDevaluate2xat1and0bracketexpressioninbase"><a class="self" href="#IDevaluate2xat1and0bracketexpressioninbase">evaluate 2x at 1 and 0 bracket expression in base </a></td>
+    <td class="pad">[2x]_0^1</td>
+    <td class="pad" id="IDevaluate2xat1and0bracketexpressioninbase"><a class="self" href="#IDevaluate2xat1and0bracketexpressioninbase">evaluate 2x at 1 and 0 bracket expression in base </a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block' mathbackground='yellow'>
       <mrow>
@@ -5526,16 +5483,11 @@
 </pre>
 
     <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
-<pre id='id-2-dc5913097513f4689524fe8e6c1c7635'><a class='self' href='#id-2-dc5913097513f4689524fe8e6c1c7635'>&#xa7;</a>
+<pre id='id-2-85b87dc63cfb72506b0b072d27a9ee8e'><a class='self' href='#id-2-85b87dc63cfb72506b0b072d27a9ee8e'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block' mathbackground='yellow'>
 </pre>
 
-    <div class="mathcat">2 x, vertical line sub 0 super 1</div>
-<pre id='id-2-9e2fc0b85b34e43390d4fac39a4eb80b'><a class='self' href='#id-2-9e2fc0b85b34e43390d4fac39a4eb80b'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block' mathbackground='yellow'>
-</pre>
-
-    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x, vertical line sub 0 super 1 end super</div>
 </td>
 <td>
 <pre id='id-0-44a4ece0b62620a4b34cc8d5ea46b962'><a class='self' href='#id-0-44a4ece0b62620a4b34cc8d5ea46b962'>&#xa7;</a>
@@ -5556,11 +5508,11 @@
     <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 </td>
 
-    <td>2x|_0^1</td>
-    <td id="IDevaluate2xat1and0verticalbar"><a class="self" href="#IDevaluate2xat1and0verticalbar">evaluate 2x at 1 and 0 vertical bar</a></td>
+    <td class="pad">2x|_0^1</td>
+    <td class="pad" id="IDevaluate2xat1and0verticalbar"><a class="self" href="#IDevaluate2xat1and0verticalbar">evaluate 2x at 1 and 0 vertical bar</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block' mathbackground='yellow'>
       <msubsup>
@@ -5592,22 +5544,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
+    <div class="mathcat">2 x vertical line sub 0, to the first</div>
 <pre id='id-2-063efd6863d50abb8b38bce5b5d5672e'><a class='self' href='#id-2-063efd6863d50abb8b38bce5b5d5672e'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block' mathbackground='yellow'>
 </pre>
 
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
-<pre id='id-2-fc88e8409ffdc16f26a97d21a85cf04c'><a class='self' href='#id-2-fc88e8409ffdc16f26a97d21a85cf04c'>&#xa7;</a>
+    <div class="mathcat">2 x vertical line sub 0, to the first</div>
+<pre id='id-2-8b4f575774dec19a276060b11903c409'><a class='self' href='#id-2-8b4f575774dec19a276060b11903c409'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block' mathbackground='yellow'>
 </pre>
 
-    <div class="mathcat">2 x vertical line sub 0 super 1</div>
-<pre id='id-2-8c7abe9162ef9848f9b4d1678d31e119'><a class='self' href='#id-2-8c7abe9162ef9848f9b4d1678d31e119'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block' mathbackground='yellow'>
-</pre>
-
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
+    <div class="mathcat">2 x vertical line sub 0 super 1 end super</div>
 </td>
 <td>
 <pre id='id-0-45e01aeb7c9e8099e62faa3045feac8a'><a class='self' href='#id-0-45e01aeb7c9e8099e62faa3045feac8a'>&#xa7;</a>
@@ -5625,14 +5572,14 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
+    <div class="mathcat">2 x vertical line sub 0, to the first</div>
 </td>
 
-    <td>2x|_0^1</td>
-    <td id="IDevaluate2xat1and0verticalbarexpressioninbase"><a class="self" href="#IDevaluate2xat1and0verticalbarexpressioninbase">evaluate 2x at 1 and 0 vertical bar expression in base</a></td>
+    <td class="pad">2x|_0^1</td>
+    <td class="pad" id="IDevaluate2xat1and0verticalbarexpressioninbase"><a class="self" href="#IDevaluate2xat1and0verticalbarexpressioninbase">evaluate 2x at 1 and 0 vertical bar expression in base</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <msub>
@@ -5674,16 +5621,11 @@
 </pre>
 
     <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
-<pre id='id-2-67235cab1fbe855775b1708f34992516'><a class='self' href='#id-2-67235cab1fbe855775b1708f34992516'>&#xa7;</a>
+<pre id='id-2-3eb7a41d8e732edfba7ee32a63b38274'><a class='self' href='#id-2-3eb7a41d8e732edfba7ee32a63b38274'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">contour integral sub   c, 1 over z, d z</div>
-<pre id='id-2-f4a7cdd10a9ab6a432dcc812b207b29d'><a class='self' href='#id-2-f4a7cdd10a9ab6a432dcc812b207b29d'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
 </td>
 <td>
 <pre id='id-0-efd88c256f1b8171db8cec3617f850b0'><a class='self' href='#id-0-efd88c256f1b8171db8cec3617f850b0'>&#xa7;</a>
@@ -5706,8 +5648,8 @@
     <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
 </td>
 
-    <td>\oint \frac{1}{z} dz</td>
-    <td id="IDoint1overzdz"><a class="self" href="#IDoint1overzdz">oint 1 over z dz</a></td>
+    <td class="pad">\oint \frac{1}{z} dz</td>
+    <td class="pad" id="IDoint1overzdz"><a class="self" href="#IDoint1overzdz">oint 1 over z dz</a></td>
  </tr>
 
 
@@ -5718,7 +5660,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -5774,16 +5716,11 @@
 </pre>
 
     <div class="mathcat">v dot, ** 2, plus w dot, ** 2</div>
-<pre id='id-2-314778fc4c26c81faff254e8f1920a28'><a class='self' href='#id-2-314778fc4c26c81faff254e8f1920a28'>&#xa7;</a>
+<pre id='id-2-bb119d58f5b5c4663d8b5ba809333ded'><a class='self' href='#id-2-bb119d58f5b5c4663d8b5ba809333ded'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">v dot ** 2 plus w dot ** 2</div>
-<pre id='id-2-a559bf1209f38918ad6a37a684a0c42b'><a class='self' href='#id-2-a559bf1209f38918ad6a37a684a0c42b'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">v dot, ** 2, plus w dot, ** 2</div>
 </td>
 <td>
 <pre id='id-0-11d4ff268a13a3f5c1bdf2d9db98adf2'><a class='self' href='#id-0-11d4ff268a13a3f5c1bdf2d9db98adf2'>&#xa7;</a>
@@ -5813,8 +5750,8 @@
     <div class="mathcat">first deriv of, v squared, plus first deriv of, w squared</div>
 </td>
 
-    <td>\dot{v}**2+\dot{w}**2</td>
-    <td id="IDNFCvdotandwdot"><a class="self" href="#IDNFCvdotandwdot"> NFC v dot and w dot</a></td>
+    <td class="pad">\dot{v}**2+\dot{w}**2</td>
+    <td class="pad" id="IDNFCvdotandwdot"><a class="self" href="#IDNFCvdotandwdot"> NFC v dot and w dot</a></td>
  </tr>
  
    <tr>
@@ -5822,7 +5759,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mi>x</mi>
@@ -5842,13 +5779,8 @@
 </pre>
 
     <div class="mathcat">x</div>
-<pre id='id-2-187cfebc376c74ad737f5951792dc3b2'><a class='self' href='#id-2-187cfebc376c74ad737f5951792dc3b2'>&#xa7;</a>
+<pre id='id-2-f1bbec439ddfdc7492dbe8902bce98ee'><a class='self' href='#id-2-f1bbec439ddfdc7492dbe8902bce98ee'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x</div>
-<pre id='id-2-f9722bb47962c95213623fd5d093a7ea'><a class='self' href='#id-2-f9722bb47962c95213623fd5d093a7ea'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x</div>
@@ -5863,12 +5795,12 @@
     <div class="mathcat">the variable x</div>
 </td>
 
-    <td>x</td>
-    <td id="IDxwithstring"><a class="self" href="#IDxwithstring">x with string</a></td>
+    <td class="pad">x</td>
+    <td class="pad" id="IDxwithstring"><a class="self" href="#IDxwithstring">x with string</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -5898,16 +5830,11 @@
 </pre>
 
     <div class="mathcat">eigh plus b factorial</div>
-<pre id='id-2-59334b42948d1aa90bceeba8cc562b9d'><a class='self' href='#id-2-59334b42948d1aa90bceeba8cc562b9d'>&#xa7;</a>
+<pre id='id-2-2a647c266d74c25ebe6ab75ed1d6d780'><a class='self' href='#id-2-2a647c266d74c25ebe6ab75ed1d6d780'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">eigh plus b exclamation point</div>
-<pre id='id-2-509028ffe4fd9978fa827496c2f1795c'><a class='self' href='#id-2-509028ffe4fd9978fa827496c2f1795c'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">eigh plus b factorial</div>
 </td>
 <td>
 <pre id='id-0-19d3553f6e7367e0e1e83a2c383270a1'><a class='self' href='#id-0-19d3553f6e7367e0e1e83a2c383270a1'>&#xa7;</a>
@@ -5921,15 +5848,15 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">plus of, eigh factorial of, b</div>
+    <div class="mathcat">plus eigh factorial of, b</div>
 </td>
 
-    <td>a+b!</td>
-    <td id="IDaplusbfactorialunaryplusintent"><a class="self" href="#IDaplusbfactorialunaryplusintent">a plus b factorial unary plus intent</a></td>
+    <td class="pad">a+b!</td>
+    <td class="pad" id="IDaplusbfactorialunaryplusintent"><a class="self" href="#IDaplusbfactorialunaryplusintent">a plus b factorial unary plus intent</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -5957,13 +5884,8 @@
 </pre>
 
     <div class="mathcat">eigh plus b</div>
-<pre id='id-2-6f2a53bdd3891e0bd8ab681795cbe035'><a class='self' href='#id-2-6f2a53bdd3891e0bd8ab681795cbe035'>&#xa7;</a>
+<pre id='id-2-4fe2cebd698986ee3a0a5fd7668ec47b'><a class='self' href='#id-2-4fe2cebd698986ee3a0a5fd7668ec47b'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">eigh plus b</div>
-<pre id='id-2-b117adf94d38715da6d0f7c6f241f099'><a class='self' href='#id-2-b117adf94d38715da6d0f7c6f241f099'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">eigh plus b</div>
@@ -5982,12 +5904,12 @@
     <div class="mathcat">bar eigh b</div>
 </td>
 
-    <td>a+b</td>
-    <td id="IDPropertiesonargref"><a class="self" href="#IDPropertiesonargref">Properties on argref</a></td>
+    <td class="pad">a+b</td>
+    <td class="pad" id="IDPropertiesonargref"><a class="self" href="#IDPropertiesonargref">Properties on argref</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -6017,13 +5939,8 @@
 </pre>
 
     <div class="mathcat">r, left angle bracket   x right angle bracket</div>
-<pre id='id-2-03fb66a346a9b76ff03f1bff33ac2489'><a class='self' href='#id-2-03fb66a346a9b76ff03f1bff33ac2489'>&#xa7;</a>
+<pre id='id-2-fffcd469844017827ab85585d6f7ac69'><a class='self' href='#id-2-fffcd469844017827ab85585d6f7ac69'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">r, left angle bracket   x right angle bracket</div>
-<pre id='id-2-605ed06998afbb4867f35ff40b4d9be4'><a class='self' href='#id-2-605ed06998afbb4867f35ff40b4d9be4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">r, left angle bracket   x right angle bracket</div>
@@ -6067,12 +5984,12 @@
     <div class="mathcat">free   r  algebra on   x</div>
 </td>
 
-    <td>R\langle X\rangle</td>
-    <td id="IDfreer-algebraonx"><a class="self" href="#IDfreer-algebraonx">free r-algebra on x</a></td>
+    <td class="pad">R\langle X\rangle</td>
+    <td class="pad" id="IDfreer-algebraonx"><a class="self" href="#IDfreer-algebraonx">free r-algebra on x</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -6110,16 +6027,11 @@
 </pre>
 
     <div class="mathcat">x plus; 2, the absolute value of y minus z, end absolute value,</div>
-<pre id='id-2-b9cd51a0abfa966fda1d7b14629e50f3'><a class='self' href='#id-2-b9cd51a0abfa966fda1d7b14629e50f3'>&#xa7;</a>
+<pre id='id-2-a1f28c6da3cd3bfd8dfcac1df6f1d60d'><a class='self' href='#id-2-a1f28c6da3cd3bfd8dfcac1df6f1d60d'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">x plus, 2, vertical line y minus z, vertical line</div>
-<pre id='id-2-b797cea976ca6cafe1ae990048d94204'><a class='self' href='#id-2-b797cea976ca6cafe1ae990048d94204'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x plus; 2, the absolute value of y minus z, end absolute value,</div>
 </td>
 <td>
 <pre id='id-0-0f1585692692954a3bcf66086065c33a'><a class='self' href='#id-0-0f1585692692954a3bcf66086065c33a'>&#xa7;</a>
@@ -6172,8 +6084,8 @@
     <div class="mathcat">x plus; 2, the absolute value of y minus z, end absolute value,</div>
 </td>
 
-    <td>x+2\lvert y-z\rvert</td>
-    <td id="IDxplus2timestheabsolute-valueofyminusz"><a class="self" href="#IDxplus2timestheabsolute-valueofyminusz">x plus 2 times the absolute-value of y minus z</a></td>
+    <td class="pad">x+2\lvert y-z\rvert</td>
+    <td class="pad" id="IDxplus2timestheabsolute-valueofyminusz"><a class="self" href="#IDxplus2timestheabsolute-valueofyminusz">x plus 2 times the absolute-value of y minus z</a></td>
  </tr>
    
    
@@ -6183,7 +6095,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -6209,13 +6121,8 @@
 </pre>
 
     <div class="mathcat">log   x</div>
-<pre id='id-2-51f39ad9b5527c635f3e74785b8f2b68'><a class='self' href='#id-2-51f39ad9b5527c635f3e74785b8f2b68'>&#xa7;</a>
+<pre id='id-2-2fed3cc1bcf26a3def2de2e208d4c028'><a class='self' href='#id-2-2fed3cc1bcf26a3def2de2e208d4c028'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">log   x</div>
-<pre id='id-2-504609d82f247f9e424e412d164e931b'><a class='self' href='#id-2-504609d82f247f9e424e412d164e931b'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">log   x</div>
@@ -6236,7 +6143,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">log of,   x</div>
+    <div class="mathcat">log of,   x,</div>
 <pre id='id-0-065c5fa61518420b283b6f2f3527777f'><a class='self' href='#id-0-065c5fa61518420b283b6f2f3527777f'>&#xa7;</a>
 &lt;math display='block'>
  &lt;mrow <b>intent='log&amp;#x28;&amp;#x24;x)'</b>>
@@ -6249,8 +6156,8 @@
     <div class="mathcat">log of,   y</div>
 </td>
 
-    <td>\log x</td>
-    <td id="IDNCRx28andx24"><a class="self" href="#IDNCRx28andx24">NCR x28 and x24</a></td>
+    <td class="pad">\log x</td>
+    <td class="pad" id="IDNCRx28andx24"><a class="self" href="#IDNCRx28andx24">NCR x28 and x24</a></td>
  </tr>
    
    <tr>
@@ -6258,7 +6165,7 @@
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mi>x</mi>
@@ -6276,22 +6183,17 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x plus a  bold word</div>
+    <div class="mathcat">x plus a bold word</div>
 <pre id='id-2-88d393c7e96c3ae7e6c38cc50cbc0781'><a class='self' href='#id-2-88d393c7e96c3ae7e6c38cc50cbc0781'>&#xa7;</a>
 &lt;math <b>intent=':common'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x plus a  bold word</div>
-<pre id='id-2-4000d6f6f5f1c0757d2ed3909128a334'><a class='self' href='#id-2-4000d6f6f5f1c0757d2ed3909128a334'>&#xa7;</a>
+    <div class="mathcat">x plus a bold word</div>
+<pre id='id-2-1d0095067ce13d9c73bc5caf81791499'><a class='self' href='#id-2-1d0095067ce13d9c73bc5caf81791499'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
-    <div class="mathcat">x plus a  bold word</div>
-<pre id='id-2-8030d5e5f14696ff94fa4733fbfcf53a'><a class='self' href='#id-2-8030d5e5f14696ff94fa4733fbfcf53a'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x plus a  bold word</div>
+    <div class="mathcat">x plus a bold word</div>
 </td>
 <td>
 <pre id='id-0-948db560550797b598744fe6a2aff2c2'><a class='self' href='#id-0-948db560550797b598744fe6a2aff2c2'>&#xa7;</a>
@@ -6302,21 +6204,105 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x plus a  bold word</div>
+    <div class="mathcat">x plus a bold word</div>
 </td>
 
-    <td>x+\text{a \textbf{bold} word</td>
-    <td id="IDnestedhtmlb"><a class="self" href="#IDnestedhtmlb">nested html b</a></td>
+    <td class="pad">x+\text{a \textbf{bold} word</td>
+    <td class="pad" id="IDnestedhtmlb"><a class="self" href="#IDnestedhtmlb">nested html b</a></td>
  </tr>
 
 
 
 
+   <tr>
+    <th colspan='6' id="IDUnits"><a class="self" href="#IDUnits">Units</a></th>
+ </tr>
+   <tr>
+<td class="pad">
+
+     <math display='block'>
+      <mn>1.5</mn><mi>km</mi>
+     </math>
+    
+</td>
+<td>
+<pre id='id-1-55cc0a980cf52ca9a03f8fdde0c00c67'><a class='self' href='#id-1-55cc0a980cf52ca9a03f8fdde0c00c67'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mn>1.5&lt;/mn>&lt;mi>km&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1.5 km</div>
+<pre id='id-2-1bc50bc6a39a353099330a3c4f9e135a'><a class='self' href='#id-2-1bc50bc6a39a353099330a3c4f9e135a'>&#xa7;</a>
+&lt;math <b>intent=':common'</b> display='block'>
+</pre>
+
+    <div class="mathcat">1.5 km</div>
+<pre id='id-2-6fc3850edb061e17eafb0564b35727ad'><a class='self' href='#id-2-6fc3850edb061e17eafb0564b35727ad'>&#xa7;</a>
+&lt;math <b>intent=':literal'</b> display='block'>
+</pre>
+
+    <div class="mathcat">1.5 km</div>
+</td>
+<td>
+<pre id='id-0-b1b5889aed9d244c6d6fd37572339420'><a class='self' href='#id-0-b1b5889aed9d244c6d6fd37572339420'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mn>1.5&lt;/mn>&lt;mi <b>intent=':unit'</b>>km&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1.5 kilo-metres</div>
+</td>
+
+    <td class="pad">\qty{1.5}{\kilogram}</td>
+    <td class="pad" id="IDKmunits"><a class="self" href="#IDKmunits">Km units</a></td>
+ </tr>
+   <tr>
+<td class="pad">
+
+     <math display='block'>
+      <mn>2</mn><mi mathvariant='normal'>Ω</mi>
+     </math>
+    
+</td>
+<td>
+<pre id='id-1-860bb946b217b67844e6b6eaec7653a2'><a class='self' href='#id-1-860bb946b217b67844e6b6eaec7653a2'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mn>2&lt;/mn>&lt;mi mathvariant='normal'>Ω&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">2   omega</div>
+<pre id='id-2-054950caed229cdb29457db2871ade27'><a class='self' href='#id-2-054950caed229cdb29457db2871ade27'>&#xa7;</a>
+&lt;math <b>intent=':common'</b> display='block'>
+</pre>
+
+    <div class="mathcat">2   omega</div>
+<pre id='id-2-c46d99b20ddd6a2848e5d1d51b3c104d'><a class='self' href='#id-2-c46d99b20ddd6a2848e5d1d51b3c104d'>&#xa7;</a>
+&lt;math <b>intent=':literal'</b> display='block'>
+</pre>
+
+    <div class="mathcat">2   omega</div>
+</td>
+<td>
+<pre id='id-0-465c4e7b7583d920f1a0beef48f99a54'><a class='self' href='#id-0-465c4e7b7583d920f1a0beef48f99a54'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;mn>2&lt;/mn>&lt;mi <b>intent=':unit'</b> mathvariant='normal'>Ω&lt;/mi>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">2 ohms</div>
+</td>
+
+    <td class="pad">\qty{2}{\ohm}</td>
+    <td class="pad" id="IDOhmunits"><a class="self" href="#IDOhmunits">Ohm units</a></td>
+ </tr>
+   
    <tr>
     <th colspan='6' id="IDChemistry"><a class="self" href="#IDChemistry">Chemistry</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -6350,16 +6336,11 @@
 </pre>
 
     <div class="mathcat">h, subscript 2;   o,</div>
-<pre id='id-2-e1f687d7f8c0c6f0f7f63ce769205dab'><a class='self' href='#id-2-e1f687d7f8c0c6f0f7f63ce769205dab'>&#xa7;</a>
+<pre id='id-2-27be7432feeb68449b2f335bf9a3d356'><a class='self' href='#id-2-27be7432feeb68449b2f335bf9a3d356'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">h subscript 2   o</div>
-<pre id='id-2-44ce214f46f18323e269727e86a2d488'><a class='self' href='#id-2-44ce214f46f18323e269727e86a2d488'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">h, subscript 2;   o,</div>
 </td>
 <td>
 <pre id='id-0-2be5f20778912dd4979dc7cc1969aa04'><a class='self' href='#id-0-2be5f20778912dd4979dc7cc1969aa04'>&#xa7;</a>
@@ -6378,12 +6359,12 @@
     <div class="mathcat">h, subscript 2;   o,</div>
 </td>
 
-    <td>\ce{H20}</td>
-    <td id="IDH20"><a class="self" href="#IDH20">H20</a></td>
+    <td class="pad">\ce{H20}</td>
+    <td class="pad" id="IDH20"><a class="self" href="#IDH20">H20</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -6467,16 +6448,11 @@
 </pre>
 
     <div class="mathcat">2,   h, subscript 2;   o; reacts to form; 2   h, subscript 2; plus   o, subscript 2,</div>
-<pre id='id-2-8dfadec13ddecd4e402421f5d8726e0e'><a class='self' href='#id-2-8dfadec13ddecd4e402421f5d8726e0e'>&#xa7;</a>
+<pre id='id-2-91e0c7c7fbea7e9ea7546e808a7dce6e'><a class='self' href='#id-2-91e0c7c7fbea7e9ea7546e808a7dce6e'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">2   h subscript 2   o; long rightwards arrow; 2   h subscript 2, plus   o subscript 2</div>
-<pre id='id-2-e0702a942ebe92a6363147c321170451'><a class='self' href='#id-2-e0702a942ebe92a6363147c321170451'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">2,   h, subscript 2;   o; reacts to form; 2   h, subscript 2; plus   o, subscript 2,</div>
 </td>
 <td>
 <pre id='id-0-f0d49362c6dcd837422d34a9feb643d9'><a class='self' href='#id-0-f0d49362c6dcd837422d34a9feb643d9'>&#xa7;</a>
@@ -6520,8 +6496,8 @@
     <div class="mathcat">2,   h, subscript 2;   o; reacts to form; 2   h, subscript 2; plus   o, subscript 2,</div>
 </td>
 
-    <td>\ce{2 H2O → 2 H2 + O2}</td>
-    <td id="ID2H2O→2H2+O"><a class="self" href="#ID2H2O→2H2+O">2 H2O → 2 H2 + O</a></td>
+    <td class="pad">\ce{2 H2O → 2 H2 + O2}</td>
+    <td class="pad" id="ID2H2O→2H2+O"><a class="self" href="#ID2H2O→2H2+O">2 H2O → 2 H2 + O</a></td>
  </tr>
 
    
@@ -6529,7 +6505,7 @@
     <th colspan='6' id="IDUnexpectedarity"><a class="self" href="#IDUnexpectedarity">Unexpected arity</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -6555,13 +6531,8 @@
 </pre>
 
     <div class="mathcat">x over y,</div>
-<pre id='id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+<pre id='id-2-34bdcf88cc31a1204c9b2458d69491bc'><a class='self' href='#id-2-34bdcf88cc31a1204c9b2458d69491bc'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x over y,</div>
-<pre id='id-2-b32f6dc66dea5bf87d2115548bf24415'><a class='self' href='#id-2-b32f6dc66dea5bf87d2115548bf24415'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x over y,</div>
@@ -6579,11 +6550,11 @@
     <div class="mathcat">divides</div>
 </td>
 
-    <td> - </td>
-    <td id="ID0-arydivides"><a class="self" href="#ID0-arydivides">0-ary divides</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="ID0-arydivides"><a class="self" href="#ID0-arydivides">0-ary divides</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -6609,13 +6580,8 @@
 </pre>
 
     <div class="mathcat">x over y,</div>
-<pre id='id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+<pre id='id-2-34bdcf88cc31a1204c9b2458d69491bc'><a class='self' href='#id-2-34bdcf88cc31a1204c9b2458d69491bc'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x over y,</div>
-<pre id='id-2-b32f6dc66dea5bf87d2115548bf24415'><a class='self' href='#id-2-b32f6dc66dea5bf87d2115548bf24415'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x over y,</div>
@@ -6633,11 +6599,11 @@
     <div class="mathcat">divides of, z</div>
 </td>
 
-    <td> - </td>
-    <td id="ID1-arydivides"><a class="self" href="#ID1-arydivides">1-ary divides</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="ID1-arydivides"><a class="self" href="#ID1-arydivides">1-ary divides</a></td>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -6663,13 +6629,8 @@
 </pre>
 
     <div class="mathcat">x over y,</div>
-<pre id='id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+<pre id='id-2-34bdcf88cc31a1204c9b2458d69491bc'><a class='self' href='#id-2-34bdcf88cc31a1204c9b2458d69491bc'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x over y,</div>
-<pre id='id-2-b32f6dc66dea5bf87d2115548bf24415'><a class='self' href='#id-2-b32f6dc66dea5bf87d2115548bf24415'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x over y,</div>
@@ -6687,12 +6648,12 @@
     <div class="mathcat">divides of, w comma x comma y</div>
 </td>
 
-    <td> - </td>
-    <td id="ID3-arydivides"><a class="self" href="#ID3-arydivides">3-ary divides</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="ID3-arydivides"><a class="self" href="#ID3-arydivides">3-ary divides</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mover>
@@ -6718,16 +6679,11 @@
 </pre>
 
     <div class="mathcat">vector   x</div>
-<pre id='id-2-2344855baf8a86c3b4c277ec4a53b2e3'><a class='self' href='#id-2-2344855baf8a86c3b4c277ec4a53b2e3'>&#xa7;</a>
+<pre id='id-2-32fc1f42809c22e5ecf117dcf775127b'><a class='self' href='#id-2-32fc1f42809c22e5ecf117dcf775127b'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">x right arrow</div>
-<pre id='id-2-4996e12863352b4debe04eccde982b32'><a class='self' href='#id-2-4996e12863352b4debe04eccde982b32'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">vector   x</div>
 </td>
 <td>
 <pre id='id-0-f4f08f87cf4ea95d8826cf3bea74ce3d'><a class='self' href='#id-0-f4f08f87cf4ea95d8826cf3bea74ce3d'>&#xa7;</a>
@@ -6742,8 +6698,8 @@
     <div class="mathcat">ray of,   x</div>
 </td>
 
-    <td> - </td>
-    <td id="ID1-aryray"><a class="self" href="#ID1-aryray">1-ary ray</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="ID1-aryray"><a class="self" href="#ID1-aryray">1-ary ray</a></td>
  </tr>
 
    
@@ -6751,7 +6707,7 @@
     <th colspan='6' id="IDContentMathML"><a class="self" href="#IDContentMathML">Content MathML</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <apply>
@@ -6779,14 +6735,8 @@
 
     <div class="mathcat"><span class='error' title='&apos;apply&apos; is not a valid MathML element
 '>problem with SetMathML</span></div>
-<pre id='id-2-b51ba16539e7dd7cb01ba50180cdbef6'><a class='self' href='#id-2-b51ba16539e7dd7cb01ba50180cdbef6'>&#xa7;</a>
+<pre id='id-2-885afc2fd13a35ae96a331a85c182509'><a class='self' href='#id-2-885afc2fd13a35ae96a331a85c182509'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat"><span class='error' title='&apos;apply&apos; is not a valid MathML element
-'>problem with SetMathML</span></div>
-<pre id='id-2-358b1ab4574c6378734d9d9fe0dd28c2'><a class='self' href='#id-2-358b1ab4574c6378734d9d9fe0dd28c2'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat"><span class='error' title='&apos;apply&apos; is not a valid MathML element
@@ -6806,8 +6756,8 @@
 '>problem with SetMathML</span></div>
 </td>
 
-    <td>\sin x</td>
-    <td id="IDcontentmathmlsinx"><a class="self" href="#IDcontentmathmlsinx">content mathml sin x</a></td>
+    <td class="pad">\sin x</td>
+    <td class="pad" id="IDcontentmathmlsinx"><a class="self" href="#IDcontentmathmlsinx">content mathml sin x</a></td>
  </tr>
 
    
@@ -6815,7 +6765,7 @@
     <th colspan='6' id="IDIntentGrammarErrors"><a class="self" href="#IDIntentGrammarErrors">Intent Grammar Errors</a></th>
  </tr>
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mfrac>
@@ -6841,13 +6791,8 @@
 </pre>
 
     <div class="mathcat">x over y,</div>
-<pre id='id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'><a class='self' href='#id-2-4b68ed6e6c4ea5ec0666ad83568d73a5'>&#xa7;</a>
+<pre id='id-2-34bdcf88cc31a1204c9b2458d69491bc'><a class='self' href='#id-2-34bdcf88cc31a1204c9b2458d69491bc'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x over y,</div>
-<pre id='id-2-b32f6dc66dea5bf87d2115548bf24415'><a class='self' href='#id-2-b32f6dc66dea5bf87d2115548bf24415'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x over y,</div>
@@ -6864,54 +6809,57 @@
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mfrac id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mi intent=&apos;hmm)(&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
     &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mfrac>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "default" for "mfrac".
 Replacement
-[intent:  name: fraction
+[intent: name: fraction,  attrs=&apos;&apos;>
       children: 
   - x: "*[1]"
   - x: "*[2]"
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;mfrac id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mi intent=&apos;hmm)(&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mfrac>
+ with the pattern
+x: "."
 The patterns are in \\?\Rules\Intent\general.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mi intent=&apos;hmm)(&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent attribute value &apos;hmm)(&apos;
 '>x over y,</span></div>
 </td>
 
-    <td> - </td>
-    <td id="IDbadintentparen"><a class="self" href="#IDbadintentparen">bad intent paren</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="IDbadintentparen"><a class="self" href="#IDbadintentparen">bad intent paren</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -6939,13 +6887,8 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
 </pre>
 
     <div class="mathcat">1.234 plus x</div>
-<pre id='id-2-23fa428582e9679b4ef0d780de16b80b'><a class='self' href='#id-2-23fa428582e9679b4ef0d780de16b80b'>&#xa7;</a>
+<pre id='id-2-3e1e7a0036359b3ac88b9382a4a23cad'><a class='self' href='#id-2-3e1e7a0036359b3ac88b9382a4a23cad'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">1.234 plus x</div>
-<pre id='id-2-dc591233c5784a667ba79eb93a0ed166'><a class='self' href='#id-2-dc591233c5784a667ba79eb93a0ed166'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">1.234 plus x</div>
@@ -6964,11 +6907,10 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mn id=&apos;M...&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
@@ -6976,32 +6918,35 @@ x: "."
     &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mn id=&apos;M...&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
   &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
   &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: occurs before &apos;,$b)&apos; in intent attribute value &apos;sum($a,$b)&apos;
 caused by: intent arg &apos;$a&apos; not found
 '>1.234 plus x</span></div>
 </td>
 
-    <td> - </td>
-    <td id="IDbadintentargref"><a class="self" href="#IDbadintentargref">bad intent argref</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="IDbadintentargref"><a class="self" href="#IDbadintentargref">bad intent argref</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -7029,13 +6974,8 @@ caused by: intent arg &apos;$a&apos; not found
 </pre>
 
     <div class="mathcat">1.234 plus x</div>
-<pre id='id-2-23fa428582e9679b4ef0d780de16b80b'><a class='self' href='#id-2-23fa428582e9679b4ef0d780de16b80b'>&#xa7;</a>
+<pre id='id-2-3e1e7a0036359b3ac88b9382a4a23cad'><a class='self' href='#id-2-3e1e7a0036359b3ac88b9382a4a23cad'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">1.234 plus x</div>
-<pre id='id-2-dc591233c5784a667ba79eb93a0ed166'><a class='self' href='#id-2-dc591233c5784a667ba79eb93a0ed166'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">1.234 plus x</div>
@@ -7054,11 +6994,10 @@ caused by: intent arg &apos;$a&apos; not found
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mn arg=&apos;1.234&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
@@ -7066,32 +7005,35 @@ x: "."
     &lt;mi arg=&apos;:x:&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mn arg=&apos;1.234&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
   &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
   &lt;mi arg=&apos;:x:&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: occurs before &apos;$1.234,$:x:)&apos; in intent attribute value &apos;sum($1.234,$:x:)&apos;
 caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
 '>1.234 plus x</span></div>
 </td>
 
-    <td> - </td>
-    <td id="IDbadintentargnames"><a class="self" href="#IDbadintentargnames">bad intent arg names</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="IDbadintentargnames"><a class="self" href="#IDbadintentargnames">bad intent arg names</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mi>x</mi>
@@ -7111,13 +7053,8 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
 </pre>
 
     <div class="mathcat">x</div>
-<pre id='id-2-187cfebc376c74ad737f5951792dc3b2'><a class='self' href='#id-2-187cfebc376c74ad737f5951792dc3b2'>&#xa7;</a>
+<pre id='id-2-f1bbec439ddfdc7492dbe8902bce98ee'><a class='self' href='#id-2-f1bbec439ddfdc7492dbe8902bce98ee'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x</div>
-<pre id='id-2-f9722bb47962c95213623fd5d093a7ea'><a class='self' href='#id-2-f9722bb47962c95213623fd5d093a7ea'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x</div>
@@ -7132,35 +7069,37 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mi intent=&apos;one two&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mi intent=&apos;one two&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent attribute value &apos;one two&apos;
 '>x</span></div>
 </td>
 
-    <td> - </td>
-    <td id="IDmultipleidentifiers"><a class="self" href="#IDmultipleidentifiers">multiple identifiers</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="IDmultipleidentifiers"><a class="self" href="#IDmultipleidentifiers">multiple identifiers</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mn>12</mn>
@@ -7180,13 +7119,8 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
 </pre>
 
     <div class="mathcat">12</div>
-<pre id='id-2-faee46e1a49b2c47041a1ce0af0e9f8b'><a class='self' href='#id-2-faee46e1a49b2c47041a1ce0af0e9f8b'>&#xa7;</a>
+<pre id='id-2-7cb421511bfdc3818f992d7e7b3838f6'><a class='self' href='#id-2-7cb421511bfdc3818f992d7e7b3838f6'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">12</div>
-<pre id='id-2-ee75b4f69bc67d6c8a31f9d989366cf5'><a class='self' href='#id-2-ee75b4f69bc67d6c8a31f9d989366cf5'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">12</div>
@@ -7201,35 +7135,37 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mn intent=&apos;1.2e1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>12&lt;/mn>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mn intent=&apos;1.2e1&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>12&lt;/mn>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent attribute value &apos;1.2e1&apos;
 '>12</span></div>
 </td>
 
-    <td> - </td>
-    <td id="IDbadnumber"><a class="self" href="#IDbadnumber">bad number</a></td>
+    <td class="pad"> - </td>
+    <td class="pad" id="IDbadnumber"><a class="self" href="#IDbadnumber">bad number</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mover>
@@ -7265,16 +7201,11 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
 </pre>
 
     <div class="mathcat">x bar, plus   y bar,</div>
-<pre id='id-2-3f51ce2776ca751ecd21812cd976bfc3'><a class='self' href='#id-2-3f51ce2776ca751ecd21812cd976bfc3'>&#xa7;</a>
+<pre id='id-2-3dd9e0be1115098e5b39b9e52ba4f337'><a class='self' href='#id-2-3dd9e0be1115098e5b39b9e52ba4f337'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
 </pre>
 
     <div class="mathcat">x line plus   y line</div>
-<pre id='id-2-a51d8cf67071dc1e986c599c593def21'><a class='self' href='#id-2-a51d8cf67071dc1e986c599c593def21'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x bar, plus   y bar,</div>
 </td>
 <td>
 <pre id='id-0-ea69b3c99eebf70014db716e9091ac72'><a class='self' href='#id-0-ea69b3c99eebf70014db716e9091ac72'>&#xa7;</a>
@@ -7294,11 +7225,10 @@ caused by: Error in intent value: extra unparsed intent &apos;&apos; in intent a
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mover intent=&apos;mean($x(&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
@@ -7312,20 +7242,21 @@ x: "."
     &lt;/mover>
   &lt;/mrow>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "default" for "*".
 Replacement
-[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent:  xpath-name: x: "name(.)"
+[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent: xpath-name: x: "name(.)",  attrs=&apos;&apos;>
       children: [x: "*"]]]
-test: [  if: &apos;x: "text()"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "text()"]] else:[intent:  xpath-name: x: "name(.)"
+test: [  if: &apos;x: "text()"&apos; then:[intent: xpath-name: x: "name(.)",  attrs=&apos;&apos;>
+      children: [x: "text()"]] else:[intent: xpath-name: x: "name(.)",  attrs=&apos;&apos;>
       children: 
 ]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mover intent=&apos;mean($x(&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mi arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
@@ -7337,31 +7268,34 @@ x: "."
     &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>¯&lt;/mo>
   &lt;/mover>
  &lt;/mrow>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mover intent=&apos;mean($x(&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mi arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
   &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>¯&lt;/mo>
  &lt;/mover>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: occurs before &apos;&apos; in intent attribute value &apos;mean($x(&apos;
 caused by: Illegal &apos;intent&apos; syntax: found None
 '>x bar, plus mean of,   y</span></div>
 </td>
 
-   <td> - </td>
-    <td id="IDbadintentsubexpression"><a class="self" href="#IDbadintentsubexpression">bad intent subexpression</a></td>
+   <td class="pad"> - </td>
+    <td class="pad" id="IDbadintentsubexpression"><a class="self" href="#IDbadintentsubexpression">bad intent subexpression</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mi>x</mi>
@@ -7381,13 +7315,8 @@ caused by: Illegal &apos;intent&apos; syntax: found None
 </pre>
 
     <div class="mathcat">x</div>
-<pre id='id-2-187cfebc376c74ad737f5951792dc3b2'><a class='self' href='#id-2-187cfebc376c74ad737f5951792dc3b2'>&#xa7;</a>
+<pre id='id-2-f1bbec439ddfdc7492dbe8902bce98ee'><a class='self' href='#id-2-f1bbec439ddfdc7492dbe8902bce98ee'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x</div>
-<pre id='id-2-f9722bb47962c95213623fd5d093a7ea'><a class='self' href='#id-2-f9722bb47962c95213623fd5d093a7ea'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x</div>
@@ -7402,36 +7331,38 @@ caused by: Illegal &apos;intent&apos; syntax: found None
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mi intent=&apos;just say this&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mi intent=&apos;just say this&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;this&apos; in intent attribute value &apos;just say this&apos;
 '>x</span></div>
 </td>
 
-    <td>x</td>
-    <td id="IDFreetextjustsaythis"><a class="self" href="#IDFreetextjustsaythis">Free text just say this</a></td>
+    <td class="pad">x</td>
+    <td class="pad" id="IDFreetextjustsaythis"><a class="self" href="#IDFreetextjustsaythis">Free text just say this</a></td>
  </tr>
 
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -7455,13 +7386,8 @@ caused by: Error in intent value: extra unparsed intent &apos;this&apos; in inte
 </pre>
 
     <div class="mathcat">x</div>
-<pre id='id-2-cb5dd1c6020e8ec4ffe5fd204b78bd2a'><a class='self' href='#id-2-cb5dd1c6020e8ec4ffe5fd204b78bd2a'>&#xa7;</a>
+<pre id='id-2-a78e3bec373c778232717e270ee8c046'><a class='self' href='#id-2-a78e3bec373c778232717e270ee8c046'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">x</div>
-<pre id='id-2-6603ac2961b929750b9af306cc61b128'><a class='self' href='#id-2-6603ac2961b929750b9af306cc61b128'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">x</div>
@@ -7478,39 +7404,41 @@ caused by: Error in intent value: extra unparsed intent &apos;this&apos; in inte
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+[test: [  if: &apos;x: "*"&apos; then:[intent: name: math,  attrs=&apos;&apos;>
       children: [x: "*"]] else:[t: " "]]
 ]
-...due to matching the following MathML with the pattern
-x: "."
+...due to matching the MathML
  &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow intent=&apos;just say this about $x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mi arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "."
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: replacing inside &apos;intent&apos;
 caused by: attempting replacement pattern: "intent-exists" for "!*".
 Replacement
 [x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
+...due to matching the MathML
  &lt;mrow intent=&apos;just say this about $x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mi arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
-The patterns are in Rules\intent.yaml.
+ with the pattern
+x: "@intent"
+The patterns are in \\?\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;this about $x&apos; in intent attribute value &apos;just say this about $x&apos;
 '>x</span></div>
 </td>
 
-    <td>x</td>
-    <td id="IDFreetextwithargref"><a class="self" href="#IDFreetextwithargref">Free text with argref</a></td>
+    <td class="pad">x</td>
+    <td class="pad" id="IDFreetextwithargref"><a class="self" href="#IDFreetextwithargref">Free text with argref</a></td>
  </tr>
 
    <tr>
-<td>
+<td class="pad">
 
      <math display='block'>
       <mrow>
@@ -7536,13 +7464,8 @@ caused by: Error in intent value: extra unparsed intent &apos;this about $x&apos
 </pre>
 
     <div class="mathcat">🐇   x</div>
-<pre id='id-2-a6d18774581c16e063e62f06a99781d4'><a class='self' href='#id-2-a6d18774581c16e063e62f06a99781d4'>&#xa7;</a>
+<pre id='id-2-a99ba6994b29234c297bedd3761465e3'><a class='self' href='#id-2-a99ba6994b29234c297bedd3761465e3'>&#xa7;</a>
 &lt;math <b>intent=':literal'</b> display='block'>
-</pre>
-
-    <div class="mathcat">🐇   x</div>
-<pre id='id-2-dee0d440a9ea3a067c05559f8b593fb4'><a class='self' href='#id-2-dee0d440a9ea3a067c05559f8b593fb4'>&#xa7;</a>
-&lt;math <b>intent=':chemistry'</b> display='block'>
 </pre>
 
     <div class="mathcat">🐇   x</div>
@@ -7557,55 +7480,11 @@ caused by: Error in intent value: extra unparsed intent &apos;this about $x&apos
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
-      children: [x: "*"]] else:[t: " "]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mo intent=&apos;🐇&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>🐇&lt;/mo>
-    &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
-  &lt;/mrow>
- &lt;/math>
-The patterns are in Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "default" for "*".
-Replacement
-[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "*"]]]
-test: [  if: &apos;x: "text()"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "text()"]] else:[intent:  xpath-name: x: "name(.)"
-      children: 
-]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mrow id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mo intent=&apos;🐇&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>🐇&lt;/mo>
-  &lt;mi id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
- &lt;/mrow>
-The patterns are in Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "intent-exists" for "!*".
-Replacement
-[x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
- &lt;mo intent=&apos;🐇&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>🐇&lt;/mo>
-The patterns are in Rules\intent.yaml.
-
-caused by: Illegal &apos;intent&apos; syntax: 🐇
-'>🐇   x</span></div>
+    <div class="mathcat">🐇   x</div>
 </td>
 
-     <td>🐇 X</td>
-     <td id="IDintent🐇"><a class="self" href="#IDintent🐇">intent 🐇</a></td>
+     <td class="pad">🐇 X</td>
+     <td class="pad" id="IDintent🐇"><a class="self" href="#IDintent🐇">intent 🐇</a></td>
  </tr>
    
   </table>
