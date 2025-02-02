@@ -349,7 +349,7 @@ concepts:
         - condition: ""
           en: "$2<i>th</i> root of $1"
 
-    - concept: greatest-common-divsor
+    - concept: greatest-common-divisor
       arity: ">=2"
       property: function
       en: greatest common divisor of $1, $2, ...
