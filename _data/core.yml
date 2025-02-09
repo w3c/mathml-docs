@@ -1067,7 +1067,7 @@ concepts:
 
     - concept: transpose
       arity: 1
-      property: suffix
+      property: function
       default: false
       en: "transpose of $1"
       fr: "transposée de $1"
