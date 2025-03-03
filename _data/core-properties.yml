@@ -272,16 +272,22 @@
   applicability: mn
   comment: some braille codes (e.g., CMU) have special rules for roman numerals
   examples:
-    - mathml: "<mi intent=':roman-numeral'>cd</mi>"
-      en: c d
-    - mathml: "<mi intent=':roman-numeral'>XVI</mi>"
-      en: x v i
+    - mathml: "<mn intent=':roman-numeral'>cd</mn>"
+      en:
+        -c d
+	- four hundred
+    - mathml: "<mn intent=':roman-numeral'>XVI</mn>"
+      en:
+        - x v i
+	- sixteen
     - mathml: "<mrow intent=':roman-numeral'>
-          <menclose notation='top'><menclose notation='top'><mi>VI</mi></menclose></menclose>
-          <menclose notation='top'><mi>XL</mi></menclose>
-          <mi>DXXI</mi>
+          <menclose notation='top'><menclose notation='top'><mn>VI</mn></menclose></menclose>
+          <menclose notation='top'><mn>XL</mn></menclose>
+          <mn>DXXI</mn>
         </mrow>"
-      en: ???
+      en:
+        - v i double vinculm ; x l vinculum ;  d x x i
+	- six million? ; forty thousand ; five hundred and twenty one
 
 - property: shape
   type: geometry
