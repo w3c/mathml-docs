@@ -28,6 +28,7 @@
           </mtr>
          </mtable>
         </math>
+      en: "line one label 10; a plus a equals b plus b [pause] c plus c equals d plus d; line two label 11; a equals b [pause] c equals d"
  
 - property: pause-long
   type: pause
