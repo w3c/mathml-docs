@@ -1,13 +1,40 @@
 
+- property: pause-short
+  type: pause
+  applicability: all
+  effect: "short pause before processing the element as usual."
 
-- property: example
-  type: example-type
-  applicability: mi
+- property: pause-medium
+  type: pause
+  applicability: all
+  effect: "medium pause before processing the element as usual."
   examples:
-    - mathml: "<mrow><mi mathvariant='normal' intent=':example'>$</mi><mn>1.50</mn></mrow>"
-      en: 1.50 dollars
-    - mathml: "<mrow><mn>1.50</mn><mi intent=':example'>USD</mi></mrow>"
-      en: 1.50 U S dollars
-    - mathml: "<mrow><mi mathvariant='normal' intent=':example'>£</mi><mn>1.50</mn></mrow>"
-      en: 1.50 pounds
+    - mathml: |
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mtable displaystyle="true" intent=":system-of-equations">
+          <mtr>
+           <mtd intent=":equation-label"><mtext>(10)</mtext></mtd>
+           <mtd><mi>𝑎</mi><mi>+</mi><mi>𝑎</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi><mi>𝑏</mi><mo>+</mo><mi>𝑏</mi></mtd>
+           <mtd intent=":pause-medium"><mi>𝑐</mi><mo>+</mo><mi>𝑐</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑑</mi><mo>+</mo><mi>𝑑</mi></mtd>
+          </mtr>
+          <mtr>
+           <mtd intent=":equation-label"><mtext>(11)</mtext></mtd>
+           <mtd><mi>𝑎</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi></mtd>
+           <mtd intent=":pause-medium"><mi>𝑐</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑑</mi></mtd>
+          </mtr>
+         </mtable>
+        </math>
+ 
+- property: pause-long
+  type: pause
+  applicability: all
+  effect: "long pause before processing the element as usual."
 
+- property: pause-xlong
+  type: pause
+  applicability: all
+  effect: "extra long pause before processing the element as usual."
