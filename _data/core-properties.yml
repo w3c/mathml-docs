@@ -184,6 +184,18 @@
   applicability: mtable
   effect: indicates that the table should be read column by column
 
+- property: equation-label
+  type: table
+  applicability: mtd
+  effect: indicates that the cell holds an equation label.
+          This may influence the way the surrounding `mtr` is announced.
+
+- property: no-equation-label
+  type: table
+  applicability: mtd
+  effect: indicates that the cell does not hold a label.
+          This may be used if a table column is being used solely to hold labels
+          to highlight empty cells for unlabeled rows.
 
 - property: number-set
   type: mathematical-category
