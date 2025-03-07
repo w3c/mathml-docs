@@ -18,7 +18,7 @@
           <mtr>
            <mtd intent=":equation-label"><mtext>(10)</mtext></mtd>
            <mtd><mi>𝑎</mi><mi>+</mi><mi>𝑎</mi></mtd>
-           <mtd><mo form="infix">=</mo><mi>𝑏</mi><mi>𝑏</mi><mo>+</mo><mi>𝑏</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi><mo>+</mo><mi>𝑏</mi></mtd>
            <mtd intent=":pause-medium"><mi>𝑐</mi><mo>+</mo><mi>𝑐</mi></mtd>
            <mtd><mo form="infix">=</mo><mi>𝑑</mi><mo>+</mo><mi>𝑑</mi></mtd>
           </mtr>
