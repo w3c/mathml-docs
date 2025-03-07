@@ -3,7 +3,9 @@
   type: pause
   applicability: all
   effect: "short pause before processing the element as usual."
-
+    - mathml: '<math><mi>a</mi><mspace intent=:pause-short" width=".2em"/></mi>b</mi></math>'
+      en: "a [pause.] b"
+    
 - property: pause-medium
   type: pause
   applicability: all
@@ -28,14 +30,18 @@
           </mtr>
          </mtable>
         </math>
-      en: "line one label 10; a plus a equals b plus b [pause] c plus c equals d plus d; line two label 11; a equals b [pause] c equals d"
+      en: "line one label 10; a plus a equals b plus b [pause..] c plus c equals d plus d; line two label 11; a equals b [pause..] c equals d"
  
 - property: pause-long
   type: pause
   applicability: all
   effect: "long pause before processing the element as usual."
+    - mathml: '<math><mi>a</mi><mspace intent=:pause-long" width="2em"/></mi>b</mi></math>'
+      en: "a [pause...] b"
 
 - property: pause-xlong
   type: pause
   applicability: all
   effect: "extra long pause before processing the element as usual."
+    - mathml: '<math><mi>a</mi><mspace intent=:pause-xlong" width="4cm"/></mi>b</mi></math>'
+      en: "a [pause....] b"
