@@ -4,7 +4,7 @@
   applicability: all
   effect: "short pause before processing the element as usual."
   examples:
-    - mathml: '<math><mi>a</mi><mspace intent=":pause-short" width=".2em"/></mi>b</mi></math>'
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-short" width=".2em"/><mi>b</mi></math>'
       en: "a [pause.] b"
     
 - property: pause-medium
@@ -38,7 +38,7 @@
   applicability: all
   effect: "long pause before processing the element as usual."
   examples:
-    - mathml: '<math><mi>a</mi><mspace intent=":pause-long" width="2em"/></mi>b</mi></math>'
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-long" width="2em"/><mi>b</mi></math>'
       en: "a [pause...] b"
 
 - property: pause-xlong
@@ -46,5 +46,5 @@
   applicability: all
   effect: "extra long pause before processing the element as usual."
   examples:
-    - mathml: '<math><mi>a</mi><mspace intent=":pause-xlong" width="4cm"/></mi>b</mi></math>'
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-xlong" width="4cm"/><mi>b</mi></math>'
       en: "a [pause....] b"
