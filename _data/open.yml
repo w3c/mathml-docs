@@ -10245,9 +10245,9 @@ concepts:
       urls: 
        - "https://dlmf.nist.gov/21.2#i"
        - "https://dlmf.nist.gov/21.2#E1"
-    
+
     - concept: schlaefli-symbol
-      arity: ">=0"	
+      arity: ">=0"
       en: schlaefli symbol of $1, ...
       property: fenced
       area: "geometry"
