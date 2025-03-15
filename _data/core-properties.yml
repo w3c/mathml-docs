@@ -364,3 +364,54 @@
       </mrow>
      en: '2,  cap h, sub 2;  cap o; reacts to form; 2  cap h, sub 2; plus  cap o, sub 2'
 
+
+
+- property: pause-short
+  type: pause
+  applicability: all
+  effect: "short pause before processing the element as usual."
+  examples:
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-short" width=".2em"/><mi>b</mi></math>'
+      en: "a [pause.] b"
+    
+- property: pause-medium
+  type: pause
+  applicability: all
+  effect: "medium pause before processing the element as usual."
+  examples:
+    - mathml: |
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mtable displaystyle="true" intent=":system-of-equations">
+          <mtr>
+           <mtd intent=":equation-label"><mtext>(10)</mtext></mtd>
+           <mtd><mi>𝑎</mi><mi>+</mi><mi>𝑎</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi><mo>+</mo><mi>𝑏</mi></mtd>
+           <mtd intent=":pause-medium"><mi>𝑐</mi><mo>+</mo><mi>𝑐</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑑</mi><mo>+</mo><mi>𝑑</mi></mtd>
+          </mtr>
+          <mtr>
+           <mtd intent=":equation-label"><mtext>(11)</mtext></mtd>
+           <mtd><mi>𝑎</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi></mtd>
+           <mtd intent=":pause-medium"><mi>𝑐</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑑</mi></mtd>
+          </mtr>
+         </mtable>
+        </math>
+      en: "line one label 10; a plus a equals b plus b [pause..] c plus c equals d plus d; line two label 11; a equals b [pause..] c equals d"
+ 
+- property: pause-long
+  type: pause
+  applicability: all
+  effect: "long pause before processing the element as usual."
+  examples:
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-long" width="2em"/><mi>b</mi></math>'
+      en: "a [pause...] b"
+
+- property: pause-xlong
+  type: pause
+  applicability: all
+  effect: "extra long pause before processing the element as usual."
+  examples:
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-xlong" width="4cm"/><mi>b</mi></math>'
+      en: "a [pause....] b"
