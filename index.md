@@ -9,8 +9,7 @@ layout: default
 
 * [Intent Core Concepts](intent-core-concepts/)
 * [Intent Open Concepts](intent-open-concepts/)
-* [Intent Core Properties](intent-core-properties/)
-* [Intent Open Properties](intent-open-properties/)
+* [Intent Properties](intent-core-properties/)
 * [Intent Examples](intent-examples/)
 * [Unicode Speech Templates](unicode-speech/)
 

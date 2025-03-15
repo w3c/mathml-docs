@@ -1,5 +1,5 @@
 ---
-title: Core Intent Property List
+title: Intent Property List
 ---
 
 <style>
