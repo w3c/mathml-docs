@@ -72,7 +72,7 @@
   type: inference
   applicability: all presentation elements
   effect: |
-    Assistive technology should use it's system specified defaults.
+    Assistive technology should use its system specified defaults.
     This is the default behavior if neither the
     [literal property](../literal-common-properties#literal-property)
     nor
