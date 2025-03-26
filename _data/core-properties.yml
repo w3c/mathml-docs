@@ -68,7 +68,17 @@
     Assistive technology should use the specified `common` defaults.  
     See [common property](../literal-common-properties#common-property)
 
-
+- property: legacy
+  type: inference
+  applicability: all presentation elements
+  effect: |
+    Assistive technology should use its system specified defaults.
+    This is the default behavior if neither the
+    [literal property](../literal-common-properties#literal-property)
+    nor
+    [common property](../literal-common-properties#common-property)
+    is in effect.
+    See [legacy property](../literal-common-properties#legacy-property)
 
 - property: array
   type: table

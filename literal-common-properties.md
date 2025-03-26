@@ -31,6 +31,10 @@ The exact words may depend upon both the audience and the children of node. Some
 
 For someone who is blind, it may be important to indicate the start and end of fractions, roots, etc., but for someone with dyslexia, the extra words might be "verbal noise."
 
+If neither `:literal` nor `:common` property is in scope, the default
+behavior, which may be explicitly specified by using the `:legacy`
+property, is system dependent.
+
 
 ## `literal` property
 
@@ -130,3 +134,8 @@ As noted above, a trig function raised to a "-1" power should have special speec
 These are spoken in a special way, although maybe that is just the default way to speak those Unicode characters.
 
 However, adding subscripts and superscripts of various types (e.g., $\mathbb {Z}^2$,  $\mathbb {Z}^+$, and $\mathbb {Z}_2$) often have specialized speech such as "Z 2".
+
+
+## `legacy` property
+
+The behavior of readings when the `:legacy` property is in effect is system dependent. Links to documentation of some known systems may be added here as the information becomes available.
