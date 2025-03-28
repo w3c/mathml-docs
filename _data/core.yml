@@ -210,6 +210,37 @@ defaultfixity:
          characters: [⁢U+2062]
 
 
+largeop:
+  - concept: sum
+    characters: [∑,⅀]  
+  - concept: product
+    characters: [∏,⨉]
+  - concept: union
+    characters: [⋃]
+  - concept: intersection
+    characters: [⋂]
+  - concept: logical-and
+    characters: [⋀]
+  - concept: logical-or
+    characters: [⋁]
+  - concept: integral
+    characters: [∫]
+  - concept: double-integral
+    characters: [∬]
+  - concept: triple-integral
+    characters: [∭]
+  - concept: contour-integral
+    characters: [∮]
+  - concept: surface-integral
+    characters: [∯]
+  - concept: clockwise-integral
+    characters: [∱]
+  - concept: clockwise-contour-integral
+    characters: [∲]
+  - concept: anticlockwise-contour-integral
+    characters: [∳]
+
+
 concepts:
 
   ## From chapter 4 of MathML3
@@ -293,9 +324,9 @@ concepts:
       en: $1 evaluated-at $2
       comments:
       - "Two common notations are
-        <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
+        <math display='block'><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
         and
-        <math>
+        <math display='block'>
           <msub>
               <mrow>
                   <msup><mi>x</mi><mn>2</mn></msup>
@@ -397,7 +428,7 @@ concepts:
       en: "polar coordinate $1 comma $2"
       comment:
       - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
-      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+      - "Example: <math display='block'><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
     - concept: spherical-coordinate
       arity: 3
@@ -405,14 +436,14 @@ concepts:
       en: "spherical coordinate $1 comma $2, comma $3"
       comment:
       - "The first argument is the radius, the second argument is the angle."
-      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+      - "Example: <math display='block'><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
     - concept: cartesian-coordinate
       arity: ">=2"
       property: function
       en: "cartesian coordinate $1 comma $2 ..."
       comment:
-      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+      - "Example: <math display='block'><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
     - concept: coordinate
       arity: ">=2"
@@ -420,7 +451,7 @@ concepts:
       en: "coordinate $1 comma $2 ..."
       comment:
       - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
-      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+      - "Example: <math display='block'><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
     - concept: floor
       arity: 1
@@ -438,9 +469,9 @@ concepts:
       en: rounded-value of $1
       comments:
       - "This sometimes uses the notation
-        <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
+        <math display='block'><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
         or
-        <math><mo>[</mo><mi>x</mi><mo>]</mo></math>"
+        <math display='block'><mo>[</mo><mi>x</mi><mo>]</mo></math>"
 
     - concept: fractional-part
       arity: 1
@@ -451,16 +482,16 @@ concepts:
   - title: calculus
     intents:
     - concept: definite-integral
-      arity: 1
-      property: ???
-      en: "integral over $1"
+      arity: 2
+      property: largeop
+      en: "integral over $1 of $2"
       comments:
       - "integral sign is not an argument"
 
     - concept: definite-integral
-      arity: 2
-      property: ???
-      en: "integral from $1 to $2"
+      arity: 3
+      property: largeop
+      en: "integral from $1 to $2 of $3"
       comments:
       - "integral sign is not an argument"
     
@@ -473,11 +504,11 @@ concepts:
       - "(terse) d <$3 if $3 != 1> $1 by d $2 <$3 if $3 != 1>"
       comments:
       - "the terse reading only makes sense for Leibniz notation such as 
-          <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
+          <math display='block'><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
           or
-          <math><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>.
+          <math display='block'><mfrac><msup><mi>d</mi><mn>2</mn></msup><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>.
           It does not make sense for other notations such as 
-          <math><msup><mi>f</mi><mo>''</mo></msup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>
+          <math display='block'><msup><mi>f</mi><mo>''</mo></msup><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>
           "
       - "The first of these examples might be marked up as"
       - |
@@ -522,7 +553,7 @@ concepts:
       comments:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
-      - "Example: <math>
+      - "Example: <math display='block'>
               <munder intent='limit($lim)'>
                   <mi>lim</mi>
                   <mrow arg='lim' intent='tends-to-from-below($x, $val)'><mi arg='x'>x</mi><mo>↗</mo><mn arg='val'>0</mn></mrow>
@@ -541,7 +572,7 @@ concepts:
         </munder>
         ```
       - "Another notation that might be spoken similarly is
-        <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
+        <math display='block'><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
         "
     
     - concept: tends-to
@@ -577,7 +608,7 @@ concepts:
                the argument to `set` is typically an `mrow`. For example:
 
                ```
-               <math>
+               <math display='block'>
                 <mrow intent='set($members)'>
                  <mo>{</mo>
                  <mrow arg='members'>
@@ -601,7 +632,7 @@ concepts:
       comments:
       - "This can be spoken in many ways. See other entry for infix speech."
       - "There are several notations that are used and their order of appearance differs:
-        <math><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
+        <math display='block'><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math display='block'><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
 
     - concept: set-difference
       arity: 2
@@ -618,7 +649,7 @@ concepts:
       comments:
       - "This can be spoken in many ways. See other entry for functional speech."
       - "Two notations used for complement are: 
-        <math><msup><mi>A</mi><mi>C</mi></msup></math>, <math><msup><mi>A</mi><mo>'</mo></msup></math>"
+        <math display='block'><msup><mi>A</mi><mi>C</mi></msup></math>, <math display='block'><msup><mi>A</mi><mo>'</mo></msup></math>"
 
     - concept: empty-set
       arity: 0
@@ -646,42 +677,48 @@ concepts:
     intents:
     - concept: sum
       arity: 1
-      property: function
+      property: largeop
       en: "sum of $1"
+      mathml:
+       - "<math display='block'><mrow intent='sum($a1)'><mo>∑</mo><mrow arg='a1'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
       comments:
       - usually on `<mrow>`
 
     - concept: sum
       arity: 2
-      property: function
+      property: largeop
       en: "sum over $1 of $2"
+      mathml:
+       - "<math display='block'><mrow intent='sum($a1,$a2)'><munder><mo>∑</mo><mrow arg='a1'><mi>i</mi><mo>∈</mo><mi>X</mi></mrow></munder><mrow arg='a2'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
       comments:
       - usually on `<munder>` or `<msub>`
 
     - concept: sum
       arity: 3
-      property: function
+      property: largeop
       en: "sum from $1 to $2 of $3"
+      mathml:
+       - "<math display='block'><mrow intent='sum($a1,$a2,$a3)'><munderover><mo>∑</mo><mrow arg='a1'><mi>i</mi><mo>=</mo><mi>a</mi></mrow><mi arg='a2'>b</mi></munderover><mrow arg='a3'><mi>f</mi><mo>(</mo><mi>i</mi><mo>)</mo></mrow></mrow></math>"
       comments:
       - usually on `<munderover>` or `<msubsup>`
 
     - concept: product
       arity: 1
-      property: function
+      property: largeop
       en: "product of $1"
       comments:
       - usually on `<mrow>`
         
     - concept: product
       arity: 2
-      property: function
+      property: largeop
       en: "product over $1 of $2"
       comments:
       - usually on `<munder>` or `<msub>`
 
     - concept: product
       arity: 3
-      property: function
+      property: largeop
       en: "product from $1 to $2 of $3"
       comments:
       - usually on `<munderover>` or `<msubsup>`
@@ -750,7 +787,7 @@ concepts:
       - "(verbose) arcsine $1"
       comments:
       - "used as 'arcsin', 'arc sin'"
-      - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
+      - "this is distinct from sin inverse (<math display='block'><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
 
     - concept: arccosine
       arity: 1
@@ -956,7 +993,7 @@ concepts:
       property: function
       en: "mean of $1"
       comments:
-      - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
+      - "This might be display as <math display='block'><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
 
     - concept: standard-deviation
       arity: 1
@@ -989,7 +1026,7 @@ concepts:
                 The intent should be on the `mrow` that includes the "P"
       
                  ```
-                 <math>
+                 <math display='block'>
                   <mrow intent='conditional-probability($arg1, $arg2)'>
                    <mi>P</mi>
                    <mo>(</mo>
@@ -1050,7 +1087,7 @@ concepts:
       arity: 1
       property: prefix
       comments:
-      - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
+      - "Example: <math display='block'><mover><mi>x</mi><mo>^</mo></mover></math>"
       en: "unit vector x"
 
     - concept: identity-matrix
@@ -1079,7 +1116,7 @@ concepts:
       en: "$1 by $2 ..."
       comments:
       - "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
-                A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
+                A common use would be describe the size of a matrix. For example <math display='block'><mi>m</mi><mo>×</mo><mi>n</mi></math>."
 
 
     ## ====================== 4.4.10 Constants and Sets ======================
@@ -1156,7 +1193,7 @@ concepts:
         en:
         - "line segment $1 $2"
         comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
+        - "Example: (`mover`): <math display='block'><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
 
       - concept: directed-line-segment
         arity: 2
@@ -1164,7 +1201,7 @@ concepts:
         en:
         - "directed line segment $1 $2"
         comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+        - "Example: (`mover`): <math display='block'><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
 
       - concept: line
         arity: 2
@@ -1172,7 +1209,7 @@ concepts:
         en:
         - "line $1 $2"
         comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
+        - "Example: (`mover`): <math display='block'><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
 
       - concept: ray
         arity: 2
@@ -1180,7 +1217,7 @@ concepts:
         en:
         - "ray $1 $2"
         comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+        - "Example: (`mover`): <math display='block'><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
 
       - concept: arc
         arity: 2
@@ -1188,7 +1225,7 @@ concepts:
         en:
         - "arc $1 $2"
         comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
+        - "Example: (`mover`): <math display='block'><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
 
       - concept: length
         arity: 1
@@ -1197,7 +1234,7 @@ concepts:
         - "length of $1"
         comments:
         - "It may be necessary to 'nest' the intent as shown here for the example:
-          <math><mrow intent='length(line-segment($start, $end))'>
+          <math display='block'><mrow intent='length(line-segment($start, $end))'>
                  <mi arg='start' mathvariant='normal'>A</mi>
                  <mi arg='end' mathvariant='normal'>B</mi>
               </mrow></math>"
@@ -1217,7 +1254,7 @@ concepts:
         - "area of $1"
         comments:
         - "There are many notations. Here's one: 
-            <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
+            <math display='block'><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
         - "The markup for this is:"
         - |
           ```
@@ -1239,7 +1276,7 @@ concepts:
         en:
         - "point $1 [comma $2 ...]"
         comment:
-        - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
+        - "Example: <math display='block'><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
 
       - concept: volume
         arity: 1
@@ -1321,14 +1358,14 @@ concepts:
         property: function
         en: "translation by $1 comma $2"
         comments:
-        - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
+        - "Example: <math display='block'><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
         
       - concept: constraint
         arity: 2
         property: infix
         en: "fraction 2 over x minus 1 with constraint x not equal to 1"
         comments:
-        - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
+        - "Example: <math display='block'><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
         
       - concept: binomial-coefficient
         arity: 2
@@ -1336,7 +1373,7 @@ concepts:
         en: "$1 choose $2"
         comments:
         - "There are many notations used for the binomial coefficient. Here are some of them: 
-          <math><mrow intent='binomial-coefficent($power, $term)'>
+          <math display='block'><mrow intent='binomial-coefficent($power, $term)'>
             <mo>(</mo>
             <mfrac linethickness='0'>
                 <mi arg='power'>n</mi>
@@ -1344,14 +1381,14 @@ concepts:
             </mfrac>
             <mo>)</mo>
           </mrow></math>, 
-          <math>
+          <math display='block'>
             <msubsup intent='binomial-coefficent($power, $term>)'>
               <mi>C</mi>
               <mi arg='term'>k</mi>
               <mi arg='power'>n</mi>
             </msubsup>
           </math>, 
-          <math>
+          <math display='block'>
             <mmultiscripts intent='binomial-coefficent($power, $term)'>
               <mi>C</mi>
               <mi arg='term'>k</mi> <none/>
@@ -1366,7 +1403,7 @@ concepts:
         en: "$2 permutation of $1"
         comments:
         - "There are many notations for this: some of them are 
-            <math>
+            <math display='block'>
               <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
               <mo>,</mo><mo>&#xA0;</mo>
               <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><mi>n</mi><none/></mmultiscripts>
@@ -1394,7 +1431,7 @@ concepts:
         property: function
         en: "permutation cycle of $1 $2 ..."
         comments:
-        - "A common notation for a permutation cycle is <math><mo>(</mo>
+        - "A common notation for a permutation cycle is <math display='block'><mo>(</mo>
                 <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
                 <mo>)</mo></math>"
         - "This would be marked up as:"
@@ -1433,7 +1470,7 @@ concepts:
         en: "$1 which is $2"
         comments:
         - "used with `mover` or `munder`"
-        - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
+        - "Example: <math display='block'><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
 
       - concept: braced-group
         arity: 1
@@ -1441,7 +1478,7 @@ concepts:
         en: "grouped $1 end-grouped"
         comments:
         - "used with `mover` or `munder`"
-        - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
+        - "Example: <math display='block'><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
 
       - concept: repeating-decimal
         arity: 1
@@ -1449,7 +1486,7 @@ concepts:
         en: "repeating decimal $1"
         comments:
         - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
-        - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
+        - "Example: <math display='block'><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
         - "This right hand side of this might be might be marked up as:"
         - |
           ```
