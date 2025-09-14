@@ -429,7 +429,7 @@
 - property: use-argname
   type: argname
   applicability: all
-  effect: "Used as a _self-property_ on an element with `arg`, causes the specified `argname` to be used to introduce the argument in speech.
+  effect: "Used as a _self-property_ on an element with `arg`, causes the value of the `arg` attribute to be used as the name to introduce the argument in speech.
            May be translated to the current language, or used literally if translation is not known."
   examples:
      - mathml: '<mi arg="numerator" intent=":use-argname">x</mi>'
