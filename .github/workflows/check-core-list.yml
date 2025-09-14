@@ -1,0 +1,17 @@
+name: Validate-YAML-Core-Concept-List
+
+on:
+  push:
+    branches: [ main ]
+    paths: ['_data/core.yml']
+  pull_request:
+    branches: [ main ]
+    paths: ['_data/core.yml']
+
+jobs:
+  validate-yaml-core-concept-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate YAML intent lists
+        run: yamllint -c _data/_config_yamllint.yml _data/core.yml

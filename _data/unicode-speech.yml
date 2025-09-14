@@ -1,5 +1,9 @@
 ---
 -
+    - char: +
+    - u: "002B"
+    - t: plus
+-
     - char: ¡
     - u: "00A1"
     - t: inverted exclamation mark
@@ -1561,9 +1565,8 @@
 -
     - char: ℏ
     - u: "210F"
-    - choose:
-        - terse: h bar
-        - default: reduced planck constant
+    - t: "h bar"
+
 # just Weierstrass, others handled with alphabet
 # -
 #     - char: ℐℒ℘ℬℰℱℳ
@@ -8014,7 +8017,7 @@
 -
     - char: ＋
     - u: "FF0B"
-    - t: equals sign
+    - t: full width plus
 -
     - char: ＜
     - u: "FF1C"

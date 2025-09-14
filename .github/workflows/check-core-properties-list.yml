@@ -1,0 +1,17 @@
+name: Validate-YAML-Core-Properties-List
+
+on:
+  push:
+    branches: [ main ]
+    paths: ['_data/core-properties.yml']
+  pull_request:
+    branches: [ main ]
+    paths: ['_data/core-properties.yml']
+
+jobs:
+  validate-yaml-core-properties-concept-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate YAML intent lists
+        run: yamllint -c _data/_config_yamllint.yml _data/core-properties.yml

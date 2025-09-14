@@ -380,7 +380,7 @@ concepts:
         - condition: ""
           en: "$2<i>th</i> root of $1"
 
-    - concept: greatest-common-divsor
+    - concept: greatest-common-divisor
       arity: ">=2"
       property: function
       en: greatest common divisor of $1, $2, ...
@@ -1104,7 +1104,7 @@ concepts:
 
     - concept: transpose
       arity: 1
-      property: suffix
+      property: function
       default: false
       en: "transpose of $1"
       fr: "transposée de $1"

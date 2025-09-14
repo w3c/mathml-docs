@@ -55,20 +55,30 @@
 - property: literal
   type: inference
   applicability: all presentation elements
-  effect: >
+  effect: |
     Assistive technology should not infer any semantics and just speak the elements with a literal interpretation.
     This includes speaking leaf content literally (e.g., `|` is spoken as "vertical bar").
-    If `intent` is present on a child element, it overrides this property.
-  examples:
-    - intent:
-      mathml: |
-        <mrow intent=':literal'>
-          <msup intent='power($base, $exp)'> <mi arg='base'>x</mi><mn arg='exp'>2</mn> </msup>
-          <mtext> is literally </mtext>
-          <msup> <mi>x</mi><mn>2</mn> </msup>
-        </mrow>
-      en: "x squared is literally x superscript 2 end superscript"
+    If `intent` is present on a child element, it overrides this property.  
+    See [literal property](../literal-common-properties#literal-property)
 
+- property: common
+  type: inference
+  applicability: all presentation elements
+  effect: |
+    Assistive technology should use the specified `common` defaults.  
+    See [common property](../literal-common-properties#common-property)
+
+- property: legacy
+  type: inference
+  applicability: all presentation elements
+  effect: |
+    Assistive technology should use its system specified defaults.
+    This is the default behavior if neither the
+    [literal property](../literal-common-properties#literal-property)
+    nor
+    [common property](../literal-common-properties#common-property)
+    is in effect.
+    See [legacy property](../literal-common-properties#legacy-property)
 
 - property: array
   type: table
@@ -184,6 +194,18 @@
   applicability: mtable
   effect: indicates that the table should be read column by column
 
+- property: equation-label
+  type: table
+  applicability: mtd
+  effect: indicates that the cell holds an equation label.
+          This may influence the way the surrounding `mtr` is announced.
+
+- property: no-equation-label
+  type: table
+  applicability: mtd
+  effect: indicates that the cell does not hold a label.
+          This may be used if a table column is being used solely to hold labels
+          to highlight empty cells for unlabeled rows.
 
 - property: number-set
   type: mathematical-category
@@ -272,16 +294,22 @@
   applicability: mn
   comment: some braille codes (e.g., CMU) have special rules for roman numerals
   examples:
-    - mathml: "<mi intent=':roman-numeral'>cd</mi>"
-      en: c d
-    - mathml: "<mi intent=':roman-numeral'>XVI</mi>"
-      en: x v i
+    - mathml: "<mn intent=':roman-numeral'>cd</mn>"
+      en:
+        -c d
+        - four hundred
+    - mathml: "<mn intent=':roman-numeral'>XVI</mn>"
+      en:
+        - x v i
+        - sixteen
     - mathml: "<mrow intent=':roman-numeral'>
-          <menclose notation='top'><menclose notation='top'><mi>VI</mi></menclose></menclose>
-          <menclose notation='top'><mi>XL</mi></menclose>
-          <mi>DXXI</mi>
+          <menclose notation='top'><menclose notation='top'><mn>VI</mn></menclose></menclose>
+          <menclose notation='top'><mn>XL</mn></menclose>
+          <mn>DXXI</mn>
         </mrow>"
-      en: ???
+      en:
+        - v i double vinculm ; x l vinculum ;  d x x i
+        - six million? ; forty thousand ; five hundred and twenty one
 
 - property: shape
   type: geometry
@@ -345,4 +373,55 @@
        </mrow>
       </mrow>
      en: '2,  cap h, sub 2;  cap o; reacts to form; 2  cap h, sub 2; plus  cap o, sub 2'
-     
+
+
+
+- property: pause-short
+  type: pause
+  applicability: all
+  effect: "short pause before processing the element as usual."
+  examples:
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-short" width=".2em"/><mi>b</mi></math>'
+      en: "a [pause.] b"
+    
+- property: pause-medium
+  type: pause
+  applicability: all
+  effect: "medium pause before processing the element as usual."
+  examples:
+    - mathml: |
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mtable displaystyle="true" intent=":system-of-equations">
+          <mtr>
+           <mtd intent=":equation-label"><mtext>(10)</mtext></mtd>
+           <mtd><mi>𝑎</mi><mi>+</mi><mi>𝑎</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi><mo>+</mo><mi>𝑏</mi></mtd>
+           <mtd intent=":pause-medium"><mi>𝑐</mi><mo>+</mo><mi>𝑐</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑑</mi><mo>+</mo><mi>𝑑</mi></mtd>
+          </mtr>
+          <mtr>
+           <mtd intent=":equation-label"><mtext>(11)</mtext></mtd>
+           <mtd><mi>𝑎</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑏</mi></mtd>
+           <mtd intent=":pause-medium"><mi>𝑐</mi></mtd>
+           <mtd><mo form="infix">=</mo><mi>𝑑</mi></mtd>
+          </mtr>
+         </mtable>
+        </math>
+      en: "line one label 10; a plus a equals b plus b [pause..] c plus c equals d plus d; line two label 11; a equals b [pause..] c equals d"
+ 
+- property: pause-long
+  type: pause
+  applicability: all
+  effect: "long pause before processing the element as usual."
+  examples:
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-long" width="2em"/><mi>b</mi></math>'
+      en: "a [pause...] b"
+
+- property: pause-xlong
+  type: pause
+  applicability: all
+  effect: "extra long pause before processing the element as usual."
+  examples:
+    - mathml: '<math><mi>a</mi><mspace intent=":pause-xlong" width="4cm"/><mi>b</mi></math>'
+      en: "a [pause....] b"
