@@ -425,3 +425,18 @@
   examples:
     - mathml: '<math><mi>a</mi><mspace intent=":pause-xlong" width="4cm"/><mi>b</mi></math>'
       en: "a [pause....] b"
+
+- property: use-argname
+  type: argname
+  applicability: all
+  effect: "Used an an element with `arg`, causes the specified `argname` to be used to introduce the argument in speech.
+           May be translated to the current language, or used literally if translation is not known."
+  examples:
+     - mathml: '<mi arg="numerator" intent=":use-argname">x</mi>'
+       en: numerator
+       fr: numérateur
+       de: Zähler
+     - mathml: '<mi arg="denominator" intent=":use-argname">x</mi>'
+       en: denominator
+       fr: dénominateur
+       de: Nenner
