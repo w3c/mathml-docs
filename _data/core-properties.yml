@@ -440,3 +440,7 @@
        en: denominator
        fr: dénominateur
        de: Nenner
+     - mathml: '<mn arg="base" intent=":use-argname">2</mn>'
+       en: base
+       fr: base
+       de: Basis
