@@ -425,3 +425,30 @@
   examples:
     - mathml: '<math><mi>a</mi><mspace intent=":pause-xlong" width="4cm"/><mi>b</mi></math>'
       en: "a [pause....] b"
+
+- property: use-argname
+  type: argname
+  applicability: all
+  effect: "Used as a _self-property_ on an element with `arg`, causes the value of the `arg` attribute to be spoken by AT when the user moves to that child. For core concepts, this value should override argument names that would otherwise be used by AT.
+           May be translated to the current language, or used literally if translation is not known."
+  examples:
+     - mathml: '<mi arg="numerator" intent=":use-argname">x</mi>'
+       en: numerator
+       fr: numérateur
+       de: Zähler
+     - mathml: '<mi arg="denominator" intent=":use-argname">x</mi>'
+       en: denominator
+       fr: dénominateur
+       de: Nenner
+     - mathml: '<mn arg="base" intent=":use-argname">2</mn>'
+       en: base
+       fr: base
+       de: Basis
+     - mathml: '<mrow arg="lower-limit" intent=":use-argname"><mi>i</mi><mo>=</mo><mn>0</mn></mrow>'
+       en: lower-limit
+       fr: "limite à gauche"
+       de: Untergrenze
+     - mathml: '<mi arg="upper-limit" intent=":use-argname">n</mi>'
+       en: upper-limit
+       fr: "limite à droite"
+       de: Obergrenze
