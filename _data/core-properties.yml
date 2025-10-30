@@ -321,10 +321,13 @@
 
 - property: chemical-element
   type: chemistry
-  comment: typically added to an `mi` to indicate this is a chemical element (see `chemical-formula` for an example
+  effect: read and/or braille the contents as a chemical element
+  comment: typically added to an `mi` to indicate this is a chemical element (see `chemical-formula`) for an example
   
 - property: chemical-formula
   type: chemistry
+  effect: read the term as a chemical formula
+  comment: chemcial formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
   examples:
     - mathml: |
         <mrow intent=':chemical-formula'>
@@ -340,6 +343,7 @@
 - property: chemical-equation
   type: chemistry
   effect: read the term as a chemical equation
+  comment: chemical equations include arrows, operators (e.g., `+`, `-`, `=`), and brackets (to indicate concentration)
   examples:
    - mathml: |
       <mrow intent=':chemical-equation'>
