@@ -326,15 +326,15 @@
 - property: chemical-formula
   type: chemistry
   examples:
-    - mathml:
-        "<mrow intent=':chemical-formula'>
+    - mathml: |
+        <mrow intent=':chemical-formula'>
           <mmultiscripts>
             <mi mathvariant='normal' intent=':chemical-element'>H</mi>
             <mn>2</mn>
             <mrow/>
           </mmultiscripts>
           <mi mathvariant='normal' intent=':chemical-element'>O</mi>
-        </mrow>"
+        </mrow>
       en: cap h 2 cap o
 
 - property: chemical-equation
