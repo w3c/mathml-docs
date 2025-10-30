@@ -321,6 +321,10 @@
 
 - property: chemical-element
   type: chemistry
+  comment: typically added to an `mi` to indicate this is a chemical element (see `chemical-formula` for an example
+  
+- property: chemical-formula
+  type: chemistry
   examples:
     - mathml:
         "<mrow intent=':chemical-formula'>
@@ -332,7 +336,6 @@
           <mi mathvariant='normal' intent=':chemical-element'>O</mi>
         </mrow>"
       en: cap h 2 cap o
-
 
 - property: chemical-equation
   type: chemistry
