@@ -23,6 +23,12 @@ hr.sp {height:.1em;max-width:6em;padding:0;margin:0}
 span.n {font-size:80%;font-style: monospace}
 </style>
 
+<style id="langcss">
+{% for language in site.data.languages offset:1-%}
+  {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
+{%- endfor -%}
+ {display:none}
+</style>
 
 
 
@@ -36,6 +42,7 @@ the suggested pronunciation for each Unicode character deemed relevant in mathem
 A default suggestion is provided. Alternative suggestions are formulated naming the
 _form_ or _context_ of use.
 
+
 One particular context of use is the _terse_, or _not-terse_ (understood to be more verbose).
 This is expected to correspond to a verbosity setting in the accessibility tool, which can be adjusted to
 produce more or less long speech depending on the background of the user.
@@ -43,48 +50,93 @@ produce more or less long speech depending on the background of the user.
 This table is indicative and may benefit from the contribution of multiple parties.
 See https://w3.org/Math/ to see how to contribute.
 
-<table style="width:100%">
+<details>
+<summary>Available Template Languages</summary>
+<p id="langchoice" class="langs">
+<!-- Loop over languages in _data/languages.yml -->
+{%- for language in site.data.languages -%}
+{% assign lang = language.language-code %}
+<span class="cb">
+ <input
+	onchange="updatelang(this)"
+	type="checkbox"
+	{% if lang == "en" or lang == "Xfr" %} checked {% endif %}
+      id="cb-{{lang}}"
+      name="language"
+      value="{{lang}}" />
+	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
+            {%- if lang != "en" %} ({{language.label-english}}){% endif %}</label></span>
+{% endfor %}
+</p>
+</details>
+
+
+
+<table style="width:100%;overflow:visible;">
 <thead>
 <tr>
-<th>Unicode</th><th>Character</th><th>Speech Template</th>
+<th>Unicode</th><th>Character</th>
+{%- for language in site.data.languages -%}
+<th class="{{language.language-code}}">Speech Template {{language.label-regional}}</th>
+{%- endfor -%}
 </tr>
 </thead>
 <tbody>
 {%- assign eobj = '"}' -%}
 {%- assign bobj = '{"' -%}
 {%- for u in site.data.unicode-speech -%}
-<tr id="U{{u[1].u | replace: " ", "_"}}">
-<td><a class="self" href="#U{{u[1].u | replace: " ", "_"}}">{{u[1].u}}</a></td>
-<td>{{u[0].char}}</td>
-<td>
-{%- for f in u offset:2  -%}
-{%- unless forloop.first or f.n %}<hr class="sp"/>{% endunless%}
+<tr id="U{{u.u | replace: " ", "_"}}">
+<td><a class="self" href="#U{{u.u | replace: " ", "_"}}">{{u.u}}</a></td>
+<td>{{u.char}}</td>
+{%- for language in site.data.languages -%}
+<td class="{{language.language-code}}">
 
-{%- if f.choose -%}
-{%- for c in f.choose  -%}
-{%- unless forloop.first %}<br/>{% endunless%}
-{{c | replace: eobj, " " | replace: bobj, '<b>' | replace: '"=>"', '</b>: '  }}
-{%- endfor -%}
+{%- if u[language.language-code] -%}
+{%- assign thisl = u[language.language-code] -%}
+{%-   if thisl.choose -%}
+{%-     for c in thisl.choose  -%}
+{%-       unless forloop.first %}<br/>{% endunless%}
+          {{c | replace: '["', '<b>' | replace: '", "', '</b>: ' |replace: '"]', '' }}
+{%-     endfor -%}
+{%-   else -%}
+        {{thisl}}
+{%-   endif -%}
+{%- else -%}
+—
 {%- endif -%}
 
-{%- if f.map -%}
-<b>map:</b> {{f.map}}
+
+{%- if u.map -%}
+<hr class="sp"/>
+<b>map:</b> {{u.map}}
 {%- endif -%}
 
-{%- if f.t -%}
-{{f.t}}
+{%- if u.n -%}
+<hr class="sp"/>
+<span class="n">&#160;&langle;{{u.n}}&rangle;</span>
 {%- endif -%}
 
-
-{%- if f.n -%}
-<span class="n">&#160;&langle;{{f.n}}&rangle;</span>
-{%- endif -%}
-
-{%- endfor -%}
 </td>
+{%- endfor -%}
 </tr>
 {%- endfor -%}
 </tbody>
 </table>
 	
 ----
+
+
+
+<script>
+var LangCss = document.getElementById('langcss');
+var langcb=document.getElementById('langchoice').getElementsByTagName('input');
+function updatelang (e) {
+  LangCss.textContent='';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (!(opt.checked)) {
+      LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+    }
+  }
+}
+</script>
