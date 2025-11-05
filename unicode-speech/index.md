@@ -48,7 +48,12 @@ This is expected to correspond to a verbosity setting in the accessibility tool,
 produce more or less long speech depending on the background of the user.
 
 This table is indicative and may benefit from the contribution of multiple parties.
-See https://w3.org/Math/ to see how to contribute.
+See [w3.org/Math](https://w3.org/Math) to see how to contribute.
+
+Localised texts can be added to the YAML file:
+[unicode-speech.yml](https://github.com/w3c/mathml-docs/blob/main/_data/unicode-speech.yml)
+
+------
 
 <details>
 <summary>Available Template Languages</summary>
@@ -70,7 +75,7 @@ See https://w3.org/Math/ to see how to contribute.
 </p>
 </details>
 
-
+-------
 
 <table style="width:100%;overflow:visible;">
 <thead>
