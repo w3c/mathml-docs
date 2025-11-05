@@ -1024,8 +1024,8 @@
         capital-beep: beep % with dialytika
         capital-prefix: cap % with dialytika
     es: "% con dialytika"
-    map: ('ΪΫϏ', 'ιυϗ')
     de: "iota mit dialytika"
+    map: ('ΪΫϏ', 'ιυϗ')
 -
     char: ϊ
     u: "03CA"
@@ -1130,8 +1130,9 @@
       choose:
         capital-beep: beep %
         capital-prefix: cap %
+    es: "%"
+    de: "%"
     map: ('АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ', 'абвгдежзийклмнопрстуфхцчшщъыьэюя')
-    de: "a"
 -
     char: а
     u: "0430"
@@ -1426,20 +1427,17 @@
     en: reversed prime
     es: "acento grave"
     de: "strich invertiert"
-    de: "strich invertiert"
 -
     char: ‶
     u: "2036"
     en: reversed double prime
     es: "doble acento grave"
     de: "zwei Striche invertiert"
-    de: "zwei Striche invertiert"
 -
     char: ‷
     u: "2037"
     en: reversed triple prime
     es: "prima invertida"
-    de: "drei Striche invertiert"
     de: "drei Striche invertiert"
 -
     char: ‸
@@ -2435,191 +2433,191 @@
     u: "2160"
     en: I
     es: "ⅰ"
-    de: "Ⅰ"
-    de: "ⅰ"
 -
     char: Ⅱ
     u: "2161"
     en: I I
-    es: "I"
-    de: "i i"
-    de: "i i"
+    es: "I I"
+    de: "I I"
 -
     char: Ⅲ
     u: "2162"
     en: I I I
     es: "III"
-    de: "i i i"
-    de: "i i i"
+    de: "I I I"
 -
     char: Ⅳ
     u: "2163"
     en: I V
     es: "IV"
-    de: "i v"
-    de: "i v"
+    de: "I V"
 -
     char: Ⅴ
     u: "2164"
     en: V
     de: "Ⅴ"
-    de: "ⅴ"
 -
     char: Ⅵ
     u: "2165"
     en: V I
     es: "VI"
-    de: "v i"
-    de: "v i"
+    de: "V I"
 -
     char: Ⅶ
     u: "2166"
     en: V I I
     es: "VII"
-    de: "v i i"
-    de: "v i i"
+    de: "V I I"
 -
     char: Ⅷ
     u: "2167"
     en: V I I I
     es: "VIII"
-    de: "v i i i"
-    de: "v i i i"
+    de: "V I I I"
 -
     char: Ⅸ
     u: "2168"
     en: I X
     es: "IX"
-    de: "i x"
-    de: "i x"
+    de: "I X"
 -
     char: Ⅹ
     u: "2169"
     en: X
     es: "X"
-    de: "Ⅹ"
-    de: "ⅹ"
+    de: "X"
 -
     char: Ⅺ
     u: "216A"
     en: X I
     es: "XI"
-    de: "x i"
-    de: "x i"
+    de: "X I"
 -
     char: Ⅻ
     u: "216B"
     en: X I I
     es: "XII"
-    de: "x i i"
-    de: "x i i"
+    de: "X I I"
 -
     char: Ⅼ
     u: "216C"
     en: L
     es: "L"
-    de: "Ⅼ"
-    de: "ⅼ"
+    de: "L"
 -
     char: Ⅽ
     u: "216D"
     en: C
     es: "C"
-    de: "Ⅽ"
-    de: "ⅽ"
+    de: "C"
 -
     char: Ⅾ
     u: "216E"
     en: D
     es: "D"
-    de: "Ⅾ"
-    de: "ⅾ"
+    de: "D"
 -
     char: Ⅿ
     u: "216F"
     en: M
     es: "M"
-    de: "Ⅿ"
-    de: "ⅿ"
+    de: "M"
 -
     char: ⅰ
     u: "2170"
     en: I
     es: I
+    de: I
 -
     char: ⅱ
     u: "2171"
     en: I I
     es: I I
+    de: I I
 -
     char: ⅲ
     u: "2172"
     en: I I I
     es: I I I
+    de: I I I
 -
     char: ⅳ
     u: "2173"
     en: I V
     es: I V
+    de: I V
 -
     char: ⅴ
     u: "2174"
     en: V
     es: V
+    de: V
 -
     char: ⅵ
     u: "2175"
     en: V I
     es: V I
+    de: V I
 -
     char: ⅶ
     u: "2176"
     en: V I I
     es: V I I
+    de: V I I
 -
     char: ⅷ
     u: "2177"
     en: V I I I
     es: V I I I
+    de: V I I I
 -
     char: ⅸ
     u: "2178"
     en: I X
     es: I X
+    de: I X
 -
     char: ⅹ
     u: "2179"
     en: X
     es: X
+    de: X
 -
     char: ⅺ
     u: "217A"
     en: X I
     es: X I
+    de: X I
 -
     char: ⅻ
     u: "217B"
     en: X I I
     es: X I I
+    de: X I I
 -
     char: ⅼ
     u: "217C"
     en: L
     es: L
+    de: L
 -
     char: ⅽ
     u: "217D"
     en: C
     es: C
+    de: C
 -
     char: ⅾ
     u: "217E"
     en: D
     es: D
+    de: D
 -
     char: ⅿ
     u: "217F"
     en: M
+    es: M
+    de: M
 -
     char: ↉
     u: "2189"
@@ -5347,6 +5345,8 @@
     char: ①-⑨
     u: "2460-2468"
     en: "circled %"
+    es: "% en un círculo"
+    de: "% umkreiste"
     map: ('①②③④⑤⑥⑦⑧⑨', '123456789')
 -
     char: ⑩
@@ -5417,6 +5417,8 @@
     char: ⑴-⑼
     u: "2474-247C"
     en: "parenthesized %"
+    es: "% entre paréntesis"
+    de: "klammern %"
     map: ('⑴⑵⑶⑷⑸⑹⑺⑻⑼', '123456789')
 -
     char: ⑽
@@ -5487,13 +5489,15 @@
 -
     char: ⒈-⒐
     u: "2488-2490"
-    map: ('⒈⒉⒊⒋⒌⒍⒎⒏⒐', '123456789')
     en: "% with period"
+    es: "% con signo de periodo"
+    de: "% mit periode"
+    map: ('⒈⒉⒊⒋⒌⒍⒎⒏⒐', '123456789')
 -
     char: ⒑
     u: "2491"
     en: ten with period
-    es: "diez con  signo de periodo"
+    es: "diez con signo de periodo"
     de: "zehn mit periode"
 -
     char: ⒒
@@ -5559,16 +5563,22 @@
     char: ⒜-⒵
     u: "249C-24B5"
     en: "parenthesized %"
+    es: "% entre paréntesis"
+    de: "klammern %"
     map: ('⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: Ⓐ-ⓩ
     u: "24B6-24E9"
     en: "circled %"
+    es: "%  en un círculo"
+    de: "eingekreist %"
     map: ('ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     char: ⓐ-ⓩ
     u: "24D0-24E9"
     en: "circled %"
+    es: "%  en un círculo"
+    de: "eingekreist %"
     map: ('ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: ⓪
@@ -5640,6 +5650,8 @@
     char: ⓵-⓽
     u: "24F5-24FD"
     en: "double circled %"
+    es: "% en un doble círculo"
+    de: "doppelt eingekreist %"
     map: ('⓵⓶⓷⓸⓹⓺⓻⓼⓽', '123456789')
 -
     char: ⓾
@@ -11466,43 +11478,57 @@
     char: 𝐀-𝐙
     u: "1D400-1D419"
     en: "bold %"
+    es: "negrita %"
+    de: "deutlich %"
     map: ('𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     char: 𝐚-𝐳
     u: "1D41A-1D433"
     en: "bold %"
+    es: "negrita %"
+    de: "deutlich %"
     map: ('𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: 𝐴-𝑍
     u: "1D434-1D44D"
     en: "%"
+    es: "%"
+    de: "%"
     map: ('𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     char: 𝑎-𝑧
     u: "1D44E-1D454 210E 1D456-1D467"
     en: "%"
+    es: "%"
+    de: "%"
     map: ('𝑎𝑏𝑐𝑑𝑒𝑓𝑔ℎ𝑖𝑗𝑘𝑙𝑚𝑛𝑜𝑝𝑞𝑟𝑠𝑡𝑢𝑣𝑤𝑥𝑦𝑧', 'abcdefghijklmnopqrstuvwxyz')
-    es: "constante de planck"
 -
     char: 𝑨-𝒁
     u: "1D468-1D481"
     en: "bold %"
+    es: "negrita %"
+    de: "deutlich %"
     map: ('𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     char: 𝒂-𝒛
     u: "1D482-1D49B"
     en: "bold %"
+    es: "negrita %"
+    de: "deutlich %"
     map: ('𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: 𝒜-𝒵
     u: "1D49C 212C 1D49E-1D49F 2130-2131 1D4A2 210B-2110 1D4A5-1D4A6 2112 2133 1D4A9-1D4AC 211B 1D4AE-1D4B5"
     en: "script %"
+    es: "% guión"
+    de: "% skript %"
     map: ('𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     char: 𝒶-𝓏
     u: "1D4B6-1D4B9 212F 1D4BB 210A 1D4BD-1D4C3 2134 1D4C5-1D4CF"
     en: "script %"
-    es: "% cursiva"
+    es: "% guión"
+    de: "% skript %"
     map: ('𝒶𝒷𝒸𝒹ℯ𝒻ℊ𝒽𝒾𝒿𝓀𝓁𝓂𝓃ℴ𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: 𝓐-𝓩
@@ -11526,6 +11552,8 @@
     char: 𝔞-𝔷
     u: "1D51E-1D537"
     en: "fraktur %"
+    es: "fraktur %"
+    de: "fraktur %"
     map: ('𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: 𝔸-𝕐
@@ -11534,6 +11562,14 @@
       choose:
         terse: "%"
         not-terse: "double struck %"
+    es:
+      choose:
+        terse: "%"
+        not-terse: "doble tachadura %"
+    de:
+      choose:
+        terse: "%"
+        not-terse: "doppelt geschlagen %"
     map: ('𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 -
     char: 𝕒-𝕫
@@ -11543,6 +11579,14 @@
         terse: "%"
         not-terse: "double struck %"
     map: ('𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫', 'abcdefghijklmnopqrstuvwxyz')
+    es:
+      choose:
+        terse: "%"
+        not-terse: "doble tachadura %"
+    de:
+      choose:
+        terse: "%"
+        not-terse: "doppelt geschlagen %"
 -
     char: 𝕬-𝖅
     u: "1D56C-1D585"
@@ -11552,6 +11596,8 @@
     char: 𝖆-𝖟
     u: "1D586-1D59F"
     en: "fraktur bold %"
+    es: "fraktur bold %"
+    de: "fraktur mutig %"
     map: ('𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟', 'abcdefghijklmnopqrstuvwxyz')
 -
     char: 𝖠-𝖹
