@@ -1,8 +1,71 @@
 ---
 -
+    char: "\""
+    u: "0022"
+    en: quotation mark
+    es: "barra invertida"
+-
+    char: "#"
+    u: "0023"
+    en: number
+    es: "almohadilla"
+-
+    char: "$"
+    u: "0024"
+    en: dollars
+    es: "dólar"
+-
+    char: "'"
+    u: "0025"
+    en: 'apostrophe'
+    es: "prima"
+-
+    char: "&"
+    u: "0026"
+    en: "ampersand"
+    es: "ampersand"
+-
+    char: "*"
+    u: "0027"
+    en:
+      choose:
+        star-times: times
+        star-star: star
+    es:
+      choose:
+        star-times: por
+        star-star: estrella
+-
     char: +
     u: "002B"
     en: plus
+    es: "más"
+-
+    char: ","
+    u: "002C"
+    en:
+      choose:
+        speak-comma: comma
+        silent-comma: ""
+    es:
+      choose:
+        speak-comma: coma
+        silent-comma: ""
+-
+    char: "-"
+    u: "002D"
+    en: minus
+    es: menos
+-
+    char: "."
+    u: "002E"
+    en: point
+    es: punto
+-
+    char: "/"
+    u: "002F"
+    en: divided by
+    es: "barra oblicua"
 -
     char: ¡
     u: "00A1"
@@ -11,46 +74,67 @@
     char: ¢
     u: "00A2"
     en: cents
+    es: "centavo"
+    de: "Cent"
 -
     char: £
     u: "00A3"
     en: pounds
+    es: "libra esterlina"
+    de: "Pfund"
 -
     char: ¤
     u: "00A4"
     en: currency sign
+    es: "moneda"
+    de: "währungszeichen"
 -
     char: ¥
     u: "00A5"
     en: yen
+    es: "yen"
+    de: "yen"
 -
     char: ¦
     u: "00A6"
     en: broken bar
+    es: "barra vertical partida"
+    de: "gebrochene Linie"
 -
     char: §
     u: "00A7"
     en: section
+    es: "sección"
+    de: "Abschnitt"
 -
     char: ¨
     u: "00A8"
     en: double dot
+    es: "diéresis"
+    de: "diaeresis"
 -
     char: ©
     u: "00A9"
     en: copyright
+    es: "copyright"
+    de: "Copyright"
 -
     char: ª
     u: "00AA"
     en: feminine ordinal indicator
+    es: "ordinal femenino"
+    de: "weibliches Ordnungszeichen"
 -
     char: «
     u: "00AB"
     en: left-pointing double angle quote mark
+    es: "abrir comillas angulare"
 -
     char: ¬
     u: "00AC"
     en: not
+    es: "negación"
+    de: "nicht"
 -
     char: ¯
     u: "00AF"
@@ -58,6 +142,14 @@
       choose:
         modified-variable: bar
         default: line
+    es:
+      choose:
+        modified-variable: barra
+        default: barra
+    de:
+      choose:
+        modified-variable: bar
+        default: "Überstrich"
 -
     char: ²
     u: "00B2"
