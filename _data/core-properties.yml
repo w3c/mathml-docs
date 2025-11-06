@@ -287,6 +287,31 @@
       en: 1.50 U S dollars
     - mathml: "<mrow><mi mathvariant='normal' intent=':currency'>£</mi><mn>1.50</mn></mrow>"
       en: 1.50 pounds
+
+- property: date
+  type: time-and-date
+  applicability: "mrow, mn"
+  examples:
+    - mathml: "<mrow intent=':date'><mn>15</mn><mo>.</mo><mn>03</mn><mo>.</mo><mn>2002</mn></mrow>"
+      en: "15 dot 0 3 dot 2002"
+    - mathml: "<mn intent=':date'>2002-03-15</mn>"
+      en: "15 dot 0 3 dot 2002"
+    - mathml: "<mrow intent=':date'><mn>2002</mn><mo>-</mo><mn>03</mn><mo>-</mo><mn>15</mn></mrow>"
+      en: "2002 dash 0 3 dash 15"
+    - mathml: "<mn intent=':date'>98/08/26</mn>"
+      en: "98 slash 0 8 slash 26"
+      
+
+- property: time
+  type: time-and-date
+  applicability: "mrow, mn, msup"
+  examples:
+    - mathml: "<mrow intent=':time'><mn>5</mn><mo>:</mo><mn>20</mn></mrow>"
+      en: "5 20"
+    - mathml: "<mn intent=':time'>18:47</mn>"
+      en: "18 47"
+    - mathml: "<msup intent=':time'><mn>12</mn><mn>15</mn></msup>"
+      en: "12 15"
       
 
 - property: roman-numeral
