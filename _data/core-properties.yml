@@ -261,8 +261,6 @@
         </mrow>
       en: the sum from 0 to n of i squared
 
-
-
 - property: unit
   type: units-and-currency
   applicability: mi
@@ -366,43 +364,41 @@
   effect: read the term as a chemical equation
   comment: chemical equations include arrows, operators (e.g., `+`, `-`, `=`), and brackets (to indicate concentration)
   examples:
-   - mathml: |
-      <mrow intent=':chemical-equation'>
-       <mrow intent=':chemical-equation'>
-        <mn>2</mn>
-        <mo>&#x2062;</mo>
-        <mrow intent=':chemical-equation'>
-         <mmultiscripts intent=':chemical-formula'>
-          <mi mathvariant='normal' intent=':chemical-element'>H</mi>
-          <mn>2</mn>
-          <mrow/>
-         </mmultiscripts>
-         <mo>&#x2063;</mo>
-         <mi mathvariant='normal' intent=':chemical-element'>O</mi>
-        </mrow>
-       </mrow>
-       <mo>⟶</mo>
+    - mathml: |
        <mrow intent=':chemical-equation'>
         <mrow intent=':chemical-equation'>
          <mn>2</mn>
          <mo>&#x2062;</mo>
+         <mrow intent=':chemical-equation'>
+          <mmultiscripts intent=':chemical-formula'>
+           <mi mathvariant='normal' intent=':chemical-element'>H</mi>
+           <mn>2</mn>
+           <mrow/>
+          </mmultiscripts>
+          <mo>&#x2063;</mo>
+          <mi mathvariant='normal' intent=':chemical-element'>O</mi>
+         </mrow>
+        </mrow>
+        <mo>⟶</mo>
+        <mrow intent=':chemical-equation'>
+         <mrow intent=':chemical-equation'>
+          <mn>2</mn>
+          <mo>&#x2062;</mo>
+          <mmultiscripts intent=':chemical-formula'>
+           <mi mathvariant='normal' intent=':chemical-element'>H</mi>
+           <mn>2</mn>
+           <mrow/>
+          </mmultiscripts>
+         </mrow>
+         <mo>+</mo>
          <mmultiscripts intent=':chemical-formula'>
-          <mi mathvariant='normal' intent=':chemical-element'>H</mi>
+          <mi mathvariant='normal' intent=':chemical-element'>O</mi>
           <mn>2</mn>
           <mrow/>
          </mmultiscripts>
         </mrow>
-        <mo>+</mo>
-        <mmultiscripts intent=':chemical-formula'>
-         <mi mathvariant='normal' intent=':chemical-element'>O</mi>
-         <mn>2</mn>
-         <mrow/>
-        </mmultiscripts>
        </mrow>
-      </mrow>
-     en: '2,  cap h, sub 2;  cap o; reacts to form; 2  cap h, sub 2; plus  cap o, sub 2'
-
-
+      en: '2,  cap h, sub 2;  cap o; reacts to form; 2  cap h, sub 2; plus  cap o, sub 2'
 
 - property: pause-short
   type: pause
