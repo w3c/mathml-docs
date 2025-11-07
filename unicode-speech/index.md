@@ -146,3 +146,32 @@ function updatelang (e) {
 }
 </script>
 
+    <script>
+function getQueryVariable(variable){
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable){return pair[1];}
+   }
+  return(false);
+}
+
+function setLanguage () {
+  var lstr=getQueryVariable("lang");
+  var llist=lstr.split(",");
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    opt.checked=(llist.includes(opt.value));
+  }
+  updatelang();
+}
+
+
+if ( window.addEventListener) {
+  window.addEventListener('load',
+    function() {
+      setLanguage();
+     }, false);
+}
+</script>
