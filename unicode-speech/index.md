@@ -144,9 +144,7 @@ function updatelang (e) {
     }
   }
 }
-</script>
 
-    <script>
 function getQueryVariable(variable){
   var query = window.location.search.substring(1);
   var vars = query.split("&");
@@ -174,4 +172,5 @@ if ( window.addEventListener) {
       setLanguage();
      }, false);
 }
+
 </script>
