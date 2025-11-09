@@ -142,7 +142,7 @@ defaultfixity:
        - concept: perpendicular
          characters: ["⟂"]
        - concept: plus
-         characters: [+,U+2064]
+         characters: [+, U+2064]
        - concept: plus-or-minus
          characters: [±]
        - concept: precedes
