@@ -73,6 +73,7 @@ Localised texts can be added to the YAML file:
             {%- if lang != "en" %} ({{language.label-english}}){% endif %}</label></span>
 {% endfor %}
 </p>
+<p><input type="button" value="Set URL" onclick="seturlquery()"></p>
 </details>
 
 -------
@@ -144,6 +145,17 @@ function updatelang (e) {
     }
   }
 }
+
+function seturlquery() {
+  var urlq='?lang=';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (opt.checked) {
+      urlq=urlq+opt.value +",";
+    }
+  }
+  window.location.search=urlq;
+  }
 
 function getQueryVariable(variable){
   var query = window.location.search.substring(1);
