@@ -177,17 +177,17 @@
 
 
 - property: continued-row
-  type: table
+  type: table-row
   applicability: mtr
   effect: indicates that the row continues an equation wrapped from the row above
 
 - property: by-row
-  type: table
+  type: table-order
   applicability: mtable
   effect: indicates that the table should be read row by row
 
 - property: by-column
-  type: table
+  type: table-order
   applicability: mtable
   effect: indicates that the table should be read column by column
 
