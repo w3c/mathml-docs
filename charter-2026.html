@@ -78,7 +78,7 @@
               Start date
             </th>
             <td>
-              <i class="todo">[TPD]</i>
+              <i class="todo">[TBD]</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -126,7 +126,7 @@
   <a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html">earliest days of the Web at CERN</a>,
   and MathML was among the first specifications taken up and developed by the W3C in the mid to late 1990s XML/XHTML era.
   It received much attention and has created a vibrant ecosystem of implementations and integration outside of web browsers.
-  At the start of 2023, Chromium support of MathML Core was enabled by default so that all major browsers now support MathML without the need of third party libraries.
+  At the start of 2023, Chromium support of MathML Core was enabled by default so that all major browsers now support MathML without the need of third-party libraries.
   MathML Core is a subset of the full MathML recommendation.
   Additional work is needed to expand MathML Core to encompass more features used in mathematical layout and to resolve some open issues which were put off to a future time such as links in MathML.
   </p>
@@ -258,17 +258,29 @@ The Working Group will deliver the following W3C normative specifications:
           and how MathML renderers might be implemented and should interact with browsers.
           Finally, this document addresses the issue of special characters used for mathematics, their handling in MathML, their presence in Unicode, and their relation to fonts. </p>
         <p><b>Draft state:</b> Working Draft</p>
-        <p><b>Expected completion:</b> [Q1 2027]</p>
-        <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/mathml4/">2026-03-12</a></p>
-        <p><b>Exclusion Draft:</b>
-            <a href="https://www.w3.org/TR/2022/WD-mathml4-20220908/">https://www.w3.org/TR/2022/WD-mathml4-20220908/</a><br>
-            <a href="https://www.w3.org/mid/cfe-10410-f56313d84c8b0f1aa342d3f70b7ddc955239ea9a@w3.org">Exclusion period</a>
-            began on 2022-09-08 and
-            ended on 2023-02-05.
-        </p>
-        <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
-            <a href="https://www.w3.org/Math/Documents/Charter2021.html">https://www.w3.org/Math/Documents/Charter2021.html</a>                                                            </p>
+          <p><b>Expected completion:</b> [Q1 2027]</p>
+          <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/mathml4/">2026-03-12</a></p>
+          <p><b>Exclusion Draft:</b>
+              <a href="https://www.w3.org/TR/2022/WD-mathml4-20220908/">https://www.w3.org/TR/2022/WD-mathml4-20220908/</a><br>
+              <a href="https://www.w3.org/mid/cfe-10410-f56313d84c8b0f1aa342d3f70b7ddc955239ea9a@w3.org">Exclusion period</a>
+              began on 2022-09-08 and
+              ended on 2023-02-05.
+          </p>
+          <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+              <a href="https://www.w3.org/Math/Documents/Charter2021.html">https://www.w3.org/Math/Documents/Charter2021.html</a>                                                            </p>
     </dd>
+    <dt id="XML Entities" class="spec"><a href="https://www.w3.org/TR/xml-entity-names/"  rel="versionof">XML Entity Definitions for Characters (3rd Edition)</a></dt>
+    <dd>
+      <p>This specification defines several sets of names and their mapping to Unicode characters.
+         There is an emphasis on characters used in mathematical notation.
+         Every year, the Unicode Consortium adds new characters to the Unicode Standard, and this specification needs periodic updates (new editions).</p> 
+      </p>
+      <p class="spec"><b>Draft state:</b> Recommendation</p>
+      <p><b>Expected completion:</b> [Q2 2028]</p>
+      <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/xml-entity-names/">2023-03-07</a></p>
+      <p><b>Exclusion Draft Charter</b>: Produced under Working Group Charter:
+          <a href="https://www.w3.org/Math/Documents/Charter2021.html">https://www.w3.org/Math/Documents/Charter2021.html</a>                                                            </p>
+      </dd>
     </dl>
 
 
@@ -293,7 +305,15 @@ The Working Group will deliver the following W3C normative specifications:
       <p class="draft-status"><b>Draft state:</b>
          Features identified for possible inclusion in Core Level 2 can be found on the <a href="https://github.com/w3c/mathml-core/issues?q=state%3Aopen%20label%3Alevel-2">MathML Core</a> issue tracker.</p>
       </dd>
+    <dt id="mathml5" class="spec"><a href="#">MathML 5</a></dt>
+    <dd>
+      <p>Collect requirements for MathML 5 based on deferred issues.
+        This includes potential work around content MathML which was excluded from the charter for MathML 4.</p>
+      <p class="draft-status"><b>Draft state:</b> No draft</p>
+      <p class="milestone"><b>Expected completion:</b> (First Public Working Draft) Start date + 24 months</p>
+    </dd>
     </dl>
+
   </section>
 
   <section id="other-deliverables">
@@ -324,11 +344,11 @@ The Working Group will deliver the following W3C normative specifications:
         <li>May 2026: Candidate Recommendation MathML 4</li>
         <li>June 2026: First full implementation of all `intent` core concepts and properties in a screen reader</li>
         <li>August 2026: community repository for intent values and properties opened for contributions</li>
-        <li>October 2026: Test suites and implementation reports for MathML Core</li>
-        <li>October 2026: Proposed Recommendation for MathML Core</li>
-        <li>December 2026: Implementation reports for MathML Core</li>
-        <li>December 2026: Proposed Recommendation for MathML 4</li>
-        <li>March 2027: Polyfill implementations for MathML 4 features not in MathML Core</li>
+        <li>November 2026: Test suites and implementation reports for MathML Core</li>
+        <li>December 2026: Recommendation for MathML Core</li>
+        <li>February 2026: Implementation reports for MathML</li>
+        <li>March 2026: Recommendation for MathML 4</li>
+        <li>June 2027: Polyfill implementations for MathML 4 features not in MathML Core</li>
       </ul>
   </section>
 </section>
@@ -473,6 +493,17 @@ and continue to improve the accessibility of that which is part of MathML.
       (issues might arise from a new IDL, focusability, support for ideas like Shadow DOM, support for attributes, etc.), in which case these
       should be explored further together with the WHATWG (and the <a href="https://www.w3.org/community/wicg/">WICG</a>).
       </dd>
+      <dt><a href="https://www.pdfa.org/">PDF Association</a></dt>
+      <dd>The PDF Association is responsible for the development of the PDF format, which is widely used for documents containing mathematical content.
+           The MathML WG will coordinate with the PDF Association to ensure that PDF documents that contain mathematical content continue to be accessible
+           and that the PDF format can continue to support the needs of mathematical content in documents.</dd>
+      </dd>
+      <dt><a href="https://unicode.org/">Unicode Consortium</a></dt>
+      <dd>The Unicode Consortium is responsible for the development of the Unicode Standard, which includes support for mathematical characters and symbols.
+           The MathML WG will coordinate with the Unicode Consortium to ensure that Unicode updates its specification to include mathematical characters and symbols that are missing.
+           Additionally, the Math WG will coordinate with the Unicode Consortium to ensure that the supplemental tables it produces are sufficient for browser implementations.
+      </dd>
+
           </dl></section>
       </section>
 
