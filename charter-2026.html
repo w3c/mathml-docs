@@ -28,7 +28,6 @@
           <li><a href="#decisions">Decision Policy</a></li>
           
           <li><a href="#patentpolicy">Patent Policy</a></li>
-          <li></li>
           <li><a href="#licensing">Licensing</a></li>
           <li><a href="#about">About this Charter</a></li>
         </ul>
@@ -47,7 +46,7 @@
     
 
     <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/groups/wg/math/">Math Working Group</a> is to
-      promote the inclusion of mathematics on the Web so that it is a first-class citizen of the web that displays well, is accessible, and is searchable.</p>
+      promote the inclusion of mathematics on the Web so that it is a first-class citizen of the Web that displays well, is accessible, and is searchable.</p>
       <!-- the link to the group is ALWAYS that available from https://www.w3.org/groups/wg or https://www.w3.org/groups/ig because each group page can then point to a different homepage, but not the other way around. -->
 
       <div class="noprint">
@@ -58,7 +57,7 @@
       <!-- replace GitHub link and issues link to the specific charter in GH and its issues repo -->
       <!-- delete the whole paragraph after AC review completed -->
       <p class="issue"> This proposed charter is available
-      on <a href="https://github.com/w3c/mathml-docs/charter-2026.html">GitHub</a>.
+      on <a href="https://github.com/w3c/mathml-docs/blob/main/charter-2026.html">GitHub</a>.
 
     Feel free to raise <a href="https://github.com/w3c/mathml/issues">issues</a>.
           </p>
@@ -106,7 +105,7 @@
               Meeting Schedule
             </th>
             <td>
-              <strong>Teleconferences:</strong> two 1-hour calls working on different aspects of MathML held on a schedule ranging from weekly to monthly to resolve issues as needed. 
+              <strong>Teleconferences:</strong> two 1-hour calls working on different aspects of MathML, held on a schedule ranging from weekly to monthly to resolve issues as needed. 
               <br>
               <strong>Face-to-face:</strong> no face-to-face meetings are currently planned, but the group may choose to have one or more face-to-face meetings if needed and if circumstances allow.
               <br>
@@ -120,7 +119,7 @@
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
   <p>
-  <a href="https://www.w3.org/Math/">MathML </a>
+  <a href="https://www.w3.org/Math/">MathML</a>
   is a markup language for encoding and communicating mathematics.
   The need for mathematical rendering on the web was evident from the
   <a href="https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html">earliest days of the Web at CERN</a>,
@@ -128,7 +127,7 @@
   It received much attention and has created a vibrant ecosystem of implementations and integration outside of web browsers.
   At the start of 2023, Chromium support of MathML Core was enabled by default so that all major browsers now support MathML without the need of third-party libraries.
   MathML Core is a subset of the full MathML recommendation.
-  Additional work is needed to expand MathML Core to encompass more features used in mathematical layout and to resolve some open issues which were put off to a future time such as links in MathML.
+  Additional work is needed to expand MathML Core to encompass more features used in mathematical layout and to resolve some open issues which were put off to a future time, such as links in MathML.
   </p>
       </div>
 
@@ -154,7 +153,7 @@ absence of additional information.
 </ul>
 <p>
 The Working Group will continue to provide a thorough review and refinement of MathML Core Level 1’s
-rendering, including integration with current CSS and basic DOM, and providing tests and opening bugs.
+rendering, including integration with current CSS and basic DOM, and providing tests and reporting issues.
 </p>
 <p>
 The Working Group will take up new work looking for areas where MathML Core should be expanded to a MathML Core Level 2.
@@ -214,7 +213,7 @@ Deliverables
 <p>Updated document status is available on the <a href="https://www.w3.org/groups/wg/math/publications/">group publication status page</a>.</p>
 
 <p id="draft-state"><i>Draft state</i> indicates the state of the deliverable at the time of the charter approval.
-<i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state
+<i>Expected completion</i> indicates when the deliverable is projected to become a Recommendation, or otherwise reach a stable state.</p>
 
 <section id="normative">
 <h3>
@@ -272,12 +271,11 @@ The Working Group will deliver the following W3C normative specifications:
               <a href="https://www.w3.org/Math/Documents/Charter2021.html">https://www.w3.org/Math/Documents/Charter2021.html</a>
           </p>
     </dd>
-    <dt id="XML Entities" class="spec"><a href="https://www.w3.org/TR/xml-entity-names/"  rel="versionof">XML Entity Definitions for Characters (3rd Edition)</a></dt>
+    <dt id="xml-entities" class="spec"><a href="https://www.w3.org/TR/xml-entity-names/"  rel="versionof">XML Entity Definitions for Characters (3rd Edition)</a></dt>
     <dd>
       <p>This specification defines several sets of names and their mapping to Unicode characters.
          There is an emphasis on characters used in mathematical notation.
-         Every year, the Unicode Consortium adds new characters to the Unicode Standard, and this specification needs periodic updates (new editions).</p> 
-      </p>
+         Every year, the Unicode Consortium adds new characters to the Unicode Standard, and this specification needs periodic updates (new editions).</p>
       <p class="spec"><b>Draft state:</b> Recommendation</p>
       <p><b>Expected completion:</b> [Q2 2028]</p>
       <p><b>Latest publication:</b> <a href="https://www.w3.org/TR/xml-entity-names/">2023-03-07</a></p>
@@ -329,13 +327,13 @@ The Working Group will deliver the following W3C normative specifications:
     </p>
     <ul>
     <li>Test suites and implementation reports for MathML Core.</li>
-    <li>Documentation of `intent` core concepts and properties to annotate Presentation MathML for accessibility.</li>
-    <li>Documentation of defined inference rules when `intent` properties are used.</li>
-    <li>A community repository for intent values and properties beyond those defined in a MathML 4 recommendation.</li>
+    <li>Documentation of <code>intent</code> core concepts and properties to annotate Presentation MathML for accessibility.</li>
+    <li>Documentation of defined inference rules when <code>intent</code> properties are used.</li>
+    <li>A community repository for <code>intent</code> values and properties beyond those defined in a MathML 4 recommendation.</li>
     <li>Polyfill implementations for MathML 4 features not in MathML Core.</li>
     <li>At least one open-source (example code) MathML-to-speech/MathML-to-braille implementation that makes use of accessibility annotations.</li>
     <li>At least one LaTeX/TeX-to-MathML converter that incorporates accessibility annotations in its MathML output.</li>
-    <li>Suggested list of LaTeX/TeX macros (names/args) and their mapping to `intent` core concepts and properties</li>
+    <li>Suggested list of LaTeX/TeX macros (names/args) and their mapping to <code>intent</code> core concepts and properties.</li>
     <li>Code to convert Content MathML to Presentation MathML with accessibility annotations.</li>
     <li>Analysis of mathematical notation usage in world-wide writing systems, including but not limited to non-LTR writing systems.</li>
     <li>MathML Accessibility Technique Notes.</li>
@@ -347,8 +345,8 @@ The Working Group will deliver the following W3C normative specifications:
       <p>These dates are not meant as deadlines; work may need to continue after these dates to ensure the quality of the deliverables.</p>
       <ul>
         <li>May 2026: Candidate Recommendation MathML 4</li>
-        <li>June 2026: First full implementation of all `intent` core concepts and properties in a screen reader</li>
-        <li>August 2026: community repository for intent values and properties opened for contributions</li>
+        <li>June 2026: First full implementation of all <code>intent</code> core concepts and properties in a screen reader</li>
+        <li>August 2026: Community repository for <code>intent</code> values and properties opened for contributions</li>
         <li>November 2026: Test suites and implementation reports for MathML Core</li>
         <li>December 2026: Recommendation for MathML Core</li>
         <li>February 2027: Implementation reports for MathML</li>
@@ -380,7 +378,6 @@ The Working Group will deliver the following W3C normative specifications:
       at least two independent implementations by assistive technologies of MathML 4 features that are relevant.
     </p>
     
-    <p> </p>
 
     <!-- Horizontal review -->
 
@@ -441,8 +438,8 @@ The Working Group will deliver the following W3C normative specifications:
 	      features or Web Platform APIs. Also, new technical
 	      features arising during the development of MathML may
 	      have relevance for the Web Platform in general, or ideas
-	      developing for the Web Platform in general might be
-	      developing in
+	      being developed for the Web Platform in general might be
+	      incubating in
 <a href="https://www.w3.org/community/wicg">WICG</a>
 which could be relevant to MathML.  The MathML WG will make an effort to make sure these are explored further together within incubations in the Web Platform Incubator Community Group where appropriate.
 	    </dd>
@@ -455,7 +452,7 @@ which could be relevant to MathML.  The MathML WG will make an effort to make su
 	    <dt><a href="https://www.w3.org/WAI/ARIA/">ARIA Working Group</a></dt>
 	    <dd>The ARIA Working Group is responsible for the development of ARIA and related Accessibility Mappings. The MathML WG will appoint a liaison and coordinate with the ARIA Working Group to provide the
 <a href="https://w3c.github.io/mathml-aam/">MathML AAM</a>
-and continue to improve the accessibility of that which is part of MathML.
+and continue to improve the accessibility of MathML content.
 </dd>
 
 	    <dt><a href="https://www.w3.org/groups/wg/pm/">Publishing Maintenance Working Group</a></dt>
@@ -502,7 +499,6 @@ and continue to improve the accessibility of that which is part of MathML.
       <dd>The PDF Association is responsible for the development of the PDF format, which is widely used for documents containing mathematical content.
            The MathML WG will coordinate with the PDF Association to ensure that PDF documents that contain mathematical content continue to be accessible
            and that the PDF format can continue to support the needs of mathematical content in documents.</dd>
-      </dd>
       <dt><a href="https://unicode.org/">Unicode Consortium</a></dt>
       <dd>The Unicode Consortium is responsible for the development of the Unicode Standard, which includes support for mathematical characters and symbols.
            The MathML WG will coordinate with the Unicode Consortium to ensure that Unicode updates its specification to include mathematical characters and symbols that are missing.
@@ -548,7 +544,7 @@ and continue to improve the accessibility of that which is part of MathML.
           Most Math Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-          This group primarily conducts its technical work  on the public mailing list <a class="" id="public-name" href="mailto:www-math@w3.org">www-math@w3.org</a> (<a class="" href="https://lists.w3.org/Archives/Public/www-math/">archive</a>)
+          This group primarily conducts its technical work on the public mailing list <a class="" id="public-name" href="mailto:www-math@w3.org">www-math@w3.org</a> (<a class="" href="https://lists.w3.org/Archives/Public/www-math/">archive</a>)
           and on <a class="" id="public-github" href="https://www.w3.org/groups/wg/math/tools/#repositories">GitHub issues</a>.
           The public is invited to review, discuss and contribute to this work.
         </p>
@@ -574,7 +570,7 @@ and continue to improve the accessibility of that which is part of MathML.
           To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
           A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey),
-          with a response period from <span id="cfc">one week</span>, depending on the chair's evaluation of the group consensus on the issue.
+          with a response period of <span id="cfc">one week</span>, depending on the Chairs' evaluation of the group consensus on the issue.
 
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
@@ -708,7 +704,6 @@ and continue to improve the accessibility of that which is part of MathML.
 		</td>
 	      </tr>
 	      <tr>
-	      </tr><tr>
 		<th>
 		  <a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2003AprJun/0016.html">Charter extension</a>
 		</th>
