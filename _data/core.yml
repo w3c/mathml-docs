@@ -245,10 +245,15 @@ concepts:
 
     - concept: inverse
       arity: 1
-      property: postfix
+      property: function*
       en: inverse of $1
       comments:
       - "`inverse` can be used for function inverses, matrix inverses, etc."
+
+    - concept: inverse
+      arity: 1
+      property: postfix
+      en: $1 inverse
 
     - concept: domain
       arity: 1
@@ -264,7 +269,7 @@ concepts:
 
     - concept: image
       arity: 1
-      property: prefix
+      property: function*
       en: image of $1
       fr: image de $1
 
