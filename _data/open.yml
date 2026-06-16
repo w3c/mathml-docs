@@ -10080,7 +10080,7 @@ concepts:
     
     - concept: rising-factorial
       arity: 2
-      en: #2<i>th</i> rising factorial of  $1
+      en: $2<i>th</i> rising factorial of  $1
       property: mixfix
       area: "combinatorics"
       mathml:
