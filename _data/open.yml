@@ -8532,7 +8532,7 @@ concepts:
       mathml:
        - "<math><mrow intent='or-product($a1,$a2)'><mi arg='a1'>X</mi><mo>*</mo><mi arg='a2'>Y</mi></mrow></math>"
       urls: 
-       - "https://en.wikipedia.org/w/index.php?title=Graph_product"
+       - "https://en.wikipedia.org/wiki/Graph_product"
       alias:
        - disjunctive-product
        - co-normal-product
