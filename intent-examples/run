@@ -2,6 +2,6 @@
 set -e
 
 
-py addmathcat.py examples.html > index.html
+python3 addmathcat.py examples.html > index.html
 
 
