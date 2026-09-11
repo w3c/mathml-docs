@@ -32,23 +32,25 @@ title: Open Concept List
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
+span.nw {white-space:nowrap}
 .markdown-body table {font-size:85%}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+.markdown-body table tr.subj {background-color:beige;font-size:110%;text-align:left;}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
      [arg] { background-color: #ddfafa;}
      [arg]:hover {display:inline;background-color: #add8e6;}
      [arg]:hover::after {display:inline;vertical-align: sub; font-size: 0.7em; }
-     [arg="a1"]:hover::after { content: " $1" ; }
-     [arg="a2"]:hover::after { content: " $2" ; }
-     [arg="a3"]:hover::after { content: " $3" ; }
-     [arg="a4"]:hover::after { content: " $4" ; }
-     [arg="a5"]:hover::after { content: " $5" ; }
-     [arg="a6"]:hover::after { content: " $6" ; }
-     [arg="a7"]:hover::after { content: " $7" ; }
-     [arg="a8"]:hover::after { content: " $8" ; }
-     [arg="a9"]:hover::after { content: " $9" ; }
+     [arg="a1"]:hover::after { content: " $a1" ; }
+     [arg="a2"]:hover::after { content: " $a2" ; }
+     [arg="a3"]:hover::after { content: " $a3" ; }
+     [arg="a4"]:hover::after { content: " $a4" ; }
+     [arg="a5"]:hover::after { content: " $a5" ; }
+     [arg="a6"]:hover::after { content: " $a6" ; }
+     [arg="a7"]:hover::after { content: " $a7" ; }
+     [arg="a8"]:hover::after { content: " $a8" ; }
+     [arg="a9"]:hover::after { content: " $a9" ; }
 math:not(:has(*[intent])) {
     color: red;
     }
@@ -123,9 +125,8 @@ Additional contributions are welcome:
 </p>
 </details>
 
-{%- for section in site.data.open.concepts -%}
-
-### {{section.title}}
+{% assign cpts = site.data.open.concepts | sort: "subject-area" %}
+{% assign subjt = "" %}
 
 <table style="width:100%">
 <thead>
@@ -137,12 +138,21 @@ Additional contributions are welcome:
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
 <th style="width:auto">Comments</th>
-<th>Subject</th>
 <th>Sources</th>
 </tr>
 </thead>
 <tbody>
-{%- for c in section.intents -%}
+{%- for c in cpts -%}
+{%- if c.subject-area != subjt -%}
+{%- assign subjt = c.subject-area -%}
+<tr class="subj"><th colspan="3">
+{%- if c.subject-area == null -%}
+00 Unclassified
+{%- else -%}
+{{subjt}}
+{%- endif -%}
+</th></tr>
+{%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
@@ -151,13 +161,19 @@ Additional contributions are welcome:
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}</td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}<br/>
+<span class="nw">[
+{%- for arg in c.arguments -%}
+{{arg}}
+{%- unless forloop.last -%},{% endunless -%}
+{%- endfor -%}
+]</span></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 [{{cond.condition}}]:
-{% if cond[language.language-code] -%}
-{%- for l in cond[language.language-code] -%}
+{% if cond.speech[language.language-code] -%}
+{%- for l in cond.speech[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
@@ -183,7 +199,6 @@ Additional contributions are welcome:
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}<br>{% endunless -%}{%- endfor -%}
 {%-endif -%}
 </td>{%- endif -%}
-{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.area}}</td>{%-endif -%}
 {%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">
 {%- if c.urls -%}
 {% for u in c.urls %}
@@ -214,16 +229,22 @@ arXiv
 {%- else -%}
 <tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
 <td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
-<td>{{arityr}}</td>
+<td>{{arityr}}<br/>
+<span class="nw">[
+{%- for arg in c.arguments -%}
+{{arg}}
+{%- unless forloop.last -%},{% endunless -%}
+{%- endfor -%}
+]</span></td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
-{%- if c[language.language-code] -%}
-{%- for l in c[language.language-code] -%}
+{%- if c.speech[language.language-code] -%}
+{%- for l in c.speech[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
-{%- for l in c.en -%}
+{%- for l in c.speech.en -%}
 {{l}} ({{language.language-code}}){%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %} 
 {% endif %}
@@ -244,7 +265,6 @@ arXiv
 Aliases: {% for al in c.alias -%}{{al}}{%- unless forloop.last -%}, {% endunless -%}{%- endfor -%}
 {%-endif -%}
 </td>
-<td>{{c.area}}</td>
 <td>
 {%- if c.urls -%}
 {% for u in c.urls %}
@@ -276,7 +296,7 @@ arXiv
 </tbody>
 </table>
 <hr>
-{%- endfor -%}
+
 
 ### Key
 

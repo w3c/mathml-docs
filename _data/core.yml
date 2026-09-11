@@ -1,302 +1,336 @@
 ## Defaults:
 ### - property infix => arity 2
 ### - property prefix => arity 1
-### - property suffix => arity 1(((((
+### - property suffix => arity 1
 ### - property set, number => arity 0
 
 
 defaultfixity:
-   - fixity: function
-     concepts:
-       - concept: curl
-         characters: [∇]
-       - concept: divergence
-         characters: [∇]
-       - concept: gradient
-         characters: [∇]
-       - concept: laplacian
-         characters: [∆]
+  - fixity: function
+    concepts:
+      - concept: curl
+        characters: [∇]
+      - concept: divergence
+        characters: [∇]
+      - concept: gradient
+        characters: [∇]
+      - concept: laplacian
+        characters: [∆]
 
-   - fixity: prefix
-     concepts:
-       - concept: angle
-         characters: [∠]
-       - concept: angle-measure
-         characters: [∡]
-       - concept: change
-         characters: ["Δ"]
-       - concept: for-all
-         characters: [∀]
-       - concept: measured-angle
-         characters: [∡]
-       - concept: minus
-         characters: ["-", "−"]
-       - concept: not
-         characters: [¬]
-       - concept: number-of
-         characters: ["#"]
-       - concept: partial-derivative
-         characters: [∂]
-       - concept: right-angle
-         characters: [∟]
-       - concept: square-root-of
-         characters: [√]
-       - concept: there-does-not-exist
-         characters: [∄]
-       - concept: there-exists
-         characters: [∃]
+  - fixity: prefix
+    concepts:
+      - concept: angle
+        characters: [∠]
+      - concept: angle-measure
+        characters: [∡]
+      - concept: change
+        characters: ["Δ"]
+      - concept: for-all
+        characters: [∀]
+      - concept: measured-angle
+        characters: [∡]
+      - concept: minus
+        characters: ["-", "−"]
+      - concept: not
+        characters: [¬]
+      - concept: number-of
+        characters: ["#"]
+      - concept: partial-derivative
+        characters: [∂]
+      - concept: right-angle
+        characters: [∟]
+      - concept: square-root-of
+        characters: [√]
+      - concept: there-does-not-exist
+        characters: [∄]
+      - concept: there-exists
+        characters: [∃]
 
-   - fixity: infix
-     concepts:
-       - concept: and
-         characters: [⁤∧]
-       - concept: applied-to
-         characters: [⁡U+2061]
-       - concept: approximately
-         characters: [≈]
-       - concept: congruent
-         characters: [≅]
-       - concept: cartesian-product
-         characters: [×]
-       - concept: composed-with
-         characters: [∘]
-       - concept: cross-product
-         characters: [×]
-       - concept: defined-as
-         characters: ["≝", "=", "≔"]
-       - concept: dimensional-product
-         characters: [×]
-         link: dimensional-product*infix
-       - concept: divided-by
-         characters: [/, ÷, ":"]
-       - concept: divides
-         characters: ["|", "∣"]
-       - concept: does-not-belong-to
-         characters: [∉]
-       - concept: does-not-divide
-         characters: [∤]
-       - concept: dot-product
-         characters: ["·"]
-       - concept: downwards-diagonal-ellipsis
-         characters: ["⋱"]
-       - concept: direct-product
-         characters: [×]
-       - concept: element-of
-         characters: [∈, ∊]
-       - concept: ellipsis
-         characters: ["…", "⋯"]
-       - concept: equals
-         characters: ["="]
-       - concept: equivalent-to
-         characters: [≡]
-       - concept: evaluates-to
-         characters: ["→"]
-       - concept: given
-         characters: ["|"]
-       - concept: greater-than
-         characters: ["&gt;"]
-       - concept: greater-than-or-equal-to
-         characters: [≥, ≧]
-       - concept: identically-equals
-         characters: [≡]
-       - concept: if-and-only-if
-         characters: ["⟺"]
-       - concept: implies
-         characters: [⇒]
-       - concept: inner-product
-         characters: [⋅]
-       - concept: intersection
-         characters: [∩]
-       - concept: less-than
-         characters: ["&lt;"]
-       - concept: less-than-or-equal-to
-         characters: [≤, ≦]
-       - concept: list-separator
-         characters: [",", ";"]
-       - concept: maps-to
-         characters: ["→"]
-       - concept: member-of
-         characters: [∈, ∊]
-       - concept: minus
-         characters: ["-", "−"]
-       - concept: minus-or-plus
-         characters: [∓]
-       - concept: not-subset
-         characters: [⊄]
-       - concept: not-superset
-         characters: [⊅]
-       - concept: not-equal-to
-         characters: [≠]
-       - concept: not-member-of
-         characters: [∉]
-       - concept: not-parallel-to
-         characters: [∦]
-       - concept: obtained-from
-         characters: [←]
-       - concept: or
-         characters: [∨]
-       - concept: outer-product
-         characters: [⊗]
-       - concept: parallel-to
-         characters: [∥]
-       - concept: perpendicular
-         characters: ["⟂"]
-       - concept: plus
-         characters: [+, U+2064]
-       - concept: plus-or-minus
-         characters: [±]
-       - concept: precedes
-         characters: [≺]
-       - concept: proportional
-         characters: [∝, ∷, ∼, ~]
-       - concept: range-separator
-         characters: ["-", "‐", "‑", "–", "—"]
-       - concept: ratio
-         characters: [":", "∶"]
-       - concept: set-difference
-         characters: ["∼", "~", "-", "−", "\\"]
-       - concept: similar
-         characters: [≅]
-       - concept: subset
-         characters: [⊂]
-       - concept: subset-or-equal
-         characters: [⊆]
-       - concept: succeeds
-         characters: [≻]
-       - concept: such-that
-         characters: [":", "|"]
-       - concept: superset
-         characters: [⊃]
-       - concept: superset-or-equal
-         characters: [⊇]
-       - concept: tilde
-         characters: [~]
-       - concept: times
-         characters: ["*", "·", "×", "∗"]
-       - concept: union
-         characters: [∪]
-       - concept: upwards-diagonal-ellipsis
-         characters: ["⋰"]
-       - concept: vertical-ellipsis
-         characters: ["⋮"]
-       - concept: xor
-         characters: [⊕]
+  - fixity: infix
+    concepts:
+      - concept: and
+        characters: [⁤∧]
+      - concept: applied-to
+        characters: [⁡U+2061]
+      - concept: approximately
+        characters: [≈]
+      - concept: congruent
+        characters: [≅]
+      - concept: cartesian-product
+        characters: [×]
+      - concept: composed-with
+        characters: [∘]
+      - concept: cross-product
+        characters: [×]
+      - concept: defined-as
+        characters: ["≝", "=", "≔"]
+      - concept: dimensional-product
+        characters: [×]
+        link: dimensional-product*infix
+      - concept: divided-by
+        characters: [/, ÷, ":"]
+      - concept: divides
+        characters: ["|", "∣"]
+      - concept: does-not-belong-to
+        characters: [∉]
+      - concept: does-not-divide
+        characters: [∤]
+      - concept: dot-product
+        characters: ["·"]
+      - concept: downwards-diagonal-ellipsis
+        characters: ["⋱"]
+      - concept: direct-product
+        characters: [×]
+      - concept: element-of
+        characters: [∈, ∊]
+      - concept: ellipsis
+        characters: ["…", "⋯"]
+      - concept: equals
+        characters: ["="]
+      - concept: equivalent-to
+        characters: [≡]
+      - concept: evaluates-to
+        characters: ["→"]
+      - concept: given
+        characters: ["|"]
+      - concept: greater-than
+        characters: ["&gt;"]
+      - concept: greater-than-or-equal-to
+        characters: [≥, ≧]
+      - concept: identically-equals
+        characters: [≡]
+      - concept: if-and-only-if
+        characters: ["⟺"]
+      - concept: implies
+        characters: [⇒]
+      - concept: inner-product
+        characters: [⋅]
+      - concept: intersection
+        characters: [∩]
+      - concept: less-than
+        characters: ["&lt;"]
+      - concept: less-than-or-equal-to
+        characters: [≤, ≦]
+      - concept: list-separator
+        characters: [",", ";"]
+      - concept: maps-to
+        characters: ["→"]
+      - concept: member-of
+        characters: [∈, ∊]
+      - concept: minus
+        characters: ["-", "−"]
+      - concept: minus-or-plus
+        characters: [∓]
+      - concept: not-subset
+        characters: [⊄]
+      - concept: not-superset
+        characters: [⊅]
+      - concept: not-equal-to
+        characters: [≠]
+      - concept: not-member-of
+        characters: [∉]
+      - concept: not-parallel-to
+        characters: [∦]
+      - concept: obtained-from
+        characters: [←]
+      - concept: or
+        characters: [∨]
+      - concept: outer-product
+        characters: [⊗]
+      - concept: parallel-to
+        characters: [∥]
+      - concept: perpendicular
+        characters: ["⟂"]
+      - concept: plus
+        characters: [+, U+2064]
+      - concept: plus-or-minus
+        characters: [±]
+      - concept: precedes
+        characters: [≺]
+      - concept: proportional
+        characters: [∝, ∷, ∼, ~]
+      - concept: range-separator
+        characters: ["-", "‐", "‑", "–", "—"]
+      - concept: ratio
+        characters: [":", "∶"]
+      - concept: set-difference
+        characters: ["∼", "~", "-", "−", "\\"]
+      - concept: similar
+        characters: [≅]
+      - concept: subset
+        characters: [⊂]
+      - concept: subset-or-equal
+        characters: [⊆]
+      - concept: succeeds
+        characters: [≻]
+      - concept: such-that
+        characters: [":", "|"]
+      - concept: superset
+        characters: [⊃]
+      - concept: superset-or-equal
+        characters: [⊇]
+      - concept: tilde
+        characters: [~]
+      - concept: times
+        characters: ["*", "·", "×", "∗"]
+      - concept: union
+        characters: [∪]
+      - concept: upwards-diagonal-ellipsis
+        characters: ["⋰"]
+      - concept: vertical-ellipsis
+        characters: ["⋮"]
+      - concept: xor
+        characters: [⊕]
 
-   - fixity: postfix
-     concepts:
-       - concept: factorial
-         characters: ["!"]
-       - concept: percent
-         characters: ["%"]
+  - fixity: postfix
+    concepts:
+      - concept: factorial
+        characters: ["!"]
+      - concept: percent
+        characters: ["%"]
 
-   - fixity: nofix
-     concepts:
-       - concept: diameter
-         characters: ["d"]
-       - concept: distance
-         characters: ["d", "D"]
-       - concept: probability
-         characters: ["P"]
-       - concept: radius
-         characters: ["r"]
-       - concept: volume
-         characters: ["V"]
+  - fixity: nofix
+    concepts:
+      - concept: diameter
+        characters: ["d"]
+      - concept: distance
+        characters: ["d", "D"]
+      - concept: probability
+        characters: ["P"]
+      - concept: radius
+        characters: ["r"]
+      - concept: volume
+        characters: ["V"]
 
-   - fixity: silent
-     concepts:
-       - concept: invisible-separator
-         characters: [⁣U+2063]
-       - concept: invisible-times
-         characters: [⁢U+2062]
+  - fixity: silent
+    concepts:
+      - concept: invisible-separator
+        characters: [⁣U+2063]
+      - concept: invisible-times
+        characters: [⁢U+2062]
 
 
 concepts:
-
-  ## From chapter 4 of MathML3
-
-  ## - concept: TODO numbers representations
-
+  
   ## ================ 4.4.1 functions and inverses ====================
-  - title: functions and inverses
-    intents:
-    - concept: closed-interval
-      arity: 2
-      property: function
-      en: closed interval between $1 and $2
-      fr: intervalle fermé entre $1 et $2
-
-    - concept: closed-open-interval
-      arity: 2
-      property: function
-      en: interval between $1 (included) and $2
-      fr: intervalle ouvert à droite entre $1 et $2
-
-    - concept: open-closed-interval
-      arity: 2
-      property: function
-      en:  interval between $1 and $2, included
+  
+  - concept: closed-open-interval
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: interval between $a1 (included) and $a2
+      fr: intervalle ouvert à droite entre $a1 et $a2
+  
+  - concept: open-closed-interval
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en:  interval between $a1 and $a2, included
       fr: intervalle ouvert à gauche...
-
-    - concept: open-interval
-      arity: 2
-      property: function
-      en: open interval between $1 and $2
+  
+  - concept: open-interval
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: open interval between $a1 and $a2
       fr: intervalle ouvert
+  
+  - concept: closed-interval
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: closed interval between $a1 and $a2
+      fr: intervalle fermé entre $a1 et $a2
 
-    - concept: inverse
-      arity: 1
-      property: function*
-      en: inverse of $1
-      comments:
+  - concept: inverse
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function*
+    speech:
+      en: inverse of $a1
+    comments:
       - "`inverse` can be used for function inverses, matrix inverses, etc."
-
-    - concept: inverse
-      arity: 1
-      property: postfix
-      en: $1 inverse
-
-    - concept: domain
-      arity: 1
-      property: function
-      en: domain of $1
-      fr: domaine de définition de $1
-
-    - concept: codomain
-      arity: 1
-      property: function
-      en: codomain of $1
-      fr: ensemble d'arrivée de $1
-
-    - concept: image
-      arity: 1
-      property: function*
-      en: image of $1
-      fr: image de $1
-
-    - concept: fraction
-      arity: 2
-      property: function
-      en: fraction $1 over $2 end fraction
-
-    - concept: mixed-fraction
-      arity: 2
-      property: function
-      en: $1 and $2
-      comments:
-      - "$1 is a positive integer and $2 is a fraction with positive numerical components.
+  
+  - concept: inverse
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: postfix
+    speech:
+      en: $a1 inverse
+  
+  - concept: domain
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: domain of $a1
+      fr: domaine de définition de $a1
+  
+  - concept: codomain
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: codomain of $a1
+      fr: ensemble d'arrivée de $a1
+  
+  - concept: image
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function*
+    speech:
+      en: image of $a1
+      fr: image de $a1
+  
+  - concept: fraction
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: fraction $a1 over $a2 end fraction
+  
+  - concept: mixed-fraction
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: $a1 and $a2
+    comments:
+      - "$a1 is a positive integer and $a2 is a fraction with positive numerical components.
         The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
-
-    - concept: quotient
-      arity: 2
-      property: function
-      en: integer part of $1 divided by $2
-      fr: quotient de $1 par $2
-
-    - concept: evaluated-at
-      arity: 2
-      property: infix
-      en: $1 evaluated-at $2
-      comments:
+  
+  - concept: quotient
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: integer part of $a1 divided by $a2
+      fr: quotient de $a1 par $a2
+  
+  - concept: evaluated-at
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: $a1 evaluated-at $a2
+    comments:
       - "Two common notations are
         <math><mrow><msub><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>|</mo></mrow></mrow><mn>3</mn></msub></mrow></math>
         and
@@ -310,173 +344,253 @@ concepts:
           </msub>
         </math>
         "
-    - concept: remainder
-      arity: 2
-      property: function
-      en: the remainder of $1 divided by $2
-      fr: reste de la divsion de $1 par $2
+  - concept: remainder
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: the remainder of $a1 divided by $a2
+      fr: reste de la divsion de $a1 par $a2
+  
+  - concept: max
+    subject-area: functions and inverses
+    arity: ">=1"
+    arguments: [$a1, ...]
+    property: function
+    speech:
+      en: "max of $a1, ..."
+  
+  - concept: min
+    subject-area: functions and inverses
+    arity: ">=1"
+    arguments: [$a1, ...]
+    property: function
+    speech:
+      en: "min of $a1, ..."
+  
+  - concept: power
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    conditions:
+      - condition: "$a2=2"
+        speech:
+          en: "$a1 squared"
+          fr: "$a1 carré"
+      - condition: "$a2=3"
+        speech:
+          en: "$a1 cubed"
+          fr: "$a1 cube"
+      - condition: ""
+        speech:
+          en: "$a1 to the $a2<i>th</i> power"
+          fr: "$a1 à la $a2"
+  
+  
+  - concept: root
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    conditions:
+      - condition: "$a2=2"
+        speech:
+          en: "square root of $a1"
+      - condition: "$a2=3"
+        speech:
+          en: "cube root of $a1"
+      - condition: "$a2=4"
+        speech:
+          en: "fourth root of $a1"
+      - condition: ""
+        speech:
+          en: "$a2<i>th</i> root of $a1"
+  
+  - concept: greatest-common-divisor
+    subject-area: functions and inverses
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: function
+    speech:
+      en: greatest common divisor of $a1, $a2, ...
+      fr: plus grand commun diviseur de $a1, $a2, ...
+  
+  - concept: least-common-multiple
+    subject-area: functions and inverses
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: function
+    speech:
+      en: lest common multiple of  $a1, $a2, ...
+      fr: plus grand commun diviseur de $a1, $a2, ...
+  
+  - concept: least-common-denominator
+    subject-area: functions and inverses
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: function
+    speech:
+      en: "least common denominator of $a1, $a2, ..."
 
-    - concept: max
-      arity: ">=1"
-      property: function
-      en: "max of $1, ..."
-
-    - concept: min
-      arity: ">=1"
-      property: function
-      en: "min of $1, ..."
-
-    - concept: power
-      arity: 2
-      property: infix
-      conditions:
-        - condition: "$2=2"
-          en: "$1 squared"
-          fr: "$1 carré"
-        - condition: "$2=3"
-          en: "$1 cubed"
-          fr: "$1 cube"
-        - condition: ""
-          en: "$1 to the $2<i>th</i> power"
-          fr: "$1 à la $2"
-
-
-    - concept: root
-      arity: 2
-      property: function
-      conditions:
-        - condition: "$2=2"
-          en: "square root of $1"
-        - condition: "$2=3"
-          en: "cube root of $1"
-        - condition: "$2=4"
-          en: "fourth root of $1"
-        - condition: ""
-          en: "$2<i>th</i> root of $1"
-
-    - concept: greatest-common-divisor
-      arity: ">=2"
-      property: function
-      en: greatest common divisor of $1, $2, ...
-      fr: plus grand commun diviseur de $1, $2, ...
-
-    - concept: least-common-multiple
-      arity: ">=2"
-      property: function
-      en: lest common multiple of  $1, $2, ...
-      fr: plus grand commun diviseur de $1, $2, ...
-
-    - concept: absolute-value
-      arity: 1
-      property: function
-      en: absolute value of $1
-      fr: valeur absolue de $1
-      de: Betrag von $1
-
-    - concept: complex-conjugate
-      arity: 1
-      property: function
-      en: complex conjugate of $1
-      fr: $1 conjugé
-
-    - concept: complex-arg
-      arity: 1
-      property: function
-      en: arg of $1
-
-    - concept: real-part
-      arity: 1
-      property: function
+  - concept: absolute-value
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: absolute value of $a1
+      fr: valeur absolue de $a1
+      de: Betrag von $a1
+  
+  - concept: complex-conjugate
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: complex conjugate of $a1
+      fr: $a1 conjugé
+  
+  - concept: complex-arg
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: arg of $a1
+  
+  - concept: real-part
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - real part of $1
-      - imaginary part of $1
-      
-    - concept: imaginary-part
-      arity: 1
-      property: function
-      en: imaginary part of $1
-
-    - concept: polar-coordinate
-      arity: 2
-      property: function
-      en: "polar coordinate $1 comma $2"
-      comment:
-      - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
-      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
-
-    - concept: spherical-coordinate
-      arity: 3
-      property: function
-      en: "spherical coordinate $1 comma $2, comma $3"
-      comment:
-      - "The first argument is the radius, the second argument is the angle."
-      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
-
-    - concept: cartesian-coordinate
-      arity: ">=2"
-      property: function
-      en: "cartesian coordinate $1 comma $2 ..."
-      comment:
-      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
-
-    - concept: coordinate
-      arity: ">=2"
-      property: function
-      en: "coordinate $1 comma $2 ..."
-      comment:
-      - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
-      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
-
-    - concept: floor
-      arity: 1
-      property: function
-      en: floor of $1
-
-    - concept: ceiling
-      arity: 1
-      property: function
-      en: ceiling of $1
-
-    - concept: round
-      arity: 1
-      property: function
-      en: rounded-value of $1
-      comments:
+        - real part of $a1
+        - imaginary part of $a1
+    
+  - concept: imaginary-part
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: imaginary part of $a1
+  
+  - concept: polar-coordinate
+    subject-area: functions and inverses
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "polar coordinate $a1 comma $a2"
+    comment:
+    - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
+    - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+  
+  - concept: spherical-coordinate
+    subject-area: functions and inverses
+    arity: 3
+    arguments: [$a1, $a2, $a3]
+    property: function
+    speech:
+      en: "spherical coordinate $a1 comma $a2, comma $a3"
+    comment:
+    - "The first argument is the radius, the second argument is the angle."
+    - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+  
+  - concept: cartesian-coordinate
+    subject-area: functions and inverses
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: function
+    speech:
+      en: "cartesian coordinate $a1 comma $a2 ..."
+    comment:
+    - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+  
+  - concept: coordinate
+    subject-area: functions and inverses
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: function
+    speech:
+      en: "coordinate $a1 comma $a2 ..."
+    comment:
+    - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
+    - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+  
+  - concept: floor
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: floor of $a1
+  
+  - concept: ceiling
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: ceiling of $a1
+  
+  - concept: round
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: rounded-value of $a1
+    comments:
       - "This sometimes uses the notation
         <math><mo>&#x230A;</mo><mi>x</mi><mo>&#x2309;</mo></math>
         or
         <math><mo>[</mo><mi>x</mi><mo>]</mo></math>"
-
-    - concept: fractional-part
-      arity: 1
-      property: function
-      en: fractional part of $1
-
+  
+  - concept: fractional-part
+    subject-area: functions and inverses
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: fractional part of $a1
+  
   ## ====================== 4.4.4 Calculus ============================
-  - title: calculus
-    intents:
-    - concept: definite-integral
-      arity: 1
-      property: ???
-      en: "integral over $1"
-      comments:
+  - concept: definite-integral
+    subject-area: calculus
+    arity: 1
+    arguments: [$a1]
+    property: ???
+    speech:
+      en: "integral over $a1"
+    comments:
       - "integral sign is not an argument"
-
-    - concept: definite-integral
-      arity: 2
-      property: ???
-      en: "integral from $1 to $2"
-      comments:
+  
+  - concept: definite-integral
+    subject-area: calculus
+    arity: 2
+    arguments: [$a1, $a2]
+    property: ???
+    speech:
+      en: "integral from $a1 to $a2"
+    comments:
       - "integral sign is not an argument"
-    
-
-    - concept: derivative
-      arity: 3
-      property: ???
+  
+  
+  - concept: derivative
+    subject-area: calculus
+    arity: 3
+    arguments: [$a1, $a2, $a3]
+    property: ???
+    speech:
       en:
-      - "(verbose) the $3 derivative of $1 with respect to $2"
-      - "(terse) d <$3 if $3 != 1> $1 by d $2 <$3 if $3 != 1>"
-      comments:
+        - "(verbose) the $a3 derivative of $a1 with respect to $a2"
+        - "(terse) d <$a3 if $a3 != 1> $a1 by d $a2 <$a3 if $a3 != 1>"
+    comments:
       - "the terse reading only makes sense for Leibniz notation such as 
           <math><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></math>
           or
@@ -498,14 +612,17 @@ concepts:
             </mrow>
           </mfrac>
           ```
-
-
-    - concept: partial-derivative
-      arity: ">=3"
-      property: ???
+  
+  
+  - concept: partial-derivative
+    subject-area: calculus
+    arity: ">=3"
+    arguments: [$a1, $a2, $a3, ...]
+    property: ???
+    speech:
       en:
-      - "partial <sum $3+2i> $1 partial $2 <$3 if $3 != 1> [partial $4 <$5 if $5 != 1> ...]"
-      comments:
+        - "partial <sum $a3+2i> $a1 partial $a2 <$a3 if $a3 != 1> [partial $a4 <$a5 if $a5 != 1> ...]"
+    comments:
       - |
         ```
         <mfrac intent='partial-derivative($f, x, 2, y, 1)'>
@@ -519,12 +636,15 @@ concepts:
           </mrow>
         </mfrac>
         ```
-
-    - concept: limit
-      arity: 1
-      property: prefix
-      en: "limit as $1"
-      comments:
+  
+  - concept: limit
+    subject-area: calculus
+    arity: 1
+    arguments: [$a1]
+    property: prefix
+    speech:
+      en: "limit as $a1"
+    comments:
       - "limit is not an argument, but intent should be on `msub` or `munder`"
       - "There are several arrows used for limits. "
       - "Example: <math>
@@ -548,39 +668,49 @@ concepts:
       - "Another notation that might be spoken similarly is
         <math><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>-</mo></msup></mrow></munder></math>
         "
-    
-    - concept: tends-to
-      arity: 2
-      property: infix
-      en: "$1 tends to $2"
-      comments:
+  
+  - concept: tends-to
+    subject-area: calculus
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 tends to $a2"
+    comments:
       - "see \"limit\" example"
-    
-    - concept: tends-to-from-above
-      arity: 2
-      property: infix
-      en: "$1 tends to from above $2"
-      comments:
+  
+  - concept: tends-to-from-above
+    subject-area: calculus
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 tends to from above $a2"
+    comments:
       - "see \"limit\" example"
-    
-    - concept: tends-to-from-below
-      arity: 2
-      property: infix
-      en: "$1 tends to from below $2"
-      comments:
+  
+  - concept: tends-to-from-below
+    subject-area: calculus
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 tends to from below $a2"
+    comments:
       - "see \"limit\" example"
-
+  
   ## ====================== 4.4.5 Sets ============================
-  - title: Sets
-    intents:
-    - concept: set
-      arity: 1
-      property: function
-      en: "set of $1"
-      comments:
+  - concept: set
+    subject-area: sets
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "set of $a1"
+    comments:
       - |
                the argument to `set` is typically an `mrow`. For example:
-
+    
                ```
                <math>
                 <mrow intent='set($members)'>
@@ -598,398 +728,532 @@ concepts:
                 </mrow>
                </math>
                ```
-
-    - concept: set-difference
-      arity: 2
-      property: function
-      en: "set difference of $1 and $2"
-      comments:
+  
+  - concept: set-difference
+    subject-area: sets
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "set difference of $a1 and $a2"
+    comments:
       - "This can be spoken in many ways. See other entry for infix speech."
       - "There are several notations that are used and their order of appearance differs:
         <math><mi>A</mi><mo>-</mo><mi>B</mi></math>, <math><mi>A</mi><mo>\\</mo><mi>B</mi></math>"
-
-    - concept: set-difference
-      arity: 2
-      property: infix
-      en: "\"$1 minus $2\" or \"$2 subtracted from $1\""
-      comments:
+  
+  - concept: set-difference
+    subject-area: sets
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "\"$a1 minus $a2\" or \"$a2 subtracted from $a1\""
+    comments:
       - "This can be spoken in many ways. See other entry for functional speech."
       - "See functional form for some notational usages."
-
-    - concept: complement
-      arity: 1
-      property: function
-      en: "complement of $1"
-      comments:
+  
+  - concept: complement
+    subject-area: sets
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "complement of $a1"
+    comments:
       - "This can be spoken in many ways. See other entry for functional speech."
       - "Two notations used for complement are: 
         <math><msup><mi>A</mi><mi>C</mi></msup></math>, <math><msup><mi>A</mi><mo>'</mo></msup></math>"
-
-    - concept: empty-set
-      arity: 0
+  
+  - concept: empty-set
+    subject-area: sets
+    arity: 0
+    arguments: []
+    speech:
       en: "empty set"
-      comments:
+    comments:
       - "Three notations used for empty set are: { }, ∅, and ∅"
-
-
-    - concept: cardinality
-      arity: 1
-      property: function
-      comments:
+  
+  
+  - concept: cardinality
+    subject-area: sets
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "often used with matchfix single vertical bars"
-
-    - concept: list
-      arity: ">=0"
-      en: "list of $1, ..."
-
-    - concept: tuple
-      arity: ">=0"
-      en: "tuple of $1, ..."
-
-    ## ====================== 4.4.6 sequence and series ============================
-  - title: sequence and series
-    intents:
-    - concept: sum
-      arity: 1
-      property: function
-      en: "sum of $1"
-      comments:
+  
+  - concept: list
+    subject-area: sets
+    arity: ">=0"
+    arguments: [$a1, ...]
+    speech:
+      en: "list of $a1, ..."
+  
+  - concept: tuple
+    subject-area: sets
+    arity: ">=0"
+    arguments: [$a1, ...]
+    speech:
+      en: "tuple of $a1, ..."
+  
+  ## ====================== 4.4.6 sequence and series ============================
+  - concept: sum
+    subject-area: sequences and series
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "sum of $a1"
+    comments:
       - usually on `<mrow>`
-
-    - concept: sum
-      arity: 2
-      property: function
-      en: "sum over $1 of $2"
-      comments:
+  
+  - concept: sum
+    subject-area: sequences and series
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "sum over $a1 of $a2"
+    comments:
       - usually on `<munder>` or `<msub>`
-
-    - concept: sum
-      arity: 3
-      property: function
-      en: "sum from $1 to $2 of $3"
-      comments:
+  
+  - concept: sum
+    subject-area: sequences and series
+    arity: 3
+    arguments: [$a1, $a2, $a3]
+    property: function
+    speech:
+      en: "sum from $a1 to $a2 of $a3"
+    comments:
       - usually on `<munderover>` or `<msubsup>`
-
-    - concept: product
-      arity: 1
-      property: function
-      en: "product of $1"
-      comments:
+  
+  - concept: product
+    subject-area: sequences and series
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "product of $a1"
+    comments:
       - usually on `<mrow>`
-        
-    - concept: product
-      arity: 2
-      property: function
-      en: "product over $1 of $2"
-      comments:
+      
+  - concept: product
+    subject-area: sequences and series
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "product over $a1 of $a2"
+    comments:
       - usually on `<munder>` or `<msub>`
-
-    - concept: product
-      arity: 3
-      property: function
-      en: "product from $1 to $2 of $3"
-      comments:
+  
+  - concept: product
+    subject-area: sequences and series
+    arity: 3
+    arguments: [$a1, $a2, $a3]
+    property: function
+    speech:
+      en: "product from $a1 to $a2 of $a3"
+    comments:
       - usually on `<munderover>` or `<msubsup>`
-
-
-    ## ====================== 4.4.7 elementary classical functions ======================
-  - title: elementary classical functions
-    intents:
-    - concept: sine
-      arity: 1
-      property: function
-      en: "sine $1"
-      fr: "sinus $1"
-      comments:
+  
+  
+  ## ====================== 4.4.7 elementary classical functions ======================
+  - concept: sine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "sine $a1"
+      fr: "sinus $a1"
+    comments:
       - used as 'sin', 'sen'
-
-    - concept: cosine
-      arity: 1
-      property: function
+  
+  - concept: cosine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) cosine $1"
-      - "(terse) cos $1"
-
-    - concept: tangent
-      arity: 1
-      property: function
+        - "(verbose) cosine $a1"
+        - "(terse) cos $a1"
+  
+  - concept: tangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) tangent $1"
-      - "(terse) tan $1"
-      comments:
+        - "(verbose) tangent $a1"
+        - "(terse) tan $a1"
+    comments:
       - used as 'tan', 'tg'
-
-    - concept: secant
-      arity: 1
-      property: function
+  
+  - concept: secant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) secant $1"
-      - "(terse) seech $1"
-      comments:
+        - "(verbose) secant $a1"
+        - "(terse) seech $a1"
+    comments:
       - used as 'sec'
-
-    - concept: cosecant
-      arity: 1
-      property: function
+  
+  - concept: cosecant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) cosecant $1"
-      - "(terse) co-seech $1"
-      comments:
+        - "(verbose) cosecant $a1"
+        - "(terse) co-seech $a1"
+    comments:
       - used as 'csc'
-
-    - concept: cotangent
-      arity: 1
-      property: function
+  
+  - concept: cotangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) cotangent $1"
-      - "(terse) co-tan $1"
-      comments:
+        - "(verbose) cotangent $a1"
+        - "(terse) co-tan $a1"
+    comments:
       - used as 'cot'
-
-
-    ## inverse trig functions
-    - concept: arcsine
-      arity: 1
-      property: function
+  
+  
+  ## inverse trig functions
+  - concept: arcsine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) arcsine $1"
-      comments:
+        - "(verbose) arcsine $a1"
+    comments:
       - "used as 'arcsin', 'arc sin'"
       - "this is distinct from sin inverse (<math><msup><mi>sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)"
-
-    - concept: arccosine
-      arity: 1
-      property: function
+  
+  - concept: arccosine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) arccosine $1"
-      comments:
+        - "(verbose) arccosine $a1"
+    comments:
       - "used as 'arccos', 'arc cos'"
-
-    - concept: arctangent
-      arity: 1
-      property: function
+  
+  - concept: arctangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) arctangent $1"
-      comments:
+        - "(verbose) arctangent $a1"
+    comments:
       - "used as 'arctan', 'arc tan'"
-
-    - concept: arcsecant
-      arity: 1
-      property: function
+  
+  - concept: arcsecant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) arcsecant $1"
-      comments:
+        - "(verbose) arcsecant $a1"
+    comments:
       - "used as 'arcsec', 'arc sec'"
-
-    - concept: arccosecant
-      arity: 1
-      property: function
+  
+  - concept: arccosecant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) arc-cosecant $1"
-      comments:
+        - "(verbose) arc-cosecant $a1"
+    comments:
       - "used as 'arccos', 'arc cos'"
-
-    - concept: arccotangent
-      arity: 1
-      property: function
+  
+  - concept: arccotangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-      - "(verbose) arc-cotangent $1"
-      comments:
+        - "(verbose) arc-cotangent $a1"
+    comments:
       - "used as 'arccos', 'arc cos'"
-
-    ## hyperbolic trig functions
-    - concept: hyperbolic-sine
-      arity: 1
-      property: function
-      comments:
+  
+  ## hyperbolic trig functions
+  - concept: hyperbolic-sine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'sinh'"
+    speech:
       en:
-        - "short form 'shine $1'"
+        - "short form 'shine $a1'"
       fr:
-        - "sinus hyperbolique $1"
-
-
-    - concept: hyperbolic-cosine
-      arity: 1
-      property: function
-      comments:
+        - "sinus hyperbolique $a1"
+  
+  
+  - concept: hyperbolic-cosine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'cosh'"
+    speech:
       en:
-        - "short form 'cosh $1'"
+      - "short form 'cosh $a1'"
       fr:
-       - "cosh $1"
-       - "kosh $1"
-
-    - concept: hyperbolic-tangent
-      arity: 1
-      property: function
-      comments:
+       - "cosh $a1"
+       - "kosh $a1"
+  
+  - concept: hyperbolic-tangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'tanh'"
+    speech:
       en:
-        - "short form American 'tanch $1'"
-        - "short form British 'than $1'"
-
-    - concept: hyperbolic-secant
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'tanch $a1'"
+        - "short form British 'than $a1'"
+  
+  - concept: hyperbolic-secant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'sech'"
+    speech:
       en:
-        - "short form American 'sech $1'"
-        - "short form British 'shek $1'"
-
-    - concept: hyperbolic-cosecant
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'sech $a1'"
+        - "short form British 'shek $a1'"
+  
+  - concept: hyperbolic-cosecant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'cosech'"
+    speech:
       en:
-        - "short form American 'cosech $1'"
-        - "short form British 'coshek $1'"
-
-
-    - concept: hyperbolic-cotangent
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'cosech $a1'"
+        - "short form British 'coshek $a1'"
+  
+  
+  - concept: hyperbolic-cotangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "<a href='https://www.youtube.com/watch?v=jA-pkiwLVjA'>youtube</a>"
       - "used as 'coth'"
+    speech:
       en:
-        - "short form American 'coth $1'"
-        - "short form British 'coath $1'"
-
-
-
-    ## inverse hyperbolic trig functions
-    - concept: arc-hyperbolic-sine
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'coth $a1'"
+        - "short form British 'coath $a1'"
+  
+  
+  
+  ## inverse hyperbolic trig functions
+  - concept: arc-hyperbolic-sine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "used as 'asinh'"
+    speech:
       en:
-        - "short form 'arc shine $1'"
+        - "short form 'arc shine $a1'"
       fr:
-        - "sinus hyperbolique $1"
-
-
-    - concept: arc-hyperbolic-cosine
-      arity: 1
-      property: function
-      comments:
+        - "sinus hyperbolique $a1"
+  
+  
+  - concept: arc-hyperbolic-cosine
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "used as 'acosh'"
+    speech:
       en:
-        - "short form 'arc cosh $1'"
+        - "short form 'arc cosh $a1'"
       fr:
-       - "cosh $1"
-       - "kosh $1"
-
-    - concept: arc-hyperbolic-tangent
-      arity: 1
-      property: function
-      comments:
+        - "cosh $a1"
+        - "kosh $a1"
+  
+  - concept: arc-hyperbolic-tangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "used as 'atanh'"
+    speech:
       en:
-        - "short form American 'arc tanch $1'"
-        - "short form British 'arc than $1'"
-
-    - concept: arc-hyperbolic-secant
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'arc tanch $a1'"
+        - "short form British 'arc than $a1'"
+  
+  - concept: arc-hyperbolic-secant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "used as 'asech'"
+    speech:
       en:
-        - "short form American 'arc sech $1'"
-        - "short form British 'arc shek $1'"
-
-    - concept: arc-hyperbolic-cosecant
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'arc sech $a1'"
+        - "short form British 'arc shek $a1'"
+  
+  - concept: arc-hyperbolic-cosecant
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "used as 'acsch'"
+    speech:
       en:
-        - "short form American 'arc cosech $1'"
-        - "short form British 'arc coshek $1'"
-
-
-    - concept: arc-hyperbolic-cotangent
-      arity: 1
-      property: function
-      comments:
+        - "short form American 'arc cosech $a1'"
+        - "short form British 'arc coshek $a1'"
+  
+  
+  - concept: arc-hyperbolic-cotangent
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "used as 'acoth'"
+    speech:
       en:
-        - "short form American 'arc coth $1'"
-        - "short form British 'arc coath $1'"
-
-
-    ## exponential related functions
-    - concept: exponential
-      arity: 1
-      property: function
+        - "short form American 'arc coth $a1'"
+        - "short form British 'arc coath $a1'"
+  
+  
+  ## exponential related functions
+  - concept: exponential
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-        - "exponential of $1"
-
-    - concept: natural-logarithm
-      arity: 1
-      property: function
+      - "exponential of $a1"
+  
+  - concept: natural-logarithm
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
       en:
-        - "natural log of $1"
-        - "log of $1"
-
-    - concept: logarithm
-      arity: 1
-      property: function
-      en: "log of $1"
-
-    - concept: logarithm
-      arity: 2
-      property: function
-      en: "log base $2 of $1"
-
-
-
-
-    ## ====================== 4.4.8 Statistics ======================
-  - title: Statistics and Probability
-    intents:
-    - concept: mean
-      arity: 1
-      property: function
-      en: "mean of $1"
-      comments:
+      - "natural log of $a1"
+      - "log of $a1"
+  
+  - concept: logarithm
+    subject-area: elementary classical functions
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "log of $a1"
+  
+  - concept: logarithm
+    subject-area: elementary classical functions
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "log base $a2 of $a1"
+  
+  
+  
+  
+  ## ====================== 4.4.8 Statistics ======================
+  - concept: mean
+    subject-area: Statistics and Probability
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "mean of $a1"
+    comments:
       - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
-
-    - concept: standard-deviation
-      arity: 1
-      property: function
-      en: "standard deviation of $1"
-
-    - concept: variance
-      arity: 1
-      property: function
-      en: "variance of $1"
-
-    - concept: median
-      arity: 1
-      property: function
-      en: "median of $1"
-
-    - concept: mode
-      arity: 1
-      property: function
-      en: "mode of $1"
-
-
-
-    - concept: conditional-probability
-      arity: 2
-      property: function
-      en: "probability of $1 given $2"
-      comments:
+  
+  - concept: standard-deviation
+    subject-area: Statistics and Probability
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "standard deviation of $a1"
+  
+  - concept: variance
+    subject-area: Statistics and Probability
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "variance of $a1"
+  
+  - concept: median
+    subject-area: Statistics and Probability
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "median of $a1"
+  
+  - concept: mode
+    subject-area: Statistics and Probability
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "mode of $a1"
+  
+  
+  
+  - concept: conditional-probability
+    subject-area: Statistics and Probability
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "probability of $a1 given $a2"
+    comments:
       - |
                 The intent should be on the `mrow` that includes the "P"
       
@@ -1007,468 +1271,589 @@ concepts:
                   </mrow>
                  </math>
                  ```
-
-    ## ====================== 4.4.9 Linear Algebra ======================
-  - title: Linear Algebra
-    intents:
-    - concept: vector
-      arity: 1
-      property: function
-
-    - concept: matrix
-      arity: 1
-      property: function
-      comments:
+  
+  ## ====================== 4.4.9 Linear Algebra ======================
+  - concept: vector
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+  
+  - concept: matrix
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
-
-    - concept: determinant
-      arity: 1
-      property: function
-      comments:
+  
+  - concept: determinant
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - when used with an `mtable` argument, it is a good idea to use the `:matrix` property on the `mtable` to insure it speaks correctly
-
-    - concept: adjugate
-      arity: 1
-      property: function
-      comments:
+  
+  - concept: adjugate
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "sometimes used when computing an inverse matrix"
-
-    - concept: magnitude
-      arity: 1
-      property: function
-      comments:
+  
+  - concept: magnitude
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "often used with matchfix single or double vertical bars"
-
-    - concept: norm
-      arity: 1
-      property: function
-      comments:
+  
+  - concept: norm
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "often used with matchfix double vertical bars"
-
-    - concept: span
-      arity: 1
-      property: function
-      comments:
+  
+  - concept: span
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    comments:
       - "often used with matchfix angle brackets"
-
-    - concept: unit-vector
-      arity: 1
-      property: prefix
-      comments:
+  
+  - concept: unit-vector
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: prefix
+    comments:
       - "Example: <math><mover><mi>x</mi><mo>^</mo></mover></math>"
+    speech:
       en: "unit vector x"
-
-    - concept: identity-matrix
-      arity: 0
-      comments:
+  
+  - concept: identity-matrix
+    subject-area: Linear Algebra
+    arity: 0
+    arguments: []
+    comments:
       - "This is typically represented as 'I' or bold-faced '𝐈'"
+    speech:
       en: "identity matrix"
-
-    - concept: transpose
-      arity: 1
-      property: postfix
-      en: "$1 transpose"
-      fr: "$1 transposée"
-
-    - concept: transpose
-      arity: 1
-      property: function
-      default: false
-      en: "transpose of $1"
-      fr: "transposée de $1"
-
-    - concept: dimensional-product
-      arity: ">=2"
-      property: infix
-      default: false
-      en: "$1 by $2 ..."
-      comments:
+  
+  - concept: transpose
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: postfix
+    speech:
+      en: "$a1 transpose"
+      fr: "$a1 transposée"
+  
+  - concept: transpose
+    subject-area: Linear Algebra
+    arity: 1
+    arguments: [$a1]
+    property: function
+    default: false
+    speech:
+      en: "transpose of $a1"
+      fr: "transposée de $a1"
+  
+  - concept: dimensional-product
+    subject-area: Linear Algebra
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: infix
+    default: false
+    speech:
+      en: "$a1 by $a2 ..."
+    comments:
       - "This is typically used with the `×` operator and can be placed on that character as a 0-arity concept name.
-                A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
-
-
-    ## ====================== 4.4.10 Constants and Sets ======================
-  - title: Constants and Sets
-    intents:
-      - concept: set-of-integers
-        arity: 0
-        en:
+        A common use would be describe the size of a matrix. For example <math><mi>m</mi><mo>×</mo><mi>n</mi></math>."
+  
+  
+  ## ====================== 4.4.10 Constants and Sets ======================
+  - concept: set-of-integers
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "(verbose) set of all integers"
         - "(terse) Z"
-        fr: "Z"
-
-      - concept: set-of-reals
-        arity: 0
-        en:
+      fr: "Z"
+  
+  - concept: set-of-reals
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "(verbose) set of all real numbers"
         - "(terse) R"
-
-      - concept: set-of-rationals
-        arity: 0
-        en:
+  
+  - concept: set-of-rationals
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "(verbose) set of all rational numbers"
         - "(terse) R"
-
-      - concept: set-of-natural-numbers
-        arity: 0
-        en:
+  
+  - concept: set-of-natural-numbers
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "(verbose) set of all natural numbers"
         - "(terse) N"
-
-      - concept: set-of-complex-numbers
-        arity: 0
-        en:
+  
+  - concept: set-of-complex-numbers
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "(verbose) set of all complex numbers"
         - "(terse) C"
-
-      - concept: set-of-primes
-        arity: 0
-        en:
+  
+  - concept: set-of-primes
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "(verbose) set of all prime numbers"
         - "(terse) P"
-
-      - concept: exponential-e
-        arity: 0
-        en: "e"
-        fr: "e"
-
-      - concept: imaginary-i
-        arity: 0
-        en: "i"
-        fr: "i"
-
-      - concept: differential-d
-        arity: 0
-        en: "d"
-        fr: "d"
   
-      - concept: golden-ratio
-        arity: 0
-        en: "golden ratio"
-        fr: "d"
-        comments:
-        - "Often denoted as φ"
-
-
-
+  - concept: exponential-e
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en: "e"
+      fr: "e"
+  
+  - concept: imaginary-i
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en: "i"
+      fr: "i"
+  
+  - concept: differential-d
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en: "d"
+      fr: "d"
+  
+  - concept: golden-ratio
+    subject-area: Constants and Sets
+    arity: 0
+    arguments: []
+    speech:
+      en: "golden ratio"
+      fr: "d"
+    comments:
+      - "Often denoted as φ"
+  
+  
+  
   ## other areas =======================================================
+  
+  - concept: line-segment
+    subject-area: Geometry
+    arity: 2
+    arguments: [$a1, $a2]
+    property: prefix
+    speech:
+      en:
+        - "line segment $a1 $a2"
+    comments:
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
+  
+  - concept: directed-line-segment
+    subject-area: Geometry
+    arity: 2
+    arguments: [$a1, $a2]
+    property: prefix
+    speech:
+      en:
+        - "directed line segment $a1 $a2"
+    comments:
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+  
+  - concept: line
+    subject-area: Geometry
+    arity: 2
+    arguments: [$a1, $a2]
+    property: prefix
+    speech:
+      en:
+        - "line $a1 $a2"
+    comments:
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
+  
+  - concept: ray
+    subject-area: Geometry
+    arity: 2
+    arguments: [$a1, $a2]
+    property: prefix
+    speech:
+      en:
+        - "ray $a1 $a2"
+    comments:
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
+  
+  - concept: arc
+    subject-area: Geometry
+    arity: 2
+    arguments: [$a1, $a2]
+    property: prefix
+    speech:
+      en:
+        - "arc $a1 $a2"
+    comments:
+      - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
+  
+  - concept: length
+    subject-area: Geometry
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en:
+        - "length of $a1"
+    comments:
+      - "It may be necessary to 'nest' the intent as shown here for the example:
+        <math><mrow intent='length(line-segment($start, $end))'>
+               <mi arg='start' mathvariant='normal'>A</mi>
+               <mi arg='end' mathvariant='normal'>B</mi>
+            </mrow></math>"
+      - "The markup for this is:"
+      - |
+        ```
+        <mrow intent='length(line-segment($start, $end))'>
+               <mi arg='start' mathvariant='normal'>A</mi>
+               <mi arg='end' mathvariant='normal'>B</mi>
+        </mrow>
+        ```
+  
+  - concept: area
+    subject-area: Geometry
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en:
+        - "area of $a1"
+    comments:
+      - "There are many notations. Here's one: 
+         <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
+      - "The markup for this is:"
+      - |
+        ```
+        <mrow intent='area($shape)'>
+            <mo>[</mo>
+            <mrow arg='shape'>
+                <mi mathvariant='normal'>A</mi>
+                <mi mathvariant='normal'>B</mi>
+                <mi mathvariant='normal'>C</mi>
+                <mi mathvariant='normal'>D</mi>
+                <mo>]</mo>
+            </mrow>
+        </mrow>
+        ```
+      - "It may be necessary to 'nest' the intent as shown in the `length` intent"
 
-  - title: Geometry
-    intents:
-      - concept: line-segment
-        arity: 2
-        property: prefix
-        en:
-        - "line segment $1 $2"
-        comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>_</mo></mover></math>"
-
-      - concept: directed-line-segment
-        arity: 2
-        property: prefix
-        en:
-        - "directed line segment $1 $2"
-        comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
-
-      - concept: line
-        arity: 2
-        property: prefix
-        en:
-        - "line $1 $2"
-        comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>↔</mo></mover></math>"
-
-      - concept: ray
-        arity: 2
-        property: prefix
-        en:
-        - "ray $1 $2"
-        comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>→</mo></mover></math>"
-
-      - concept: arc
-        arity: 2
-        property: prefix
-        en:
-        - "arc $1 $2"
-        comments:
-        - "Example: (`mover`): <math><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo>⌒</mo></mover></math>"
-
-      - concept: length
-        arity: 1
-        property: function
-        en:
-        - "length of $1"
-        comments:
-        - "It may be necessary to 'nest' the intent as shown here for the example:
-          <math><mrow intent='length(line-segment($start, $end))'>
-                 <mi arg='start' mathvariant='normal'>A</mi>
-                 <mi arg='end' mathvariant='normal'>B</mi>
-              </mrow></math>"
-        - "The markup for this is:"
-        - |
-          ```
-          <mrow intent='length(line-segment($start, $end))'>
-                 <mi arg='start' mathvariant='normal'>A</mi>
-                 <mi arg='end' mathvariant='normal'>B</mi>
-          </mrow>
-          ```
-
-      - concept: area
-        arity: 1
-        property: function
-        en:
-        - "area of $1"
-        comments:
-        - "There are many notations. Here's one: 
-            <math><mrow intent='area($a,$b,$c,$d)'><mo>[</mo><mi arg='a' mathvariant='normal'>A</mi><mi arg='b' mathvariant='normal'>B</mi><mi arg='c' mathvariant='normal'>C</mi><mi arg='d'  mathvariant='normal'>D</mi><mo>]</mo></mrow></math>"
-        - "The markup for this is:"
-        - |
-          ```
-          <mrow intent='area($shape)'>
-              <mo>[</mo>
-              <mrow arg='shape'>
-                  <mi mathvariant='normal'>A</mi>
-                  <mi mathvariant='normal'>B</mi>
-                  <mi mathvariant='normal'>C</mi>
-                  <mi mathvariant='normal'>D</mi>
-                  <mo>]</mo>
-              </mrow>
-          </mrow>
-          ```
-        - "It may be necessary to 'nest' the intent as shown in the `length` intent"
-      - concept: point
-        arity: ">=1"
-        property: ???
-        en:
-        - "point $1 [comma $2 ...]"
-        comment:
-        - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
-
-      - concept: volume
-        arity: 1
-        property: function
-        en:
-        - "volume of $1"
-        comments:
-        - "See comments for `length` and `volume` for examples of how this might be marked up"
-
-  - title: Fill in the blank
-    intents:
-      - concept: blank
-        arity: 0
-        en:
+  - concept: point
+    subject-area: Geometry
+    arity: ">=1"
+    arguments: [$a1, ...]
+    property: ???
+    speech:
+      en:
+        - "point $a1 [comma $a2 ...]"
+    comment:
+    - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
+  
+  - concept: volume
+    subject-area: Geometry
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en:
+        - "volume of $a1"
+    comments:
+      - "See comments for `length` and `volume` for examples of how this might be marked up"
+  
+  - concept: blank
+    subject-area: Fill in the blank
+    arity: 0
+    arguments: []
+    speech:
+      en:
         - "blank"
-        comments:
-        - "blanks can be represented in many ways in MathML. Some examples:"
-        - "`<mi intent='blank'>__</mi>`"
-        - "`<mi intent='blank'>?</mi>`"
-        - "`<mo intent='blank'>□</mo>`"
-        - "`<mspace intent='blank' width='3em'/>`"
-        - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
-
-  - title: Separators
-    intents:
-      - concept: time-separator
-        arity: 2
-        property: infix
-        en: $1 $2
-        comments:
-        - "separates hours and minutes and is typically silent"
-        - "Example: 2:31"
-
-
-  - title: General Concepts
-    intents:
-      - concept: fenced-group
-        arity: 1
-        property: function
-        en: "fenced-group of $1"
-        comments:
-        - "this includes parens, brackets, and braces"
-
-      - concept: ordered-pair
-        arity: 2
-        property: function
-        en: "the pair $1 and $2"
-      
-      - concept: indexed-by
-        arity: 2
-        property: infix
-        en: "$1 indexed by $2"
-        comments:
-        - "this is typically a subscript and might also be spoken as '$1 sub $2'"
-
-      - concept: highlight
-        arity: 1
-        property: postfix
-        en: "$1 highlighted"
-        comments:
-        - "this typically would be used inside of a larger expression and not on its own"
-        - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
-
-      - concept: least-common-denominator
-        arity: ">=2"
-        property: function
-        en: "least common denominator of $1, $2, ..."
-
-      - concept: rate
-        arity: 2
-        property: infix
-        en: "$1 per $2"
-        comments:
-        - "Typically used with units"
-        - "Used with `mfrac` or `/`"
-
-      - concept: translation
-        arity: 2
-        property: function
-        en: "translation by $1 comma $2"
-        comments:
-        - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
-        
-      - concept: constraint
-        arity: 2
-        property: infix
-        en: "fraction 2 over x minus 1 with constraint x not equal to 1"
-        comments:
-        - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
-        
-      - concept: binomial-coefficient
-        arity: 2
-        property: infix
-        en: "$1 choose $2"
-        comments:
-        - "There are many notations used for the binomial coefficient. Here are some of them: 
-          <math><mrow intent='binomial-coefficent($power, $term)'>
-            <mo>(</mo>
-            <mfrac linethickness='0'>
-                <mi arg='power'>n</mi>
-                <mi arg='term'>k</mi>
-            </mfrac>
-            <mo>)</mo>
-          </mrow></math>, 
-          <math>
-            <msubsup intent='binomial-coefficent($power, $term>)'>
-              <mi>C</mi>
-              <mi arg='term'>k</mi>
-              <mi arg='power'>n</mi>
-            </msubsup>
-          </math>, 
-          <math>
-            <mmultiscripts intent='binomial-coefficent($power, $term)'>
-              <mi>C</mi>
-              <mi arg='term'>k</mi> <none/>
-              <mprescripts/>
-              <mi arg='power'>n</mi> <none/>
-            </mmultiscripts>
-          </math>"
-
-      - concept: pochhammer
-        arity: 2
-        property: function
-        en: "$2 permutation of $1"
-        comments:
-        - "There are many notations for this: some of them are 
-            <math>
-              <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
-              <mo>,</mo><mo>&#xA0;</mo>
-              <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><mi>n</mi><none/></mmultiscripts>
-              <mo>,</mo><mo>&#xA0;</mo>
-              <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts>
-              <mo>,</mo><mo>&#xA0;</mo>
-              <msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub>
-              <mo>,</mo><mo>&#xA0;</mo>
-              <mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)
-              </mo><mo>,</mo><mo>&#xA0;</mo>
-              <msup><mi>n</mi><menclose notation='bottom'><mi>k</mi></menclose></msup>
-          </math>"
-        - "The first of these would be marked up as:"
-        - |
-          ```
-          <msubsup intent='pochhammer($n, $k)'>
-              <mi>P</mi>
-              <mi arg='k'>k</mi>
-              <mi arg='n'>n</mi>
-          </msubsup>
-          ```
-
-      - concept: permutation-cycle
-        arity: ">=2"
-        property: function
-        en: "permutation cycle of $1 $2 ..."
-        comments:
-        - "A common notation for a permutation cycle is <math><mo>(</mo>
-                <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
-                <mo>)</mo></math>"
-        - "This would be marked up as:"
-        - |
-          ```
-          <mrow intent='permutation-cycle($arg1, $arg2, $arg3)'
+    comments:
+      - "blanks can be represented in many ways in MathML. Some examples:"
+      - "`<mi intent='blank'>__</mi>`"
+      - "`<mi intent='blank'>?</mi>`"
+      - "`<mo intent='blank'>□</mo>`"
+      - "`<mspace intent='blank' width='3em'/>`"
+      - "`<menclose intent='blank' notation='box'>`<br/> `<mspace width='3em'/>`<br/> `</menclose>`"
+  
+  - concept: time-separator
+    subject-area: Separators
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: $a1 $a2
+    comments:
+      - "separates hours and minutes and is typically silent"
+      - "Example: 2:31"
+  
+  
+  - concept: fenced-group
+    subject-area: General Concepts
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "fenced-group of $a1"
+    comments:
+      - "this includes parens, brackets, and braces"
+  
+  - concept: ordered-pair
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "the pair $a1 and $a2"
+  
+  - concept: indexed-by
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 indexed by $a2"
+    comments:
+      - "this is typically a subscript and might also be spoken as '$a1 sub $a2'"
+  
+  - concept: highlight
+    subject-area: General Concepts
+    arity: 1
+    arguments: [$a1]
+    property: postfix
+    speech:
+      en: "$a1 highlighted"
+    comments:
+      - "this typically would be used inside of a larger expression and not on its own"
+      - "this might be used with `<menclose notation='box'>` or similar. It might also be used with color changes, although may be done with CSS"
+  
+  
+  - concept: rate
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 per $a2"
+    comments:
+      - "Typically used with units"
+      - "Used with `mfrac` or `/`"
+  
+  - concept: translation
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "translation by $a1 comma $a2"
+    comments:
+      - "Example: <math><msub><mi>T</mi><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>)</mo></mrow></msub></math>"
+    
+  - concept: constraint
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "fraction 2 over x minus 1 with constraint x not equal to 1"
+    comments:
+      - "Example: <math><mfrac><mn>2</mn><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2260;</mo><mn>1</mn></math>"
+    
+  - concept: binomial-coefficient
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 choose $a2"
+    comments:
+      - "There are many notations used for the binomial coefficient. Here are some of them: 
+        <math><mrow intent='binomial-coefficent($power, $term)'>
           <mo>(</mo>
-            <mtable><mtr>
-               <mtd><mn arg='arg1'>1</mn></mtd>
-               <mtd><mn arg='arg2'>3</mn></mtd>
-               <mtd><mn arg='arg3'>2</mn></mtd>
-            </mtr></mtable>
+          <mfrac linethickness='0'>
+              <mi arg='power'>n</mi>
+              <mi arg='term'>k</mi>
+          </mfrac>
           <mo>)</mo>
-          ```
-
-      - concept: embellished-name
-        arity: 2
-        property: infix
-        en: "$1 with annotation $2"
-        comments:
-        - "used with `mover` or `munder`"
- 
+        </mrow></math>, 
+        <math>
+          <msubsup intent='binomial-coefficent($power, $term>)'>
+            <mi>C</mi>
+            <mi arg='term'>k</mi>
+            <mi arg='power'>n</mi>
+          </msubsup>
+        </math>, 
+        <math>
+          <mmultiscripts intent='binomial-coefficent($power, $term)'>
+            <mi>C</mi>
+            <mi arg='term'>k</mi> <none/>
+            <mprescripts/>
+            <mi arg='power'>n</mi> <none/>
+          </mmultiscripts>
+        </math>"
+  
+  - concept: pochhammer
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "$a2 permutation of $a1"
+    comments:
+      - "There are many notations for this: some of them are 
+          <math>
+            <msubsup><mi>P</mi><mi>k</mi><mi>n</mi></msubsup>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><mi>n</mi><none/></mmultiscripts>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <mmultiscripts><mi>P</mi><mi>k</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <msub><mi>P</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub>
+            <mo>,</mo><mo>&#xA0;</mo>
+            <mi>P</mi><mo>(</mo><mi>n</mi><mo>,</mo><mi>k</mi><mo>)
+            </mo><mo>,</mo><mo>&#xA0;</mo>
+            <msup><mi>n</mi><menclose notation='bottom'><mi>k</mi></menclose></msup>
+        </math>"
+      - "The first of these would be marked up as:"
+      - |
+        ```
+        <msubsup intent='pochhammer($n, $k)'>
+            <mi>P</mi>
+            <mi arg='k'>k</mi>
+            <mi arg='n'>n</mi>
+        </msubsup>
+        ```
+  
+  - concept: permutation-cycle
+    subject-area: General Concepts
+    arity: ">=2"
+    arguments: [$a1, $a2, ...]
+    property: function
+    speech:
+      en: "permutation cycle of $a1 $a2 ..."
+    comments:
+      - "A common notation for a permutation cycle is <math><mo>(</mo>
+              <mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd><mtd><mn>2</mn></mtd></mtr></mtable>
+              <mo>)</mo></math>"
+      - "This would be marked up as:"
+      - |
+        ```
+        <mrow intent='permutation-cycle($arg1, $arg2, $arg3)'
+        <mo>(</mo>
+          <mtable><mtr>
+             <mtd><mn arg='arg1'>1</mn></mtd>
+             <mtd><mn arg='arg2'>3</mn></mtd>
+             <mtd><mn arg='arg3'>2</mn></mtd>
+          </mtr></mtable>
+        <mo>)</mo>
+        ```
+  
+  - concept: embellished-name
+    subject-area: General Concepts
+    arity: 2
+    arguments: [$a1, $a2]
+    property: infix
+    speech:
+      en: "$a1 with annotation $a2"
+    comments:
+      - "used with `mover` or `munder`"
    
-  - title: Grouping
-    intents:
-      - concept: fenced-group
-        arity: 1
-        property: function
-        en: "fenced-group of $1"
-        comments:
-        - "this includes parens, brackets, and braces"
+     
+  - concept: fenced-group
+    subject-area: Grouping
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "fenced-group of $a1"
+    comments:
+      - "this includes parens, brackets, and braces"
+  
+  - concept: annotation
+    subject-area: Grouping
+    arity: 2
+    arguments: [$a1, $a2]
+    property: function
+    speech:
+      en: "$a1 which is $a2"
+    comments:
+      - "used with `mover` or `munder`"
+      - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
+  
+  - concept: braced-group
+    subject-area: Grouping
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "grouped $a1 end-grouped"
+    comments:
+      - "used with `mover` or `munder`"
+      - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
+  
+  - concept: repeating-decimal
+    subject-area: Grouping
+    arity: 1
+    arguments: [$a1]
+    property: function
+    speech:
+      en: "repeating decimal $a1"
+    comments:
+      - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
+      - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
+      - "This right hand side of this might be might be marked up as:"
+      - |
+        ```
+        <mn>0.0</mn>
+        <mover intent='repeating-decimal($repeat)'>
+            <mn arg='repeat'>45</mn>
+            <mo>_</mo>
+        </mover>
+        ```
+      - "or using the elementary math elements in MathML full as"
+      - |
+        ```
+        <mstack intent='_(0.0, repeating-decimal(45)'>
+          <msline length="2"/>
+          <mn>0.045</mn>
+        </mstack>
+        ```
 
-      - concept: annotation
-        arity: 2
-        property: function
-        en: "$1 which is $2"
-        comments:
-        - "used with `mover` or `munder`"
-        - "Example: <math><munder><munder><mrow><msub><mi mathvariant='normal'>H</mi><mn>2</mn></msub><mi mathvariant='normal'>O</mi></mrow><mo>&#x23DF;</mo></munder><mtext>water</mtext></munder></math>"
-
-      - concept: braced-group
-        arity: 1
-        property: function
-        en: "grouped $1 end-grouped"
-        comments:
-        - "used with `mover` or `munder`"
-        - "Example: <math><munder><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><mo>&#x23DF;</mo></munder></math>"
-
-      - concept: repeating-decimal
-        arity: 1
-        property: function
-        en: "repeating decimal $1"
-        comments:
-        - "typically used in when there is a bar over the repeating part of a decimal or dots over the first and last digits."
-        - "Example: <math><mfrac><mn>1</mn><mn>22</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>0</mn><mover><mn>45</mn><mo>_</mo></mover></math>"
-        - "This right hand side of this might be might be marked up as:"
-        - |
-          ```
-          <mn>0.0</mn>
-          <mover intent='repeating-decimal($repeat)'>
-              <mn arg='repeat'>45</mn>
-              <mo>_</mo>
-          </mover>
-          ```
-        - "or using the elementary math elements in MathML full as"
-        - |
-          ```
-          <mstack intent='_(0.0, repeating-decimal(45)'>
-            <msline length="2"/>
-            <mn>0.045</mn>
-          </mstack>
-          ```
