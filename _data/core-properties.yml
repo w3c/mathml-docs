@@ -295,7 +295,7 @@
     - mathml: "<mrow intent=':date'><mn>15</mn><mo>.</mo><mn>03</mn><mo>.</mo><mn>2002</mn></mrow>"
       en: "15 dot 0 3 dot 2002"
     - mathml: "<mn intent=':date'>2002-03-15</mn>"
-      en: "15 dot 0 3 dot 2002"
+      en: "2002 dash 0 3 dash 15"
     - mathml: "<mrow intent=':date'><mn>2002</mn><mo>-</mo><mn>03</mn><mo>-</mo><mn>15</mn></mrow>"
       en: "2002 dash 0 3 dash 15"
     - mathml: "<mn intent=':date'>98/08/26</mn>"
