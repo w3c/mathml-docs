@@ -269,7 +269,12 @@
       en: 1.5 kilometres
     - mathml: "<mrow><mn>2</mn><mi mathvariant='normal' intent=':unit'>Ω</mi></mrow>"
       en: 2 ohms
+    - mathml: "<mrow><mi intent=':unit'>m</mi><mo>/</mo><msup><mi intent=':unit'>s</mi><mn>2</mn></msup></mrow>"
+      en: metres per second squared
+    - mathml: "<mrow intent=':unit'><mi>m</mi><mo>/</mo><msup><mi>s</mi><mn>2</mn></msup></mrow>"
+      en: metres per second squared
   comment: "This includes SI units, English units, etc. It also includes radians, degrees, etc."
+  comment: "For compound units, the property may be placed on each `mi` or on the containing element, typically an `mrow`."
 
 - property: currency
   type: units-and-currency
