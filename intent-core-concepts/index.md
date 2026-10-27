@@ -27,6 +27,12 @@ title: Core Concept List
   }
 </script>
 <style>
+@font-face {
+    font-family: STIX Two Math;
+    src: url('https://mathfonts.github.io/STIXTwo/STIXTwoMath-Regular.woff2');
+}
+
+math {font-family: STIX Two Math;}
 
 div.container-lg {max-width:90%}
 

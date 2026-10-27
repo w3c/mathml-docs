@@ -8,7 +8,7 @@ title: Intent Property List
     src: url('https://mathfonts.github.io/STIXTwo/STIXTwoMath-Regular.woff2');
 }
 
-math {font-family: STIX Two Math; color: red;}
+math {font-family: STIX Two Math;}
 
 div.container-lg {max-width:90%}
 
