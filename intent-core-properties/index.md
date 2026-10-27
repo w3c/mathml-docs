@@ -11,11 +11,11 @@ title: Intent Property List
 math {font-family: STIX Two Math;}
 
 
-mtable[intent=":system-of-equations"] > mtr > mtd:nth-child(2n) {
+mtable[intent=":system-of-equations"] > mtr > mtd:nth-child(2n), mtd[columnalign="right"]  {
  padding-right:0;text-align:right;text-align:-moz-right;text-align:-webkit-right;
    }
 
-mtable[intent=":system-of-equations"] > mtr > mtd:nth-child(2n+1) {
+mtable[intent=":system-of-equations"] > mtr > mtd:nth-child(2n+1), mtd[columnalign="left"] {
  padding-left:0;text-align:left;text-align:-moz-left;text-align:-webkit-left;
    }
 
