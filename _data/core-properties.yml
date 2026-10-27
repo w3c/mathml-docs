@@ -269,9 +269,15 @@
       en: 1.5 kilometres
     - mathml: "<mrow><mn>2</mn><mi mathvariant='normal' intent=':unit'>Ω</mi></mrow>"
       en: 2 ohms
-    - mathml: "<mrow><mi mathvariant='normal' intent=':unit'>m</mi><mo>/</mo><msup><mi mathvariant='normal' intent=':unit'>s</mi><mn>2</mn></msup></mrow>"
+    - mathml: |
+       <mrow>
+         <mi mathvariant='normal' intent=':unit'>m</mi><mo>/</mo><msup><mi mathvariant='normal' intent=':unit'>s</mi><mn>2</mn></msup>
+	 </mrow>
       en: metres per second squared
-    - mathml: "<mrow intent=':unit'><mi mathvariant='normal'>m</mi><mo>/</mo><msup><mi mathvariant='normal'>s</mi><mn>2</mn></msup></mrow>"
+    - mathml: |
+        <mrow intent=':unit'>
+          <mi mathvariant='normal'>m</mi><mo>/</mo><msup><mi mathvariant='normal'>s</mi><mn>2</mn></msup>
+        </mrow>
       en: metres per second squared
   comments:
     - "This includes SI units, English units, etc. It also includes radians, degrees, etc."
