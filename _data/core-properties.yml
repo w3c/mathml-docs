@@ -188,7 +188,7 @@
 
 - property: by-column
   type: table-order
-  applicability: mtable
+  applicability: mtable with no core [table properties](#table), or when the [array](#prop-array), [matrix](#prop-matrix) or [determinant](#prop-determinant) properties are used
   effect: indicates that the table should be read column by column
 
 - property: equation-label
