@@ -83,13 +83,6 @@
   effect: "the table should read the rows and columns with the default order row-first unless `array:by-column` is specified.
     If `by-columns` is used, column first order is used." 
   examples:
-    - intent: ":array:by-columns"
-      mathml: |
-         <mtable arg='m' intent=':array:by-column'>
-          <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-          <mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr>
-         </mtable>
-      en: "the 2 by 2 array; column 1; a; row 2; c; column 2; b; row 2; d"
 
 - property: matrix
   type: table
@@ -185,11 +178,25 @@
   type: table-order
   applicability: mtable
   effect: indicates that the table should be read row by row
+  examples:
+    - mathml: |
+        <mtable intent=":array:by-row">
+          <mtr><mtd><mi>i</mi></mtd><mtd><mi>k</mi></mtd></mtr>
+          <mtr><mtd><mi>j</mi></mtd><mtd><mi>l</mi></mtd></mtr>
+        </mtable>
+      en: "the 2 by 2 array; row 1; column 1; i, column 2; k; row 2; column 1; j, column 2; l"
 
 - property: by-column
   type: table-order
   applicability: mtable with no core [table properties](#table), or when the [array](#prop-array), [matrix](#prop-matrix) or [determinant](#prop-determinant) properties are used
   effect: indicates that the table should be read column by column
+  examples:
+    - mathml: |
+        <mtable intent=":array:by-column">
+          <mtr><mtd><mi>i</mi></mtd><mtd><mi>k</mi></mtd></mtr>
+          <mtr><mtd><mi>j</mi></mtd><mtd><mi>l</mi></mtd></mtr>
+        </mtable>
+      en: "the two by two array; column 1; row 1; i, row 2; j; column 2; row 1; k, row 2; l"
 
 - property: equation-label
   type: equation-label
