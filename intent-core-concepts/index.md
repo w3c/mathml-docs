@@ -27,6 +27,9 @@ title: Core Concept List
   }
 </script>
 <style>
+
+div.container-lg {max-width:90%}
+
 #b2 {display: none}
 
 p.langs {margin:1em; padding:1em;background-color: #EEE}
