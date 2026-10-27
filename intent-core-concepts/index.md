@@ -179,7 +179,7 @@ if c.link
 <thead>
 <tr class="row0">
 <th>Concept</th>
-<th>Arity</th>
+<th>Arguments</th>
 <th>Property</th>
 {%- for language in site.data.languages -%}
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
@@ -201,7 +201,7 @@ if c.link
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}<br/>
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">
 <span class="nw">[
 {%- for arg in c.arguments -%}
 {{arg}}
@@ -241,7 +241,6 @@ if c.link
 <tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
 <td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
 <td>
-{{arityr}}<br/>
 <span class="nw">[
 {%- for arg in c.arguments -%}
 {{arg}}
