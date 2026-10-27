@@ -272,15 +272,15 @@
     - mathml: |
         <mrow>
           <mi mathvariant='normal' intent=':unit'>m</mi>
-	  <mo>/</mo>
-	  <msup><mi mathvariant='normal' intent=':unit'>s</mi><mn>2</mn></msup>
-	</mrow>
+          <mo>/</mo>
+          <msup><mi mathvariant='normal' intent=':unit'>s</mi><mn>2</mn></msup>
+        </mrow>
       en: metres per second squared
     - mathml: |
         <mrow intent=':unit'>
           <mi mathvariant='normal'>m</mi>
-	  <mo>/</mo>
-	  <msup><mi mathvariant='normal'>s</mi><mn>2</mn></msup>
+          <mo>/</mo>
+          <msup><mi mathvariant='normal'>s</mi><mn>2</mn></msup>
         </mrow>
       en: metres per second squared
   comments:
