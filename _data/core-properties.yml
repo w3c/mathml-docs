@@ -273,8 +273,9 @@
       en: metres per second squared
     - mathml: "<mrow intent=':unit'><mi mathvariant='normal'>m</mi><mo>/</mo><msup><mi mathvariant='normal'>s</mi><mn>2</mn></msup></mrow>"
       en: metres per second squared
-  comment: "This includes SI units, English units, etc. It also includes radians, degrees, etc."
-  comment: "For compound units, the property may be placed on each `mi` or on the containing element, typically an `mrow`."
+  comments:
+    - "This includes SI units, English units, etc. It also includes radians, degrees, etc."
+    - "For compound units, the property may be placed on each `mi` or on the containing element, typically an `mrow`."
 
 - property: currency
   type: units-and-currency
@@ -316,7 +317,8 @@
 - property: roman-numeral
   type: number
   applicability: mn
-  comment: some braille codes (e.g., CMU) have special rules for roman numerals
+  comments:
+    - some braille codes (e.g., CMU) have special rules for roman numerals
   examples:
     - mathml: "<mn intent=':roman-numeral'>cd</mn>"
       en:
@@ -338,7 +340,8 @@
 - property: shape
   type: geometry
   applicability: mo
-  comment: there are many shape characters in unicode, including filled and shaded ones. Some have mathematical meaning. The shape property is used when they are meant to be used as a geometric shape.
+  comments:
+    - there are many shape characters in unicode, including filled and shaded ones. Some have mathematical meaning. The shape property is used when they are meant to be used as a geometric shape.
   examples:
     - mathml: "<mo intent=':shape'>▭</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi>"
       en: rectangle A B C D
@@ -346,12 +349,14 @@
 - property: chemical-element
   type: chemistry
   effect: read and/or braille the contents as a chemical element
-  comment: typically added to an `mi` to indicate this is a chemical element (see `chemical-formula`) for an example
+  comments:
+    - typically added to an `mi` to indicate this is a chemical element (see `chemical-formula`) for an example
   
 - property: chemical-formula
   type: chemistry
   effect: read the term as a chemical formula
-  comment: chemcial formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
+  comments:
+    - chemcial formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
   examples:
     - mathml: |
         <mrow intent=':chemical-formula'>
@@ -367,7 +372,8 @@
 - property: chemical-equation
   type: chemistry
   effect: read the term as a chemical equation
-  comment: chemical equations include arrows, operators (e.g., `+`, `-`, `=`), and brackets (to indicate concentration)
+  comments:
+    - chemical equations include arrows, operators (e.g., `+`, `-`, `=`), and brackets (to indicate concentration)
   examples:
     - mathml: |
        <mrow intent=':chemical-equation'>

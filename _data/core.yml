@@ -400,7 +400,7 @@ concepts:
       arity: 2
       property: function
       en: "polar coordinate $1 comma $2"
-      comment:
+      comments:
       - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
       - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
@@ -408,7 +408,7 @@ concepts:
       arity: 3
       property: function
       en: "spherical coordinate $1 comma $2, comma $3"
-      comment:
+      comments:
       - "The first argument is the radius, the second argument is the angle."
       - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
@@ -416,14 +416,14 @@ concepts:
       arity: ">=2"
       property: function
       en: "cartesian coordinate $1 comma $2 ..."
-      comment:
+      comments:
       - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
     - concept: coordinate
       arity: ">=2"
       property: function
       en: "coordinate $1 comma $2 ..."
-      comment:
+      comments:
       - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
       - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
@@ -1243,7 +1243,7 @@ concepts:
         property: ???
         en:
         - "point $1 [comma $2 ...]"
-        comment:
+        comments:
         - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
 
       - concept: volume
