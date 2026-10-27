@@ -3,6 +3,15 @@ title: Intent Property List
 ---
 
 <style>
+@font-face {
+    font-family: STIX Two Math;
+    src: url('https://mathfonts.github.io/STIXTwo/STIXTwoMath-Regular.woff2');
+}
+
+math {font-family: STIX Two Math; color: red;}
+
+div.container-lg {max-width:90%}
+
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
