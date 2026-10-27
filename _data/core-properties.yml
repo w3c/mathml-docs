@@ -83,13 +83,6 @@
   effect: "the table should read the rows and columns with the default order row-first unless `array:by-column` is specified.
     If `by-columns` is used, column first order is used." 
   examples:
-    - intent: ":array:by-columns"
-      mathml: |
-         <mtable arg='m' intent=':array:by-column'>
-          <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-          <mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr>
-         </mtable>
-      en: "the 2 by 2 array; column 1; a; row 2; c; column 2; b; row 2; d"
 
 - property: matrix
   type: table
@@ -185,11 +178,25 @@
   type: table-order
   applicability: mtable
   effect: indicates that the table should be read row by row
+  examples:
+    - mathml: |
+        <mtable intent=":array:by-row">
+          <mtr><mtd><mi>i</mi></mtd><mtd><mi>k</mi></mtd></mtr>
+          <mtr><mtd><mi>j</mi></mtd><mtd><mi>l</mi></mtd></mtr>
+        </mtable>
+      en: "the 2 by 2 array; row 1; column 1; i, column 2; k; row 2; column 1; j, column 2; l"
 
 - property: by-column
   type: table-order
-  applicability: mtable
+  applicability: mtable with no core [table properties](#table), or when the [array](#prop-array), [matrix](#prop-matrix) or [determinant](#prop-determinant) properties are used
   effect: indicates that the table should be read column by column
+  examples:
+    - mathml: |
+        <mtable intent=":array:by-column">
+          <mtr><mtd><mi>i</mi></mtd><mtd><mi>k</mi></mtd></mtr>
+          <mtr><mtd><mi>j</mi></mtd><mtd><mi>l</mi></mtd></mtr>
+        </mtable>
+      en: "the two by two array; column 1; row 1; i, row 2; j; column 2; row 1; k, row 2; l"
 
 - property: equation-label
   type: equation-label
@@ -269,7 +276,23 @@
       en: 1.5 kilometres
     - mathml: "<mrow><mn>2</mn><mi mathvariant='normal' intent=':unit'>Ω</mi></mrow>"
       en: 2 ohms
-  comment: "This includes SI units, English units, etc. It also includes radians, degrees, etc."
+    - mathml: |
+        <mrow>
+          <mi mathvariant='normal' intent=':unit'>m</mi>
+          <mo>/</mo>
+          <msup><mi mathvariant='normal' intent=':unit'>s</mi><mn>2</mn></msup>
+        </mrow>
+      en: metres per second squared
+    - mathml: |
+        <mrow intent=':unit'>
+          <mi mathvariant='normal'>m</mi>
+          <mo>/</mo>
+          <msup><mi mathvariant='normal'>s</mi><mn>2</mn></msup>
+        </mrow>
+      en: metres per second squared
+  comments:
+    - "This includes SI units, English units, etc. It also includes radians, degrees, etc."
+    - "For compound units, the property may be placed on each `mi` or on the containing element, typically an `mrow`."
 
 - property: currency
   type: units-and-currency
@@ -289,7 +312,7 @@
     - mathml: "<mrow intent=':date'><mn>15</mn><mo>.</mo><mn>03</mn><mo>.</mo><mn>2002</mn></mrow>"
       en: "15 dot 0 3 dot 2002"
     - mathml: "<mn intent=':date'>2002-03-15</mn>"
-      en: "15 dot 0 3 dot 2002"
+      en: "2002 dash 0 3 dash 15"
     - mathml: "<mrow intent=':date'><mn>2002</mn><mo>-</mo><mn>03</mn><mo>-</mo><mn>15</mn></mrow>"
       en: "2002 dash 0 3 dash 15"
     - mathml: "<mn intent=':date'>98/08/26</mn>"
@@ -311,7 +334,8 @@
 - property: roman-numeral
   type: number
   applicability: mn
-  comment: some braille codes (e.g., CMU) have special rules for roman numerals
+  comments:
+    - some braille codes (e.g., CMU) have special rules for roman numerals
   examples:
     - mathml: "<mn intent=':roman-numeral'>cd</mn>"
       en:
@@ -333,7 +357,8 @@
 - property: shape
   type: geometry
   applicability: mo
-  comment: there are many shape characters in unicode, including filled and shaded ones. Some have mathematical meaning. The shape property is used when they are meant to be used as a geometric shape.
+  comments:
+    - there are many shape characters in unicode, including filled and shaded ones. Some have mathematical meaning. The shape property is used when they are meant to be used as a geometric shape.
   examples:
     - mathml: "<mo intent=':shape'>▭</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi>"
       en: rectangle A B C D
@@ -341,12 +366,14 @@
 - property: chemical-element
   type: chemistry
   effect: read and/or braille the contents as a chemical element
-  comment: typically added to an `mi` to indicate this is a chemical element (see `chemical-formula`) for an example
+  comments:
+    - typically added to an `mi` to indicate this is a chemical element (see `chemical-formula`) for an example
   
 - property: chemical-formula
   type: chemistry
   effect: read the term as a chemical formula
-  comment: chemcial formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
+  comments:
+    - chemical formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
   examples:
     - mathml: |
         <mrow intent=':chemical-formula'>
@@ -362,7 +389,8 @@
 - property: chemical-equation
   type: chemistry
   effect: read the term as a chemical equation
-  comment: chemical equations include arrows, operators (e.g., `+`, `-`, `=`), and brackets (to indicate concentration)
+  comments:
+    - chemical equations include arrows, operators (e.g., `+`, `-`, `=`), and brackets (to indicate concentration)
   examples:
     - mathml: |
        <mrow intent=':chemical-equation'>

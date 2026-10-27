@@ -99,12 +99,14 @@ The data displayed below is derived from the YAML file
 <dt id="prop-{{p.property}}">{{p.property}}</dt>
 <dd>
 {%- if p.effect -%}<div><i>Effect</i>: {{p.effect | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}</div>{%- endif -%}
-{%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
+{%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}</div>{%- endif -%}
 {%- if p.intent -%}<div><i>Intent</i>: <code>{{p.intent}}</code></div>{%- endif -%}
-{%- if p.comment -%}<div><i>Comment</i>: <i>{%- for com in p.comment -%}
+{%- if p.comments -%}<div><i>Comment</i>:
+{% for com in p.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
-{% endfor %}</i></div>{%- endif -%}
+{% endfor %}</div>
+{%- endif -%}
 {%- for e in p.examples %}
 <div class="ex">
 {%- if e.intent -%}<div><code>{{e.intent}}</code></div>{%- endif -%}
