@@ -102,7 +102,7 @@ The data displayed below is derived from the YAML file
 {%- if p.applicability %}<div><i>Applicability</i>: {{p.applicability}}</div>{%- endif -%}
 {%- if p.intent -%}<div><i>Intent</i>: <code>{{p.intent}}</code></div>{%- endif -%}
 {%- if p.comments -%}<div><i>Comment</i>:
-{%- for com in p.comments -%}
+{% for com in p.comments -%}
 {{com | markdownify | replace: "<p>", "<span>" | replace: "</p>", "</span>" }}
 {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}</div>

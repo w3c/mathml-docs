@@ -362,7 +362,7 @@
   type: chemistry
   effect: read the term as a chemical formula
   comments:
-    - chemcial formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
+    - chemical formumlas include subscripts, superscripts, bracking characters, and characters (e.g., `-`, `=`, `≡`) to indicate bonds 
   examples:
     - mathml: |
         <mrow intent=':chemical-formula'>
