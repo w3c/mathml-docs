@@ -12,6 +12,6 @@ jobs:
   validate-yaml-open-concept-list:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
       - name: Validate YAML intent lists
         run: yamllint -c _data/_config_yamllint.yml _data/open.yml

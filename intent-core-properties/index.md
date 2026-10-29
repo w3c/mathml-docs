@@ -3,6 +3,24 @@ title: Intent Property List
 ---
 
 <style>
+@font-face {
+    font-family: STIX Two Math;
+    src: url('https://mathfonts.github.io/STIXTwo/STIXTwoMath-Regular.woff2');
+}
+
+math {font-family: STIX Two Math;}
+
+
+mtable[intent=":system-of-equations"] > mtr > mtd:nth-child(2n), mtd[columnalign="right"]  {
+ padding-right:0;text-align:right;text-align:-moz-right;text-align:-webkit-right;
+   }
+
+mtable[intent=":system-of-equations"] > mtr > mtd:nth-child(2n+1), mtd[columnalign="left"] {
+ padding-left:0;text-align:left;text-align:-moz-left;text-align:-webkit-left;
+   }
+
+div.container-lg {max-width:90%}
+
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}

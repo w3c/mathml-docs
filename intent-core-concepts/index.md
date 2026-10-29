@@ -27,13 +27,24 @@ title: Core Concept List
   }
 </script>
 <style>
+@font-face {
+    font-family: STIX Two Math;
+    src: url('https://mathfonts.github.io/STIXTwo/STIXTwoMath-Regular.woff2');
+}
+
+math {font-family: STIX Two Math;}
+
+div.container-lg {max-width:90%}
+
 #b2 {display: none}
 
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
+span.nw {white-space:nowrap}
 .markdown-body table tr.row0, .markdown-body table th.row0 {background-color:#F6F8FA}
 .markdown-body table tr.row1 {background-color:#FEFFFE}
+.markdown-body table tr.subj {background-color:beige;font-size:110%;text-align:left;}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
 </style>
@@ -165,15 +176,19 @@ if c.link
 </p>
 </details>
 
-{%- for section in site.data.core.concepts -%}
+{% comment %}
+{% assign cpts = site.data.core.concepts | sort: "subject-area" %}
+{% endcomment %}
+{% assign cpts = site.data.core.concepts %}
 
-### {{section.title}}
+
+{% assign subjt = "" %}
 
 <table style="width:100%">
 <thead>
 <tr class="row0">
 <th>Concept</th>
-<th>Arity</th>
+<th>Arguments</th>
 <th>Property</th>
 {%- for language in site.data.languages -%}
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
@@ -182,7 +197,11 @@ if c.link
 </tr>
 </thead>
 <tbody>
-{%- for c in section.intents -%}
+{%- for c in cpts -%}
+{%- if c.subject-area != subjt -%}
+{%- assign subjt = c.subject-area -%}
+<tr class="subj"><th colspan="3">{{subjt}}</th></tr>
+{%- endif -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- assign arityr = c.arity | replace: ">=", "⩾" -%}
 {%- assign arityu = c.arity | replace: ">=", "GEQ" -%}
@@ -191,13 +210,19 @@ if c.link
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}</td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">
+<span class="nw">[
+{%- for arg in c.arguments -%}
+{{arg}}
+{%- unless forloop.last -%},{% endunless -%}
+{%- endfor -%}
+]</span></td>{%- endif -%}
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- unless c.default == false or c.arity == 0 -%}*{%- endunless -%}</td>{%- endif -%}
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
 [{{cond.condition}}]:
-{% if cond[language.language-code] -%}
-{%- for l in cond[language.language-code] -%}
+{% if cond.speech[language.language-code] -%}
+{%- for l in cond.speech[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
@@ -224,12 +249,19 @@ if c.link
 {%- else -%}
 <tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
 <td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
-<td>{{arityr}}</td>
+<td>
+<span class="nw">[
+{%- for arg in c.arguments -%}
+{{arg}}
+{%- unless forloop.last -%},{% endunless -%}
+{%- endfor -%}
+]</span>
+</td>
 <td>{{c.property}}{%- unless c.default == false or c.arity == 0-%}*{%- endunless -%}</td>
 {%- for language in site.data.languages -%}
 <td class="{{language.language-code}}">
-{%- if c[language.language-code] -%}
-{%- for l in c[language.language-code] -%}
+{%- if c.speech[language.language-code] -%}
+{%- for l in c.speech[language.language-code] -%}
 {{l}} {%- unless forloop.last -%}<br>{% endunless -%}
 {% endfor %}
 {%- else -%}
@@ -256,7 +288,7 @@ if c.link
 </tbody>
 </table>
 <hr>
-{%- endfor -%}
+
 
 ### Key
 
