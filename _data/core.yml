@@ -277,6 +277,7 @@ concepts:
     arity: 1
     arguments: [$a1]
     property: postfix
+    default: false
     speech:
       en: $a1 inverse
 
@@ -746,6 +747,7 @@ concepts:
     arity: 2
     arguments: [$a1, $a2]
     property: function
+    default: false
     speech:
       en: "set difference of $a1 and $a2"
     comments:
