@@ -51,15 +51,7 @@ a.self {color: black; font-weight:500}
      [arg] { background-color: #ddfafa;}
      [arg]:hover {display:inline;background-color: #add8e6;}
      [arg]:hover::after {display:inline;vertical-align: sub; font-size: 0.7em; }
-     [arg="a1"]:hover::after { content: " $a1" ; }
-     [arg="a2"]:hover::after { content: " $a2" ; }
-     [arg="a3"]:hover::after { content: " $a3" ; }
-     [arg="a4"]:hover::after { content: " $a4" ; }
-     [arg="a5"]:hover::after { content: " $a5" ; }
-     [arg="a6"]:hover::after { content: " $a6" ; }
-     [arg="a7"]:hover::after { content: " $a7" ; }
-     [arg="a8"]:hover::after { content: " $a8" ; }
-     [arg="a9"]:hover::after { content: " $a9" ; }
+     [arg]:hover::after { content: attr(arg) ; }
 math:not(:has(*[intent])) {
     color: red;
     }
