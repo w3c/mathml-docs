@@ -232,7 +232,7 @@ concepts:
     arguments: [$lower, $upper]
     property: function
     speech:
-      en:  interval between $lower and $upper, included
+      en: interval between $lower and $upper, included
       fr: intervalle ouvert à gauche...
     mathml:
       - "<math><mrow intent='open-closed-interval($lower,$upper)'><mo>(</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>]</mo></mrow></math>"
@@ -327,9 +327,9 @@ concepts:
       - "$n is a positive integer and $frac is a fraction with positive numerical components.
         The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
     mathml:
-     - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'">3</mn><mn arg='frac'>⅔</mn></mrow></math>"
-     - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'">3</mn><mfrac arg='frac'><mn>2</mn><mn>3</mn></mfrac></mrow></math>"
-     - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'">3</mn><mrow arg='frac'><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></math>"
+      - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mn arg='frac'>⅔</mn></mrow></math>"
+      - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mfrac arg='frac'><mn>2</mn><mn>3</mn></mfrac></mrow></math>"
+      - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mrow arg='frac'><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></math>"
 
   - concept: quotient
     subject-area: functions and inverses
