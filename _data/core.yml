@@ -319,13 +319,17 @@ concepts:
   - concept: mixed-fraction
     subject-area: functions and inverses
     arity: 2
-    arguments: [$a1, $a2]
+    arguments: [$n, $frac]
     property: function
     speech:
-      en: $a1 and $a2
+      en: $n and $frac
     comments:
-      - "$a1 is a positive integer and $a2 is a fraction with positive numerical components.
+      - "$n is a positive integer and $frac is a fraction with positive numerical components.
         The second argument can be an `mfrac` (normal or beveled) or can be a linear fraction using `/`"
+    mathml:
+     - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'">3</mn><mn arg='frac'>⅔</mn></mrow></math>"
+     - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'">3</mn><mfrac arg='frac'><mn>2</mn><mn>3</mn></mfrac></mrow></math>"
+     - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'">3</mn><mrow arg='frac'><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></math>"
 
   - concept: quotient
     subject-area: functions and inverses
