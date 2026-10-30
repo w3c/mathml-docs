@@ -47,6 +47,10 @@ span.nw {white-space:nowrap}
 .markdown-body table tr.subj {background-color:beige;font-size:110%;text-align:left;}
 a.link {font-weight:500}
 a.self {color: black; font-weight:500}
+     [arg] { background-color: #ddfafa;}
+     [arg]:hover {display:inline;background-color: #add8e6;}
+     [arg]:hover::after {display:inline;vertical-align: sub; font-size: 0.7em; }
+     [arg]:hover::after { content: attr(arg) ; }
 </style>
 
 <style id="langcss">
