@@ -266,7 +266,7 @@ concepts:
     subject-area: functions and inverses
     arity: 1
     arguments: [$a1]
-    property: function*
+    property: function
     speech:
       en: inverse of $a1
     comments:
@@ -302,7 +302,7 @@ concepts:
     subject-area: functions and inverses
     arity: 1
     arguments: [$a1]
-    property: function*
+    property: function
     speech:
       en: image of $a1
       fr: image de $a1
