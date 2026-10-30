@@ -217,12 +217,14 @@ concepts:
   - concept: closed-open-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [$a1, $a2]
+    arguments: [$lower, $upper]
     property: function
     speech:
-      en: interval between $a1 (included) and $a2
-      fr: intervalle ouvert à droite entre $a1 et $a2
-  
+      en: interval between $lower (included) and $upper
+      fr: intervalle ouvert à droite entre $lower et $upper
+    mathml:
+     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg="lower">a</a><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
+     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg="lower">a</a><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
