@@ -223,8 +223,8 @@ concepts:
       en: interval between $lower (included) and $upper
       fr: intervalle ouvert à droite entre $lower et $upper
     mathml:
-     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
-     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
+      - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
+      - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
@@ -488,9 +488,9 @@ concepts:
     property: function
     speech:
       en: "polar coordinate $a1 comma $a2"
-    comment:
-    - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
-    - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+    comments:
+      - "The first argument is the radius, the second argument is the polar angle, the third arguments is the azimuthal angle."
+      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mo>&#xA0;</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
   - concept: spherical-coordinate
     subject-area: functions and inverses
@@ -499,9 +499,9 @@ concepts:
     property: function
     speech:
       en: "spherical coordinate $a1 comma $a2, comma $a3"
-    comment:
-    - "The first argument is the radius, the second argument is the angle."
-    - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
+    comments:
+      - "The first argument is the radius, the second argument is the angle."
+      - "Example: <math><mo>(</mo><mi>r</mi><mo>,</mo><mi>&#x3A6;</mi><mo>,</mo><mi>&#x3B8;</mi><mo>)</mo></math>"
 
   - concept: cartesian-coordinate
     subject-area: functions and inverses
@@ -510,8 +510,8 @@ concepts:
     property: function
     speech:
       en: "cartesian coordinate $a1 comma $a2 ..."
-    comment:
-    - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+    comments:
+      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
   - concept: coordinate
     subject-area: functions and inverses
@@ -520,9 +520,9 @@ concepts:
     property: function
     speech:
       en: "coordinate $a1 comma $a2 ..."
-    comment:
-    - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
-    - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
+    comments:
+      - "This a generic coordinate that doesn't specify the coordinate system. It takes 2 or more arguments."
+      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>"
 
   - concept: floor
     subject-area: functions and inverses
@@ -1025,10 +1025,10 @@ concepts:
       - "used as 'cosh'"
     speech:
       en:
-      - "short form 'cosh $a1'"
+        - "short form 'cosh $a1'"
       fr:
-       - "cosh $a1"
-       - "kosh $a1"
+        - "cosh $a1"
+        - "kosh $a1"
 
   - concept: hyperbolic-tangent
     subject-area: elementary classical functions
@@ -1172,7 +1172,7 @@ concepts:
     property: function
     speech:
       en:
-      - "exponential of $a1"
+        - "exponential of $a1"
 
   - concept: natural-logarithm
     subject-area: elementary classical functions
@@ -1181,8 +1181,8 @@ concepts:
     property: function
     speech:
       en:
-      - "natural log of $a1"
-      - "log of $a1"
+        - "natural log of $a1"
+        - "log of $a1"
 
   - concept: logarithm
     subject-area: elementary classical functions
@@ -1587,8 +1587,8 @@ concepts:
     speech:
       en:
         - "point $a1 [comma $a2 ...]"
-    comment:
-    - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
+    comments:
+      - "Example: <math><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo></math>"
 
   - concept: volume
     subject-area: Geometry
