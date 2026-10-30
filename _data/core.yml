@@ -225,32 +225,42 @@ concepts:
     mathml:
       - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
       - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
+
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [$a1, $a2]
+    arguments: [$lower, $upper]
     property: function
     speech:
-      en:  interval between $a1 and $a2, included
+      en:  interval between $lower and $upper, included
       fr: intervalle ouvert à gauche...
+    mathml:
+      - "<math><mrow intent='open-closed-interval($lower,$upper)'><mo>(</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>]</mo></mrow></math>"
+      - "<math><mrow intent='open-closed-interval($lower,$upper)'><mo>]</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>]</mo></mrow></math>"
 
   - concept: open-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [$a1, $a2]
+    arguments: [$lower, $upper]
     property: function
     speech:
-      en: open interval between $a1 and $a2
+      en: open interval between $lower and $upper
       fr: intervalle ouvert
+    mathml:
+      - "<math><mrow intent='open-interval($lower,$upper)'><mo>(</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
+      - "<math><mrow intent='open-interval($lower,$upper)'><mo>]</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
 
   - concept: closed-interval
     subject-area: functions and inverses
     arity: 2
-    arguments: [$a1, $a2]
+    arguments: [$lower, $upper]
     property: function
     speech:
-      en: closed interval between $a1 and $a2
-      fr: intervalle fermé entre $a1 et $a2
+      en: closed interval between $lower and $upper
+      fr: intervalle fermé entre $lower et $upper
+    mathml:
+      - "<math><mrow intent='closed-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>]</mo></mrow></math>"
+      - "<math><mrow intent='closed-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</mi><mo>,</mo><mi arg='upper'>b</mi><mo>]</mo></mrow></math>"
 
   - concept: inverse
     subject-area: functions and inverses
