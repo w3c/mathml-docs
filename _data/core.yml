@@ -223,8 +223,8 @@ concepts:
       en: interval between $lower (included) and $upper
       fr: intervalle ouvert à droite entre $lower et $upper
     mathml:
-     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg="lower">a</a><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
-     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg="lower">a</a><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
+     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</a><mo>,</mo><mi arg='upper'>b</mi><mo>)</mo></mrow></math>"
+     - "<math><mrow intent='closed-open-interval($lower,$upper)'><mo>[</mo><mi arg='lower'>a</a><mo>,</mo><mi arg='upper'>b</mi><mo>[</mo></mrow></math>"
   - concept: open-closed-interval
     subject-area: functions and inverses
     arity: 2
