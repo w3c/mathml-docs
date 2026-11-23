@@ -329,7 +329,7 @@ concepts:
     mathml:
       - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mn arg='frac'>⅔</mn></mrow></math>"
       - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mfrac arg='frac'><mn>2</mn><mn>3</mn></mfrac></mrow></math>"
-      - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mo lspace="0pt" rspace="0pt">&#x2009;</mo><mrow arg='frac'><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></math>"
+      - "<math><mrow intent='mixed-fraction($n,$frac)'><mn arg='n'>3</mn><mo lspace='0pt' rspace='0pt'>&#x2009;</mo><mrow arg='frac'><mn>2</mn><mo>/</mo><mn>3</mn></mrow></mrow></math>"
 
   - concept: quotient
     subject-area: functions and inverses
@@ -1085,7 +1085,6 @@ concepts:
         - "short form American 'cosech $a1'"
         - "short form British 'coshek $a1'"
 
-
   - concept: hyperbolic-cotangent
     subject-area: elementary classical functions
     arity: 1
@@ -1098,8 +1097,6 @@ concepts:
       en:
         - "short form American 'coth $a1'"
         - "short form British 'coath $a1'"
-
-
 
   ## inverse hyperbolic trig functions
   - concept: arc-hyperbolic-sine
@@ -1217,8 +1214,6 @@ concepts:
       en: "log base $a2 of $a1"
 
 
-
-
   ## ====================== 4.4.8 Statistics ======================
   - concept: mean
     subject-area: Statistics and Probability
@@ -1261,8 +1256,6 @@ concepts:
     property: function
     speech:
       en: "mode of $a1"
-
-
 
   - concept: conditional-probability
     subject-area: Statistics and Probability
@@ -1485,7 +1478,6 @@ concepts:
       fr: "d"
     comments:
       - "Often denoted as φ"
-
 
 
   ## other areas =======================================================
@@ -1874,4 +1866,3 @@ concepts:
           <mn>0.045</mn>
         </mstack>
         ```
-
