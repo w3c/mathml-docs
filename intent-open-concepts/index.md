@@ -162,7 +162,7 @@ Additional contributions are welcome:
 {%- for cond in c.conditions -%}
 <tr {% if forloop.first %}id="{{c.concept}}{{arityu}}{{propertyu}}"{% endif %} class="row{{ clss }}">
 {%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{arityr}}<br/>
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">
 <span class="nw">[
 {%- for arg in c.arguments -%}
 {{arg}}
@@ -230,8 +230,7 @@ arXiv
 {%- else -%}
 <tr id="{{c.concept}}{{arityu}}{{propertyu}}" class="row{{ clss }}">
 <td><a class="self" href="#{{c.concept}}{{arityu}}{{propertyu}}">{{c.concept}}</a></td>
-<td>{{arityr}}<br/>
-<span class="nw">[
+<td><span class="nw">[
 {%- for arg in c.arguments -%}
 {{arg}}
 {%- unless forloop.last -%},{% endunless -%}
@@ -305,7 +304,7 @@ arXiv
 | ---- | ---- |
 | `*` | property default if no  fixity`:` property given |
 | _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
-|  ⩾ _n_ | Arity of at least _n_ |
+
 
 ----
 
