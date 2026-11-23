@@ -133,7 +133,7 @@ Additional contributions are welcome:
 <thead>
 <tr class="row0">
 <th>Concept</th>
-<th>Arity</th>
+<th>Arguments</th>
 <th>Property</th>
 {%- for language in site.data.languages -%}
 <th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 

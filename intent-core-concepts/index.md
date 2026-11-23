@@ -300,7 +300,7 @@ if c.link
 | ---- | ---- |
 | `*` | property default if no  fixity`:` property given |
 | _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
-|  ⩾ _n_ | Arity of at least _n_ |
+
 
 ----
 

@@ -147,7 +147,7 @@ concepts:
     speech:
       en: adjoint of $a1
     property: 
-    subject-area: 
+    subject-area: "abstract algebra"
     mathml:
      - "<math><mrow intent='adjoint($a1)'><msup><mi arg='a1'>G</mi><mo>′</mo></msup></mrow></math>"
      - "<math><mrow intent='adjoint($a1)'><msup><mi arg='a1'>G</mi><mo>†</mo></msup></mrow></math>"
@@ -4602,7 +4602,7 @@ concepts:
     speech:
       en: exponential integral of $a1
     property: 
-    subject-area: 
+    subject-area: "special functions"
     mathml:
      - "<math><mrow intent='exponential-integral($a1)'><mi>Ei</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>"
     urls: 
@@ -8954,7 +8954,8 @@ concepts:
     arguments: [$a1]
     speech:
       en: meson of $a1
-    property: 
+    property:
+    subject-area: "particle physics"
     urls: 
      - "https://en.wikipedia.org/wiki/Meson"
      - "https://en.wikipedia.org/wiki/List_of_mesons"
@@ -14060,7 +14061,7 @@ concepts:
     speech:
       en: vertical
     property: 
-    subject-area: 
+    subject-area: "geometry"
     mathml:
      - "<math><mi intent='vertical'>vertical</mi></math>"
     notation: 
