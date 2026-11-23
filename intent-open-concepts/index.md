@@ -126,7 +126,7 @@ Additional contributions are welcome:
 </p>
 </details>
 
-{% assign cpts = site.data.open.concepts | sort: "subject-area" %}
+{% assign cpts = site.data.open.concepts | sort_natural: "subject-area" %}
 {% assign subjt = "" %}
 
 <table style="width:100%">
