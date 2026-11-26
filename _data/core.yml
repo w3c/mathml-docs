@@ -865,7 +865,7 @@ concepts:
     comments:
       - Typically on an `<mrow>` surrounding the expression.
     mathml:
-      - "<math display='block'><mrow intent='product($domain,$function)'><munder><mo>∏</mo><mrow arg='domain'><mi>c</mi><mo>∈</mo><mi>C</mi><mrow></munder><msup arg='function'><mi>c</mi><mn>2</mn></msup></mrow></math>"
+      - "<math display='block'><mrow intent='product($domain,$function)'><munder><mo>∏</mo><mrow arg='domain'><mi>c</mi><mo>∈</mo><mi>C</mi></mrow></munder><msup arg='function'><mi>c</mi><mn>2</mn></msup></mrow></math>"
 
   - concept: product
     subject-area: sequences and series
