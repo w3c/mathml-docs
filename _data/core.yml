@@ -840,8 +840,6 @@ concepts:
   - concept: sum
     subject-area: sequences and series
     arity: 3
-    arguments: [$a1, $a2, $a3]
-    property: function
     arguments: [$from, $to, $function]
     property: function
     speech:
