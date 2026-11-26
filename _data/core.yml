@@ -863,17 +863,21 @@ concepts:
     speech:
       en: "product over $a1 of $a2"
     comments:
-      - usually on `<munder>` or `<msub>`
+      - Typically on an `<mrow>` surrounding the expression.
+    mathml:
+      - "<math display='block'><mrow intent='product($domain,$function)'><munder><mo>∏</mo><mrow arg='domain'><mi>c</mi><mo>∈</mo><mi>C</mi><mrow></munder><msup arg='function'><mi>c</mi><mn>2</mn></msup></mrow></math>"
 
   - concept: product
     subject-area: sequences and series
     arity: 3
-    arguments: [$a1, $a2, $a3]
+    arguments: [$from, $to, $function]
     property: function
     speech:
-      en: "product from $a1 to $a2 of $a3"
+      en: "product from $from to $to of $function"
     comments:
-      - usually on `<munderover>` or `<msubsup>`
+      - Typically on an `<mrow>` surrounding the expression.
+    mathml:
+      - "<math display='block'><mrow intent='product($from,$to,$function)'><munderover><mo>∏</mo><mn arg='from'>0</mn><mi arg='to'>n</mi></munderover><msub arg='function'><mi>x</mi><mi>i</mi></msub></mrow></math>"
 
 
   ## ====================== 4.4.7 elementary classical functions ======================
