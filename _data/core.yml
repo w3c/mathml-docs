@@ -1228,12 +1228,14 @@ concepts:
   - concept: mean
     subject-area: Statistics and Probability
     arity: 1
-    arguments: [$a1]
+    arguments: [$x]
     property: function
     speech:
-      en: "mean of $a1"
+      en: "mean of $x"
     comments:
-      - "This might be display as <math><mover><mi>x</mi><mo>&#xAF;</mo></mover></math>"
+      - "This might be displayed as follows"
+    mathml:
+      - "<math><mover intent='mean($x)'><mi arg='x'>x</mi><mo>&#xAF;</mo></mover></math>"
 
   - concept: standard-deviation
     subject-area: Statistics and Probability
