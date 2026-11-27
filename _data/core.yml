@@ -389,22 +389,22 @@ concepts:
   - concept: power
     subject-area: functions and inverses
     arity: 2
-    arguments: [$a1, $a2]
+    arguments: [$base, $exponent]
     property: infix
     conditions:
-      - condition: "$a2=2"
+      - condition: "$$exponent=2"
         speech:
-          en: "$a1 squared"
-          fr: "$a1 carré"
-      - condition: "$a2=3"
+          en: "$base squared"
+          fr: "$base carré"
+      - condition: "$exponent=3"
         speech:
-          en: "$a1 cubed"
-          fr: "$a1 cube"
+          en: "$base cubed"
+          fr: "$base cube"
       - condition: ""
         speech:
-          en: "$a1 to the $a2<i>th</i> power"
-          fr: "$a1 à la $a2"
-
+          en: "$base to the $exponent<i>th</i> power"
+          fr: "$base à la $exponent"
+    mathml: "<math><msup intent='power($base,$exponent)'><mi arg='base'>x</mi><mn arg='exponent'>3</mn></msup></math>"
 
   - concept: root
     subject-area: functions and inverses
@@ -888,69 +888,71 @@ concepts:
   - concept: sine
     subject-area: elementary classical functions
     arity: 1
-    arguments: [$a1]
+    arguments: [$angle]
     property: function
     speech:
-      en: "sine $a1"
-      fr: "sinus $a1"
+      en: "sine $angle"
+      fr: "sinus $angle"
     comments:
       - used as 'sin', 'sen'
+    mathml:
+      - "<math><mrow intent='sine($angle)'><mi>sin</mi><mo>&#x2061;</mo><mi arg='angle'>ϴ</mi></mrow></math>"
 
   - concept: cosine
     subject-area: elementary classical functions
     arity: 1
-    arguments: [$a1]
+    arguments: [$angle]
     property: function
     speech:
       en:
-        - "(verbose) cosine $a1"
-        - "(terse) cos $a1"
+        - "(verbose) cosine $angle"
+        - "(terse) cos $angle"
 
   - concept: tangent
     subject-area: elementary classical functions
     arity: 1
-    arguments: [$a1]
+    arguments: [$angle]
     property: function
     speech:
       en:
-        - "(verbose) tangent $a1"
-        - "(terse) tan $a1"
+        - "(verbose) tangent $angle"
+        - "(terse) tan $angle"
     comments:
       - used as 'tan', 'tg'
 
   - concept: secant
     subject-area: elementary classical functions
     arity: 1
-    arguments: [$a1]
+    arguments: [$angle]
     property: function
     speech:
       en:
-        - "(verbose) secant $a1"
-        - "(terse) seech $a1"
+        - "(verbose) secant $angle"
+        - "(terse) seech $angle"
     comments:
       - used as 'sec'
 
   - concept: cosecant
     subject-area: elementary classical functions
     arity: 1
-    arguments: [$a1]
+    arguments: [$angle]
     property: function
     speech:
       en:
-        - "(verbose) cosecant $a1"
-        - "(terse) co-seech $a1"
+        - "(verbose) cosecant $angle"
+        - "(terse) co-seech $angle"
     comments:
       - used as 'csc'
 
   - concept: cotangent
     subject-area: elementary classical functions
     arity: 1
-    arguments: [$a1]
+    arguments: [$angle]
     property: function
     speech:
       en:
-        - "(verbose) cotangent $a1"
-        - "(terse) co-tan $a1"
+        - "(verbose) cotangent $angle"
+        - "(terse) co-tan $angle"
     comments:
       - used as 'cot'
 
